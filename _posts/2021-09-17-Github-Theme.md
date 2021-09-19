@@ -3,7 +3,8 @@ layout: article
 current: post
 cover:
 navigation: True
-title: [Github] Redo 
+title: [Github] Redo
+date: 2021-09-17 10:18:00
 tags: [Github]
 class: post-template
 subclass: 
@@ -132,7 +133,7 @@ chart: # false (default), true
 
 ## => Paginate
 ##############################
-paginate: 8
+paginate: 6
 paginate_path: /page:num # don't change this unless for special need
 
 

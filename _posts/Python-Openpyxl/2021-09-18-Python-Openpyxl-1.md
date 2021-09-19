@@ -1,13 +1,13 @@
 ---
 layout: article
 current: post
-cover:
+cover: B31l.png
 navigation: True
 title: [Python-Openpyxl] (1) 시작하기
 date: 2021-09-18 10:18:00
 tags: [Python-Openpyxl]
 class: post-template
-subclass: 
+subclass: 'Python'
 author: B31l
 ---
 

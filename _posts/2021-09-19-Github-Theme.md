@@ -11,6 +11,10 @@ subclass:
 author: B31l
 ---
 
+
+
+
+
 ub 블로그를 구성하는 파일의 수정과 Push를 반복하던 중, 어느 순간 404 에러와 함께 블로그가 맛이 가 버렸다.
 
 그냥 리셋하는게 빠른 것 같아서 리셋했다.
@@ -108,7 +112,7 @@ paths:
 ## => Post
 ##############################
 ## excerpt
-excerpt_separator: <!--more-->
+excerpt_separator: \n\n
 
 ## license
 license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
@@ -284,6 +288,26 @@ plugins:
 
 ```html
 , Powered by <a title="Jekyll is a simple, blog-aware, static site generator." href="http://jekyllrb.com/">Jekyll</a> & <a title="TeXt is a super customizable Jekyll theme." href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt Theme</a>.
+```
+
+
+
+---
+
+
+
+# ?. 
+
+`_layouts/page.html` : 변경
+
+```html
+articles:
+  data_source: paginator.posts
+  article_type: BlogPosting
+  show_cover: false
+  show_excerpt: false
+  show_readmore: true
+  show_info: true
 ```
 
 

@@ -13,6 +13,8 @@ author: B31l
 
 
 
+
+
 ```python
 # 파일 가져오기
 from openpyxl import load_workbook
@@ -26,7 +28,7 @@ ws = wb.active
 
 
 
-## 셀 삽입
+# 1. 셀 삽입
 
 ```python
 ws.insert_cols(5)
@@ -39,7 +41,7 @@ ws.insert_rows(12, 2)
 
 
 
-## 셀 삭제
+# 2. 셀 삭제
 
 ```python
 ws.delete_cols(6)
@@ -51,7 +53,7 @@ ws.delete_cols(6)
 
 
 
-## 셀 이동
+# 3. 셀 이동
 
 ```python
 ws.move_range('A1:D11', rows=1, cols=1)
@@ -63,7 +65,7 @@ ws.move_range('A1:D11', rows=1, cols=1)
 
 
 
-## 셀 병합
+# 4. 셀 병합
 
 ```python
 ws.merge_cells("B14:E14")
@@ -79,7 +81,7 @@ ws.unmerge_cells("B14:E14")
 
 
 
-## 셀의 너비, 높이 설정
+# 5. 너비, 높이 설정
 
 ```python
 from openpyxl import Workbook
@@ -95,7 +97,7 @@ wb.save('불모의 땅')
 
 
 
-## 특정 셀을 고정
+# 6. 특정 셀을 고정
 
 ```
 ws.freeze_panes = 'B2'
@@ -107,7 +109,7 @@ ws.freeze_panes = 'B2'
 
 
 
-## 셀 채우기
+# 7. 셀 채우기
 
 ```python
 from openpyxl.styles import PatternFill
@@ -119,7 +121,7 @@ from openpyxl.styles import PatternFill
 
 
 
-## 셀 테두리
+# 8. 셀 테두리
 
 ```python
 from openpyxl.styles import Border, Side
@@ -135,7 +137,7 @@ Border(left=Side(style='thin'), right=Side(style='thin'), top=Side(style='thin')
 
 
 
-## 글자 스타일 적용
+# 9. 글자 스타일 적용
 
 ```python
 from openpyxl.styles import Font
@@ -147,7 +149,7 @@ from openpyxl.styles import Font
 
 
 
-## 글자 정렬
+# 10. 글자 정렬
 
 ```python
 from openpyxl.styles import Alignment

@@ -16,13 +16,13 @@
 
 ## => Site Settings
 ##############################
-text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+highlight_theme: tomorrow-night-bright # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
 title   : BELFRY
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  안녕하세요
 
 
 ## => Language and Timezone
@@ -49,13 +49,13 @@ author:
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  github    : B31l
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
+repository: B31l/B31l.github.io
 repository_tree: master
 
 
@@ -122,7 +122,7 @@ comments:
 
   ## Disqus
   disqus:
-    shortname: # the Disqus shortname for the site
+    shortname: B31l
 
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
@@ -159,7 +159,7 @@ pageview:
 ## => Search
 ##############################
 search:
-  provider: default # "default" (default), false, "google", "custom"
+  provider: dispus # "default" (default), false, "google", "custom"
 
   ## Google Custom Search Engine
   google:
@@ -207,12 +207,22 @@ defaults:
       type: posts
     values:
       layout: article
-      sharing: true
-      license: true
+      sharing: false
+      license: false
       aside:
         toc: true
-      show_edit_on_github: true
-      show_subscribe: true
+      show_edit_on_github: false
+      show_subscribe: false
+      key: anything
+      mode: immersive
+      header:
+        theme: dark
+      article_header:
+        type: overlay
+        theme: dark
+        background_image: # 포스트 헤더 배경이미지 경로 및 그라데이션 설정
+          src: https://cdn.pixabay.com/photo/2018/09/16/22/08/software-3682509_960_720.jpg
+          gradient: 'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .0))'
       pageview: true
 
 

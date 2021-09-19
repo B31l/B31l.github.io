@@ -5,7 +5,7 @@
 ///
 
 // main colors
-$main-color-1:     #ff9500;
+$main-color-1:     #ffcc33;
 $text-color-1:     rgba(#fff, .8);
 
 $main-color-2:     #ff006a;
@@ -23,7 +23,7 @@ $background-color: #121212;
 // text colors
 $text-color-theme-light-d: #000;
 $text-color-theme-light:   #222;
-$text-color-theme-light-l: #888;
+$text-color-theme-light-l: #ffcc33;
 
 $text-color-theme-dark-d:  rgba(#fff, .8);
 $text-color-theme-dark:    rgba(#fff, .7);
@@ -33,7 +33,7 @@ $text-color-d:     $text-color-theme-dark-d;
 $text-color:       $text-color-theme-dark;
 $text-color-l:     $text-color-theme-dark-l;
 
-$text-background-color: rgba(#fff, .05);
+$text-background-color: rgba(#ffcc33, .05);
 
 // header and footer colors
 $header-text-color: $text-color-3;

@@ -1,35 +1,18 @@
 ---
 layout: article
 current: post
-cover:  B31l.png
+cover:
 navigation: True
-title: TeXt Theme에서 제공하는 추가 기능 써보기
-date: 2021-09-19 10:00:00
+title: [Github] TeXt 테마의 추가 기능 써보기
 tags: [Github]
 class: post-template
-subclass: 'post tag-python'
+subclass: 
 author: B31l
 ---
 
 
 
 `TeXt Theme`에서 제공하는 추가 기능 써보기
-
-
-
----
-
-
-
-## Alert
-
-Success Text.  {:.success}
-
-Info Text.  {:.info}
-
-Warning Text.  {:.warning}
-
-Error Text.  {:.error}
 
 
 
@@ -53,5 +36,7 @@ Error Text.  {:.error}
 
 
 
-참고 <https://tianqi.name/jekyll-TeXt-theme/docs/en/additional-styles>
+참고자료
+
+- <https://tianqi.name/jekyll-TeXt-theme/docs/en/additional-styles>
 

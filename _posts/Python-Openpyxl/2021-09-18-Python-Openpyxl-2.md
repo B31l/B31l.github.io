@@ -1,13 +1,12 @@
 ---
 layout: article
 current: post
-cover:  B31l.png
+cover:
 navigation: True
-title: Openpyxl With HearthStone (2)
-date: 2021-09-18 10:18:00
-tags: [Pyton-Openpyxl]
+title: [Python-Openpyxl] (2) 데이터 쓰고 읽기
+tags: [Python-Openpyxl]
 class: post-template
-subclass: 'post tag-python'
+subclass: 
 author: B31l
 ---
 

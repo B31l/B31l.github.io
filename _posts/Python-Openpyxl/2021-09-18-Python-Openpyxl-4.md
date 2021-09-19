@@ -1,13 +1,12 @@
 ---
 layout: article
 current: post
-cover:  B31l.png
+cover:
 navigation: True
-title: Openpyxl With HearthStone (4)
-date: 2021-09-18 10:18:00
-tags: [Pyton-Openpyxl]
+title: [Python-Openpyxl] (4) 삽입하기
+tags: [Python-Openpyxl]
 class: post-template
-subclass: 'post tag-python'
+subclass: 
 author: B31l
 ---
 
@@ -26,7 +25,7 @@ ws = wb.active
 
 
 
-## 함수 삽입
+# 1. 함수 삽입
 
 ```python
 
@@ -38,7 +37,7 @@ ws = wb.active
 
 
 
-## 차트 삽입
+# 2. 차트 삽입
 
 ```python
 from openpyxl.chart import Reference, BarChart, LineChart
@@ -66,7 +65,7 @@ BarChart, LineChart를 만들기 위해 import 함
 
 
 
-## 이미지 삽입
+# 3. 이미지 삽입
 
 ```python
 from openpyxl.drawing.image import Image

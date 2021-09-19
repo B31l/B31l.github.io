@@ -1,0 +1,155 @@
+---
+layout: article
+current: post
+cover:  B31l.png
+navigation: True
+title: Openpyxl With HearthStone (3)
+date: 2021-09-18 10:18:00
+tags: [Pyton-Openpyxl]
+class: post-template
+subclass: 'post tag-python'
+author: B31l
+---
+
+
+
+```python
+# 파일 가져오기
+from openpyxl import load_workbook
+wb = load_workbook('2021_그리핀의해.xlsx')
+ws = wb.active
+```
+
+
+
+---
+
+
+
+## 셀 삽입
+
+```python
+ws.insert_cols(5)
+ws.insert_rows(12, 2)
+```
+
+
+
+---
+
+
+
+## 셀 삭제
+
+```python
+ws.delete_cols(6)
+```
+
+
+
+---
+
+
+
+## 셀 이동
+
+```python
+ws.move_range('A1:D11', rows=1, cols=1)
+```
+
+
+
+---
+
+
+
+## 셀 병합
+
+```python
+ws.merge_cells("B14:E14")
+```
+
+```python
+ws.unmerge_cells("B14:E14")
+```
+
+
+
+---
+
+
+
+## 셀의 너비, 높이 설정
+
+```python
+from openpyxl import Workbook
+wb = Workbook()
+ws = Wb.active
+ws.title = '성장형 주문'
+wb.save('불모의 땅')
+```
+
+
+
+---
+
+
+
+## 특정 셀을 고정
+
+```
+ws.freeze_panes = 'B2'
+```
+
+
+
+---
+
+
+
+## 셀 채우기
+
+```python
+from openpyxl.styles import PatternFill
+```
+
+
+
+---
+
+
+
+## 셀 테두리
+
+```python
+from openpyxl.styles import Border, Side
+```
+
+```python
+Border(left=Side(style='thin'), right=Side(style='thin'), top=Side(style='thin'), bottom=Side(style='thin'))
+```
+
+
+
+---
+
+
+
+## 글자 스타일 적용
+
+```python
+from openpyxl.styles import Font
+```
+
+
+
+---
+
+
+
+## 글자 정렬
+
+```python
+from openpyxl.styles import Alignment
+```
+

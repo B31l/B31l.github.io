@@ -1,0 +1,77 @@
+---
+layout: article
+current: post
+cover:  B31l.png
+navigation: True
+title: Openpyxl With HearthStone (4)
+date: 2021-09-18 10:18:00
+tags: [Pyton-Openpyxl]
+class: post-template
+subclass: 'post tag-python'
+author: B31l
+---
+
+
+
+```python
+# 파일 가져오기
+from openpyxl import load_workbook
+wb = load_workbook('2021_그리핀의해.xlsx')
+ws = wb.active
+```
+
+
+
+---
+
+
+
+## 함수 삽입
+
+```python
+
+```
+
+
+
+---
+
+
+
+## 차트 삽입
+
+```python
+from openpyxl.chart import Reference, BarChart, LineChart
+```
+
+BarChart, LineChart를 만들기 위해 import 함
+
+
+
+`BarChart`를 사용해 막대그래프를 만들 수 있습니다.
+
+```
+```
+
+
+
+`LineChart` 를 사용해 꺾은선그래프를 만들 수 있습니다.
+
+```python
+```
+
+
+
+---
+
+
+
+## 이미지 삽입
+
+```python
+from openpyxl.drawing.image import Image
+```
+
+```python
+```
+

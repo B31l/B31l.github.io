@@ -1,6 +1,5 @@
 ---
-title: (3) 꾸미기
-tags: Openpyxl
+title: Python Openpyxl : 3-꾸미기
 ---
 
 

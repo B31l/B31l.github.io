@@ -99,8 +99,8 @@ articles:
 `_sass/skins/_dark.scss` : 수정
 
 ```scss
-$main-color-1: ##ffcc33; // title-hover, read more, archive-tag, 블록지정색 등 대표색 변경
-$text-color-theme-dark-l:  ##ffcc33; // 마크다운 가로선 색변경
+$main-color-1: #ffcc33; // title-hover, read more, archive-tag, 블록지정색 등 대표색 변경
+$text-color-theme-dark-l:  #ffcc33; // 마크다운 가로선 색변경
 $text-background-color: #000; // 인라인(inline) 코드의 배경색 변경
 ```
 
@@ -147,11 +147,11 @@ pre, code {
 }
 ::-webkit-scrollbar-thumb{
   border-radius: 3px; // 스크롤바 곡률
-  background-color: ##ffcc33; // 스크롤바 색상
+  background-color: #ffcc33; // 스크롤바 색상
 }
 
 ::-webkit-scrollbar-track:horizontal{
-  background-color: ##ffcc33; // 가로 스크롤바 색상
+  background-color: #ffcc33; // 가로 스크롤바 색상
 }
 ```
 

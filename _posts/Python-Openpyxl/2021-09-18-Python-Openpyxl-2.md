@@ -10,7 +10,7 @@ tags: Openpyxl
 # 1. 데이터 쓰기
 
 ```python
-# 파일 가져오기
+# 파일 불러오기
 from openpyxl import load_workbook
 wb = load_workbook('2021_그리핀의해.xlsx')
 ws = wb.active

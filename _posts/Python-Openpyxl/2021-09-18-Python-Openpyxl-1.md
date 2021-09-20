@@ -9,7 +9,7 @@ tags: Openpyxl
 
 # 1. 라이브러리 설치하기
 
-`pip install openpyxl`를 사용해서 라이브러리를 설치해야 합니다.
+`pip install openpyxl`를 사용해서 라이브러리를 설치합니다.
 
 
 
@@ -20,15 +20,17 @@ tags: Openpyxl
 
 # 2. 파일 만들기
 
-파일을 만들기 위해서는 `Workbook` 를 import 해야 합니다(대문자 주의!).
+파일을 만들기 위해서 `Workbook` 을 import 합니다.
 
-이후 `save` 을 사용해 엑셀 파일로 저장합니다.
+`save` 을 사용해 엑셀 파일로 저장합니다.
 
 ```python
 from openpyxl import Workbook
 wb = Workbook()
-wb.save('2021_그리핀의해.xlsx')
+wb.save('something.xlsx')
 ```
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FB5Da2%2FbtrfpBs0GlG%2FQSE8WoulLsie8SyeQug98k%2Fimg.png)
 
 
 
@@ -38,26 +40,42 @@ wb.save('2021_그리핀의해.xlsx')
 
 # 3. 시트 만들기
 
-`active` 을 사용해 현재 활성화된 시트를 가져옵니다. 
-
-`title` 을 사용해 사용해 시트의 이름을 지정할 수 있습니다.
-
-`sheet_properties.tabColor` 을 사용해 시트의 색깔을 지정할 수 있습니다.
-
-`create_sheet` 을 사용해 새로운 시트를 만듭니다. 시트 이름과 삽입 위치를 지정할 수 있습니다.
+방금 저장한 파일을 다시 불러오겠습니다. 파일을 불러오기 위해서 `load_workbook`을 import 합니다.
 
 ```python
-from openpyxl import Workbook
-wb = Workbook()
-ws1 = wb.active
+from openpyxl import load_workbook
+wb = load_workbook('something.xlsx')
+```
 
+`active` 을 사용하면 현재 활성화된 시트를 가져옵니다. 
+
+```python
+ws1 = wb.active
+```
+
+`title` 을 사용해 시트의 이름을, `sheet_properties.tabColor` 을 사용해 시트의 색깔을 지정할 수 있습니다.
+
+```python
 ws1.title = '불모의 땅'
 ws1.sheet_properties.tabColor = "FF0000"
+```
 
+`create_sheet` 을 사용해 새로운 시트를 만들 수 있습니다. 시트 이름과 삽입 위치를 지정할 수 있습니다.
+
+```python
 ws2 = wb.create_sheet('스톰윈드')
 ws3 = wb.create_sheet('통곡의 동굴', 2)
-
-wb.save('2021_그리핀의해.xlsx')
-
 ```
+
+`save`을 사용해 엑셀 파일로 저장합니다.
+
+```python
+wb.save('something.xlsx')
+```
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdtZiw4%2FbtrfzkQugl9%2FE013zPeBeNYpyNJio01KG0%2Fimg.png)
+
+
+
+---
 

@@ -1,5 +1,6 @@
 ---
-title: Python Openpyxl : 4-엑셀 기능 활용하기
+title: (4) 엑셀의 기능 활용하기
+tags: Openpyxl
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-title: Python Openpyxl : 1-시작하기
+title: (1) 시작하기
 tags: Openpyxl
 ---
 

@@ -134,6 +134,7 @@ a {
 
 pre, code {
   font-family: map-get($base, font-family-code);
+  color: #eaeaea; // 블록 코드 색상 변경
 }
 
 code {

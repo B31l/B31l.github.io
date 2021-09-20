@@ -10,6 +10,7 @@ tags: Openpyxl
 ## Code
 
 ```python
+from openpyxl.styles import PatternFill, Border, Side, Font, Alignment
 from openpyxl import load_workbook
 wb = load_workbook('something.xlsx')
 ws = wb.active
@@ -20,8 +21,33 @@ ws.insert_rows(12, 2)
 ws.delete_cols(6)
 
 ws.move_range('A1:D11', rows=1, cols=1)
+ws.move_range('A14', rows=1, cols=2)
 
-ws.merge_cells("B14:E14")
+ws.merge_cells("B1:E1")
+
+# B열의 너비를 30로 설정
+ws.column_dimensions['B'].width = 30
+# 1행의 높이를 60으로 설정
+ws.row_dimensions[1].height = 60
+
+ws.freeze_panes = 'B2'
+
+ws['C15'].fill = PatternFill(fgColor='FFCC33', fill_type='solid')
+
+thin_border = Border(left=Side(style='thin'), right=Side(style='thin'), top=Side(style='thin'), bottom=Side(style='thin'))
+ws['B2'].border = thin_border
+ws['C2'].border = thin_border
+ws['D2'].border = thin_border
+ws['E2'].border = thin_border
+
+ws['B2'].font = Font(name='consolas', color='FF0000')
+ws['C2'].font = Font(name='arial', size=20)
+ws['D2'].font = Font(bold=True, strike=True)
+ws['E2'].font = Font(italic=True, underline='single')
+
+ws['B2'].alignment = Alignment(horizontal='center', vertical='center')
+
+wb.save('something.xlsx')
 ```
 
 
@@ -80,6 +106,7 @@ ws.delete_cols(6)
 
 ```python
 ws.move_range('A1:D11', rows=1, cols=1)
+ws.move_range('A14', rows=1, cols=2)
 ```
 
 
@@ -93,13 +120,13 @@ ws.move_range('A1:D11', rows=1, cols=1)
 `merge`을 사용해 셀을 병합할 수 있습니다.
 
 ```python
-ws.merge_cells("B14:E14")
+ws.merge_cells("B1:E1")
 ```
 
 만약 병합을 해제하고 싶으면 `unmerge`을 사용합니다.
 
 ```python
-ws.unmerge_cells("B14:E14")
+ws.unmerge_cells("B1:E1")
 ```
 
 
@@ -108,10 +135,15 @@ ws.unmerge_cells("B14:E14")
 
 
 
-# 5. 너비, 높이 설정
+# 5. 높이 및 높이 설정
+
+`row_dimensions` 또는 `column_deimensions`을 사용해 높이 또는 너비를 설정할 수 있습니다.
 
 ```python
-
+# B열의 너비를 30로 설정
+ws.column_dimensions['B'].width = 30
+# 1행의 높이를 60으로 설정
+ws.row_dimensions[1].height = 60
 ```
 
 
@@ -142,6 +174,12 @@ ws.freeze_panes = 'B2'
 from openpyxl.styles import PatternFill
 ```
 
+`fgcolor`을 사용해 채울 색을 지정할 수 있습니다.
+
+```python
+ws['C15'].fill = PatternFill(fgColor='FFCC33', fill_type='solid')
+```
+
 
 
 ---
@@ -157,7 +195,11 @@ from openpyxl.styles import Border, Side
 ```
 
 ```python
-Border(left=Side(style='thin'), right=Side(style='thin'), top=Side(style='thin'), bottom=Side(style='thin'))
+thin_border = Border(left=Side(style='thin'), right=Side(style='thin'), top=Side(style='thin'), bottom=Side(style='thin'))
+ws['B2'].border = thin_border
+ws['C2'].border = thin_border
+ws['D2'].border = thin_border
+ws['E2'].border = thin_border
 ```
 
 
@@ -174,6 +216,23 @@ Border(left=Side(style='thin'), right=Side(style='thin'), top=Side(style='thin')
 from openpyxl.styles import Font
 ```
 
+```python
+ws['B2'].font = Font(name='consolas', color='FF0000')
+ws['C2'].font = Font(name='arial', size=20)
+ws['D2'].font = Font(bold=True, strike=True)
+ws['E2'].font = Font(italic=True, underline='single')
+```
+
+| 이름      | 기능               |
+| --------- | ------------------ |
+| name      | 글씨 폰트          |
+| color     | 글씨 색상          |
+| size      | 글씨 크기          |
+| bold      | 볼드체 적용 유무   |
+| italic    | 이탤릭체 적용 유무 |
+| strike    | 취소선 적용 유무   |
+| underline | 밑줄 적용 유무     |
+
 
 
 ---
@@ -188,6 +247,12 @@ from openpyxl.styles import Font
 from openpyxl.styles import Alignment
 ```
 
+`horizontal`을 사용해 가로 정렬, `vertical`을 사용해 세로 정렬을 할 수 있습니다.
+
+```python
+ws['B2'].alignment = Alignment(horizontal='center', vertical='center')
+```
+
 
 
 ---
@@ -199,7 +264,11 @@ from openpyxl.styles import Alignment
 wb.save('something.xlsx')
 ```
 
+![](https://github.com/B31l/B31l/blob/main/%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%82%AC%EC%A7%84/3%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true)
+
 
 
 ---
+
+
 

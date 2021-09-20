@@ -135,7 +135,7 @@ ws['A12'] = '불모의 땅'
 wb.save('something.xlsx')
 ```
 
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FctfewL%2FbtrfDhZ6tcX%2FZTJgv32LZDXyKs2H4qKx51%2Fimg.png)
+![](https://github.com/B31l/B31l/blob/main/%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%82%AC%EC%A7%84/2%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true)
 
 
 

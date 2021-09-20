@@ -53,7 +53,7 @@ wb.save('something.xlsx')
 
 
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FxLWsP%2Fbtrfp3irEBP%2FKC7DZnkoiCX0b1F3D7sADK%2Fimg.png" align="left">
+<img src="https://raw.githubusercontent.com/B31l/B31l/main/%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%82%AC%EC%A7%84/1.png" align="left">
 
 
 
@@ -90,7 +90,7 @@ ws3 = wb.create_sheet('통곡의 동굴', 2)
 wb.save('something.xlsx')
 ```
 
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb7lrYa%2Fbtrfo51PhdU%2Fr3g9BCldIFvJESwRNmQm50%2Fimg.png)
+![](https://github.com/B31l/B31l/blob/main/%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%82%AC%EC%A7%84/1%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true)
 
 
 

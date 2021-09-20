@@ -10,6 +10,10 @@ tags: Openpyxl
 ## Code
 
 ```python
+# 파일 불러오기
+from openpyxl import load_workbook
+wb = load_workbook('something.xlsx')
+ws = wb.active
 ```
 
 
@@ -104,7 +108,7 @@ wb.save('불모의 땅')
 
 # 6. 특정 셀을 고정
 
-```
+```python
 ws.freeze_panes = 'B2'
 ```
 

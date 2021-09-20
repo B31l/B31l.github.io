@@ -8,9 +8,9 @@ tags: Openpyxl
 
 
 ```python
-# 파일 가져오기
+# 파일 불러오기
 from openpyxl import load_workbook
-wb = load_workbook('2021_그리핀의해.xlsx')
+wb = load_workbook('something.xlsx')
 ws = wb.active
 ```
 
@@ -146,4 +146,19 @@ from openpyxl.styles import Font
 ```python
 from openpyxl.styles import Alignment
 ```
+
+
+
+---
+
+
+
+```python
+# 파일 저장하기
+wb.save('something.xlsx')
+```
+
+
+
+---
 

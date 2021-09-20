@@ -9,7 +9,7 @@ tags: Openpyxl
 
 # 1. 라이브러리 설치하기
 
-`pip install openpyxl`를 사용해서 라이브러리를 설치합니다.
+`pip install openpyxl`을 사용해 라이브러리를 설치합니다.
 
 
 
@@ -20,11 +20,12 @@ tags: Openpyxl
 
 # 2. 파일 만들기
 
-파일을 만들기 위해서 `Workbook` 을 import 합니다.
+파일을 만들기 위해 `Workbook` 을 import 합니다.
 
 `save` 을 사용해 엑셀 파일로 저장합니다.
 
 ```python
+# 파일 만들기
 from openpyxl import Workbook
 wb = Workbook()
 wb.save('something.xlsx')
@@ -40,14 +41,15 @@ wb.save('something.xlsx')
 
 # 3. 시트 만들기
 
-방금 저장한 파일을 다시 불러오겠습니다. 파일을 불러오기 위해서 `load_workbook`을 import 합니다.
+방금 저장한 파일을 다시 불러오겠습니다. 파일을 불러오기 위해 `load_workbook`을 import 합니다.
 
 ```python
+# 파일 불러오기
 from openpyxl import load_workbook
 wb = load_workbook('something.xlsx')
 ```
 
-`active` 을 사용하면 현재 활성화된 시트를 가져옵니다. 
+`active` 을 사용해 현재 활성화된 시트를 가져옵니다. 
 
 ```python
 ws1 = wb.active
@@ -60,7 +62,7 @@ ws1.title = '불모의 땅'
 ws1.sheet_properties.tabColor = "FF0000"
 ```
 
-`create_sheet` 을 사용해 새로운 시트를 만들 수 있습니다. 시트 이름과 삽입 위치를 지정할 수 있습니다.
+`create_sheet` 을 사용해 새로운 시트를 만들 수 있습니다. 인자를 추가로 지정해 시트 이름과 삽입 위치를 지정할 수 있습니다.
 
 ```python
 ws2 = wb.create_sheet('스톰윈드')
@@ -70,6 +72,7 @@ ws3 = wb.create_sheet('통곡의 동굴', 2)
 `save`을 사용해 엑셀 파일로 저장합니다.
 
 ```python
+# 파일 저장하기
 wb.save('something.xlsx')
 ```
 

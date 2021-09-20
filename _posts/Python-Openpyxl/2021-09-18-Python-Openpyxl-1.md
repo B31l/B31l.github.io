@@ -7,6 +7,26 @@ tags: Openpyxl
 
 
 
+## Code
+
+```python
+from openpyxl import Workbook
+wb = Workbook()
+ws1 = wb.active
+
+ws1.title = '불모의 땅'
+ws1.sheet_properties.tabColor = "FF0000"
+
+ws2 = wb.create_sheet('스톰윈드')
+ws3 = wb.create_sheet('통곡의 동굴', 2)
+
+wb.save('something.xlsx')
+```
+
+
+
+
+
 # 1. 라이브러리 설치하기
 
 `pip install openpyxl`을 사용해 라이브러리를 설치합니다.
@@ -31,7 +51,9 @@ wb = Workbook()
 wb.save('something.xlsx')
 ```
 
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FB5Da2%2FbtrfpBs0GlG%2FQSE8WoulLsie8SyeQug98k%2Fimg.png)
+
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FxLWsP%2Fbtrfp3irEBP%2FKC7DZnkoiCX0b1F3D7sADK%2Fimg.png" align="left">
 
 
 
@@ -40,14 +62,6 @@ wb.save('something.xlsx')
 
 
 # 3. 시트 만들기
-
-방금 저장한 파일을 다시 불러오겠습니다. 파일을 불러오기 위해 `load_workbook`을 import 합니다.
-
-```python
-# 파일 불러오기
-from openpyxl import load_workbook
-wb = load_workbook('something.xlsx')
-```
 
 `active` 을 사용해 현재 활성화된 시트를 가져옵니다. 
 
@@ -76,9 +90,11 @@ ws3 = wb.create_sheet('통곡의 동굴', 2)
 wb.save('something.xlsx')
 ```
 
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdtZiw4%2FbtrfzkQugl9%2FE013zPeBeNYpyNJio01KG0%2Fimg.png)
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb7lrYa%2Fbtrfo51PhdU%2Fr3g9BCldIFvJESwRNmQm50%2Fimg.png)
 
 
 
 ---
+
+
 

@@ -1,11 +1,24 @@
 ---
-title: "Openpyxl : 4 - 엑셀 기능 활용하기"
+title: "Openpyxl : 4 - 꾸미기"
 tags: Openpyxl
 ---
 
 
 
 
+
+## Code
+
+```python
+```
+
+
+
+---
+
+
+
+이전에 작성했던 파일을 불러옵니다.
 
 ```python
 # 파일 불러오기
@@ -20,10 +33,11 @@ ws = wb.active
 
 
 
-# 1. 함수 삽입
+# 1. 셀 삽입
 
 ```python
-
+ws.insert_cols(5)
+ws.insert_rows(12, 2)
 ```
 
 
@@ -32,26 +46,10 @@ ws = wb.active
 
 
 
-# 2. 차트 삽입
+# 2. 셀 삭제
 
 ```python
-from openpyxl.chart import Reference, BarChart, LineChart
-```
-
-BarChart, LineChart를 만들기 위해 import 함
-
-
-
-`BarChart`를 사용해 막대그래프를 만들 수 있습니다.
-
-```
-```
-
-
-
-`LineChart` 를 사용해 꺾은선그래프를 만들 수 있습니다.
-
-```python
+ws.delete_cols(6)
 ```
 
 
@@ -60,13 +58,106 @@ BarChart, LineChart를 만들기 위해 import 함
 
 
 
-# 3. 이미지 삽입
+# 3. 셀 이동
 
 ```python
-from openpyxl.drawing.image import Image
+ws.move_range('A1:D11', rows=1, cols=1)
+```
+
+
+
+---
+
+
+
+# 4. 셀 병합
+
+```python
+ws.merge_cells("B14:E14")
 ```
 
 ```python
+ws.unmerge_cells("B14:E14")
+```
+
+
+
+---
+
+
+
+# 5. 너비, 높이 설정
+
+```python
+from openpyxl import Workbook
+wb = Workbook()
+ws = Wb.active
+ws.title = '성장형 주문'
+wb.save('불모의 땅')
+```
+
+
+
+---
+
+
+
+# 6. 특정 셀을 고정
+
+```
+ws.freeze_panes = 'B2'
+```
+
+
+
+---
+
+
+
+# 7. 셀 채우기
+
+```python
+from openpyxl.styles import PatternFill
+```
+
+
+
+---
+
+
+
+# 8. 셀 테두리
+
+```python
+from openpyxl.styles import Border, Side
+```
+
+```python
+Border(left=Side(style='thin'), right=Side(style='thin'), top=Side(style='thin'), bottom=Side(style='thin'))
+```
+
+
+
+---
+
+
+
+# 9. 글자 스타일 적용
+
+```python
+from openpyxl.styles import Font
+```
+
+
+
+---
+
+
+
+# 10. 글자 정렬
+
+```python
+from openpyxl.styles import Alignment
 ```
 
 

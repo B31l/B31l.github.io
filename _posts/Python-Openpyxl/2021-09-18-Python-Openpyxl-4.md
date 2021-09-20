@@ -1,14 +1,6 @@
 ---
-layout: article
-current: post
-cover:
-navigation: True
-title: [Python-Openpyxl] (4) 삽입하기
-date: 2021-09-18 10:18:00
-tags: [Python-Openpyxl]
-class: post-template
-subclass: 
-author: B31l
+title: [Opeypyxl] (4) 엑셀의 기능 활용하기
+tags: Openpyxl
 ---
 
 

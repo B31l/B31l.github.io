@@ -1,14 +1,6 @@
 ---
-layout: article
-current: post
-cover:
-navigation: True
-title: [Python-Openpyxl] (2) 데이터 쓰고 읽기
-date: 2021-09-18 10:18:00
-tags: [Python-Openpyxl]
-class: post-template
-subclass: 
-author: B31l
+title: [Opeypyxl] (2) 데이터 쓰고 읽기
+tags: Openpyxl
 ---
 
 

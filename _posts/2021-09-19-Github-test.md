@@ -1,6 +1,6 @@
 ---
-title: [Github] TeXt 테마의 추가 기능 써보기
-tags: Github
+title: TeXt 테마의 추가 기능 써보기
+tags: TeXt
 ---
 
 

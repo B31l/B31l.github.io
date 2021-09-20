@@ -1,5 +1,5 @@
 ---
-title: [Opeypyxl] (3) 꾸미기
+title: (3) 꾸미기
 tags: Openpyxl
 ---
 

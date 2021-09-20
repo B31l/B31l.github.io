@@ -134,15 +134,11 @@ a {
 
 pre, code {
   font-family: map-get($base, font-family-code);
-  color: #eaeaea; // 블록 코드 색상 변경
 }
 
 code {
-  code {
-    line-height: map-get($base, line-height-sm); // 높이 설정
-    font-weight: map-get($base, font-weight-bold); // 인라인, 블록 코드의 폰트 굵기 변경 가능
-    color: #ffcc33; // 인라인 코드의 폰트 색상 변경
-  }
+  font-size: map-get($base, font-size-xs);
+  line-height: map-get($base, line-height-sm);
 }
 
 figure > img {
@@ -175,19 +171,4 @@ input {
 // mermaid
 .mermaidTooltip {
   display: none;
-}
-
-::-webkit-scrollbar{
-  width: 6px; // 세로 스크롤의 너비
-  height: 3px; // 가로 스크롤의 너비
-  background-color: #121212; // 스크롤의 기본 배경색상
-  
-}
-::-webkit-scrollbar-thumb{
-  border-radius: 3px; // 스크롤바 곡률
-  background-color: ##ffcc33; // 스크롤바 색상
-}
-
-::-webkit-scrollbar-track:horizontal{
-  background-color: ##ffcc33; // 가로 스크롤바 색상
 }

@@ -133,7 +133,7 @@ layout: base
               {%- if _article_header_align == 'center' -%}
                 <div class="hero hero--center hero--dark overlay" style="{{ _header_style }}">
               {%- else -%}
-                <div class="hero hero--dark overlay" style="{{ _header_style }}">
+                <div class="hero hero--dark overlay" style="{{ _header_style }} height:50vh;">
               {%- endif -%}
             {%- else -%}
               {%- if _article_header_align == 'center' -%}
@@ -149,7 +149,7 @@ layout: base
                     {%- include article-info.html article=page semantic=false -%}
                     {%- include article-header.html article=page semantic=false -%}
                     {%- if page.excerpt -%}
-                      <p class="overlay__excerpt">{{ page.excerpt | strip_html | strip_newlines | strip | truncate: _article_header_excerpt_truncate }}</p>
+                      <p class="overlay__excerpt">{{ page.subtitle }}</p>
                     {%- endif -%}
                     {%- if page.article_header.actions -%}
                       <ul class="menu">

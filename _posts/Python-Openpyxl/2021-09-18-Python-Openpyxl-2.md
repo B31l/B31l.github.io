@@ -38,6 +38,14 @@ wb.save('something.xlsx')
 
 
 
+## Execution
+
+![](https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/2%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true)
+
+
+
+
+
 ---
 
 
@@ -123,19 +131,6 @@ for i in range(2, 12):
 ```python
 ws['A12'] = '불모의 땅'
 ```
-
-
-
----
-
-
-
-```python
-# 파일 저장하기
-wb.save('something.xlsx')
-```
-
-![](https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/2%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true)
 
 
 

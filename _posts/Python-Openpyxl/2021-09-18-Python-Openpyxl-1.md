@@ -25,6 +25,16 @@ wb.save('something.xlsx')
 
 
 
+## Execution
+
+![](https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/1%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true)
+
+
+
+
+
+---
+
 
 
 # 1. 라이브러리 설치하기
@@ -50,10 +60,6 @@ from openpyxl import Workbook
 wb = Workbook()
 wb.save('something.xlsx')
 ```
-
-
-
-![](https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/1.png?raw=true)
 
 
 
@@ -89,8 +95,6 @@ ws3 = wb.create_sheet('통곡의 동굴', 2)
 # 파일 저장하기
 wb.save('something.xlsx')
 ```
-
-![](https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/1%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true)
 
 
 

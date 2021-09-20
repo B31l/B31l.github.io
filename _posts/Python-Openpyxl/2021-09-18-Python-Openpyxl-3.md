@@ -77,7 +77,7 @@ print(ws.cell(row=1, column=1).value) # 1행 1열 (A1)의 값을 출력
 ```
 
 ```
-[출력결과]
+[Execution]
 카드명
 ```
 
@@ -92,7 +92,7 @@ print(ws['A1']) # A1 셀의 정보를 출력
 ```
 
 ```
-[출력결과]
+[Execution]
 <Cell '불모의 땅'.A1>
 ```
 
@@ -105,7 +105,7 @@ print(ws['A1'].value) # A1 셀의 값을 출력 / 값이 없다면 None을 출�
 ```
 
 ```
-[출력결과]
+[Execution]
 카드명
 ```
 
@@ -128,7 +128,7 @@ print()
 ```
 
 ```
-[출력결과]
+[Execution]
 체력 단련 2 희귀 전사 
 연쇄 번개 2 희귀 주술사 
 악의가 담긴 찌르기 2 희귀 도적
@@ -154,7 +154,7 @@ print()
 ```
 
 ```
-[출력결과]
+[Execution]
 비용 2 2 2 2 2 2 2 0 2 1 None 
 ```
 
@@ -170,7 +170,7 @@ for cols in col_range:
 ```
 
 ```
-[출력결과]
+[Execution]
 비용 2 2 2 2 2 2 2 0 2 1 None 
 효과 희귀 희귀 희귀 희귀 희귀 희귀 희귀 희귀 희귀 희귀 None 
 ```
@@ -188,7 +188,7 @@ for row in ws.iter_rows(min_row=2, max_row=11, min_col=2, max_col=3):
 ```
 
 ```
-[출력결과]
+[Execution]
 2 희귀
 2 희귀
 2 희귀
@@ -210,7 +210,7 @@ for col in ws.iter_cols(min_row=4, max_row=5, min_col=1, max_col=4):
 ```
 
 ```
-[출력결과]
+[Execution]
 악의가 담긴 찌르기 신념
 2 2
 희귀 희귀
@@ -236,7 +236,7 @@ print()
 ```
 
 ```
-[출력결과]
+[Execution]
 카드명 비용 효과 등급 None 
 체력 단련 2 희귀 전사 1 
 연쇄 번개 2 희귀 주술사 2

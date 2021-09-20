@@ -42,7 +42,7 @@ wb.save('something.xlsx')
 
 
 
-이전에 작성했던 파일을 불러옵니다.
+이전에 작성했던 파일을 불러옵니다. 파일을 불러오기 위해 `load_workbook`을 import 합니다.
 
 ```python
 # 파일 불러오기

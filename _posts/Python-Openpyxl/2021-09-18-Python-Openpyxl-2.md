@@ -135,7 +135,7 @@ ws['A12'] = '불모의 땅'
 wb.save('something.xlsx')
 ```
 
-<img src="https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/2%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true" align="left">
+![](https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/2%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true)
 
 
 

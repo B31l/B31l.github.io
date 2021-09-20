@@ -53,7 +53,7 @@ wb.save('something.xlsx')
 
 
 
-<img src="https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/1.png?raw=true" align="left">
+![](https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/1.png?raw=true)
 
 
 
@@ -90,7 +90,7 @@ ws3 = wb.create_sheet('통곡의 동굴', 2)
 wb.save('something.xlsx')
 ```
 
-<img src="https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/1%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true" align="left">
+![](https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/1%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true)
 
 
 

@@ -264,7 +264,7 @@ ws['B2'].alignment = Alignment(horizontal='center', vertical='center')
 wb.save('something.xlsx')
 ```
 
-<img src="https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/4%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true" align="left">
+![](https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/4%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true)
 
 
 

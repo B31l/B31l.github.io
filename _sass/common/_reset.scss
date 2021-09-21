@@ -134,11 +134,12 @@ a {
 
 pre, code {
   font-family: map-get($base, font-family-code);
+  color: #eaeaea; // 블록 코드 색상 변경
 }
 
 code {
   line-height: map-get($base, line-height-sm); // 높이 설정
-  color: #fff; // 인라인 코드의 폰트 색상 변경
+  color: #ffcc33; // 인라인 코드의 폰트 색상 변경
 }
 
 figure > img {

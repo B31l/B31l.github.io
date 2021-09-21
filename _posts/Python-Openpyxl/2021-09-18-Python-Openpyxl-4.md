@@ -64,21 +64,6 @@ wb.save('something.xlsx')
 
 
 
-이전에 작성했던 파일을 불러옵니다.
-
-```python
-# 파일 불러오기
-from openpyxl import load_workbook
-wb = load_workbook('something.xlsx')
-ws = wb.active
-```
-
-
-
----
-
-
-
 # 1. 셀 삽입
 
 `insert_rows` 또는 `insert_cols`을 사용해 특정 행 또는 열을 삭제할 수 있습니다.
@@ -110,7 +95,7 @@ ws.delete_cols(6)
 
 # 3. 셀 이동
 
-`move_range`을 사용해 셀을 이동할 수 있습니다.
+`move_range`을 사용해 셀을 이동할 수 있습니다. 만약 이동하려는 자리에 데이터가 있다면 덮어씁니다.
 
 ```python
 ws.move_range('A1:D11', rows=1, cols=1)
@@ -196,7 +181,7 @@ ws['C15'].fill = PatternFill(fgColor='FFCC33', fill_type='solid')
 
 # 8. 셀 테두리
 
-셀 테두리를 만들기 위해 `openpyxl.styles`에서 `Border` 와 `side` 을 import 합니다.
+셀 테두리를 만들기 위해 `openpyxl.styles`에서 `Border`와 `side`을 import 합니다.
 
 ```python
 from openpyxl.styles import Border, Side

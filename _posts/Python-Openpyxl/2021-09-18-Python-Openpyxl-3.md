@@ -14,19 +14,23 @@ from openpyxl import load_workbook
 wb = load_workbook('something.xlsx')
 ws = wb.active
 
+# 특정 셀의 값 출력하기
 print(ws.cell(row=1, column=1).value)
 print(ws['A1'])
 print(ws['A1'].value)
 
+# 범위를 지정해 값 출력하기
 for i in range(2,12):
     for j in range(1,5):
         print(ws.cell(row=i, column=j).value, end=' ')
     print()
 print()
+
 col_B = ws['B']
 for cell in col_B:
     print(cell.value, end=' ')
 print()
+
 col_range = ws['B:C']
 for cols in col_range:
     for cell in cols:
@@ -38,6 +42,7 @@ for row in ws.iter_rows(min_row=2, max_row=11, min_col=2, max_col=3):
 for col in ws.iter_cols(min_row=4, max_row=5, min_col=1, max_col=4):
     print(col[0].value, col[1].value)
 
+# 모든 값 출력하기
 for x in range(1, ws.max_row+1):
     for y in range(1, ws.max_column+1):
         print(ws.cell(row=x, column=y).value, end=' ')
@@ -129,7 +134,16 @@ print()
 
 ```
 [Execution]
-
+체력 단련 2 희귀 전사 
+연쇄 번개 2 특급 주술사        
+악의가 담긴 찌르기 2 일반 도적 
+신념 2 특급 성기사 
+야수 조련 2 희귀 사냥꾼        
+살아있는 씨앗 2 희귀 드루이드  
+임프 군단 2 일반 흑마법사      
+진눈깨비 0 희귀 마법사         
+규탄 2 특급 사제 
+분노 1 일반 악마사냥꾼   
 ```
 
 
@@ -146,7 +160,7 @@ print()
 
 ```
 [Execution]
-
+비용 2 2 2 2 2 2 2 0 2 1 None 
 ```
 
 
@@ -162,7 +176,8 @@ for cols in col_range:
 
 ```
 [Execution]
-
+비용 2 2 2 2 2 2 2 0 2 1 None
+효과 희귀 특급 일반 특급 희귀 희귀 일반 희귀 특급 일반 None
 ```
 
 
@@ -179,7 +194,16 @@ for row in ws.iter_rows(min_row=2, max_row=11, min_col=2, max_col=3):
 
 ```
 [Execution]
-
+2 희귀
+2 특급
+2 일반
+2 특급
+2 희귀
+2 희귀
+2 일반
+0 희귀
+2 특급
+1 일반
 ```
 
 
@@ -192,7 +216,10 @@ for col in ws.iter_cols(min_row=4, max_row=5, min_col=1, max_col=4):
 
 ```
 [Execution]
-
+악의가 담긴 찌르기 신념
+2 2
+일반 특급
+도적 성기사
 ```
 
 
@@ -215,7 +242,18 @@ print()
 
 ```
 [Execution]
-
+카드명 비용 효과 등급 None 
+체력 단련 2 희귀 전사 1 
+연쇄 번개 2 특급 주술사 2
+악의가 담긴 찌르기 2 일반 도적 3
+신념 2 특급 성기사 4
+야수 조련 2 희귀 사냥꾼 5
+살아있는 씨앗 2 희귀 드루이드 6
+임프 군단 2 일반 흑마법사 7
+진눈깨비 0 희귀 마법사 8
+규탄 2 특급 사제 9
+분노 1 일반 악마사냥꾼 10
+불모의 땅 None None None None
 ```
 
 

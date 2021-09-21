@@ -14,6 +14,7 @@ from openpyxl import load_workbook
 wb = load_workbook('something.xlsx')
 ws = wb.active
 
+# 1. append을 사용해 값 입력하기
 ws.append(['카드명', '비용', '효과', '등급'])
 data = [['체력 단련', 2, '희귀', '전사'],
         ['연쇄 번개', 2, '특급', '주술사'],
@@ -27,12 +28,12 @@ data = [['체력 단련', 2, '희귀', '전사'],
         ['분노', 1, '일반', '악마사냥꾼']]
 for i in data:
     ws.append(i)
-for i in data:
-    ws.append(i)
 
+# 범위를 지정해 값 입력하기
 for i in range(2, 12):
     ws.cell(row=i, column=5, value=i-1)
 
+# 특정 셀에 값 입력하기
 ws['A12'] = '불모의 땅'
 
 wb.save('something.xlsx')
@@ -42,7 +43,7 @@ wb.save('something.xlsx')
 
 ## Execution
 
-
+![](https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/2%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true)
 
 
 
@@ -82,7 +83,7 @@ ws = wb.active
 
 
 
-# 1. `append` 을 사용해 값 입력하기
+# 1. `append`을 사용해 값 입력하기
 
 `append`을 사용해 한꺼번에 값을 입력할 수 있습니다.
 

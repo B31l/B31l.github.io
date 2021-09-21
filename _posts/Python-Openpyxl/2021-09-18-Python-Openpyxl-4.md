@@ -15,36 +15,44 @@ from openpyxl import load_workbook
 wb = load_workbook('something.xlsx')
 ws = wb.active
 
+# 셀 삽입
 ws.insert_cols(5)
 ws.insert_rows(12, 2)
 
+# 셀 삭제
 ws.delete_cols(6)
 
+# 셀 이동
 ws.move_range('A1:D11', rows=1, cols=1)
 ws.move_range('A14', rows=1, cols=2)
 
+# 셀 병합
 ws.merge_cells("B1:E1")
 
-# B열의 너비를 30로 설정
+# 너비 및 높이 설정
 ws.column_dimensions['B'].width = 30
-# 1행의 높이를 60으로 설정
 ws.row_dimensions[1].height = 60
 
+# 특정 셀을 고정
 ws.freeze_panes = 'B2'
 
+# 셀 채우기
 ws['C15'].fill = PatternFill(fgColor='FFCC33', fill_type='solid')
 
+# 셀 테두리
 thin_border = Border(left=Side(style='thin'), right=Side(style='thin'), top=Side(style='thin'), bottom=Side(style='thin'))
 ws['B2'].border = thin_border
 ws['C2'].border = thin_border
 ws['D2'].border = thin_border
 ws['E2'].border = thin_border
 
+# 폰트 적용
 ws['B2'].font = Font(name='consolas', color='FF0000')
 ws['C2'].font = Font(name='arial', size=20)
 ws['D2'].font = Font(bold=True, strike=True)
 ws['E2'].font = Font(italic=True, underline='single')
 
+# 글자 정렬
 ws['B2'].alignment = Alignment(horizontal='center', vertical='center')
 
 wb.save('something.xlsx')
@@ -128,7 +136,7 @@ ws.unmerge_cells("B1:E1")
 
 
 
-# 5. 높이 및 높이 설정
+# 5. 너비 및 높이 설정
 
 `row_dimensions` 또는 `column_deimensions`을 사용해 높이 또는 너비를 설정할 수 있습니다.
 

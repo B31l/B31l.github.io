@@ -10,11 +10,30 @@ tags: Openpyxl
 ## Code
 
 ```python
-from openpyxl.chart import Reference, BarChart, LineChart
+from openpyxl.chart import Reference, BarChart
 from openpyxl.drawing.image import Image
 from openpyxl import load_workbook
 wb = load_workbook('something.xlsx')
 ws = wb.active
+
+# 함수 삽입
+ws['B13'] = '=COUNTA(B3:B12)'
+ws['C13'] = '=AVERAGE(C3:C12)'
+ws['D13'] = '=COUNTIF(D3:D12, "희귀")'
+
+# 차트 삽입
+bar_value = Reference(ws, min_row=3, max_row=12, min_col=2, max_col=3)
+bar_chart = BarChart()
+bar_chart.add_data(bar_value)
+bar_chart.title = '성장형 주문의 비용'
+bar_chart.x_axis.title = '이름'
+bar_chart.y_axis.title = '비용'
+bar_chart.style = 15
+ws.add_chart(bar_chart, 'G2')
+
+# 이미지 삽입
+img = Image('something.png')
+ws.add_image(img, 'B16')
 
 wb.save('something.xlsx')
 ```
@@ -22,6 +41,10 @@ wb.save('something.xlsx')
 
 
 ## Execution
+
+![](https://github.com/B31l/B31l/blob/main/img-io/Openpyxl/5%EB%A7%88%EB%AC%B4%EB%A6%AC.png?raw=true)
+
+
 
 
 
@@ -56,48 +79,55 @@ wb = load_workbook("something.xlsx", data_only=True)
 # 2. 차트 삽입
 
 ```python
-from openpyxl.chart import Reference, BarChart, LineChart
+from openpyxl.chart import Reference, BarChart
 ```
 
 차트를 삽입하기 위해 `openpyxl.chart`에서 `Reference`을 import 합니다.
 
 사용할 차트의 종류(ex : `BarChart`, `LineChart`)를 추가로 import 합니다.
 
+[이곳](https://openpyxl.readthedocs.io/en/stable/charts/introduction.html)에서 차트의 종류를 확인할 수 있습니다.
+
 
 
 ## BarChart
 
-`BarChart`을 사용해 막대그래프를 만들 수 있습니다. `Reference`을 사용해 차트에 입력할 데이터를 입력합니다.
+`BarChart`을 사용해 막대그래프를 만들 수 있습니다. `Reference`을 사용해 입력할 데이터의 범위를 지정합니다.
 
-```
-bar_value = Reference(ws, min_row=2, max_row=11, min_col=2, max_col=3)
-bar_chart = BarChart() # 차트 종류 설정(Bar, Line, Pie, ...)
-bar_chart.add_data(bar_value) # 차트 데이터 추가
-ws.add_chart(bar_chart, 'E1') # 차트 넣을 위치 정의
+`add_data`을 사용해 만든 차트에 데이터를 입력할 수 있습니다.
+
+`add_chart`을 사용해 위치를 지정해 차트를 삽입할 수 있습니다.
+
+`title`을 사용해 차트의 제목을 설정할 수 있습니다. 
+
+`x_axis.title`과 `y_axis.title`을 사용해 x축과 y축의 제목을 설정할 수 있습니다.
+
+`style`을 사용해 차트 스타일을 설정할 수 있습니다.
+
+
+
+```python
+bar_value = Reference(ws, min_row=3, max_row=12, min_col=2, max_col=3)
+bar_chart = BarChart()
+bar_chart.add_data(bar_value)
+bar_chart.title = '성장형 주문의 비용'
+bar_chart.x_axis.title = '이름'
+bar_chart.y_axis.title = '비용'
+bar_chart.style = 15
+ws.add_chart(bar_chart, 'G2')
 ```
 
 
 
 ## LineChart
 
-`LineChart`을 사용해 꺾은선그래프를 만들 수 있습니다. `Reference`을 사용해 차트에 입력할 데이터를 입력합니다.
-
-```python
-line_value = Reference(ws, min_row=1, max_row=11, min_col=2, max_col=3)
-line_chart = LineChart()
-line_chart.add_data(line_value, titles_from_data=True) #게열 -> 영어, 수학
-line_chart.title = '성적표'
-line_chart.style = 20 # 차트 스타일 적용
-line_chart.y_axis.title = '점수' # y축의 제목
-line_chart.x_axis.title = '번호' # x축의 제목
-ws.add_chart(line_chart, 'M1')
-```
+`LineChart`을 사용해 꺾은선그래프를 만들 수 있습니다.
 
 
 
 ---
 
-이전과정 다 수정하고 여기 최적화하고 올리기
+
 
 # 3. 이미지 삽입
 
@@ -107,11 +137,13 @@ ws.add_chart(line_chart, 'M1')
 from openpyxl.drawing.image import Image
 ```
 
-[여기](https://raw.githubusercontent.com/B31l/B31l/main/B31l.png)에 있는 이미지를 다운받은 뒤 something.png로 저장한 뒤 삽입하겠습니다.
+[이곳](https://raw.githubusercontent.com/B31l/B31l/main/B31l.png)에 있는 이미지를 다운받은 뒤 something.png로 저장합니다.
+
+`add_image`을 사용해 위치를 지정해 이미지를 삽입할 수 있습니다.
 
 ```python
-img = Image('image1.png')
-ws.add_image(img, 'C3')
+img = Image('something.png')
+ws.add_image(img, 'B16')
 ```
 
 

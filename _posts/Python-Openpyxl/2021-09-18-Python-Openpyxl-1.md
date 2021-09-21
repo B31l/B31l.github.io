@@ -10,10 +10,12 @@ tags: Openpyxl
 ## Code
 
 ```python
+# 파일 만들기
 from openpyxl import Workbook
 wb = Workbook()
-ws1 = wb.active
 
+# 시트 만들기
+ws1 = wb.active
 ws1.title = '불모의 땅'
 ws1.sheet_properties.tabColor = "FF0000"
 

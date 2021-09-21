@@ -1,5 +1,5 @@
 ---
-title: "Openpyxl : 2 - 데이터 입력하기"
+title: "[Openpyxl] 2 - 데이터 입력하기"
 tags: Openpyxl
 ---
 

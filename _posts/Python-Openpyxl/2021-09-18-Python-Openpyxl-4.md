@@ -1,5 +1,5 @@
 ---
-title: "Openpyxl : 4 - 꾸미기"
+title: "[Openpyxl] 4 - 꾸미기"
 tags: Openpyxl
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Openpyxl : 5 - 엑셀 기능 활용하기"
+title: "[Openpyxl] 5 - 엑셀 기능 활용하기"
 tags: Openpyxl
 ---
 

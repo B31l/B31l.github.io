@@ -1,5 +1,5 @@
 ---
-title: "Openpyxl : 1 - 시작하기"
+title: "[Openpyxl] 1 - 시작하기"
 tags: Openpyxl
 ---
 

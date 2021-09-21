@@ -1,5 +1,5 @@
 ---
-title: Post with Header Image
+title: "[TeXt] Post with Header Image"
 tags: TeXt
 article_header:
   type: cover

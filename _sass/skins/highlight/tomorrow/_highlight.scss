@@ -39,7 +39,7 @@ pre.lineno {
   .nb  { color: $highlight-foreground; }  /* Name.Builtin */
   .nc  { color: $highlight-red; }         /* Name.Class-클래스*/
   .no  { color: $highlight-red; }         /* Name.Constant */
-  .nd  { color: $highlight-red; }        /* Name.Decorator */
+  .nd  { color: $highlight-red; }         /* Name.Decorator */
   .ni  { color: $highlight-foreground; }  /* Name.Entity */
   .ne  { color: $highlight-red; }         /* Name.Exception */
   .nf  { color: $highlight-blue; }        /* Name.Function */
@@ -49,7 +49,7 @@ pre.lineno {
   .py  { color: $highlight-foreground; }  /* Name.Property */
   .nt  { color: $highlight-aqua; }        /* Name.Tag */
   .nv  { color: $highlight-red; }         /* Name.Variable */
-  .ow  { color: $highlight-foreground; }        /* Operator.Word-연산자*/
+  .ow  { color: $highlight-foreground; }  /* Operator.Word-연산자*/
   .w   { color: $highlight-foreground; }  /* Text.Whitespace */
   .mf  { color: $highlight-orange; }      /* Literal.Number.Float */
   .mh  { color: $highlight-orange; }      /* Literal.Number.Hex */

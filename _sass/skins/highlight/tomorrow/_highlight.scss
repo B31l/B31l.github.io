@@ -32,14 +32,14 @@ pre.lineno {
   .kp  { color: $highlight-purple; }      /* Keyword.Pseudo */
   .kr  { color: $highlight-purple; }      /* Keyword.Reserved */
   .kt  { color: $highlight-purple; }      /* Keyword.Type */
-  .ld  { color: $highlight-yellow; }       /* Literal.Date */
+  .ld  { color: $highlight-yellow; }      /* Literal.Date */
   .m   { color: $highlight-orange; }      /* Literal.Number */
-  .s   { color: $highlight-yellow; }       /* Literal.String */
+  .s   { color: $highlight-yellow; }      /* Literal.String */
   .na  { color: $highlight-blue; }        /* Name.Attribute */
   .nb  { color: $highlight-foreground; }  /* Name.Builtin */
   .nc  { color: $highlight-red; }         /* Name.Class-클래스*/
   .no  { color: $highlight-red; }         /* Name.Constant */
-  .nd  { color: $highlight-aqua; }        /* Name.Decorator */
+  .nd  { color: $highlight-red; }        /* Name.Decorator */
   .ni  { color: $highlight-foreground; }  /* Name.Entity */
   .ne  { color: $highlight-red; }         /* Name.Exception */
   .nf  { color: $highlight-blue; }        /* Name.Function */
@@ -49,14 +49,14 @@ pre.lineno {
   .py  { color: $highlight-foreground; }  /* Name.Property */
   .nt  { color: $highlight-aqua; }        /* Name.Tag */
   .nv  { color: $highlight-red; }         /* Name.Variable */
-  .ow  { color: $highlight-aqua; }        /* Operator.Word */
+  .ow  { color: $highlight-foreground; }        /* Operator.Word-연산자*/
   .w   { color: $highlight-foreground; }  /* Text.Whitespace */
   .mf  { color: $highlight-orange; }      /* Literal.Number.Float */
   .mh  { color: $highlight-orange; }      /* Literal.Number.Hex */
   .mi  { color: $highlight-orange; }      /* Literal.Number.Integer */
   .mo  { color: $highlight-orange; }      /* Literal.Number.Oct */
-  .sb  { color: $highlight-yellow; }       /* Literal.String.Backtick */
-  .sc  { color: $highlight-foreground; } /* Literal.String.Char */
+  .sb  { color: $highlight-yellow; }      /* Literal.String.Backtick */
+  .sc  { color: $highlight-foreground; }  /* Literal.String.Char */
   .sd  { color: $highlight-comment; } /* Literal.String.Doc */
   .s2  { color: $highlight-yellow; } /* Literal.String.Double */
   .se  { color: $highlight-orange; } /* Literal.String.Escape */

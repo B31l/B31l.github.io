@@ -132,13 +132,16 @@ a {
   @include link-colors($main-color-1);
 }
 
-code {
-  line-height: map-get($base, line-height-sm); // 높이 설정
-  color: #000;
-}
-
 pre, code {
   font-family: map-get($base, font-family-code);
+}
+
+code {
+  line-height: map-get($base, line-height-sm); // 높이 설정
+  color: #000; // 인라인 코드 색상 변경
+}
+
+pre {
   color: #eaeaea; // 블록 코드 색상 변경
 }
 

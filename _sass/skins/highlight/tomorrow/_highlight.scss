@@ -8,12 +8,12 @@ pre.lineno {
 .highlight > pre {
   color: $highlight-foreground;
   background-color: $highlight-background !important;
-  .c   { color: $highlight-comment; }     /* Comment-주석*/ 
-  .err { color: $highlight-red; }         /* Error-오류*/
-  .k   { color: $highlight-purple; }      /* Keyword */
+  .c   { color: $highlight-comment; }     /* Comment-주석 */ 
+  .err { color: $highlight-red; }         /* Error-오류 */
+  .k   { color: $highlight-purple; }      /* Keyword-for나 print 같은거*/
   .l   { color: $highlight-orange; }      /* Literal */
   .n   { color: $highlight-foreground; }  /* Name */
-  .o   { color: $highlight-aqua; }        /* Operator */
+  .o   { color: $highlight-foreground; }  /* Operator-연산자 */
   .p   { color: $highlight-foreground; }  /* Punctuation */
   .cm  { color: $highlight-comment; }     /* Comment.Multiline */
   .cp  { color: $highlight-comment; }     /* Comment.Preproc */
@@ -25,7 +25,7 @@ pre.lineno {
   .gi  { color: $highlight-yellow; }       /* Generic.Inserted */
   .gp  { font-weight: bold; color: $highlight-comment; } /* Generic.Prompt */
   .gs  { font-weight: bold; }             /* Generic.Strong */
-  .gu  { font-weight: bold; color: $highlight-aqua; } /* Generic.Subheading */
+  .gu  { font-weight: bold; color: $highlight-red; } /* Generic.Subheading */
   .kc  { color: $highlight-purple; }      /* Keyword.Constant */
   .kd  { color: $highlight-purple; }      /* Keyword.Declaration */
   .kn  { color: $highlight-aqua; }        /* Keyword.Namespace */
@@ -34,10 +34,10 @@ pre.lineno {
   .kt  { color: $highlight-purple; }      /* Keyword.Type */
   .ld  { color: $highlight-yellow; }      /* Literal.Date */
   .m   { color: $highlight-orange; }      /* Literal.Number */
-  .s   { color: $highlight-yellow; }      /* Literal.String */
+  .s   { color: $highlight-green; }      /* Literal.String */
   .na  { color: $highlight-blue; }        /* Name.Attribute */
   .nb  { color: $highlight-foreground; }  /* Name.Builtin */
-  .nc  { color: $highlight-red; }         /* Name.Class-클래스*/
+  .nc  { color: $highlight-aqua; }        /* Name.Class-클래스*/
   .no  { color: $highlight-red; }         /* Name.Constant */
   .nd  { color: $highlight-red; }         /* Name.Decorator */
   .ni  { color: $highlight-foreground; }  /* Name.Entity */
@@ -49,7 +49,7 @@ pre.lineno {
   .py  { color: $highlight-foreground; }  /* Name.Property */
   .nt  { color: $highlight-aqua; }        /* Name.Tag */
   .nv  { color: $highlight-red; }         /* Name.Variable */
-  .ow  { color: $highlight-foreground; }  /* Operator.Word-연산자*/
+  .ow  { color: $highlight-aqua; }        /* Operator.Word*/
   .w   { color: $highlight-foreground; }  /* Text.Whitespace */
   .mf  { color: $highlight-orange; }      /* Literal.Number.Float */
   .mh  { color: $highlight-orange; }      /* Literal.Number.Hex */

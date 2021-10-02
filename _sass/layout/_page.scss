@@ -62,11 +62,9 @@ html,
 .page__aside {
   .toc-aside {
     padding: map-get($spacers, 5) 0 map-get($spacers, 3) map-get($spacers, 5);
-    background-color: #000;
-  }
 }
 
-.page__actions {
+.page__actions {  
   position: fixed;
   bottom: map-get($spacers, 5);
   left: map-get($spacers, 3);

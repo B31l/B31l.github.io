@@ -18,22 +18,22 @@ $main-color-theme-light: rgba(#000, .8);
 $main-color-theme-dark:  rgba(#fff, .8);
 
 // page background
-$background-color: #121212;
+$background-color: #fff; // 배경색
 
 // text colors
 $text-color-theme-light-d: #000;
 $text-color-theme-light:   #222;
 $text-color-theme-light-l: #888;
 
-$text-color-theme-dark-d:  rgba(#fff, .8); // 제목 텍스트 색
-$text-color-theme-dark:    rgba(#fff, .7);
+$text-color-theme-dark-d:  rgba(#000, .8); // 제목 텍스트 색
+$text-color-theme-dark:    rgba(#000, .7);
 $text-color-theme-dark-l:  rgba(#ffcc33, .5); // 선택된 노오란 강조
 
 $text-color-d:     $text-color-theme-dark-d;
 $text-color:       $text-color-theme-dark;
 $text-color-l:     $text-color-theme-dark-l;
 
-$text-background-color: #000;
+$text-background-color: #ffebb0;
 
 // header and footer colors
 $header-text-color: $text-color-3;

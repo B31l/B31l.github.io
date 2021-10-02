@@ -25,14 +25,8 @@ titles:
   # @end locale config
 ---
 
-<div style="display:flex">
-  <div class="layout--archive js-all">
-    {%- include tags.html -%}
-    <div class="js-result layout--archive__result d-none">
-      {%- include article-list.html articles=site.posts type='brief' show_info=true reverse=true group_by='year' -%}
-    </div>
-  </div>
-  <div>
+<div style="margin-bottom: 10px;">
+  <div style="border: 1px solid; border-radius: 20px; margin: 20px auto;">
     <h1 id='b31l'>B31l</h1>
     <p><strong><a href='https://B31l.github.io'>My Github Blog</a></strong></p>
     <h3 id='❤github'>❤GitHub</h3>
@@ -56,6 +50,13 @@ titles:
 
     </ul>
   </div>
+  <div class="layout--archive js-all">
+    {%- include tags.html -%}
+    <div class="js-result layout--archive__result d-none">
+      {%- include article-list.html articles=site.posts type='brief' show_info=true reverse=true group_by='year' -%}
+    </div>
+  </div>
+
 </div>
 
 

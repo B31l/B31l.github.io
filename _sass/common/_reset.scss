@@ -134,11 +134,11 @@ a {
 
 pre, code {
   font-family: map-get($base, font-family-code);
+  color: #fff; // 블록 코드 색상 변경
 }
 
 code {
   line-height: map-get($base, line-height-sm); // 높이 설정
-  color: #ffcc33; // 인라인 코드의 폰트 색상 변경
 }
 
 figure > img {
@@ -176,7 +176,7 @@ input {
 ::-webkit-scrollbar{
   width: 6px; // 세로 스크롤의 너비
   height: 3px; // 가로 스크롤의 너비
-  background-color: #121212; // 스크롤의 기본 배경색상
+  background-color: #fff; // 스크롤의 기본 배경색상
   
 }
 ::-webkit-scrollbar-thumb{

@@ -132,14 +132,14 @@ a {
   @include link-colors($main-color-1);
 }
 
-pre, code {
-  font-family: map-get($base, font-family-code);
-  color: #f00; // 블록 코드 색상 변경
-}
-
 code {
   line-height: map-get($base, line-height-sm); // 높이 설정
   color: #000;
+}
+
+pre, code {
+  font-family: map-get($base, font-family-code);
+  color: #eaeaea; // 블록 코드 색상 변경
 }
 
 figure > img {

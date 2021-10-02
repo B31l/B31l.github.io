@@ -89,7 +89,7 @@ h1 {
 
 h2 {
   font-size: map-get($base, font-size-h2);
-  color: $text-color;
+  color: $text-color-d;
   @include media-breakpoint-down(md) {
     font-size: map-get($base, font-size-h2-sm);
   }
@@ -97,7 +97,7 @@ h2 {
 
 h3 {
   font-size: map-get($base, font-size-h3);
-  color: $text-color;
+  color: $text-color-d;
   @include media-breakpoint-down(md) {
     font-size: map-get($base, font-size-h3-sm);
   }
@@ -121,7 +121,7 @@ h5 {
 
 h6 {
   font-size: map-get($base, font-size-h6);
-  color: $text-color;
+  color: $text-color-l;
   @include media-breakpoint-down(md) {
     font-size: map-get($base, font-size-h6-sm);
   }

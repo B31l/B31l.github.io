@@ -66,7 +66,7 @@ body {
 
 input, textarea, select, button {
   font: map-get($base, font-weight) #{map-get($base, font-size)}/#{map-get($base, line-height)} map-get($base, font-family);
-  color: $text-color;
+  color: #fff;
 }
 
 h1,
@@ -139,7 +139,7 @@ pre, code {
 
 code {
   line-height: map-get($base, line-height-sm); // 높이 설정
-  color: #fff;
+  color: #000;
 }
 
 figure > img {

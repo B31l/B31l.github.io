@@ -11,3 +11,13 @@ A Post with Header Image, See [Page layout](https://tianqi.name/jekyll-TeXt-them
 
 <!--more-->
 
+# Tag
+
+`success`{:.success}
+
+`info`{:.info}
+
+`warning`{:.warning}
+
+`error`{:.error}
+

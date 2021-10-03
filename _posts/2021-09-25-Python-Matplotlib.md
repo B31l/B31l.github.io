@@ -1,5 +1,5 @@
 ---
-title: "[Matplotlib] 그래프 그리기
+title: "[Matplotlib] 그래프 그리기"
 tags: Data Analysis, Matplotlib
 ---
 
@@ -26,9 +26,8 @@ plt.show()
 ```
 
 
-​    
 ![png](output_3_0.png)
-​    
+    
 
 
 

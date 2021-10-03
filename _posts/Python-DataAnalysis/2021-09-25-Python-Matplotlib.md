@@ -7,14 +7,20 @@ tags: DataAnalysis Matplotlib
 
 
 
-Matplotlib 라이브러리는 파이썬 그래프를 표시하며, 다른 데이터 분석 라이브러리인 `Numpy`, `Pandas`와 연계가 가능하다.
 
-사용하기 앞서 다음과 같이 모듈을 가져온다.
+
+`Matplotlib` 라이브러리는 파이썬 그래프를 표시하며, 다른 데이터 분석 라이브러리인 `Numpy`, `Pandas`와 연계가 가능하다.
 
 
 ```python
 import matplotlib.pyplot as plt
 ```
+
+---
+
+
+
+
 
 # 막대 그래프
 
@@ -60,7 +66,14 @@ plt.show()
 
 `title`에 제목을 입력한다.
 
+---
+
+
+
+
+
 # 다양한 그래프
+
 마커의 종류 ( `*`, `.`, `D`, `v` )를 지정해 점 그래프를 그릴 수 있다. 
 
 
@@ -88,4 +101,5 @@ plt.show()
 
 ![output_9_0](https://user-images.githubusercontent.com/83929217/135742350-09c57e63-9d7a-4b7e-bdaf-9103e3687c5a.png)
 
+---
 

@@ -206,7 +206,7 @@ defaults:
         theme: dark
         background_image: # 포스트 헤더 배경이미지 경로 및 그라데이션 설정
           src: https://github.com/B31l/B31l/blob/main/Puzzle.jpg?raw=true
-          gradient: 'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .0))'
+          gradient: 'linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .0))'
       pageview: true
 
 

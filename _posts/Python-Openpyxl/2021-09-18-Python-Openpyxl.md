@@ -56,7 +56,7 @@ wb.save("Data.xlsx")
 
 ```python
 from openpyxl import load_workbook
-wb = load_workbook('Data.xlsx')
+wb = load_workbook("Data.xlsx")
 ws = wb.active
 ```
 
@@ -85,17 +85,17 @@ ws = wb.active
 `append`을 사용해 한꺼번에 값을 입력할 수 있습니다.
 
 ```python
-ws.append(['요일', '최고 기온', '최저 기온', '강수확률'])
+ws.append(["요일", "최고 기온", "최저 기온", "강수확률"])
 ```
 
 ```python
-data = [['월', 30, 25, 2],
-        ['화', 29, 24, 2],
-        ['수', 25, 22, 5],
-        ['목', 25, 22, 6],
-        ['금', 26, 22, 12],
-        ['토', 28, 23, 13],
-        ['일', 28, 20, 10]]
+data = [["월", 30, 25, 2],
+        ["화", 29, 24, 2],
+        ["수", 25, 22, 5],
+        ["목", 25, 22, 6],
+        ["금", 26, 22, 12],
+        ["토", 28, 23, 13],
+        ["일", 28, 20, 10]]
 for i in data:
     ws.append(i)
 ```
@@ -118,15 +118,15 @@ for i in range(2, 8):
 좌표를 사용해 특정 셀에 값을 입력합니다.
 
 ```python
-ws['A9'] = '날씨'
+ws["A9"] = "날씨"
 ```
 
 수식을 입력할 수도 있습니다.
 
 ```python
-ws['B9'] = '=AVERAGE(B2:B8)'
-ws['C9'] = '=AVERAGE(C2:C8)'
-ws['D9'] = '=AVERAGE(D2:D8)'
+ws["B9"] = "=AVERAGE(B2:B8)"
+ws["C9"] = "=AVERAGE(C2:C8)"
+ws["D9"] = "=AVERAGE(D2:D8)"
 ```
 
 ---
@@ -147,24 +147,24 @@ ws = wb.active
 ws.title = "S1"
 ws.sheet_properties.tabColor = "FFFF00"
 
-ws.append(['요일', '최고 기온', '최저 기온', '강수확률'])
-data = [['월', 30, 25, 2],
-        ['화', 29, 24, 2],
-        ['수', 25, 22, 5],
-        ['목', 25, 22, 6],
-        ['금', 26, 22, 12],
-        ['토', 28, 23, 13],
-        ['일', 28, 20, 10]]
+ws.append(["요일", "최고 기온", "최저 기온", "강수확률"])
+data = [["월", 30, 25, 2],
+        ["화", 29, 24, 2],
+        ["수", 25, 22, 5],
+        ["목", 25, 22, 6],
+        ["금", 26, 22, 12],
+        ["토", 28, 23, 13],
+        ["일", 28, 20, 10]]
 for i in data:
     ws.append(i)
 
 for i in range(2, 8):
     ws.cell(row=i, column=5, value=i-1)
     
-ws['A9'] = '날씨'
-ws['B9'] = '=AVERAGE(B2:B8)'
-ws['C9'] = '=AVERAGE(C2:C8)'
-ws['D9'] = '=AVERAGE(D2:D8)'
+ws["A9"] = "날씨"
+ws["B9"] = "=AVERAGE(B2:B8)"
+ws["C9"] = "=AVERAGE(C2:C8)"
+ws["D9"] = "=AVERAGE(D2:D8)"
 
 wb.save("Data.xlsx")
 ```

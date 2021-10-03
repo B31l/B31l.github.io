@@ -1,6 +1,6 @@
 ---
 title: "[Openpyxl] 엑셀 다루기"
-tags: Openpyxl
+tags: Python Library Openpyxl 
 ---
 
 

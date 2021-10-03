@@ -1,5 +1,6 @@
 .site-tags {
   .tag-button {
+    // show all
     @include clickable($text-color-3, $main-color-3, default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
     & > .tag-button__count {
       display: inline-block;
@@ -9,16 +10,17 @@
       vertical-align: top;
     }
   }
+  /* 메모 : 태그 버튼 색깔 지정 */
   .tag-button-1 {
-    @include clickable($text-color-1, rgba($main-color-1, .4), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
+    @include clickable($text-color-1, rgba($main-color-1, .5), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
   }
   .tag-button-2 {
-    @include clickable($text-color-1, rgba($main-color-1, .55), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
+    @include clickable($text-color-1, rgba($main-color-1, .35), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
   }
   .tag-button-3 {
-    @include clickable($text-color-1, rgba($main-color-1, .7), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
+    @include clickable($text-color-1, rgba($main-color-1, .25), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
   }
   .tag-button-4 {
-    @include clickable($text-color-1, rgba($main-color-1, .9), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
+    @include clickable($text-color-1, rgba($main-color-1, .15), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
   }
 }

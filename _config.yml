@@ -205,7 +205,7 @@ defaults:
         type: overlay
         theme: dark
         background_image: # 포스트 헤더 배경이미지 경로 및 그라데이션 설정
-          src: https://github.com/B31l/B31l/blob/main/Puzzle.jpg?raw=true
+          src: https://cdn.pixabay.com/photo/2015/12/08/00/30/ocean-1081783_960_720.jpg
           gradient: 'linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .0))'
       pageview: true
 

@@ -85,7 +85,7 @@
     & > code {
       padding: 0;
       word-wrap: normal;
-      background-color: transparent;
+      background-color: #ccc; // 메모 : 코드블럭 색?
       &.language-mermaid, &.language-chart {
         svg {
           width: 100%;

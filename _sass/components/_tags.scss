@@ -12,15 +12,15 @@
   }
   /* 메모 : 태그 버튼 색깔 지정 */
   .tag-button-1 {
-    @include clickable($text-color-1, rgba($main-color-1, .5), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
+    @include clickable($text-color-1, rgba($main-color-1, .65), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
   }
   .tag-button-2 {
-    @include clickable($text-color-1, rgba($main-color-1, .35), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
+    @include clickable($text-color-1, rgba($main-color-1, .75), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
   }
   .tag-button-3 {
-    @include clickable($text-color-1, rgba($main-color-1, .25), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
+    @include clickable($text-color-1, rgba($main-color-1, .55), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
   }
   .tag-button-4 {
-    @include clickable($text-color-1, rgba($main-color-1, .15), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
+    @include clickable($text-color-1, rgba($main-color-1, .45), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
   }
 }

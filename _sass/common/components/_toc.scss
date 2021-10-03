@@ -1,8 +1,9 @@
 ul.toc {
   display: block;
   margin: 0;
-  color: white; //$text-color;
-  background-color: black;
+  color: $text-color;
+  background-color: #ccc;
+  border-radius: 10px;
   list-style-type: none;
   & > li {
     margin: map-get($spacers, 1) / 2 0;

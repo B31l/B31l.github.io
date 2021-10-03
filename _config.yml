@@ -4,7 +4,7 @@ text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "
 highlight_theme: tomorrow-night-bright # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : https://B31l.github.io
 baseurl : # does not include hostname
-title   : BELFRY
+title   : 
 description: > # this means to ignore newlines until "Language & timezone"
   
 
@@ -22,7 +22,7 @@ author:
   name      : B31l
   url       : https://B31l.github.io
   avatar    : # path or url of avatar image (square)
-  bio       : I am an amazing person!
+  bio       : Ham Su Jong
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name

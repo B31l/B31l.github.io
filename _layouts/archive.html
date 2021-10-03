@@ -53,8 +53,10 @@ titles:
     <hr style="height: 3px; background-color: #000" />
     <br>
   </div>
-  <div class="layout--archive js-all">
-    {%- include tags.html -%}
+  <div class="layout--archive js-all" style="display:flex;">
+    <div>
+      {%- include tags.html -%}
+    </div>
     <div class="js-result layout--archive__result d-none">
       {%- include article-list.html articles=site.posts type='brief' show_info=true reverse=true group_by='year' -%}
     </div>

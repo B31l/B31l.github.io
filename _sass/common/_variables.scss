@@ -79,10 +79,10 @@ $z-indexes: (
 );
 
 $layout: (
-  header-height:          2.5rem, // 메모
-  header-height-sm:       1.5rem,// 메모
-  content-max-width:      950px,
-  sidebar-width:          300px,// 메모
+  header-height:          2rem, // 메모 : 5
+  header-height-sm:       1rem, // 메모 : 3
+  content-max-width:      1150px, // 메모 950
+  sidebar-width:          250px,
   sidebar-header-height:  3rem,
   aside-width:            220px 
 );

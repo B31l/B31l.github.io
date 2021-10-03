@@ -54,14 +54,11 @@ titles:
     <br>
   </div>
 
-  <div class="layout--archive js-all" style="display:flex;">
-    <div style="width:20rem;">
+  <div class="layout--archive js-all">
+    <div">
       {%- include tags.html -%}
     </div>
-    <div style="width:5rem;">
-      
-    </div>
-    <div class="js-result layout--archive__result d-none" style="width:40rem;">
+    <div class="js-result layout--archive__result d-none">
       {%- include article-list.html articles=site.posts type='brief' show_info=true reverse=true group_by='year' -%}
     </div>
   </div>

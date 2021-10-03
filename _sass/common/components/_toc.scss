@@ -1,11 +1,8 @@
 /* 메모 : TOC */
 ul.toc {
-  width: 5rem;
   display: block;
   margin: 0;
   color: $text-color;
-  background-color: #ccc;
-  border-radius: 10px;
   list-style-type: none;
   & > li {
     margin: map-get($spacers, 1) / 2 0;

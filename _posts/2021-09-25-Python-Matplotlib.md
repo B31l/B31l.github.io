@@ -1,6 +1,6 @@
 ---
 title: "[Matplotlib] 그래프 그리기"
-tags: Data Analysis, Matplotlib
+tags: DataAnalysis Matplotlib
 ---
 
 

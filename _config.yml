@@ -204,9 +204,9 @@ defaults:
       article_header:
         type: overlay
         theme: dark
-        # background_image: # 포스트 헤더 배경이미지 경로 및 그라데이션 설정
-        #   src: https://cdn.pixabay.com/photo/2018/09/16/22/08/software-3682509_960_720.jpg
-        #   gradient: 'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .0))'
+        background_image: # 포스트 헤더 배경이미지 경로 및 그라데이션 설정
+          src: https://github.com/B31l/B31l/blob/main/Puzzle.jpg?raw=true
+          gradient: 'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .0))'
       pageview: true
 
 

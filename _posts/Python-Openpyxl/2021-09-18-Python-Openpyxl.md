@@ -172,4 +172,7 @@ wb.save("Data.xlsx")
 
 
 ## Result
+![dd2](https://user-images.githubusercontent.com/83929217/135749878-87640f1d-bd36-46ac-8e23-a5b53b653f64.png)
+
+![dd](https://user-images.githubusercontent.com/83929217/135749884-c1a8577d-4846-4700-ae17-dd0a48ae0104.png)
 

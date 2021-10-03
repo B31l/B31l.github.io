@@ -16,6 +16,7 @@ pre.lineno {
   .n   { color: $highlight-foreground; }  /* Name */
   .o   { color: $highlight-foreground; }  /* Operator-연산자 */
   .p   { color: $highlight-foreground; }  /* Punctuation-문장부호 */
+  
   /* 주석 */
   .cm  { color: $highlight-comment; }     /* Comment.Multiline */
   .cp  { color: $highlight-comment; }     /* Comment.Preproc */
@@ -70,7 +71,7 @@ pre.lineno {
   .s2  { color: $highlight-yellow; }      /* Literal.String.Double */
   .se  { color: $highlight-orange; }      /* Literal.String.Escape */
   .sh  { color: $highlight-yellow; }      /* Literal.String.Heredoc */
-  .si  { color: $highlight-orange; }      /* Literal.Strin g.Interpol */
+  .si  { color: $highlight-orange; }      /* Literal.String.Interpol */
   .sx  { color: $highlight-yellow; }      /* Literal.String.Other */
   .sr  { color: $highlight-yellow; }      /* Literal.String.Regex */
   .s1  { color: $highlight-yellow; }      /* Literal.String.Single */

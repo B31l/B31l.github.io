@@ -166,7 +166,7 @@
     }
     .search--dark & {
       // @include clickable($text-color-theme-dark, transparent, $text-color-theme-light, $main-color-theme-dark);
-      @include clickable(#f00, transparent, #0f0, #00f);
+      @include clickable(#FFF, transparent, #000, #FFF);
     }
   }
   &.active {

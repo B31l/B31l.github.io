@@ -15,7 +15,7 @@
 
 .header--dark {
   @extend .text--dark;
-  background: rgba(#fff, .95);
+  background: #fff;
   .navigation__item--active {
     &::after {
       @include split-line(bottom, 4px, $text-color-theme-dark);

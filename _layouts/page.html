@@ -27,8 +27,8 @@ layout: base
   source0=layout.comment source1=page.comment -%}
 {%- assign _comment = __return -%}
 
-<!-- 메모 : 맨위 메뉴 비활성화
-{%- assign _article_header_excerpt_truncate = include.excerpt_truncate | default: 200 -%} -->
+<!-- 메모 : 맨위 메뉴 비활성화 -->
+{%- assign _article_header_excerpt_truncate = include.excerpt_truncate | default: 200 -%}
 
 {%- if page.sidebar -%}
 <div class="layout--page layout--page--sidebar clearfix js-page-root">

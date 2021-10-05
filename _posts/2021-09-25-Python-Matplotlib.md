@@ -1,6 +1,6 @@
 ---
-title: "[Matplotlib] 그래프 그리기"
-tags: Python Matplotlib DataAnalysis
+title: "[DataAnalysis] Matplotlib"
+tags: DataAnalysis Python lib
 ---
 
 

@@ -30,11 +30,11 @@ key: page-about
 
 ## HAM SU JONG
 
-| Work      | Language                      | Link                              |
-| --------- | ----------------------------- | --------------------------------- |
-| ShowVoca  | `python`                      | https://github.com/B31l/ShowVoca  |
-| Shooter   | `python` `pygame`             | https://github.com/B31l/Shooter   |
-| PWstorage | `python` `tkinter` `openpyxl` | https://github.com/B31l/PWstorage |
+| Work      | Language                      | Link                                |
+| --------- | ----------------------------- | ----------------------------------- |
+| ShowVoca  | `python`                      | <https://github.com/B31l/ShowVoca>  |
+| Shooter   | `python` `pygame`             | <https://github.com/B31l/Shooter>   |
+| PWstorage | `python` `tkinter` `openpyxl` | <https://github.com/B31l/PWstorage> |
 
 ---
 

@@ -28,8 +28,6 @@ key: page-about
 
 
 
-## HAM SU JONG
-
 | Work      | Language                      | Link                                |
 | --------- | ----------------------------- | ----------------------------------- |
 | ShowVoca  | `python`                      | <https://github.com/B31l/ShowVoca>  |

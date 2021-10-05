@@ -16,15 +16,7 @@
           {%- endif -%}
         </div>
         {%- if site.search.provider -%}
-          <button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button>
-          <form action="/search">
-            <div class="tipue_search_left">
-              <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
-            </div>
-            <div class="tipue_search_right">
-              <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
-            <div style="clear: both;"></div>
-          </form>
+          <!-- <button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button> -->
         {%- endif -%}
       </div>
       {%- if site.data.navigation.header -%}
@@ -45,6 +37,14 @@
           {%- if site.search.provider -%}
             <li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li>
           {%- endif -%}
+          <form action="/search">
+            <div class="tipue_search_left">
+              <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+            </div>
+            <div class="tipue_search_right">
+              <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+            <div style="clear: both;"></div>
+          </form>
         </ul>
       </nav>
       {%- endif -%}

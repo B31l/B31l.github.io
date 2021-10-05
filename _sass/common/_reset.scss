@@ -149,7 +149,7 @@ code {
 }
 
 // 여기 부분을 추가해줘야 인라인 코드와 블록 코드의 색을 다르게 설정 할수 있다.
-pre, code {
+pre {
   color: #eaeaea; // 블록 코드 색상 변경
 }
 
@@ -181,7 +181,7 @@ input {
 }
 
 blockquote {
-  color: #00F;
+  background-color: #ffb0eb;
 }
 
 

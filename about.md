@@ -14,7 +14,7 @@ titles:
   zh-Hant : &ZH_HANT  關於
   zh-TW   : *ZH_HANT
   zh-HK   : *ZH_HANT
-  ko      : &KO       소개
+  ko      : &KO       About
   ko-KR   : *KO
   fr      : &FR       À propos
   fr-BE   : *FR
@@ -28,6 +28,13 @@ key: page-about
 
 
 
+## HAM SU JONG
 
-소개가 늦었습니다.
+| Work      | Language                      | Link                              |
+| --------- | ----------------------------- | --------------------------------- |
+| ShowVoca  | `python`                      | https://github.com/B31l/ShowVoca  |
+| Shooter   | `python` `pygame`             | https://github.com/B31l/Shooter   |
+| PWstorage | `python` `tkinter` `openpyxl` | https://github.com/B31l/PWstorage |
+
+---
 

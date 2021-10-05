@@ -25,7 +25,18 @@ layout: page
   # @end locale config -->
 ---
 
-<div style="margin-bottom: 50px;    width: 100%;    height: 100%;">
+<div style="width: 100%;    height: 100%;">
+  
+  <div>
+    <form action="/search">
+      <div class="tipue_search_right">
+        <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required>
+      </div>
+      <div style="clear: both;"></div>
+    </form>
+  </div>
+
+  
   <div style="display: flex;    text-align : left;">
 
     <div style="width: 150px;    border-radius: 20px 0px 0px 20px;    margin: 0 auto;    background-color: #1E1E1E;    display:inline-block;">
@@ -35,14 +46,7 @@ layout: page
       <h3 style="color :#ff33cc;">About</h1>
     </div>
   
-    <div>
-      <form action="/search">
-        <div class="tipue_search_right">
-          <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required>
-        </div>
-        <div style="clear: both;"></div>
-      </form>
-    </div>
+
 
 
 

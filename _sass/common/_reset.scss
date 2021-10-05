@@ -132,18 +132,25 @@ a {
   @include link-colors($main-color-1);
 }
 
-blockquote {
-  color: #00F;
-}
+// code {
+//   font-family: map-get($base, font-family-code);
+//   line-height: map-get($base, line-height-sm); // 높이 설정
+//   color: #000; // 인라인 코드 색상 변경
+// }
 
-pre {
-  color: #eaeaea; // 블록 코드 색상 변경
-}
+// pre {
+//   color: #eaeaea; // 블록 코드 색상 변경
+// }
 
 code {
-  font-family: map-get($base, font-family-code);
   line-height: map-get($base, line-height-sm); // 높이 설정
-  color: #000; // 인라인 코드 색상 변경
+  font-weight: map-get($base, font-weight-bold); // 인라인, 블록 코드의 폰트 굵기 변경 가능
+  color: #000; // 인라인 코드의 폰트 색상 변경
+}
+
+// 여기 부분을 추가해줘야 인라인 코드와 블록 코드의 색을 다르게 설정 할수 있다.
+pre, code {
+  color: #eaeaea; // 블록 코드 색상 변경
 }
 
 figure > img {
@@ -171,6 +178,10 @@ input {
   &:focus {
     outline: none;
   }
+}
+
+blockquote {
+  color: #00F;
 }
 
 

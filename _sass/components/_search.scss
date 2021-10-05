@@ -178,8 +178,10 @@
           background-color: $main-color-theme-light;
         }
         .search--dark & {
-          color: $text-color-theme-light;
-          background-color: $main-color-theme-dark;
+          // color: $text-color-theme-light;
+          // background-color: $main-color-theme-dark;
+          color: #FFF;
+          background-color: #000;
         }
       }
       @include active() {

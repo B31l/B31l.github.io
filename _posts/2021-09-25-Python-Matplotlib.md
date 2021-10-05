@@ -1,5 +1,5 @@
 ---
-title: "[DataAnalysis] Matplotlib"
+title: "[Python] Matplotlib"
 tags: DataAnalysis Python lib
 ---
 

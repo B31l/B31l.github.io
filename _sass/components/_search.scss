@@ -13,6 +13,7 @@
   }
 }
 
+// Search
 .search__header {
   margin-top: map-get($spacers, 4);
   font-size: map-get($base, font-size-h1);
@@ -81,16 +82,17 @@
       }
     }
   }
-  & > .search-box__icon-search {
+  & > .search-box__icon-search { // 검색 아이콘
     color: $text-color-l;
     .search--light & {
       color: $text-color-theme-light-l;
     }
     .search--dark & {
-      color: $text-color-theme-dark-l;
+      // color: $text-color-theme-dark-l;
+      color: #FFCC33;
     }
   }
-  & > .search-box__icon-clear {
+  & > .search-box__icon-clear { // X 아이콘
     & > a {
       @include link-colors($text-color);
       .search--light & {

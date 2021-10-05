@@ -1,6 +1,6 @@
+// 메모 : 메인화면 사이드바
 .header {
-  // background: $header-background;
-  background: #ccc;
+  background: $header-background;
   a {
     font-weight: map-get($base, font-weight);
     text-decoration: none !important;
@@ -14,6 +14,7 @@
   }
 }
 
+// 메모 : 포스트 사이드바
 .header--dark {
   @extend .text--dark;
   background: #fff;

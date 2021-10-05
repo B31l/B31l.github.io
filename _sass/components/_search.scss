@@ -13,6 +13,7 @@
   }
 }
 
+// Search 글씨
 .search__header {
   margin-top: map-get($spacers, 4);
   font-size: map-get($base, font-size-h1);
@@ -23,7 +24,7 @@
   }
   .search--dark & {
     // color: $text-color-theme-dark-d;
-    color: #FFCC33;
+    color: #FFCC33;x
   }
   @include media-breakpoint-down(md) {
     display: none;
@@ -81,15 +82,20 @@
       }
     }
   }
+
+  // 검색 아이콘
   & > .search-box__icon-search {
     color: $text-color-l;
     .search--light & {
       color: $text-color-theme-light-l;
     }
     .search--dark & {
-      color: $text-color-theme-dark-l;
+      // color: $text-color-theme-dark-l;
+      color: #FFCC33;
     }
   }
+
+  // X글자
   & > .search-box__icon-clear {
     & > a {
       @include link-colors($text-color);
@@ -137,6 +143,7 @@
   line-height: map-get($base, line-height-sm);
 }
 
+// 검색 결과 POSTS
 .search-result__header {
   margin: map-get($spacers, 3) 0 map-get($spacers, 2) 0;
   font-size: map-get($base, font-size-lg);
@@ -147,7 +154,8 @@
     color: $text-color-theme-light-l;
   }
   .search--dark & {
-    color: $text-color-theme-dark-l;
+    // color: $text-color-theme-dark-l;
+    color: #FFCC33;
   }
 }
 
@@ -174,8 +182,10 @@
           background-color: $main-color-theme-light;
         }
         .search--dark & {
-          color: $text-color-theme-light;
-          background-color: $main-color-theme-dark;
+          // color: $text-color-theme-light;
+          // background-color: $main-color-theme-dark;
+          color: #FFF;
+          background-color: #000;
         }
       }
       @include active() {

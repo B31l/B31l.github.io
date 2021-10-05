@@ -145,7 +145,7 @@ a {
 
 code {
   line-height: map-get($base, line-height-sm); // 높이 설정
-  font-weight: map-get($base, font-weight-bold); // 인라인, 블록 코드의 폰트 굵기 변경 가능
+  // font-weight: map-get($base, font-weight-bold); // 인라인, 블록 코드의 폰트 굵기 변경 가능
   color: #000; // 인라인 코드의 폰트 색상 변경
 }
 

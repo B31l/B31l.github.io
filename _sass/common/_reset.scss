@@ -138,7 +138,7 @@ code {
   color: #000; // 인라인 코드 색상 변경
 }
 
-pre, code {
+pre code {
   font-family: map-get($base, font-family-code);
   color: #eaeaea; // 블록 코드 색상 변경
 }

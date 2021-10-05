@@ -139,6 +139,7 @@
   line-height: map-get($base, line-height-sm);
 }
 
+// Posts
 .search-result__header {
   margin: map-get($spacers, 3) 0 map-get($spacers, 2) 0;
   font-size: map-get($base, font-size-lg);
@@ -149,7 +150,8 @@
     color: $text-color-theme-light-l;
   }
   .search--dark & {
-    color: $text-color-theme-dark-l;
+    // color: $text-color-theme-dark-l;
+    color: #FFCC33;
   }
 }
 

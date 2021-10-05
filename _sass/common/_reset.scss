@@ -142,10 +142,6 @@ a {
 //   color: #eaeaea; // 블록 코드 색상 변경
 // }
 
-// 여기 부분을 추가해줘야 인라인 코드와 블록 코드의 색을 다르게 설정 할수 있다.
-pre, code {
-  color: #eaeaea; // 블록 코드 색상 변경
-}
 
 code {
   line-height: map-get($base, line-height-sm); // 높이 설정

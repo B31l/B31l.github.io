@@ -14,7 +14,7 @@
 }
 
 // Search
-.search__header {
+.search__header { 
   margin-top: map-get($spacers, 4);
   font-size: map-get($base, font-size-h1);
   font-weight: map-get($base, font-weight-bold);
@@ -165,7 +165,8 @@
       @include clickable($text-color-theme-light, transparent, $text-color-theme-dark, $main-color-theme-light);
     }
     .search--dark & {
-      @include clickable($text-color-theme-dark, transparent, $text-color-theme-light, $main-color-theme-dark);
+      // @include clickable($text-color-theme-dark, transparent, $text-color-theme-light, $main-color-theme-dark);
+      @include clickable(#f00, transparent, #0f0, #00f);
     }
   }
   &.active {

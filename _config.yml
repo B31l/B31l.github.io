@@ -217,3 +217,12 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+
+tipue_search:
+  include:
+      pages: false
+      collections: []
+  exclude:
+      files: [search.html, index.html, archive.html]
+      categories: []
+      tags: []

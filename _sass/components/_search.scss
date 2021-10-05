@@ -22,7 +22,8 @@
     color: $text-color-theme-light-d;
   }
   .search--dark & {
-    color: $text-color-theme-dark-d;
+    // color: $text-color-theme-dark-d;
+    color: #FFCC33;
   }
   @include media-breakpoint-down(md) {
     display: none;
@@ -96,7 +97,8 @@
         @include link-colors($text-color-theme-light);
       }
       .search--dark & {
-        @include link-colors($text-color-theme-dark);
+        // @include link-colors($text-color-theme-dark);
+        @include link-colors(#FFCC33);
       }
       cursor: pointer;
     }

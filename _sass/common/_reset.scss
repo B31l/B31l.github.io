@@ -140,7 +140,6 @@ code {
 }
 
 pre {
-  font-family: map-get($base, font-family-code);
   color: #eaeaea; // 블록 코드 색상 변경
 }
 
@@ -172,10 +171,9 @@ input {
   }
 }
 
-// blockquote {
-//   color: #000;
-//   background-color: #CCC;
-// }
+blockquote {
+  color: #00F;
+}
 
 // mermaid
 .mermaidTooltip {

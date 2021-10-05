@@ -132,6 +132,9 @@ a {
   @include link-colors($main-color-1);
 }
 
+blockquote {
+  color: #00F;
+}
 
 code {
   font-family: map-get($base, font-family-code);
@@ -171,9 +174,6 @@ input {
   }
 }
 
-blockquote {
-  color: #00F;
-}
 
 // mermaid
 .mermaidTooltip {

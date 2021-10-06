@@ -41,16 +41,16 @@ pre.lineno {
 
 
   .ld  { color: $highlight-yellow; }      /* Literal.Date */
-  .m   { color: $highlight-purple; }      /* Literal.Number */
+  .m   { color: $highlight-blue; }        /* Literal.Number */
   .s   { color: $highlight-green; }       /* Literal.String */
   .na  { color: $highlight-blue; }        /* Name.Attribute */
   .nb  { color: $highlight-foreground; }  /* Name.Builtin */
-  .nc  { color: $highlight-aqua; }        /* Name.Class-클래스*/
+  .nc  { color: $highlight-aqua; }        /* Name.Class-클래스이름 */
   .no  { color: $highlight-red; }         /* Name.Constant */
   .nd  { color: $highlight-red; }         /* Name.Decorator */
   .ni  { color: $highlight-foreground; }  /* Name.Entity */
   .ne  { color: $highlight-red; }         /* Name.Exception */
-  .nf  { color: $highlight-blue; }        /* Name.Function */
+  .nf  { color: $highlight-blue; }        /* Name.Function-함수이름 */
   .nl  { color: $highlight-foreground; }  /* Name.Label */
   .nn  { color: $highlight-yellow; }      /* Name.Namespace */
   .nx  { color: $highlight-blue; }        /* Name.Other */
@@ -60,10 +60,10 @@ pre.lineno {
   .ow  { color: $highlight-aqua; }        /* Operator.Word*/
   .w   { color: $highlight-foreground; }  /* Text.Whitespace */
   /* 숫자 */
-  .mf  { color: $highlight-purple; }      /* Literal.Number.Float */
-  .mh  { color: $highlight-purple; }      /* Literal.Number.Hex */
-  .mi  { color: $highlight-purple; }      /* Literal.Number.Integer */
-  .mo  { color: $highlight-purple; }      /* Literal.Number.Oct */
+  .mf  { color: $highlight-blue; }        /* Literal.Number.Float */
+  .mh  { color: $highlight-blue; }        /* Literal.Number.Hex */
+  .mi  { color: $highlight-blue; }        /* Literal.Number.Integer */
+  .mo  { color: $highlight-blue; }        /* Literal.Number.Oct */
   /* 문자열 */
   .sb  { color: $highlight-yellow; }      /* Literal.String.Backtick */
   .sc  { color: $highlight-foreground; }  /* Literal.String.Char */

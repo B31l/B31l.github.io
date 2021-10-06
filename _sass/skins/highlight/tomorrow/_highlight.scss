@@ -57,7 +57,7 @@ pre.lineno {
   .py  { color: $highlight-foreground; }  /* Name.Property */
   .nt  { color: $highlight-red; }         /* Name.Tag */
   .nv  { color: $highlight-red; }         /* Name.Variable */
-  .ow  { color: $highlight-aqua; }        /* Operator.Word*/
+  .ow  { color: $highlight-red; }        /* Operator.Word*/
   .w   { color: $highlight-foreground; }  /* Text.Whitespace */
   /* 숫자 */
   .mf  { color: $highlight-blue; }        /* Literal.Number.Float */

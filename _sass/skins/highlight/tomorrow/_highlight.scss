@@ -45,7 +45,7 @@ pre.lineno {
   .s   { color: $highlight-green; }       /* Literal.String */
   .na  { color: $highlight-blue; }        /* Name.Attribute */
   .nb  { color: $highlight-foreground; }  /* Name.Builtin */
-  .nc  { color: $highlight-aqua; }        /* Name.Class-클래스이름 */
+  .nc  { color: $highlight-red; }         /* Name.Class-클래스이름 */
   .no  { color: $highlight-red; }         /* Name.Constant */
   .nd  { color: $highlight-red; }         /* Name.Decorator */
   .ni  { color: $highlight-foreground; }  /* Name.Entity */
@@ -69,9 +69,9 @@ pre.lineno {
   .sc  { color: $highlight-foreground; }  /* Literal.String.Char */
   .sd  { color: $highlight-comment; }     /* Literal.String.Doc */
   .s2  { color: $highlight-yellow; }      /* Literal.String.Double */
-  .se  { color: $highlight-orange; }      /* Literal.String.Escape */
+  .se  { color: $highlight-orange; }      /* Literal.String.Escape-이스케이프코드 */
   .sh  { color: $highlight-yellow; }      /* Literal.String.Heredoc */
-  .si  { color: $highlight-orange; }      /* Literal.String.Interpol */
+  .si  { color: $highlight-orange; }      /* Literal.String.Interpol-문자열포맷팅 */
   .sx  { color: $highlight-yellow; }      /* Literal.String.Other */
   .sr  { color: $highlight-yellow; }      /* Literal.String.Regex */
   .s1  { color: $highlight-yellow; }      /* Literal.String.Single */
@@ -80,5 +80,5 @@ pre.lineno {
   .vc  { color: $highlight-red; }         /* Name.Variable.Class */
   .vg  { color: $highlight-red; }         /* Name.Variable.Global */
   .vi  { color: $highlight-red; }         /* Name.Variable.Instance */
-  .il  { color: $highlight-orange; }      /* Literal.Number.Integer.Long */
+  .il  { color: $highlight-red; }      /* Literal.Number.Integer.Long */
 }

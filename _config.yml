@@ -206,7 +206,7 @@ defaults:
         theme: dark
         background_image: # 포스트 헤더 배경이미지 경로 및 그라데이션 설정
           # src: https://cdn.pixabay.com/photo/2015/12/08/00/30/ocean-1081783_960_720.jpg
-          src: https://pixabay.com/get/gf4df3d134c299fe85ea44d7ba1744c7185b3e0ea243255994a91c5cc1901213df5d6d5b55e5b2307fb26893c71d5ba49.jpg
+          src: https://github.com/B31l/B31l.github.io/blob/master/sunrise-1030592.jpg?raw=true
           gradient: 'linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .0))'
       pageview: true
 

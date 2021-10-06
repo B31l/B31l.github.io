@@ -55,7 +55,7 @@ pre.lineno {
   .nn  { color: $highlight-yellow; }      /* Name.Namespace */
   .nx  { color: $highlight-blue; }        /* Name.Other */
   .py  { color: $highlight-foreground; }  /* Name.Property */
-  .nt  { color: $highlight-aqua; }        /* Name.Tag */
+  .nt  { color: $highlight-red; }        /* Name.Tag */
   .nv  { color: $highlight-red; }         /* Name.Variable */
   .ow  { color: $highlight-aqua; }        /* Operator.Word*/
   .w   { color: $highlight-foreground; }  /* Text.Whitespace */

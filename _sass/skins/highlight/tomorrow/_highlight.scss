@@ -42,7 +42,7 @@ pre.lineno {
 
   .ld  { color: $highlight-yellow; }      /* Literal.Date */
   .m   { color: $highlight-blue; }        /* Literal.Number */
-  .s   { color: $highlight-green; }       /* Literal.String */
+  .s   { color: $highlight-yellow; }       /* Literal.String */
   .na  { color: $highlight-blue; }        /* Name.Attribute */
   .nb  { color: $highlight-foreground; }  /* Name.Builtin */
   .nc  { color: $highlight-red; }         /* Name.Class-클래스이름 */
@@ -80,5 +80,5 @@ pre.lineno {
   .vc  { color: $highlight-red; }         /* Name.Variable.Class */
   .vg  { color: $highlight-red; }         /* Name.Variable.Global */
   .vi  { color: $highlight-red; }         /* Name.Variable.Instance */
-  .il  { color: $highlight-red; }      /* Literal.Number.Integer.Long */
+  .il  { color: $highlight-red; }         /* Literal.Number.Integer.Long */
 }

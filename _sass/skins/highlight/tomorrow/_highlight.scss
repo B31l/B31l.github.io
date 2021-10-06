@@ -11,7 +11,7 @@ pre.lineno {
   background-color: $highlight-background !important;
   .c   { color: $highlight-comment; }     /* Comment-주석 */ 
   .err { color: $highlight-red; }         /* Error-오류 */
-  .k   { color: $highlight-orange; }      /* Keyword-for나 print 같은거*/
+  .k   { color: $highlight-red; }      /* Keyword-for나 print 같은거*/
   .l   { color: $highlight-purple; }      /* Literal */
   .n   { color: $highlight-foreground; }  /* Name */
   .o   { color: $highlight-foreground; }  /* Operator-연산자 */
@@ -80,5 +80,5 @@ pre.lineno {
   .vc  { color: $highlight-red; }         /* Name.Variable.Class */
   .vg  { color: $highlight-red; }         /* Name.Variable.Global */
   .vi  { color: $highlight-red; }         /* Name.Variable.Instance */
-  .il  { color: $highlight-red; }         /* Literal.Number.Integer.Long */
+  .il  { color: $highlight-orange; }      /* Literal.Number.Integer.Long */
 }

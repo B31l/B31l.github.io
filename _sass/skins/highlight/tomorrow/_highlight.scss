@@ -34,7 +34,7 @@ pre.lineno {
   /* 키워드 */
   .kc  { color: $highlight-orange; }      /* Keyword.Constant-상수 */
   .kd  { color: $highlight-orange; }      /* Keyword.Declaration-선언 */
-  .kn  { color: $highlight-aqua; }        /* Keyword.Namespace-C++네임스페이스 */
+  .kn  { color: $highlight-red; }        /* Keyword.Namespace-C++네임스페이스 */
   .kp  { color: $highlight-orange; }      /* Keyword.Pseudo */
   .kr  { color: $highlight-orange; }      /* Keyword.Reserved */
   .kt  { color: $highlight-orange; }      /* Keyword.Type-타입 */
@@ -52,7 +52,7 @@ pre.lineno {
   .ne  { color: $highlight-red; }         /* Name.Exception */
   .nf  { color: $highlight-foreground; }  /* Name.Function-함수이름 */
   .nl  { color: $highlight-foreground; }  /* Name.Label */
-  .nn  { color: $highlight-yellow; }      /* Name.Namespace */
+  .nn  { color: $highlight-foreground; }  /* Name.Namespace-모듈이름인가? */
   .nx  { color: $highlight-foreground; }  /* Name.Other */
   .py  { color: $highlight-foreground; }  /* Name.Property */
   .nt  { color: $highlight-red; }         /* Name.Tag */

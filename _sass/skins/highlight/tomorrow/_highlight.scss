@@ -37,7 +37,7 @@ pre.lineno {
   .kn  { color: $highlight-red; }        /* Keyword.Namespace-C++네임스페이스 */
   .kp  { color: $highlight-red; }      /* Keyword.Pseudo */
   .kr  { color: $highlight-red; }      /* Keyword.Reserved */
-  .kt  { color: $highlight-red; }      /* Keyword.Type-타입 */
+  .kt  { color: $highlight-aqua; }      /* Keyword.Type-타입 */
 
 
   .ld  { color: $highlight-yellow; }      /* Literal.Date */
@@ -50,7 +50,7 @@ pre.lineno {
   .nd  { color: $highlight-foreground; }  /* Name.Decorator */
   .ni  { color: $highlight-foreground; }  /* Name.Entity */
   .ne  { color: $highlight-red; }         /* Name.Exception */
-  .nf  { color: $highlight-foreground; }  /* Name.Function-함수이름 */
+  .nf  { color: $highlight-aqua; }  /* Name.Function-함수이름 */
   .nl  { color: $highlight-foreground; }  /* Name.Label */
   .nn  { color: $highlight-foreground; }  /* Name.Namespace-모듈이름인가? */
   .nx  { color: $highlight-foreground; }  /* Name.Other */

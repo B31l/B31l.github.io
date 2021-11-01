@@ -1,229 +1,79 @@
-## => Site Settings
-##############################
-text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: tomorrow-night-bright # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://B31l.github.io
-baseurl : # does not include hostname
-title   : BELFRY
-description: > # this means to ignore newlines until "Language & timezone"
-  
+# ----
+# Site
 
+title: Aviator
+description: Jekyll template for API documentation.
+url: https://example.com
+google_analytics_key:
+permalink: pretty
+baseurl:
 
-## => Language and Timezone
-##############################
-lang: ko
-timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+# -----
+# Build
 
+timezone: Etc/UTC
 
-## => Author and Social
-##############################
-author:
-  type      : # "person" (default), "organization"
-  name      : B31l
-  url       : https://B31l.github.io
-  avatar    : # path or url of avatar image (square)
-  bio       : Ham Su Jong
-  email     :
-  facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
-  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
-  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
-  googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
-  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
-  medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
-  zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
-  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
-  linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : B31l
-  npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
-
-
-## => GitHub Repository (if the site is hosted by GitHub)
-##############################
-repository: B31l/B31l.github.io
-repository_tree: master
-
-
-## => Paths
-##############################
-paths:
-  root    : # title link url, "/" (default)
-  home    : # home layout url, "/" (default)
-  archive : # "/archive.html" (default)
-  rss     : # "/feed.xml" (default)
-
-
-## => Post
-##############################
-## excerpt
-excerpt_separator: \n\n
-
-## license
-license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
-
-## TOC
-toc:
-  selectors: # "h1,h2,h3" (default)
-
-
-## => Markdown Enhancements
-##############################
-## Mathjax
-mathjax: # false (default), true
-mathjax_autoNumber: # false (default), true
-
-## Mermaid
-mermaid: # false (default), true
-
-## Chart
-chart: # false (default), true
-
-
-## => Paginate
-##############################
-paginate: 10
-paginate_path: /page:num # don't change this unless for special need
-
-
-## => Sources
-##############################
-sources: # bootcdn (default), unpkg
-
-
-## => Sharing
-##############################
-sharing:
-  provider: false # false (default), "addtoany", "addthis", "custom"
-
-  ## AddThis
-  addthis:
-    id: # AddThis pubid, e.g. ra-5xxxxxxxxxxx
-
-
-## => Comments
-##############################
-comments:
-  provider: false # false (default), "disqus", "gitalk", "valine", "custom"
-
-  ## Disqus
-  disqus:
-    shortname: B31l
-
-  ## Gitalk
-  # please refer to https://github.com/gitalk/gitalk for more info.
-  gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
-    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
-
-  ## Valine
-  # please refer to https://valine.js.org/en/ for more info.
-  valine:
-    app_id      : # LeanCloud App id
-    app_key     : # LeanCloud App key
-    placeholder : # Prompt information
-    visitor     : # false (default)
-    meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
-
-
-## => Pageview
-##############################
-pageview:
-  provider: false # false (default), "leancloud", "custom"
-
-  ## Leancloud
-  leancloud:
-    app_id    : # LeanCloud App id
-    app_key   : # LeanCloud App key
-    app_class : # LeanCloud App class
-
-
-## => Search
-##############################
-search:
-  provider: default # "default" (default), false, "google", "custom"
-
-  ## Google Custom Search Engine
-  google:
-    custom_search_engine_id: # Google Custom Search Engine ID
-
-
-## => Analytics
-##############################
-analytics:
-  provider: false # false (default), "google", "custom"
-
-  ## Google Analytics
-  google:
-    tracking_id : # Google Analytics id for the site
-    anonymize_ip: false # Anonymize IP tracking for Analytics
-
-
-## => Build
-##############################
-markdown    : kramdown
-highlighter : rouge
-permalink   : date
+collections:
+  documentation:
+    title: Documentation
+    position_number: 1
+  api:
+    title: APIs
+    position_number: 2
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 exclude:
-  - CHANGELOG.md
-  - HOW_TO_RELEASE.md
-  - Gemfile
-  - Gemfile.lock
+  - readme.md
   - LICENSE
-  - README-*.md
-  - README.md
-  - gulpfile.js
-  - jekyll-text-theme.gemspec
-  - package-lock.json
-  - package.json
-  - /docs
-  - /node_modules
-  - /screenshots
-  - /test
-  - /vendor
 
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
-      type: posts
     values:
-      layout: article
-      sharing: false
-      license: false
-      aside:
-        toc: true
-      show_edit_on_github: false
-      show_subscribe: false
-      key: anything
-      mode: immersive
-      header:
-        theme: dark
-      article_header:
-        type: overlay
-        theme: dark
-        background_image: # 포스트 헤더 배경이미지 경로 및 그라데이션 설정
-          # src: https://cdn.pixabay.com/photo/2015/12/08/00/30/ocean-1081783_960_720.jpg
-          src: https://github.com/B31l/B31l.github.io/blob/master/sunrise-1030592.jpg?raw=true
-          gradient: 'linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .0))'
-      pageview: true
+      layout: default
+  -
+    scope:
+      type: "documentation"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "api"
+    values:
+      _hide_content: true
 
+# -----------
+# CloudCannon
 
-## => Plugins
-##############################
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jemoji
+types:
+  - get
+  - put
+  - delete
+  - post
 
-tipue_search:
-  include:
-      pages: false
-      collections: []
-  exclude:
-      files: [search.html, index.html, archive.html]
-      categories: []
-      tags: []
+languages:
+  bash: Bash
+  c: C
+  css: CSS
+  html: HTML
+  java: Java
+  javascript: JavaScript
+  json: JSON
+  php: PHP
+  python: Python
+  ruby: Ruby
+
+_options:
+  content_markdown:
+    format: p h4 h5 h6
+    bold: true
+    italic: true
+    link: true
+    bulletedlist: true
+    numberedlist: true
+    image: true
+    table: true
+    styles: /css/editor.css

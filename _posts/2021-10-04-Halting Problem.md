@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "💡 Halting Problem"
-categories: Python
-tags: DiscreteMathematics
+categories: Discrete mathematics
+tags: assignment
 author: B31l
 mathjax: true
 ---

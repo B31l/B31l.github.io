@@ -6,7 +6,7 @@ description: Jekyll template for API documentation.
 url: https://B31l.github.io
 google_analytics_key:
 permalink: pretty
-baseurl: _posts
+baseurl: 
 
 # -----
 # Build

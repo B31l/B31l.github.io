@@ -1,7 +1,10 @@
 ---
-title: "[Algorithm] Halting Problem"
-subtitle: "Proof that computers can't do everything"
-tags: Algorithm
+​---
+sectionid: UNIQUE-ID
+sectionclass: h1
+title: TITLE
+is-parent: yes
+​---
 ---
 
 

@@ -1,79 +1,24 @@
-# ----
-# Site
-
-title: Aviator
-description: Jekyll template for API documentation.
-url: https://B31l.github.io
-google_analytics_key:
-permalink: pretty
-baseurl:
-
-# -----
-# Build
-
-timezone: Etc/UTC
-
-collections:
-  documentation:
-    title: Documentation
-    position_number: 1
-  api:
-    title: APIs
-    position_number: 2
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
-exclude:
-  - readme.md
-  - LICENSE
-
+full_rebuild: true
+name: Docster Documentation
+author: DigitalMind
+version: V 1.0
+encoding: utf-8
 defaults:
   -
-    scope:
-      path: ""
     values:
-      layout: default
-  -
-    scope:
-      type: "documentation"
-    values:
-      _hide_content: true
-  -
-    scope:
-      type: "api"
-    values:
-      _hide_content: true
-
-# -----------
-# CloudCannon
-
-types:
-  - get
-  - put
-  - delete
-  - post
-
-languages:
-  bash: Bash
-  c: C
-  css: CSS
-  html: HTML
-  java: Java
-  javascript: JavaScript
-  json: JSON
-  php: PHP
-  python: Python
-  ruby: Ruby
-
-_options:
-  content_markdown:
-    format: p h4 h5 h6
-    bold: true
-    italic: true
-    link: true
-    bulletedlist: true
-    numberedlist: true
-    image: true
-    table: true
-    styles: /css/editor.css
+      layout: "index"
+markdown: kramdown
+kramdown:
+  input: GFM
+relative_permalinks: false
+collections:
+- entries
+sass:
+  sass_dir: _sass
+  style: :compressed
+exclude: [
+.git,
+.gitignore,
+README.md,
+.sass-cache
+]

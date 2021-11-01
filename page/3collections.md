@@ -9,15 +9,15 @@ type: page
 * content
 {:toc}
 
-## 工具
+## 도구
 
 * [box-shadow generator](http://www.cssmatic.com/box-shadow)
 
-    生成 box-shadow 的工具。
+    상자 그림자 생성기
 
 * [gradient-generator](http://www.cssmatic.com/gradient-generator)
 
-    渐变生成器。
+    그래디언트 생성기
 
 * [Ultimate CSS Gradient Generator](http://www.colorzilla.com/gradient-editor/)
 
@@ -45,7 +45,7 @@ type: page
 - [google fonts](https://fonts.google.com/)
   - [Google Fonts 加速代理](https://fengmk2.com/blog/2016/google-fonts-mirror)
 
-## 编程语言
+## 프로그래밍 언어
 
 ### JavaScript
 

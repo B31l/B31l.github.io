@@ -1,10 +1,16 @@
 ---
-title: "[Python] Matplotlib"
-tags: DataAnalysis Python lib
+layout: post
+title:  "📈 Matplotlib로 데이터 그리기"
+categories: Python
+tags: Py Lib
+author: B31l
+mathjax: true
 ---
 
 
 
+* content
+{:toc}
 
 
 

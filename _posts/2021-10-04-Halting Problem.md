@@ -2,7 +2,7 @@
 layout: post
 title:  "💡 Halting Problem"
 categories: Python
-tags: Py Lib
+tags: DiscreteMathematics
 author: B31l
 mathjax: true
 ---

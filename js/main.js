@@ -1,105 +1,57 @@
-jQuery(function() {
-	var $sidebar = $('#sidebar'),
-		$nav = $('.nav'),
-		$main = $('.main');
+/**
+ * some JavaScript code for this blog theme
+ */
+/* jshint asi:true */
 
-	var found = true;
+/////////////////////////header////////////////////////////
+/**
+ * clickMenu
+ */
+(function() {
+  if (window.innerWidth <= 770) {
+    var menuBtn = document.querySelector('#headerMenu')
+    var nav = document.querySelector('#headerNav')
+    menuBtn.onclick = function(e) {
+      e.stopPropagation()
+      if (menuBtn.classList.contains('active')) {
+        menuBtn.classList.remove('active')
+        nav.classList.remove('nav-show')
+      } else {
+        nav.classList.add('nav-show')
+        menuBtn.classList.add('active')
+      }
+    }
+    document.querySelector('body').addEventListener('click', function() {
+      nav.classList.remove('nav-show')
+      menuBtn.classList.remove('active')
+    })
+  }
+}());
 
-	var $el;
+//////////////////////////back to top////////////////////////////
+(function() {
+  var backToTop = document.querySelector('.back-to-top')
+  var backToTopA = document.querySelector('.back-to-top a')
+  // console.log(backToTop);
+  window.addEventListener('scroll', function() {
 
-	$sidebar.find('a').click(function() {
-		$('body').removeClass('nav-open');
-	});
+    // 页面顶部滚进去的距离
+    var scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop)
 
-	$("section > div.highlighter-rouge:first-of-type").each(function(i) {
+    if (scrollTop > 200) {
+      backToTop.classList.add('back-to-top-show')
+    } else {
+      backToTop.classList.remove('back-to-top-show')
+    }
+  })
 
-		var $this = $(this).before("<ul class=\"languages\"></ul>"),
-		$languages = $this.prev(),
-		$notFirst = $this.nextUntil(":not(div.highlighter-rouge)"),
-		$all = $this.add($notFirst);
+  // backToTopA.addEventListener('click',function (e) {
+  //     e.preventDefault()
+  //     window.scrollTo(0,0)
+  // })
+}());
 
-		$all.add($languages).wrapAll("<div class=\"code-viewer\"></div>");
-
-
-		listLanguages($all, $languages);
-
-		$this.css('display', 'block');
-		$notFirst.css('display', 'none');
-
-		$languages.find('a').first().addClass('active');
-
-		$languages.find('a').click(function() {
-			$all.css('display', 'none');
-			$all.eq($(this).parent().index()).css('display', 'block');
-
-			$languages.find('a').removeClass('active');
-			$(this).addClass('active');
-			return false;
-		});
-
-		if ($languages.children().length === 0) {
-			$languages.remove();
-		}
-	});
-
-	function listLanguages($el, $insert) {
-		$el.each(function(i) {
-			var title = $(this).attr('title');
-			if (title) {
-				$insert.append("<li><a href=\"#\">" + title + "</a></li>");
-			}
-		});
-	}
-
-	var href = $('.sidebar a').first().attr("href");
-
-	if (href !== undefined && href.charAt(0) === "#") {
-		setActiveSidebarLink();
-
-		$(window).on("scroll", function(evt) {
-			setActiveSidebarLink();
-		});
-	}
-
-	function setActiveSidebarLink() {
-			$('.sidebar a').removeClass('active');
-				var $closest = getClosestHeader();
-				$closest.addClass('active');
-				document.title = $closest.text();
-
-	}
-});
-
-function getClosestHeader() {
-	var $links = $('.sidebar a'),
-	top = window.scrollY,
-	$last = $links.first();
-
-	if (top < 300) {
-		return $last;
-	}
-
-	if (top + window.innerHeight >= $(".main").height()) {
-		return $links.last();
-	}
-
-	for (var i = 0; i < $links.length; i++) {
-		var $link = $links.eq(i),
-		href = $link.attr("href");
-
-		if (href !== undefined && href.charAt(0) === "#" && href.length > 1) {
-			var $anchor = $(href);
-
-			if ($anchor.length > 0) {
-				var offset = $anchor.offset();
-
-				if (top < offset.top - 300) {
-					return $last;
-				}
-
-				$last = $link;
-			}
-		}
-	}
-	return $last;
-}
+//////////////////////////hover on demo//////////////////////////////
+(function() {
+  var demoItems = document.querySelectorAll('.grid-item')
+}());

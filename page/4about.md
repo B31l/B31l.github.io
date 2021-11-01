@@ -8,8 +8,6 @@ type: page
 
 * content
 {:toc}
-## About
-
 
 
 <img src="https://ghchart.rshah.org/219138/B31l"/>

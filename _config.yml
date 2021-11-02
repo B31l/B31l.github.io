@@ -13,6 +13,7 @@ url: "https://B31l.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
+language: ko
 # other links
 twitter_username:
 facebook_username:

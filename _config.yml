@@ -10,7 +10,6 @@ title: BELFRY
 brief-intro: Rear
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://B31l.github.io" # the base hostname & protocol for your site
-locale: "ko-KR"
 permalink: /:year/:month/:day/:title/
 
 # other links

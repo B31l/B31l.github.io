@@ -2,7 +2,7 @@
 layout: post
 title:  "💡 Halting Problem"
 categories: Discrete_mathematics
-tags: assignment
+tags: Assignment
 author: B31l
 mathjax: true
 ---

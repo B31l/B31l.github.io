@@ -315,7 +315,7 @@ Turing Machine[[1]](https://www.tutorialspoint.com/automata_theory/turing_machin
 
 이제 두 Turing Machine을 서로 연결해 새로운 Turing Machine(이하 HM_3)을 만든다.
 
-HM_1이 Yes를 반환하는 경우
+만약 HM_1이 Yes를 반환하면
 
 1. HM_2는 무한 루프할 것이다.
 1. 따라서, HM_1은 No를 반환할 것이다.

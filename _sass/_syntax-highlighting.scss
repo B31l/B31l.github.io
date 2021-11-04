@@ -46,7 +46,8 @@ $highlight-purple       :#c10aff;
 
 .highlight {
     border-radius: 3px;
-    line-height: 60%;
+    line-height: 100%;
+    font-size: 15px;
     background: #272822;
     .hll { background-color: #272822; }
     .c { color: $highlight-comment } /* Comment */

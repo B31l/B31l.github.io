@@ -1,9 +1,10 @@
 ---
-layout: page
-title: Collections
-permalink: /collection/
-icon: bookmark
-type: page
+layout: post
+title:  "Collections"
+categories: Test
+tags: Js
+author: B31l
+mathjax: true
 ---
 
 * content

@@ -72,9 +72,9 @@ $highlight-purple       :#c10aff;
     .kr { color: $highlight-aqua  } /* Keyword.Reserved */
     .kt { color: $highlight-aqua  } /* Keyword.Type */
 
-    .ld { color: #e6db74 } /* Literal.Date */
-    .m  { color: #ae81ff } /* Literal.Number */
-    .s  { color: #e6db74 } /* Literal.String */
+    .ld { color: $highlight-yellow } /* Literal.Date */
+    .m  { color: $highlight-purple } /* Literal.Number */
+    .s  { color: $highlight-yellow } /* Literal.String */
 
     .na { color: $highlight-foreground } /* Name.Attribute */
     .nb { color: $highlight-foreground } /* Name.Builtin */

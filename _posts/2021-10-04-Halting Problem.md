@@ -73,8 +73,7 @@ def machine_A (num_a, num_b, operator):
 
 ```python
 def machine_C (pieces):
-    result = "Do the best play in player's turn"
-    return result
+    print("Do the best play in player's turn")
 ```
 
 machine_C에 체커판의 배열을 입력하면, 플레이어가 할 수 있는 최적의 수를 출력한다.
@@ -103,7 +102,7 @@ machine_C에 체커판의 배열을 입력하면, 플레이어가 할 수 있는
 > **Out [2]**
 >
 > ```
-> x machine_C (pieces)
+> Do the best play in player's turn
 > ```
 
 ---

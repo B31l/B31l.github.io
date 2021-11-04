@@ -25,6 +25,7 @@ pre {
      > code {
          margin: 0;
          padding: 0;
+        line-height: 80%;
         font-size: 13px;
         color:#d1d1c9;
         border: none;
@@ -101,9 +102,9 @@ $highlight-purple       :#c10aff;
 
     .sb { color: $highlight-yellow } /* Literal.String.Backtick */
     .sc { color: $highlight-yellow } /* Literal.String.Char */
-    .sd { color: $highlight-comment } /* Literal.String.Doc */
+    .sd { color: $highlight-yellow } /* Literal.String.Doc */
     .s2 { color: $highlight-yellow } /* Literal.String.Double */
-    .se { color: $highlight-red  } /* Literal.String.Escape */
+    .se { color: $highlight-yellow } /* Literal.String.Escape */
     .sh { color: $highlight-yellow } /* Literal.String.Heredoc */
     .si { color: $highlight-yellow } /* Literal.String.Interpol */
     .sx { color: $highlight-yellow } /* Literal.String.Other */

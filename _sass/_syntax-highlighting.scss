@@ -1,10 +1,13 @@
 /**
  * Syntax highlighting styles
  */
+ 
+
+ /* <`사용하는 코드> */
 code{
     padding: 1px 4px;
     margin: 0 2px;
-    font-size: 100%;    // <변경> 90 -> 100
+    font-size: 90%;
     border-radius: 3px;
     color: #000;
     background-color: rgba(0, 0, 0, 0.06);
@@ -113,7 +116,7 @@ $highlight-purple       :#cc33ff;
     .vg { color: #f8f8f2 } /* Name.Variable.Global */
     .vi { color: #f8f8f2 } /* Name.Variable.Instance */
     .il { color: #ae81ff } /* Literal.Number.Integer.Long */
-    .gh { } /* Generic Heading & Diff Header */
+    // .gh { } /* Generic Heading & Diff Header */
     .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
     .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
     .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */

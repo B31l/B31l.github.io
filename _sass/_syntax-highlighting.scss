@@ -47,7 +47,7 @@ $highlight-purple       :#cc33ff;
 
     background: #272822;
     .hll { background-color: #272822; }
-    .c { color: #75715e } /* Comment */
+    .c { color: $highlight-comment } /* Comment */
     .err { color: #960050; background-color: #1e0010 } /* Error */
     .k { color: #66d9ef } /* Keyword */
     .l { color: #ae81ff } /* Literal */

@@ -65,12 +65,12 @@ $highlight-purple       :#c10aff;
     .ge { font-style: italic } /* Generic.Emph */
     .gs { font-weight: bold } /* Generic.Strong */
 
-    .kc { color: $highlight-aqua  } /* Keyword.Constant */
-    .kd { color: $highlight-aqua  } /* Keyword.Declaration */
-    .kn { color: #f92672 } /* Keyword.Namespace */
+    .kc { color: $highlight-aqua  } /* Keyword.Constant 상수*/
+    .kd { color: $highlight-aqua  } /* Keyword.Declaration 선언 */
+    .kn { color: $highlight-aqua } /* Keyword.Namespace */
     .kp { color: $highlight-aqua  } /* Keyword.Pseudo */
-    .kr { color: $highlight-aqua  } /* Keyword.Reserved */
-    .kt { color: $highlight-aqua  } /* Keyword.Type */
+    .kr { color: $highlight-aqua  } /* Keyword.Reserved 예악어*/
+    .kt { color: $highlight-aqua  } /* Keyword.Type 타입*/
 
     .ld { color: $highlight-yellow } /* Literal.Date */
     .m  { color: $highlight-purple } /* Literal.Number */

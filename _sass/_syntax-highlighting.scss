@@ -25,8 +25,7 @@ pre {
      > code {
          margin: 0;
          padding: 0;
-        line-height: 60%;
-        font-size: 16px;
+        font-size: 13px;
         color:#d1d1c9;
         border: none;
         background-color: #272822
@@ -47,7 +46,7 @@ $highlight-purple       :#c10aff;
 
 .highlight {
     border-radius: 3px;
-
+    line-height: 60%;
     background: #272822;
     .hll { background-color: #272822; }
     .c { color: $highlight-comment } /* Comment */

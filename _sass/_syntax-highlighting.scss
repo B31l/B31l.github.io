@@ -35,13 +35,13 @@ pre {
 $highlight-background   :#1E1E1E;
 $highlight-foreground   :#f8f8f2;
 $highlight-comment      :#7285b7;
-$highlight-red          :#ff33cc;
+$highlight-red          :#ff3399;
 $highlight-orange       :#a59680;
-$highlight-yellow       :#ffcc33;
+$highlight-yellow       :#ffd50d;
 $highlight-green        :#ccff33;
-$highlight-aqua         :#33ffcc;
+$highlight-aqua         :#4be6fa;
 $highlight-blue         :#33ccff;
-$highlight-purple       :#cc33ff;
+$highlight-purple       :#c10aff;
 
 
 .highlight {
@@ -94,10 +94,10 @@ $highlight-purple       :#cc33ff;
     .ow { color: $highlight-red  } /* Operator.Word */
     .w  { color: $highlight-foreground } /* Text.Whitespace */
 
-    .mf { color: $highlight-blue } /* Literal.Number.Float */
-    .mh { color: $highlight-blue } /* Literal.Number.Hex */
-    .mi { color: $highlight-blue } /* Literal.Number.Integer */
-    .mo { color: $highlight-blue } /* Literal.Number.Oct */
+    .mf { color: $highlight-purple } /* Literal.Number.Float */
+    .mh { color: $highlight-purple } /* Literal.Number.Hex */
+    .mi { color: $highlight-purple } /* Literal.Number.Integer */
+    .mo { color: $highlight-purple } /* Literal.Number.Oct */
 
     .sb { color: $highlight-yellow } /* Literal.String.Backtick */
     .sc { color: $highlight-yellow } /* Literal.String.Char */

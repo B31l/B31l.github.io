@@ -39,8 +39,16 @@ body {
     outline: 1px solid #ccc;
 }
 
-.menu > input {
+.menu > button {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    background-color: blue;
+    
     width: 100px;
-    height: 30px;
+    height: 130px;
     border: 1px solid #333
 }

@@ -12,9 +12,13 @@ type: page
 
 <img src="https://ghchart.rshah.org/219138/B31l"/>
 
+{% include sort.html %}
 
 
 ## Comments
 
 {% include comments.html %}
+
+
+
 

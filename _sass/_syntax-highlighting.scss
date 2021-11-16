@@ -6,6 +6,7 @@
 
 code{   /* <쪼그만 코드> */
     font-family: "Comic Sans";
+    font-weight: bold;
     padding: 1px 4px;
     margin: 0 2px;
     font-size: 110%;
@@ -18,7 +19,7 @@ code{   /* <쪼그만 코드> */
 
 pre {   /* <블록> */
     font-family: "D2coding";
-    font-size: 18px;
+    font-size: 15px;
     margin: 12px 0;
      padding: 8px 12px;
     //  overflow-x: auto;
@@ -28,7 +29,7 @@ pre {   /* <블록> */
      > code {   /* <코드블록> */
          margin: 0;
          padding: 0;
-         font-size: 18px;
+         font-size: 15px;
         color:#d1d1c9;
         border: none;
         background-color: #272822

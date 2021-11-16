@@ -2,6 +2,7 @@
  * Syntax highlighting styles
  */
  
+ @import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
 
  /* <`사용하는 코드> */
 code{
@@ -12,7 +13,8 @@ code{
     color: #000;
     background-color: rgba(0, 0, 0, 0.06);
     border: 1px solid #d7d0d2;
-    font-family: Monaco,Menlo,"Microsoft YaHei Mono",Consolas,"Courier New",monospace,sans-serif;
+    // font-family: Monaco,Menlo,"Microsoft YaHei Mono",Consolas,"Courier New",monospace,sans-serif;
+    font-family: "D2coding";
 }
 
 pre {

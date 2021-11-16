@@ -4,30 +4,30 @@
  
  @import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
 
- /* <`사용하는 코드> */
-code{
+code{   /* <쪼그만 코드> */
+    font-family: "Comic Sans MS";
     padding: 1px 4px;
     margin: 0 2px;
-    font-size: 110%;
+    font-size: 0%;
     border-radius: 3px;
     color: #000;
     background-color: rgba(0, 0, 0, 0.06);
     border: 1px solid #d7d0d2;
     // font-family: Monaco,Menlo,"Microsoft YaHei Mono",Consolas,"Courier New",monospace,sans-serif;
-    font-family: "Comic Sans MS";
 }
 
-pre {
+pre {   /* <블록> */
+    font-family: "Comic Sans MS";
     margin: 12px 0;
      padding: 8px 12px;
     //  overflow-x: auto;
      word-wrap: break-word;      /* IE 5.5-7 */
      white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
      white-space: pre-wrap;      /* current browsers */
-     > code {
+     > code {   /* <코드블록> */
          margin: 0;
          padding: 0;
-        font-size: 13px;
+        font-size: 15px;
         color:#d1d1c9;
         border: none;
         background-color: #272822

@@ -80,13 +80,13 @@ $highlight-purple       :#8E59D7;
     .ow { color: $highlight-red } /* Operator.Word */
 
     /* 키워드 */ 
-    .k { color: $highlight-red }    /* Keyword */
-    .kc { color: $highlight-red }   /* Keyword.Constant 상수*/
-    .kd { color: $highlight-red }   /* Keyword.Declaration 선언 */ // ex: function, let, const
-    .kn { color: $highlight-red }   /* Keyword.Namespace */
-    .kp { color: $highlight-red }   /* Keyword.Pseudo */
-    .kr { color: $highlight-red }   /* Keyword.Reserved 예악어*/
-    .kt { color: $highlight-red }   /* Keyword.Type 타입*/
+    .k  { color: $highlight-red } /* Keyword */
+    .kc { color: $highlight-red } /* Keyword.Constant 상수*/
+    .kd { color: $highlight-red } /* Keyword.Declaration 선언 */ // ex: function, let, const
+    .kn { color: $highlight-red } /* Keyword.Namespace */
+    .kp { color: $highlight-red } /* Keyword.Pseudo */
+    .kr { color: $highlight-cyan } /* Keyword.Reserved 예악어*/
+    .kt { color: $highlight-red } /* Keyword.Type 타입*/
     
     /* 이름 */ 
     .n  { color: $highlight-foreground } /* Name */

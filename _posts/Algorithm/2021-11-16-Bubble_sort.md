@@ -7,16 +7,8 @@ author: B31l
 mathjax: true
 ---
 
-
-
 * content
 {:toc}
-
-
-
-
-___
-
 Stable한 n^2 알고리즘
 
 ___

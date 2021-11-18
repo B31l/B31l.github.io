@@ -7,12 +7,7 @@
 .clearfix {
     *zoom: 1;
 }
-.baam {
-    background-image: url("/sunrise.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .page {
     width: 1140px;
     box-sizing: border-box;
@@ -26,14 +21,20 @@
         font-size: 16px;
         background-color: #f8f8fd;
         box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
-        >h1 {
-            padding: 150px 0px;
-            margin-bottom: -15px;
-            text-align: center;
-            font-size: 40px;
-            font-weight: bolder;
-
+        .baam {
+            background-image: url("/sunrise.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            >h1 {
+                padding: 150px 0px;
+                margin-bottom: -15px;
+                text-align: center;
+                font-size: 40px;
+                font-weight: bolder;
+            }
         }
+
         a:not([title]){
             word-break: break-all;
         }

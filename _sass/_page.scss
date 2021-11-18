@@ -7,6 +7,12 @@
 .clearfix {
     *zoom: 1;
 }
+.baam {
+    background-image: url("/sunrise.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .page {
     width: 1140px;
     box-sizing: border-box;
@@ -26,10 +32,7 @@
             text-align: center;
             font-size: 40px;
             font-weight: bolder;
-            background-image: url("/sunrise.jpg");
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
+
         }
         a:not([title]){
             word-break: break-all;

@@ -27,8 +27,9 @@
             font-size: 40px;
             font-weight: bolder;
             background-image: url("/sunrise.jpg");
-            background-size: cover;
+            background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover;
         }
         a:not([title]){
             word-break: break-all;

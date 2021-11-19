@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "💎 Function in JavaScript"
+title:  "💎 Event Listener"
 categories: Note
 tags: JavaScript
 author: B31l

@@ -2,7 +2,7 @@
 layout: post
 title:  "Collections"
 categories: Test
-tags: Js
+tags: JavaScript
 author: B31l
 mathjax: true
 ---

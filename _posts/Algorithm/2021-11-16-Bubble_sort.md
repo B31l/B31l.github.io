@@ -2,7 +2,7 @@
 layout: post
 title:  "🍺 버블 정렬"
 categories: Algorithm
-tags: Python Js	
+tags: Python JavaScript
 author: B31l
 mathjax: true
 ---

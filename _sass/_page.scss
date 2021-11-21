@@ -31,11 +31,14 @@
                 position: relative;
                 background-color: #333;
                 .label-image {
-                    opacity: 0.5;
+                    opacity: 0.5;   
                     transition: .5s ease;
                 }
                 .label-title {
                     position: absolute;
+                    text-align: center;
+                    font-size: 40px;
+                    font-weight: bolder;
                 }
                 // >h1 {
                 //     padding: 150px 0px;

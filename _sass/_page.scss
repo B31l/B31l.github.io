@@ -22,32 +22,19 @@
         background-color: #f8f8fd;
         box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
         .front {
-            background-image: url("/img/sunrise.jpg");
+            background-image: url({{page.image});
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-
+            >h1 {
+                padding: 150px 0px;
+                margin-bottom: -15px;
+                text-align: center;
+                font-size: 40px;
+                font-weight: bolder;
+            }
             .label {
-                position: relative;
                 background-color: #333;
-                .label-image {
-                    opacity: 0.5;   
-                }
-                .label-title {
-                    position: absolute;
-                    margin: 80px 0px; 
-                    color: #ccc;
-                    text-align: center;
-                    font-size: 40px;
-                    font-weight: bolder;
-                }
-                // >h1 {
-                //     padding: 150px 0px;
-                //     margin-bottom: -15px;
-                //     text-align: center;
-                //     font-size: 40px;
-                //     font-weight: bolder;
-                // }
             }
         }
         a:not([title]){

@@ -8,6 +8,7 @@
         .label-card {
             float: left;
             margin-right: 15px;
+            color: #ffcc33;
             .point {
                 padding: 0 10px;
                 color: #9d9d9d;
@@ -19,7 +20,8 @@
         }
     }
     a {
-        color: #4d6dad;
+        // color: #4d6dad;
+        color: #33ccff;
         transition: 0.5s ease;
         &:hover {
             color: #223253;

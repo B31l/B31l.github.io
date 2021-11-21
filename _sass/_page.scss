@@ -52,13 +52,12 @@
                     display: inline-block;
                     width: 135px;
                 }
-                .title {
+                .title {                    // 그 Tags Categories Archives에 보이는거
                     font-weight: bold;
-                    // color: #223253;
-                    color: #ccc;
+                    color: #223253;
                     transition: 0.3s ease;
-                    &:hover {
-                        color: #ffcc33;
+                    &:hover {               // 마우스 갖다대면 변하는 색
+                        color: #4d6dad;
                     }
                 }
                 i {

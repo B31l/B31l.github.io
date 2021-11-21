@@ -23,6 +23,8 @@ pre {   /* <블록> */
     font-size: 15px;
     margin: 12px 0;
     padding: 8px 12px;
+
+     max-width: 800px;
      overflow-x: scroll !important;
      word-wrap: break-word;      /* IE 5.5-7 */
      white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */

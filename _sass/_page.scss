@@ -30,7 +30,10 @@
             .label {
                 position: relative;
                 background-color: #333;
-
+                .label-image {
+                    opacity: 0.5;
+                    transition: .5s ease;
+                }
                 .label-title {
                     position: absolute;
                 }

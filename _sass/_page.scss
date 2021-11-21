@@ -29,7 +29,6 @@
 
             .title >h1 {
                 position: absolute;
-                z-index: 1
                 // padding: 150px 0px;
                 margin-bottom: -15px;
                 text-align: center;
@@ -38,7 +37,6 @@
             }
             .label {
                 position: relative;
-                z-index: 2;
                 background-color: #333;
 
                 .label-image {

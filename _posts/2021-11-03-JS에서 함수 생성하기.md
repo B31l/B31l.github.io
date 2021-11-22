@@ -5,6 +5,7 @@ categories: Note
 tags: JavaScript
 author: B31l
 mathjax: true
+image: "/img/js.png"
 ---
 
 

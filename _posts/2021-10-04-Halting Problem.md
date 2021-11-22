@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "💡 Halting Problem"
+author: B31l
 categories: Discrete_mathematics
 tags: Assignment
-author: B31l
+comments: true
 mathjax: true
 ---
 

@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "💎 Event Listener"
+author: B31l
 categories: Note
 tags: JavaScript
-author: B31l
+comments: true
 mathjax: true
 ---
 

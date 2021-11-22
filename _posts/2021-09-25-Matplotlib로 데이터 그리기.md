@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "📈 Matplotlib로 데이터 그리기"
+author: B31l
 categories: Library
 tags: Python
-author: B31l
+comments: true
 mathjax: true
 ---
 

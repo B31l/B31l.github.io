@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Collections"
+author: B31l
 categories: Test
 tags: JavaScript
-author: B31l
+comments: true
 mathjax: true
 ---
 

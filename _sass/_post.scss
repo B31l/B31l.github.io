@@ -53,27 +53,17 @@
                 float: right;
                 text-align: right;
             }
-            p {
-                min-height: 70px;
-                box-sizing: border-box;
-                padding: 10px;
-                background-color: #333;
-                color: #ffcc33;
-                text-align: center;
-                box-shadow: 0 0 4px 0px rgba(0,0,0,0.15);
-            }
             button {
                 min-height: 70px;
                 box-sizing: border-box;
                 padding: 10px;
                 background-color: #eee;
-                border: 2px solid #333;
+                border: 2px solid #ff33cc;
                 text-align: center;
                 box-shadow: 0 0 4px 0px rgba(0,0,0,0.15);
             }
             button:hover {
                 background-color: #333;
-                border: 2px solid #eee;
                 color: #ffcc33;
             }
 

@@ -2,9 +2,9 @@
 
     <div class="pre">
         {% if page.previous %}
-        <p>
-            <strong> &lt </strong><br> <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a>
-        </p>
+            <button onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
+                <strong> &gt </strong><br> {{ page.previous.title }}
+            </button>
         {% endif %}
     </div>
 

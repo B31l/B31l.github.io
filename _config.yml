@@ -27,7 +27,7 @@ description_footer: H.S.J
 # comments
 # two ways to comment, only choose one, and use your own short name
 duoshuo_shortname: #hygblog
-disqus_shortname: 'B31l'
+disqus_shortname: 'B31l.github.io'
 
 # statistic analysis
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
@@ -58,5 +58,3 @@ paginate: 10
 
 plugins:
   - jekyll-paginate
-  
-Disqus discus-identifier: B31l-github-io # add your discus identifier

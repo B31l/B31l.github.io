@@ -62,6 +62,15 @@
                 text-align: center;
                 box-shadow: 0 0 4px 0px rgba(0,0,0,0.15);
             }
+            a {
+                min-height: 70px;
+                box-sizing: border-box;
+                padding: 10px;
+                background-color: #333;
+                color: #ffcc33;
+                text-align: center;
+                box-shadow: 0 0 4px 0px rgba(0,0,0,0.15);
+            }
         }
     }
 }

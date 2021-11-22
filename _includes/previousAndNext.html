@@ -10,9 +10,9 @@
 
     <div class="nex">
         {% if page.next %}
-        <p>
-            <strong> &gt </strong><br> <a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a>
-        </p>
+            <a href="{{ page.next.url | prepend: site.baseurl }}">
+                <strong> &gt </strong><br> {{ page.next.title }}
+            </a>
         {% endif %}
     </div>
     

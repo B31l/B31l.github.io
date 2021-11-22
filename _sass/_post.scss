@@ -40,30 +40,26 @@
             }
         }
         .post-recent {
-            background-color: #333;
             width: 100%;
             overflow: hidden;
             padding: 4px;
             .pre {
                 width: 49%;
-                float: left;
-            }
-            .pre:hover {
-                color: #ffcc33;
+                float: left;   
+                text-align: right;      
             }
             .nex{
                 width: 49%;
                 float: right;
                 text-align: right;
             }
-            .nex:hover {
-                color: #ffcc33;
-            }
             p {
                 min-height: 70px;
                 box-sizing: border-box;
                 padding: 10px;
-                background-color: #fff;
+                background-color: #333;
+                color: #ffcc33;
+                text-align: center;
                 box-shadow: 0 0 4px 0px rgba(0,0,0,0.15);
             }
         }

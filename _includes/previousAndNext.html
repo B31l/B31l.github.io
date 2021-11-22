@@ -10,9 +10,10 @@
 
     <div class="nex">
         {% if page.next %}
-            <a href="{{ page.next.url | prepend: site.baseurl }}">
+            <button onClick="location.href='{{ page.next.url | prepend: site.baseurl }}'">
+            <!-- href="{{ page.next.url | prepend: site.baseurl }}"> -->
                 <strong> &gt </strong><br> {{ page.next.title }}
-            </a>
+            </button> 
         {% endif %}
     </div>
     

@@ -6,8 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: BELFRY
-brief-intro: Rear
+locale                    : "ko-KR"
+title                     : "BELFRY"
+brief-intro               : "NULL"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://B31l.github.io" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title/

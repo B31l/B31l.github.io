@@ -3,7 +3,7 @@
     <div class="pre">
         {% if page.previous %}
             <button onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
-                <strong> &gt </strong><br> {{ page.previous.title }}
+                <strong> &lt </strong><br> {{ page.previous.title }}
             </button>
         {% endif %}
     </div>

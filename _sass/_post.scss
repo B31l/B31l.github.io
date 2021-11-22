@@ -43,14 +43,22 @@
             width: 100%;
             overflow: hidden;
             padding: 4px;
-            .pre{
+            .pre {
                 width: 49%;
                 float: left;
+            }
+            .pre:hover {
+                background-color: #333;
+                color: #ffcc33;
             }
             .nex{
                 width: 49%;
                 float: right;
                 text-align: right;
+            }
+            .nex:hover {
+                background-color: #333;
+                color: #ffcc33;
             }
             p {
                 min-height: 70px;

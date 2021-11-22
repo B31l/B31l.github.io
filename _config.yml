@@ -59,3 +59,4 @@ paginate: 10
 plugins:
   - jekyll-paginate
   
+Disqus discus-identifier: B31l-github-io # add your discus identifier

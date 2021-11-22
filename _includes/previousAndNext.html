@@ -2,13 +2,13 @@
 
     <div class="pre">
         {% if page.previous %}
-        <p><strong>Prev </strong> <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a></p>
+        <p><strong> &lt </strong> <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a></p>
         {% endif %}
     </div>
 
     <div class="nex">
         {% if page.next %}
-        <p><strong>Next </strong> <a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a></p>
+        <p><strong> &gt </strong> <a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a></p>
         {% endif %}
     </div>
     

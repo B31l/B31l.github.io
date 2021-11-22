@@ -59,12 +59,13 @@
                 box-sizing: border-box;
                 padding: 5px;
                 background-color: #eee;
-                border: 2px solid #ff33cc;
+                border: 2px solid #4FC1E4;
                 text-align: center;
                 box-shadow: 0 0 4px 0px rgba(0,0,0,0.15);
             }
             button:hover {
-                background-color: #ff33cc;
+                background-color: #4FC1E4;
+                transform:scale(1.1)
             }
 
         }

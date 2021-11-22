@@ -27,17 +27,15 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            >h1 {
+                padding: 150px 0px;
+                margin-bottom: -15px;
+                text-align: center;
+                font-size: 40px;
+                font-weight: bolder;
+            }
             .label {
                 background-color: #333;
-                >h1 {
-                    padding: 150px 0px;
-                    margin-bottom: -15px;
-                    text-align: center;
-                    font-size: 40px;
-                    font-weight: bolder;
-                }
-            }
-        }
 
         a:not([title]){
             word-break: break-all;

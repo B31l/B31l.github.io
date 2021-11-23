@@ -14,12 +14,20 @@
      */
   var demoContent = [
     {
-    	demo_link: 'https://b31l.github.io/bubble/',
+    	demo_link: 'https://b31l.github.io/bubble_sort/',
     	img_link: 'https://ooo.0o0.ooo/2016/11/24/5836d81f48cd2.png',
-    	code_link: 'https://b31l.github.io/bubble/',
+    	code_link: 'https://b31l.github.io/bubble_sort/',
       title: '버블 정렬',
       core_tech: 'JavaScript',
       description: '자바스크립트를 사용한 버블 정렬 구현'
+    }, 
+    {
+    	demo_link: 'https://b31l.github.io/sort/',
+    	img_link: 'https://ooo.0o0.ooo/2016/11/24/5836d81f48cd2.png',
+    	code_link: 'https://b31l.github.io/sort/',
+      title: '정렬 알고리즘 시각화',
+      core_tech: 'JavaScript',
+      description: '버블 정렬, 선택 정렬, 삽입 정렬, 합병 정렬, 퀵 정렬을 막대 그래프의 이동으로 시각화'
     }, 
     // {
     //   demo_link: 'https://codepen.io/haoyang/pen/jrvrQq',
@@ -179,14 +187,25 @@ function contentInit(content) {
   //     htmlArr.push('</h3>')
   //     htmlArr.push('<p>主要技术：'+content[i].core_tech+'</p>')
   //     htmlArr.push('<p>'+content[i].description)
-  //     htmlArr.push('<a href="'+content[i].code_link+'">源代码 <i class="fa fa-code" aria-hidden="true"></i></a>')
+  //     htmlArr.push('<a href="'+content[i].code_link+'">소스 코드 <i class="fa fa-code" aria-hidden="true"></i></a>')
   //     htmlArr.push('</p>')
   //     htmlArr.push('</div>')
   // }
   // var htmlStr = htmlArr.join('')
   var htmlStr = ''
   for (var i = 0; i < content.length; i++) {
-    htmlStr += '<div class="grid-item">' + '   <a class="a-img" href="' + content[i].demo_link + '">' + '       <img src="' + content[i].img_link + '">' + '   </a>' + '   <h3 class="demo-title">' + '       <a href="' + content[i].demo_link + '">' + content[i].title + '</a>' + '   </h3>' + '   <p>主要技术：' + content[i].core_tech + '</p>' + '   <p>' + content[i].description + '       <a href="' + content[i].code_link + '">源代码 <i class="fa fa-code" aria-hidden="true"></i></a>' + '   </p>' + '</div>'
+    htmlStr += '<div class="grid-item">' + 
+                '   <a class="a-img" href="' + 
+                content[i].demo_link + '">' + 
+                '       <img src="' + content[i].img_link + '">' + 
+                '   </a>' + '   <h3 class="demo-title">' + 
+                '       <a href="' + content[i].demo_link + '">' + 
+                content[i].title + '</a>' + '   </h3>' + 
+                '   <p>主要技术：' + content[i].core_tech + 
+                '</p>' + '   <p>' + content[i].description + 
+                '       <a href="' + content[i].code_link + '">소스 코드 <i class="fa fa-code" aria-hidden="true"></i></a>' + 
+                '   </p>' + 
+                '</div>'
   }
   var grid = document.querySelector('.grid')
   grid.insertAdjacentHTML('afterbegin', htmlStr)

@@ -15,7 +15,7 @@
   var demoContent = [
     {
     	demo_link: 'https://b31l.github.io/bubble_sort/',
-    	img_link: 'https://ooo.0o0.ooo/2016/11/24/5836d81f48cd2.png',
+    	img_link: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png',
     	code_link: 'https://b31l.github.io/bubble_sort/',
       title: '버블 정렬',
       core_tech: 'JavaScript',
@@ -23,7 +23,7 @@
     }, 
     {
     	demo_link: 'https://b31l.github.io/sort/',
-    	img_link: 'https://ooo.0o0.ooo/2016/11/24/5836d81f48cd2.png',
+    	img_link: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png',
     	code_link: 'https://b31l.github.io/sort/',
       title: '정렬 알고리즘 시각화',
       core_tech: 'JavaScript',
@@ -201,7 +201,7 @@ function contentInit(content) {
                 '   </a>' + '   <h3 class="demo-title">' + 
                 '       <a href="' + content[i].demo_link + '">' + 
                 content[i].title + '</a>' + '   </h3>' + 
-                '   <p>主要技术：' + content[i].core_tech + 
+                '   <p>주요 기술：' + content[i].core_tech + 
                 '</p>' + '   <p>' + content[i].description + 
                 '       <a href="' + content[i].code_link + '">소스 코드 <i class="fa fa-code" aria-hidden="true"></i></a>' + 
                 '   </p>' + 

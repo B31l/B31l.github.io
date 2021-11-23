@@ -160,7 +160,7 @@
                 padding-left: 15px;             // 20 -> 15
             }
             li {
-                display: block;
+                box-sizing: border-box;
                 margin-bottom: 1px;
                 border-bottom: 1px solid #999;  // 선 긋기
             }

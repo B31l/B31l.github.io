@@ -156,11 +156,11 @@
             line-height: 1.8;
             padding-left: 15px;                 // 35 -> 15
             ul {
-                display: block;
                 list-style: none;   // 점 빼기
                 padding-left: 15px;             // 20 -> 15
             }
             li {
+                display: block;
                 margin-bottom: 1px;
                 border-bottom: 1px solid #999;  // 선 긋기
             }

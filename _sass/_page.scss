@@ -162,6 +162,9 @@
             }
             li {
                 border-bottom: 1px solid #999;  // 선 긋기
+                a {
+                    display: block;
+                }
             }
             li:hover {
                 background-color: #4FC1E4;

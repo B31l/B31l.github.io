@@ -118,6 +118,7 @@
             position: absolute;
             bottom: 190px;
         }
+        // 사이드바
         .side {
             box-sizing: border-box;
             background-color: #f8f8fd;
@@ -131,6 +132,7 @@
             -moz-hyphens: auto;
             -ms-hyphens: auto;
             hyphens: auto;
+            // Table Of Contents 글자
             >div {
                 padding: 12px 15px;
 
@@ -148,12 +150,14 @@
             }
         }
         .content-ul {
+            list-style: none;   // 점 빼기
+            border-bottom: 1px solid #333;  // 선 긋기
             overflow-y: auto;
             padding-right: 10px;
             line-height: 1.8;
-            padding-left: 35px;
+            padding-left: 15px;                 // 35 -> 15
             ul {
-                padding-left: 20px;
+                padding-left: 15px;             // 20 -> 15
             }
         }
     }

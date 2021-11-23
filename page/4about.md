@@ -8,6 +8,8 @@ type: page
 
 * content
 {:toc}
+![](/img/sunrise.jpg)
+
 
 
 <img src="https://ghchart.rshah.org/219138/B31l"/>

@@ -195,16 +195,15 @@ function contentInit(content) {
   var htmlStr = ''
   for (var i = 0; i < content.length; i++) {
     htmlStr += '<div class="grid-item">' + 
-                '   <a class="a-img" href="' + 
-                content[i].demo_link + '">' + 
+                '   <a class="a-img" href="' + content[i].demo_link + '">' + 
                 '       <img src="' + content[i].img_link + '">' + 
-                '   </a>' + '   <h3 class="demo-title">' + 
-                '       <a href="' + content[i].demo_link + '">' + 
-                content[i].title + '</a>' + '   </h3>' + 
-                '   <p>주요 기술：' + content[i].core_tech + 
-                '</p>' + '   <p>' + content[i].description + 
-                '       <a href="' + content[i].code_link + '">소스 코드 <i class="fa fa-code" aria-hidden="true"></i></a>' + 
-                '   </p>' + 
+                '   </a>' + 
+                '   <h3 class="demo-title">' + 
+                '       <a href="' + content[i].demo_link + '">' + content[i].title + '</a>' + 
+                '   </h3>' + 
+                '   <p>주요 기술：' + content[i].core_tech + '</p>' + 
+                '   <p>' + content[i].description + '   </p>' + 
+                // '       <a href="' + content[i].code_link + '">소스 코드 <i class="fa fa-code" aria-hidden="true"></i></a>' + 
                 '</div>'
   }
   var grid = document.querySelector('.grid')

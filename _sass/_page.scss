@@ -1,3 +1,5 @@
+@import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
+
 .clearfix:after {
     content: "\200B";
     display: block;
@@ -23,20 +25,22 @@
         box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
         
         .front {
+            font-family: "D2coding";
+            border-top: 3px sold #333;
             // background-image: url("/img/sunrise.jpg");
             // background-position: center center;
             // background-repeat: no-repeat;
             // background-size: cover;
-            border-top: 1px sold #333;
             .postTitle {
                 padding: 150px 0px;
                 margin-bottom: -15px;
+                
+                font-size: 2rem;
                 text-align: center;
-                font-size: 40px;
                 font-weight: bolder;
             }
             .postSubtitle {
-                font-size: 32px;
+                font-size: 1rem;
             }
             .label {
                 background-color: #333;

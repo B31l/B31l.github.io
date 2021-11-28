@@ -16,8 +16,13 @@
     box-sizing: border-box;
     margin: 0 auto;
     // word-break: break-all;
+    .preleft {
+        width: 15%;
+        float: left;
+        padding: 20px 30px;
+    }
     .left {
-        width: 75%;
+        width: 70%;
         float: left;
         padding: 20px 30px;
         line-height: 1.6;
@@ -114,7 +119,7 @@
     }
     .right {
         float: left;
-        width: 25%;
+        width: 15%;
         padding-left: 20px;
         top: 0;
         .fixed {

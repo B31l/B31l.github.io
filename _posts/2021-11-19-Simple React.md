@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "💍 Simple React"
+title: "💍 Simple React"
 meta: "간단 리액트"
 author: B31l
 categories: Note

@@ -11,17 +11,15 @@ layout: default
             {% for post in paginator.posts %}
               <li>
                 <!-- 포스트 제목 -->
-                <div class="postTitle">
+                <h2>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
 
-                  <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-
-                </div>
                 <!-- 포스트 부제 -->
-                <div class="postSubtitle">
-
-                    {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}{% endif %}
-
+                <div class="label-card">
+                  {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}{% endif %}
                 </div>
+                
                 <!-- 포스트 라벨 -->
                 <div class="label">
                     <!-- 날짜 -->

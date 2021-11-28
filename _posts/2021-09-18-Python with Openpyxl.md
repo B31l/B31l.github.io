@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "📗 Openpyxl로 엑셀 다루기"
+title:  "📗 Python with Openpyxl"
+meta: "Openpyxl로 엑셀 다루기"
 author: B31l
 categories: Library
 tags: Python

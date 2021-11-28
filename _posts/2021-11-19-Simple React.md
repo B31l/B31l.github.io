@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "💍 간단 리액트"
+title:  "💍 Simple React"
+meta: "간단 리액트"
 author: B31l
 categories: Note
 tags: JavaScript

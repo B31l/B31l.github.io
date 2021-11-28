@@ -30,7 +30,7 @@ def bubble_sort(arr):
 n = len(arr)
 for i in range(n-1):
 	for j in range(n-1, i, -1):
-   		if arr[j-1] > arr[j]:
+		if arr[j-1] > arr[j]:
 			arr[j-1], arr[j] = arr[j], arr[j-1]
 ```
 
@@ -40,10 +40,10 @@ for i in range(n-1):
 function bubble_sort(arr) {
 const n = arr.length;
 for (let i=0; i<n-1; i++) {
-    for (let j=n-1; j>i; j--) {
-       if (arr[j-1] > arr[j]) {
-            [arr[j-1], arr[j]] = [arr[j], arr[j-1]];
-       }
+	for (let j=n-1; j>i; j--) {
+		if (arr[j-1] > arr[j]) {
+			[arr[j-1], arr[j]] = [arr[j], arr[j-1]];
+		}
 	}
 }
 ```

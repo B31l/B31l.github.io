@@ -1,3 +1,5 @@
+@import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
+
 #markdown-toc {
     display: none;
 }
@@ -58,9 +60,10 @@
                 min-height: 45px;
                 box-sizing: border-box;
                 padding: 5px;
-                background-color: #eee;
+                background-color: #fff;
                 border: 2px solid #4FC1E4;
                 text-align: center;
+                font-family: "D2coding";
                 box-shadow: 0 0 4px 0px rgba(0,0,0,0.15);
 
                 font-size: 1rem;
@@ -68,8 +71,8 @@
             }
             button:hover {
                 background-color: #4FC1E4;
-                border: 2px solid #33ccff;
-                transform:scale(1.1)
+                // transform:scale(1.1)
+                color: #fff
             }
 
         }

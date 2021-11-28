@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "💎 Function in JavaScript"
-meta: "자바스크립트에서 함수 사용하기"
+meta: " 자바스크립트에서 함수 사용하기"
 author: B31l
 categories: Note
 tags: JavaScript

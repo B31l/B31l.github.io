@@ -13,8 +13,6 @@ mathjax: true
 
 * content
 {:toc}
----
-
 # 개요
 
 

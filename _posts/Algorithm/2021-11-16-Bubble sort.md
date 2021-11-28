@@ -9,10 +9,10 @@ comments: true
 mathjax: true
 ---
 
+
+
 * content
 {:toc}
-___
-
 # 개요
 
 <iframe width="375px" height="325px" src="https://b31l.github.io/bubble_sort/" frameborder="0"></iframe>

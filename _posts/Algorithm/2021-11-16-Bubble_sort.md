@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "🍺 버블 정렬"
+title: "Bubble Sort"
+meta: "🍺 버블 정렬"
 author: B31l
 categories: Algorithm
 tags: Python JavaScript

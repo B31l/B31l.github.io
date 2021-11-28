@@ -26,7 +26,7 @@
         
         .front {
             font-family: "D2coding";
-            border-top: 3px sold #333;
+            border-top: 3px solid #333;
             border-bottom: 3px solid #333;
             border-radius: 25px;
             // background-image: url("/img/sunrise.jpg");
@@ -35,8 +35,6 @@
             // background-size: cover;
             .postTitle {
                 padding: 15px 0px;
-                margin-bottom: -15px;
-
                 font-size: 2rem;
                 font-weight: bolder;
             }
@@ -44,7 +42,9 @@
                 font-size: 1rem;
             }
             .label {
+                display: inline-block;
                 background-color: #f5f5f5;
+                font-size: 1rem;
             }
         }
 

@@ -10,27 +10,36 @@ layout: default
         <ul>
             {% for post in paginator.posts %}
               <li>
-                <h2>
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
+                <!-- 포스트 제목 -->
+                <div class="postTitle">
+
+                  <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+
+                </div>
+                <!-- 포스트 부제 -->
+                <div class="postSubtitle">
+
+                    {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}{% endif %}
+
+                </div>
+                <!-- 포스트 라벨 -->
                 <div class="label">
+                    <!-- 날짜 -->
                     <div class="label-card">
                         <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
                     </div>
+                    <!-- 작성자 -->
                     <div class="label-card">
                         {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}
                         {% endif %}
                     </div>
+                    <!-- 카테고리 -->
                     <div class="label-card">
-                        {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
+                      {% include category.html %}
                     </div>
-
+                    <!-- 태그 -->
                     <div class="label-card">
-                    {% include category.html %}
-                    </div>
-
-                    <div class="label-card">
-                    {% include tag.html %}
+                      {% include tag.html %}
                     </div>
                 </div>
                 <!-- <div class="excerpt">

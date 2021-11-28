@@ -16,7 +16,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     // word-break: break-all;
-    .preleft {
+    .preLeft {
         width: 15%;
         float: left;
         padding: 20px 30px;
@@ -118,8 +118,8 @@
         display: none;
     }
     .right {
-        float: left;
         width: 15%;
+        float: left;
         padding-left: 20px;
         top: 0;
         .fixed {

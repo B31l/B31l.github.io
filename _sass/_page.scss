@@ -27,7 +27,6 @@
         .front {
             font-family: "D2coding";
             border-top: 3px solid #333;
-            border-bottom: 3px solid #333;
             // background-image: url("/img/sunrise.jpg");
             // background-position: center center;
             // background-repeat: no-repeat;
@@ -41,9 +40,7 @@
                 font-size: 1rem;
             }
             .label {
-                display: inline-block;
                 background-color: #333;
-                border-bottom: 15px;
                 font-size: 1rem;
             }
         }

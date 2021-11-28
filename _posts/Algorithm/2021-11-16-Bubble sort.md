@@ -23,7 +23,7 @@ mathjax: true
 
 # 전체 코드
 
-## 📘Python
+## 📘 Python
 
 >```python
 >def bubble_sort(arr):
@@ -34,7 +34,7 @@ mathjax: true
 >            arr[j-1], arr[j] = arr[j], arr[j-1]
 >```
 
-## 📒JavaScript
+## 📒 JavaScript
 
 >```js
 >function bubble_sort(arr) {

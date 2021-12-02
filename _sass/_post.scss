@@ -107,8 +107,8 @@
     background-color: $background-color;
     border: 1px solid $border-color;
     border-radius: $border-radius;
-    -webkit-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
+    // -webkit-box-shadow: $box-shadow;
+    // box-shadow: $box-shadow;
   
     .toc_title {
       color: #fff;

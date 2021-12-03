@@ -2,8 +2,8 @@
 layout: post
 title: "💡 Halting Problem"
 meta: " 정지 문제란 무엇인가"
-categories: Discrete_mathematics
-tags: Assignment
+categories: Assignment
+tags: Python
 comments: true
 mathjax: true
 ---

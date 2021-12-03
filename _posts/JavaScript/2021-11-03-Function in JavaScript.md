@@ -2,7 +2,7 @@
 layout: post
 title: "💎 Function in JavaScript"
 meta: " 자바스크립트에서 함수 사용하기"
-categories: Note
+categories: JavaScript
 tags: JavaScript
 comments: true
 mathjax: true

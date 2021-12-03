@@ -2,7 +2,7 @@
 layout: post
 title: "📈 Python with Matplotlib"
 meta: " Matplotlib로 데이터 그리기"
-categories: Library
+categories: Python
 tags: Python
 comments: true
 mathjax: true

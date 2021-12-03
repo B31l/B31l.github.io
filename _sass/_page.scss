@@ -27,15 +27,15 @@
         
         .front {
             font-family: "D2coding";
+            padding: 15px 0px;
             margin-bottom: 30px;
-            border-top: 3px double #333;
-            border-bottom: 3px double #333;
+            // border-top: 3px double #333;
+            // border-bottom: 3px double #333;
             // background-image: url("/img/sunrise.jpg");
             // background-position: center center;
             // background-repeat: no-repeat;
             // background-size: cover;
             .postTitle {
-                padding: 15px 0px;
                 font-size: 2rem;
                 font-weight: bolder;
             }

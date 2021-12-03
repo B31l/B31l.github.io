@@ -7,24 +7,32 @@
     .label {
         margin-top: 16px;
         overflow: hidden;
+
+        /* 작성자, 연도 */
         .label-card {
-            float: left;
+            // float: left;
             margin-right: 15px;
-            color: #ffcc33;
+            // color: #ffcc33;
+
+            /* 정체불명 */
             .point {
                 padding: 0 10px;
                 color: #9d9d9d;
             }
+
+            /* 아이콘 */
             i {
                 padding-right: 5px;
-                // color: #6b6a6a;
-                color: #ccc;
+                color: #6b6a6a;
+                // color: #ccc;
             }
         }
     }
+
+    /* 카테고리, 태그 */
     a {
         // color: #4d6dad;
-        color: #33ccff;
+        // color: #33ccff;
         transition: 0.5s ease;
         &:hover {
             color: #223253;

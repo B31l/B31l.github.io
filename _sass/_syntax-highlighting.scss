@@ -11,18 +11,20 @@ code {   /* <쪼그만 코드> */
     line-height: 150%;
     border-radius: 3px;
     color: #000;
-    background-color: rgba(75,230,250,0.2);
-    border: 1px solid rgba(75,230,250,0.2);
+    background-color: #ccc;
+    border: 1px solid #ccc;
 
 
     // font-family: Monaco,Menlo,"Microsoft YaHei Mono",Consolas,"Courier New",monospace,sans-serif;
 }
 
-pre {   /* <블록> */
+pre {   /* <커다란 블록> */
     font-family: "D2coding";
     font-size: 15px;
     margin: 12px 0;
     padding: 8px 12px;
+    background-color: #263238;
+    border-radius: 30px;
 
     //  max-width: 800px;
     //  overflow-x: scroll !important;
@@ -30,7 +32,7 @@ pre {   /* <블록> */
     white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
     white-space: pre-wrap;      /* current browsers */
 
-     > code {   /* <코드블록> */
+     > code {   /* <블록 내의 한 줄 한 줄> */
         margin: 0;
         padding: 0;
         font-size: 15px;

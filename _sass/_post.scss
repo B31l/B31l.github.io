@@ -8,20 +8,18 @@
         margin-top: 16px;
         overflow: hidden;
 
-        /* 작성자, 연도 */
-        .label-card {
+
+        .label-card {               // [작성자, 연도]
             // float: left;
             margin-right: 15px;
             // color: #ffcc33;
 
-            /* 정체불명 */
-            .point {
+            .point {                // [정체불명]
                 padding: 0 10px;
                 color: #9d9d9d;
             }
 
-            /* 아이콘 */
-            i {
+            i {                     // [아이콘]
                 padding-right: 5px;
                 color: #6b6a6a;
                 // color: #ccc;
@@ -29,8 +27,7 @@
         }
     }
 
-    /* 카테고리, 태그 */
-    a {
+    a {                             // [카테고리, 태그]
         // color: #4d6dad;
         // color: #33ccff;
         transition: 0.5s ease;
@@ -86,6 +83,7 @@
         }
     }
 }
+
 @media screen and (max-width: 770px) {
     .page[post] {
         .left {

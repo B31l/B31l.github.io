@@ -15,11 +15,13 @@ mathjax: true
 {:toc}
 # 버블 정렬이란?
 
+맥주 거품이 올라오는 것처럼 요소들이 한 칸씩 밀려난다.
+
 <iframe width="375px" height="325px" src="https://b31l.github.io/bubble_sort/" frameborder="0"></iframe>
 
 > 🍺를 클릭하면 버블 정렬의 진행 과정을 볼 수 있다.
 
-맥주 거품이 올라오는 것처럼 요소들이 한 칸씩 밀려난다.
+
 
 # 코드
 

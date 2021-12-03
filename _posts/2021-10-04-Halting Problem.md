@@ -2,7 +2,6 @@
 layout: post
 title: "💡 Halting Problem"
 meta: " 정지 문제란 무엇인가"
-author: B31l
 categories: Discrete_mathematics
 tags: Assignment
 comments: true

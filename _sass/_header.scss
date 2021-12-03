@@ -1,14 +1,15 @@
 header {
     background: #222;
     height: 52px;
-    color: #9d9d9d;
-    box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
+    color: #000;
+    // box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
     margin-bottom: 20px;
     a {
-        color: #9d9d9d;
+        color: #000;
         -webkit-transition: 0.2s ease;
         transition: 0.2s ease;
         &:hover {
+            background-color: #4FC1E4;
             color: #fff;
         }
     }

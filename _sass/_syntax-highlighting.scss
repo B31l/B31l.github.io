@@ -32,7 +32,7 @@ pre {   /* <블록> */
 
      > code {   /* <코드블록> */
         margin: 0;
-        padding: 1em;
+        padding: 0;
         font-size: 15px;
         color:#d1d1c9;
         border: none;
@@ -68,7 +68,7 @@ $highlight-purple       :#8E59D7;
     font-weight: 500px;
     letter-spacing: -1px;
     background: #272822;
-    .hll { background-color: #272822; }
+    .hll { background-color: #263238; }
     .err { color: #960050; background-color: #1e0010 } /* Error */
     .w  { color: $highlight-foreground }    /* Text.Whitespace */
     .p { color: $highlight-foreground } /* Punctuation 문장 부호 */ 

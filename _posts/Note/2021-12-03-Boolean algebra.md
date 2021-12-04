@@ -12,24 +12,9 @@ mathjax: true
 
 * content
 {:toc}
-# 논리합의 표준형
+# NAND 게이트의 함수적 완전성
 
-논리합의 표준형(DNF, Disjunctive Normal Form)
 
-곱들의 합 (Sum of Product)
 
-# 함수적 완전성
+# NOR 게이트의 함수적 완전성
 
-함수적 완전성(functional completeness)
-
-{ + , · , ' }
-
-모든 부울함수는
-
-{ + , ' }
-
-{ · , ' }
-
-{ ↑ }
-
-{ ↓ }

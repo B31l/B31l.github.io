@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "🍺 Bubble Sort"
-meta: " 정렬 알고리즘 분석 (1) 버블 정렬"
+title: "🤝 Merge Sort"
+meta: " 정렬 알고리즘 분석 (3) 합병 정렬"
 categories: Algorithm
 tags: Python JavaScript
 comments: true
@@ -12,13 +12,7 @@ mathjax: true
 
 * content
 {:toc}
-# 버블 정렬이란?
-
-맥주 거품이 올라오는 것처럼 요소들이 한 칸씩 밀려난다.
-
-<iframe width="375px" height="325px" src="https://b31l.github.io/bubble_sort/" frameborder="0"></iframe>
-
-> 🍺를 클릭하면 버블 정렬의 진행 과정을 볼 수 있다.
+# 합병 정렬이란?
 
 ## 비교
 

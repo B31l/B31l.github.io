@@ -162,7 +162,7 @@
             a {
                 color: #333;
                 transition: 0.5s ease;
-                text-decoration: underline;
+                    // text-decoration: underline;
                 // &:hover {
                 //     color: #223253;
                 // }
@@ -175,7 +175,7 @@
             padding-left: 35px;
             ul {
                 list-style: none;
-                // padding-left: 10px;
+                padding-left: 0px;
             }
         }
         // .content-ul {

@@ -343,8 +343,3 @@ Turing Machine[[1]](https://www.tutorialspoint.com/automata_theory/turing_machin
 
 - "컴퓨터가 모든 것을 해결할 수 없다는 증명 (정지 문제)", udiprod 유튜브, [Link](https://www.youtube.com/watch?v=92WHN-pAFCs&t=54s&ab_channel=udiprod) (2021.10.04)
 - "정지 문제", 기계인간 깃허브 블로그, [Link](https://johngrib.github.io/wiki/halting-problem/) (2021.10.04)
-
----
-
-
-

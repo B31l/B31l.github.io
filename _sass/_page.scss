@@ -149,6 +149,7 @@
                 // margin-right: -10px;
                 font-size: 16px;
                 font-weight: bold;
+                text-align: center;
                 color: #eee;
                 background-color: #333;
                 border-bottom: 1px solid #c0c0c0;
@@ -173,7 +174,8 @@
             line-height: 1.5;
             padding-left: 35px;
             ul {
-                padding-left: 10px;
+                list-style: none;
+                // padding-left: 10px;
             }
         }
         // .content-ul {

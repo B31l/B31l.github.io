@@ -142,35 +142,37 @@
             -moz-hyphens: auto;
             -ms-hyphens: auto;
             hyphens: auto;
+
             // Table Of Contents 글자
             >div {
                 padding: 12px 15px;
-
                 // margin-right: -10px;
-                border-bottom: 1px solid #c0c0c0;
                 font-size: 16px;
                 font-weight: bold;
+                color: #eee;
+                background-color: #333;
+                border-bottom: 1px solid #c0c0c0;
             }
+
             >li {
                 border: 1px solid #777;
             }
+
             a {
-                color: #4d6dad;
+                color: #333;
                 transition: 0.5s ease;
                 text-decoration: underline;
-                &:hover {
-                    color: #223253;
-                }
+                // &:hover {
+                //     color: #223253;
+                // }
             }
         }
         .content-ul {
-            list-style: none;   // 점 빼기
             overflow-y: auto;
             padding-right: 10px;
-            line-height: 1.2;
+            line-height: 1.5;
             padding-left: 35px;
             ul {
-                list-style: none;   // 점 빼기
                 padding-left: 10px;
             }
         }

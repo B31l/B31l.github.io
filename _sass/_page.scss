@@ -130,7 +130,7 @@
         // 사이드바
         .side {
             box-sizing: border-box;
-            border: 3px solid #333;
+            border: 3px solid #333; 
             background-color: #f8f8fd;
             box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
             padding-bottom: 1px;
@@ -157,9 +157,21 @@
             a {
                 color: #4d6dad;
                 transition: 0.5s ease;
+                text-decoration: underline;
                 &:hover {
                     color: #223253;
                 }
+            }
+        }
+        .content-ul {
+            list-style: none;   // 점 빼기
+            overflow-y: auto;
+            padding-right: 10px;
+            line-height: 1.2;
+            padding-left: 35px;
+            ul {
+                list-style: none;   // 점 빼기
+                padding-left: 10px;
             }
         }
         // .content-ul {
@@ -183,15 +195,6 @@
         //         background-color: #4FC1E4;
         //     }
         // }
-        .content-ul {
-            overflow-y: auto;
-            padding-right: 10px;
-            line-height: 1.8;
-            padding-left: 35px;
-            ul {
-                padding-left: 10px;
-            }
-        }
     }
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {

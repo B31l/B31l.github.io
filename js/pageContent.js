@@ -40,7 +40,7 @@
 }());
 
 /**
- * 设置目录最大高度
+ * Directory Maximum Height Settings
  */
 function setContentMaxHeightInPC() {
     var windowHeight = window.innerHeight
@@ -50,7 +50,7 @@ function setContentMaxHeightInPC() {
 }
 
 /**
- * 达到最大高度
+ * reach the maximum height
  * @return {Boolean} [description]
  */
 function isMaxHeight() {
@@ -76,7 +76,7 @@ function isMaxHeight() {
         var rightDiv = document.querySelector('.right')
 
         /**
-         * 监听锚点按钮
+         * monitoring anchor switch
          */
         anchorBtn.onclick = function(e) {
             e.stopPropagation()
@@ -84,7 +84,7 @@ function isMaxHeight() {
             anchorBtn.classList.add('anchor-hide')
         }
 
-        //监听body，点击body，隐藏Content
+        //监听(Monitor)body，点击(Click)body，隐藏(Hide)Content
         document.querySelector('body').addEventListener('click', function() {
             rightDiv.classList.remove('right-show')
             anchorBtn.classList.remove('anchor-hide')
@@ -96,7 +96,7 @@ function isMaxHeight() {
 }());
 
 /**
- * 目录锚的位置固定
+ * Table anchor in position
  */
 function ancherPostion(anchorBtn, rightDiv) {
     window.addEventListener('scroll', function() {
@@ -115,7 +115,7 @@ function ancherPostion(anchorBtn, rightDiv) {
 }
 
 /**
- * 设置目录最大高度
+ * Directory Maximum Height Settings
  */
 function setContentMaxHeight() {
     var windowHeight = window.innerHeight
@@ -157,7 +157,7 @@ function moveTOC() {
 }
 
 /**
- * 判断安卓版微信浏览器
+ * Decide Android Version WeChat Browser
  * @return {Boolean} [description]
  */
 function isAndroidWechatBrowser() {

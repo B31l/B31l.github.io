@@ -85,6 +85,7 @@
                 i {
                     margin-right: 3px;
                 }
+                // 카테고리 ul
                 .content-ul[cate] {
                     overflow: hidden;
                     list-style: none;
@@ -98,7 +99,7 @@
                             padding: 2px 0;
                             border-bottom: 1px solid #eee;
                             &:hover {
-                                background-color: #dbdfee;
+                                    
                                 .badge {
                                     background-color: #dbdfee;
                                     transform: scale(1.2) rotate(360deg);
@@ -128,6 +129,7 @@
                         }
                     }
                 }
+                // 최근 ul
                 .content-ul[recent]{
                     padding-bottom: 16px;
                     li{
@@ -136,6 +138,7 @@
                     }
                 }
                 .tags-cloud {
+                    background-color: #dbdfee;
                     font-weight: normal;
                     a {
                         padding: 0 3px;

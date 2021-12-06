@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🍺 Bubble Sort"
+title: "🍺 Bubble sort"
 meta: " 정렬 알고리즘 분석 (1) 버블 정렬"
 categories: Algorithm
 tags: Python JavaScript
@@ -12,30 +12,11 @@ mathjax: true
 
 * content
 {:toc}
-맥주 거품이 올라오는 것처럼 요소들이 한 칸씩 밀려난다.
+버블 정렬(Bubble sort)에서는 맥주 거품이 올라오는 것처럼 요소들이 한 칸씩 밀려난다.
 
 <iframe width="375px" height="325px" src="https://b31l.github.io/bubble_sort/" frameborder="0"></iframe>
 
 > 🍺를 클릭하면 버블 정렬의 진행 과정을 볼 수 있다.
-
-# 구현
-
-```python
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n-1):
-        for j in range(n-1, i, -1):
-            if arr[j-1] > arr[j]:
-                arr[j-1], arr[j] = arr[j], arr[j-1]
-```
-
----
-
-
-
-
-
-# 분석
 
 ## 💡 개념
 
@@ -50,6 +31,17 @@ def bubble_sort(arr):
   왼쪽 인덱스의 값이 오른쪽 인덱스의 값보다 크다면 두 요소를 교환하며, 패스가 끝날 때마다 최대값이 가장 오른쪽으로 밀려난다.
 
   역순으로 정렬되어 있는 경우 모든 비교에 대해 교환이 이루어지므로 최대 **n(n-1)/2번 교환**한다.
+
+## 🖥 구현
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n-1):
+        for j in range(n-1, i, -1):
+            if arr[j-1] > arr[j]:
+                arr[j-1], arr[j] = arr[j], arr[j-1]
+```
 
 ## ⏳ 시간 복잡도
 

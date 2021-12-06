@@ -12,5 +12,7 @@ mathjax: true
 
 * content
 {:toc}
-# 분할정복법
+분할정복법
+
+# 응용
 

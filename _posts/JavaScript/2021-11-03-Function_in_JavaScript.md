@@ -110,4 +110,3 @@ var foo = new Function('x', 'y', 'return x + y');
 >30
 >```
 
-

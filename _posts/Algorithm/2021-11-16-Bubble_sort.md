@@ -4,8 +4,6 @@ title: "🍺 Bubble sort"
 meta: " 정렬 알고리즘 (1) 버블 정렬"
 categories: Algorithm
 tags: Python JavaScript
-comments: true
-mathjax: true
 ---
 
 
@@ -104,8 +102,4 @@ def bubble_sort_2(arr):
 # 결론
 
 O(n ^ 2)의 높은 시간 복잡도를 가지고 있으며, 모든 반복에 대해 비교와 교환이 이루어질 수 있으므로 같은 시간복잡도를 가진 다른 알고리즘(선택 정렬, 삽입 정렬)에 비해서도 낮은 효율을 보여준다. 그러나 **안정적인 교환(stable)**이 이루어지고 조기 종료를 통해 시간을 단축할 수 있다.
-
----
-
-
 

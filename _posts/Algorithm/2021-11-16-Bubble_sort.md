@@ -47,6 +47,30 @@ def bubble_sort(arr):
                 arr[j-1], arr[j] = arr[j], arr[j-1]
 ```
 
+- 반복문
+
+  ```python
+  for i in range(n-1):
+  ```
+
+- 반복문
+
+  ```python
+  for j in range(n-1, i, -1):
+  ```
+
+- 조건문
+
+  ```python
+  if arr[j-1] > arr[j]:
+  ```
+
+- 교환(다중할당)
+
+  ```python
+  arr[j-1], arr[j] = arr[j], arr[j-1]
+  ```
+
 ---
 
 

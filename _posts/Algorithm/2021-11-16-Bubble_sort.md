@@ -24,6 +24,10 @@ mathjax: true
 
 
 
+![](https://runestone.academy/runestone/books/published/pythonds3/_images/bubblepass.png)
+
+
+
 # 구현
 
 ```python

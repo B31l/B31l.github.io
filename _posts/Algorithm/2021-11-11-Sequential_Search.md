@@ -17,12 +17,18 @@ mathjax: true
 # 구현
 
 ```python
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n-1):
-        for j in range(n-1, i, -1):
-            if arr[j-1] > arr[j]:
-                arr[j-1], arr[j] = arr[j], arr[j-1]
+def sequential_search(a_list, item):
+    pos = 0
+
+    while pos < len(a_list):
+        if a_list[pos] == item:    # 찾은 경우
+            return True
+        else:
+            pos = pos + 1
+    
+    # 찾지 못한 경우 False 반환
+    
+    return False
 ```
 
 ---

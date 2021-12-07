@@ -14,6 +14,12 @@ mathjax: true
 {:toc}
 선택 정렬(Selection sort)
 
+---
+
+
+
+
+
 # 구현
 
 ```python
@@ -35,9 +41,11 @@ def bubble_sort(arr):
 
 ## 💡 개념
 
-- **비교** : 인접한 두 요소를 비교한다.
+![](https://runestone.academy/runestone/books/published/pythonds3/_images/selectionsortnew.png)
 
-  n개의 요소를 정렬할 때 첫 번째 패스(pass)에서는 n-1번의 비교가 이루어지며, 모든 비교 과정이 끝나면 다음 패스로 넘어간다. 패스의 비교 횟수가 1이 될 때까지 비교하므로 총 **n(n-1)/2번 비교**한다.
+**비교** : 인접한 두 요소를 비교한다.
+
+- n개의 요소를 정렬할 때 첫 번째 패스(pass)에서는 n-1번의 비교가 이루어지며, 모든 비교 과정이 끝나면 다음 패스로 넘어간다. 패스의 비교 횟수가 1이 될 때까지 비교하므로 총 **n(n-1)/2번 비교**한다.
 
 - **교환** : 조건을 만족하면 교환한다.
 

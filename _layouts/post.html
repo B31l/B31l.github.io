@@ -5,7 +5,7 @@ layout: default
 <div class="page clearfix" post>
     
     <div class="left">
-
+        {% include previousAndNext.html %}
         <article itemscope itemtype="http://schema.org/BlogPosting">
         {{content}}
         </article>
@@ -36,7 +36,6 @@ layout: default
         {% if hasSimilar.size > 0 %}
             </ul>
         {% endif %} -->
-        {% include previousAndNext.html %}
         <h3 id="comments">Comments</h3>
         {% include comments.html %}
     </div>

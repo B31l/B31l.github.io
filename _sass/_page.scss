@@ -115,6 +115,7 @@
         display: none;
     }
     .right {
+
         width: 25%;
         float: right;
         padding-left: 20px;
@@ -143,6 +144,29 @@
             -ms-hyphens: auto;
             hyphens: auto;
 
+            .front {
+                font-family: "D2coding";
+                padding: 15px 0px;
+                margin-bottom: 30px;
+                // border-top: 3px double #333;
+                // border-bottom: 3px double #333;
+                // background-image: url("/img/sunrise.jpg");
+                // background-position: center center;
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                .postTitle {
+                    font-size: 2rem;
+                    font-weight: bolder;
+                    padding-bottom: 15px;
+                }
+                .postSubtitle {
+                    font-size: 1rem;
+                }
+                .label {
+                    font-size: 1rem;
+                }
+            }
+            
             // Table Of Contents 글자
             >div {
                 padding: 12px 15px;

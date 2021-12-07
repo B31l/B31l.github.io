@@ -5,33 +5,7 @@ layout: default
 <div class="page clearfix" post>
     
     <div class="left">
-        <div class="front">
-            <div class="postTitle">
-                {{page.title}}
-            </div>
-            <div class="postSubtitle">
-                <div class="label-card">
-                    <i class="fa fa-calendar"></i>{{ page.date | date: "%F" }}
-                </div>
-                <div class="label-card">
-                    {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
-                </div>
-            </div>
-            <div class="label">
-                <!-- <div class="label-card">
-                    {% if page.author %}<i class="fa fa-user"></i>{{ page.author }}
-                    {% endif %}
-                </div> -->
-                <div class="label-card">
-                {% include category.html %}
-                </div>
-                <div class="label-card">
-                {% include tag.html %}
-                </div>
-            </div>
-        </div>
-        {% include previousAndNext.html %}
-        <hr>
+
         <article itemscope itemtype="http://schema.org/BlogPosting">
         {{content}}
         </article>

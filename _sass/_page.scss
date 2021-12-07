@@ -162,7 +162,9 @@
                     padding-left: 1rem;
                     font-size: 1rem;
                     text-align: left;
-                    color: #eee;
+                    >a {
+                        color: #eee;
+                    }
                 }
             }
 
@@ -182,7 +184,7 @@
                 border: 1px solid #777;
             }
 
-            a {
+            >a {
                 color: #333;
                 transition: 0.5s ease;
                     // text-decoration: underline;

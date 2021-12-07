@@ -3,28 +3,6 @@ layout: default
 ---
 
 <div class="page clearfix" post>
-
-    <div class="right">
-        <div class="wrap">
-
-            <!-- Content -->
-            <div class="side content">
-                <div>
-                    Table Of Contents
-                </div>
-                <ul id="content-side" class="content-ul">
-                    <!-- {% if hasSimilar.size > 0 %}
-                    <li><a href="#similar_posts">Similar Posts</a></li>
-                    {% endif %} -->
-                    <!-- <li><a href="#comments">Comments</a></li> -->
-                </ul>
-            </div>
-            <!-- 其他div框放到这里 -->
-            <!-- <div class="side">bbbb</div> -->
-        </div>
-    </div>
-
-    <button class="anchor"><i class="fa fa-anchor"></i></button>
     
     <div class="left">
         <div class="front">
@@ -87,6 +65,28 @@ layout: default
         {% include previousAndNext.html %}
         <h3 id="comments">Comments</h3>
         {% include comments.html %}
+    </div>
+
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Table Of Contents
+                </div>
+                <ul id="content-side" class="content-ul">
+                    <!-- {% if hasSimilar.size > 0 %}
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    {% endif %} -->
+                    <!-- <li><a href="#comments">Comments</a></li> -->
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
     </div>
 
 </div>

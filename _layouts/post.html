@@ -3,27 +3,43 @@ layout: default
 ---
 
 <div class="page clearfix" post>
+
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Table Of Contents
+                </div>
+                <ul id="content-side" class="content-ul">
+                    <!-- {% if hasSimilar.size > 0 %}
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    {% endif %} -->
+                    <!-- <li><a href="#comments">Comments</a></li> -->
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    
     <div class="left">
         <div class="front">
             <div class="postTitle">
                 {{page.title}}
             </div>
-
             <div class="postSubtitle">
-
                 <div class="label-card">
                     <i class="fa fa-calendar"></i>{{ page.date | date: "%F" }}
                 </div>
                 <div class="label-card">
                     {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
                 </div>
-
             </div>
-            
             <div class="label">
-
-
-
                 <!-- <div class="label-card">
                     {% if page.author %}<i class="fa fa-user"></i>{{ page.author }}
                     {% endif %}
@@ -36,17 +52,12 @@ layout: default
                 </div>
             </div>
         </div>
-
         {% include previousAndNext.html %}
-
         <hr>
-
         <article itemscope itemtype="http://schema.org/BlogPosting">
-
         {{content}}
         </article>
         <hr>
-
         <!-- {% assign hasSimilar = '' %}
         {% for post in site.related_posts %}
             {% assign postHasSimilar = false %}
@@ -73,34 +84,11 @@ layout: default
         {% if hasSimilar.size > 0 %}
             </ul>
         {% endif %} -->
-
         {% include previousAndNext.html %}
-
         <h3 id="comments">Comments</h3>
         {% include comments.html %}
-
-
     </div>
-    <button class="anchor"><i class="fa fa-anchor"></i></button>
-    <div class="right">
-        <div class="wrap">
 
-            <!-- Content -->
-            <div class="side content">
-                <div>
-                    Table Of Contents
-                </div>
-                <ul id="content-side" class="content-ul">
-                    <!-- {% if hasSimilar.size > 0 %}
-                    <li><a href="#similar_posts">Similar Posts</a></li>
-                    {% endif %} -->
-                    <!-- <li><a href="#comments">Comments</a></li> -->
-                </ul>
-            </div>
-            <!-- 其他div框放到这里 -->
-            <!-- <div class="side">bbbb</div> -->
-        </div>
-    </div>
 </div>
 <script>
 /**

@@ -145,15 +145,10 @@
             hyphens: auto;
 
             .front {
+                background-color: #333;
                 font-family: "D2coding";
                 padding: 15px 0px;
                 margin-bottom: 30px;
-                // border-top: 3px double #333;
-                // border-bottom: 3px double #333;
-                // background-image: url("/img/sunrise.jpg");
-                // background-position: center center;
-                // background-repeat: no-repeat;
-                // background-size: cover;
                 .postTitle {
                     font-size: 2rem;
                     font-weight: bolder;
@@ -163,19 +158,21 @@
                     font-size: 1rem;
                 }
                 .label {
+                    padding-left: 1rem;
                     font-size: 1rem;
+                    text-align: left;
                 }
             }
-            
+
             // Table Of Contents 글자
-            >div {
+            .tocTitle {
                 padding: 12px 15px;
                 // margin-right: -10px;
                 font-size: 16px;
                 font-weight: bold;
                 text-align: center;
                 color: #eee;
-                background-color: #333;
+                background-color: #777;
                 border-bottom: 1px solid #c0c0c0;
             }
 

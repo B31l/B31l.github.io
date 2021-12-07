@@ -71,7 +71,7 @@ layout: default
     
     <div class="right">
         <div class="wrap">
-            
+
             <!-- Content -->
             <div class="side content">
 
@@ -81,17 +81,13 @@ layout: default
                     </div>
                     <div class="postSubtitle">
                         <div class="label-card">
-                            <i class="fa fa-calendar"></i>{{ page.date | date: "%F" }}
-                        </div>
-                        <div class="label-card">
                             {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
                         </div>
                     </div>
                     <div class="label">
-                        <!-- <div class="label-card">
-                            {% if page.author %}<i class="fa fa-user"></i>{{ page.author }}
-                            {% endif %}
-                        </div> -->
+                        <div class="label-card">
+                            <i class="fa fa-calendar"></i>{{ page.date | date: "%F" }}
+                        </div>
                         <div class="label-card">
                         {% include category.html %}
                         </div>
@@ -101,9 +97,10 @@ layout: default
                     </div>
                 </div>
 
-                <div>
+                <div class=tocTitle>
                     Table Of Contents
                 </div>
+
                 <ul id="content-side" class="content-ul">
                     <!-- {% if hasSimilar.size > 0 %}
                     <li><a href="#similar_posts">Similar Posts</a></li>

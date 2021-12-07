@@ -25,28 +25,28 @@
         // background-color: #f8f8fd;
         // box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
         
-        .front {
-            font-family: "D2coding";
-            padding: 15px 0px;
-            margin-bottom: 30px;
-            // border-top: 3px double #333;
-            // border-bottom: 3px double #333;
-            // background-image: url("/img/sunrise.jpg");
-            // background-position: center center;
-            // background-repeat: no-repeat;
-            // background-size: cover;
-            .postTitle {
-                font-size: 2rem;
-                font-weight: bolder;
-                padding-bottom: 15px;
-            }
-            .postSubtitle {
-                font-size: 1rem;
-            }
-            .label {
-                font-size: 1rem;
-            }
-        }
+        // .front {
+        //     font-family: "D2coding";
+        //     padding: 15px 0px;
+        //     margin-bottom: 30px;
+        //     // border-top: 3px double #333;
+        //     // border-bottom: 3px double #333;
+        //     // background-image: url("/img/sunrise.jpg");
+        //     // background-position: center center;
+        //     // background-repeat: no-repeat;
+        //     // background-size: cover;
+        //     .postTitle {
+        //         font-size: 2rem;
+        //         font-weight: bolder;
+        //         padding-bottom: 15px;
+        //     }
+        //     .postSubtitle {
+        //         font-size: 1rem;
+        //     }
+        //     .label {
+        //         font-size: 1rem;
+        //     }
+        // }
 
         a:not([title]){
             word-break: break-all;
@@ -148,7 +148,6 @@
                 background-color: #333;
                 font-family: "D2coding";
                 padding: 15px 0px;
-                margin-bottom: 30px;
                 .postTitle {
                     font-size: 2rem;
                     font-weight: bolder;

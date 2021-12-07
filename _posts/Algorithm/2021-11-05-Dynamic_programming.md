@@ -12,7 +12,5 @@ mathjax: true
 
 * content
 {:toc}
-동적계획법
-
-# 응용
+# 동적계획법
 

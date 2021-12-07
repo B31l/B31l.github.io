@@ -12,9 +12,33 @@ mathjax: true
 
 * content
 {:toc}
-합병 정렬(Merge sort)
+# 합병 정렬
+
+## 💡 개념
+
+- **분할**
+
+  ![](https://runestone.academy/runestone/books/published/pythonds3/_images/mergesortA.png)
+
+  블라블라
+
+- **정복**
+
+  ![](https://runestone.academy/runestone/books/published/pythonds3/_images/mergesortB.png)
+
+  블라블라
+
+## ⏳ 시간 복잡도
+
+|    B(n)    |    A(n)    |    W(n)    |
+| :--------: | :--------: | :--------: |
+| O(`nlogn`) | O(`nlogn`) | O(`nlogn`) |
 
 ---
+
+
+
+
 
 # 구현
 
@@ -26,34 +50,6 @@ def bubble_sort(arr):
             if arr[j-1] > arr[j]:
                 arr[j-1], arr[j] = arr[j], arr[j-1]
 ```
-
----
-
-
-
-
-
-# 분석
-
-## 💡 개념
-
-- **분할**
-
-  ![](https://runestone.academy/runestone/books/published/pythonds3/_images/mergesortA.png)
-  
-  블라블라
-
-- **정복**
-
-  ![](https://runestone.academy/runestone/books/published/pythonds3/_images/mergesortB.png)
-  
-  블라블라
-
-## ⏳ 시간 복잡도
-
-|    B(n)    |    A(n)    |    W(n)    |
-| :--------: | :--------: | :--------: |
-| O(`nlogn`) | O(`nlogn`) | O(`nlogn`) |
 
 ---
 

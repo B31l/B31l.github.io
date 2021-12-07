@@ -12,26 +12,7 @@ mathjax: true
 
 * content
 {:toc}
-퀵 정렬(Quick sort)
-
-# 구현
-
-```python
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n-1):
-        for j in range(n-1, i, -1):
-            if arr[j-1] > arr[j]:
-                arr[j-1], arr[j] = arr[j], arr[j-1]
-```
-
----
-
-
-
-
-
-# 분석
+# 퀵 정렬
 
 ## 💡 개념
 
@@ -58,6 +39,23 @@ def bubble_sort(arr):
 |    B(n)    |    A(n)    |  W(n)   |
 | :--------: | :--------: | :-----: |
 | O(`nlogn`) | O(`nlogn`) | O(`n²`) |
+
+---
+
+
+
+
+
+# 구현
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n-1):
+        for j in range(n-1, i, -1):
+            if arr[j-1] > arr[j]:
+                arr[j-1], arr[j] = arr[j], arr[j-1]
+```
 
 ---
 

@@ -201,6 +201,40 @@
                 padding-left: 0px;
             }
         }
+        .post-recent {
+            width: 100%;
+            overflow: hidden;
+            padding: 4px;
+            .pre {
+                width: 49%;
+                float: left;   
+                text-align: left;
+            }
+            .nex{
+                width: 49%;
+                float: right;
+                text-align: right;
+            }
+            button {
+                width: 100%;
+                min-height: 45px;
+                box-sizing: border-box;
+                padding: 5px;
+                background-color: #fff;
+                border: 2px solid #4FC1E4;
+                text-align: center;
+                font-family: "D2coding";
+                box-shadow: 0 0 4px 0px rgba(0,0,0,0.15);
+
+                font-size: 1rem;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #4FC1E4;
+                // transform:scale(1.1)
+                color: #fff
+            }
+        }
         // .content-ul {
         //     list-style: none;   // 점 빼기
         //     overflow-y: auto;

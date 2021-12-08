@@ -169,15 +169,24 @@ layout: default
     <!---------------------------------------------------------------------------------------------------->
     <div class="right">
         <div class="wrap">
-            <button onclick="범례('legendArchives')">Archives</button>
-            <button onclick="범례('legendCategories')">Categories</button>
-            <button onclick="범례('legendTags')">Tags</button>
+            
+            <!---------------------------------------------------------------------------------------------------->
+            <!-- legendButton -->
+            <!---------------------------------------------------------------------------------------------------->
+            <div class="legendButton">
+                <button onclick="범례('legendArchives')">Archives</button>
+                <button onclick="범례('legendCategories')">Categories</button>
+                <button onclick="범례('legendTags')">Tags</button>
+            </div>
+
+            <!---------------------------------------------------------------------------------------------------->
+            <!-- 최근 10개 글 -->
+            <!---------------------------------------------------------------------------------------------------->
             <div class="side">
                 <div>
                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                     Recent Posts
                 </div>
-                <!-- 최근 10개 글 -->
                 <ul class="content-ul" recent>
                     {% for post in site.posts offset: 0 limit: 10  %}
                         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
@@ -185,13 +194,14 @@ layout: default
                 </ul>
             </div>
 
-            <!-- Content -->
+            <!---------------------------------------------------------------------------------------------------->
+            <!-- 카테고리 -->
+            <!---------------------------------------------------------------------------------------------------->
             <div class="side ">
                 <div>
                     <i class="fa fa-th-list"></i>
                     Categories
                 </div>
-                <!-- 카테고리 -->
                 <ul class="content-ul" cate>
                     {% for category in site.categories %}
                     <li>
@@ -205,7 +215,10 @@ layout: default
                     {% endfor %}
                 </ul>
             </div>
-            <!-- 태그 -->
+
+            <!---------------------------------------------------------------------------------------------------->
+            <!-- 태그 구름 -->
+            <!---------------------------------------------------------------------------------------------------->
             <div class="side">
                 <div>
                     <i class="fa fa-tags"></i>
@@ -250,7 +263,9 @@ layout: default
                 </div>
             </div>
 
+            <!---------------------------------------------------------------------------------------------------->
             <!-- 링크 -->
+            <!---------------------------------------------------------------------------------------------------->
             <!-- <div class="side">
                 <div>
                     <i class="fa fa-external-link"></i>
@@ -260,12 +275,11 @@ layout: default
 
                 </ul>
             </div> -->
-
         </div>
     </div>
-    
-    
 </div>
+
+
 <!-- <script src="{{ "/js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
 <!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>

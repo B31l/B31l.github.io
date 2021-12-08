@@ -82,11 +82,6 @@
                 color: #cbcbcb;
             }
         }
-    }
-    .mid {
-        width: 40%;
-        float: left;
-        top: 0;
         .legend-button {
             display: flex;
             flex-direction: row;
@@ -103,6 +98,11 @@
                 }
             }
         }
+    }
+    .mid {
+        width: 40%;
+        float: left;
+        top: 0;
     }
     .right {
         width: 25%;

@@ -118,6 +118,10 @@
         float: right;
         padding-left: 20px;
         top: 0;
+        .fixed {
+            position: fixed;
+            top: 20px;
+        }
         .scroll-bottom {
             position: absolute;
             bottom: 190px;
@@ -125,7 +129,6 @@
         // 사이드바
         .side {
             box-sizing: border-box;
-            position: fixed;
             border: 3px solid #333; 
             background-color: #f8f8fd;
             box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;

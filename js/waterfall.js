@@ -39,7 +39,7 @@
     }, 
     {
     	demo_link: 'https://github.com/B31l/__DAYBREAK',
-    	img_link: 'https://t1.daumcdn.net/cfile/tistory/2372424C58A5449D06',
+    	img_link: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/275px-Unity_Technologies_logo.svg.png',
     	code_link: 'https://github.com/B31l/__DAYBREAK',
       title: 'DAYBREAK : 유니티 게임',
       core_tech: 'C#',

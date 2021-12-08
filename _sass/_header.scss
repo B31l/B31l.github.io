@@ -18,6 +18,9 @@ header {
         float: left;
         width: 50px;
         margin: 0 auto;
+        .fixed {
+            position: fixed;
+        }
         // line-height: 52px;
         .brand {
             font-size: 18px;

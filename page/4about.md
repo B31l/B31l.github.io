@@ -18,6 +18,3 @@ type: page
 - 알고리즘
 - c#
 
-<h3 id="comments">Comments</h3>
-{% include comments.html %}
-

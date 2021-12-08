@@ -2,102 +2,12 @@
 layout: default
 ---
 
-<div class="page clearfix" indexNew>
-    <button onclick="범례('legendArchives')">Archives</button>
-    <button onclick="범례('legendCategories')">Categories</button>
-    <button onclick="범례('legendTags')">Tags</button>
-    <!---------------------------------------------------------------------------------------------------->
-    <!-- 아카이브 -->
-    <!---------------------------------------------------------------------------------------------------->
-    <div class="left" id="legendArchives" style="display: none;">
-        <div style="text-align: center; font-size: 4rem;">Archives</div>
-        <hr>
-        <ul>
-          {% for post in site.posts %}
+<div class="page clearfix" indexNew>    
 
-            {% unless post.next %}
-              <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
-            {% else %}
-              {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-              {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-              {% if year != nyear %}
-                <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
-              {% endif %}
-            {% endunless %}
-
-            <li>
-                <time>
-                {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                </time>
-                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-
-                {% include category.html %}
-                {% include tag.html %}
-            </li>
-
-          {% endfor %}
-        </ul>
-    </div>
     <!---------------------------------------------------------------------------------------------------->
-    <!-- 카테고리 -->
+    <!-- LEFT -->
     <!---------------------------------------------------------------------------------------------------->
-    <div class="left" id="legendCategories" style="display: none;">
-        <div style="text-align: center; font-size: 4rem;">Categories</div>
-        <hr>
-        <ul>
-            {% for category in site.categories %}
-            <h2 id="{{category | first}}">{{category | first}}</h2>
-                {% for posts in category  %}
-                    {% for post in posts %}
-                        {% if post.url %}
-                        <li>
-                            <time>
-                            {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                            </time>
-                            <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 
-                            {% include category.html %}
-                            {% include tag.html %}
-                        </li>
-                        {% endif %}
-                    {% endfor %}
-                {% endfor %}
-            {% endfor %}
-        </ul>
-    </div>
-    <!---------------------------------------------------------------------------------------------------->
-    <!-- 태그 -->
-    <!---------------------------------------------------------------------------------------------------->
-    <div class="left" id="legendTags" style="display: none;">
-        <div style="text-align: center; font-size: 4rem;">Tags</div>
-        <hr>
-        {% capture tags %}
-          {% for tag in site.tags %}
-            {{ tag[0] }}
-          {% endfor %}
-        {% endcapture %}
-        {% assign sortedtags = tags | split:' ' | sort %}
-
-        <ul>
-        {% for tag in sortedtags %}
-          <h2 id="{{ tag }}">{{ tag }}</h2>
-          {% for post in site.tags[tag] %}
-            <li>
-                <time>
-                {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                </time>
-                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-
-                {% include category.html %}
-                {% include tag.html %}
-            </li>
-          {% endfor %}
-        {% endfor %}
-        </ul>
-    </div>
-    <!---------------------------------------------------------------------------------------------------->
-    <!-- 홈 본문 -->
-    <!---------------------------------------------------------------------------------------------------->
     <div class="left">
         <div style="text-align: center; font-size: 4rem;">Home</div>
         <hr>
@@ -164,10 +74,100 @@ layout: default
           {% endif %}
         </div>
     </div>
+
+    <!---------------------------------------------------------------------------------------------------->
+    <!-- MID -->
+    <!---------------------------------------------------------------------------------------------------->
+
+    <div class="mid">
+        <button onclick="범례('legendArchives')">Archives</button>
+        <button onclick="범례('legendCategories')">Categories</button>
+        <button onclick="범례('legendTags')">Tags</button>
+
+        <!-- 아카이브 -->
+        <div class="left" id="legendArchives" style="display: block;">
+            <div style="text-align: center; font-size: 4rem;">Archives</div>
+            <hr>
+            <ul>
+              {% for post in site.posts %}
+                {% unless post.next %}
+                  <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
+                {% else %}
+                  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+                  {% if year != nyear %}
+                    <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
+                  {% endif %}
+                {% endunless %}
+                <li>
+                    <time>
+                    {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                    </time>
+                    <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     
+                    {% include category.html %}
+                    {% include tag.html %}
+                </li>
+              {% endfor %}
+            </ul>
+        </div>
+
+        <!-- 카테고리 -->
+        <div class="left" id="legendCategories" style="display: none;">
+            <div style="text-align: center; font-size: 4rem;">Categories</div>
+            <hr>
+            <ul>
+                {% for category in site.categories %}
+                <h2 id="{{category | first}}">{{category | first}}</h2>
+                    {% for posts in category  %}
+                        {% for post in posts %}
+                            {% if post.url %}
+                            <li>
+                                <time>
+                                {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                                </time>
+                                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    
+                                {% include category.html %}
+                                {% include tag.html %}
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- 태그 -->
+        <div class="left" id="legendTags" style="display: none;">
+            <div style="text-align: center; font-size: 4rem;">Tags</div>
+            <hr>
+            {% capture tags %}
+              {% for tag in site.tags %}
+                {{ tag[0] }}
+              {% endfor %}
+            {% endcapture %}
+            {% assign sortedtags = tags | split:' ' | sort %}
+            <ul>
+            {% for tag in sortedtags %}
+              <h2 id="{{ tag }}">{{ tag }}</h2>
+              {% for post in site.tags[tag] %}
+                <li>
+                    <time>
+                    {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                    </time>
+                    <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    {% include category.html %}
+                    {% include tag.html %}
+                </li>
+              {% endfor %}
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
     <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
     <!---------------------------------------------------------------------------------------------------->
-    <!-- 사이드바 -->
+    <!-- RIGHT -->
     <!---------------------------------------------------------------------------------------------------->
     <div class="right">
         <div class="wrap">

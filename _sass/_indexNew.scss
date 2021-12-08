@@ -87,6 +87,22 @@
         width: 40%;
         float: left;
         top: 0;
+        .legend-button {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            button {
+                border: 1px solid #333;
+                border-radius: 25px;
+                margin: 5px 10px;
+                padding: 5px;
+                &:hover {
+                    background-color: #333;
+                    color: #fff;
+                }
+            }
+        }
     }
     .right {
         width: 25%;
@@ -94,22 +110,6 @@
         padding-left: 20px;
         top: 0;
         .wrap {
-            .legend-button {
-                display: flex;
-                flex-direction: row;
-                align-content: center;
-                justify-content: center;
-                button {
-                    border: 1px solid #333;
-                    border-radius: 25px;
-                    margin: 5px 10px;
-                    padding: 5px;
-                    &:hover {
-                        background-color: #333;
-                        color: #fff;
-                    }
-                }
-            }
             .side {
                 margin-bottom: 20px;
                 padding-bottom: 0;

@@ -43,22 +43,24 @@ header {
                     -webkit-transition: 0.2s ease;
                     transition: 0.2s ease;
                     a {
-                        display: inline-block;
-                        // padding: 0 10px;
+                        display: flex;
+                        flex-direction: row;
+                        align-content: center;
+                        justify-content: center;
                         height: 52px;
                         font-size: 30px;
                         i {
                             margin-right: 5px;
                         }
+                        li:hover {
+                            background-color: #4FC1E4;
+                        }
+                        >.active {
+                            color: #fff;
+                            background-color: #4FC1E4;
+                            // box-shadow: 0 25px 25px -15px rgba(255,255,255,0.93);
+                        }
                     }
-                }
-                li:hover {
-                    background-color: #000;
-                }
-                >.active {
-                    color: #fff;
-                    background-color: #000;
-                    // box-shadow: 0 25px 25px -15px rgba(255,255,255,0.93);
                 }
             }
         }

@@ -9,7 +9,9 @@ type: page
 
 <div class="page clearfix">
 
-    <div class="left">
+    <button onclick="알림창('Categories', 'block')">아이디</button>
+
+    <div class="left" id="legend" style="display: none;">
         <div style="text-align: center; font-size: 4rem;">Categories</div>
         <hr>
         <ul>
@@ -61,3 +63,11 @@ type: page
 
 </div>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+<script>
+    
+    function 범례(이름, 상태) {
+        document.getElementById("message").innerHTML = `<h1>${이름}</h1>`;
+        document.getElementById("legend").style.display = 상태;
+    }
+
+</script>

@@ -10,7 +10,6 @@ layout: default
 
     <div class="left">
         <div style="text-align: center; font-size: 4rem;">Home</div>
-        <hr>
         <ul>
             {% for post in paginator.posts %}
               <li>
@@ -87,7 +86,6 @@ layout: default
         <!-- 아카이브 -->
         <div id="legendArchives" style="display: block;">
             <div style="text-align: center; font-size: 4rem;">Archives</div>
-            <hr>
             <ul>
               {% for post in site.posts %}
                 {% unless post.next %}
@@ -115,7 +113,6 @@ layout: default
         <!-- 카테고리 -->
         <div id="legendCategories" style="display: none;">
             <div style="text-align: center; font-size: 4rem;">Categories</div>
-            <hr>
             <ul>
                 {% for category in site.categories %}
                 <h2 id="{{category | first}}">{{category | first}}</h2>
@@ -141,7 +138,6 @@ layout: default
         <!-- 태그 -->
         <div id="legendTags" style="display: none;">
             <div style="text-align: center; font-size: 4rem;">Tags</div>
-            <hr>
             {% capture tags %}
               {% for tag in site.tags %}
                 {{ tag[0] }}

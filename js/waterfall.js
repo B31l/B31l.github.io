@@ -14,6 +14,38 @@
      */
   var demoContent = [
     {
+    	demo_link: 'https://github.com/B31l/__ShowVoca',
+    	img_link: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbkW9WF%2FbtqUUqEfEIe%2FDPIdxrtKafxzW1fjbhO1K1%2Fimg.png',
+    	code_link: 'https://github.com/B31l/__ShowVoca',
+      title: 'ShowVoca : 단어 암기 프로그램',
+      core_tech: 'Python',
+      description: '설명1'
+    }, 
+    {
+    	demo_link: 'https://github.com/B31l/__Shooter',
+    	img_link: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbkW9WF%2FbtqUUqEfEIe%2FDPIdxrtKafxzW1fjbhO1K1%2Fimg.png',
+    	code_link: 'https://github.com/B31l/__Shooter',
+      title: 'Shooter : 슈팅 게임',
+      core_tech: 'Python (Pygame)',
+      description: '2021 여름방학 학습동아리'
+    }, 
+    {
+    	demo_link: 'https://github.com/B31l/__PWstorage',
+    	img_link: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbkW9WF%2FbtqUUqEfEIe%2FDPIdxrtKafxzW1fjbhO1K1%2Fimg.png',
+    	code_link: 'https://github.com/B31l/__PWstorage',
+      title: 'PWstorage : 비밀번호 관리 프로그램',
+      core_tech: 'Python (Tkinter, Openpyxl)',
+      description: '설명2'
+    }, 
+    {
+    	demo_link: 'https://github.com/B31l/__DAYBREAK',
+    	img_link: 'http://isweb.joongbu.ac.kr/~shzzz/media/unity.png',
+    	code_link: 'https://github.com/B31l/__DAYBREAK',
+      title: 'DAYBREAK : 유니티 게임',
+      core_tech: 'C#',
+      description: '설명3'
+    }, 
+    {
     	demo_link: 'https://b31l.github.io/bubble_sort/',
     	img_link: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png',
     	code_link: 'https://b31l.github.io/bubble_sort/',

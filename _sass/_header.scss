@@ -6,6 +6,9 @@ header {
     color: #9d9d9d;
     // box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
     margin-bottom: 20px;
+    .fixed {
+        position: fixed;
+    }
     a {
         color: #9d9d9d;
         -webkit-transition: 0.2s ease;
@@ -18,9 +21,6 @@ header {
         float: left;
         width: 50px;
         margin: 0 auto;
-        .fixed {
-            position: fixed;
-        }
         // line-height: 52px;
         .brand {
             font-size: 18px;

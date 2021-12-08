@@ -233,7 +233,7 @@ function contentInit(content) {
                 '   <h3 class="demo-title">' + 
                 '       <a href="' + content[i].demo_link + '">' + content[i].title + '</a>' + 
                 '   </h3>' + 
-                '   <p>주요 기술：' + content[i].core_tech + '</p>' + 
+                '   <p>언어：' + content[i].core_tech + '</p>' + 
                 '   <p>' + content[i].description + '   </p>' + 
                 // '       <a href="' + content[i].code_link + '">소스 코드 <i class="fa fa-code" aria-hidden="true"></i></a>' + 
                 '</div>'

@@ -1,6 +1,8 @@
 header {
     background: #000;
-    height: 52px;
+    float: left;
+    width: 5%;
+    height: 100vh;
     color: #9d9d9d;
     // box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
     margin-bottom: 20px;
@@ -13,9 +15,10 @@ header {
         }
     }
     .wrapper {
-        width: 1140px;
+        float: left;
+        width: 5%;
         margin: 0 auto;
-        line-height: 52px;
+        // line-height: 52px;
         .brand {
             font-size: 18px;
         }

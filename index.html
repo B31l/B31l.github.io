@@ -3,11 +3,12 @@ layout: default
 ---
 
 <div class="page clearfix" indexNew>
-
-    <button onclick="범례('legendArchives', 'block')">Archives</button>
-    <button onclick="범례('legendCategories', 'block')">Categories</button>
-    <button onclick="범례('legendTags', 'block')">Tags</button>
-
+    <button onclick="범례('legendArchives')">Archives</button>
+    <button onclick="범례('legendCategories')">Categories</button>
+    <button onclick="범례('legendTags')">Tags</button>
+    <!---------------------------------------------------------------------------------------------------->
+    <!-- 아카이브 -->
+    <!---------------------------------------------------------------------------------------------------->
     <div class="left" id="legendArchives" style="display: none;">
         <div style="text-align: center; font-size: 4rem;">Archives</div>
         <hr>
@@ -37,7 +38,9 @@ layout: default
           {% endfor %}
         </ul>
     </div>
-
+    <!---------------------------------------------------------------------------------------------------->
+    <!-- 카테고리 -->
+    <!---------------------------------------------------------------------------------------------------->
     <div class="left" id="legendCategories" style="display: none;">
         <div style="text-align: center; font-size: 4rem;">Categories</div>
         <hr>
@@ -62,7 +65,9 @@ layout: default
             {% endfor %}
         </ul>
     </div>
-
+    <!---------------------------------------------------------------------------------------------------->
+    <!-- 태그 -->
+    <!---------------------------------------------------------------------------------------------------->
     <div class="left" id="legendTags" style="display: none;">
         <div style="text-align: center; font-size: 4rem;">Tags</div>
         <hr>
@@ -90,8 +95,9 @@ layout: default
         {% endfor %}
         </ul>
     </div>
-
-
+    <!---------------------------------------------------------------------------------------------------->
+    <!-- 홈 본문 -->
+    <!---------------------------------------------------------------------------------------------------->
     <div class="left">
         <div style="text-align: center; font-size: 4rem;">Home</div>
         <hr>
@@ -137,10 +143,9 @@ layout: default
               </li>
             {% endfor %}
         </ul>
-
-        
-
-        <!-- Pagination links 그 맨 아래 그거임 -->
+        <!---------------------------------------------------------------------------------------------------->
+        <!-- 페이지 번호 -->
+        <!---------------------------------------------------------------------------------------------------->
         <div class="pagination">
           {% if paginator.previous_page %}
             <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
@@ -159,9 +164,11 @@ layout: default
           {% endif %}
         </div>
     </div>
-
-
+    
     <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <!---------------------------------------------------------------------------------------------------->
+    <!-- 사이드바 -->
+    <!---------------------------------------------------------------------------------------------------->
     <div class="right">
         <div class="wrap">
             <div class="side">
@@ -260,11 +267,19 @@ layout: default
 </div>
 <!-- <script src="{{ "/js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
 <!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
-
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
 <script>
+
     function 범례(이름, 상태) {
-        document.getElementById(이름).style.display = 상태;
+        lengends = ["legendArchives", "legendCategories", "legendTags"];
+        legends.forEach(element => {
+            if (element === 상태) {
+                document.getElementById(이름).style.display = "block";
+            } else {
+                document.getElementById(이름).style.display = "none";
+            }
+        });
     }
+
 </script>

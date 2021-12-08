@@ -9,9 +9,7 @@ type: page
 
 <div class="page clearfix">
 
-    <button onclick="범례('legend', 'block')">Category</button>
-
-    <div class="left" id="legend" style="display: none;">
+    <div class="left">
         <div style="text-align: center; font-size: 4rem;">Categories</div>
         <hr>
         <ul>
@@ -63,10 +61,3 @@ type: page
 
 </div>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-<script>
-    
-    function 범례(이름, 상태) {
-        document.getElementById(이름).style.display = 상태;
-    }
-
-</script>

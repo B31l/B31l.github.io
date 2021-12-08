@@ -81,22 +81,6 @@
         }
     }
     .right {
-        .legendButton {
-            display: flex;
-            flex-direction: row;
-            align-content: center;
-            justify-content: center;
-            button {
-                border: 1px solid #333;
-                border-radius: 25px;
-                margin: 5px 10px;
-                padding: 5px;
-                &:hover {
-                    background-color: #333;
-                    color: #fff;
-                }
-            }
-        }
         .wrap {
             .side {
                 margin-bottom: 20px;

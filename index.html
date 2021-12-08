@@ -271,13 +271,13 @@ layout: default
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
 <script>
 
-    function 범례(이름, 상태) {
+    function 범례(이름) {
         legends = ["legendArchives", "legendCategories", "legendTags"];
         legends.forEach(element => {
-            if (element === 상태) {
-                document.getElementById(이름).style.display = "block";
+            if (element === 이름) {
+                document.getElementById(element).style.display = "block";
             } else {
-                document.getElementById(이름).style.display = "none";
+                document.getElementById(element).style.display = "none";
             }
         });
     }

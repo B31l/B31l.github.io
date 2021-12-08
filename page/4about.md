@@ -8,15 +8,16 @@ type: page
 
 * content
 {:toc}
-![](/img/sunrise.jpg)
-
-정리 안 된 게시글이 굉장히 많은 점 양해 부탁드립니다.
-
-# 나의 잔디
-
-무럭무럭 자라렴
+# 잔디
 
 <img src="https://ghchart.rshah.org/219138/B31l"/>
 
+# 지금 하는 것
+
+- 시험공부
+- 알고리즘
+- c#
+
 <h3 id="comments">Comments</h3>
 {% include comments.html %}
+

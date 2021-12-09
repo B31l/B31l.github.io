@@ -23,30 +23,6 @@
         padding: 0 30px;
         padding-top: 20px;
         font-size: 16px;
-        
-        // .front {
-        //     font-family: "D2coding";
-        //     padding: 15px 0px;
-        //     margin-bottom: 30px;
-        //     // border-top: 3px double #333;
-        //     // border-bottom: 3px double #333;
-        //     // background-image: url("/img/sunrise.jpg");
-        //     // background-position: center center;
-        //     // background-repeat: no-repeat;
-        //     // background-size: cover;
-        //     .postTitle {
-        //         font-size: 2rem;
-        //         font-weight: bolder;
-        //         padding-bottom: 15px;
-        //     }
-        //     .postSubtitle {
-        //         font-size: 1rem;
-        //     }
-        //     .label {
-        //         font-size: 1rem;
-        //     }
-        // }
-
         a:not([title]){
             word-break: break-all;
         }
@@ -106,6 +82,98 @@
                             background-color: #c0ddc7;
                         }
                     }
+                }
+            }
+        }
+        .right {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 25%;
+            float: right;
+            padding-left: 20px;
+            padding-top: 20px;
+            .fixed {
+                position: fixed;
+                top: 20px;
+            }
+            .scroll-bottom {
+                position: absolute;
+                // bottom: 99px;
+            }
+            // 사이드바
+            .side {
+                box-sizing: border-box;
+                border: 3px solid #333; 
+                background-color: #f8f8fd;
+                box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
+                padding-bottom: 1px;
+                -ms-word-break: break-all;
+                word-break: break-all;
+                /* Non standard for webkit */
+                // word-break: break-word;
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+                
+                .front {
+                    background-color: #333;
+                    font-family: "D2coding";
+                    padding: 15px 0px;
+                    color: #eee;
+                    text-align: center;
+                    .postTitle {
+                        font-size: 2rem;
+                        font-weight: bolder;
+                        padding-bottom: 15px;
+                    }
+                    .postSubtitle {
+                        font-size: 1rem;
+                    }
+                    .label div {
+                        padding-left: 1rem;
+                        font-size: 1rem;
+                        text-align: left;
+                        >span> a {
+                            color: #eee;
+                        }
+                    }
+                }
+    
+                // Table Of Contents 글자
+                .tocTitle {
+                    padding: 12px 15px;
+                    // margin-right: -10px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: center;
+                    color: #eee;
+                    background-color: #777;
+                    border-bottom: 1px solid #c0c0c0;
+                }
+    
+                >li {
+                    border: 1px solid #777;
+                }
+    
+                >a {
+                    color: #333;
+                    transition: 0.5s ease;
+                        // text-decoration: underline;
+                    // &:hover {
+                    //     color: #223253;
+                    // }
+                }
+            }
+            .content-ul {
+                overflow-y: auto;
+                padding-right: 10px;
+                line-height: 1.5;
+                padding-left: 35px;
+                ul {
+                    list-style: none;
+                    padding-left: 0px;
                 }
             }
         }
@@ -169,98 +237,6 @@
         right: 0px;
         bottom: 0px;
         z-index: -1;
-    }
-    .right {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 25%;
-        float: right;
-        padding-left: 20px;
-        padding-top: 20px;
-        .fixed {
-            position: fixed;
-            top: 20px;
-        }
-        .scroll-bottom {
-            position: absolute;
-            // bottom: 99px;
-        }
-        // 사이드바
-        .side {
-            box-sizing: border-box;
-            border: 3px solid #333; 
-            background-color: #f8f8fd;
-            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
-            padding-bottom: 1px;
-            -ms-word-break: break-all;
-            word-break: break-all;
-            /* Non standard for webkit */
-            // word-break: break-word;
-            -webkit-hyphens: auto;
-            -moz-hyphens: auto;
-            -ms-hyphens: auto;
-            hyphens: auto;
-            
-            .front {
-                background-color: #333;
-                font-family: "D2coding";
-                padding: 15px 0px;
-                color: #eee;
-                text-align: center;
-                .postTitle {
-                    font-size: 2rem;
-                    font-weight: bolder;
-                    padding-bottom: 15px;
-                }
-                .postSubtitle {
-                    font-size: 1rem;
-                }
-                .label div {
-                    padding-left: 1rem;
-                    font-size: 1rem;
-                    text-align: left;
-                    >span> a {
-                        color: #eee;
-                    }
-                }
-            }
-
-            // Table Of Contents 글자
-            .tocTitle {
-                padding: 12px 15px;
-                // margin-right: -10px;
-                font-size: 16px;
-                font-weight: bold;
-                text-align: center;
-                color: #eee;
-                background-color: #777;
-                border-bottom: 1px solid #c0c0c0;
-            }
-
-            >li {
-                border: 1px solid #777;
-            }
-
-            >a {
-                color: #333;
-                transition: 0.5s ease;
-                    // text-decoration: underline;
-                // &:hover {
-                //     color: #223253;
-                // }
-            }
-        }
-        .content-ul {
-            overflow-y: auto;
-            padding-right: 10px;
-            line-height: 1.5;
-            padding-left: 35px;
-            ul {
-                list-style: none;
-                padding-left: 0px;
-            }
-        }
     }
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {

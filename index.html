@@ -19,12 +19,12 @@ layout: default
               <li>
                 <!-- 포스트 제목 -->
                 <h2>
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>
 
                 <!-- 포스트 부제 -->
                 <div class="label-card">
-                  {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}{% endif %}
+                    <i class="fa fa-key"></i>{{ page.meta }}
                 </div>
                 
                 <!-- 포스트 라벨 -->
@@ -36,12 +36,6 @@ layout: default
                     <!-- 작성자 -->
                     <div class="label-card">
                         {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}
-                        {% endif %}
-                    </div>
-                    
-                    <!-- 작성자 -->
-                    <div class="label-card">
-                        {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}
                         {% endif %}
                     </div>
                     <!-- 카테고리 -->

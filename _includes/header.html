@@ -1,8 +1,8 @@
 <header id="top">
     <div class="wrapper">
-        <!-- <a href="{{ site.baseurl }}/" class="brand">{{ site.title }}</a>
-        <small>{{site.brief-intro}}</small> -->
+        <!--모바일 버튼-->
         <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <!--Nav-->
         <nav id="headerNav">
             <ul>
                 <li>
@@ -23,7 +23,6 @@
                             {% else %}
                         <a href="{{ my_page.url | prepend: site.baseurl }}">
                         {% endif %}
-                        <!--{{ my_page.title }}을 제거한다.-->
                             <i class="fa fa-{{my_page.icon}}"></i>
                         </a>
                     </li>
@@ -31,5 +30,92 @@
                 {% endfor %}
             </ul>
         </nav>
+    </div>
+    <div class="mid">
+
+        <!---------------------------------------------------------------------------------------------------->
+        <!-- legendButton -->
+        <!---------------------------------------------------------------------------------------------------->
+        <div class="legend-button">
+            <button onclick="범례('legendArchives')">Archives</button>
+            <button onclick="범례('legendCategories')">Categories</button>
+            <button onclick="범례('legendTags')">Tags</button>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------->
+        <!-- 아카이브 -->
+        <!---------------------------------------------------------------------------------------------------->
+        <div class="legend" id="legendArchives" style="display: block">
+            <div class="legend-title">Archives</div>
+            <ul class="legend-body">
+              {% for post in site.posts %}
+                {% unless post.next %}
+                  <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
+                {% else %}
+                  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+                  {% if year != nyear %}
+                    <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
+                  {% endif %}
+                {% endunless %}
+                <li>
+                    <time>
+                    {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                    </time>
+                    <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------->
+        <!-- 카테고리 -->
+        <!---------------------------------------------------------------------------------------------------->
+        <div class="legend" id="legendCategories" style="display: none">
+            <div class="legend-title">Categories</div>
+            <ul class="legend-body">
+                {% for category in site.categories %}
+                <h2 id="{{category | first}}">{{category | first}}</h2>
+                    {% for posts in category  %}
+                        {% for post in posts %}
+                            {% if post.url %}
+                            <li>
+                                <time>
+                                {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                                </time>
+                                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------->
+        <!-- 태그 -->
+        <!---------------------------------------------------------------------------------------------------->
+        <div class="legend" id="legendTags" style="display: none">
+            <div class="legend-title">Tags</div>
+            {% capture tags %}
+              {% for tag in site.tags %}
+                {{ tag[0] }}
+              {% endfor %}
+            {% endcapture %}
+            {% assign sortedtags = tags | split:' ' | sort %}
+            <ul class="legend-body">
+            {% for tag in sortedtags %}
+              <h2 id="{{ tag }}">{{ tag }}</h2>
+              {% for post in site.tags[tag] %}
+                <li>
+                    <time>
+                    {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                    </time>
+                    <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+            {% endfor %}
+            </ul>
+        </div>
     </div>
 </header>

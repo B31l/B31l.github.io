@@ -91,13 +91,17 @@
         background-repeat: no-repeat;
         background-size: auto 75%;
         width: 40%;
+        height: 100vh;
         float: left;
         top: 0;
         .legend-button {
+            width: 100%;
+            text-align: center;
             display: inline-block;
             button {
                 border: 1px solid #333;
                 border-radius: 10px;
+                width: 30%;
                 margin: 5px;
                 padding: 5px 10px;
                 font-size: 1rem;

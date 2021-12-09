@@ -1,4 +1,6 @@
 .site-footer {
+    // footer 안보이게 설정함, 부활 시 99px 옵션도 건드려야 함
+    display: none;
     position: absolute;
     right: 0;
     bottom: 0;

@@ -187,6 +187,15 @@
             }
         }
     }
+
+    .menu-hover {
+        position: fixed;
+        top: 0px;
+        left: 50px;
+        width: 50%;
+        height: 100vh;
+        opacity: 0.5;
+    }
 }
 @media screen and (max-width: 770px) {
     .page[index] {

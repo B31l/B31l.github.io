@@ -6,8 +6,8 @@ icon: bookmark
 type: page
 ---
 
-* content
-{:toc}
+
+
 ## JS
 
 - [생활코딩 JS](https://opentutorials.org/course/3085)

@@ -6,8 +6,8 @@ icon: heart
 type: page
 ---
 
-* content
-{:toc}
+
+
 # 잔디
 
 <img src="https://ghchart.rshah.org/219138/B31l"/>

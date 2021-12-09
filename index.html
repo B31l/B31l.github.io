@@ -95,9 +95,9 @@ layout: default
         <!---------------------------------------------------------------------------------------------------->
         <!-- 아카이브 -->
         <!---------------------------------------------------------------------------------------------------->
-        <div id="legendArchives" style="display: block;">
-            <div style="text-align: center; font-size: 4rem;">Archives</div>
-            <ul>
+        <div class="legend" id="legendArchives">
+            <div class="legend-title">Archives</div>
+            <ul class="lengend-body">
               {% for post in site.posts %}
                 {% unless post.next %}
                   <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
@@ -124,9 +124,9 @@ layout: default
         <!---------------------------------------------------------------------------------------------------->
         <!-- 카테고리 -->
         <!---------------------------------------------------------------------------------------------------->
-        <div id="legendCategories" style="display: none;">
-            <div style="text-align: center; font-size: 4rem;">Categories</div>
-            <ul>
+        <div class="legend" id="legendCategories" >
+            <div class="lenged-title">Categories</div>
+            <ul class="lengend-body">
                 {% for category in site.categories %}
                 <h2 id="{{category | first}}">{{category | first}}</h2>
                     {% for posts in category  %}
@@ -151,15 +151,15 @@ layout: default
         <!---------------------------------------------------------------------------------------------------->
         <!-- 태그 -->
         <!---------------------------------------------------------------------------------------------------->
-        <div id="legendTags" style="display: none;">
-            <div style="text-align: center; font-size: 4rem;">Tags</div>
+        <div class="legend" id="legendTags">
+            <div class="lenged-title">Tags</div>
             {% capture tags %}
               {% for tag in site.tags %}
                 {{ tag[0] }}
               {% endfor %}
             {% endcapture %}
             {% assign sortedtags = tags | split:' ' | sort %}
-            <ul>
+            <ul class="lengend-body">
             {% for tag in sortedtags %}
               <h2 id="{{ tag }}">{{ tag }}</h2>
               {% for post in site.tags[tag] %}

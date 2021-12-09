@@ -82,6 +82,12 @@
                 color: #cbcbcb;
             }
         }
+    }
+
+    .mid {
+        width: 30%;
+        float: left;
+        top: 0;
         .legend-button {
             display: inline-block;
             button {
@@ -97,11 +103,18 @@
                 }
             }
         }
-    }
-    .mid {
-        width: 30%;
-        float: left;
-        top: 0;
+        .legend {
+            display: block;
+            .legend-title {
+                font-size: 3rem;
+                text-align: center; 
+            }
+            .legend-body {
+                height: 100vh;
+                overflow-y: scroll;
+                overflow-x: hidden
+            }
+        }
     }
     .right {
         display: none;

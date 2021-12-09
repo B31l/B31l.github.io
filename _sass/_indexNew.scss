@@ -10,7 +10,7 @@
     }
     .left {
         width: 75%;
-        float: right;
+        float: left;
         padding: 0 30px;
         padding-top: 20px;
         font-size: 16px;
@@ -70,7 +70,7 @@
             }
         }
         .pagination {
-            text-align: center;
+            text-align: left;
             .previous,
             .next {
                 font-size: 20px;

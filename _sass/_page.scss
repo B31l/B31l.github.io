@@ -89,63 +89,6 @@
     .anchor {
         display: none;
     }
-    .mid {
-        position: relative;
-        width: 25%;
-        height: 100vh;
-        float: left;
-        top: 0;
-        padding-top: 20px;
-        .legend-button {
-            width: 100%;
-            text-align: center;
-            display: inline-block;
-            button {
-                border: 1px solid #333;
-                border-radius: 10px;
-                width: 30%;
-                margin: 5px;
-                padding: 5px 10px;
-                font-size: 1rem;
-                font-family: D2coding;
-                cursor: pointer;
-                &:hover {
-                    background-color: #333;
-                    color: #fff;
-                }
-            }
-        }
-        .legend {
-            // display: block;
-            .legend-title {
-                font-size: 3rem;
-                text-align: center; 
-            }
-            .legend-body {
-                height: 750px;
-                overflow-y: scroll;
-                overflow-x: hidden
-            }
-            .legend-body::-webkit-scrollbar {
-                display: none;
-            }
-        }
-    }
-    .mid::before {
-        content: "";
-        background-color: #000917;
-        background-image: url(/img/eagle-5798326.png);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: auto 75%;
-        opacity: 0.5;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        z-index: -1;
-    }
     .right {
         top: 0;
         width: 25%;

@@ -1,5 +1,5 @@
 .page[indexNew] {
-    // background-image: url(/img/sunrise.jpg);
+    margin-left: 50px;
     a {
         // color: #4d6dad;
         color: #333;
@@ -9,7 +9,7 @@
         }
     }
     .left {
-        width: 50%;
+        width: 60%;
         float: right;
         padding: 0 30px;
         font-size: 16px;
@@ -85,7 +85,10 @@
     }
 
     .mid {
-        width: 30%;
+        background-image: url("/img/eagle-5798326.png");
+        background-position: center center;
+        background-repeat: none;
+        width: 40%;
         float: left;
         top: 0;
         .legend-button {
@@ -110,7 +113,7 @@
                 text-align: center; 
             }
             .legend-body {
-                height: 100vh;
+                height: 680px;
                 overflow-y: scroll;
                 overflow-x: hidden
             }

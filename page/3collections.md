@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: demo
 title: Collections
 permalink: /collection/
 icon: bookmark

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: demo
 title: About
 permalink: /about/
 icon: heart

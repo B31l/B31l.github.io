@@ -85,15 +85,27 @@
     }
 
     .mid {
-        background-color: #000917;
-        background-image: url(/img/eagle-5798326.png);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: auto 75%;
         width: 40%;
         height: 100vh;
         float: left;
         top: 0;
+        .mid::after {
+
+            background-color: #000917;
+            background-image: url(/img/eagle-5798326.png);
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: auto 75%;
+
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.5;
+            
+          }
         .legend-button {
             width: 100%;
             text-align: center;

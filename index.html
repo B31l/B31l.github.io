@@ -97,7 +97,7 @@ layout: default
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendArchives" style="display: block">
             <div class="legend-title">Archives</div>
-            <ul class="lengend-body">
+            <ul class="legend-body">
               {% for post in site.posts %}
                 {% unless post.next %}
                   <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
@@ -125,8 +125,8 @@ layout: default
         <!-- 카테고리 -->
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendCategories" style="display: none">
-            <div class="lenged-title">Categories</div>
-            <ul class="lengend-body">
+            <div class="legend-title">Categories</div>
+            <ul class="legend-body">
                 {% for category in site.categories %}
                 <h2 id="{{category | first}}">{{category | first}}</h2>
                     {% for posts in category  %}
@@ -152,14 +152,14 @@ layout: default
         <!-- 태그 -->
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendTags" style="display: none">
-            <div class="lenged-title">Tags</div>
+            <div class="legend-title">Tags</div>
             {% capture tags %}
               {% for tag in site.tags %}
                 {{ tag[0] }}
               {% endfor %}
             {% endcapture %}
             {% assign sortedtags = tags | split:' ' | sort %}
-            <ul class="lengend-body">
+            <ul class="legend-body">
             {% for tag in sortedtags %}
               <h2 id="{{ tag }}">{{ tag }}</h2>
               {% for post in site.tags[tag] %}

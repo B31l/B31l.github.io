@@ -9,7 +9,7 @@
         }
     }
     .left {
-        width: 60%;
+        width: 75%;
         float: right;
         padding: 0 30px;
         padding-top: 20px;
@@ -86,7 +86,7 @@
     }
     .mid {
         position: relative;
-        width: 40%;
+        width: 25%;
         height: 100vh;
         float: left;
         top: 0;
@@ -117,7 +117,7 @@
                 text-align: center; 
             }
             .legend-body {
-                height: 680px;
+                height: 750px;
                 overflow-y: scroll;
                 overflow-x: hidden
             }

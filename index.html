@@ -38,6 +38,12 @@ layout: default
                         {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}
                         {% endif %}
                     </div>
+                    
+                    <!-- 작성자 -->
+                    <div class="label-card">
+                        {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}
+                        {% endif %}
+                    </div>
                     <!-- 카테고리 -->
                     <div class="label-card">
                       {% include category.html %}

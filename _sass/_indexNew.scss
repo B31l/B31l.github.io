@@ -189,11 +189,13 @@
     }
 
     .menu-hover {
+        display: none;
         position: fixed;
         top: 0px;
         left: 50px;
         width: 50%;
         height: 100vh;
+        background-color: balck;
         opacity: 0.5;
     }
 }

@@ -76,15 +76,6 @@ layout: default
               </li>
             {% endfor %}
         </ul>
-        
-        <!---------------------------------------------------------------------------------------------------->
-        <!-- legendButton -->
-        <!---------------------------------------------------------------------------------------------------->
-        <div class="legend-button">
-            <button onclick="범례('legendArchives')">Archives</button>
-            <button onclick="범례('legendCategories')">Categories</button>
-            <button onclick="범례('legendTags')">Tags</button>
-        </div>
     </div>
 
     <!---------------------------------------------------------------------------------------------------->
@@ -93,9 +84,18 @@ layout: default
     <div class="mid">
 
         <!---------------------------------------------------------------------------------------------------->
+        <!-- legendButton -->
+        <!---------------------------------------------------------------------------------------------------->
+        <div class="legend-button">
+            <button onclick="범례('legendArchives')">Archives</button>
+            <button onclick="범례('legendCategories')">Categories</button>
+            <button onclick="범례('legendTags')">Tags</button>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------->
         <!-- 아카이브 -->
         <!---------------------------------------------------------------------------------------------------->
-        <div class="legend" id="legendArchives">
+        <div class="legend" id="legendArchives" style="display: block">
             <div class="legend-title">Archives</div>
             <ul class="lengend-body">
               {% for post in site.posts %}
@@ -124,7 +124,7 @@ layout: default
         <!---------------------------------------------------------------------------------------------------->
         <!-- 카테고리 -->
         <!---------------------------------------------------------------------------------------------------->
-        <div class="legend" id="legendCategories" >
+        <div class="legend" id="legendCategories" style="display: none">
             <div class="lenged-title">Categories</div>
             <ul class="lengend-body">
                 {% for category in site.categories %}
@@ -151,7 +151,7 @@ layout: default
         <!---------------------------------------------------------------------------------------------------->
         <!-- 태그 -->
         <!---------------------------------------------------------------------------------------------------->
-        <div class="legend" id="legendTags">
+        <div class="legend" id="legendTags" style="display: none">
             <div class="lenged-title">Tags</div>
             {% capture tags %}
               {% for tag in site.tags %}

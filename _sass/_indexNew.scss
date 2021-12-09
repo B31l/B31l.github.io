@@ -112,6 +112,12 @@
             .side {
                 margin-bottom: 20px;
                 padding-bottom: 0;
+                .side-title {
+                    text-align: center;
+                    padding: 10px;
+                    background: #777;
+                    color: #fff;
+                }
                 i {
                     margin-right: 3px;
                 }

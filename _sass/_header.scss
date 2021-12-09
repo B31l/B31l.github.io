@@ -108,6 +108,7 @@ header {
         }
     }
     .mid::before {
+        position: absolute;
         content: "";
         background-color: #000917;
         background-image: url(/img/eagle-5798326.png);
@@ -115,7 +116,6 @@ header {
         background-repeat: no-repeat;
         background-size: auto 75%;
         opacity: 0.5;
-        position: absolute;
         top: 0px;
         left: 0px;
         right: 0px;

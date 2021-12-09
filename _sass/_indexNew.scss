@@ -83,20 +83,6 @@
             }
         }
     }
-    .mid::before{
-        content: "";
-        background-color: #000917;
-        background-image: url(/img/eagle-5798326.png);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: auto 75%;
-        opacity: 0.5;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-    }
     .mid {
         position: relative;
         width: 40%;
@@ -137,6 +123,20 @@
                 display: none;
             }
         }
+    }
+    .mid::before{
+        content: "";
+        background-color: #000917;
+        background-image: url(/img/eagle-5798326.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: auto 75%;
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
     }
     .right {
         display: none;

@@ -47,15 +47,41 @@
     <div class="mid">
 
         <!---------------------------------------------------------------------------------------------------->
-        <!-- legendButton -->
+        <!-- Search -->
         <!---------------------------------------------------------------------------------------------------->
-        <!-- <div class="legend-button">
-            <button onclick="범례('legendArchives')">Archives</button>
-            <button onclick="범례('legendCategories')">Categories</button>
-            <button onclick="범례('legendTags')">Tags</button>
-            <button onclick="범례('legendSearch')">Search</button>
-            <button onclick="범례('legendMore')">More</button>
-        </div> -->
+        <div class="legend" id="legendSearch" style="display: none">
+            <div class="legend-title">Search</div>
+            <div class="legend-body" id="search-container">
+                <input type="text" id="search-input" placeholder="Search">
+                <ul id="results-container"></ul>
+            </div>
+            <!-- <p align="right"> made by goodGid</p> -->
+            <!-- Script pointing to jekyll-search.js -->
+            <script src="/js/jekyll-search.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                SimpleJekyllSearch({
+                    searchInput: document.getElementById('search-input'),
+                    resultsContainer: document.getElementById('results-container'),
+                    json: '/search.json',
+                    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                    noResultsText: 'No results found',
+                    limit: 20,
+                    fuzzy: false,
+                    exclude: []
+                })
+            </script>
+            <style>
+                input[type=text], select {
+                width: 90%;
+                padding: 12px 20px;
+                margin: 20px 5%;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                }
+            </style>  
+        </div>
 
         <!---------------------------------------------------------------------------------------------------->
         <!-- 아카이브 -->
@@ -143,52 +169,15 @@
         </div>
 
         <!---------------------------------------------------------------------------------------------------->
-        <!-- Search -->
-        <!---------------------------------------------------------------------------------------------------->
-        <div class="legend" id="legendSearch" style="display: none">
-            <div class="legend-title">Search</div>
-            <div class="legend-body" id="search-container">
-                <input type="text" id="search-input" placeholder="Search">
-                <ul id="results-container"></ul>
-            </div>
-            <!-- <p align="right"> made by goodGid</p> -->
-            <!-- Script pointing to jekyll-search.js -->
-            <script src="/js/jekyll-search.js" type="text/javascript"></script>
-            <script type="text/javascript">
-                SimpleJekyllSearch({
-                    searchInput: document.getElementById('search-input'),
-                    resultsContainer: document.getElementById('results-container'),
-                    json: '/search.json',
-                    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-                    noResultsText: 'No results found',
-                    limit: 20,
-                    fuzzy: false,
-                    exclude: []
-                })
-            </script>
-            <style>
-                input[type=text], select {
-                width: 90%;
-                padding: 12px 20px;
-                margin: 20px 5%;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-                }
-            </style>  
-        </div>
-
-        <!---------------------------------------------------------------------------------------------------->
         <!-- More -->
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendMore" style="display: none">
             <div class="legend-title">More</div>
-            <div class="legend-body">
-                <a href="https://b31l.github.io/collection/"><i class="fa fa-bookmark">Collection</i></a>
-                <a href="https://b31l.github.io/demo/"><i class="fa fa-play"></i>Demo</a>
-                <a href="https://b31l.github.io/about/"><i class="fa fa-heart"></i>About</a>
-            </div>
+            <ul class="legend-body">
+                <li><a href="https://b31l.github.io/collection/"><i class="fa fa-bookmark">Collection</i></a></li>
+                <li><a href="https://b31l.github.io/demo/"><i class="fa fa-play"></i>Demo</a></li>
+                <li><a href="https://b31l.github.io/about/"><i class="fa fa-heart"></i>About</a></li>
+            </ul>
         </div>
     </div>
 </header>

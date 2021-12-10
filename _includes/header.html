@@ -48,12 +48,93 @@
             <button onclick="범례('legendArchives')">Archives</button>
             <button onclick="범례('legendCategories')">Categories</button>
             <button onclick="범례('legendTags')">Tags</button>
+            <button onclick="범례('legendSearch')">Search</button>
+            <button onclick="범례('legendMore')">More</button>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------->
+        <!-- 아카이브 -->
+        <!---------------------------------------------------------------------------------------------------->
+        <div class="legend" id="legendArchives" style="display: none">
+            <div class="legend-title">Archives</div>
+            <a href="https://b31l.github.io/archive/"><i class="fa fa-plus"></i></a>
+            <ul class="legend-body">
+              {% for post in site.posts %}
+                {% unless post.next %}
+                  <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
+                {% else %}
+                  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+                  {% if year != nyear %}
+                    <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
+                  {% endif %}
+                {% endunless %}
+                <li>
+                    <time>
+                    {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                    </time>
+                    <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------->
+        <!-- 카테고리 -->
+        <!---------------------------------------------------------------------------------------------------->
+        <div class="legend" id="legendCategories" style="display: none">
+            <div class="legend-title">Categories</div>
+            <a href="https://b31l.github.io/category/"><i class="fa fa-plus"></i></a>
+            <ul class="legend-body">
+                {% for category in site.categories %}
+                <h2 id="{{category | first}}">{{category | first}}</h2>
+                    {% for posts in category  %}
+                        {% for post in posts %}
+                            {% if post.url %}
+                            <li>
+                                <time>
+                                {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                                </time>
+                                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------->
+        <!-- 태그 -->
+        <!---------------------------------------------------------------------------------------------------->
+        <div class="legend" id="legendTags" style="display: none">
+            <div class="legend-title">Tags</div>
+            <a href="https://b31l.github.io/tag/"><i class="fa fa-plus"></i></a>
+            {% capture tags %}
+              {% for tag in site.tags %}
+                {{ tag[0] }}
+              {% endfor %}
+            {% endcapture %}
+            {% assign sortedtags = tags | split:' ' | sort %}
+            <ul class="legend-body">
+            {% for tag in sortedtags %}
+              <h2 id="{{ tag }}">{{ tag }}</h2>
+              {% for post in site.tags[tag] %}
+                <li>
+                    <time>
+                    {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                    </time>
+                    <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+            {% endfor %}
+            </ul>
         </div>
 
         <!---------------------------------------------------------------------------------------------------->
         <!-- Search -->
         <!---------------------------------------------------------------------------------------------------->
-        <div class="legend" id="legendArchives" style="display: block">
+        <div class="legend" id="legendSearch" style="display: none">
             <div class="legend-title">Search</div>
             <div class="legend-body" id="search-container">
                 <input type="text" id="search-input" placeholder="Search">
@@ -86,85 +167,15 @@
                 }
             </style>  
         </div>
-        
 
         <!---------------------------------------------------------------------------------------------------->
-        <!-- 아카이브 -->
+        <!-- More -->
         <!---------------------------------------------------------------------------------------------------->
-        <div class="legend" id="legendArchives" style="display: none">
-            <div class="legend-title">Archives</div>
-            <a href="https://b31l.github.io/archive/"><i class="fa fa-plus"></i>Go to Archive</a>
-            <ul class="legend-body">
-              {% for post in site.posts %}
-                {% unless post.next %}
-                  <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
-                {% else %}
-                  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-                  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-                  {% if year != nyear %}
-                    <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
-                  {% endif %}
-                {% endunless %}
-                <li>
-                    <time>
-                    {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                    </time>
-                    <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-        </div>
-
-        <!---------------------------------------------------------------------------------------------------->
-        <!-- 카테고리 -->
-        <!---------------------------------------------------------------------------------------------------->
-        <div class="legend" id="legendCategories" style="display: none">
-            <div class="legend-title">Categories</div>
-            <a href="https://b31l.github.io/category/"><i class="fa fa-plus"></i>Go to Categories</a>
-            <ul class="legend-body">
-                {% for category in site.categories %}
-                <h2 id="{{category | first}}">{{category | first}}</h2>
-                    {% for posts in category  %}
-                        {% for post in posts %}
-                            {% if post.url %}
-                            <li>
-                                <time>
-                                {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                                </time>
-                                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                            </li>
-                            {% endif %}
-                        {% endfor %}
-                    {% endfor %}
-                {% endfor %}
-            </ul>
-        </div>
-
-        <!---------------------------------------------------------------------------------------------------->
-        <!-- 태그 -->
-        <!---------------------------------------------------------------------------------------------------->
-        <div class="legend" id="legendTags" style="display: none">
-            <div class="legend-title">Tags</div>
-            <a href="https://b31l.github.io/tag/"><i class="fa fa-plus"></i>Go to Tags</a>
-            {% capture tags %}
-              {% for tag in site.tags %}
-                {{ tag[0] }}
-              {% endfor %}
-            {% endcapture %}
-            {% assign sortedtags = tags | split:' ' | sort %}
-            <ul class="legend-body">
-            {% for tag in sortedtags %}
-              <h2 id="{{ tag }}">{{ tag }}</h2>
-              {% for post in site.tags[tag] %}
-                <li>
-                    <time>
-                    {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                    </time>
-                    <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </li>
-              {% endfor %}
-            {% endfor %}
-            </ul>
+        <div class="legend" id="legendMore" style="display: none">
+            <div class="legend-title">More</div>
+            <a href="https://b31l.github.io/collection/"><i class="fa fa-bookmark">Collection</i></a>
+            <a href="https://b31l.github.io/demo/"><i class="fa fa-play"></i>Demo</a>
+            <a href="https://b31l.github.io/about/"><i class="fa fa-heart"></i>About</a>
         </div>
     </div>
 </header>

@@ -31,21 +31,6 @@ header {
                 font-size: 0;   
                 margin: 0;
                 padding: 0;
-                button {
-                    display: flex;
-                    flex-direction: row;
-                    align-content: center;
-                    justify-content: center;
-                    padding-top: 20px;
-                    height: 52px;
-                    font-size: 30px;
-                    &:hover {
-                        color: #fff;
-                    }
-                    i {
-                        margin-right: 5px;
-                    }
-                }
                 li {
                     width: 50px;
                     text-align: center;
@@ -54,6 +39,20 @@ header {
                     display: inline-block;
                     -webkit-transition: 0.2s ease;
                     transition: 0.2s ease;
+                    button {
+                        display: flex;
+                        flex-direction: row;
+                        align-content: center;
+                        justify-content: center;
+                        padding-top: 20px;
+                        height: 52px;
+                        font-size: 30px;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: #FFCC33;
+                            color: #fff;
+                        }
+                    }
                     a {
                         display: flex;
                         flex-direction: row;

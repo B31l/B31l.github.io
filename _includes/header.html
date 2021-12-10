@@ -93,6 +93,7 @@
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendArchives" style="display: none">
             <div class="legend-title">Archives</div>
+            <a href="https://b31l.github.io/archive/"><i class="fa fa-plus"></i>Go to Archive</a>
             <ul class="legend-body">
               {% for post in site.posts %}
                 {% unless post.next %}
@@ -119,6 +120,7 @@
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendCategories" style="display: none">
             <div class="legend-title">Categories</div>
+            <a href="https://b31l.github.io/category/"><i class="fa fa-plus"></i>Go to Categories</a>
             <ul class="legend-body">
                 {% for category in site.categories %}
                 <h2 id="{{category | first}}">{{category | first}}</h2>
@@ -143,6 +145,7 @@
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendTags" style="display: none">
             <div class="legend-title">Tags</div>
+            <a href="https://b31l.github.io/tag/"><i class="fa fa-plus"></i>Go to Tags</a>
             {% capture tags %}
               {% for tag in site.tags %}
                 {{ tag[0] }}

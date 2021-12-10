@@ -56,8 +56,10 @@
         <!-- 아카이브 -->
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendArchives" style="display: none">
-            <div class="legend-title">Archives</div>
-            <a href="https://b31l.github.io/archive/"><i class="fa fa-plus"></i></a>
+            <div class="legend-title">
+                Archives
+                <a href="https://b31l.github.io/archive/"><i class="fa fa-plus"></i></a>
+            </div>
             <ul class="legend-body">
               {% for post in site.posts %}
                 {% unless post.next %}
@@ -83,8 +85,10 @@
         <!-- 카테고리 -->
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendCategories" style="display: none">
-            <div class="legend-title">Categories</div>
-            <a href="https://b31l.github.io/category/"><i class="fa fa-plus"></i></a>
+            <div class="legend-title">
+                Categories
+                <a href="https://b31l.github.io/category/"><i class="fa fa-plus"></i></a>
+            </div>
             <ul class="legend-body">
                 {% for category in site.categories %}
                 <h2 id="{{category | first}}">{{category | first}}</h2>
@@ -108,8 +112,10 @@
         <!-- 태그 -->
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendTags" style="display: none">
-            <div class="legend-title">Tags</div>
-            <a href="https://b31l.github.io/tag/"><i class="fa fa-plus"></i></a>
+            <div class="legend-title">
+                Tags
+                <a href="https://b31l.github.io/tag/"><i class="fa fa-plus"></i></a> 
+            </div>
             {% capture tags %}
               {% for tag in site.tags %}
                 {{ tag[0] }}
@@ -173,9 +179,11 @@
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendMore" style="display: none">
             <div class="legend-title">More</div>
-            <a href="https://b31l.github.io/collection/"><i class="fa fa-bookmark">Collection</i></a>
-            <a href="https://b31l.github.io/demo/"><i class="fa fa-play"></i>Demo</a>
-            <a href="https://b31l.github.io/about/"><i class="fa fa-heart"></i>About</a>
+            <div class="legend-body">
+                <a href="https://b31l.github.io/collection/"><i class="fa fa-bookmark">Collection</i></a>
+                <a href="https://b31l.github.io/demo/"><i class="fa fa-play"></i>Demo</a>
+                <a href="https://b31l.github.io/about/"><i class="fa fa-heart"></i>About</a>
+            </div>
         </div>
     </div>
 </header>

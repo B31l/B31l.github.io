@@ -11,6 +11,7 @@
 }
 
 .page {
+    margin-left: 500px;
     width: 100vw;
     box-sizing: border-box;
     margin: 0 auto;
@@ -21,7 +22,6 @@
         float: left;
         padding: 0 30px;
         padding-top: 20px;
-        margin-left: 500px;
         font-size: 16px;
         a:not([title]){
             word-break: break-all;

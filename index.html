@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<!---------------------------------------------------------------------------------------------------->
+<!-- LEFT -->
+<!---------------------------------------------------------------------------------------------------->
 <div class="page clearfix" indexNew>    
 
     <!---------------------------------------------------------------------------------------------------->
@@ -18,44 +21,27 @@ layout: default
         <!---------------------------------------------------------------------------------------------------->
         <ul>
             {% for post in paginator.posts %}
-              <li>
-                <!-- 포스트 제목 -->
-                <h2>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
+                <li>
+                    <!-- 포스트 제목 -->
+                    <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                    <!-- 포스트 부제 -->
+                    <div class="label-card"><i class="fa fa-key"></i>{{ post.meta }}</div>
+                    <!-- 포스트 라벨 -->
+                    <div class="label">
+                        <div class="label-card"><i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}</div>
+                        <div class="label-card">{% if post.author %}<i class="fa fa-user"></i>{{ post.author }}{% endif %}</div>
+                        <div class="label-card">{% include category.html %}</div>
+                        <div class="label-card">{% include tag.html %}</div>
+                    </div>
 
-                <!-- 포스트 부제 -->
-                <div class="label-card">
-                    <i class="fa fa-key"></i>{{ post.meta }}
-                </div>
-                
-                <!-- 포스트 라벨 -->
-                <div class="label">
-                    <!-- 날짜 -->
-                    <div class="label-card">
-                        <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
-                    </div>
-                    <!-- 작성자 -->
-                    <div class="label-card">
-                        {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}
-                        {% endif %}
-                    </div>
-                    <!-- 카테고리 -->
-                    <div class="label-card">
-                      {% include category.html %}
-                    </div>
-                    <!-- 태그 -->
-                    <div class="label-card">
-                      {% include tag.html %}
-                    </div>
-                </div>
+                <!-- 발췌와 read-all -->
                 <!-- <div class="excerpt">
                     {{post.excerpt}}
                 </div> -->
                 <!-- <div class="read-all">
                     <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
                 </div> -->
-              </li>
+                </li>
             {% endfor %}
         </ul>
         
@@ -64,21 +50,21 @@ layout: default
         <!---------------------------------------------------------------------------------------------------->
         <div class="pagination">
             {% if paginator.previous_page %}
-              <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
-              <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><i class="fa fa-angle-left"></i></a>
+                <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><i class="fa fa-angle-left"></i></a>
             {% else %}
-              <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
-              <span class="previous disable"><i class="fa fa-angle-left"></i></span>
+                <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
+                <span class="previous disable"><i class="fa fa-angle-left"></i></span>
             {% endif %}
             <span class="page_number ">{{ paginator.page }}/{{ paginator.total_pages }}</span>
             {% if paginator.next_page %}
-              <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
-              <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
+                <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
+                <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
             {% else %}
-              <span class="next disable"><i class="fa fa-angle-right"></i></span>
-              <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
+                <span class="next disable"><i class="fa fa-angle-right"></i></span>
+                <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
             {% endif %}
-          </div>
+        </div>
     </div>
 
     <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
@@ -142,11 +128,11 @@ layout: default
                     {% assign max = first[1].size %}
                     {% assign min = max %}
                     {% for tag in site.tags offset:1 %}
-                      {% if tag[1].size > max %}
-                        {% assign max = tag[1].size %}
-                      {% elsif tag[1].size < min %}
-                        {% assign min = tag[1].size %}
-                      {% endif %}
+                        {% if tag[1].size > max %}
+                            {% assign max = tag[1].size %}
+                        {% elsif tag[1].size < min %}
+                            {% assign min = tag[1].size %}
+                        {% endif %}
                     {% endfor %}
 
                     {% if max == min %}
@@ -156,22 +142,22 @@ layout: default
                     {% endif %}
 
                     {% for tag in site.tags %}
-                      {% assign temp = tag[1].size | minus: min | times: 36 | divided_by: diff %}
-                      {% assign base = temp | divided_by: 4 %}
-                      {% assign remain = temp | modulo: 4 %}
-                      {% if remain == 0 %}
-                        {% assign size = base | plus: 9 %}
-                      {% elsif remain == 1 or remain == 2 %}
-                        {% assign size = base | plus: 9 | append: '.5' %}
-                      {% else %}
-                        {% assign size = base | plus: 10 %}
-                      {% endif %}
-                      {% if remain == 0 or remain == 1 %}
-                        {% assign color = 9 | minus: base %}
-                      {% else %}
-                        {% assign color = 8 | minus: base %}
-                      {% endif %}
-                      <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
+                        {% assign temp = tag[1].size | minus: min | times: 36 | divided_by: diff %}
+                        {% assign base = temp | divided_by: 4 %}
+                        {% assign remain = temp | modulo: 4 %}
+                        {% if remain == 0 %}
+                            {% assign size = base | plus: 9 %}
+                        {% elsif remain == 1 or remain == 2 %}
+                            {% assign size = base | plus: 9 | append: '.5' %}
+                        {% else %}
+                            {% assign size = base | plus: 10 %}
+                        {% endif %}
+                        {% if remain == 0 or remain == 1 %}
+                            {% assign color = 9 | minus: base %}
+                        {% else %}
+                            {% assign color = 8 | minus: base %}
+                        {% endif %}
+                    <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
                     {% endfor %}
                 </div>
             </div>

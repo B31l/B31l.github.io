@@ -16,19 +16,19 @@ mathjax: true
 
 # nodejs 설치
 
-![](/img/nodejs/nodejs설치1)
+![](/img/nodejs/nodejs설치1.png)
 
-![](/img/nodejs/nodejs설치2)
+![](/img/nodejs/nodejs설치2.png)
 
-![](/img/nodejs/nodejs설치3)
+![](/img/nodejs/nodejs설치3.png)
 
-![](/img/nodejs/nodejs설치4)
+![](/img/nodejs/nodejs설치4.png)
 
-![](/img/nodejs/nodejs설치5)
+![](/img/nodejs/nodejs설치5.png)
 
-![](/img/nodejs/nodejs설치6)
+![](/img/nodejs/nodejs설치6.png)
 
-![](/img/nodejs/nodejs설치7)
+![](/img/nodejs/nodejs설치7.png)
 
-![](/img/nodejs/nodejs설치8)
+![](/img/nodejs/nodejs설치8.png)
 

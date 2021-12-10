@@ -59,21 +59,6 @@ header {
                         background-color: #FFCC33;
                         // box-shadow: 0 25px 25px -15px rgba(255,255,255,0.93);
                     }
-                    button {
-                        display: flex;
-                        flex-direction: row;
-                        align-content: center;
-                        justify-content: center;
-                        padding-top: 20px;
-                        height: 52px;
-                        font-size: 30px;
-                        &:hover {
-                            color: #fff;
-                        }
-                        i {
-                            margin-right: 5px;
-                        }
-                    }
                 }
             }
         }

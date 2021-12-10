@@ -69,13 +69,14 @@ header {
         position: relative;
         float: left;
         width: 450px; height: 100vh;
-        color: white;
+        color: WHITE;
         font-weight: bold;
         a {
-            color: #4FC1E4;
+            float: left;
+            color: #FFCC33;
             &:hover {
-                background-color: #4FC1E4;
-                color: white;
+                background-color: #FFCC33;
+                color: BLACK;
             }
         }
         .legend-button {

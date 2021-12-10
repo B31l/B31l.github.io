@@ -27,6 +27,18 @@ header {
                     color: #fff;
                 }
             }
+            button {
+                width: 50px;
+                margin: 5px;
+                padding-top: 20px;
+                height: 52px;
+                font-size: 30px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #FFCC33;
+                    color: #fff;
+                }
+            }
             ul {
                 font-size: 0;   
                 margin: 0;
@@ -39,20 +51,6 @@ header {
                     display: inline-block;
                     -webkit-transition: 0.2s ease;
                     transition: 0.2s ease;
-                    button {
-                        display: flex;
-                        flex-direction: row;
-                        align-content: center;
-                        justify-content: center;
-                        padding-top: 20px;
-                        height: 52px;
-                        font-size: 30px;
-                        cursor: pointer;
-                        &:hover {
-                            background-color: #FFCC33;
-                            color: #fff;
-                        }
-                    }
                     a {
                         display: flex;
                         flex-direction: row;

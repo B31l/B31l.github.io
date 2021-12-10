@@ -28,19 +28,18 @@ header {
                 }
             }
             button {
-                width: 50px;
+                width: 50px; height: 50px;
                 margin: 5px;
-                padding-top: 20px;
-                height: 52px;
+                background-color: #000917;
+                color: #9d9d9d;
                 font-size: 30px;
                 cursor: pointer;
                 &:hover {
-                    background-color: #FFCC33;
                     color: #fff;
                 }
             }
             ul {
-                font-size: 0;   
+                font-size: 0;
                 margin: 0;
                 padding: 0;
                 li {

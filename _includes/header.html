@@ -5,41 +5,19 @@
     <!---------------------------------------------------------------------------------------------------->
     <div class="wrapper">
         <!--모바일 버튼-->
-        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
-        <!--Nav-->
-        <nav id="headerNav">
+        <button class="menu" id="headerMenu"><i class="fa fa-bars"></i></button>
+        <!--legendNav-->
+        <div class="legendNav" id="headerNav">
             <button onclick="범례('legendSearch')"><i class="fa fa-search"></i></button>
             <button onclick="범례('legendArchives')"><i class="fa fa-archive"></i></button>
             <button onclick="범례('legendCategories')"><i class="fa fa-th-list"></i></button>
             <button onclick="범례('legendTags')"><i class="fa fa-tags"></i></button>
             <button onclick="범례('legendMore')"><i class="fa fa-plus"></i></button>
+        </div>
+        <!--buttonNav-->
+        <div class="buttonNav">
             <button onclick="location.href='https://b31l.github.io/'"><i class="fa fa-home"></i></button>
-            <ul>
-                <li>
-                    {% if page.url == '/' %}
-                    <a class="active" href="{{site.baseurl}}/">
-                        {% else %}
-                    <a href="{{site.baseurl}}/">
-                    {% endif %}
-                        <i class="fa fa-home"></i>
-                    </a>
-                </li>
-
-                <!-- {% for my_page in site.pages %}
-                    {% if my_page.type == 'page' %}
-                    <li>
-                        {% if my_page.url == page.url %}
-                        <a class="active" href="{{ my_page.url | prepend: site.baseurl }}">
-                            {% else %}
-                        <a href="{{ my_page.url | prepend: site.baseurl }}">
-                        {% endif %}
-                            <i class="fa fa-{{my_page.icon}}"></i>
-                        </a>
-                    </li>
-                    {% endif %}
-                {% endfor %} -->
-            </ul>
-        </nav>
+        </div>
     </div>
     
     <!---------------------------------------------------------------------------------------------------->

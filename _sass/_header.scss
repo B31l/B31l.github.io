@@ -56,7 +56,7 @@ header {
             color: #FFCC33;
             &:hover {
                 background-color: #FFCC33;
-                color: BLACK;
+                color: #000917;
             }
         }
         .legend-button {
@@ -64,7 +64,7 @@ header {
             text-align: center;
             display: inline-block;
             button {
-                border: 1px solid #333;
+                border: 1px solid #000917;
                 border-radius: 10px;
                 width: 30%;
                 margin: 5px;

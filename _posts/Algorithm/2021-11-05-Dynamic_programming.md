@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "💰 Charge"
-meta: " 잔돈 문제"
+title: "📚 Dynamic programming"
+meta: " 동적계획법"
 categories: Algorithm
-tags: "Dynamic programming"
+tags: Python
+comments: true
+mathjax: true
 ---
 
 
@@ -11,8 +13,4 @@ tags: "Dynamic programming"
 * content
 {:toc}
 # 동적계획법
-
-
-
-# Floyd-Warshall
 

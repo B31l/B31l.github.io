@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🔄 Recursion"
+title: "🔄 Backtracking"
 meta: " 퇴각검색법"
 categories: Algorithm
 tags: Python

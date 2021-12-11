@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🔄 Recursion"
+title: "🔄 Branch and Bound"
 meta: " 퇴각검색법"
 categories: Algorithm
 tags: Python

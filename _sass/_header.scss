@@ -89,15 +89,6 @@ header {
                 overflow-y: scroll;
                 overflow-x: hidden;
                 line-height: 150%;
-            }
-            .legend-body::-webkit-scrollbar {
-                display: none;
-            }
-            .legend-container {
-                display: inline-block;
-                height: 750px;
-                overflow-y: scroll;
-                overflow-x: hidden;
                 .legend-box {
                     display: inline-block;
                     box-sizing: border-box;
@@ -108,6 +99,9 @@ header {
                     border: 1px solid BEIGE;
                     border-radius: 10px;
                 }
+            }
+            .legend-body::-webkit-scrollbar {
+                display: none;
             }
         }
     }

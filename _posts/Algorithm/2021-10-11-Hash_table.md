@@ -3,9 +3,7 @@ layout: post
 title: "💾 Hash table"
 meta: " 해시 테이블"
 categories: Algorithm
-tags: Python
-comments: true
-mathjax: true
+tags: 자료구조
 ---
 
 

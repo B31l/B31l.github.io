@@ -3,9 +3,7 @@ layout: post
 title: "💰 Palindrome"
 meta: " 회문 판별"
 categories: Algorithm
-tags: Python
-comments: true
-mathjax: true
+tags: 문제해결
 ---
 
 

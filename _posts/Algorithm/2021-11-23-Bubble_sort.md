@@ -3,7 +3,7 @@ layout: post
 title: "🍺 Bubble sort"
 meta: " 정렬 알고리즘 (1) 버블 정렬"
 categories: Algorithm
-tags: Python JavaScript
+tags: 문제해결
 ---
 
 

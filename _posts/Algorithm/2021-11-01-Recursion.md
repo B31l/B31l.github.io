@@ -3,9 +3,7 @@ layout: post
 title: "🔄 Recursion"
 meta: " 재귀법"
 categories: Algorithm
-tags: Python
-comments: true
-mathjax: true
+tags: 설계기법
 ---
 
 

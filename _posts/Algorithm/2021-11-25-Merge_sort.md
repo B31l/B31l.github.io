@@ -3,9 +3,7 @@ layout: post
 title: "🤝 Merge sort"
 meta: " 정렬 알고리즘 (3) 합병 정렬"
 categories: Algorithm
-tags: Python JavaScript
-comments: true
-mathjax: true
+tags: 문제해결
 ---
 
 

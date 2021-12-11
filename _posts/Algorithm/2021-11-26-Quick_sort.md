@@ -3,9 +3,7 @@ layout: post
 title: "🚀 Quick sort"
 meta: " 정렬 알고리즘 (4) 퀵 정렬"
 categories: Algorithm
-tags: Python JavaScript
-comments: true
-mathjax: true
+tags: 문제해결
 ---
 
 

@@ -3,9 +3,7 @@ layout: post
 title: "🔎 Binary Search"
 meta: " 검색 알고리즘 (2) 이진 탐색"
 categories: Algorithm
-tags: Python
-comments: true
-mathjax: true
+tags: 문제해결
 ---
 
 

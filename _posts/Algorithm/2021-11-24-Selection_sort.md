@@ -3,9 +3,7 @@ layout: post
 title: "👇 Selection sort"
 meta: " 정렬 알고리즘 (2) 선택 정렬"
 categories: Algorithm
-tags: Python
-comments: true
-mathjax: true
+tags: 문제해결
 ---
 
 

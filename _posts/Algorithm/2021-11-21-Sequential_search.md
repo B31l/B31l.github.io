@@ -3,9 +3,7 @@ layout: post
 title: "🔎 Sequential Search"
 meta: " 검색 알고리즘 (1) 순차 탐색"
 categories: Algorithm
-tags: Python
-comments: true
-mathjax: true
+tags: 문제해결
 ---
 
 

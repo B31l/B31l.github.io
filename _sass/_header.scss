@@ -89,18 +89,25 @@ header {
                 overflow-y: scroll;
                 overflow-x: hidden;
                 line-height: 150%;
-                .legend-box {
-                    display: inline-block;
-                    width: 90%; height: 100px;
-                    padding: 12px 20px;
-                    margin: 20px 5%;
-                    border: 1px solid WHITE;
-                    border-radius: 10px;
-                    box-sizing: border-box;
-                }
             }
             .legend-body::-webkit-scrollbar {
                 display: none;
+            }
+            .legend-container {
+                display: inline-block;
+                height: 750px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                .legend-box {
+                    display: inline-block;
+                    box-sizing: border-box;
+                    background-color: WHITE;
+                    width: 90%; height: 100px;
+                    padding: 12px 20px;
+                    margin: 20px 5%;
+                    border: 1px solid BEIGE;
+                    border-radius: 10px;
+                }
             }
         }
     }

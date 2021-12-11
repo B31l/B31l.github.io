@@ -18,7 +18,7 @@ tags: 문제해결
 
   ![](https://runestone.academy/runestone/books/published/pythonds3/_images/firstsplit.png)
 
-  블라블라
+  여기서는 리스트의 가장 왼쪽 원소를 기준으로 잡는다.
 
 - **분할 정복**
 

@@ -14,18 +14,17 @@ tags: 문제해결
 
 ## 💡 개념
 
-- 비교 : Key를 비교한다.
+![](https://runestone.academy/runestone/books/published/pythonds3/_images/seqsearch.png)
 
-  n개의 요소에서 Key를 찾을 때 **n번 비교**한다.
-
-- 종료 조건
+- **비교**
+- **종료 조건**
 
 ## ⏳ 시간 복잡도
 
-|            |  B(n)  |  A(n)  |  W(n)  |
-| :--------: | :----: | :----: | :----: |
-| Key가 있음 | O(`1`) | O(`n`) | O(`n`) |
-| Key가 없음 | O(`n`) | O(`n`) | O(`n`) |
+|               | B(n) | A(n) | W(n) |
+| :-----------: | :--: | :--: | :--: |
+| Key가 있을 때 |  1   |  N   |  N   |
+| Key가 없을 때 |  N   |  N   |  N   |
 
 ---
 
@@ -58,7 +57,25 @@ def sequential_search(a_list, item):
 
 # 개선 알고리즘
 
-## 🤔 보초법
+## 🤔 정렬된 리스트
+
+```python
+def ordered_sequential_search(a_list, item):
+    pos = 0
+    
+    while pos < len(a_list):
+        if a_list[pos] == item:
+            return True
+        else:
+            if a_list[pos] > item:   # 항목이 찾는 값보다 큰 경우 바로 종료
+                return False
+            else:
+                pos = pos + 1
+
+    return False
+```
+
+## 😀 보초법
 
 보초법이라는 게 있음
 

@@ -41,12 +41,38 @@ tags: 문제해결
 # 구현
 
 ```python
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n-1):
-        for j in range(n-1, i, -1):
-            if arr[j-1] > arr[j]:
-                arr[j-1], arr[j] = arr[j], arr[j-1]
+def merge_sort(a_list):
+    # 분할 과정
+    print("분할", a_list)
+    if len(a_list) > 1:
+        mid = len(a_list) // 2
+        left_half = a_list[:mid]
+        right_half = a_list[mid:]
+
+        merge_sort(left_half)
+        merge_sort(right_half)
+        
+        # 합병 과정
+        i, j, k = 0, 0, 0
+        while i < len(left_half) and j < len(right_half):
+            if left_half[i] <= right_half[j]:
+                a_list[k] = left_half[i]
+                i = i + 1
+            else:
+                a_list[k] = right_half[j]
+                j = j + 1
+            k = k + 1
+
+        while i < len(left_half):
+            a_list[k] = left_half[i]
+            i = i + 1
+            k = k + 1
+
+        while j < len(right_half):
+            a_list[k] = right_half[j]
+            j = j + 1
+            k = k + 1
+    print("합병", a_list)
 ```
 
 ---

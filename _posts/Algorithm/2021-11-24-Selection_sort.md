@@ -26,9 +26,9 @@ tags: 문제해결
 
 ## ⏳ 시간 복잡도
 
-|  B(n)   |  A(n)   |  W(n)   |
-| :-----: | :-----: | :-----: |
-| O(`n²`) | O(`n²`) | O(`n²`) |
+| B(n) | A(n) | W(n) |
+| :--: | :--: | :--: |
+|  N²  |  N²  |  N²  |
 
 ---
 
@@ -39,12 +39,15 @@ tags: 문제해결
 # 구현
 
 ```python
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n-1):
-        for j in range(n-1, i, -1):
-            if arr[j-1] > arr[j]:
-                arr[j-1], arr[j] = arr[j], arr[j-1]
+def selection_sort(a_list):
+    
+    for i in range(len(a_list)-1, 0, -1):
+        max_idx = 0
+        for j in range(i):
+            if a_list[j] > a_list[max_idx]:
+                max_idx = j
+        
+        a_list[max_idx], a_list[i] = a_list[i], a_list[max_idx]
 ```
 
 ---

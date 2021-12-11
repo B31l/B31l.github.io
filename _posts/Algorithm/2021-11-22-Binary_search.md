@@ -14,17 +14,20 @@ tags: 문제해결
 
 ## 💡 개념
 
-- 비교 : Key를 비교한다.
+![](https://runestone.academy/runestone/books/published/pythonds3/_images/binsearch.png)
 
-  n개의 요소에서 Key를 찾을 때 **n번 비교**한다.
+> 이진 탐색은 정렬된 리스트에 대해서만 수행할 수 있다.
+
+- **비교**
+- **종료 조건**
 
 
 ## ⏳ 시간 복잡도
 
-|            |  B(n)  |  A(n)  |  W(n)  |
-| :--------: | :----: | :----: | :----: |
-| Key가 있음 | O(`1`) | O(`n`) | O(`n`) |
-| Key가 없음 | O(`n`) | O(`n`) | O(`n`) |
+|            | B(n) | A(n) | W(n) |
+| :--------: | :--: | :--: | :--: |
+| Key가 있음 |  1   | logN | logN |
+| Key가 없음 | logN | logN | logN |
 
 ---
 
@@ -63,7 +66,29 @@ def binary_search(a_list, item):
 
 
 
-# 결론
+# 개선 알고리즘
 
-O(n ^ 2)의 높은 시간 복잡도를 가지고 있으며, 모든 반복에 대해 비교와 교환이 이루어질 수 있으므로 같은 시간복잡도를 가진 다른 알고리즘(선택 정렬, 삽입 정렬)에 비해서도 낮은 효율을 보여준다. 그러나 **안정적인 교환(stable)**이 이루어지고 조기 종료를 통해 시간을 단축할 수 있다.
+## 🤔 분할정복
+
+```python
+def binary_search_rec(a_list, item):
+    if len(a_list) == 0:
+        return False
+    else:
+        midpoint = len(a_list) // 2
+        if a_list[midpoint] == item:
+            return True
+        
+        # 재귀호출: 탐색구간 조정
+        elif item < a_list[midpoint]:
+            return binary_search_rec(a_list[:midpoint], item)
+        else:
+            return binary_search_rec(a_list[midpoint + 1 :], item)
+```
+
+
+
+
+
+# 결론
 

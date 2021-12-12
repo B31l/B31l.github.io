@@ -86,6 +86,8 @@ def binary_search_rec(a_list, item):
             return binary_search_rec(a_list[midpoint + 1 :], item)
 ```
 
+---
+
 
 
 

@@ -18,7 +18,6 @@ header {
             display: none;
         }
         .nav-static {
-            height: 75%;
             button {
                 width: 100%; height: 30px;
                 margin: 30px 5px 0px;
@@ -29,17 +28,6 @@ header {
                 &:hover {
                     color: #fff;
                 }
-            }
-        }
-        .nav-dynamic {
-            height: 25%;
-            button {
-                width: 100%; height: 30px;
-                margin: 30px 5px 0px;
-                background-color: #000917;
-                color: #FFCC33;
-                font-size: 30px;
-                cursor: pointer;
             }
         }
     }

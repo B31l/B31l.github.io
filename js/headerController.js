@@ -1,5 +1,5 @@
 function 범례(idx) {
-    legends = ["Search", "Archives", "Categories", "Tags", "Demo", "Setting", "More"];
+    legends = ["Setting", "Search", "Archives", "Categories", "Tags", "Demo", "More"];
     legends.forEach(Element => {
         document.getElementById(`legend${Element}`).style.display = "none";
         document.getElementById(`btn${Element}`).style.color = "WHITE";

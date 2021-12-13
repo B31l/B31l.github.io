@@ -42,6 +42,12 @@ header {
                 cursor: pointer;
             }
         }
+        button {
+            width: 100%;
+        }
+        i {
+            width: 100%;
+        }
     }
     .mid {
         position: relative;
@@ -85,16 +91,19 @@ header {
                 list-style: none;
                 padding-left: 10px;
                 li {
+                    a {
+                        margin-right: 10px;
+                        float: left;
+                        color: WHITE;
+                    }
+                    time {
+                        color: #777;
+                    }
                     margin-left: 20px;
                     &:hover {
                         background-color: #FFCC33;
                         color: #000917;
                     }
-                }
-                li a {
-                    margin-right: 10px;
-                    float: left;
-                    color: #FFCC33;
                 }
                 .legend-box {
                     display: inline-block;

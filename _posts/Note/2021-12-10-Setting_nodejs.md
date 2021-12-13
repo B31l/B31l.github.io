@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "⚙ Setting nodejs"
+title: "Setting nodejs"
 meta: " 시작 가이드 : nodejs"
 categories: Note
 tags: Setting

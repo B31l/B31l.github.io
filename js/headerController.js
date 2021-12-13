@@ -9,9 +9,9 @@ function 범례(idx) {
     document.getElementById(`btn${legends[idx]}`).style.color = "#FFCC33";
 }
 
-const settingDisplay = document.getElementById('settingBox').style.display;
 let activation = false;
 function 설정() {
+    const settingDisplay = document.getElementById('settingBox').style.display;
     if (activation === false) {
         settingDisplay = "block";
         activation = true;

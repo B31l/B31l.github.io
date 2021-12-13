@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="page clearfix" post>
+    
     <div class="left">
         <article itemscope itemtype="http://schema.org/BlogPosting">
         {{content}}
@@ -47,18 +48,17 @@ layout: default
                     <!-- <li><a href="#comments">Comments</a></li> -->
                 </ul>
                 <div class="post-recent">
-                    <div class="pre">
+                    <div style="float: left;">
                         {% if page.previous %}
                             <button onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
-                                이전 포스트
+                                <i class="fa fa-arrow-left"></i>
                             </button>
                         {% endif %}
                     </div>
-                    <div class="nex">
+                    <div style="float: right;">
                         {% if page.next %}
                             <button onClick="location.href='{{ page.next.url | prepend: site.baseurl }}'">
-                            <!-- href="{{ page.next.url | prepend: site.baseurl }}"> -->
-                                다음 포스트
+                                <i class="fa fa-arrow-left"></i>
                             </button> 
                         {% endif %}
                     </div>

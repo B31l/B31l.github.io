@@ -32,7 +32,7 @@ header {
         }
         .nav-dynamic {
             position: absolute;
-            bottom: 0;
+            bottom: 30px;
             button {
                 width: 30px; height: 30px;
                 margin: 30px 5px 0px;
@@ -85,16 +85,16 @@ header {
                 list-style: none;
                 padding-left: 10px;
                 li {
-                    // a {
-                    //     margin-right: 10px;
-                    //     float: left;
-                    //     color: #FFCC33;
-                    // }
                     margin-left: 20px;
-                    
                     &:hover {
                         background-color: #FFCC33;
                         color: #000917;
+                    }
+                }
+                li a {
+                        margin-right: 10px;
+                        float: left;
+                        color: #FFCC33;
                     }
                 }
                 .legend-box {

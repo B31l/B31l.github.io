@@ -9,14 +9,14 @@ function 범례(idx) {
     document.getElementById(`btn${legends[idx]}`).style.color = "#FFCC33";
 }
 
-let activation = false;
+let activation;
 function 설정() {
-    const settingDisplay = document.getElementById('settingBox').style.display;
+    const settingDisplay = document.getElementById('settingBox')
     if (activation === false) {
-        settingDisplay = "block";
+        settingDisplay.style.display = "block";
         activation = true;
     } else {
-        settingDisplay = "none"
+        settingDisplay.style.display = "none"
         activation = false;
     }
 }

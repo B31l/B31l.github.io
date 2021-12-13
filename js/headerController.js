@@ -8,3 +8,15 @@ function 범례(idx) {
     document.getElementById(`legend${legends[idx]}`).style.display = "block";
     document.getElementById(`btn${legends[idx]}`).style.color = "#FFCC33";
 }
+
+const settingDisplay = document.getElementById('settingBox').style.display;
+let activation = false;
+function 설정() {
+    if (activation === false) {
+        settingDisplay = "block";
+        activation = true;
+    } else {
+        settingDisplay = "none"
+        activation = false;
+    }
+}

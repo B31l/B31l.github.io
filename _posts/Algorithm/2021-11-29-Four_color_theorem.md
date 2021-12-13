@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "♟ Four color theorem"
+title: "Four color theorem"
 meta: " 4색 정리"
 categories: Algorithm
 tags: 문제해결

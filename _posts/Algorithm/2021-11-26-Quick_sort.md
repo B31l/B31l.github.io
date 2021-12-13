@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🚀 Quick sort"
+title: "Quick sort"
 meta: " 정렬 알고리즘 (4) 퀵 정렬"
 categories: Algorithm
 tags: 문제해결

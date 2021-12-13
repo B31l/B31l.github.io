@@ -19,7 +19,7 @@ header {
         }
         .nav-static {
             button {
-                width: 30px; height: 30px;
+                width: 100% height: 30px;
                 margin: 30px 5px 0px;
                 background-color: #000917;
                 color: #9d9d9d;
@@ -34,7 +34,7 @@ header {
             position: absolute;
             bottom: 30px;
             button {
-                width: 30px; height: 30px;
+                width: 100%; height: 30px;
                 margin: 30px 5px 0px;
                 background-color: #000917;
                 color: #FFCC33;

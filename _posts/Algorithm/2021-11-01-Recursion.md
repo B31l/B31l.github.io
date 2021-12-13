@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🔄 Recursion"
+title: "Recursion"
 meta: " 재귀법"
 categories: Algorithm
 tags: 설계기법

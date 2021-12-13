@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "💰 Floyd-Washall"
+title: "Floyd-Washall"
 meta: " 최단 경로"
 categories: Algorithm
 tags: 문제해결

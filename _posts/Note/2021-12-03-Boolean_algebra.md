@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "💡 Boolean algebra"
+title: "Boolean algebra"
 meta: " 부울대수와 논리회로"
 categories: Note
 tags: Logic

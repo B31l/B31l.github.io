@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "👇 Selection sort"
+title: "Selection sort"
 meta: " 정렬 알고리즘 (2) 선택 정렬"
 categories: Algorithm
 tags: 문제해결

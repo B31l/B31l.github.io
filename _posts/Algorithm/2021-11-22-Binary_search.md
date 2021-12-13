@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🔎 Binary Search"
+title: "Binary Search"
 meta: " 검색 알고리즘 (2) 이진 탐색"
 categories: Algorithm
 tags: 문제해결

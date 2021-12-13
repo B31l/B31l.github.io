@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "♟ Eight queens"
+title: "Eight queens"
 meta: " 여덟 퀸"
 categories: Algorithm
 tags: 문제해결

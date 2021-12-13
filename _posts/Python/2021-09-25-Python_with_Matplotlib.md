@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "📈 Python with Matplotlib"
+title: "Python with Matplotlib"
 meta: " Matplotlib로 데이터 그리기"
 categories: Python
 tags: Python

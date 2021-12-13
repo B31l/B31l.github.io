@@ -86,14 +86,13 @@ header {
                 padding-left: 10px;
                 li {
                     a {
-                        margin-right: 10px;
+                        margin: 0px 15px;
                         float: left;
                         color: WHITE;
                     }
                     time {
                         color: #777;
                     }
-                    margin-left: 20px;
                     &:hover {
                         background-color: #FFCC33;
                         color: #000917;

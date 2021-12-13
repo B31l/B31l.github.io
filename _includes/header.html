@@ -30,9 +30,9 @@
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendSearch" style="display: block">
             <div class="legend-title">Search</div>
-            <div class="legend-body" id="search-container">
+            <div id="search-container">
                 <input type="text" id="search-input" placeholder="Search">
-                <ul id="results-container"></ul>
+                <ul class="legend-body" id="results-container"></ul>
             </div>
             <!-- <p align="right"> made by goodGid</p> -->
             <!-- Script pointing to jekyll-search.js -->
@@ -68,7 +68,6 @@
         <div class="legend" id="legendArchives" style="display: none">
             <div class="legend-title">
                 Archives
-                <a href="https://b31l.github.io/archive/"><i class="fa fa-plus"></i></a>
             </div>
             <ul class="legend-body">
               {% for post in site.posts %}
@@ -97,7 +96,6 @@
         <div class="legend" id="legendCategories" style="display: none">
             <div class="legend-title">
                 Categories
-                <a href="https://b31l.github.io/category/"><i class="fa fa-plus"></i></a>
             </div>
             <ul class="legend-body">
                 {% for category in site.categories %}
@@ -124,7 +122,6 @@
         <div class="legend" id="legendTags" style="display: none">
             <div class="legend-title">
                 Tags
-                <a href="https://b31l.github.io/tag/"><i class="fa fa-plus"></i></a> 
             </div>
             {% capture tags %}
               {% for tag in site.tags %}

@@ -50,15 +50,6 @@ header {
         padding-top: 20px;
         color: WHITE;
         font-weight: bold;
-        a {
-            margin-right: 10px;
-            float: left;
-            color: #FFCC33;
-            &:hover {
-                background-color: #FFCC33;
-                color: #000917;
-            }
-        }
         .legend-button {
             width: 100%;
             text-align: center;
@@ -89,6 +80,22 @@ header {
                 overflow-y: scroll;
                 overflow-x: hidden;
                 line-height: 150%;
+                font-size: 14px;
+                font-weight: 500;
+                list-style: none;
+                padding-left: 10px;
+                li {
+                    // a {
+                    //     margin-right: 10px;
+                    //     float: left;
+                    //     color: #FFCC33;
+                    margin-left: 20px;
+                    }
+                    &:hover {
+                        background-color: #FFCC33;
+                        color: #000917;
+                    }
+                }
                 .legend-box {
                     display: inline-block;
                     box-sizing: border-box;

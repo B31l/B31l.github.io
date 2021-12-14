@@ -53,7 +53,9 @@ def move_disk(from_p, to_p):
 
 
 
-세 개의 기둥은 나중에 들어간 원판이 먼저 나오는 LIFO 방식으로 작동한다. 그렇기 때문에 각각의 Stack을 만들어 원판의 이동을 Push와 Pop으로 구현할 수도 있다.
+세 개의 기둥은 나중에 들어간 원판이 먼저 나오는 LIFO 방식으로 작동한다.
+
+따라서 각각의 기둥에 Stack을 적용해 원판의 이동을 Push와 Pop으로 구현할 수도 있다.
 
 ```python
 foo = ['A', 'B', 'C']
@@ -66,17 +68,18 @@ print(temple)
 def move_tower(height, from_pole, to_pole, with_pole):
     if height >= 1:
         move_tower(height - 1, from_pole, with_pole, to_pole)
-        move_disk(from_pole, to_pole)   # 탑 원판 옮기기
+        move_disk(from_pole, to_pole)
         move_tower(height - 1, with_pole, to_pole, from_pole)
 
 def move_disk(from_p, to_p):
-    # print(f"{from_p}에서 {to_p}로 탑 원판 옮기기")
     foo = temple[from_p].pop()
     temple[to_p].push(foo)
     print(temple)
 
 move_tower(4, "A", "B", "C")
 ```
+
+pop 메서드가 호출될 때 repr로 출력되기 때문에 print를 사용한 별도의 출력은 필요하지 않다.
 
 ---
 

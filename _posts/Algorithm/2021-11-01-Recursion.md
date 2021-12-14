@@ -35,7 +35,7 @@ def factorial(n):
     if n == 0:      # 종료 조건
         return 1
     else:           # 재귀 호출
-        return n * factorial(n-1)
+        return n * factorial(n - 1)
 ```
 
 - 종료 조건
@@ -44,7 +44,7 @@ def factorial(n):
 
 - 재귀 호출
 
-   n! = n * (n-1)!
+   n! = n * (n - 1)!
 
 ## 🎲 진법 변환
 

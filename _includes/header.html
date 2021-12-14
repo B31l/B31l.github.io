@@ -26,7 +26,7 @@
     <div class="mid">
 
         <!---------------------------------------------------------------------------------------------------->
-        <!-- 0. Search -->
+        <!-- 1. Search -->
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendSearch" style="display: block">
             <div class="legend-title">Search</div>
@@ -63,7 +63,7 @@
         </div>
 
         <!---------------------------------------------------------------------------------------------------->
-        <!-- 1. 아카이브 -->
+        <!-- 2. 아카이브 -->
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendArchives" style="display: none">
             <div class="legend-title">
@@ -91,7 +91,7 @@
         </div>
 
         <!---------------------------------------------------------------------------------------------------->
-        <!-- 2. 카테고리 -->
+        <!-- 3. 카테고리 -->
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendCategories" style="display: none">
             <div class="legend-title">
@@ -117,7 +117,7 @@
         </div>
 
         <!---------------------------------------------------------------------------------------------------->
-        <!-- 3. 태그 -->
+        <!-- 4. 태그 -->
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendTags" style="display: none">
             <div class="legend-title">
@@ -145,22 +145,15 @@
         </div>
 
         <!---------------------------------------------------------------------------------------------------->
-        <!-- 4. Demo -->
+        <!-- 5. Demo -->
         <!---------------------------------------------------------------------------------------------------->
         <div class="legend" id="legendDemo" style="display: none">
             <div class="legend-title">Demo</div>
             <div class="legend-body">
-                데모
-            </div>
-        </div>
-
-        <!---------------------------------------------------------------------------------------------------->
-        <!-- 5. Setting -->
-        <!---------------------------------------------------------------------------------------------------->
-        <div class="legend" id="legendSetting" style="display: none">
-            <div class="legend-title">Setting</div>
-            <div class="legend-body">
-                설정
+                <div class="grid">
+                </div>
+                <script src="{{ " /js/masonry.pkgd.min.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+                <script src="{{ " /js/waterfall.js " | prepend: site.baseurl }}" charset="utf-8"></script>
             </div>
         </div>
 
@@ -178,6 +171,30 @@
                 </div>
                 <div class="legend-box">
                     <a href="https://b31l.github.io/about/"><i class="fa fa-heart"></i>About</a>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------->
+        <!-- 0. Setting -->
+        <!---------------------------------------------------------------------------------------------------->
+        <div class="legend" id="legendSetting" style="display: none">
+            <div class="legend-title">Setting</div>
+            <div class="legend-body">
+                <div class="settingBtn">
+                    다크 모드
+                    <button id="settingBtnOn">On</button>
+                    <button id="settingBtnOff">Off</button>
+                </div>
+                <div class="settingBtn">
+                    기타 등등
+                    <button id="settingBtnOn">On</button>
+                    <button id="settingBtnOff">Off</button>
+                </div>
+                <div class="settingBtn">
+                    아무 거나
+                    <button id="settingBtnOn">On</button>
+                    <button id="settingBtnOff">Off</button>
                 </div>
             </div>
         </div>

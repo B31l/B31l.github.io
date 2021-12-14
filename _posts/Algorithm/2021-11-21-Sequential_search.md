@@ -77,21 +77,11 @@ def ordered_sequential_search(a_list, item):
 
 ## 😀 보초법
 
-보초법이라는 게 있음
-
 ```python
-def bubble_sort_2(arr):
-    n = len(arr)
-    for i in range(n-1):
-        exchanges = False
-        for j in range(n-1, i, -1):
-            if arr[j-1] > arr[j]:
-                exchanges = True
-                arr[j-1], arr[j] = arr[j], arr[j-1]
 
-        if not exchanges:
-            break
 ```
+
+보초법이라고 있음
 
 ---
 

@@ -49,21 +49,22 @@ layout: default
             </div>
         </div>
     </div>
-    <div class="nav">
-        {% if page.previous %}
-            <div class="nav-left">
+    <div class=nav>
+        <div class="nav-left">
+            {% if page.previous %}
                 <button class="nav-button" onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'" >
                     <i class="fa fa-arrow-left"></i>
                 </button>
-            </div>
-        {% endif %}
-        {% if page.next %}
-            <div class="nav-right">
+
+            {% endif %}
+        </div>
+        <div class="nav-right">
+            {% if page.next %}
                 <button class="nav-button" onClick="location.href='{{ page.next.url | prepend: site.baseurl }}'">
                     <i class="fa fa-arrow-right"></i>
-                </button> 
-            </div>
-        {% endif %}
+                </button>     
+            {% endif %}
+        </div>
     </div>
 
 </div>

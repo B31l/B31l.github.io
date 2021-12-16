@@ -52,7 +52,7 @@ header {
                 font-family: D2coding;
                 cursor: pointer;
                 &:hover {
-                    background-color: #FFCC33;
+                    background-color: #33FFCC;
                     color: #fff;
                 }
             }
@@ -81,7 +81,7 @@ header {
                         color: #777;
                     }
                     &:hover {
-                        background-color: #FFCC33;
+                        background-color: #33FFCC;
                         color: #000917;
                     }
                 }
@@ -106,10 +106,10 @@ header {
         content: "";
         background-color: #000917;
         background-image: url(/img/poly.jpg);
-        background-position: 15%;
+        background-position: 10%;
         background-repeat: no-repeat;
         background-size: auto 75%;
-        opacity: 0.2;
+        opacity: 0.5;
         top: 0px;
         left: 0px;
         right: 0px;

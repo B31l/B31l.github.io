@@ -6,5 +6,5 @@ function 범례(idx) {
     });
     localStorage.setItem('LEGEND_KEY', idx);
     document.getElementById(`legend${legends[idx]}`).style.display = "block";
-    document.getElementById(`btn${legends[idx]}`).style.color = "#FFCC33";
+    document.getElementById(`btn${legends[idx]}`).style.color = "#33FFCC";
 }

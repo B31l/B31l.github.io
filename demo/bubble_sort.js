@@ -56,8 +56,8 @@ function accent(i, j) {
     iDiv.style.borderColor = "red";
     jDiv.style.borderColor = "red";
     setTimeout(() => {              //#FFF4D4
-        iDiv.style.borderColor = "#FFCC33";
-        jDiv.style.borderColor = "#FFCC33";
+        iDiv.style.borderColor = "#33FFCC";
+        jDiv.style.borderColor = "#33FFCC";
     }, 1000);
 }
 

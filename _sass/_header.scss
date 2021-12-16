@@ -103,6 +103,7 @@ header {
                     margin: 20px 5%;
                     border: 1px solid BEIGE;
                     border-radius: 10px;
+                    cursor: pointer;
                     .legend-demo-left {
                         float: left;
                         width: 30%; height: auto;
@@ -114,13 +115,20 @@ header {
                         float: right;
                         width: 70%; height: auto;
                         .legend-demo-title {
-                            font-size: 1rem;
+                            text-align: left;
+                            padding-left: 10px;
+                            font-size: 2em;
+                            font-weight: bold;
                         }
                         .legend-demo-meta {
-                            font-size: 0.6rem;
+                            text-align: left;
+                            padding-left: 10px;
+                            font-size: 1em;
                         }
                         .legend-demo-description {
-                            font-size: 0.5rem;
+                            text-align: left;
+                            padding-left: 10px;
+                            font-size: 1em;
                         }
                     }
                 }

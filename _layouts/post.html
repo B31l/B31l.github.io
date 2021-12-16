@@ -10,24 +10,24 @@ layout: default
         </article>
         <hr>
         {% include previousAndNext.html %}
+        <div>
+            <div style="position: fixed; left: 50px; top: 0; width: 50px; height: 100px; background-color: aqua;">
+                {% if page.previous %}
+                    <button onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                {% endif %}
+            </div>
+            <div style="position: fixed; right: 50px; top: 0; width: 50px; height: 100px; background-color: aqua;">
+                {% if page.next %}
+                    <button onClick="location.href='{{ page.next.url | prepend: site.baseurl }}'">
+                        <i class="fa fa-arrow-right"></i>
+                    </button> 
+                {% endif %}
+            </div>
+        </div>
     </div>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
-    <div>
-        <div style="position: fixed; left: 500px; top: 0; width: 100px; height: 100px; background-color: aqua;">
-            {% if page.previous %}
-                <button onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
-                    <i class="fa fa-arrow-left"></i>
-                </button>
-            {% endif %}
-        </div>
-        <div style="position: fixed; right: 500px; top: 0; width: 100px; height: 100px; background-color: aqua;">
-            {% if page.next %}
-                <button onClick="location.href='{{ page.next.url | prepend: site.baseurl }}'">
-                    <i class="fa fa-arrow-right"></i>
-                </button> 
-            {% endif %}
-        </div>
-    </div>
     <div class="right">
         <div class="wrap">
             <!-- Content -->

@@ -111,6 +111,9 @@ header {
                     border: 1px solid BEIGE;
                     border-radius: 10px;
                     cursor: pointer;
+                    &:hover {
+                        background-color: #48D33A;
+                    }
                     .legend-demo-left {
                         float: left;
                         width: 25%; height: auto;

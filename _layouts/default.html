@@ -22,7 +22,7 @@
             </button>
         </div>
         <div>
-            <div class="tab-menu">
+            <div class="info-menu">
                 Contact me at: {% if site.github_username %}
                 <a href="https://github.com/{{site.github_username}}" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a> {% endif %} {% if site.email %}
                 <a href="mailto:{{site.email}}" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> {% endif %} {% if site.weibo_username %}
@@ -39,9 +39,15 @@
             </div>
         </div>
         <style>
+            .info-menu {
+                position: fixed;
+                left: 400px; top: 25;
+                width: 100%; height: 25px;
+                background-color: #000917;
+            }
             .tab-menu {
                 position: fixed;
-                left: 400px; top: 0;
+                left: 400px; top: 25;
                 width: 100%; height: 25px;
                 background-color: #000917;
             }

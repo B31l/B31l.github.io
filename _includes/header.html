@@ -80,7 +80,7 @@
                     <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
                   {% endif %}
                 {% endunless %}
-                <li>
+                <li onclick="location.href='{{ post.url | prepend: site.baseurl }}'">
                     <time>
                     {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
                     </time>
@@ -103,7 +103,7 @@
                     {% for posts in category  %}
                         {% for post in posts %}
                             {% if post.url %}
-                            <li>
+                            <li onclick="location.href='{{ post.url | prepend: site.baseurl }}'">
                                 <time>
                                 {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
                                 </time>
@@ -133,7 +133,7 @@
             {% for tag in sortedtags %}
               <h2 id="{{ tag }}">{{ tag }}</h2>
               {% for post in site.tags[tag] %}
-                <li>
+              <li onclick="location.href='{{ post.url | prepend: site.baseurl }}'">
                     <time>
                     {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
                     </time>

@@ -82,7 +82,8 @@
                 {% endunless %}
                 <li onclick="location.href='{{ post.url | prepend: site.baseurl }}'">
                     <time>
-                    {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                    {{ post.date | date:"%F" }}
+                    <!-- {{ post.date | date: "%a" }}. -->
                     </time>
                     <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </li>
@@ -105,7 +106,8 @@
                             {% if post.url %}
                             <li onclick="location.href='{{ post.url | prepend: site.baseurl }}'">
                                 <time>
-                                {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                                {{ post.date | date:"%F" }}
+                                <!-- {{ post.date | date: "%a" }}. -->
                                 </time>
                                 <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                             </li>
@@ -135,7 +137,8 @@
               {% for post in site.tags[tag] %}
               <li onclick="location.href='{{ post.url | prepend: site.baseurl }}'">
                     <time>
-                    {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                    {{ post.date | date:"%F" }}
+                    <!-- {{ post.date | date: "%a" }}. -->
                     </time>
                     <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </li>

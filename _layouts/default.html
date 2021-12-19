@@ -12,54 +12,6 @@
         {% include footer.html %}
         {% include backToTop.html %}
 
-        <div style="position: fixed;
-                    width: 100px; height: 100px;
-                    border-radius: 50%;
-                    background-color: #48D33A;
-                    right: 100px; bottom: 100px">
-            <button onclick="location.href='https://b31l.github.io/'" style="width:100%; height:100%; background: none; cursor: pointer;">
-                <i class="fa fa-home" style="font-size: 50px;"></i>
-            </button>
-        </div>
-        <div>
-            <div class="info-menu">
-                Contact me at: {% if site.github_username %}
-                <a href="https://github.com/{{site.github_username}}" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a> {% endif %} {% if site.email %}
-                <a href="mailto:{{site.email}}" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> {% endif %} {% if site.weibo_username %}
-                <a href="http://weibo.com/{{site.weibo_username}}" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a> {% endif %} {% if site.zhihu_username %}
-                <a href="https://www.zhihu.com/people/{{site.zhihu_username}}" title="Zhihu"><i class="iconfont icon-daoruzhihu"></i></a> {% endif %} {% if site.twitter_username %}
-                <a href="https://twitter.com/{{site.twitter_username}}" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> {% endif %} {% if site.facebook_username %}
-                <a href="https://www.facebook.com/{{site.facebook_username}}" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a> {% endif %}  {% if site.linkedIn_username %}
-                <a href="https://www.linkedin.com/in/{{site.linkedIn_username}}" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a> {% endif %} {% if site.dribbble_username %}
-                <a href=" https://dribbble.com/{{site.dribbble_username}}" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a> {% endif %}
-            </div>
-            <div class="tab-menu">
-                <button class="tab-menu-element"><i class="fa fa-home"></i>Hub</button>
-                <button class="tab-menu-element"><i class="fa fa-heart"></i>About</button>
-            </div>
-        </div>
-        <style>
-            .info-menu {
-                position: fixed;
-                left: 400px; top: 0;
-                width: 100%; height: 25px;
-                background-color: #000917;
-            }
-            .tab-menu {
-                position: fixed;
-                left: 400px; top: 25px;
-                width: 100%; height: 25px;
-                background-color: #000917;
-            }
-            .tab-menu-element {
-                height: 100%;
-                background-color: #48D33A;
-                font-size: 1.5em;
-                font-weight: bold;
-                padding: 0 15px;
-
-            }
-        </style>
         <script src="{{ " /js/main.js " | prepend: site.baseurl }}" charset="utf-8"></script>
         <script src="{{ " /js/smooth-scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script>
         <script type="text/javascript">

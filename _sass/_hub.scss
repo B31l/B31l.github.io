@@ -2,8 +2,6 @@ body {
     >div {
         width: 100%; height: 100vh;
         padding: 5% 20%;
-        &::-webkit-scrollbar {
-            display: none;
         }
     }
     .hub-about {
@@ -37,4 +35,6 @@ body {
     .hub-more {
         background-color: brown;
     }
+    &::-webkit-scrollbar {
+        display: none;
 }

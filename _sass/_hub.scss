@@ -13,7 +13,7 @@ body {
             border-radius: 50%;
             background-image: url(/img/poly.jpg);
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: left;
             background-size: auto 100%;
         }
         .about-title {
@@ -33,6 +33,16 @@ body {
     }
     .hub-more {
         background-color: brown;
+    }
+
+    .hub-side {
+        position: fixed;
+        right: 100px;
+        width: 100px; height: 100vh;
+        >.hub-quick {
+            border: 2px solid BLACK;
+            border-radius: 50%;
+        }
     }
     &::-webkit-scrollbar {
         display: none;

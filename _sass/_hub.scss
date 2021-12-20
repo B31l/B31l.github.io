@@ -1,9 +1,9 @@
 body {
-    #hub-page {
+    .hub-page {
         width: 100%; height: 100vh;
         padding: 5% 20%;
     }
-    .hub-about {
+    #hub-about {
         background-color: WHITE;
         text-align: center;
         .about-img {
@@ -31,13 +31,13 @@ body {
             }
         }
     }
-    .hub-demo {
+    #hub-demo {
         background-color: beige;
     }
-    .hub-record {
+    #hub-record {
         background-color: antiquewhite;
     }
-    .hub-more {
+    #hub-more {
         background-color: grey;
     }
 

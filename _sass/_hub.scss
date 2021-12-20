@@ -19,10 +19,16 @@ body {
         .about-title {
             font-size: 4em;
             font-weight: bold;
+            padding-bottom: 20px;
             border-bottom: 2px solid BLACK;
         }
         .about-description {
             font-size: 1em;
+            img {
+                width: 75%; 
+                height: auto; 
+                margin-top: 20px;
+            }
         }
     }
     .hub-demo {

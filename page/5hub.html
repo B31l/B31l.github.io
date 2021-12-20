@@ -17,7 +17,10 @@ permalink: /hub/
             </div>
         </div>  
         <div class="hub-page" id="hub-demo">
-            demo
+            <div class="grid">
+            </div>
+            <script src="{{ " /js/masonry.pkgd.min.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+            <script src="{{ " /js/waterfall.js " | prepend: site.baseurl }}" charset="utf-8"></script>
         </div>
         <div class="hub-page" id="hub-record">
             record
@@ -28,13 +31,13 @@ permalink: /hub/
 
         <!-- 사이드바 -->
         <div class="hub-side">
-            <button class="hub-quick" onclick="window.scrollTo( 0, 0 )"><i class="fa fa-heart"></i></button>
+            <button class="hub-quick" onclick="location.href = '#hub-about' "> <i class="fa fa-heart">   </i></button>
             <div class="hub-vertical"></div>
-            <button class="hub-quick" onclick="location.href = '#hub-demo' "><i class="fa fa-play"></i></button>
+            <button class="hub-quick" onclick="location.href = '#hub-demo' ">  <i class="fa fa-play">    </i></button>
             <div class="hub-vertical"></div>
             <button class="hub-quick" onclick="location.href = '#hub-record' "><i class="fa fa-calendar"></i></button>
             <div class="hub-vertical"></div>
-            <button class="hub-quick" onclick="location.href = '#hub-more' "><i class="fa fa-plus"></i></button>
+            <button class="hub-quick" onclick="location.href = '#hub-more' ">  <i class="fa fa-plus">    </i></button>
         </div>
 
         <script src="{{ " /js/main.js " | prepend: site.baseurl }}" charset="utf-8"></script>

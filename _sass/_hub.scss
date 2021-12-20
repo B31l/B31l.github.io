@@ -48,6 +48,10 @@ body {
             font-size: 2em;
             background-color: WHITE;
             font-size: 0.75em;
+            cursor: pointer;
+            &:hover {
+                background-color: aquamarine;
+            }
         }
         .hub-vertical {
             width: 10px; height: 5vh;

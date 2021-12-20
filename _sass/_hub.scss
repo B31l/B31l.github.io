@@ -7,6 +7,22 @@ body {
     }
     .hub-about {
         background-color: aquamarine;
+        text-align: center;
+        .about-img {
+            width: 500px; height: 500px;
+            border: 5px solid WHITE;
+            border-radius: 15px;
+            background-image: url(/img/poly.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .about-title {
+            font-size: 4em;
+            border-bottom: 2px solid WHITE;
+        }
+        .about-description {
+            font-size: 1em;
+        }
     }
     .hub-demo {
         background-color: beige;

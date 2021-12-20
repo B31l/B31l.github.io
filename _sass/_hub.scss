@@ -37,7 +37,7 @@ body {
 
     .hub-side {
         position: fixed;
-        top: 0px; left: 20px;
+        top: 0px; right: 20px;
         width: 50px; height: 100vh;;
         padding: 250px 0;
         .hub-quick {
@@ -50,7 +50,8 @@ body {
             font-size: 1.5em;
             cursor: pointer;
             &:hover {
-                background-color: aquamarine;
+                color: WHITE;
+                background-color: BLACK;
             }
         }
         .hub-vertical {

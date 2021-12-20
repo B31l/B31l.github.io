@@ -13,7 +13,7 @@ permalink: /hub/
                 Sujong Ham
             </div>
             <div class="about-body">
-                <img src="https://ghchart.rshah.org/219138/B31l"/>
+                <img src="https://ghchart.rshah.org/219138/B31l" style="width: 100%; height: auto; margin-top: 20px;"/>
             </div>
         </div>  
         <div id="hub-page" class="hub-demo" >
@@ -28,13 +28,13 @@ permalink: /hub/
 
         <!-- 사이드바 -->
         <div class="hub-side">
-            <button class="hub-quick" onclick="window.scrollTo({top:0, left:0, behavior:'auto'})"><i class="fa fa-heart"></i></button>
+            <button class="hub-quick" onclick="window.scrollTo( 0, 0 )"><i class="fa fa-heart"></i></button>
             <div class="hub-vertical"></div>
-            <button class="hub-quick"><i class="fa fa-play"></i></button>
+            <button class="hub-quick" onclick="window.scrollTo( 0, 1080 )"><i class="fa fa-play"></i></button>
             <div class="hub-vertical"></div>
-            <button class="hub-quick"><i class="fa fa-calendar"></i></button>
+            <button class="hub-quick" onclick="window.scrollTo( 0, 2160 )"><i class="fa fa-calendar"></i></button>
             <div class="hub-vertical"></div>
-            <button class="hub-quick"><i class="fa fa-plus"></i></button>
+            <button class="hub-quick" onclick="window.scrollTo( 0, 3240 )"><i class="fa fa-plus"></i></button>
         </div>
 
         <script src="{{ " /js/main.js " | prepend: site.baseurl }}" charset="utf-8"></script>
@@ -43,13 +43,16 @@ permalink: /hub/
             smoothScroll.init({
                 speed: 500, // Integer. How fast to complete the scroll in milliseconds
                 easing: 'easeInOutCubic', // Easing pattern to use
-                offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+                offset: 500, // Integer. How far to offset the scrolling anchor location in pixels
             });
         </script>
         <script src="{{ "/js/headerController.js " | prepend: site.baseurl }}" charset="utf-8"></script>
         <script>
             const saved = parseInt(localStorage.getItem('LEGEND_KEY'));
             범례(saved);
+        </script>
+        <script>
+
         </script>
     </body>
 </html>

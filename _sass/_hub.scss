@@ -1,6 +1,7 @@
 body {
     >div {
         width: 100%; height: 100vh;
+        padding: 5% 20%;
         &::-webkit-scrollbar {
             display: none;
         }
@@ -9,16 +10,19 @@ body {
         background-color: aquamarine;
         text-align: center;
         .about-img {
+            margin: auto;
             width: 500px; height: 500px;
             border: 5px solid WHITE;
-            border-radius: 15px;
+            border-radius: 50%;
             background-image: url(/img/poly.jpg);
             background-repeat: no-repeat;
             background-position: center;
+            background-size: auto 100%;
         }
         .about-title {
             font-size: 4em;
-            border-bottom: 2px solid WHITE;
+            font-weight: bold;
+            border-bottom: 2px solid BLACK;
         }
         .about-description {
             font-size: 1em;

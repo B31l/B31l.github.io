@@ -61,8 +61,8 @@ header {
             }
         }
         .legend {
-            // display: block;
             .legend-title {
+                display: none;
                 height: 50px;
                 margin-top: 25px;
                 border-bottom: 2px solid WHITE;
@@ -71,7 +71,7 @@ header {
                 // margin-bottom: 50px;
             }
             .legend-body {
-                height: 850px;
+                height: 100vh; // legend-title 존재 시 850px
                 margin: 0px 0px;
                 padding-left: 0px;
                 overflow-y: scroll;

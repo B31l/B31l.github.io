@@ -1,15 +1,17 @@
->div {
-    width: 100%; height: 100vh;
-}
-.hub-about {
-    background-color: aquamarine;
-}
-.hub-demo {
-    background-color: aquamarine;
-}
-.hub-record {
-    background-color: aquamarine;
-}
-.hub-more {
-    background-color: aquamarine;
+body {
+    >div {
+        width: 100%; height: 100vh;
+    }
+    .hub-about {
+        background-color: aquamarine;
+    }
+    .hub-demo {
+        background-color: beige;
+    }
+    .hub-record {
+        background-color: red;
+    }
+    .hub-more {
+        background-color: brown;
+    }
 }

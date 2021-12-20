@@ -7,8 +7,8 @@ body {
         background-color: aquamarine;
         text-align: center;
         .about-img {
-            margin: auto;
             width: 500px; height: 500px;
+            margin: auto;
             border: 5px solid WHITE;
             border-radius: 50%;
             background-image: url(/img/poly.jpg);
@@ -17,16 +17,16 @@ body {
             background-size: auto 100%;
         }
         .about-title {
-            font-size: 4em;
-            font-weight: bold;
             padding-bottom: 20px;
             border-bottom: 2px solid BLACK;
+            font-size: 4em;
+            font-weight: bold;
         }
         .about-description {
+            padding-top: 20px;
             font-size: 1em;
             img {
-                width: 75%; 
-                height: auto; 
+                width: 75%; height: auto; 
                 margin-top: 20px;
             }
         }

@@ -36,7 +36,8 @@ body {
     // }
     #hub-calendar {
         .calendar-left {
-            width: 50%;
+            width: 50%; height: 100%;
+            float: left;
             .calendar-ground {
                 > ul {
                     border: 2px solid BLACK;
@@ -62,6 +63,10 @@ body {
                     }
                 }
             }
+        }
+        .calendar-right {
+            width: 50%; height: 100%;
+            float: right;
         }
     }
 

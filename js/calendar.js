@@ -25,7 +25,7 @@ function prependNewLine() {
 function fillDay(year, month) {
     const firstDay = new Date(`${year}-${month}-01`).getDay()
     const fl = document.getElementsByTagName(".calendar-ground > ul > li > ul > li")[firstDay];
-    fl.innerHTML = "1";
+    fl.innerText = "1";
 }
 
 init();

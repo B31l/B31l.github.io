@@ -23,7 +23,34 @@ permalink: /hub/
             <div></div>
         </div>
         <div class="hub-page" id="hub-document">
-            DOCUMENT
+            <!---------------------------------------------------------------------------------------------------->
+            <!-- 포스트 목록 -->
+            <!---------------------------------------------------------------------------------------------------->
+            <ul>
+                {% for post in paginator.posts %}
+                    <li>
+                        <!-- 포스트 제목 -->
+                        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                        <!-- 포스트 부제 -->
+                        <div class="label-card"><i class="fa fa-key"></i>{{ post.meta }}</div>
+                        <!-- 포스트 라벨 -->
+                        <div class="label">
+                            <div class="label-card"><i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}</div>
+                            <div class="label-card">{% if post.author %}<i class="fa fa-user"></i>{{ post.author }}{% endif %}</div>
+                            <div class="label-card">{% include category.html %}</div>
+                            <div class="label-card">{% include tag.html %}</div>
+                        </div>
+
+                    <!-- 발췌와 read-all -->
+                    <div class="excerpt">
+                        {{post.excerpt}}
+                    </div>
+                    <div class="read-all">
+                        <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
+                    </div>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
         <div class="hub-page" id="hub-calendar">
             <div class="calendar-left">

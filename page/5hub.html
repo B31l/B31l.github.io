@@ -29,38 +29,13 @@ permalink: /hub/
             <div class="calendar-left">
                 <div class="calendar-ground">
                     <ul class="calendar-ground">
-
+                        <!-- calender.js -->
                     </ul>
                 </div>
             </div>
             <div class="calendar-right">
                 안녕하세요
             </div>
-            <script>
-                const ground = document.querySelector(".calendar-ground > ul");
-
-                CALENDAR_ROW = 7;
-                CALENDAR_COL = 7;
-                // functions
-                function init() {
-                    for (let i=0; i<CALENDAR_ROW; i++) {
-                        prependNewLine();
-                    }
-                }
-
-                function prependNewLine() {
-                    const li = document.createElement("li");
-                    const ul = document.createElement("ul");
-                    for (let j=0; j<CALENDAR_COL; j++) {
-                        const matrix = document.createElement("li");
-                        ul.prepend(matrix);
-                    }
-                    li.prepend(ul);
-                    ground.prepend(li);
-                }
-
-                init();
-            </script>
         </div>
 
         <!-- 사이드바 -->
@@ -84,12 +59,6 @@ permalink: /hub/
             });
         </script>
         <script src="{{ "/js/headerController.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-        <script>
-            const saved = parseInt(localStorage.getItem('LEGEND_KEY'));
-            범례(saved);
-        </script>
-        <script>
-
-        </script>
+        <script src="{{ "/js/calendar.js " | prepend: site.baseurl }}" charset="utf-8"></script>
     </body>
 </html>

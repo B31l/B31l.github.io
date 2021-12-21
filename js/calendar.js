@@ -2,10 +2,12 @@ const ground = document.querySelector(".calendar-ground > ul");
 
 CALENDAR_ROW = 7;
 CALENDAR_COL = 7;
+
 // functions
 function init() {
     for (let i=0; i<CALENDAR_ROW; i++) {
         prependNewLine();
+        fillDay(2022, 01);
     }
 }
 
@@ -18,6 +20,12 @@ function prependNewLine() {
     }
     li.prepend(ul);
     ground.prepend(li);
+}
+
+function fillDay(year, month) {
+    const firstDay = new Date(`${year}-${month}-01`).getDay()
+    const fl = document.getElementsByTagName("li > ul")[firstDay];
+    fl.innerHTML = "1";
 }
 
 init();

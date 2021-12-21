@@ -24,8 +24,8 @@ function prependNewLine() {
 
 function fillDay(year, month) {
     const firstDay = new Date(`${year}-${month}-01`).getDay()
-    const fl = document.querySelectorAll(".calendar-ground > ul > li > ul > li")[firstDay];
-    fl.innerText = "1";
+    const fl = document.querySelectorAll(".calendar-ground > ul > li > ul > li");
+    fl[firstDay].innerText = "1";
 }
 
 init();

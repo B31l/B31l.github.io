@@ -7,8 +7,8 @@ CALENDAR_COL = 7;
 function init() {
     for (let i=0; i<CALENDAR_ROW; i++) {
         prependNewLine();
-        fillDay(2022, 01);
     }
+    fillDay(2022, 01);
 }
 
 function prependNewLine() {

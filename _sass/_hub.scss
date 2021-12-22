@@ -35,9 +35,8 @@ body {
     // #hub-document {
     // }
     #hub-calendar {
-        .c-head {
+        .calendar {
             width: 100%;
-            text-align: center;
             .c-title {
                 font-size: 4em;
                 font-weight: bold;
@@ -51,9 +50,6 @@ body {
                     font-weight: bold;
                 }
             }
-        }
-        .calendar {
-            width: 100%;
             > ul {
                 // border: 2px solid BLACK;
                 width: 700px;

@@ -6,7 +6,8 @@ permalink: /hub/
     {% include head.html %}
 
     <body>
-        <!-- 본문 -->
+        
+        <!-- About -->
         <div class="hub-page" id="hub-about">
             <div class="about-img"></div>
             <div class="about-title">
@@ -15,59 +16,22 @@ permalink: /hub/
             <div class="about-body">
                 <img src="https://ghchart.rshah.org/219138/B31l"/>
             </div>
-        </div>  
+        </div>
+
+        <!-- Demo -->
         <div class="hub-page" id="hub-demo">
             <div></div>
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <div class="hub-page" id="hub-document">
-            <!---------------------------------------------------------------------------------------------------->
-            <!-- 포스트 목록 -->
-            <!---------------------------------------------------------------------------------------------------->
-            <div class="pagination">
-                {% if paginator.previous_page %}
-                    <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
-                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><i class="fa fa-angle-left"></i></a>
-                {% else %}
-                    <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
-                    <span class="previous disable"><i class="fa fa-angle-left"></i></span>
-                {% endif %}
-                <span class="page_number ">{{ paginator.page }}/{{ paginator.total_pages }}</span>
-                {% if paginator.next_page %}
-                    <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
-                    <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
-                {% else %}
-                    <span class="next disable"><i class="fa fa-angle-right"></i></span>
-                    <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
-                {% endif %}
-            </div>
-            <ul>
-                {% for post in paginator.posts %}
-                    <li>
-                        <!-- 포스트 제목 -->
-                        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-                        <!-- 포스트 부제 -->
-                        <div class="label-card"><i class="fa fa-key"></i>{{ post.meta }}</div>
-                        <!-- 포스트 라벨 -->
-                        <div class="label">
-                            <div class="label-card"><i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}</div>
-                            <div class="label-card">{% if post.author %}<i class="fa fa-user"></i>{{ post.author }}{% endif %}</div>
-                            <div class="label-card">{% include category.html %}</div>
-                            <div class="label-card">{% include tag.html %}</div>
-                        </div>
 
-                    <div class="excerpt">
-                        {{post.excerpt}}
-                    </div>
-                    <div class="read-all">
-                        <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
-                    </div>
-                    </li>
-                {% endfor %}
-            </ul>
+        <!-- Document -->
+        <div class="hub-page" id="hub-document">
+            Document
         </div>
+
+        <!-- Calendar -->
         <div class="hub-page" id="hub-calendar">
             <div class="calendar-left">
                 <div class="calendar-ground">
@@ -103,6 +67,5 @@ permalink: /hub/
         </script>
         <script src="{{ "/js/headerController.js " | prepend: site.baseurl }}" charset="utf-8"></script>
         <script src="{{ "/js/calendar.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-        <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
     </body>
 </html>

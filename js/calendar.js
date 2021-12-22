@@ -26,11 +26,12 @@ function fillDay(year, month) {
     month_day = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) month_day[1] = 29;
     const firstDay = new Date(`${year}-${month}-01`).getDay();
-    const li_row = document.querySelectorAll(".calendar-ground > ul > li");
+    const li_row = document.querySelectorAll(".calendar-ground > ul > li > ul > li");
     for(let i=1; i<=month_day[month-1]; i++) {
         temp = firstDay + i - 1
-        const li_col = li_row[parseInt(temp / 7)].querySelectorAll("> ul > li");
-        li_col[temp % 7].innerText = i;
+        // const li_col = li_row[parseInt(temp / 7)].querySelectorAll("> ul > li");
+        // li_col[temp % 7].innerText = i;
+        li_row[temp % 7].innerText = i;
     }
 }
 

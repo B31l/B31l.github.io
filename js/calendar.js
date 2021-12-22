@@ -1,6 +1,7 @@
 const ground = document.querySelector(".calendar-ground > ul");
 const title = document.querySelector(".calendar-title");
 
+
 CALENDAR_ROW = 6;
 CALENDAR_COL = 7;
 

@@ -1,5 +1,6 @@
 const ground = document.querySelector(".calendar> ul");
 const cTitle = document.querySelector(".c-title");
+const cDay = document.querySelector(".c-day");
 
 CALENDAR_ROW = 6;
 CALENDAR_COL = 7;
@@ -40,9 +41,9 @@ function fillDate(year, month) {
 function fillDay() {
     dayList = ["일", "월", "화", "수", "목", "금", "토"];
 
-    const cDay = document.querySelectorAll(".c-day");
     for (let i=0; i<7; i++) {
-        cDay.prepend(document.createElement("li"));
+        const li = document.createElement("li");
+        cDay.prepend(li);
     }
 
     const cDayLi = document.querySelectorAll(".c-day > li");

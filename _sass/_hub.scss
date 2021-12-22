@@ -39,6 +39,11 @@ body {
         .calendar-left {
             width: auto; height: 100%;
             float: left;
+            .calendar-title {
+                font-size: 4em;
+                font-weight: bold;
+                text-align: center;
+            }
             .calendar-ground {
                 > ul {
                     border: 2px solid BLACK;

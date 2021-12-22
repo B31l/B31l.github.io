@@ -1,6 +1,7 @@
 const ground = document.querySelector(".calendar-ground > ul");
+const title = document.querySelector(".calendar-title");
 
-CALENDAR_ROW = 7;
+CALENDAR_ROW = 6;
 CALENDAR_COL = 7;
 
 // functions
@@ -8,7 +9,7 @@ function init() {
     for (let i=0; i<CALENDAR_ROW; i++) {
         prependNewLine();
     }
-    fillDay(2022, 01);
+    fillDay(2021, 12);
 }
 
 function prependNewLine() {
@@ -23,6 +24,7 @@ function prependNewLine() {
 }
 
 function fillDay(year, month) {
+    title.innerText = `${year} -  ${month}`
     month_day = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) month_day[1] = 29;
     const firstDay = new Date(`${year}-${month}-01`).getDay();

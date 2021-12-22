@@ -25,17 +25,13 @@ function prependNewLine() {
 function fillDay(year, month) {
     month_day = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) month_day[1] = 29;
-
-    const fl = document.querySelectorAll(".calendar-ground > ul > li > ul > li");
     const firstDay = new Date(`${year}-${month}-01`).getDay();
-    const arrayDay = [];
-    for (let i=0; i<7; i++) {
-        arrayDay.push((firstDay + i) % 7);
+    const li_row = document.querySelectorAll(".calendar-ground > ul > li");
+    for(let i=1; i<=month_day[month-1]; i++) {
+        tmep = firstDay + i - 1
+        const li_col = li_row[parseInt(temp / 7)].querySelectorAll(">ul > li");
+        li_col[temp % 7].innerText = i;
     }
-    for (let i=1; i<=month_day[month-1]; i++) {
-        fl[arrayDay[i % 7]].innerText = i;
-    }
-    // fl[firstDay].innerText = "1";
 }
 
 init();

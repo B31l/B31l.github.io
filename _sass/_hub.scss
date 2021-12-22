@@ -78,7 +78,19 @@ body {
             }
         }
         .plan {
-            width: 100%; height: 50%;
+            width: 100%;
+            > ul {
+                padding: 20px 0;
+                > li {
+                    margin-bottom: 20px;
+                    padding: 20px;
+                    font-size: 1em;
+                    > strong {
+                        border-radius: 25px;
+                        font-weight: bold;
+                    }
+                }
+            }
         }
     }
 

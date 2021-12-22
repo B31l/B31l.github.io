@@ -34,7 +34,7 @@ function fillDay(year, month) {
         box[firstDay + i - 1].innerText = i;
     }
     const nowDay = new Date().getDate();
-    box[nowDay].style.backgroundColor = "#48D33A";
+    box[firstDay + nowDay - 1].style.backgroundColor = "#48D33A";
 }
 
 init(); 

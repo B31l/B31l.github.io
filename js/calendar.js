@@ -25,7 +25,7 @@ function prependNewLine() {
 }
 
 function fillDay(year, month) {
-    title.innerText = `${year}년 ${month}월`;
+    title.innerText = `${year} - ${month}`;
     month_day = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) month_day[1] = 29;
     const firstDay = new Date(`${year}-${month}-01`).getDay();
@@ -33,7 +33,7 @@ function fillDay(year, month) {
     for(let i=1; i<=month_day[month-1]; i++) {
         box[firstDay + i - 1].innerText = i;
     }
-    const nowDay = new Date.getDate();
+    const nowDay = new Date().getDate();
     box[nowDay].style.backgroundColor = "#48D33A";
 }
 

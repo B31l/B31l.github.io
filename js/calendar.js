@@ -33,7 +33,7 @@ function fillDay(year, month) {
         arrayDay.push((firstDay + i) % 7);
     }
     for (let i=0; i<month_day[month-1]; i++) {
-        fl[arrayDay[firstDay]].innerText = i;
+        fl[arrayDay[i % 7]].innerText = i;
     }
     // fl[firstDay].innerText = "1";
 }

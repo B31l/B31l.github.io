@@ -1,6 +1,6 @@
 const ground = document.querySelector(".calendar> ul");
 const cTitle = document.querySelector(".c-title");
-const cDay = document.querySelectorAll(".c-day > ul > li")
+const cDay = document.querySelectorAll(".c-day");
 
 
 CALENDAR_ROW = 6;
@@ -12,6 +12,7 @@ function init() {
         prependNewLine();
     }
     fillDate(2021, 12);
+    fillDay();
 }
 
 function prependNewLine() {
@@ -41,7 +42,12 @@ function fillDate(year, month) {
 function fillDay() {
     dayList = ["일", "월", "화", "수", "목", "금", "토"];
     for (let i=0; i<7; i++) {
-        cDay[i].innerText = dayList[i];
+        const cdli = document.createElement("li");
+        cDay.prepend(cdli);
+    }
+    const cdll = document.querySelectorAll(".c-day > li");
+    for (let i=0; i<7; i++) {
+        cdll[i].innerText = dayList[i];
     }
 }
 

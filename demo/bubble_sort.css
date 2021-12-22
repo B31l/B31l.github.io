@@ -26,14 +26,14 @@ main::after {
 
 .bar {
     position: absolute;
-    background-color: #48D33A;
+    background-color: #FFCC33;
     left: 95px;
     bottom: 0;
     margin: 10px 2px;
     height: 35px;
     transition: 1s ease;
     border: 3px solid;
-    border-color: #48D33A;
+    border-color: #FFCC33;
     text-align: center;
 }
 

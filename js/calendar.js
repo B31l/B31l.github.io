@@ -12,6 +12,7 @@ function init() {
     }
     fillDate(2021, 12);
     fillDay();
+    fillPlanColor();
 }
 
 function prependNewLine() {
@@ -62,4 +63,5 @@ function fillPlanColor() {
         strong[i].style.backgroundColor = color_list[i % color_list.length];
     }
 }
+
 init(); 

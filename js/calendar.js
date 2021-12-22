@@ -1,4 +1,4 @@
-const ground = document.querySelector(".calendar> ul");
+const ground = document.querySelector(".calendar > body");
 const cTitle = document.querySelector(".c-title");
 const cDay = document.querySelector(".c-day");
 
@@ -30,7 +30,7 @@ function fillDate(year, month) {
     month_day = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) month_day[1] = 29;
     const firstDay = new Date(`${year}-${month}-01`).getDay();
-    const box = document.querySelectorAll(".calendar > ul > li > ul > li");
+    const box = document.querySelectorAll(".calendar > body > li > ul > li");
     for(let i=1; i<=month_day[month-1]; i++) {
         box[firstDay + i - 1].innerText = i;
     }

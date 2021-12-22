@@ -10,7 +10,7 @@ function init() {
     for (let i=0; i<CALENDAR_ROW; i++) {
         prependNewLine();
     }
-    fillDate(2021, 12);
+    fillDate(2022, 1);
     fillDay();
     fillPlanColor();
 }
@@ -38,22 +38,24 @@ function fillDate(year, month) {
         if (temp % 7 == 0) box[temp].style.color = "Red";
         if (temp % 7 == 6) box[temp].style.color = "Blue";
     }
-    const nowDay = new Date().getDate();
-    box[firstDay + nowDay - 1].style.backgroundColor = "#48D33A";
+    // const nowDay = new Date().getDate();
+    // box[firstDay + nowDay - 1].style.backgroundColor = "#48D33A";
 }
 
 function fillDay() {
-    dayList = ["일", "월", "화", "수", "목", "금", "토"];
+    dayList = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
     for (let i=0; i<7; i++) {
         const li = document.createElement("li");
         cDay.prepend(li);
     }
-
+    
     const cDayLi = document.querySelectorAll(".c-day > li");
     for (let i=0; i<7; i++) {
         cDayLi[i].innerText = dayList[i];
     }
+    cDayLi[0].style.color = "Red";
+    cDayLi[6].style.color = "Blue";
 }
 
 function fillPlanColor() {

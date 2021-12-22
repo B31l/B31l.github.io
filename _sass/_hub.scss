@@ -35,9 +35,13 @@ body {
     // #hub-document {
     // }
     #hub-calendar {
+        background-image: url("/img/pt_woven.png");
+        background-image
         .calendar {
             width: 100%;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+            border-radius: 50px 0 0 0;
+            background-color: WHITE;
+            // box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
             .c-title {
                 font-size: 4em;
                 font-weight: bold;
@@ -79,14 +83,19 @@ body {
         }
         .plan {
             width: 100%;
+            border-radius: 0 0 50px 0;
+            background-color: WHITE;
             > ul {
                 padding: 20px 0;
                 > li {
-                    margin-bottom: 20px;
                     padding: 20px;
                     font-size: 1em;
                     > strong {
+                        margin-right: 20px;
+                        padding: 0 15px;
                         border-radius: 25px;
+                        background-color: #ccc;
+                        font-size: 1.5em;
                         font-weight: bold;
                     }
                 }

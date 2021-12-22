@@ -55,4 +55,11 @@ function fillDay() {
     }
 }
 
+function fillPlanColor() {
+    color_list = ["grey", "orange", "gold", "yellow"];
+    const strong = document.querySelectorAll(".strong");
+    for (let i=0; i<strong.length; i++) {
+        strong[i].style.backgroundColor = color_list[i % color_list.length];
+    }
+}
 init(); 

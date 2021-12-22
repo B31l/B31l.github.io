@@ -28,8 +28,8 @@ function fillDay(year, month) {
     const firstDay = new Date(`${year}-${month}-01`).getDay();
     const li_row = document.querySelectorAll(".calendar-ground > ul > li");
     for(let i=1; i<=month_day[month-1]; i++) {
-        tmep = firstDay + i - 1
-        const li_col = li_row[parseInt(temp / 7)].querySelectorAll(">ul > li");
+        temp = firstDay + i - 1
+        const li_col = li_row[parseInt(temp / 7)].querySelectorAll("> ul > li");
         li_col[temp % 7].innerText = i;
     }
 }

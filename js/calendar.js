@@ -23,9 +23,19 @@ function prependNewLine() {
 }
 
 function fillDay(year, month) {
-    const firstDay = new Date(`${year}-${month}-01`).getDay()
+    month_day = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) month_day[1] = 29;
+
     const fl = document.querySelectorAll(".calendar-ground > ul > li > ul > li");
-    fl[firstDay].innerText = "1";
+    const firstDay = new Date(`${year}-${month}-01`).getDay();
+    const arrayDay = [];
+    for (let i=0; i<7; i++) {
+        arrayDay.push((firstDay + i) % 7);
+    }
+    for (let i=0; i<month_day[month-1]; i++) {
+        fl[arrayDay[firstDay]].innerText = "i";
+    }
+    // fl[firstDay].innerText = "1";
 }
 
 init();

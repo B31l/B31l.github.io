@@ -1,5 +1,6 @@
-const ground = document.querySelector(".calendar-ground > ul");
-const title = document.querySelector(".calendar-title");
+const ground = document.querySelector(".calendar> ul");
+const cTitle = document.querySelector(".c-title");
+const cDay = document.querySelectorAll(".c-day > ul > li")
 
 
 CALENDAR_ROW = 6;
@@ -10,7 +11,7 @@ function init() {
     for (let i=0; i<CALENDAR_ROW; i++) {
         prependNewLine();
     }
-    fillDay(2021, 12);
+    fillDate(2021, 12);
 }
 
 function prependNewLine() {
@@ -24,17 +25,24 @@ function prependNewLine() {
     ground.prepend(li);
 }
 
-function fillDay(year, month) {
-    title.innerText = `${year} - ${month}`;
+function fillDate(year, month) {
+    cTitle.innerText = `${year}.${month}`;
     month_day = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) month_day[1] = 29;
     const firstDay = new Date(`${year}-${month}-01`).getDay();
-    const box = document.querySelectorAll(".calendar-ground > ul > li > ul > li");
+    const box = document.querySelectorAll(".calendar > ul > li > ul > li");
     for(let i=1; i<=month_day[month-1]; i++) {
         box[firstDay + i - 1].innerText = i;
     }
     const nowDay = new Date().getDate();
     box[firstDay + nowDay - 1].style.backgroundColor = "#48D33A";
+}
+
+function fillDay() {
+    dayList = ["일", "월", "화", "수", "목", "금", "토"];
+    for (let i=0; i<7; i++) {
+        cDay[i].innerText = dayList[i];
+    }
 }
 
 init(); 

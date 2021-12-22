@@ -39,7 +39,7 @@ body {
         // background-image: url("/img/pt_woven.png");
         .calendar {
             width: 100%;
-            border-radius: 50px 50px 0 0;
+            border-radius: 50px 0 0 0;
             background-color: WHITE;
             box-shadow: 0 0 10px 0 BLACK;
             .c-title {
@@ -87,6 +87,7 @@ body {
             box-shadow: 0 0 10px 0 BLACK;
             > ul {
                 padding: 20px 0;
+                list-style: none;
                 > li {
                     padding: 20px;
                     font-size: 1em;

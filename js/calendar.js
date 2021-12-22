@@ -32,7 +32,10 @@ function fillDate(year, month) {
     const firstDay = new Date(`${year}-${month}-01`).getDay();
     const box = document.querySelectorAll(".calendar > .c-body > li > ul > li");
     for(let i=1; i<=month_day[month-1]; i++) {
-        box[firstDay + i - 1].innerText = i;
+        temp = firstDay + i - 1;
+        box[temp].innerText = i;
+        if (temp % 7 == 0) box[temp].style.color = "Red";
+        if (temp % 7 == 6) box[temp].style.color = "Blue";
     }
     const nowDay = new Date().getDate();
     box[firstDay + nowDay - 1].style.backgroundColor = "#48D33A";

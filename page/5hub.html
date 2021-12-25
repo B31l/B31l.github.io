@@ -36,21 +36,6 @@ permalink: /hub/
                     </tbody>
                 </table>
             </div>
-            <script>
-                new Vue({
-                    el: "#app",
-                    data: {
-                        header: ["프로그래밍언어", 2018, 2013, 2008, 2003, 1998],
-                        ranking: [
-                            ['Java', 1, 2, 1, 1, 16],
-                            ['C', 2, 1, 2, 2, 1],
-                            ['C++', 3, 4, 3, 3, 2],
-                            ['Python', 4, 7, 6, 11, 23],
-                            ['JavaScript', 7, 10, 8, 7, 20]
-                        ],  
-                    }
-                })
-            </script>
         </div>
 
         <!-- Document -->
@@ -100,6 +85,21 @@ permalink: /hub/
         <script src="{{ "/js/headerController.js " | prepend: site.baseurl }}" charset="utf-8"></script>
         <script src="{{ "/js/calendar.js " | prepend: site.baseurl }}" charset="utf-8"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            new Vue({
+                el: "#app",
+                data: {
+                    header: ["프로그래밍언어", 2018, 2013, 2008, 2003, 1998],
+                    ranking: [
+                        ['Java', 1, 2, 1, 1, 16],
+                        ['C', 2, 1, 2, 2, 1],
+                        ['C++', 3, 4, 3, 3, 2],
+                        ['Python', 4, 7, 6, 11, 23],
+                        ['JavaScript', 7, 10, 8, 7, 20]
+                    ],  
+                }
+            })
+        </script>
     </body>
 </html>
 <style>

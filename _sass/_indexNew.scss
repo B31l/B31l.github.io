@@ -10,7 +10,7 @@
         }
     }
     .left {
-        width: 50%;
+        width: 100%;
         float: left;
         padding: 0 30px;
         padding-top: 20px;
@@ -144,6 +144,7 @@
         z-index: -1;
     }
     .right {
+        display: none;
         width: 25%;
         float: right;
         padding-top: 20px;

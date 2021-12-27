@@ -34,7 +34,7 @@ layout: default
                     <!-- 포스트 제목 -->
                     <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} : {{ post.meta }}</a></h2>
                     <!-- 포스트 부제 -->
-                    <!-- <div class="label-card"><i class="fa fa-key"></i>{{ post.meta }}</div> -->
+                    <div class="label-card">{{ post.meta }}</div>
                     <!-- 포스트 라벨 -->
                     <div class="label">
                         <div class="label-card"><i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}</div>

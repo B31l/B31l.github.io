@@ -10,17 +10,18 @@
         }
     }
     .left {
-        width: 75%;
+        width: 100%;
         float: left;
         padding: 0 30px;
         padding-top: 20px;
         font-size: 16px;
         >ul {
+            display: flex;
             padding: 0;
-            >li {
-                list-style: none;
+            list-style: none;
             }
             li {
+                box-shadow: 0 0 10px 0 BLACK;
                 color: #333;
                 h2 {
                     border: none;

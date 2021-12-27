@@ -2,46 +2,24 @@
 layout: default
 ---
 
-<div class="page clearfix" hub>
-    <div class="legend-body" id="legendSearch" style="display: block">
-        <div class="legend-title">Search</div>
-        <div id="search-container">
-            <input type="text" id="search-input" placeholder="Search">
-            <ul class="legend-body" id="results-container"></ul>
-        </div>
-        <!-- <p align="right"> made by goodGid</p> -->
-        <!-- Script pointing to jekyll-search.js -->
-        <script src="/js/jekyll-search.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            SimpleJekyllSearch({
-                searchInput: document.getElementById('search-input'),
-                resultsContainer: document.getElementById('results-container'),
-                json: '/search.json',
-                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-                noResultsText: 'No results found',
-                limit: 20,
-                fuzzy: false,
-                exclude: []
-            })
-        </script>
-        <style>
-            input[type=text], select {
-            width: 90%;
-            padding: 12px 20px;
-            margin: 20px 5%;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            }
-        </style>  
-    </div>
-    <div class="right">
-        <div style="text-align: center;
+<!---------------------------------------------------------------------------------------------------->
+<!-- LEFT -->
+<!---------------------------------------------------------------------------------------------------->
+{% include head.html %}
+<div class="page clearfix" indexNew>    
+
+    <!---------------------------------------------------------------------------------------------------->
+    <!-- LEFT -->
+    <!---------------------------------------------------------------------------------------------------->
+    <div class="left">
+        <div style="text-align: left;
                     font-size: 10rem;
                     font-family: monospace;
                     font-weight: 900;">Hub</div>
 
+        <!---------------------------------------------------------------------------------------------------->
+        <!-- 페이지 번호 -->
+        <!---------------------------------------------------------------------------------------------------->
         <div class="pagination">
             {% if paginator.previous_page %}
                 <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
@@ -59,6 +37,10 @@ layout: default
                 <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
             {% endif %}
         </div>
+
+        <!---------------------------------------------------------------------------------------------------->
+        <!-- 포스트 목록 -->
+        <!---------------------------------------------------------------------------------------------------->
         <ul>
             {% for post in paginator.posts %}
                 <li>
@@ -73,6 +55,14 @@ layout: default
                         <div class="label-card">{% include category.html %}</div>
                         <div class="label-card">{% include tag.html %}</div>
                     </div>
+
+                <!-- 발췌와 read-all -->
+                <!-- <div class="excerpt">
+                    {{post.excerpt}}
+                </div> -->
+                <!-- <div class="read-all">
+                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div> -->
                 </li>
             {% endfor %}
         </ul>
@@ -127,7 +117,7 @@ layout: default
             </div>
 
             <!---------------------------------------------------------------------------------------------------->
-            <!-- 태그구름 -->
+            <!-- 태그 구름 -->
             <!---------------------------------------------------------------------------------------------------->
             <div class="side">
                 <div class="side-title">

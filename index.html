@@ -43,13 +43,13 @@ layout: default
                         <div class="label-card">{% include tag.html %}</div>
                     </div>
 
-                <!-- 발췌와 read-all -->
-                <div class="excerpt">
-                    {{post.excerpt}}
-                </div>
-                <div class="read-all">
-                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
-                </div>
+                    <!-- 발췌와 read-all -->
+                    <!-- <div class="excerpt">
+                        {{post.excerpt}}
+                    </div>
+                    <div class="read-all">
+                        <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
+                    </div> -->
                 </li>
             {% endfor %}
         </ul>

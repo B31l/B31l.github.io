@@ -32,7 +32,7 @@ layout: default
             {% for post in paginator.posts %}
                 <li>
                     <!-- 포스트 제목 -->
-                    <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} : {{ post.meta }}</a></h2>
+                    <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
                     <!-- 포스트 부제 -->
                     <div class="label-card">{{ post.meta }}</div>
                     <!-- 포스트 라벨 -->

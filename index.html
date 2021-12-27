@@ -8,36 +8,7 @@ layout: default
 <div class="page clearfix" indexNew>
     <!-- LEFT -->
     <div class="left">
-        <div style="text-align: center;
-                    font-size: 10rem;
-                    font-family: monospace;
-                    font-weight: 900;">Hub</div>
-        <!-- 포스트 목록 -->
-        <ul>
-            {% for post in paginator.posts %}
-                <li>
-                    <!-- 포스트 제목 -->
-                    <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} : {{ post.meta }}</a></h2>
-                    <!-- 포스트 부제 -->
-                    <!-- <div class="label-card"><i class="fa fa-key"></i>{{ post.meta }}</div> -->
-                    <!-- 포스트 라벨 -->
-                    <div class="label">
-                        <div class="label-card"><i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}</div>
-                        <div class="label-card">{% if post.author %}<i class="fa fa-user"></i>{{ post.author }}{% endif %}</div>
-                        <div class="label-card">{% include category.html %}</div>
-                        <div class="label-card">{% include tag.html %}</div>
-                    </div>
-
-                <!-- 발췌와 read-all -->
-                <!-- <div class="excerpt">
-                    {{post.excerpt}}
-                </div> -->
-                <!-- <div class="read-all">
-                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
-                </div> -->
-                </li>
-            {% endfor %}
-        </ul>
+        <div class="left-title">Hub</div>
         <!-- 페이지 번호 -->
         <div class="pagination">
             {% if paginator.previous_page %}
@@ -56,6 +27,32 @@ layout: default
                 <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
             {% endif %}
         </div>
+        <!-- 포스트 목록 -->
+        <ul>
+            {% for post in paginator.posts %}
+                <li>
+                    <!-- 포스트 제목 -->
+                    <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} : {{ post.meta }}</a></h2>
+                    <!-- 포스트 부제 -->
+                    <!-- <div class="label-card"><i class="fa fa-key"></i>{{ post.meta }}</div> -->
+                    <!-- 포스트 라벨 -->
+                    <div class="label">
+                        <div class="label-card"><i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}</div>
+                        <div class="label-card">{% if post.author %}<i class="fa fa-user"></i>{{ post.author }}{% endif %}</div>
+                        <div class="label-card">{% include category.html %}</div>
+                        <div class="label-card">{% include tag.html %}</div>
+                    </div>
+
+                <!-- 발췌와 read-all -->
+                <div class="excerpt">
+                    {{post.excerpt}}
+                </div>
+                <div class="read-all">
+                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                </li>
+            {% endfor %}
+        </ul>
     </div>
     <div class="right">
         <div class="wrap">

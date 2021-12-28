@@ -20,11 +20,10 @@ header {
         padding: 0 20px;
         line-height: 50px;
         .brand {
-            font-size: 18px;
+            font-size: 2em;
         }
         small {
-            margin-left: 26px;
-            font-size: 14px;
+            font-size: 1em;
         }
         .menu{
             display: none;
@@ -71,7 +70,7 @@ header {
                 }
             }
         }
-        .legend {
+        .legend {   
             .legend-title {
                 display: none;
                 height: 50px;

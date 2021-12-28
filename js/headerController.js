@@ -4,7 +4,7 @@ function 범례(idx) {
     legends = ["Setting", "Search", "Archives", "Categories", "Tags"];
     legends.forEach(Element => {
         document.getElementById(`legend${Element}`).style.display = "none";
-        document.getElementById(`btn${Element}`).style.color = "WHITE";
+        document.getElementById(`btn${Element}`).style.color = "#9d9d9d";
     });
     if (presentBtn === idx) {
         presentBtn = null;

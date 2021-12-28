@@ -8,10 +8,12 @@ function 범례(idx) {
     });
     if (presentBtn === idx) {
         presentBtn = null;
-        return
+        localStorage.setItem('LEGEND_KEY', null);
     }
-    presentBtn = idx
-    localStorage.setItem('LEGEND_KEY', idx);
-    document.getElementById(`legend${legends[idx]}`).style.display = "block";
-    document.getElementById(`btn${legends[idx]}`).style.color = "#48D33A";
+    else {
+        presentBtn = idx
+        localStorage.setItem('LEGEND_KEY', idx);
+        document.getElementById(`legend${legends[idx]}`).style.display = "block";
+        document.getElementById(`btn${legends[idx]}`).style.color = "#48D33A";
+    }
 }

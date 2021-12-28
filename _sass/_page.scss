@@ -89,18 +89,18 @@
         display: none;
     }
     .right {
-        top: 0;
         width: 25%;
         float: right;
-        padding-top: 20px;
-        .fixed {
-            position: fixed;
-            top: 20px;
-        }
-        .scroll-bottom {
-            position: absolute;
-            bottom: 30px;   // footer
-        }
+        padding-top: 10px;
+        padding-right: 10px;
+        // .fixed {
+        //     position: fixed;
+        //     top: 20px;
+        // }
+        // .scroll-bottom {
+        //     position: absolute;
+        //     bottom: 30px;   // footer
+        // }
         // 사이드바
         .side {
             box-sizing: border-box;

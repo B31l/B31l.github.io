@@ -45,7 +45,7 @@ header {
     .container {
         position: relative;
         float: left;
-        width: 350px; height: 100vh;
+        width: 1200px; height: 100vh;
         // padding-top: 20px;
         color: WHITE;
         font-weight: bold;
@@ -71,7 +71,6 @@ header {
         }
         .legend {
             .legend-title {
-                display: none;
                 height: 50px;
                 margin-top: 25px;
                 border-bottom: 2px solid WHITE;

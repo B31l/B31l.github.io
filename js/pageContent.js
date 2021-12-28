@@ -26,7 +26,7 @@
                 // console.log(htmlHeight);
             var scrollBottom = htmlHeight - window.innerHeight - scrollTop
 
-            if (scrollTop <= 0) { // < 53
+            if (scrollTop < 51) { // < 53
                 sidebarWrap.classList.remove('fixed')
                 sidebarWrap.classList.remove('scroll-bottom')
             } else if (scrollBottom >= (190 - 38)) {

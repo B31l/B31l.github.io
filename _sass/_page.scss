@@ -12,10 +12,9 @@
 
 .page {
     width: 1200px;
-    border: 3px solid #2b2b3c;
+    border-left: 3px solid #2b2b3c;
+    border-right: 3px solid #2b2b3c;
     margin: 0 auto;
-    // padding-top: 20px;
-    // word-break: break-all;
     .left {
         width: 75%;
         float: left;
@@ -103,6 +102,8 @@
         // }
         // 사이드바
         .side {
+            position: fixed;
+            width: 290px;
             box-sizing: border-box;
             border: 3px solid #333; 
             background-color: #f8f8fd;

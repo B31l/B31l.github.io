@@ -3,7 +3,7 @@
         <a href="{{ site.baseurl }}/" class="brand">{{ site.title }}</a>
         <small>{{site.brief-intro}}</small>
         <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
-        <nav id="headerNav">
+        <div id="headerNav">
             <ul>
                 <li>
                     {% if page.url == '/' %}
@@ -29,6 +29,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        </nav>
+        </div>
     </div>
 </header>

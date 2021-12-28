@@ -8,7 +8,7 @@
 # Site settings
 locale                  : "ko-KR"
 title                   : "BELFRY"
-brief-intro             : "NULL"
+brief-intro             : "Ham Sujong"
 baseurl                 : "" # the subpath of your site, e.g. /blog
 url                     : "https://B31l.github.io" # the base hostname & protocol for your site
 permalink               : /:year/:month/:day/:title/

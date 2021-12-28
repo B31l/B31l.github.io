@@ -8,12 +8,12 @@ function 범례(idx) {
     });
     if (presentBtn === idx) {
         presentBtn = null;
-        localStorage.setItem('LEGEND_KEY', null);
+        // localStorage.setItem('LEGEND_KEY', null);
         document.querySelector('.container').style.display = "none"
     }
     else {
         presentBtn = idx
-        localStorage.setItem('LEGEND_KEY', idx);
+        // localStorage.setItem('LEGEND_KEY', idx);
         document.querySelector('.container').style.display = "block"
         document.getElementById(`legend${legends[idx]}`).style.display = "block";
         document.getElementById(`btn${legends[idx]}`).style.color = "#48D33A";

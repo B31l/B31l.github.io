@@ -29,37 +29,51 @@ header {
         .menu{
             display: none;
         }
-        #headerNav {
-            float: right;
-            ul {
-                font-size: 0;
-                margin: 0;
-                padding: 0;
-                li {
-                    list-style: none;
-                    font-size: 14px;
-                    display: inline-block;
-                    -webkit-transition: 0.2s ease;
-                    transition: 0.2s ease;
-                    a {
-                        display: inline-block;
-                        padding: 0 10px;
-                        height: 52px;
-                        &:hover {
-                            background-color: #000;
-                        }
-                        i {
-                            margin-right: 5px;
-                        }
-                    }
-                    >.active {
-                        color: #fff;
-                        background-color: #000;
-                        box-shadow: 0 25px 25px -15px rgba(255,255,255,0.93);
-                    }
+        .nav-static {
+            margin-right: 5px;
+            button {
+                width: 100%; height: 30px;
+                margin-top: 30px;
+                background-color: #000917;
+                color: #9d9d9d;
+                font-size: 30px;
+                cursor: pointer;
+                &:hover {
+                    color: #fff;
                 }
             }
         }
+        // #headerNav {
+        //     float: right;
+        //     ul {
+        //         font-size: 0;
+        //         margin: 0;
+        //         padding: 0;
+        //         li {
+        //             list-style: none;
+        //             font-size: 14px;
+        //             display: inline-block;
+        //             -webkit-transition: 0.2s ease;
+        //             transition: 0.2s ease;
+        //             a {
+        //                 display: inline-block;
+        //                 padding: 0 10px;
+        //                 height: 52px;
+        //                 &:hover {
+        //                     background-color: #000;
+        //                 }
+        //                 i {
+        //                     margin-right: 5px;
+        //                 }
+        //             }
+        //             >.active {
+        //                 color: #fff;
+        //                 background-color: #000;
+        //                 box-shadow: 0 25px 25px -15px rgba(255,255,255,0.93);
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {

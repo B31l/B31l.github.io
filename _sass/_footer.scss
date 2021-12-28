@@ -17,6 +17,7 @@ footer {
         font-size: 14px;
         .contact {
             float: left;
+            margin: 0 10px;
             a {
                 color: #ccc;
                 transition: 0.3s ease;
@@ -25,15 +26,16 @@ footer {
                 }
                 i {
                     margin: 0 5px;
-                    font-size: 20px;
                 }
             }
         }
         .description {
             float: left;
+            margin: 0 10px;
         }
         .power {
             float: right;
+            margin: 0 10px;
             a {
                 color: #8F90C5;
                 transition: 0.3s ease;

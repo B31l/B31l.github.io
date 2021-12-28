@@ -1,6 +1,8 @@
 .page[indexNew] {
     width: 1200px;
     border: 3px solid gold;
+    margin-top: 50px;
+    margin-bottom: 20px;
     // margin-left: 450px;
     // margin-right: 50px;
     a {
@@ -17,7 +19,7 @@
         font-size: 16px;
         .left-title {
             text-align: center;
-            font-size: 10rem;
+            font-size: 8em;
             font-family: monospace;
             font-weight: 900;
         }

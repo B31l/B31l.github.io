@@ -15,9 +15,10 @@ header {
         }
     }
     .wrapper {
-        width: 1140px;
+        width: 100%; height: 100%;
         margin: 0 auto;
-        line-height: 52px;
+        padding: 0 20px;
+        line-height: 50px;
         .brand {
             font-size: 18px;
         }

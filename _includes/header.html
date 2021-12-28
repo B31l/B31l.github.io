@@ -3,32 +3,21 @@
         <a href="{{ site.baseurl }}/" class="brand">{{ site.title }}</a>
         <small>{{site.brief-intro}}</small>
         <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
-        <div id="headerNav">
-            <ul>
-                <li>
-                    {% if page.url == '/' %}
-                    <a class="active" href="{{site.baseurl}}/">
-                        {% else %}
-                    <a href="{{site.baseurl}}/">
-                    {% endif %}
-                        <i class="fa fa-home"></i>Home
-                    </a>
-                </li>
-
-                {% for my_page in site.pages %}
-                    {% if my_page.type == 'page' %}
-                    <li>
-                        {% if my_page.url == page.url %}
-                        <a class="active" href="{{ my_page.url | prepend: site.baseurl }}">
-                            {% else %}
-                        <a href="{{ my_page.url | prepend: site.baseurl }}">
-                        {% endif %}
-                            <i class="fa fa-{{my_page.icon}}"></i>{{ my_page.title }}
-                        </a>
-                    </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+        <div class="wrapper">
+            <!--모바일 버튼-->
+            <button class="menu" id="headerMenu"><i class="fa fa-bars"></i></button>
+            <!--legendNav-->
+            <div class="nav-static" id="headerNav" style="float: left;">
+                <button onmouseover="범례(1)" id="btnSearch"    ><i class="fa fa-search"> </i></button>
+                <button onmouseover="범례(2) "id="btnArchives"  ><i class="fa fa-archive"></i></button>
+                <button onmouseover="범례(3)" id="btnCategories"><i class="fa fa-th-list"></i></button>
+                <button onmouseover="범례(4)" id="btnTags"      ><i class="fa fa-tags">   </i></button>
+                <button onmouseover="범례(5)" id="btnDemo"      ><i class="fa fa-play">   </i></button>
+                <button onmouseover="범례(6)" id="btnMore"      ><i class="fa fa-plus">   </i></button>
+            </div>
+            <div class="nav-static" id="headerNav" style="float: right;">
+                <button onclick="범례(0)" id="btnSetting"   ><i class="fa fa-cog"></i></button>
+            </div>
         </div>
     </div>
 </header>

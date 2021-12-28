@@ -7,12 +7,13 @@
         <button class="menu" id="headerMenu"><i class="fa fa-bars"></i></button>
         <!--legendNav-->
         <div class="nav-static" id="headerNav" style="float: left;">
+            <button onclick="location.href='{{ site.baseurl }}'"></button>
             <button onclick="범례(1)" id="btnSearch"    ><i class="fa fa-search"> </i></button>
             <button onclick="범례(2) "id="btnArchives"  ><i class="fa fa-archive"></i></button>
             <button onclick="범례(3)" id="btnCategories"><i class="fa fa-th-list"></i></button>
             <button onclick="범례(4)" id="btnTags"      ><i class="fa fa-tags">   </i></button>
-            <button onclick="범례(5)" id="btnDemo"      ><i class="fa fa-play">   </i></button>
-            <button onclick="범례(6)" id="btnMore"      ><i class="fa fa-plus">   </i></button>
+            <!-- <button onclick="범례(5)" id="btnDemo"      ><i class="fa fa-play">   </i></button> -->
+            <!-- <button onclick="범례(6)" id="btnMore"      ><i class="fa fa-plus">   </i></button> -->
         </div>
         <div class="nav-static" id="headerNav" style="float: right;">
             <button onclick="범례(0)" id="btnSetting"   ><i class="fa fa-cog"></i></button>
@@ -136,69 +137,6 @@
               {% endfor %}
             {% endfor %}
             </ul>
-        </div>
-
-        <!-- 5. Demo -->
-        <div class="legend" id="legendDemo" style="display: none">
-            <div class="legend-title">Demo</div>
-            <div class="legend-body">
-                <button class="legend-demo-box" onclick="location.href='https://github.com/B31l/__ShowVoca'">
-                    <div class="legend-demo-left">
-                        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbkW9WF%2FbtqUUqEfEIe%2FDPIdxrtKafxzW1fjbhO1K1%2Fimg.png">
-                    </div>
-                    <div class="legend-demo-right">
-                        <div class="legend-demo-title">ShowVoca</div>
-                        <div class="legend-demo-meta">Python</div>
-                        <div class="legend-demo-description">단어 암기 프로그램</div>
-                    </div>
-                </button>
-                <button class="legend-demo-box" onclick="location.href='https://github.com/B31l/__Shooter'">
-                    <div class="legend-demo-left">
-                        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbkW9WF%2FbtqUUqEfEIe%2FDPIdxrtKafxzW1fjbhO1K1%2Fimg.png">
-                    </div>
-                    <div class="legend-demo-right">
-                        <div class="legend-demo-title">Shooter</div>
-                        <div class="legend-demo-meta">Python (Pygame)</div>
-                        <div class="legend-demo-description">슈팅 게임</div>
-                    </div>
-                </button>
-                <button class="legend-demo-box" onclick="location.href='https://github.com/B31l/__PWstorage'">
-                    <div class="legend-demo-left">
-                        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbkW9WF%2FbtqUUqEfEIe%2FDPIdxrtKafxzW1fjbhO1K1%2Fimg.png">
-                    </div>
-                    <div class="legend-demo-right">
-                        <div class="legend-demo-title">PWstorage</div>
-                        <div class="legend-demo-meta">Python (Tkinter, Openpyxl)</div>
-                        <div class="legend-demo-description">비밀번호 관리 데스크탑 앱</div>
-                    </div>
-                </button>
-                <button class="legend-demo-box"onclick="location.href='https://github.com/B31l/__DAYBREAK'">
-                    <div class="legend-demo-left">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJhkfdzwVRb0ztUgYRbu9sv-x_ApSCTvO99yImWA3cuFLvKiOWpKODxdmlWVW49wiZCs&usqp=CAU">
-                    </div>
-                    <div class="legend-demo-right">
-                        <div class="legend-demo-title">DAYBREAK</div>
-                        <div class="legend-demo-meta">C#</div>
-                        <div class="legend-demo-description">유니티 게임</div>
-                    </div>
-                </button>
-            </div>
-        </div>
-
-        <!-- 6. More -->
-        <div class="legend" id="legendMore" style="display: none">
-            <div class="legend-title">More</div>
-            <div class="legend-body">
-                <div class="legend-box">
-                    <a href="https://b31l.github.io/collection/"><i class="fa fa-bookmark"></i>Collection</a>
-                </div>
-                <div class="legend-box">
-                    <a href="https://b31l.github.io/demo/"><i class="fa fa-play"></i>Demo</a>
-                </div>
-                <div class="legend-box">
-                    <a href="https://b31l.github.io/about/"><i class="fa fa-heart"></i>About</a>
-                </div>
-            </div>
         </div>
 
         <!-- 0. Setting -->

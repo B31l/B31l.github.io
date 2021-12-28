@@ -1,6 +1,7 @@
 .page[indexNew] {
-    margin-left: 450px;
-    margin-right: 50px;
+    width: 1200px;
+    // margin-left: 450px;
+    // margin-right: 50px;
     a {
         // color: #4d6dad;
         color: #333;
@@ -22,6 +23,7 @@
             font-weight: 900;
         }
         >ul {
+            width: 75%;
             padding: 0;
             list-style: none;
             li {

@@ -9,6 +9,7 @@ function 범례(idx) {
     if (presentBtn === idx) {
         presentBtn = null;
         localStorage.setItem('LEGEND_KEY', null);
+        document.querySelector('.container').style.display = "none"
     }
     else {
         presentBtn = idx

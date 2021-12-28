@@ -13,8 +13,6 @@
     .left {
         width: 100%;
         float: left;
-        padding: 0 30px;
-        padding-top: 20px;
         font-size: 16px;
         .left-title {
             text-align: center;
@@ -24,7 +22,9 @@
         }
         >ul {
             width: 75%;
+            margin: 0 auto;
             padding: 0;
+            border: 3px solid gold;
             list-style: none;
             li {
                 box-shadow: 0 0 10px 0 BLACK;

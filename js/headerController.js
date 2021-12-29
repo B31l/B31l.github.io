@@ -1,7 +1,19 @@
 let presentBtn = null;
 
-const container = document.querySelector('.container');
 const searchInput = document.getElementById("search-input");
+searchInput.addEventListener('input', updateValue);
+function updateValue(e) {
+    if (e !== "") {
+        initialize();
+        container.style.display = "block";
+        legendSearch.style.display = "block";
+    } else {
+        container.style.display = "none"
+        legendSearch.style.display = "none"
+    }
+}
+
+const container = document.querySelector('.container');
 const legendSearch = document.getElementById("legendSearch");
 const legends = ["Setting", "Search", "Archives", "Categories", "Tags"];
 
@@ -24,11 +36,3 @@ function 범례(idx) {
     }
 }
 
-if (searchInput.value !== "") {
-    initialize();
-    container.style.display = "block";
-    legendSearch.style.display = "block";
-} else {
-    container.style.display = "none"
-    legendSearch.style.display = "none"
-}

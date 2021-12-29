@@ -5,7 +5,7 @@ searchInput.addEventListener('input', updateValue);
 
 function updateValue(e) {
     initialize();
-    if (e === "") {
+    if (e.length < 1) {
         container.style.display = "none";
         legendSearch.style.display = "none";
     } else {

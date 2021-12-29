@@ -14,7 +14,7 @@ function initialize() {
 
 searchInput.addEventListener('input', e => {
     initialize();
-    if (e.length === 0) {
+    if (e.target.value.length === 0) {
         container.style.display = "none";
         legendSearch.style.display = "none";
     } else {

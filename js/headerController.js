@@ -5,12 +5,12 @@ searchInput.addEventListener('input', updateValue);
 
 function updateValue(e) {
     initialize();
-    if (e !== "") {
-        container.style.display = "block";
-        legendSearch.style.display = "block";
-    } else {
+    if (e === "") {
         container.style.display = "none";
         legendSearch.style.display = "none";
+    } else {
+        container.style.display = "block";
+        legendSearch.style.display = "block";
     }
 }
 

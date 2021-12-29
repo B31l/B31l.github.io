@@ -7,9 +7,9 @@
         <button class="menu" id="headerMenu"><i class="fa fa-bars"></i></button>
         <!--legendNav-->
         <div class="nav-static" id="headerNav" style="float: left;">
-            <button onclick="메뉴(1) "id="btnArchives"  >        <i class="fa fa-archive"></i></button>
-            <button onclick="메뉴(2)" id="btnCategories">        <i class="fa fa-th-list"></i></button>
-            <button onclick="메뉴(3)" id="btnTags"      >        <i class="fa fa-tags">   </i></button>
+            <button onclick="메뉴(2) "id="btnArchives"  >        <i class="fa fa-archive"></i></button>
+            <button onclick="메뉴(3)" id="btnCategories">        <i class="fa fa-th-list"></i></button>
+            <button onclick="메뉴(4)" id="btnTags"      >        <i class="fa fa-tags">   </i></button>
         </div>
         <!-- <div class="nav-static" id="headerNav" style="float: right;">
             <button onclick="메뉴(0)" id="btnSetting"   ><i class="fa fa-cog"></i></button>
@@ -33,10 +33,11 @@
     </div>
 
     <div class="container">
-        <!-- Search -->
+        
         <div class="legend" id="legendSearch" style="display: none;">
             <ul class="legend-body" id="results-container"></ul>
         </div>
+
         <div class="legend" id="legendArchives" style="display: none">
             <ul class="legend-body">
               {% for post in site.posts %}

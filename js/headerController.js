@@ -1,5 +1,9 @@
 let presentBtn = null;
 
+const container = document.querySelector('.container');
+const searchInput = document.getElementById("search-input");
+const legendSearch = document.getElementById("legendSearch");
+
 function 범례(idx) {
     legends = ["Setting", "Search", "Archives", "Categories", "Tags"];
     legends.forEach(Element => {
@@ -9,22 +13,21 @@ function 범례(idx) {
     if (presentBtn === idx) {
         presentBtn = null;
         // localStorage.setItem('LEGEND_KEY', null);
-        document.querySelector('.container').style.display = "none"
+        container.style.display = "none"
     }
     else {
         presentBtn = idx
         // localStorage.setItem('LEGEND_KEY', idx);
-        document.querySelector('.container').style.display = "block"
+        container.style.display = "block"
         document.getElementById(`legend${legends[idx]}`).style.display = "block";
         document.getElementById(`btn${legends[idx]}`).style.color = "#48D33A";
     }
 }
 
-const inputValue = document.getElementById("search-input").value;
-const legendSearch = document.getElementById("legendSearch");
-
-if (inputValue !== "") {
+if (searchInput.value !== "") {
+    container.style.display = "block"
     legendSearch.style.display = "block"
 } else {
+    container.style.display = "none"
     legendSearch.style.display = "none"
 }

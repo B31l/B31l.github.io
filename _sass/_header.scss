@@ -84,9 +84,9 @@ header {
                         color: #000917;
                     }   
                 }
-                ::-webkit-scrollbar {
-                    display: none;
-                }
+            }
+            ul::-webkit-scrollbar {
+                display: none;
             }
         }
     }
@@ -100,25 +100,25 @@ header {
         color: WHITE;
         font-weight: bold;
         background-color: #333;
-        .legend-button {
-            width: 100%;
-            text-align: center;
-            display: inline-block;
-            button {
-                border: 1px solid #000917;
-                border-radius: 10px;
-                width: 30%;
-                margin: 5px;
-                padding: 5px 10px;
-                font-size: 1rem;
-                font-family: D2coding;
-                cursor: pointer;
-                &:hover {
-                    background-color: #48D33A;
-                    color: #fff;
-                }
-            }
-        }
+        // .legend-button {
+        //     width: 100%;
+        //     text-align: center;
+        //     display: inline-block;
+        //     button {
+        //         border: 1px solid #000917;
+        //         border-radius: 10px;
+        //         width: 30%;
+        //         margin: 5px;
+        //         padding: 5px 10px;
+        //         font-size: 1rem;
+        //         font-family: D2coding;
+        //         cursor: pointer;
+        //         &:hover {
+        //             background-color: #48D33A;
+        //             color: #fff;
+        //         }
+        //     }
+        // }
         .legend {   
             .legend-body {
                 height: 75vh; // legend-title 존재 시 850px
@@ -155,37 +155,6 @@ header {
             }
         }
     }
-    // #headerNav {
-    //     float: right;
-    //     ul {
-    //         font-size: 0;
-    //         margin: 0;
-    //         padding: 0;
-    //         li {
-    //             list-style: none;
-    //             font-size: 14px;
-    //             display: inline-block;
-    //             -webkit-transition: 0.2s ease;
-    //             transition: 0.2s ease;
-    //             a {
-    //                 display: inline-block;
-    //                 padding: 0 10px;
-    //                 height: 52px;
-    //                 &:hover {
-    //                     background-color: #000;
-    //                 }
-    //                 i {
-    //                     margin-right: 5px;
-    //                 }
-    //             }
-    //             >.active {
-    //                 color: #fff;
-    //                 background-color: #000;
-    //                 box-shadow: 0 25px 25px -15px rgba(255,255,255,0.93);
-    //             }
-    //         }
-    //     }
-    // }
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {
     header {

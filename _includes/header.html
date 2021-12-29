@@ -1,35 +1,21 @@
 <header id="top">
     <div class="wrapper">
-        <a href="{{ site.baseurl }}/" class="brand">{{ site.title }}</a>
-        <small>{{site.brief-intro}}</small>
-        <!-- <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button> -->
-        <!--모바일 버튼-->
-        <button class="menu" id="headerMenu"><i class="fa fa-bars"></i></button>
-        <!--legendNav-->
+
+        <div class="title">
+            <a href="{{ site.baseurl }}/" class="brand">{{ site.title }}</a>
+            <small>{{site.brief-intro}}</small>
+        </div>
+
+        <button class="menu" id="headerMenu"><i class="fa fa-bars"></i></button> <!--모바일 버튼-->
         <div class="nav-static" id="headerNav" style="float: left;">
             <button onclick="메뉴(2) "id="btnArchives"  >        <i class="fa fa-archive"></i></button>
             <button onclick="메뉴(3)" id="btnCategories">        <i class="fa fa-th-list"></i></button>
             <button onclick="메뉴(4)" id="btnTags"      >        <i class="fa fa-tags">   </i></button>
         </div>
-        <!-- <div class="nav-static" id="headerNav" style="float: right;">
-            <button onclick="메뉴(0)" id="btnSetting"   ><i class="fa fa-cog"></i></button>
-        </div> -->
+
         <div class="search">
             <input id="search-input" type="text" placeholder="Search">
         </div>
-        <script src="/js/jekyll-search.js" type="text/javascrit"></script>
-        <script type="text/javascript">
-            SimpleJekyllSearch({
-                searchInput: document.getElementById('search-input'),
-                resultsContainer: document.getElementById('results-container'),
-                json: '/search.json',
-                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-                noResultsText: 'No results found',
-                limit: 20,
-                fuzzy: false,
-                exclude: []
-            })
-        </script>
     </div>
 
     <div class="container">
@@ -106,3 +92,18 @@
         </div>
     </div>
 </header>
+
+<script src="{{ "/js/headerController.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+<script src="/js/jekyll-search.js" type="text/javascrit"></script>
+<script type="text/javascript">
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+        noResultsText: 'No results found',
+        limit: 20,
+        fuzzy: false,
+        exclude: []
+    })
+</script>

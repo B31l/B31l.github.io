@@ -19,15 +19,14 @@ header {
         margin: 0 auto;
         padding: 0 20px;
         line-height: 40px;
-        .brand {
-            font-size: 2em;
-            margin-left: 260px;
-        }
-        small {
-            font-size: 1em;
-        }
-        .menu{
-            display: none;
+        .title {
+            .brand {
+                font-size: 2em;
+                margin-left: 260px;
+            }
+            small {
+                font-size: 1em;
+            }
         }
         .nav-static {
             height: 40px;
@@ -55,6 +54,9 @@ header {
                 border-radius: 4px;
                 box-sizing: border-box;
             }
+        }
+        .menu {
+            display: none;
         }
     }
     .container {

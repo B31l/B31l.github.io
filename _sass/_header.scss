@@ -48,7 +48,7 @@ header {
         display: none;
         position: relative;
         float: left;
-        width: 1200px; height: 50vh;
+        width: 1200px; height: 75vh;
         border-top: 3px solid White;
         // padding-top: 20px;
         color: WHITE;
@@ -84,7 +84,7 @@ header {
                 // margin-bottom: 50px;
             }
             .legend-body {
-                height: 50vh; // legend-title 존재 시 850px
+                height: 75vh; // legend-title 존재 시 850px
                 margin: 0px 0px;
                 padding-left: 0px;
                 overflow-y: scroll;
@@ -110,7 +110,7 @@ header {
                     &:hover {
                         background-color: #48D33A;
                         color: #000917;
-                    }
+                    }   
                 }
                 .legend-box {
                     display: inline-block;

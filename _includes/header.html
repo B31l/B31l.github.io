@@ -36,9 +36,6 @@
     <div class="container">
 
         <div class="legend" id="legendArchives" style="display: none">
-            <div class="legend-title">
-                Archives
-            </div>
             <ul class="legend-body">
               {% for post in site.posts %}
                 {% unless post.next %}
@@ -62,9 +59,6 @@
         </div>
 
         <div class="legend" id="legendCategories" style="display: none">
-            <div class="legend-title">
-                Categories
-            </div>
             <ul class="legend-body">
                 {% for category in site.categories %}
                 <h2 id="{{category | first}}">{{category | first}}</h2>
@@ -86,9 +80,6 @@
         </div>
 
         <div class="legend" id="legendTags" style="display: none">
-            <div class="legend-title">
-                Tags
-            </div>
             {% capture tags %}
               {% for tag in site.tags %}
                 {{ tag[0] }}

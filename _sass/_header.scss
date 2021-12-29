@@ -55,6 +55,38 @@ header {
                 border-radius: 4px;
                 box-sizing: border-box;
             }
+            .legend-body {
+                height: 75vh; // legend-title 존재 시 850px
+                margin: 0px 0px;
+                padding-left: 0px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                line-height: 150%;
+                font-size: 16px;
+                font-weight: 500;
+                h2 {
+                    margin: 10px 5px 10px;  // override
+                }
+                li {
+                    cursor: pointer;
+                    a {
+                        margin: 0px 15px;
+                        float: left;
+                        color: WHITE;
+                    }
+                    time {
+                        margin: 0px 15px;
+                        float: right;
+                        color: #777;
+                    }
+                    &:hover {
+                        background-color: #48D33A;
+                        color: #000917;
+                    }   
+                }
+                ::-webkit-scrollbar {
+                    display: none;
+            }
         }
     }
     .container {

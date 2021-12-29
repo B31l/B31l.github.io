@@ -19,3 +19,12 @@ function 범례(idx) {
         document.getElementById(`btn${legends[idx]}`).style.color = "#48D33A";
     }
 }
+
+const inputValue = document.getElementById("search-input").value;
+const legendSearch = document.getElementById("legendSearch");
+
+if (inputValue !== "") {
+    legendSearch.style.display = "block"
+} else {
+    legendSearch.style.display = "none"
+}

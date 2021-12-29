@@ -29,7 +29,6 @@
         <div class="legend" id="legendSearch" style="display: block">
             <div class="legend-title">Search</div>
             <div id="search-container">
-                <input type="text" id="search-input" placeholder="Search">
                 <ul class="legend-body" id="results-container"></ul>
             </div>
             <!-- <p align="right"> made by goodGid</p> -->
@@ -47,17 +46,6 @@
                     exclude: []
                 })
             </script>
-            <style>
-                input[type=text], select {
-                    width: 90%;
-                    padding: 12px 20px;
-                    margin: 20px 5%;
-                    display: inline-block;
-                    border: 1px solid #ccc;
-                    border-radius: 4px;
-                    box-sizing: border-box;
-                }
-            </style>  
         </div>
 
         <!-- 2. 아카이브 -->
@@ -162,3 +150,14 @@
         </div>
     </div>
 </header>
+<style>
+    input[type=text], select {
+        width: 200px; height: 20px;
+        padding: 12px 20px;
+        margin: 0 10px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+</style>

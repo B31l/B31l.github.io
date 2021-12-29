@@ -61,15 +61,14 @@ header {
         display: none;
         position: relative;
         float: left;
-        width: 1200px; height: 75vh;
-        border-top: 3px solid White;
+        width: 1200px; height: 480px;
         // padding-top: 20px;
         color: WHITE;
         font-weight: bold;
         background-color: #333;
         .legend {   
             .legend-body {
-                height: 75vh; // legend-title 존재 시 850px
+                height: 480px; // legend-title 존재 시 850px
                 margin: 0px 0px;
                 padding-left: 0px;
                 overflow-y: scroll;

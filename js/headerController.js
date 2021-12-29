@@ -1,21 +1,8 @@
 let presentBtn = null;
 
-const searchInput = document.getElementById("search-input");
-searchInput.addEventListener('input', updateValue);
-
-function updateValue(e) {
-    initialize();
-    if (e.length === 1) {
-        container.style.display = "none";
-        legendSearch.style.display = "none";
-    } else {
-        container.style.display = "block";
-        legendSearch.style.display = "block";
-    }
-}
-
 const container = document.querySelector('.container');
 const legendSearch = document.getElementById("legendSearch");
+const searchInput = document.getElementById("search-input");
 const legends = ["Setting", "Search", "Archives", "Categories", "Tags"];
 
 function initialize() {
@@ -24,7 +11,19 @@ function initialize() {
         document.getElementById(`btn${Element}`).style.color = "#9d9d9d";
     });
 }
-function 범례(idx) {    
+
+searchInput.addEventListener('input', e => {
+    initialize();
+    if (e.length === 0) {
+        container.style.display = "none";
+        legendSearch.style.display = "none";
+    } else {
+        container.style.display = "block";
+        legendSearch.style.display = "block";
+    }
+});
+
+function 메뉴(idx) {
     initialize();
     if (presentBtn === idx) {   // 클릭 취소
         presentBtn = null;

@@ -120,15 +120,6 @@ header {
             }
         }
         .legend {   
-            .legend-title {
-                display: none;
-                height: 50px;
-                margin-top: 25px;
-                border-bottom: 2px solid WHITE;
-                font-size: 2rem;    
-                text-align: center; 
-                // margin-bottom: 50px;
-            }
             .legend-body {
                 height: 75vh; // legend-title 존재 시 850px
                 margin: 0px 0px;
@@ -157,58 +148,6 @@ header {
                         background-color: #48D33A;
                         color: #000917;
                     }   
-                }
-                .legend-box {
-                    display: inline-block;
-                    box-sizing: border-box;
-                    background-color: WHITE;
-                    width: 90%; height: 100px;
-                    padding: 12px 20px;
-                    margin: 20px 5%;
-                    border: 1px solid BEIGE;
-                    border-radius: 10px;
-                }
-                .legend-demo-box {
-                    box-sizing: border-box;
-                    background-color: WHITE;
-                    width: 90%; height: 100px;
-                    padding: 12px 20px;
-                    margin: 10px 5%;
-                    border: 1px solid BEIGE;
-                    border-radius: 10px;
-                    cursor: pointer;
-                    &:hover {
-                        background-color: #48D33A;
-                        border-color: #48D33A;
-                    }
-                    .legend-demo-left {
-                        float: left;
-                        width: 25%; height: auto;
-                        margin-right: 5%;
-                        img {
-                            width: 100%; height: 100%;
-                        }
-                    }
-                    .legend-demo-right {
-                        float: right;
-                        width: 70%; height: auto;
-                        .legend-demo-title {
-                            text-align: left;
-                            padding-left: 10px;
-                            font-size: 2em;
-                            font-weight: bold;
-                        }
-                        .legend-demo-meta {
-                            text-align: left;
-                            padding-left: 10px;
-                            font-size: 1em;
-                        }
-                        .legend-demo-description {
-                            text-align: left;
-                            padding-left: 10px;
-                            font-size: 1em;
-                        }
-                    }
                 }
             }
             .legend-body::-webkit-scrollbar {

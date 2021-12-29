@@ -8,7 +8,6 @@
         <!--legendNav-->
         <div class="nav-static" id="headerNav" style="float: left;">
             <button onclick="범례(1)" id="btnSearch"    >        <i class="fa fa-search"> </i></button>
-            <input type="text" id="search-input" placeholder="Search">
             <button onclick="범례(2) "id="btnArchives"  >        <i class="fa fa-archive"></i></button>
             <button onclick="범례(3)" id="btnCategories">        <i class="fa fa-th-list"></i></button>
             <button onclick="범례(4)" id="btnTags"      >        <i class="fa fa-tags">   </i></button>
@@ -18,6 +17,7 @@
         <div class="nav-static" id="headerNav" style="float: right;">
             <button onclick="범례(0)" id="btnSetting"   ><i class="fa fa-cog"></i></button>
         </div>
+        <input type="text" placeholder="Search" id="search-input">
     </div>
 
     <!---------------------------------------------------------------------------------------------------->
@@ -29,6 +29,7 @@
         <div class="legend" id="legendSearch" style="display: block">
             <div class="legend-title">Search</div>
             <div id="search-container">
+                <input type="text" placeholder="Search" id="search-input">
                 <ul class="legend-body" id="results-container"></ul>
             </div>
             <!-- <p align="right"> made by goodGid</p> -->

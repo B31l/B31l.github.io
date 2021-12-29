@@ -204,10 +204,11 @@ header {
     header {
         height: 50px;
         .wrapper {
-            width: 90%;
+            width: 100%;
             line-height: 50px;
             .brand {
                 font-size: 16px;
+                margin-left: 0;
             }
             small {
                 margin-left: 15px;
@@ -234,12 +235,12 @@ header {
 }
 @media screen and (max-width: 770px) {
     header {
-        height: 48px;
+        height: 50px;
         margin-bottom: 15px;
         .wrapper {
-            width: 95%;
+            width: 100%;
             margin: 0 auto;
-            line-height: 48px;
+            line-height: 50px;
             position: relative;
             z-index: 101;
             .brand {

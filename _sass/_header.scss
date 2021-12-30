@@ -105,6 +105,7 @@ header {
 @media screen and (max-width:1200px) and (min-width: 770px) {
     header {
         .wrapper {
+            width: 100%;
             line-height: 40px;
             .brand {
                 font-size: 16px;

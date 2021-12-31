@@ -1,6 +1,6 @@
 .page[index] {
-    background-image: url(/img/sunrise.jpg);
-    border: 1px solid #333;
+    // width: 1200px;
+    // border: 3px solid #2b2b3c;
     a {
         // color: #4d6dad;
         color: #333;
@@ -10,13 +10,27 @@
         }
     }
     .left {
+        width: 100%; height: 100%;
+        float: left;
+        font-size: 16px;
+        background-color: Ivory;
+        .left-title {
+            text-align: center;
+            font-size: 8em;
+            font-family: monospace;
+            font-weight: 900;
+        }
         >ul {
+            width: 75%;
+            margin: 0 auto;
             padding: 0;
-            >li {
-                list-style: none;
-            }
+            list-style: none;
             li {
+                box-shadow: 0 0 10px 0 BLACK;
+                margin: 20px 0;
+                padding: 0 20px;
                 color: #333;
+                background-color: White;
                 h2 {
                     border: none;
                     font-size: 27px;
@@ -80,11 +94,80 @@
             }
         }
     }
+    .mid {
+        position: relative;
+        width: 25%;
+        height: 100vh;
+        float: left;
+        top: 0;
+        padding-top: 20px;
+        .legend-button {
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+            button {
+                border: 1px solid #333;
+                border-radius: 10px;
+                width: 30%;
+                margin: 5px;
+                padding: 5px 10px;
+                font-size: 1rem;
+                font-family: D2coding;
+                cursor: pointer;
+                &:hover {
+                    background-color: #333;
+                    color: #fff;
+                }
+            }
+        }
+        .legend {
+            // display: block;
+            .legend-title {
+                font-size: 3rem;
+                text-align: center; 
+            }
+            .legend-body {
+                height: 750px;
+                overflow-y: scroll;
+                overflow-x: hidden
+            }
+            .legend-body::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+    .mid::before {
+        content: "";
+        background-color: #000917;
+        background-image: url(/img/eagle-5798326.png);
+        background-position: 15%;
+        background-repeat: no-repeat;
+        background-size: auto 75%;
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
     .right {
+        display: none;
+        width: 25%;
+        float: right;
+        padding-top: 20px;
+        padding-left: 20px;
+        top: 0;
         .wrap {
             .side {
                 margin-bottom: 20px;
                 padding-bottom: 0;
+                .side-title {
+                    text-align: center;
+                    padding: 10px;
+                    background: #777;
+                    color: #fff;
+                }
                 i {
                     margin-right: 3px;
                 }
@@ -153,6 +236,17 @@
                 }
             }
         }
+    }
+
+    .menu-hover {
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 50px;
+        width: 30%;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.5;
     }
 }
 @media screen and (max-width: 770px) {

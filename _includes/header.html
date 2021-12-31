@@ -106,33 +106,3 @@
         exclude: []
     })
 </script>
-
-<nav>
-    <div class="wrapper">
-        <div class="nav-static" id="headerNav" style="height: 90%">
-            <button id="btnSearch"    ><i class="fa fa-search"> </i></button>
-        </div>
-    </div>
-    <div class="container">
-        <div class="legend" id="legendSearch" style="display: block">
-            <div class="legend-title">Search</div>
-            <div id="search-container">
-                <input type="text" id="search-input" placeholder="Search">
-                <ul class="legend-body" id="results-container"></ul>
-            </div>
-            <script src="/js/jekyll-search.js" type="text/javascript"></script>
-            <script type="text/javascript">
-                SimpleJekyllSearch({
-                    searchInput: document.getElementById('search-input'),
-                    resultsContainer: document.getElementById('results-container'),
-                    json: '/search.json',
-                    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-                    noResultsText: 'No results found',
-                    limit: 20,
-                    fuzzy: false,
-                    exclude: []
-                })
-            </script>
-        </div>
-    </div>
-</nav>

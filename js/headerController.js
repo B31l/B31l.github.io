@@ -3,7 +3,7 @@ let presentBtn = null;
 const container = document.querySelector('.container');
 const legendSearch = document.getElementById("legendSearch");
 const searchInput = document.getElementById("search-input");
-const legends = ["Search", "Archives", "Categories", "Tags"];
+const legends = ["Archives", "Categories", "Tags"];
 
 function initialize() {
     legends.forEach(Element => {

@@ -6,6 +6,7 @@
 
         <button class="menu" id="headerMenu"><i class="fa fa-bars"></i></button> <!--모바일 버튼-->
         <div class="nav-static" id="headerNav" style="float: left;">
+            <button id="btnSearch"    ><i class="fa fa-search"> </i></button>
             <button onclick="메뉴(0) "id="btnArchives"  ><i class="fa fa-archive"></i></button>
             <button onclick="메뉴(1)" id="btnCategories"><i class="fa fa-th-list"></i></button>
             <button onclick="메뉴(2)" id="btnTags"      ><i class="fa fa-tags"   ></i></button>
@@ -16,11 +17,9 @@
     </div>
 
     <div class="container">
-        
         <div class="legend" id="legendSearch" style="display: none;">
             <ul class="legend-body" id="results-container"></ul>
         </div>
-
         <div class="legend" id="legendArchives" style="display: none">
             <ul class="legend-body">
               {% for post in site.posts %}
@@ -43,7 +42,6 @@
               {% endfor %}
             </ul>
         </div>
-
         <div class="legend" id="legendCategories" style="display: none">
             <ul class="legend-body">
                 {% for category in site.categories %}
@@ -64,7 +62,6 @@
                 {% endfor %}
             </ul>
         </div>
-
         <div class="legend" id="legendTags" style="display: none">
             {% capture tags %}
               {% for tag in site.tags %}
@@ -104,7 +101,7 @@
         exclude: []
     })
 </script>
-<nav>
+<!-- <nav>
     <div class="wrapper">
         <div class="nav-static" id="headerNav" style="height: 90%">
             <button id="btnSearch"    ><i class="fa fa-search"> </i></button>
@@ -143,4 +140,4 @@
             </style>  
         </div>
     </div>
-</nav>
+</nav> -->

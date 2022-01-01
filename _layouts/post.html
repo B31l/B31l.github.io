@@ -20,35 +20,36 @@ layout: default
     <button class="anchor"><i class="fa fa-anchor"></i></button>
 </div>
 <aside>
-    <!-- Content -->
-    <div class="side content">
-        <div class="front">
-            <div class="postTitle">
-                {{page.title}}
-            </div>
-            <div class="postSubtitle">
-                <div class="label-card">
-                    {% if page.meta %}{{ page.meta }}{% endif %}
+    <div class="wrap">
+        <div class="side content">
+            <div class="front">
+                <div class="postTitle">
+                    {{page.title}}
+                </div>
+                <div class="postSubtitle">
+                    <div class="label-card">
+                        {% if page.meta %}{{ page.meta }}{% endif %}
+                    </div>
+                </div>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>
+                        {{ page.date | date: "%F" }}
+                    </div>
+                    <div class="label-card">
+                        {% include category.html %}
+                    </div>
+                    <div class="label-card">
+                        {% include tag.html %}
+                    </div>
                 </div>
             </div>
-            <div class="label">
-                <div class="label-card">
-                    <i class="fa fa-calendar"></i>
-                    {{ page.date | date: "%F" }}
-                </div>
-                <div class="label-card">
-                    {% include category.html %}
-                </div>
-                <div class="label-card">
-                    {% include tag.html %}
-                </div>
+            <div class=tocTitle>
+                Table Of Contents
             </div>
+            <ul id="content-side" class="content-ul">
+            </ul>
         </div>
-        <div class=tocTitle>
-            Table Of Contents
-        </div>
-        <ul id="content-side" class="content-ul">
-        </ul>
     </div>
 </aside>
 

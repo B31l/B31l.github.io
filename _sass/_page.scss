@@ -10,9 +10,13 @@
     *zoom: 1;
 }
 nav {
-    position: fixed;
+    position: fixed; top: 40px; left: 0; right: 0;
     width: 1200px;
-    background: beige;
+    margin: 0 auto;
+    background: darkseagreen;
+    position: fixed;
+
+    
 }
 .page {
     background-color: White;

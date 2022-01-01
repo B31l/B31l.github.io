@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="page clearfix" post>
-    
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
     <div class="left">
         <article itemscope itemtype="http://schema.org/BlogPosting">
         {{content}}
@@ -11,7 +11,7 @@ layout: default
         <hr>
         {% include previousAndNext.html %}
     </div>
-    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    
     <div class="right">
         <!-- Content -->
         <div class="side content">
@@ -48,10 +48,9 @@ layout: default
         </div>
     </div>
 </div>
+
 <script>
-/**
- * target _blank
- */
+// target _blank
 (function() {
     var aTags = document.querySelectorAll('article a:not([id])')
     for (var i = 0; i < aTags.length; i++) {

@@ -4,21 +4,17 @@
     display: none;
 }
 .page[post] {
-
     .label {
         margin-top: 16px;
         overflow: hidden;
-
         .label-card {               // [작성자, 연도]
             // float: left;
             margin-right: 15px;
             // color: #ffcc33;
-
             .point {                // [정체불명]
                 padding: 0 10px;
                 color: #9d9d9d;
             }
-
             i {                     // [아이콘]
                 padding-right: 5px;
                 color: #6b6a6a;
@@ -26,7 +22,6 @@
             }
         }
     }
-
     a {                             // [카테고리, 태그]
         // color: #4d6dad;
         color: #333;

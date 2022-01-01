@@ -6,10 +6,7 @@ icon: tags
 type: page
 ---
 
-
-
 <div class="page clearfix">
-
     <div class="left">
         <div style="text-align: center; font-size: 4rem;">Tags</div>
         {% capture tags %}
@@ -18,7 +15,6 @@ type: page
           {% endfor %}
         {% endcapture %}
         {% assign sortedtags = tags | split:' ' | sort %}
-
         <ul>
         {% for tag in sortedtags %}
           <h2 id="{{ tag }}">{{ tag }}</h2>
@@ -36,32 +32,24 @@ type: page
         {% endfor %}
         </ul>
     </div>
-
     <button class="anchor"><i class="fa fa-anchor"></i></button>
-
-    <div class="right">
-        <div class="wrap">
-
-            <!-- Content -->
-            <div class="side content">
-                <div class=tocTitle>
-                    Table Of Contents
-                </div>
-                <ul id="content-side" class="content-ul">
-                    {% for tag in sortedtags %}
-                    <li>
-                        <a data-scroll href="#{{ tag }}">
-                            {{ tag }} ({{ site.tags[tag].size }})
-                        </a>
-                    </li>
-                    {% endfor %}
-
-                </ul>
+</div>
+<aside>
+    <div class="wrap">
+        <div class="side content">
+            <div class=tocTitle>
+                Table Of Contents
             </div>
-            <!-- 其他div框放到这里 -->
-            <!-- <div class="side">bbbb</div> -->
+            <ul id="content-side" class="content-ul">
+                {% for tag in sortedtags %}
+                <li>
+                    <a data-scroll href="#{{ tag }}">
+                        {{ tag }} ({{ site.tags[tag].size }})
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
-
-</div>
+</aside>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>

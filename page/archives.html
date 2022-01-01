@@ -6,9 +6,8 @@ icon: archive
 type: page
 ---
 
-<h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
 <div class="page clearfix">
-
+    <h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
     <button onclick="나(0)" id="buttonArchive">아카이붕</button>
     <button onclick="나(1)" id="buttonCategory">카테고링</button>
     <button onclick="나(2)" id="buttonTag">태긍</button>
@@ -92,7 +91,7 @@ type: page
 
 
 <script>
-    const legends = ['archive', 'category', 'tag'];
+    const legends = ['Archive', 'Category', 'Tag'];
     const 나 = (idx => {
         legends.forEach(Element => {
             document.getElementById(`legend${Element}`).style.display = "none";

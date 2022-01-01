@@ -7,22 +7,6 @@ header {
         background-color: #2b2b3c;
         color: #9d9d9d;
         line-height: 40px;
-        // -------------------------------------------------- 1
-        .brand {
-            font-size: 2em;
-            margin-left: 20px;
-            color: #9d9d9d;
-            -webkit-transition: 0.2s ease;
-            transition: 0.2s ease;
-            &:hover {
-                color: #fff;
-            }
-        }
-        // -------------------------------------------------- 2
-        small {
-            font-size: 1em;
-        }
-        // -------------------------------------------------- 3
         .nav-static {
             float: left;
             height: 40px;
@@ -109,27 +93,14 @@ header {
         .wrapper {
             width: 100%;
             line-height: 40px;
-            .brand {
-                font-size: 16px;
-            }
-            small {
-                margin-left: 15px;
-                font-size: 12px;
-            }
-            .menu{
+            .menu {
                 display: none;
             }
-            nav {
-                ul {
-                    li {
-                        a {
-                            padding: 0 8px;
-                            height: 50px;
-                            i {
-                                margin-right: 4px;
-                            }
-                        }
-                    }
+            nav > ul > a {
+                padding: 0 8px;
+                height: 50px;
+                i {
+                    margin-right: 4px;
                 }
             }
         }
@@ -143,13 +114,6 @@ header {
             line-height: 40px;
             position: relative;
             z-index: 101;
-            .brand {
-                font-size: 16px;
-                margin-left: 0;
-            }
-            small {
-                font-size: 12px;
-            }
             .menu{
                 display: inline-block;
                 position: absolute;

@@ -15,6 +15,11 @@
     border-left: 3px dotted #2b2b3c;
     border-right: 3px dotted #2b2b3c;
     margin: 0 auto;
+    .title {
+        position: fixed;
+        width: 1200px;
+        background: beige;
+    }
     .left {
         width: 100%;
         float: left;
@@ -170,12 +175,18 @@ aside {
     .page {
         width: 100%;
         border: none;
+        .title {
+            width: 100%;
+        }
     }
 }
 @media screen and (max-width: 770px) {
     .page {
         width: 100%;
         border: none;
+        .title {
+            width: 100%;
+        }
         .left {
             width: 100%;
             float: left;

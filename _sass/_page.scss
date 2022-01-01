@@ -89,7 +89,7 @@
     }
 }
 
-.right {
+aside {
     position: fixed;
     right: 30px;
     width: 300px;
@@ -228,12 +228,11 @@
             visibility: hidden;
         }
     }
-    .right {
-        visibility: hidden;
 
+    aside {
+        visibility: hidden;
         // display: none;
         position: fixed;
-
         // z-index: 190;
         float: none;
         width: auto;

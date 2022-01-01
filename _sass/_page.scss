@@ -9,17 +9,17 @@
 .clearfix {
     *zoom: 1;
 }
-
+nav {
+    position: fixed;
+    width: 1200px;
+    background: beige;
+}
 .page {
+    background-color: White;
     width: 1200px;
     border-left: 3px dotted #2b2b3c;
     border-right: 3px dotted #2b2b3c;
     margin: 0 auto;
-    .title {
-        position: fixed;
-        width: 1200px;
-        background: beige;
-    }
     .left {
         width: 100%;
         float: left;
@@ -92,7 +92,6 @@
         display: none;
     }
 }
-
 aside {
     position: fixed;
     right: 30px;
@@ -153,10 +152,10 @@ aside {
         a {
             color: #333;
             transition: 0.5s ease;
-                // text-decoration: underline;
-            // &:hover {
-            //     color: #223253;
-            // }
+            &:hover {
+                color: #fff;
+                background-color: #48D33A;
+            }
         }
     }
     .content-ul {
@@ -171,21 +170,21 @@ aside {
     }
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {
+    nav {
+        width: 100%;
+    }
     .page {
         width: 100%;
         border: none;
-        .title {
-            width: 100%;
-        }
     }
 }
 @media screen and (max-width: 770px) {
+    nav {
+        width: 100%;
+    }
     .page {
         width: 100%;
         border: none;
-        .title {
-            width: 100%;
-        }
         .left {
             width: 100%;
             float: left;

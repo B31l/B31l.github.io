@@ -2,14 +2,14 @@
 layout: default
 ---
 
+<nav>
+    {{page.title}}
+    {% if page.meta %}{{ page.meta }}{% endif %}
+    {{ page.date | date: "%F" }}
+    {% include category.html %}
+    {% include tag.html %}
+</nav>
 <div class="page clearfix" post>
-    <div class=title>
-        {{page.title}}
-        {% if page.meta %}{{ page.meta }}{% endif %}
-        {{ page.date | date: "%F" }}
-        {% include category.html %}
-        {% include tag.html %}
-    </div>
     <div class="left">
         <article itemscope itemtype="http://schema.org/BlogPosting">
         {{content}}

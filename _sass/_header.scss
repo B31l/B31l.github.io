@@ -33,6 +33,8 @@ header {
                 color: #9d9d9d;
                 font-size: 20px;
                 cursor: pointer;
+                -webkit-transition: 0.2s ease;
+                transition: 0.2s ease;
                 &:hover {
                     color: #fff;
                 }

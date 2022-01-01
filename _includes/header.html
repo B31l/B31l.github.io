@@ -9,9 +9,9 @@
         <div class="nav-static" id="headerNav" style="float: left;">
             <div id="btnSearch"></div>
             <button onclick="location.href='{{ site.baseurl }}/'" id="btnArchives"  ><i class="fa fa-home"></i></button>
-            <button onclick="location.href='https://B31l.github.io/archive/'" id="btnArchives"  ><i class="fa fa-archive"></i></button>
-            <button onclick="location.href='https://B31l.github.io/category/'" id="btnCategories"><i class="fa fa-th-list"></i></button>
-            <button onclick="location.href='https://B31l.github.io/tag/'" id="btnTags"      ><i class="fa fa-tags"   ></i></button>
+            <button onclick="location.href='{{ site.baseurl }}/archive'" id="btnArchives"  ><i class="fa fa-archive"></i></button>
+            <button onclick="location.href='{{ site.baseurl }}/category'" id="btnCategories"><i class="fa fa-th-list"></i></button>
+            <button onclick="location.href='{{ site.baseurl }}/tag'" id="btnTags"      ><i class="fa fa-tags"   ></i></button>
         </div>
         <div class="search">
             <input id="search-input" type="text" placeholder="Search">

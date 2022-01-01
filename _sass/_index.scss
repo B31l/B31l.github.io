@@ -18,7 +18,7 @@
             font-weight: 900;
         }
         >ul {
-            width: 75%;
+            width: 830px;
             margin: 0 auto;
             padding: 0;
             list-style: none;
@@ -95,22 +95,25 @@
 
 @media screen and (max-width: 770px) {
     .page[index] {
-        .left>ul li {
-            h2 {
-                font-size: 22px;
-            }
-            .excerpt {
+        .left >ul {
+            width: 100%;
+            li {
                 h2 {
-                    font-size: 20px;
+                    font-size: 22px;
                 }
-                h3 {
-                    font-size: 18px;
-                }
-                h4 {
-                    font-size: 16px;
-                }
-                li{
-                    margin: 0;
+                .excerpt {
+                    h2 {
+                        font-size: 20px;
+                    }
+                    h3 {
+                        font-size: 18px;
+                    }
+                    h4 {
+                        font-size: 16px;
+                    }
+                    li{
+                        margin: 0;
+                    }
                 }
             }
         }

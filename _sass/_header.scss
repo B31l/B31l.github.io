@@ -24,6 +24,7 @@ header {
         }
         // -------------------------------------------------- 3
         .nav-static {
+            float: left;
             height: 40px;
             button {
                 width: 20px; height: 20px;
@@ -40,7 +41,8 @@ header {
             }
         }
         .search {
-            float: right;
+            float: left;
+            height: 40px;
             input {
                 width: 300px; height: 20px;
                 padding: 12px 20px;

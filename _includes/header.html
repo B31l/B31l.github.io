@@ -4,16 +4,15 @@
         <a href="{{ site.baseurl }}/" class="brand">{{ site.title }}</a>
         <small>{{site.brief-intro}}</small>
         <button class="menu" id="headerMenu"><i class="fa fa-bars"></i></button> <!--모바일 버튼-->
-        <div class="nav-static" id="headerNav" style="float: left;">
-            <div id="btnSearch"></div>
+        <span class="nav-static" id="headerNav">
             <button onclick="location.href='{{ site.baseurl }}/'"        ><i class="fa fa-home"   ></i></button>
             <button onclick="location.href='{{ site.baseurl }}/archive'" ><i class="fa fa-archive"></i></button>
             <button onclick="location.href='{{ site.baseurl }}/category'"><i class="fa fa-th-list"></i></button>
             <button onclick="location.href='{{ site.baseurl }}/tag'"     ><i class="fa fa-tags"   ></i></button>
-        </div>
-        <div class="search">
+        </span>
+        <span class="search">
             <input id="search-input" type="text" placeholder="Search">
-        </div>
+        </span>
     </div>
 
     <div class="container">

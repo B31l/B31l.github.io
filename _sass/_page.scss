@@ -14,9 +14,8 @@ nav {
     width: 1200px;
     margin: 0 auto;
     background: darkseagreen;
-    position: fixed;
-
-    
+    z-index: -1 ;
+    text-align: center; // 임시
 }
 .page {
     background-color: White;

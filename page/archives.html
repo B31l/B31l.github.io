@@ -8,9 +8,9 @@ type: page
 
 <div class="page clearfix">
     <h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
-    <button onclick="나(0)" id="buttonArchive">아카이붕</button>
-    <button onclick="나(1)" id="buttonCategory">카테고링</button>
-    <button onclick="나(2)" id="buttonTag">태긍</button>
+    <button onclick="나(0)" id="buttonArchive" ><i class="fa fa-calendar"></i></button>
+    <button onclick="나(1)" id="buttonCategory"><i class="fa fa-th-list" ></button>
+    <button onclick="나(2)" id="buttonTag"     ><i class="fa-fa-tags"    ></button>
 
     <div class="left" id="legendArchive" style="display: block;">
         <div style="text-align: center; font-size: 4rem;">Archives</div>
@@ -101,3 +101,4 @@ type: page
         document.getElementById(`button${legends[idx]}`).style.color = "#48D33A";
     });
 </script>
+<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>

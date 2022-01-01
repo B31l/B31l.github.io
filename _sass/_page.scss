@@ -115,42 +115,17 @@ aside {
         -moz-hyphens: auto;
         -ms-hyphens: auto;
         hyphens: auto;
-        .front {
-            background-color: #333;
-            font-family: "D2coding";
-            padding: 15px 0px;
-            color: #eee;
-            text-align: center;
-            .postTitle {
-                font-size: 1.5em;
-                font-weight: bolder;
-                padding-bottom: 15px;
-            }
-            .postSubtitle {
-                font-size: 1rem;
-            }
-            .label div {
-                padding-left: 1rem;
-                font-size: 1rem;
-                text-align: left;
-                >span> a {
-                    color: #eee;
-                }
-            }
-        }
-        // Table Of Contents 글자
         .tocTitle {
             padding: 12px 15px;
-            // margin-right: -10px;
             font-size: 16px;
             font-weight: bold;
             text-align: center;
             color: #eee;
-            background-color: #777;
+            background-color: #2b2b3c;
             border-bottom: 1px solid #c0c0c0;
         }
         >li {
-            border: 1px solid #777;
+            border: 1px solid #2b2b3c;
         }
         a {
             color: #333;

@@ -3,7 +3,6 @@ layout: default
 ---
 
 <div class="page clearfix" post>
-    <button class="anchor"><i class="fa fa-anchor"></i></button>
     <div class="left">
         <article itemscope itemtype="http://schema.org/BlogPosting">
         {{content}}
@@ -11,43 +10,40 @@ layout: default
         <hr>
         {% include previousAndNext.html %}
     </div>
-    
-    <div class="right">
-        <!-- Content -->
-        <div class="side content">
-            <div class="front">
-                <div class="postTitle">
-                    {{page.title}}
-                </div>
-                <div class="postSubtitle">
-                    <div class="label-card">
-                        {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
-                    </div>
-                </div>
-                <div class="label">
-                    <div class="label-card">
-                        <i class="fa fa-calendar"></i> {{ page.date | date: "%F" }}
-                    </div>
-                    <div class="label-card">
-                    {% include category.html %}
-                    </div>
-                    <div class="label-card">
-                    {% include tag.html %}
-                    </div>
-                </div>
-            </div>
-            <div class=tocTitle>
-                Table Of Contents
-            </div>
-            <ul id="content-side" class="content-ul">
-                <!-- {% if hasSimilar.size > 0 %}
-                <li><a href="#similar_posts">Similar Posts</a></li>
-                {% endif %} -->
-                <!-- <li><a href="#comments">Comments</a></li> -->
-            </ul>
-        </div>
-    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
 </div>
+<aside class="right">
+    <!-- Content -->
+    <div class="side content">
+        <div class="front">
+            <div class="postTitle">
+                {{page.title}}
+            </div>
+            <div class="postSubtitle">
+                <div class="label-card">
+                    {% if page.meta %}{{ page.meta }}  {% endif %}
+                </div>
+            </div>
+            <div class="label">
+                <div class="label-card">
+                    <i class="fa fa-calendar"></i>
+                    {{ page.date | date: "%F" }}
+                </div>
+                <div class="label-card">
+                    {% include category.html %}
+                </div>
+                <div class="label-card">
+                    {% include tag.html %}
+                </div>
+            </div>
+        </div>
+        <div class=tocTitle>
+            Table Of Contents
+        </div>
+        <ul id="content-side" class="content-ul">
+        </ul>
+    </div>
+</aside>
 
 <script>
 // target _blank

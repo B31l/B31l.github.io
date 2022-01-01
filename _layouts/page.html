@@ -3,29 +3,24 @@ layout: default
 ---
 
 <div class="page clearfix" post>
-    <button class="anchor"><i class="fa fa-anchor"></i></button>
     <div class="left">
         <h1>{{page.title}}</h1>
         <hr>
         {{content}}
     </div>
-
-    
-
-    <div class="right">
-        <div class="wrap">
-            <!-- Table Of Contents -->
-            <div class="side content">
-                <div>
-                    Table Of Contents
-                </div>
-                <ul id="content-side" class="content-ul">
-                </ul>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+</div>
+<aside class="right">
+    <div class="wrap">
+        <!-- Table Of Contents -->
+        <div class="side content">
+            <div>
+                Table Of Contents
             </div>
-            <!-- 其他div框放到这里 -->
-            <!-- <div class="side">bbbb</div> -->
+            <ul id="content-side" class="content-ul">
+            </ul>
         </div>
     </div>
+</aside>
 
-</div>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>

@@ -7,11 +7,10 @@ type: page
 ---
 
 <nav>
-    Category
+    Categories
 </nav>
 <div class="page clearfix">
     <div class="left">
-        <div style="text-align: center; font-size: 4rem;">Categories</div>
         <ul>
             {% for category in site.categories %}
             <h2 id="{{category | first}}">{{category | first}}</h2>

@@ -78,7 +78,7 @@ function isMaxHeight() {
 (function() {
     if (window.innerWidth <= 770) {
         var anchorBtn = document.querySelector('.anchor')
-        var rightDiv = document.querySelector('.right')
+        var rightDiv = document.querySelector('aside')
 
         /**
          * monitoring anchor switch

@@ -11,11 +11,14 @@
 }
 nav {
     position: fixed; top: 40px; left: 0; right: 0;
-    width: 1200px;
+    width: 1200px; height: 20px;
     margin: 0 auto;
+    border-left: 3px dotted #2b2b3c;
+    border-right: 3px dotted #2b2b3c;
     background: darkseagreen;
     z-index: -1 ;
     text-align: center; // 임시
+    font-weight: bold;
 }
 .page {
     background-color: White;
@@ -175,6 +178,7 @@ aside {
 @media screen and (max-width:1200px) and (min-width: 770px) {
     nav {
         width: 100%;
+        border: none;
     }
     .page {
         width: 100%;
@@ -184,6 +188,7 @@ aside {
 @media screen and (max-width: 770px) {
     nav {
         width: 100%;
+        border: none;
     }
     .page {
         width: 100%;

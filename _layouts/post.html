@@ -3,20 +3,18 @@ layout: default
 ---
 
 <nav>
-    <div class="nav-title">
-        {{page.title}}
-        {% if page.previous %}
-        <button onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
-            {{ page.previous.title }}
-        </button>
-        {% endif %}
-        {% if page.next %}
-        <button onClick="location.href='{{ page.next.url | prepend: site.baseurl }}'">
-        <!-- href="{{ page.next.url | prepend: site.baseurl }}"> -->
-            {{ page.next.title }}
-        </button> 
-        {% endif %}
-    </div>
+    {{page.title}}
+    {% if page.previous %}
+    <button onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
+        {{ page.previous.title }}
+    </button>
+    {% endif %}
+    {% if page.next %}
+    <button onClick="location.href='{{ page.next.url | prepend: site.baseurl }}'">
+    <!-- href="{{ page.next.url | prepend: site.baseurl }}"> -->
+        {{ page.next.title }}
+    </button> 
+    {% endif %}
 </nav>
 <div class="page clearfix" post>
     <div class="left">

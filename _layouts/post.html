@@ -5,7 +5,7 @@ layout: default
 <nav>
     {% if page.previous %}
         <button onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
-            &lt;
+            &lt;&lt;
         </button>
     {% endif %}
 
@@ -13,7 +13,7 @@ layout: default
 
     {% if page.next %}
         <button onClick="location.href='{{ page.next.url | prepend: site.baseurl }}'">
-            &gt;
+            &gt;&gt;
         </button> 
     {% endif %}
 </nav>

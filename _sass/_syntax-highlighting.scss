@@ -5,16 +5,13 @@
  @import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
 
 code {   /* <쪼그만 코드> */
-    margin: 0 2px;
-    padding: 1px 4px;
-    line-height: 150%;
-    border-radius: 3px;
-    color: #000;
-    background-color: rgba(75,230,250,0.5);
-    border: 1px solid rgba(75,230,250,0.5);
-
-
-    // font-family: Monaco,Menlo,"Microsoft YaHei Mono",Consolas,"Courier New",monospace,sans-serif;
+    padding: 5px 7px 4px;
+    color: #c7254e;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #f1c5d1;
+    border-bottom-width: 2px;
+    box-shadow: inset 1px -1px 1px #f7f2f2, inset -1px 1px 1px #fffafa;
 }
 
 pre {   /* <커다란 블록> */

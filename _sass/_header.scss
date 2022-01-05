@@ -47,7 +47,8 @@ header {
     .container {
         display: none;
         position: relative;
-        height: 480px;
+        height: auto;
+        max-height: 240px;
         // padding-top: 20px;
         color: WHITE;
         font-weight: bold;
@@ -59,7 +60,8 @@ header {
 
         .legend {   
             ul {
-                height: 480px; // 내용입니다.
+                height: auto;
+                max-height: 240px;
                 margin: 0px 0px;
                 padding-left: 15px;
                 overflow-y: scroll;

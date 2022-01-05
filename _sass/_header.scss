@@ -4,10 +4,11 @@ header {
     margin: 0px auto;
     z-index: 9;
     box-shadow: 0 0 0.2rem rgb(0 0 0 / 10%), 0 0.2rem 0.4rem rgb(0 0 0 / 20%);
+    // #85AD96;
     .wrapper {
         width: 100%; height: 100%;
         padding: 0 30px;
-        background-color: #85AD96;
+        background-color: Darkcyan;
         display: flex;
         .nav-static {   
             width: 180px;
@@ -46,7 +47,7 @@ header {
     .container {
         display: none;
         position: relative;
-        height: 240px;
+        height: 480px;
         // padding-top: 20px;
         color: WHITE;
         font-weight: bold;
@@ -58,7 +59,7 @@ header {
 
         .legend {   
             ul {
-                height: 240px; // 내용입니다.
+                height: 480px; // 내용입니다.
                 margin: 0px 0px;
                 padding-left: 15px;
                 overflow-y: scroll;

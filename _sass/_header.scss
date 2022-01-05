@@ -32,13 +32,16 @@ header {
             font-size: 20px;
             flex-grow: 1;
             input {
-                width: 96%; height: 30px;
-                padding: 12px 20px;
-                margin: 0 2%;
                 display: inline-block;
+                width: calc(100% - 20px); 
+                height: 40px;
+                margin: 5px 0 5px 20px;
+                padding: 12px 20px;
                 border: 1px solid #ccc;
                 border-radius: 4px;
                 box-sizing: border-box;
+                font-size: 20px;
+                font-weight: bold;
             }
         }
     }

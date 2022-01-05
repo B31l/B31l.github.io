@@ -35,8 +35,8 @@ body {
     // background-image: url(https://gw.alicdn.com/tfs/TB1xzbUumBYBeNjy0FeXXbnmFXa-125-121.png);
     // background-image: url("/img/pt_woven.png");
     position: relative;
-    min-height: 100%;
-    // margin-top: 40px;       // header, nav
+    min-height: calc(100% - 40px);
+    margin-top: 40px;       // header, nav
     padding-bottom: 20px;   // footer
     background-color: #f5f4f0;
 }

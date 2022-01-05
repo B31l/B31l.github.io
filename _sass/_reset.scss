@@ -93,6 +93,7 @@ h6 {
     font-size: 16px;
     margin: 10px 0 5px;
 }
+
 blockquote {    // 블록 1
     font-size: 0.8em;
     margin: 0 0 20px;
@@ -117,12 +118,10 @@ ol {            // 블록 2
 
 table {
     width: 450px; height: auto;
-
     margin: 8px 0;
     border-top: 2px solid #777;
     border-bottom: 2px solid #777;
     border-collapse: collapse;
-
     table-layout: fixed;
     word-break: break-all;
     thead {
@@ -157,8 +156,8 @@ img {
     border-radius: 10px;
     
 }
-strong {
-    font-size: 125%;
-}
+// strong {
+//     font-size: 125%;
+// }
 
 

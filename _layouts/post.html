@@ -2,21 +2,7 @@
 layout: default
 ---
 
-<nav>
-    <!-- {% if page.previous %}
-        <button onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
-            &lt;&lt;
-        </button>
-    {% endif %} -->
-
-    {{page.title}}
-    
-    <!-- {% if page.next %}
-        <button onClick="location.href='{{ page.next.url | prepend: site.baseurl }}'">
-            &gt;&gt;
-        </button> 
-    {% endif %} -->
-</nav>
+<nav>{{page.title}}</nav>
 <div class="page clearfix" post>
     <div class="left">
         <article itemscope itemtype="http://schema.org/BlogPosting">
@@ -27,19 +13,19 @@ layout: default
         {% include previousAndNext.html %}
     </div>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
-</div>
-<aside>
-    <div class="wrap">
-        <div class="side content">
-            <div class=tocTitle>
-                Table Of Contents
+    <aside>
+        <div class="wrap">
+            <div class="side content">
+                <div class=tocTitle>
+                    Table Of Contents
+                </div>
+                <ul id="content-side" class="content-ul">
+                    <!-- Contents -->
+                </ul>
             </div>
-            <ul id="content-side" class="content-ul">
-                <!-- Contents -->
-            </ul>
         </div>
-    </div>
-</aside>
+    </aside>
+</div>
 
 <script>
 // target _blank

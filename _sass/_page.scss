@@ -34,10 +34,9 @@ nav {
     border-right: 3px dotted #2b2b3c;
     margin: 0 auto;
     .left {
-        width: 100%;
         float: left;
-        padding: 0 30px;
-        padding-top: 20px;
+        width: calc(100% - 300px);
+        padding: 20px 30px 0;
         font-size: 16px;
         a:not([title]){
             word-break: break-all;
@@ -104,54 +103,54 @@ nav {
     .anchor {
         display: none;
     }
-}
-aside {
-    position: fixed;
-    right: 30px;
-    width: 300px;
-    padding-top: 10px;
-    .side {
-        width: 100%;
-        box-sizing: border-box;
-        border: 3px solid #333; 
-        background-color: #f8f8fd;
-        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
-        padding-bottom: 1px;
-        -ms-word-break: break-all;
-        word-break: break-all;
-        -webkit-hyphens: auto;
-        -moz-hyphens: auto;
-        -ms-hyphens: auto;
-        hyphens: auto;
-        .tocTitle {
-            padding: 12px 15px;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-            color: #eee;
-            background-color: #2b2b3c;
-            border-bottom: 1px solid #c0c0c0;
-        }
-        >li {
-            border: 1px solid #2b2b3c;
-        }
-        a {
-            color: #333;
-            transition: 0.5s ease;
-            &:hover {
-                color: #fff;
-                background-color: #48D33A;
+    aside {
+        float: left;
+        width: 300px;
+        .wrap {
+            position: fixed;
+            width: 100%;
+            .side {
+                width: 100%;
+                margin-top: 5vh;
+                border-left: 3px inset;
+                box-sizing: border-box;
+                padding-bottom: 1px;
+                -ms-word-break: break-all;
+                word-break: break-all;
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+                .tocTitle {
+                    padding: 12px 15px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: center;
+                    color: #eee;
+                    background-color: #2b2b3c;
+                    border-bottom: 1px solid #c0c0c0;
+                }
+                .content-ul {
+                    overflow-y: auto;
+                    line-height: 1.5;
+                    /* list-style: upper-roman; */
+                    margin: 0;
+                    padding: 5vh 10px 5vh 35px;
+                    ul {
+                        list-style: none;
+                        padding-left: 0px;
+                    }
+                    a {
+                        color: #333;
+                        font-weight: bold;
+                        transition: 0.5s ease;
+                        &:hover {
+                            color: #fff;
+                            background-color: #48D33A;
+                        }
+                    }
+                }
             }
-        }
-    }
-    .content-ul {
-        overflow-y: auto;
-        padding-right: 10px;
-        line-height: 1.5;
-        padding-left: 35px;
-        ul {
-            list-style: none;
-            padding-left: 0px;
         }
     }
 }

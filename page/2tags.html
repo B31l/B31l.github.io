@@ -35,23 +35,23 @@ type: page
         </ul>
     </div>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
-</div>
-<aside>
-    <div class="wrap">
-        <div class="side content">
-            <div class=tocTitle>
-                Table Of Contents
+    <aside>
+        <div class="wrap">
+            <div class="side content">
+                <div class=tocTitle>
+                    Table Of Contents
+                </div>
+                <ul id="content-side" class="content-ul">
+                    {% for tag in sortedtags %}
+                    <li>
+                        <a data-scroll href="#{{ tag }}">
+                            {{ tag }} ({{ site.tags[tag].size }})
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
-            <ul id="content-side" class="content-ul">
-                {% for tag in sortedtags %}
-                <li>
-                    <a data-scroll href="#{{ tag }}">
-                        {{ tag }} ({{ site.tags[tag].size }})
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
         </div>
-    </div>
-</aside>
+    </aside>
+</div>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>

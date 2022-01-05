@@ -93,16 +93,28 @@ h6 {
     font-size: 16px;
     margin: 10px 0 5px;
 }
-blockquote {
+blockquote {    // 블록 1
     font-size: 0.8em;
     margin: 0 0 20px;
     padding: 10px 20px;
-    border-left: 10px inset;
+    border-left: 10px inset #ccc;
     background: #ccc;
     p:last-of-type{
         margin: 0;
     }
 }
+ol {            // 블록 2
+    font-size: 0.8em;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    border-left: 10px inset darkseagreen;
+    background: darkseagreen;
+    list-style: none;
+    p:last-of-type{
+        margin: 0;
+    }
+}
+
 table {
     width: 450px; height: auto;
 
@@ -146,6 +158,7 @@ img {
     
 }
 strong {
-    background: #ccc;
-    padding: 0 5px;
+    font-size: 125%;
 }
+
+

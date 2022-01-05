@@ -2,7 +2,7 @@
     background-image: url(/img/camping.png);
     background-repeat: no-repeat;
     background-size: auto 75%;
-    background-position: center bottom;
+    background-position: 90% 75%;
     a {
         color: #333;
         transition: 0.5s ease;
@@ -15,14 +15,30 @@
         float: left;
         font-size: 16px;
         .left-title {
-            text-align: center;
+            text-align: left;
             font-size: 10em;
             font-family: fantasy;
             font-weight: 900;
         }
+        .pagination {
+            text-align: left;
+            font-weight: bold;
+            .previous,
+            .next {
+                font-size: 20px;
+                padding: 0 5px;
+            }
+            .page_number {
+                padding: 0 5px;
+            }
+            .disable {
+                color: #cbcbcb;
+            }
+        }
         >ul {
             width: 770px;
-            margin: 0 auto;
+            float: left;
+            // margin: 0 auto;
             padding: 0;
             list-style: none;
             li {
@@ -60,43 +76,37 @@
                 }
             }
         }
-        .pagination {
-            text-align: center;
-            .previous,
-            .next {
-                font-size: 20px;
-                padding: 0 5px;
-            }
-            .page_number {
-                padding: 0 5px;
-            }
-            .disable {
-                color: #cbcbcb;
-            }
-        }
     }
 }
 
 @media screen and (max-width: 770px) {
     .page[index] {
-        .left >ul {
-            width: 100%;
-            li {
-                h2 {
-                    font-size: 22px;
-                }
-                .excerpt {
+        .left {
+            .left-title {
+                text-align: center;
+            }
+            .pagination {
+                text-align: cetner;
+            }
+            ul {
+                width: 100%;
+                li {
                     h2 {
-                        font-size: 20px;
+                        font-size: 22px;
                     }
-                    h3 {
-                        font-size: 18px;
-                    }
-                    h4 {
-                        font-size: 16px;
-                    }
-                    li{
-                        margin: 0;
+                    .excerpt {
+                        h2 {
+                            font-size: 20px;
+                        }
+                        h3 {
+                            font-size: 18px;
+                        }
+                        h4 {
+                            font-size: 16px;
+                        }
+                        li{
+                            margin: 0;
+                        }
                     }
                 }
             }

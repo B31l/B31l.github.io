@@ -1,4 +1,7 @@
 .page[index] {
+    background-image: url(/img/camping.png);
+    background-repeat: no-repeat;
+    background-position: center center;
     a {
         color: #333;
         transition: 0.5s ease;
@@ -12,7 +15,7 @@
         font-size: 16px;
         .left-title {
             text-align: center;
-            font-size: 8em;
+            font-size: 10em;
             font-family: monospace;
             font-weight: 900;
         }
@@ -26,7 +29,10 @@
                 margin: 20px 0;
                 padding: 0 20px;
                 color: #333;
-                background-color: White;
+                background: none;
+                &:hover {
+                    background: White;
+                }
                 h2 {
                     border: none;
                     font-size: 27px;

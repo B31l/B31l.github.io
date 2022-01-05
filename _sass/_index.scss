@@ -1,7 +1,8 @@
 .page[index] {
     background-image: url(/img/camping.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-size: auto 75%;
+    background-position: center bottom;
     a {
         color: #333;
         transition: 0.5s ease;
@@ -16,7 +17,7 @@
         .left-title {
             text-align: center;
             font-size: 10em;
-            font-family: monospace;
+            font-family: fantasy;
             font-weight: 900;
         }
         >ul {
@@ -29,6 +30,9 @@
                 margin: 20px 0;
                 padding: 0 20px;
                 color: #333;
+                cursor: pointer;
+                -webkit-transition: 0.5s ease;
+                transition: 0.5s ease;
                 background: none;
                 &:hover {
                     background: White;

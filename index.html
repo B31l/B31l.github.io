@@ -27,7 +27,7 @@ layout: default
         </div>
         <ul>
             {% for post in paginator.posts %}
-                <li>
+                <li onclick="location.href='{{ post.url | prepend: site.baseurl }}'">
                     <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
                     <div class="label-card">{{ post.meta }}</div>
                     <div class="label">

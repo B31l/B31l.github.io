@@ -32,9 +32,9 @@ header {
             flex-grow: 1;
             input {
                 display: inline-block;
-                width: calc(100% - 20px); 
+                // width: calc(100% - 20px); 
                 height: 40px;
-                margin: 5px 0 5px 20px;
+                margin: 5px 0 5px 14px;
                 padding: 12px 20px;
                 border: 1px solid #ccc;
                 border-radius: 4px;
@@ -108,9 +108,12 @@ header {
     header {
         width: 100%;
         .wrapper {
-            padding: 14px;
+            padding: 0 14px;
             position: relative;
             z-index: 101;
+            .nav-static {
+                width: 162px;
+            }
         }
     }
 }

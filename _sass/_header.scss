@@ -1,6 +1,6 @@
 header {
     position: fixed; top: 0; left: 0; right: 0;
-    width: 1200px; height: 40px;
+    width: 1200px; height: 50px;
     margin: 0px auto;
     z-index: 9;
     .wrapper {
@@ -12,7 +12,7 @@ header {
         display: flex;
         .nav-static {
             width: 110px;
-            height: 40px;
+            height: 100%;
             button {
                 width: 20px; height: 20px;
                 margin: 0 5px;
@@ -28,11 +28,10 @@ header {
             }
         }
         .search {
-            font-size: 20px;
-            height: 40px;
+            height: 100%;
             flex-grow: 1;
             input {
-                width: 96%; height: 20px;
+                width: 96%; height: 30px;
                 padding: 12px 20px;
                 margin: 0 2%;
                 display: inline-block;
@@ -45,7 +44,6 @@ header {
     .container {
         display: none;
         position: relative;
-        float: left;
         width: 100%; height: 240px;
         // padding-top: 20px;
         color: WHITE;

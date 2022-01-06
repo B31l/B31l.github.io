@@ -16,7 +16,11 @@
             font-size: 10em;
             font-family: fantasy;
             font-weight: 900;
-            text-shadow: -1px 0 White, 0 1px White, 1px 0 White, 0 -1px White;
+            text-shadow: 1px 1px 5px white;
+        }
+        p {
+            text-shadow: 1px 1px 5px white;
+}
         }
         .pagination {
             text-align: left;

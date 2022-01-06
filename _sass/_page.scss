@@ -114,6 +114,7 @@ nav {
                 margin-top: 5vh;
                 padding: 5vh 0;
                 border-left: 3px inset;
+                background-color: White;
                 box-sizing: border-box;
                 -ms-word-break: break-all;
                 word-break: break-all;
@@ -243,16 +244,11 @@ nav {
         opacity: 1;
         transform: scale(1);
         .side {
-            border: none;
-            background-color: #333;
-            color: White;
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
             .content-ul{
                 margin-bottom: 0;
-                // >li:last-of-type{
-                //   margin-bottom: 16px;
-                // }
-                a {
-                    color: White;
+                >li:last-of-type{
+                  margin-bottom: 16px;
                 }
             }
         }

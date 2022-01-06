@@ -16,22 +16,13 @@ type: page
         <div class="left-title">Classic</div>
         <p style="font-weight: bold;">Classic Computer Science Problems in Python</p>
         <p>야율대석</p>
-        {% assign Classic = site.categories["Classic"] | reverse %}
-        {% for post in Classic %}
-            <p>{{ post.title }}</p>
-        {% endfor %}
         <ul>
-            {% for category in site.categories %}
-                {% for posts in category  %}
-                    {% for post in posts %}
-                        {% if post.url %}
-                        <li>
-                            <time>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</time>
-                            <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                        </li>
-                        {% endif %}
-                    {% endfor %}
-                {% endfor %}
+            {% assign Classic = site.categories["Classic"] | reverse %}
+            {% for post in Classic %}
+                <li>
+                    <time>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</time>
+                    <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </li>
             {% endfor %}
         </ul>
     </div>

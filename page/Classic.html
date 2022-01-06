@@ -11,18 +11,41 @@ type: page
         background-image: url(/img/chess-5516446_1920.jpg);
         background-size: auto 100%;
         background-position: 90% 75%;"
->
+    >
     <div class="left">
         <div class="left-title">Classic</div>
-        <p style="font-weight: bold;">Classic Computer Science Problems in Pythonㅋ</p>
+        <p style="font-weight: bold;">Classic Computer Science Problems in Pythonㅋzz</p>
         <ul>
             {% assign Classic_list = site.categories[Classic] %}
-            {% for post in Classic_list %}
-                <li>
-                    <time>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</time>
-                    <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </li>
+                {% for posts in Classic_list %}
+                    {% for post in posts %}
+                        <li>
+                            <time>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</time>
+                            <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </li>
+                    {% endfor %}
+                {% endfor %}
             {% endfor %}
         </ul>
     </div>
+
+    <!-- <ul>
+        {% for category in site.categories %}
+            {% for posts in category  %}
+                {% for post in posts %}
+                    {% if post.url %}
+                    <li>
+                        <time>
+                        {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                        </time>
+                        <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+
+                        {% include category.html %}
+                        {% include tag.html %}
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+    </ul> -->
 </div>

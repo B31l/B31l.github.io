@@ -14,7 +14,7 @@ type: page
 >
     <div class="left">
         <div class="left-title">Classic</div>
-        <p style="font-weight: bold;">Classic Computer Science Problems in Python</p>
+        <p style="font-weight: bold;">Classic Computer Science Problems in Python!!</p>
         <!-- <ul>
             {% for post in Classic %}
                 {% if post.url %}
@@ -30,9 +30,9 @@ type: page
         <ul>
             {% for category in site.categories %}
                 {% for posts in category %}
-                    {% if posts == Classic %}
                     {% for post in posts %}
                         {% if post.url %}
+                        {% if post.category == Classic %}
                         <li>
                             <time>
                             {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
@@ -40,8 +40,8 @@ type: page
                             <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                         </li>
                         {% endif %}
+                        {% endif %}
                     {% endfor %}
-                    {% endif %}
                 {% endfor %}
             {% endfor %}
         </ul>

@@ -15,7 +15,6 @@ type: page
     <div class="left">
         <div class="left-title">Classic</div>
         <p style="font-weight: bold;">Classic Computer Science Problems in Python</p>
-        <p>야율대석</p>
         <ul>
             {% assign Classic = site.categories["Classic"] | reverse %}
             {% for post in Classic %}
@@ -27,3 +26,26 @@ type: page
         </ul>
     </div>
 </div>
+<div class="reference">
+    <div class="book">
+        <img src="https://image.aladin.co.kr/product/21766/43/cover500/k382636009_1.jpg">
+    </div>
+    <div class="description">
+        [한빛미디어] 고전 컴퓨터 알고리즘 인 파이썬
+    </div>
+</div>
+<style>
+    .reference {
+        position: fixed;
+        top: 100px;
+        right: calc(50% - 570px);
+        border: 2px solid;
+    }
+    .book {
+        width: 200px;
+        height: auto;
+    }
+    .description {
+        font-weight: bold;
+    }
+</style>

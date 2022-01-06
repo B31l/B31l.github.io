@@ -16,7 +16,8 @@ type: page
         <div class="left-title">Classic</div>
         <p style="font-weight: bold;">Classic Computer Science Problems in Python</p>
         <p>테스트</p>
-        {% for post in site.categories["Classic"] %}
+        {% assign Classic = site.categories["Classic"] | reverse %}
+        {% for post in Classic %}
             <p>{{ post.title }}</p>
         {% endfor %}
         <ul>
@@ -33,6 +34,5 @@ type: page
                 {% endfor %}
             {% endfor %}
         </ul>
-
     </div>
 </div>

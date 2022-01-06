@@ -47,10 +47,8 @@ header {
     .container {
         display: none;
         position: relative;
-        height: auto;
-        max-height: 255px;
-        border: 0 5px 5px;
-        // padding-top: 20px;
+        height: auto; max-height: 255px;
+        padding: 0 5px 5px;
         color: WHITE;
         font-weight: bold;
         background-color: #333;
@@ -62,8 +60,7 @@ header {
         .legend {
             background-color: White;
             ul {
-                height: auto;
-                max-height: 250px;
+                height: auto; max-height: 250px;
                 margin: 0px 0px;
                 padding-left: 15px;
                 overflow-y: scroll;
@@ -85,7 +82,7 @@ header {
                         margin-left: -15px;
                         padding-left: 15px;
                         float: left;
-                        color: WHITE;
+                        color: Black;
                         border-bottom: 1px dotted darkcyan;
                         &:hover {
                             background-color: Darkcyan;

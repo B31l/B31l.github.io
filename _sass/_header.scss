@@ -48,7 +48,8 @@ header {
         display: none;
         position: relative;
         height: auto;
-        max-height: 240px;
+        max-height: 255px;
+        border: 0 5px 5px;
         // padding-top: 20px;
         color: WHITE;
         font-weight: bold;
@@ -58,18 +59,22 @@ header {
         margin-right: 30px;
         float: right;
 
-        .legend {   
+        .legend {
+            background-color: White;
             ul {
                 height: auto;
-                max-height: 240px;
+                max-height: 250px;
                 margin: 0px 0px;
                 padding-left: 15px;
                 overflow-y: scroll;
                 overflow-x: hidden;
-                line-height: 150%;  
+                
+                color: black;
                 font-size: 16px;
-                font-weight: 500;
+                font-weight: bold;
+                line-height: 150%;  
                 list-style: none;
+                
                 h2 {
                     margin: 10px 5px 10px;  // override
                 }
@@ -81,8 +86,10 @@ header {
                         padding-left: 15px;
                         float: left;
                         color: WHITE;
+                        border-bottom: 1px dotted darkcyan;
                         &:hover {
                             background-color: Darkcyan;
+                            color: White;
                         }   
                     }
                     time {

@@ -108,13 +108,13 @@ nav {
         width: 300px;
         .wrap {
             position: fixed;
-            width: 100%;
+            width: 300px;
             .side {
                 width: 100%;
                 margin-top: 5vh;
+                padding: 5vh 0;
                 border-left: 3px inset;
                 box-sizing: border-box;
-                padding-bottom: 1px;
                 -ms-word-break: break-all;
                 word-break: break-all;
                 -webkit-hyphens: auto;
@@ -122,20 +122,17 @@ nav {
                 -ms-hyphens: auto;
                 hyphens: auto;
                 .tocTitle {
-                    padding: 12px 15px;
-                    font-size: 16px;
+                    padding-bottom: 15px;
+                    font-size: 18px;
                     font-weight: bold;
-                    text-align: center;
-                    color: #eee;
-                    background-color: #2b2b3c;
-                    border-bottom: 1px solid #c0c0c0;
+                    text-align: left;
                 }
                 .content-ul {
+                    /* list-style: upper-roman; */
                     overflow-y: auto;
                     line-height: 1.5;
-                    /* list-style: upper-roman; */
                     margin: 0;
-                    padding: 5vh 10px 5vh 35px;
+                    padding: 10px 10px 0px 35px;
                     ul {
                         list-style: none;
                         padding-left: 0px;

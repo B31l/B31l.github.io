@@ -1,3 +1,27 @@
 .widget {
+    display: flex;
+    position: fixed; top: 100px; right: 100px;
     cursor: pointer;
+    img {
+        width: 100px; height: 100px;
+        border-radius: 50%;
+        
+        background-color: #85AD96;
+    }
+    .w-body {
+        height: 50px;
+        margin: auto 0;
+
+        background: Ivory;
+        w-title {
+            font-size: 1.25em;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .widget {
+        display: none;
+    }
 }

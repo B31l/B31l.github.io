@@ -3,14 +3,16 @@
     position: fixed;
     top: 100px;
     right: calc(50% - 570px);
-    img {
+    .w-img {
         width: 100px; height: 100px;
-        border-radius: 50%;
-        box-shadow: 0 0 5px 0;
-        
-        background-color: #85AD96;
-        cursor: pointer;
+        img {
+            border-radius: 50%;
+            box-shadow: 0 0 5px 0;
+            background-color: #85AD96;
+            cursor: pointer;
+        }
     }
+
     .w-body {
         height: auto;
         margin: auto 0;

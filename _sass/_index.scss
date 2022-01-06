@@ -43,17 +43,17 @@
             padding: 0;
             list-style: none;
             li {
-                box-shadow: 0 0 10px 0 BLACK;
                 margin: 20px 0;
                 padding: 10px 20px;
-                line-height: 150%;
+                background-color: White;
                 color: #333;
+                line-height: 150%;
                 cursor: pointer;
                 -webkit-transition: 0.5s ease;
                 transition: 0.5s ease;
-                background: none;
+                box-shadow: 0 0 10px 0 BLACK;
                 &:hover {
-                    background: White;
+                    box-shadow: 0 0 10px 0 Darkcyan;
                 }
                 h2 {
                     border: none;

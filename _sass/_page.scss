@@ -55,10 +55,10 @@ nav {
                 }
                 .title {                    // 그 Tags Categories Archives에 보이는거
                     font-weight: bold;
-                    color: #223253;
+                    color: #333;
                     transition: 0.3s ease;
                     &:hover {               // 마우스 갖다대면 변하는 색
-                        color: #4d6dad;
+                        color: Darkcyan;
                     }
                 }
                 i {

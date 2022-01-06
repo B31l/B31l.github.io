@@ -1,8 +1,5 @@
 .page[index] {
-    background-image: url(/img/camping.png);
     background-repeat: no-repeat;
-    background-size: auto 75%;
-    background-position: 90% 75%;
     a {
         color: #333;
         transition: 0.5s ease;
@@ -16,7 +13,7 @@
         font-size: 16px;
         .left-title {
             text-align: left;
-            font-size: 10em;
+            font-size: 8em;
             font-family: fantasy;
             font-weight: 900;
         }

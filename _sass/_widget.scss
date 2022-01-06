@@ -1,6 +1,8 @@
 .widget {
     display: flex;
-    position: fixed; top: 100px; right: 100px;
+    position: fixed;
+    top: 100px;
+    right: calc(50% - 500px);
     img {
         width: 100px; height: 100px;
         border-radius: 50%;
@@ -25,8 +27,15 @@
     }
 }
 
+@media screen and (max-width:1200px) and (min-width: 770px) {
+    .widget {
+        right: 100px;
+    }
+}
+
 @media screen and (max-width: 770px) {
     .widget {
+        right: 100px;
         display: none;
     }
 }

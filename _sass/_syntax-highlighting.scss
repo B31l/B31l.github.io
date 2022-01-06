@@ -12,7 +12,9 @@ code {   /* <쪼그만 코드> */
     border: 1px solid #f1c5d1;
     border-bottom-width: 2px;
     box-shadow: inset 1px -1px 1px #f7f2f2, inset -1px 1px 1px #fffafa;
+    font-size: 125%;
     font-weight: bolder;
+    font-family: Helvetica;
 }
 
 pre {   /* <커다란 블록> */
@@ -36,11 +38,10 @@ pre {   /* <커다란 블록> */
         color:#d1d1c9;
         border: none;
         background-color: #2D2D2D;
-        font-family: 'D2Coding';
-
         font-weight: normal;
         line-height: 125%;
         box-shadow: none;
+        font-family: 'D2Coding';
      }
 }
 

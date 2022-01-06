@@ -29,22 +29,22 @@ type: page
         </ul> -->
         <ul>
             {% for category in site.categories %}
-                {% if category == Classic %}
-                {% for posts in category  %}
-                    {% for post in posts %}
-                        {% if post.url %}
-                        <li>
-                            <time>
-                            {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                            </time>
-                            <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                {% if category == "Classic" %}
+                    {% for posts in category  %}
+                        {% for post in posts %}
+                            {% if post.url %}
+                            <li>
+                                <time>
+                                {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                                </time>
+                                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 
-                            {% include category.html %}
-                            {% include tag.html %}
-                        </li>
-                        {% endif %}
+                                {% include category.html %}
+                                {% include tag.html %}
+                            </li>
+                            {% endif %}
+                        {% endfor %}
                     {% endfor %}
-                {% endfor %}
                 {% endif %}
             {% endfor %}
         </ul>

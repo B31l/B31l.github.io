@@ -29,7 +29,7 @@ type: page
         </ul> -->
         <ul>
             {% for category in site.categories %}
-                {% if post.url == Classic %}
+                {% if category == Classic %}
                 {% for posts in category  %}
                     {% for post in posts %}
                         {% if post.url %}

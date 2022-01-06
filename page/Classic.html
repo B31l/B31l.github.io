@@ -16,8 +16,7 @@ type: page
         <div class="left-title">Classic</div>
         Computer Science Problems in Python
         <ul>
-            {% for category in site.categories %}
-            <h2 id="{{category | first}}">{{category | first}}</h2>
+            <h2 id="{{Classic | first}}">{{Classic | first}}</h2>
                 {% for posts in category  %}
                     {% for post in posts %}
                         {% if post.url %}
@@ -33,7 +32,6 @@ type: page
                         {% endif %}
                     {% endfor %}
                 {% endfor %}
-            {% endfor %}
         </ul>
     </div>
 </div>

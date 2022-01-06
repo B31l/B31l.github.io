@@ -15,7 +15,7 @@ type: page
     <div class="left">
         <div class="left-title">Classic</div>
         <p style="font-weight: bold;">Classic Computer Science Problems in Python</p>
-        <ul>
+        <!-- <ul>
             {% for post in Classic %}
                 {% if post.url %}
                 <li>
@@ -24,6 +24,27 @@ type: page
                     </time>
                     <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </li>
+                {% endif %}
+            {% endfor %}
+        </ul> -->
+        <ul>
+            {% for category in site.categories %}
+                {% if post.url == Classic %}
+                {% for posts in category  %}
+                    {% for post in posts %}
+                        {% if post.url %}
+                        <li>
+                            <time>
+                            {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                            </time>
+                            <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+
+                            {% include category.html %}
+                            {% include tag.html %}
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
                 {% endif %}
             {% endfor %}
         </ul>

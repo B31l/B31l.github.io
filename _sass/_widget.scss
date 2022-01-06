@@ -1,18 +1,23 @@
 .widget {
     display: flex;
     position: fixed; top: 100px; right: 100px;
-    cursor: pointer;
     img {
         width: 100px; height: 100px;
         border-radius: 50%;
+        box-shadow: 0 0 5px 0;
         
         background-color: #85AD96;
+        cursor: pointer;
     }
     .w-body {
-        height: 50px;
+        height: auto;
         margin: auto 0;
+        margin-left: -20px;
+        padding: 5px 5px 5px 25px;
+        box-shadow: 0 0 5px 0;
 
-        background: Ivory;
+        font-size: 90%;
+        z-index: -1;
         .w-title {
             font-size: 1.25em;
             font-weight: bold;

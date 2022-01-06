@@ -122,17 +122,16 @@ nav {
                 -ms-hyphens: auto;
                 hyphens: auto;
                 .tocTitle {
-                    padding-bottom: 15px;
+                    padding: 0 0 0 15px;
                     font-size: 18px;
                     font-weight: bold;
                     text-align: left;
                 }
                 .content-ul {
-                    /* list-style: upper-roman; */
+                    padding: 10px 10px 0px 35px;
                     overflow-y: auto;
                     line-height: 1.5;
-                    margin: 0;
-                    padding: 10px 10px 0px 35px;
+                    /* list-style: upper-roman; */
                     ul {
                         list-style: none;
                         padding-left: 0px;

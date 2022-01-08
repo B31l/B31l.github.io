@@ -84,7 +84,7 @@
 @media screen and (max-width: 770px) {
     .page[index] {
         // background-position: center 75%;
-        background: none;
+        background: none !important;
         .left {
             .left-title {
                 text-align: center;

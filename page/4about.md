@@ -22,3 +22,7 @@ type: page
 - 알고리즘
 - Node_js
 
+## Link
+
+[Collection](https://b31l.github.io/collection/)
+

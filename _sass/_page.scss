@@ -131,10 +131,14 @@ nav {
                 .content-ul {
                     padding: 10px 10px 0px 35px;
                     overflow-y: auto;
-                    line-height: 1.5;
+                    line-height: 2;
+                    font-size: 15px;
+                    font-weight: bold;
                     /* list-style: upper-roman; */
                     ul {
                         list-style: none;
+                        line-height: 2;
+                        font-size: 12px;
                         // padding-left: 0px;
                     }
                     a {

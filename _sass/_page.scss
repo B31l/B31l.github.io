@@ -137,8 +137,10 @@ nav {
                     /* list-style: upper-roman; */
                     ul {
                         list-style: none;
-                        line-height: 2;
+                        line-height: 1.5;
                         font-size: 12px;
+                        font-weight: normal;
+                        padding-left: 25px;
                         // padding-left: 0px;
                     }
                     a {

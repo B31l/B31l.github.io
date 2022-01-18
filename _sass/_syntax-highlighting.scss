@@ -19,7 +19,6 @@ code {   /* <쪼그만 코드> */
 pre {   /* <커다란 블록> */
     // font-family: "D2coding";
     font-size: 16px;
-    margin-top: 12px;
     padding: 1em;
     background-color: #2D2D2D;
     border-radius: 20px;
@@ -71,6 +70,7 @@ $highlight-purple       :#8E59D7;
     white-space: pre;
     overflow-x: auto;
     // border-radius: 10px;
+    margin: 10px 0 0;
     line-height: 100%;
     font-size: 15px;
     font-weight: 500;
@@ -157,11 +157,11 @@ $highlight-purple       :#8E59D7;
     .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
 }
 .highlight::-webkit-scrollbar {
-    height: 10px;
+    height: 5px;
 }
 .highlight::-webkit-scrollbar-thumb {
-    background-color: darkcyan;
-    border-radius: 10px;
+    background-color: lightsteelblue;
+    // border-radius: 10px;
 }
 // .highlight::-webkit-scrollbar-track {
 //     background-color: grey;

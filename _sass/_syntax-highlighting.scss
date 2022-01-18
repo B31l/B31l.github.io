@@ -68,6 +68,8 @@ $highlight-purple       :#8E59D7;
 
 
 .highlight {
+    white-space: pre;
+    overflow-x: auto;
     border-radius: 10px;
     line-height: 100%;
     font-size: 15px;
@@ -154,4 +156,15 @@ $highlight-purple       :#8E59D7;
     .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
     .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
 }
-
+.highlight::-webkit-scrollbar {
+    height: 10px;
+}
+.highlight::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+}
+.highlight::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}

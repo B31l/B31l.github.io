@@ -117,12 +117,11 @@ ol {            // 블록 2
 }
 
 table {
-    // width: 400px; 
     width: 100%;
     height: auto;
     margin: 8px 0;
-    border-top: 2px solid #777;
-    border-bottom: 2px solid #777;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     border-collapse: collapse;
     table-layout: fixed;
     word-break: break-all;
@@ -134,6 +133,7 @@ table {
     th {
         padding: 2px 10px;
         background-color: Black;
+        color: black;
         text-align: left;
     }
     tbody {
@@ -167,12 +167,15 @@ img {
 
 u {
     display: block;
-    margin:  30px 0 -14px;
+    height: 25px;
+    line-height: 25px;
+    margin: 30px 0 -14px;
     padding-left: 15px;
-    border-radius: 10px 10px 0 0;
-
+    /* border-radius: 10px 10px 0 0; */
+    
     background: lightsteelblue;
     text-decoration: none;
+    border-top: 1px solid;
     font-size: 15px;
     font-weight: 900;
 }

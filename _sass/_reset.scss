@@ -77,22 +77,22 @@ h4, h5, h6 {
     margin: 25px 0 10px;
     font-size: 1.1em;
 }
-blockquote {    // 블록 1
+blockquote {
     font-size: 0.8em;
     margin: 0 0 20px;
     padding: 10px 20px;
-    border-left: 10px inset #ccc;
-    background: #ccc;
+    border-left: 10px inset #8FBCBB;    // $nord7
+    background: #8FBCBB;                // $nord7
     p:last-of-type{
         margin: 0;
     }
 }
-ol {            // 블록 2
+ol {
     font-size: 0.8em;
     margin: 0 0 20px;
     padding: 10px 20px;
-    border-left: 10px inset #88C0D0;
-    background: #88C0D0;
+    border-left: 10px inset #88C0D0;    // $nord8
+    background: #88C0D0;                // $nord8
     list-style: none;
     // p:last-of-type{
     //     margin: 0;

@@ -243,6 +243,9 @@ nav {
         transform-origin: 100% 0;
         transform: scale(0.1);
         transition: 0.2s cubic-bezier(0.5, 0.1, 0.51, 1.38);
+        .side {
+            border: none;
+        }
     }
     .right-show {
         z-index: 999;
@@ -251,7 +254,6 @@ nav {
         transform: scale(1);
         .side {
             box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
-            border: none;
             .content-ul{
                 margin-bottom: 0;
                 >li:last-of-type{

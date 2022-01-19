@@ -51,7 +51,7 @@ header {
         padding: 0 5px 5px;
         color: WHITE;
         font-weight: bold;
-        background-color: #333;
+        background-color: #4C566A;
 
         width: calc(100% - 254px);
         margin-right: 30px;
@@ -83,9 +83,9 @@ header {
                         padding-left: 15px;
                         float: left;
                         color: Black;
-                        border-bottom: 1px dotted darkcyan;
+                        border-bottom: 1px dotted #5E81AC;
                         &:hover {
-                            background-color: Darkcyan;
+                            background-color: #5E81AC;
                             color: White;
                         }   
                     }

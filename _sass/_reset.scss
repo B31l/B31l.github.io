@@ -127,7 +127,6 @@ table {
     table-layout: fixed;
     word-break: break-all;
     thead {
-        border-bottom: 1px solid #4C566A;
         background-color: #4C566A;
         color: #fff;
     }
@@ -135,6 +134,7 @@ table {
         padding: 2px 10px;
         color: #ECEFF4;
         text-align: left;
+        font-weight: normal;
     }
     tbody {
         tr {

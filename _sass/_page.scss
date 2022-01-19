@@ -212,7 +212,7 @@ nav {
             display: block;
             visibility: visible;
             position: fixed;
-            top: 76px;
+            top: 125px;
             right: 2.5%;
             padding: 5px 10px;
             color: #333;
@@ -237,7 +237,7 @@ nav {
         width: auto;
         max-width: 95%;
         padding: 0;
-        top: 76px;
+        top: 125px;
         right: 2.5%;
         opacity: 0;
         transform-origin: 100% 0;
@@ -251,6 +251,7 @@ nav {
         transform: scale(1);
         .side {
             box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
+            border: none;
             .content-ul{
                 margin-bottom: 0;
                 >li:last-of-type{

@@ -10,7 +10,7 @@ header {
     .wrapper {
         width: 100%; height: 100%;
         padding: 0 30px;
-        background-color: $nord3;
+        background-color: #4C566A;
         display: flex;
         .nav-static {
             width: 180px;
@@ -19,7 +19,7 @@ header {
                 width: 40px; height: 50px;
                 margin: 0; padding: 0;
                 background: none;
-                color: $nord3;
+                color: #4C566A;
                 font-size: 30px;
                 cursor: pointer;
                 -webkit-transition: 0.2s ease;

@@ -60,6 +60,7 @@ $highlight-cyan         :#4FC1E4;
 $highlight-blue         :#637AFE;
 $highlight-indigo       :#6775C4;
 $highlight-purple       :#8E59D7;
+
 .highlight {
     white-space: pre;
     overflow-x: auto;
@@ -83,22 +84,22 @@ $highlight-purple       :#8E59D7;
     .cs     { color: $highlight-comment } /* Comment.Special */
 
     /* 연산자 */ 
-    .o      { color: $highlight-red } /* Operator */
-    .ow     { color: $highlight-red } /* Operator.Word */
+    .o      { color: #81A1C1 } /* Operator */
+    .ow     { color: #81A1C1 } /* Operator.Word */
 
     /* 키워드 */ 
-    .k      { color: $highlight-red } /* Keyword */
-    .kc     { color: $highlight-red } /* Keyword.Constant 상수*/
-    .kd     { color: $highlight-red } /* Keyword.Declaration 선언 */ // ex: function, let, const
-    .kn     { color: $highlight-red } /* Keyword.Namespace */
-    .kp     { color: $highlight-red } /* Keyword.Pseudo */
-    .kr     { color: $highlight-cyan } /* Keyword.Reserved 예악어*/
-    .kt     { color: $highlight-red } /* Keyword.Type 타입*/
+    .k      { color: #81A1C1 } /* Keyword */
+    .kc     { color: #81A1C1 } /* Keyword.Constant 상수*/
+    .kd     { color: #81A1C1 } /* Keyword.Declaration 선언 */ // ex: function, let, const
+    .kn     { color: #81A1C1 } /* Keyword.Namespace */
+    .kp     { color: #81A1C1 } /* Keyword.Pseudo */
+    .kr     { color: #81A1C1 } /* Keyword.Reserved 예악어*/
+    .kt     { color: #81A1C1 } /* Keyword.Type 타입*/
     
     /* 이름 */ 
     .n      { color: #ECEFF4 } /* Name */
     .na     { color: #ECEFF4 } /* Name.Attribute */
-    .nb     { color: #ECEFF4 } /* Name.Builtin */
+    .nb     { color: #ECEFF4 } /* Name.Builtin */       // range
     .nc     { color: #ECEFF4 } /* Name.Class */
     .no     { color: #ECEFF4 } /* Name.Constant */
     .nd     { color: #ECEFF4 } /* Name.Decorator */

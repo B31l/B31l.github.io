@@ -43,6 +43,23 @@ pre {   /* <커다란 블록> */
 
 
 $highlight-background   :#2D2D2D;
+$highlight-foreground   :#f8f8f2;
+$highlight-comment      :#999999;
+
+$highlight-pink         :#F24784;
+
+$highlight-red          :#FC4957;
+$highlight-orange       :#EA9D53;
+$highlight-yellow       :#FCBC28;
+$highlight-teal         :#4BC997;
+$highlight-green        :#50BD6A;
+
+$highlight-aqua         :#4be6fa;
+
+$highlight-cyan         :#4FC1E4;
+$highlight-blue         :#637AFE;
+$highlight-indigo       :#6775C4;
+$highlight-purple       :#8E59D7;
 .highlight {
     white-space: pre;
     overflow-x: auto;

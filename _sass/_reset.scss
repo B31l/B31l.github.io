@@ -1,27 +1,4 @@
-// Polar Night
-$nord0  : #2E3440;
-$nord1  : #3B4252;
-$nord2  : #434C5E;
-$nord3  : #4C566A;
-
-// Snow Storm
-$nord4  : #D8DEE9;
-$nord5  : #E5E9F0;
-$nord6  : #ECEFF4;
-
-// Frost
-$nord7  : #8FBCBB;
-$nord8  : #88C0D0;
-$nord9  : #81A1C1;
-$nord10 : #5E81AC;
-
-// Aurora
-$nord11 : #BF616A;
-$nord12 : #D08770;
-$nord13 : #EBCB8B;
-$nord14 : #A3BE8C;
-$nord15 : #B48EAD;
-
+@import url("./_nord.scss");
 @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff');
 
 body,
@@ -55,7 +32,7 @@ html {
 body {
     // font-family: 'Helvetica Neue',Helvetica,Arial,'Microsoft YaHei',sans-serif;
     font-family: Helvetica, Arial;
-    background-color: #f2f4f8;
+    background-color: $nord6;
     color: $nord3;
     // background-image: url(https://gw.alicdn.com/tfs/TB1xzbUumBYBeNjy0FeXXbnmFXa-125-121.png);
     // background-image: url("/img/pt_woven.png");
@@ -152,12 +129,11 @@ table {
     word-break: break-all;
     thead {
         border-bottom: 1px solid #777;
-        background-color: #aaa;
+        background-color: $nord3;
         color: #fff;
     }
     th {
         padding: 2px 10px;
-        background-color: lightsteelblue;
         color: black;
         text-align: left;
     }
@@ -168,7 +144,7 @@ table {
                 background-color: White;
             }
             &:nth-of-type(2n) {
-                background-color: #e5eaed;
+                background-color: $nord6;
             }
         }
     }
@@ -199,7 +175,7 @@ u {
     padding-left: 15px;
     /* border-radius: 10px 10px 0 0; */
     
-    background: lightsteelblue;
+    background: $nord3;
     text-decoration: none;
     border-top: 1px solid;
     font-size: 15px;

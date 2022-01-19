@@ -22,6 +22,8 @@ $nord13 : #EBCB8B;
 $nord14 : #A3BE8C;
 $nord15 : #B48EAD;
 
+
+$highlight-background   :#2D2D2D;
 @import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
 
 code {   /* <쪼그만 코드> */
@@ -40,7 +42,7 @@ pre {   /* <커다란 블록> */
     // font-family: "D2coding";
     font-size: 15px;
     padding: 1em;
-    background-color: #2D2D2D;
+    background-color: $highlight-background;
     border-radius: 20px;
 
     //  max-width: 800px;
@@ -55,7 +57,7 @@ pre {   /* <커다란 블록> */
         font-size: 15px;
         color: $nord6;
         border: none;
-        background-color: #2D2D2D;
+        background-color: $highlight-background;
         font-weight: normal;
         line-height: 1.5;
         tab-size: 4;
@@ -65,24 +67,6 @@ pre {   /* <커다란 블록> */
      }
 }
 
-$highlight-background   :#2D2D2D;
-$nord6   :#f8f8f2;
-$highlight-comment      :#999999;
-
-$highlight-pink         :#F24784;
-
-$highlight-red          :#FC4957;
-$highlight-orange       :#EA9D53;
-$highlight-yellow       :#FCBC28;
-$highlight-teal         :#4BC997;
-$highlight-green        :#50BD6A;
-
-$highlight-aqua         :#4be6fa;
-
-$highlight-cyan         :#4FC1E4;
-$highlight-blue         :#637AFE;
-$highlight-indigo       :#6775C4;
-$highlight-purple       :#8E59D7;
 
 
 .highlight {
@@ -94,7 +78,7 @@ $highlight-purple       :#8E59D7;
     font-size: 10px;
     font-weight: 500;
     letter-spacing: -1px;
-    background: #2D2D2D;
+    background: $highlight-background;
     .hll    { background-color: $highlight-background }
     .err    { background-color: $highlight-background; color: #960050 } /* Error */
     .w      { color: $nord6 }    /* Text.Whitespace */
@@ -144,26 +128,26 @@ $highlight-purple       :#8E59D7;
 
     /* 리터럴 */ 
     .l      { color: $nord6 } /* Literal */
-    .ld     { color: $highlight-yellow }    /* Literal.Date */
+    .ld     { color: $nord14 }    /* Literal.Date */
 
-    .m      { color: $highlight-purple } /* Literal.Number */
-    .mf     { color: $highlight-purple } /* Literal.Number.Float */
-    .mh     { color: $highlight-purple } /* Literal.Number.Hex */
-    .mi     { color: $highlight-purple } /* Literal.Number.Integer */
-    .mo     { color: $highlight-purple } /* Literal.Number.Oct */
+    .m      { color: $nord15 } /* Literal.Number */
+    .mf     { color: $nord15 } /* Literal.Number.Float */
+    .mh     { color: $nord15 } /* Literal.Number.Hex */
+    .mi     { color: $nord15 } /* Literal.Number.Integer */
+    .mo     { color: $nord15 } /* Literal.Number.Oct */
 
-    .s      { color: $highlight-yellow } /* Literal.String */
-    .sb     { color: $highlight-yellow } /* Literal.String.Backtick */
-    .sc     { color: $highlight-yellow } /* Literal.String.Char */
-    .sd     { color: $highlight-yellow } /* Literal.String.Doc */
-    .s2     { color: $highlight-yellow } /* Literal.String.Double */
-    .se     { color: $highlight-yellow } /* Literal.String.Escape */
-    .sh     { color: $highlight-yellow } /* Literal.String.Heredoc */
-    .si     { color: $highlight-yellow } /* Literal.String.Interpol */
-    .sx     { color: $highlight-yellow } /* Literal.String.Other */
-    .sr     { color: $highlight-yellow } /* Literal.String.Regex */
-    .s1     { color: $highlight-yellow } /* Literal.String.Single */
-    .ss     { color: $highlight-yellow } /* Literal.String.Symbol */
+    .s      { color: $nord14 } /* Literal.String */
+    .sb     { color: $nord14 } /* Literal.String.Backtick */
+    .sc     { color: $nord14 } /* Literal.String.Char */
+    .sd     { color: $nord14 } /* Literal.String.Doc */
+    .s2     { color: $nord14 } /* Literal.String.Double */
+    .se     { color: $nord14 } /* Literal.String.Escape */
+    .sh     { color: $nord14 } /* Literal.String.Heredoc */
+    .si     { color: $nord14 } /* Literal.String.Interpol */
+    .sx     { color: $nord14 } /* Literal.String.Other */
+    .sr     { color: $nord14 } /* Literal.String.Regex */
+    .s1     { color: $nord14 } /* Literal.String.Single */
+    .ss     { color: $nord14 } /* Literal.String.Symbol */
     
     .il     { color: #ae81ff } /* Literal.Number.Integer.Long */
 

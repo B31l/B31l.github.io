@@ -77,30 +77,30 @@ function isMaxHeight() {
  * @param  {[type]} function( [description]
  * @return {[type]}           [description]
  */
-// (function() {
-//     if (window.innerWidth <= 770) {
-//         var anchorBtn = document.querySelector('.anchor')
-//         var rightDiv = document.querySelector('aside')
+(function() {
+    if (window.innerWidth <= 770) {
+        var anchorBtn = document.querySelector('.anchor')
+        var rightDiv = document.querySelector('aside')
 
-//         /**
-//          * monitoring anchor switch
-//          */
-//         anchorBtn.onclick = function(e) {
-//             e.stopPropagation()
-//             rightDiv.classList.add('right-show')
-//             anchorBtn.classList.add('anchor-hide')
-//         }
+        /**
+         * monitoring anchor switch
+         */
+        anchorBtn.onclick = function(e) {
+            e.stopPropagation()
+            rightDiv.classList.add('right-show')
+            anchorBtn.classList.add('anchor-hide')
+        }
 
-//         //监听(Monitor)body，点击(Click)body，隐藏(Hide)Content
-//         document.querySelector('body').addEventListener('click', function() {
-//             rightDiv.classList.remove('right-show')
-//             anchorBtn.classList.remove('anchor-hide')
-//         })
+        //监听(Monitor)body，点击(Click)body，隐藏(Hide)Content
+        document.querySelector('body').addEventListener('click', function() {
+            rightDiv.classList.remove('right-show')
+            anchorBtn.classList.remove('anchor-hide')
+        })
 
-//         ancherPostion(anchorBtn, rightDiv) //目录锚的位置固定
-//         setContentMaxHeight() //设置目录最大高度
-//     }
-// }());
+        ancherPostion(anchorBtn, rightDiv) //目录锚的位置固定
+        setContentMaxHeight() //设置目录最大高度
+    }
+}());
 
 /**
  * Table anchor in position

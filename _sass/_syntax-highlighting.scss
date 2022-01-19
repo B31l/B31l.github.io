@@ -1,29 +1,3 @@
-// Polar Night
-$nord0  : #2E3440;
-$nord1  : #3B4252;
-$nord2  : #434C5E;
-$nord3  : #4C566A;
-
-// Snow Storm
-$nord4  : #D8DEE9;
-$nord5  : #E5E9F0;
-$nord6  : #ECEFF4;
-
-// Frost
-$nord7  : #8FBCBB;
-$nord8  : #88C0D0;
-$nord9  : #81A1C1;
-$nord10 : #5E81AC;
-
-// Aurora
-$nord11 : #BF616A;
-$nord12 : #D08770;
-$nord13 : #EBCB8B;
-$nord14 : #A3BE8C;
-$nord15 : #B48EAD;
-
-
-$highlight-background   :#2D2D2D;
 @import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
 
 code {   /* <쪼그만 코드> */
@@ -55,7 +29,7 @@ pre {   /* <커다란 블록> */
         margin: 0;
         padding: 0;
         font-size: 15px;
-        color: $nord6;
+        color: #ECEFF4;
         border: none;
         background-color: #2D2D2D;
         font-weight: normal;
@@ -68,7 +42,7 @@ pre {   /* <커다란 블록> */
 }
 
 
-
+$highlight-background   :#2D2D2D;
 .highlight {
     white-space: pre;
     overflow-x: auto;
@@ -81,8 +55,8 @@ pre {   /* <커다란 블록> */
     background: #2D2D2D;
     .hll    { background-color: #2D2D2D }
     .err    { background-color: #2D2D2D; color: #960050 } /* Error */
-    .w      { color: $nord6 }    /* Text.Whitespace */
-    .p      { color: $nord6 } /* Punctuation 문장 부호 */ 
+    .w      { color: #ECEFF4 }    /* Text.Whitespace */
+    .p      { color: #ECEFF4 } /* Punctuation 문장 부호 */ 
 
     /* 주석 */
     .c      { color: $highlight-comment } /* Comment */
@@ -105,29 +79,29 @@ pre {   /* <커다란 블록> */
     .kt     { color: $highlight-red } /* Keyword.Type 타입*/
     
     /* 이름 */ 
-    .n      { color: $nord6 } /* Name */
-    .na     { color: $nord6 } /* Name.Attribute */
-    .nb     { color: $nord6 } /* Name.Builtin */
-    .nc     { color: $nord6 } /* Name.Class */
-    .no     { color: $nord6 } /* Name.Constant */
-    .nd     { color: $nord6 } /* Name.Decorator */
-    .ni     { color: $nord6 } /* Name.Entity */
-    .ne     { color: $nord6 } /* Name.Exception */
-    .nf     { color: $nord6 } /* Name.Function */
-    .nl     { color: $nord6 } /* Name.Label */
-    .nn     { color: $nord6 } /* Name.Namespace */
-    .nx     { color: $nord6 } /* Name.Other */
-    .py     { color: $nord6 } /* Name.Property */
-    .nt     { color: $nord6 } /* Name.Tag */
-    .nv     { color: $nord6 } /* Name.Variable */
+    .n      { color: #ECEFF4 } /* Name */
+    .na     { color: #ECEFF4 } /* Name.Attribute */
+    .nb     { color: #ECEFF4 } /* Name.Builtin */
+    .nc     { color: #ECEFF4 } /* Name.Class */
+    .no     { color: #ECEFF4 } /* Name.Constant */
+    .nd     { color: #ECEFF4 } /* Name.Decorator */
+    .ni     { color: #ECEFF4 } /* Name.Entity */
+    .ne     { color: #ECEFF4 } /* Name.Exception */
+    .nf     { color: #ECEFF4 } /* Name.Function */
+    .nl     { color: #ECEFF4 } /* Name.Label */
+    .nn     { color: #ECEFF4 } /* Name.Namespace */
+    .nx     { color: #ECEFF4 } /* Name.Other */
+    .py     { color: #ECEFF4 } /* Name.Property */
+    .nt     { color: #ECEFF4 } /* Name.Tag */
+    .nv     { color: #ECEFF4 } /* Name.Variable */
 
-    .bp     { color: $nord6 } /* Name.Builtin.Pseudo */
-    .vc     { color: $nord6 } /* Name.Variable.Class */
-    .vg     { color: $nord6 } /* Name.Variable.Global */
-    .vi     { color: $nord6 } /* Name.Variable.Instance */
+    .bp     { color: #ECEFF4 } /* Name.Builtin.Pseudo */
+    .vc     { color: #ECEFF4 } /* Name.Variable.Class */
+    .vg     { color: #ECEFF4 } /* Name.Variable.Global */
+    .vi     { color: #ECEFF4 } /* Name.Variable.Instance */
 
     /* 리터럴 */ 
-    .l      { color: $nord6 } /* Literal */
+    .l      { color: #ECEFF4 } /* Literal */
     .ld     { color: #A3BE8C }    /* Literal.Date */
 
     .m      { color: #B48EAD } /* Literal.Number */

@@ -18,13 +18,14 @@ header {
         padding: 0 10px;
         .nav-static {
             width: 50%;
+            padding: 0 10px;
             button {
                 width: auto;
                 height: 100px;
                 margin: 0 10px;
                 color: #4C566A;
                 background: none;
-                font-size: 30px;
+                font-size: 25px;
                 font-weight: bold;
                 cursor: pointer;
                 -webkit-transition: 0.2s ease;
@@ -114,22 +115,18 @@ header {
     header {
         .wrapper {
             width: 100%;
-            nav > ul > a {
-                padding: 0 8px;
-                height: 50px;
-                i {
-                    margin-right: 4px;
-                }
-            }
         }
     }
 }
 @media screen and (max-width: 770px) {
     header {
         .wrapper {
-            padding: 0 14px;
-            position: relative;
-            z-index: 101;
+            width: 100%;
+            .nav-static >button {
+                width: 100%;
+                height: auto;
+                text-align: left;
+            }
         }
         .container {
             width: 100%;

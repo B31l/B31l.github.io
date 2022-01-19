@@ -126,14 +126,14 @@ nav {
                     font-weight: bold;
                 }
                 .content-ul {
+                    margin: 0;
                     padding: 10px;
                     padding-left: 20px;
-                    list-style: none;
-                    overflow-y: auto;
                     line-height: 2;
                     font-size: 13.5px;
                     font-weight: bold;
-                    margin: 0;
+                    list-style: none;
+                    overflow-y: auto;
                     /* list-style: upper-roman; */
                     ul {
                         list-style: none;

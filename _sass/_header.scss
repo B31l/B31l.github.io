@@ -21,7 +21,7 @@ header {
             button {
                 width: auto;
                 height: 100px;
-                margin: 0 20px;
+                margin: 0 10px;
                 color: #4C566A;
                 background: none;
                 font-size: 30px;
@@ -112,8 +112,8 @@ header {
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {
     header {
-        width: 100%;
         .wrapper {
+            width: 100%;
             nav > ul > a {
                 padding: 0 8px;
                 height: 50px;
@@ -126,7 +126,6 @@ header {
 }
 @media screen and (max-width: 770px) {
     header {
-        width: 100%;
         .wrapper {
             padding: 0 14px;
             position: relative;

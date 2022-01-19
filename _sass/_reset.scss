@@ -1,3 +1,27 @@
+// // Polar Night
+// $nord0  : #2E3440;
+// $nord1  : #3B4252;
+// $nord2  : #434C5E;
+// $nord3  : #4C566A;
+
+// // Snow Storm
+// $nord4  : #D8DEE9;
+// $nord5  : #E5E9F0;
+// $nord6  : #ECEFF4;
+
+// // Frost
+// $nord7  : #8FBCBB;
+// $nord8  : #88C0D0;
+// $nord9  : #81A1C1;
+// $nord10 : #5E81AC;
+
+// // Aurora
+// $nord11 : #BF616A;
+// $nord12 : #D08770;
+// $nord13 : #EBCB8B;
+// $nord14 : #A3BE8C;
+// $nord15 : #B48EAD;
+
 @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff');
 
 body,
@@ -31,7 +55,8 @@ html {
 body {
     // font-family: 'Helvetica Neue',Helvetica,Arial,'Microsoft YaHei',sans-serif;
     font-family: Helvetica, Arial;
-    color: #333;
+    background-color: #f2f4f8;
+    color: $nord3;
     // background-image: url(https://gw.alicdn.com/tfs/TB1xzbUumBYBeNjy0FeXXbnmFXa-125-121.png);
     // background-image: url("/img/pt_woven.png");
     position: relative;
@@ -178,5 +203,5 @@ u {
     text-decoration: none;
     border-top: 1px solid;
     font-size: 15px;
-    font-weight: 900;
+    // font-weight: 900;
 }

@@ -1,3 +1,29 @@
+// Polar Night
+$nord0  : #2E3440;
+$nord1  : #3B4252;
+$nord2  : #434C5E;
+$nord3  : #4C566A;
+
+// Snow Storm
+$nord4  : #D8DEE9;
+$nord5  : #E5E9F0;
+$nord6  : #ECEFF4;
+
+// Frost
+$nord7  : #8FBCBB;
+$nord8  : #88C0D0;
+$nord9  : #81A1C1;
+$nord10 : #5E81AC;
+
+// Aurora
+$nord11 : #BF616A;
+$nord12 : #D08770;
+$nord13 : #EBCB8B;
+$nord14 : #A3BE8C;
+$nord15 : #B48EAD;
+
+
+
 /**
  * Syntax highlighting styles
  */
@@ -13,7 +39,7 @@ code {   /* <쪼그만 코드> */
     border-bottom-width: 2px;
     box-shadow: inset 1px -1px 1px #f7f2f2, inset -1px 1px 1px #fffafa;
     font-weight: bolder;
-    font-family: Helvetica;
+    // font-family: Helvetica;
 }
 
 pre {   /* <커다란 블록> */
@@ -40,34 +66,12 @@ pre {   /* <커다란 블록> */
         line-height: 1.5;
         tab-size: 4;
         box-shadow: none;
-        font-family: 'D2Coding';
+        font-family: Monaco, Consolas, "Lucida Console", monospace;
         // font-family: Consolas;
      }
 }
 
-// Polar Night
-$nord0  : #2E3440;
-$nord1  : #3B4252;
-$nord2  : #434C5E;
-$nord3  : #4C566A;
 
-// Snow Storm
-$nord4  : #D8DEE9;
-$nord5  : #E5E9F0;
-$nord6  : #ECEFF4;
-
-// Frost
-$nord7  : #8FBCBB;
-$nord8  : #88C0D0;
-$nord9  : #81A1C1;
-$nord10 : #5E81AC;
-
-// Aurora
-$nord11 : #BF616A;
-$nord12 : #D08770;
-$nord13 : #EBCB8B;
-$nord14 : #A3BE8C;
-$nord15 : #B48EAD;
 
 
 

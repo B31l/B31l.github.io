@@ -113,9 +113,12 @@ header {
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {
     header {
-        background: #81A1C1; // $nord9
+        background: #4C566A; // $nord3
         .wrapper {
             width: 100%;
+            .nav-static >button {
+                color: White;
+            }
         }
     }
 }

@@ -42,12 +42,6 @@ pre {   /* <커다란 블록> */
      }
 }
 
-
-
-
-
-
-
 $highlight-background   :#2D2D2D;
 $highlight-foreground   :#f8f8f2;
 $highlight-comment      :#999999;
@@ -78,8 +72,8 @@ $highlight-purple       :#8E59D7;
     font-weight: 500;
     letter-spacing: -1px;
     background: #2D2D2D;
-    .hll    { background-color: #2D2D2D; }
-    .err    { color: #960050; background-color: #1e0010 } /* Error */
+    .hll    { background-color: $highlight-background }
+    .err    { background-color: $highlight-background; color: #960050 } /* Error */
     .w      { color: $highlight-foreground }    /* Text.Whitespace */
     .p      { color: $highlight-foreground } /* Punctuation 문장 부호 */ 
 

@@ -128,26 +128,26 @@ pre {   /* <커다란 블록> */
 
     /* 리터럴 */ 
     .l      { color: $nord6 } /* Literal */
-    .ld     { color: $nord14 }    /* Literal.Date */
+    .ld     { color: #A3BE8C }    /* Literal.Date */
 
-    .m      { color: $nord15 } /* Literal.Number */
-    .mf     { color: $nord15 } /* Literal.Number.Float */
-    .mh     { color: $nord15 } /* Literal.Number.Hex */
-    .mi     { color: $nord15 } /* Literal.Number.Integer */
-    .mo     { color: $nord15 } /* Literal.Number.Oct */
+    .m      { color: #B48EAD } /* Literal.Number */
+    .mf     { color: #B48EAD } /* Literal.Number.Float */
+    .mh     { color: #B48EAD } /* Literal.Number.Hex */
+    .mi     { color: #B48EAD } /* Literal.Number.Integer */
+    .mo     { color: #B48EAD } /* Literal.Number.Oct */
 
-    .s      { color: $nord14 } /* Literal.String */
-    .sb     { color: $nord14 } /* Literal.String.Backtick */
-    .sc     { color: $nord14 } /* Literal.String.Char */
-    .sd     { color: $nord14 } /* Literal.String.Doc */
-    .s2     { color: $nord14 } /* Literal.String.Double */
-    .se     { color: $nord14 } /* Literal.String.Escape */
-    .sh     { color: $nord14 } /* Literal.String.Heredoc */
-    .si     { color: $nord14 } /* Literal.String.Interpol */
-    .sx     { color: $nord14 } /* Literal.String.Other */
-    .sr     { color: $nord14 } /* Literal.String.Regex */
-    .s1     { color: $nord14 } /* Literal.String.Single */
-    .ss     { color: $nord14 } /* Literal.String.Symbol */
+    .s      { color: #A3BE8C } /* Literal.String */
+    .sb     { color: #A3BE8C } /* Literal.String.Backtick */
+    .sc     { color: #A3BE8C } /* Literal.String.Char */
+    .sd     { color: #A3BE8C } /* Literal.String.Doc */
+    .s2     { color: #A3BE8C } /* Literal.String.Double */
+    .se     { color: #A3BE8C } /* Literal.String.Escape */
+    .sh     { color: #A3BE8C } /* Literal.String.Heredoc */
+    .si     { color: #A3BE8C } /* Literal.String.Interpol */
+    .sx     { color: #A3BE8C } /* Literal.String.Other */
+    .sr     { color: #A3BE8C } /* Literal.String.Regex */
+    .s1     { color: #A3BE8C } /* Literal.String.Single */
+    .ss     { color: #A3BE8C } /* Literal.String.Symbol */
     
     .il     { color: #ae81ff } /* Literal.Number.Integer.Long */
 

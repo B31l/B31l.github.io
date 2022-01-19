@@ -8,7 +8,8 @@ header {
     box-sizing: border-box;
     margin: 0px auto;
     z-index: 9;
-    background: #ECEFF4;
+    // background: #ECEFF4;
+    background: #4C566A; // $nord3
     border-bottom: solid;
     .wrapper {
         display: flex;
@@ -23,7 +24,7 @@ header {
                 width: auto;
                 height: 100px;
                 margin: 0 10px;
-                color: #4C566A;
+                color: #D8DEE9;
                 background: none;
                 font-size: 25px;
                 font-weight: bold;
@@ -31,7 +32,7 @@ header {
                 -webkit-transition: 0.2s ease;
                 transition: 0.2s ease;
                 &:hover {
-                    color: #D8DEE9;
+                    color: #ECEFF4;
                 }
             }
         }
@@ -113,25 +114,28 @@ header {
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {
     header {
-        background: #4C566A; // $nord3
+        // background: #4C566A; // $nord3
         .wrapper {
             width: 100%;
-            .nav-static >button {
-                color: White;
-            }
+        }
+        .container {
+            width: calc(50% - 10px);
+            margin-right: 10px;
         }
     }
 }
 @media screen and (max-width: 770px) {
     header {
-        background: #4C566A; // $nord3
+        // background: #4C566A; // $nord3
         .wrapper {
             width: 100%;
-            .nav-static >button {
-                width: 100%;
-                height: auto;
-                text-align: left;
-                color: White;
+            .nav-static {
+                padding: 5px 10px;
+                button {
+                    width: 100%;
+                    height: 30px;
+                    text-align: left;
+                }
             }
         }
         .container {

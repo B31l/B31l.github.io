@@ -42,7 +42,7 @@ pre {   /* <커다란 블록> */
     // font-family: "D2coding";
     font-size: 15px;
     padding: 1em;
-    background-color: $highlight-background;
+    background-color: #2D2D2D;
     border-radius: 20px;
 
     //  max-width: 800px;
@@ -57,7 +57,7 @@ pre {   /* <커다란 블록> */
         font-size: 15px;
         color: $nord6;
         border: none;
-        background-color: $highlight-background;
+        background-color: #2D2D2D;
         font-weight: normal;
         line-height: 1.5;
         tab-size: 4;
@@ -78,9 +78,9 @@ pre {   /* <커다란 블록> */
     font-size: 10px;
     font-weight: 500;
     letter-spacing: -1px;
-    background: $highlight-background;
-    .hll    { background-color: $highlight-background }
-    .err    { background-color: $highlight-background; color: #960050 } /* Error */
+    background: #2D2D2D;
+    .hll    { background-color: #2D2D2D }
+    .err    { background-color: #2D2D2D; color: #960050 } /* Error */
     .w      { color: $nord6 }    /* Text.Whitespace */
     .p      { color: $nord6 } /* Punctuation 문장 부호 */ 
 

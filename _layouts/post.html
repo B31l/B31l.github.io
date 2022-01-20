@@ -8,20 +8,17 @@ layout: default
             <div class="nav-meta">{{page.meta}}</div>
             <div class="nav-title">{{page.title}}</div>
             <div class="nav-label">
-                <div class="label-card"><i class="fa fa-calendar"></i>{{ page.date | date: "%F" }}</div>
+                <!-- <div class="label-card"><i class="fa fa-calendar"></i>{{ page.date | date: "%F" }}</div> -->
                 <div class="label-card">{% include category.html %}</div>
                 <div class="label-card">{% include tag.html %}</div>
             </div>
         </nav>
         {% include previousAndNext.html %}
-        <hr>
         <article itemscope itemtype="http://schema.org/BlogPosting">
         {{content}}
         </article>
         <hr>
         <div class="giscus"></div>
-        {% include previousAndNext.html %}
-        <hr>
     </div>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
     <aside>

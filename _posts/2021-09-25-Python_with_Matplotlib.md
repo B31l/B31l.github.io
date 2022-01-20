@@ -10,6 +10,8 @@ tags: Python
 
 * content
 {:toc}
+# ...
+
 `Matplotlib` 라이브러리는 파이썬 그래프를 표시하며, 다른 데이터 분석 라이브러리인 `Numpy`, `Pandas`와 연계가 가능하다.
 
 

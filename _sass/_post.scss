@@ -33,32 +33,24 @@
             }
         }
         .post-recent {
-            width: 100%;
-            overflow: hidden;
-            padding: 4px;
-            .pre {
+            display: flex;
+            height: auto;
+            .prenex {
                 width: 49%;
-                float: left;   
-                text-align: left;
-            }
-            .nex{
-                width: 49%;
-                float: right;
-                text-align: right;
+                height: 30px;
+                margin: 5px auto;
             }
             button {
                 width: 100%;
-                min-height: 45px;
-                padding: 5px;
-                background-color: #ECEFF4;
-                border: 2px solid #4C566A;
+                height: 30px;
+                line-height: 30px;
+                background: white;
+                padding: 0;
                 box-sizing: border-box;
                 text-align: center;
                 font-size: 1rem;
                 font-weight: bold;
                 cursor: pointer;
-                // box-shadow: 0 0 4px 0px rgba(0,0,0,0.15);
-                // font-family: "D2coding";
             }
             button:hover {
                 background-color: #4C566A;
@@ -68,11 +60,28 @@
         }
     }
 }
-
+@media screen and (max-width:1200px) and (min-width: 770px) {
+    .page[post] {
+        .left {
+            post-recent {
+                display: block;
+                .prenex {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 770px) {
     .page[post] {
         .left {
             font-size: 15px;
+            // post-recent {
+            //     display: block;
+            //     .prenex {
+            //         width: 100%;
+            //     }
+            // }
             h2 {
                 font-size: 24px;
             }

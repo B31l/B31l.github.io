@@ -46,14 +46,16 @@
                 margin: 20px 0;
                 padding: 10px 20px;
                 background-color: White;
-                color: #333;
+                color: Black;
+                font-weight: bold;
                 line-height: 150%;
                 cursor: pointer;
                 -webkit-transition: 0.5s ease;
                 transition: 0.5s ease;
                 box-shadow: 0 0 10px 0 #4C566A;
                 &:hover {
-                    background-color: #5E81AC;
+                    background-color: #4C566A;
+                    color: #ECEFF4;
                     box-shadow: none;
                 }
                 h2 {

@@ -106,9 +106,9 @@ nav {
         .wrap {
             position: fixed;
             width: 300px;
+            padding: 20px 0;
             .side {
                 width: 100%;
-                padding: 20px 0;
                 box-sizing: border-box;
                 background-color: White;
                 -ms-word-break: break-all;
@@ -121,7 +121,6 @@ nav {
                     height: 50px;
                     line-height: 50px;
                     padding-left: 20px;
-                    border-radius: 5px 5px 0 0;
                     background-color: #4C566A;
                     color: white;
                     text-align: center;
@@ -270,7 +269,6 @@ nav {
         opacity: 1;
         transform: scale(1);
         .side {
-            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
             .content-ul{
                 margin-bottom: 0;
                 >li:last-of-type{

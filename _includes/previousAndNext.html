@@ -3,7 +3,7 @@
     <div class="prenex">
         {% if page.previous %}
             <button style="text-align: left;" onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
-                &lt;&lt;&nbsp;&nbsp;{{ page.previous.title }}
+                &nbsp;&nbsp;&lt;&lt;&nbsp;&nbsp;{{ page.previous.title }}
             </button>
         {% endif %}
     </div>
@@ -12,7 +12,7 @@
         {% if page.next %}
             <button style="text-align: right;" onClick="location.href='{{ page.next.url | prepend: site.baseurl }}'">
             <!-- href="{{ page.next.url | prepend: site.baseurl }}"> -->
-                {{ page.next.title }}&gt;&gt;&nbsp;&nbsp;
+                {{ page.next.title }}&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;
             </button> 
         {% endif %}
     </div>

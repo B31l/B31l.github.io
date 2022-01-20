@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Bubble sort"
-meta: " 정렬 알고리즘 (1) 버블 정렬"
+meta: "버블 정렬"
+title: " 정렬 알고리즘 (1) Bubble sort"
 categories: Algorithm
 tags: 문제해결
 ---

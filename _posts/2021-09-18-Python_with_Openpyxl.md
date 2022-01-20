@@ -1,11 +1,9 @@
 ---
 layout: post
+meta: "Openpyxl
 title: "Python with Openpyxl"
-meta: " Openpyxl로 엑셀 다루기"
 categories: Python
 tags: Python
-comments: true
-mathjax: true
 ---
 
 

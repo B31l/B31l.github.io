@@ -13,7 +13,7 @@ nav {
     width: 100%;
     margin: 0 auto;
     .nav-meta {
-        font-size: 10em;
+        font-size: 8em;
         font-weight: bold;
     }
     .nav-title {
@@ -23,6 +23,9 @@ nav {
     }
     .label-card {
         margin-bottom: 10px;
+        a {
+            color: #4C566A;
+        }
     }
 }
 .page {
@@ -171,7 +174,7 @@ nav {
         width: 100%;
         border: none;
         .nav-meta {
-            font-size: 6em;
+            font-size: 5em;
         }
     }
     .page {
@@ -184,7 +187,7 @@ nav {
         width: 100%;
         border: none;
         .nav-meta {
-            font-size: 4em;
+            font-size: 3em;
         }
     }
     .page {

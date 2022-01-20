@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Halting Problem"
-meta: " 정지 문제란 무엇인가"
+meta: "정지 문제"
+title: "What is Halting Problem?"
 categories: Note
 tags: Python
 comments: true

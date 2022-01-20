@@ -51,9 +51,10 @@
                 cursor: pointer;
                 -webkit-transition: 0.5s ease;
                 transition: 0.5s ease;
-                box-shadow: 0 0 10px 0 BLACK;
+                box-shadow: 0 0 10px 0 #4C566A;
                 &:hover {
-                    box-shadow: 0 0 10px 0 Darkcyan;
+                    background-color: #5E81AC;
+                    box-shadow: none;
                 }
                 h2 {
                     border: none;

@@ -49,22 +49,21 @@
             button {
                 width: 100%;
                 min-height: 45px;
-                box-sizing: border-box;
                 padding: 5px;
-                background-color: #fff;
-                border: 2px solid #48D33A;
+                background-color: #ECEFF4;
+                border: 2px solid #4C566A;
+                box-sizing: border-box;
                 text-align: center;
-                font-family: "D2coding";
-                font-weight: bold;
-                box-shadow: 0 0 4px 0px rgba(0,0,0,0.15);
-
                 font-size: 1rem;
+                font-weight: bold;
                 cursor: pointer;
+                // box-shadow: 0 0 4px 0px rgba(0,0,0,0.15);
+                // font-family: "D2coding";
             }
             button:hover {
-                background-color: #48D33A;
+                background-color: #4C566A;
+                color: #ECEFF4;
                 // transform:scale(1.1)
-                color: #fff
             }
         }
     }

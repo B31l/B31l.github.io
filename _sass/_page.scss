@@ -108,9 +108,7 @@ nav {
             width: 300px;
             .side {
                 width: 100%;
-                /* margin-top: 5vh; */
-                padding: 5vh 0;
-                border-left: 3px inset;
+                padding: 20px 0;
                 box-sizing: border-box;
                 background-color: White;
                 -ms-word-break: break-all;
@@ -120,26 +118,37 @@ nav {
                 -ms-hyphens: auto;
                 hyphens: auto;
                 .tocTitle {
+                    height: 50px;
+                    line-height: 50px;
                     padding-left: 20px;
-                    text-align: left;
-                    font-size: 20px;
+                    border-radius: 5px 5px 0 0;
+                    background-color: #4C566A;
+                    color: white;
+                    text-align: center;
+                    font-size: 25px;
                     font-weight: bold;
                 }
                 .content-ul {
                     margin: 0;
-                    padding: 10px;
-                    padding-left: 20px;
+                    padding: 0;
+                    border: solid #4C566A;
                     line-height: 2;
-                    font-size: 13.5px;
+                    font-size: 15px;
                     font-weight: bold;
                     list-style: none;
                     overflow-y: auto;
                     a {
                         display: block;
+                        height: 25px;
+                        line-height: 25px;
+                        padding-left: 15px;
+                        border-bottom: 1px dotted;
+                        box-sizing: border-box;
+                        color: #4C566A;
                         transition: 0.5s ease;
                         &:hover {
-                            color: #ECEFF4; // $nord6: 글자색
-                            background-color: #5E81AC;
+                            color: #ECEFF4;             // $nord6: 글자색
+                            background-color: #5E81AC;  // $nord10: hover색
                         }
                     }
                     // h2
@@ -147,10 +156,10 @@ nav {
                         padding: 0;
                         list-style: none;
                         line-height: 1.5;
-                        font-size: 12px;
+                        font-size: 15px;
                         font-weight: normal;
                         a {
-                            padding-left: 20px;
+                            padding-left: 30px;
                         }
                     }
 

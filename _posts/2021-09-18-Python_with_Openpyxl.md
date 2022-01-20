@@ -1,6 +1,6 @@
 ---
 layout: post
-meta: "Openpyxl
+meta: "Openpyxl"
 title: "Python with Openpyxl"
 categories: Python
 tags: Python

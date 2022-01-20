@@ -7,11 +7,7 @@ type: page
 ---
 
 <div class="page clearfix" index
-    style="
-        background-image: url(/img/background/appleR_1280.png);
-        background-size: auto 75%;
-        background-position: 90% 75%;"
-    >
+    style="background-image: url(/img/background/appleR_1280.png)">
     <div class="left">
         <div class="left-title">Classic</div>
         <!-- <p style="font-weight: bold;">Classic Computer Science Problems in Python</p> -->
@@ -24,38 +20,18 @@ type: page
                 </li>
             {% endfor %}
         </ul>
-    </div>
-</div>
-<div class="reference">
-    <div class="ref-title">Reference</div>
-    <div class="book">
-        <img src="https://image.aladin.co.kr/product/21766/43/cover500/k382636009_1.jpg">
+        <div class="reference">
+            <img src="https://image.aladin.co.kr/product/21766/43/cover500/k382636009_1.jpg">
+        </div>
     </div>
 </div>
 <style>
 .reference {
-    position: fixed;
-    width: 150px;
-    height: 400px;
-    top: 150px;
-    right: calc(50% - 570px);
-    color: white;
+    width: 300px;
 }
-.ref-title {
-    background-color: black;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-.book {
-    width: 100%; height: auto;
-}
-.book >img {
-    border-radius: 0px 0px 10px 10px;
-}
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     .reference {
         display: none;
     }
-}
+} */
 </style>

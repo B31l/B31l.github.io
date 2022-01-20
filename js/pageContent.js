@@ -112,11 +112,11 @@ function ancherPostion(anchorBtn, rightDiv) {
             // console.log(top);
         var scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop)
         if (scrollTop > 50) {
-            anchorBtn.style.top = '76px'
-            rightDiv.style.top = '76px'
+            anchorBtn.style.top = '125px'
+            rightDiv.style.top = '125px'
         } else {
-            anchorBtn.style.top = '76px'
-            rightDiv.style.top = '76px'
+            anchorBtn.style.top = '125px'
+            rightDiv.style.top = '125px'
         }
     })
 }

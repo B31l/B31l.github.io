@@ -14,6 +14,8 @@ tags: 문제해결
 
 버블 정렬
 
+---
+
 ## 💡 개념
 
 ![](https://runestone.academy/runestone/books/published/pythonds3/_images/bubblepass.png)

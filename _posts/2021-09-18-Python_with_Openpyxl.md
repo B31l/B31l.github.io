@@ -1,7 +1,7 @@
 ---
 layout: post
-meta: "Openpyxl"
-title: "Python with Openpyxl"
+meta: "openpyxl"
+title: "파이썬 라이브러리: openpyxl"
 categories: Python
 tags: Python
 ---
@@ -10,15 +10,15 @@ tags: Python
 
 * content
 {:toc}
-# ...
+# openpyxl
 
-`Openpyxl` 라이브러리를 사용해 파이썬으로 엑셀 문서를 작성하거나 데이터를 읽어올 수 있다.
+`openpyxl` 라이브러리를 사용해 파이썬으로 엑셀 문서를 작성하거나 데이터를 읽어올 수 있다.
 
-```python
-from openpyxl import Workbook
+<u>terminal</u>
+
 ```
-
----
+pip install openpyxl
+```
 
 # 시작하기
 

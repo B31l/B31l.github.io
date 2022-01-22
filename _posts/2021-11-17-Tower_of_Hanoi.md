@@ -10,13 +10,9 @@ tags: 문제해결
 
 * content
 {:toc}
-# ...
+# 하노이의 탑
 
-하노이의 탑
-
----
-
-# 구현
+## 구현
 
 ```python
 def move_tower(height, from_pole, to_pole, with_pole):
@@ -77,13 +73,7 @@ move_tower(4, "A", "B", "C")
 
 pop 메서드가 호출될 때 repr로 출력되기 때문에 print를 사용한 별도의 출력은 필요하지 않다.
 
----
-
-
-
-
-
-# 시각화
+## 시각화
 
 turtle 모듈로 시각화하였음. 링크 [📎](https://trinket.io/python/356f1f6506) 
 

@@ -1,15 +1,9 @@
 @import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
 
 code {   /* <쪼그만 코드> */
-    padding: 2px 5px;
-    color: #333;
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid #333;
-    border-bottom-width: 2px;
-    box-shadow: inset 1px -1px 1px #f7f2f2, inset -1px 1px 1px #fffafa;
-    font-weight: bolder;
-    // font-family: Helvetica;
+    padding: 0 5px;
+    background-color: #EBCB8B;
+    font-weight: bold;
 }
 
 pre {   /* <커다란 블록> */
@@ -28,14 +22,12 @@ pre {   /* <커다란 블록> */
      > code {   /* <블록 내의 한 줄 한 줄> */
         margin: 0;
         padding: 0;
-        font-size: 16.5px;
-        color: #ECEFF4;
-        border: none;
         background-color: #2D2D2D;
+        color: #ECEFF4;
+        font-size: 16.5px;
         font-weight: normal;
         line-height: 1.5;
         tab-size: 4;
-        box-shadow: none;
         font-family: Monaco, Consolas, "Lucida Console", monospace;
         // font-family: Consolas;
      }

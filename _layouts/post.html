@@ -34,7 +34,7 @@ layout: default
     </aside>
     <div class="cat">
         <ul>
-            {% assign Cat = {{page.category}} %}
+            {% assign Cat = {{post.category}} %}
             {% assign Cats = site.categories[Cat] | reverse %}
             {% for post in Cats %}
                 <li onclick="location.href='{{ post.url | prepend: site.baseurl }}'">  

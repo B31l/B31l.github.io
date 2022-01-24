@@ -85,7 +85,7 @@ blockquote {
     padding: 0;
     border-image: url("https://t1.daumcdn.net/cfile/tistory/99B1F5335AB1C77313") round;
     border-image-slice: 25%;
-    background-color: #ECEFF4;
+    background-color: White;
 }
 ol {
     // font-size: 0.9em;
@@ -97,12 +97,13 @@ ol {
     // p:last-of-type{
     //     margin: 0;
     // }
+    list-style: none;
     border: 25px solid transparent;
     margin: 10px 0;
     padding: 0;
     border-image: url("https://t1.daumcdn.net/cfile/tistory/99B1F5335AB1C77313") round;
     border-image-slice: 25%;
-    background-color: #EBCB8B;
+    background-color: beige;
 }
 
 table {

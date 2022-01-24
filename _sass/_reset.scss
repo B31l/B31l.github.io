@@ -80,12 +80,10 @@ blockquote {
     // p:last-of-type{
     //     margin: 0;
     // }
-    border : 30px solid transparent;
-    margin : 10px;
-    padding: 5px;
-    -webkit-border-image: url("../img/border.png") round;
-    border-image: url("../img/border.png") round;
-    border-image-slice: 36%;
+    border: 25px solid transparent;
+    margin: 10px 0;
+    border-image: url("https://t1.daumcdn.net/cfile/tistory/99B1F5335AB1C77313") round;
+    border-image-slice: 25%;
 }
 ol {
     font-size: 0.9em;

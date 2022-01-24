@@ -72,14 +72,20 @@ h4, h5, h6 {
     font-size: 1.1em;
 }
 blockquote {
-    font-size: 0.9em;
-    margin: 20px 0;
-    padding: 10px 20px;
-    border-left: 10px inset #8FBCBB;    // $nord7
-    background: #8FBCBB;                // $nord7
-    p:last-of-type{
-        margin: 0;
-    }
+    // font-size: 0.9em;
+    // margin: 20px 0;
+    // padding: 10px 20px;
+    // border-left: 10px inset #8FBCBB;    // $nord7
+    // background: #8FBCBB;                // $nord7
+    // p:last-of-type{
+    //     margin: 0;
+    // }
+    border : 30px solid transparent;
+    margin : 10px;
+    padding: 5px;
+    -webkit-border-image: url("../img/border.png") round;
+    border-image: url("../img/border.png") round;
+    border-image-slice: 36%;
 }
 ol {
     font-size: 0.9em;

@@ -52,22 +52,12 @@ hr {
     border-top: 1px solid #eee;
     margin: 20px 0px 200px;
 }
-
-
-///////////
-// h1 {
-//     font-size: 4em;
-//     font-weight: bolder;
-//     margin: 100px 0 10px;
-//     background-color: #48D33A;
-//     display: inline-block;
-// }
-// h1 {
-//     margin: 9px 0 10px;
-//     border-bottom: 2px solid;
-//     font-size: 3em;
-//     font-weight: 900;
-// }
+h1 {
+    margin: 9px 0 10px;
+    border-bottom: 2px solid;
+    font-size: 3em;
+    font-weight: 900;
+}
 h1{
     height: 50px;
     position: relative;
@@ -79,30 +69,7 @@ h1{
     padding-top:25px;
     padding-bottom:25px;
 }
-h1::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-repeat: repeat;
-    height: 10px;
-    background-size: 20px 20px;
-    background-image:
-     radial-gradient(circle at 10px -5px, transparent 12px, #fff 13px);
-}
-h1::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-repeat: repeat;
-    height: 15px;
-    background-size: 40px 20px;
-    background-image:
-      radial-gradient(circle at 10px 15px, #fff 12px, transparent 13px);
-}
+
 h2 {
     margin: 50px 0 10px;
     font-size: 1.5em;
@@ -188,14 +155,38 @@ em {
 }
 u {
     display: block;
-    height: 25px;
-    line-height: 25px;
-    margin: 30px 0 -14px;
+    position: relative;
+    height: 50px;
+    line-height: 40px;
+    margin: 30px 0 -15px;
     padding-left: 15px;
-    
     background-color: #4C566A;
     color: #ECEFF4;
     text-decoration: none;
-    border-top: 1px solid;
-    font-size: 16.5px;
+    font-size: 18px;
+    font-weight: bold;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat;
+        height: 10px;
+        background-size: 20px 20px;
+        background-image:
+         radial-gradient(circle at 10px -5px, transparent 12px, #2D2D2D 13px);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat;
+        height: 15px;
+        background-size: 40px 20px;
+        background-image:
+          radial-gradient(circle at 10px 15px, #2D2D2D 12px, transparent 13px);
+    }
 }

@@ -32,6 +32,7 @@ nav {
     background-color: White;
     width: 1200px;
     margin: 0 auto;
+    margin-top: 100px;
     margin-bottom: 20px;
     .left {
         float: left;
@@ -104,10 +105,12 @@ nav {
         display: none;
     }
     aside {
-        float: left;
+        position: sticky;
+        top: 0;
+        float: right;
         width: 300px;
         .wrap {
-            position: fixed;
+            // position: fixed;
             width: 300px;
             padding: 20px 0;
             padding-right: 10px;

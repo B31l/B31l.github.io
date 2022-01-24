@@ -135,10 +135,7 @@ img {
     // border-radius: 10px;
     
 }
-strong {
-    // font-size: 125%;
-    background-color: #BF616A;
-}
+
 em {
     font-weight: 900;
 }
@@ -177,4 +174,12 @@ u {
         background-image:
           radial-gradient(circle at 10px 15px, #2D2D2D 12px, transparent 13px);
     }
+}
+s {
+    display: block;
+    height: 50px;
+    margin-left: -15px;
+    padding-left: 15px;
+    background-color: #BF616A;
+    color: white;
 }

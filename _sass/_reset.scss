@@ -137,8 +137,7 @@ table {
     }
 }
 p {
-    // margin: 0 0 14px;
-    margin: 14px 0;
+    margin: 0 0 14px;
 }
 img {
     max-width: 100%;
@@ -148,9 +147,9 @@ img {
 // strong {
 //     font-size: 125%;
 // }
-
-
-
+em {
+    font-weight: 900;
+}
 u {
     display: block;
     height: 25px;
@@ -162,5 +161,5 @@ u {
     color: #ECEFF4;
     text-decoration: none;
     border-top: 1px solid;
-    font-size: 15px;
+    font-size: 16.5px;
 }

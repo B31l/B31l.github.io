@@ -63,7 +63,10 @@ hr {
 // }
 h1 {
     margin: 9px 0 10px;
-    border-bottom: 1px solid;
+    padding-left: 17px;
+    border: solid;
+    border-bottom: none;
+    border-radius: 0 25px 0 0;
     font-size: 3em;
     font-weight: 900;
 }
@@ -71,6 +74,9 @@ h2 {
     margin: 50px 0 10px;
     font-size: 2em;
     font-weight: 700;
+    border-left: 10px solid;
+    border-bottom: 2px solid;
+    padding-left: 10px;
 }
 h3 {
     margin: 25px 0 10px;

@@ -166,8 +166,11 @@ nav {
                         a {
                             padding-left: 30px;
                         }
-                        ul > a {
-                            padding-left: 60px;
+                        // h3
+                        ul {
+                            a {
+                                padding-left: 60px;
+                            }
                         }
                     }
                 }

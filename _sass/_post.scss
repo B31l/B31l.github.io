@@ -19,7 +19,6 @@
         display: block;
         height: 25px;
         line-height: 25px;
-        padding-left: 15px;
         border-bottom: 1px dotted;
         box-sizing: border-box;
         color: #4C566A;
@@ -30,9 +29,12 @@
         }
     }
     >li >a {
-        padding-left: 45px;
+        padding-left: 15px;
     }
     >li >ul >li >a {
+        padding-left: 45px;
+    }
+    >li >ul >li >ul >li >a {
         padding-left: 75px;
     }
 

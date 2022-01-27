@@ -2,7 +2,7 @@
 
 #markdown-toc {
     /* display: none; */
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
     border: solid #4C566A;
     line-height: 2;
@@ -86,7 +86,8 @@
             }
         }
         .post-recent {
-            display: flex;
+            // display: flex;
+            display: none;
             height: auto;
             .prenex {
                 width: 49%;

@@ -32,11 +32,14 @@ nav {
     background-color: White;
     width: 1200px;
     margin: 0 auto;
-    margin-top: 100px;
+    // margin-top: 100px;   // 헤더에 맞춤
+    margin-top: 20px;
     margin-bottom: 20px;
     .left {
-        float: left;
-        width: calc(100% - 300px);
+        // float: left;
+        // width: calc(100% - 300px);
+        width: 770px;
+        margin: 0 auto;
         padding: 20px 30px 0;
         font-size: 16px;
         a:not([title]){
@@ -202,9 +205,9 @@ nav {
     .page {
         width: 100%;
         border: none;
+        margin: 0;
         .left {
             width: 100%;
-            float: left;
             padding: 10px 14px;
             font-size: 14px;
             >h1 {

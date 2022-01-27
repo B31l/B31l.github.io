@@ -245,7 +245,8 @@ nav {
             }
         }
         .anchor {
-            display: block;
+            // display: block;
+            display: none;
             visibility: visible;
             position: fixed;
             top: 125px;

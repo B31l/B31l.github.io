@@ -152,14 +152,13 @@ img {
 em {
     font-weight: 900;
 }
-u {
+u, s {
     display: block;
     position: relative;
     height: 50px;
     line-height: 40px;
     margin: 30px 0 -15px;
     padding-left: 15px;
-    background-color: #D8DEE9;
     color: Black;
     text-decoration: none;
     font-size: 18px;
@@ -189,40 +188,9 @@ u {
           radial-gradient(circle at 10px 15px, #2D2D2D 12px, transparent 13px);
     }
 }
+u {
+    background-color: #D8DEE9;
+}
 s {
-    display: block;
-    position: relative;
-    height: 50px;
-    line-height: 40px;
-    margin: 30px 0 -15px;
-    padding-left: 15px;
     background-color: #88C0D0;
-    color: Black;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 900;
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-repeat: repeat;
-        height: 10px;
-        background-size: 20px 20px;
-        background-image:
-         radial-gradient(circle at 10px -5px, transparent 12px, #2D2D2D 13px);
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-repeat: repeat;
-        height: 15px;
-        background-size: 40px 20px;
-        background-image:
-          radial-gradient(circle at 10px 15px, #2D2D2D 12px, transparent 13px);
-    }
 }

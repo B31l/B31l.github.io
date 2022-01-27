@@ -1,7 +1,46 @@
 @import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
 
 #markdown-toc {
-    display: none;
+    /* display: none; */
+    margin: 0;
+    padding: 0;
+    border: solid #4C566A;
+    line-height: 2;
+    font-size: 15px;
+    font-weight: bold;
+    list-style: none;
+    overflow-y: auto;
+    a {
+        display: block;
+        height: 25px;
+        line-height: 25px;
+        padding-left: 15px;
+        border-bottom: 1px dotted;
+        box-sizing: border-box;
+        color: #4C566A;
+        transition: 0.5s ease;
+        &:hover {
+            color: #ECEFF4;             // $nord6: 글자색
+            background-color: #5E81AC;  // $nord10: hover색
+        }
+    }
+    // h2
+    // ul {
+    //     padding: 0;
+    //     list-style: none;
+    //     line-height: 1.5;
+    //     font-size: 15px;
+    //     font-weight: normal;
+    //     a {
+    //         padding-left: 30px;
+    //     }
+    //     // h3
+    //     ul {
+    //         a {
+    //             padding-left: 60px;
+    //         }
+    //     }
+    // }
 }
 .page[post] {
     .label {
@@ -58,6 +97,9 @@
                 // transform:scale(1.1)
             }
         }
+    }
+    aside {
+        display: none;
     }
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {

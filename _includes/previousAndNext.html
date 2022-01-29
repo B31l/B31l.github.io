@@ -1,20 +1,16 @@
-<div class="post-recent">
-
-    <div class="prenex">
+<div class="previousAndNext">
+    <div class="neighbor">
         {% if page.previous %}
             <button style="text-align: left;" onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
                 &nbsp;&nbsp;&lt;&lt;&nbsp;&nbsp;{{ page.previous.title }}
             </button>
         {% endif %}
     </div>
-
-    <div class="prenex">
+    <div class="neighbor">
         {% if page.next %}
             <button style="text-align: right;" onClick="location.href='{{ page.next.url | prepend: site.baseurl }}'">
-            <!-- href="{{ page.next.url | prepend: site.baseurl }}"> -->
                 {{ page.next.title }}&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;
             </button> 
         {% endif %}
     </div>
-    
 </div>

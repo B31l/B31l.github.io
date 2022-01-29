@@ -85,57 +85,15 @@
                 margin: 0;
             }
         }
-        .post-recent {
-            // display: flex;
-            display: none;
-            height: auto;
-            .prenex {
-                width: 49%;
-                height: 30px;
-                margin: 5px auto;
-            }
-            button {
-                width: 100%;
-                height: 30px;
-                line-height: 30px;
-                background: white;
-                padding: 0;
-                box-sizing: border-box;
-                text-align: center;
-                font-size: 1rem;
-                font-weight: bold;
-                cursor: pointer;
-            }
-            button:hover {
-                background-color: #4C566A;
-                color: #ECEFF4;
-                // transform:scale(1.1)
-            }
-        }
-    }
-    aside {
-        display: none;
-    }
-}
-@media screen and (max-width:1200px) and (min-width: 770px) {
-    .page[post] {
-        section {
-            .post-recent {
-                display: block;
-                .prenex {
-                    width: 100%;
-                }
-            }
-        }
     }
 }
 @media screen and (max-width: 770px) {
     .page[post] {
         section {
             font-size: 15px;
-            .post-recent {
+            .previousAndNext {
                 display: block;
-                .prenex {
+                .neighbor {
                     width: 100%;
                 }
             }

@@ -1,24 +1,24 @@
 @import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
 
-code {   /* <쪼그만 코드> */
+code {  // ``
     padding: 0 5px;
     background-color: #EBCB8B;
     color: Black;
     font-weight: bold;
 }
 
-pre {   // <커다란 블록>
+pre {
     margin: 0;
     padding: 1em;
     word-wrap: break-word;      /* IE 5.5-7 */
     white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
     white-space: pre-wrap;      /* current browsers */
-    > code {   // <블록 내의 한 줄 한 줄
+    > code {   // 코드
         margin: 0;
         padding: 0;
         background-color: #2D2D2D;
         color: #ECEFF4;
-        font-size: 16.5px;
+        font-size: 13.5px;
         font-weight: normal;
         line-height: 1.5;
         tab-size: 4;

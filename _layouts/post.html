@@ -4,16 +4,17 @@ layout: default
 
 <div class="page clearfix" post>
     <nav>
-        네비
+        <div class="wrapper">
+            네비
+        </div>
     </nav>
     <section>
         {% include information.html %}
         {% include previousAndNext.html %}
         <article itemscope itemtype="http://schema.org/BlogPosting">
-        {{content}}
+            {{content}}
         </article>
-        <hr>
-        <div class="giscus"></div>
+        {% include giscus.html %}
     </section>
     <aside>
         <div class="wrap">
@@ -28,27 +29,12 @@ layout: default
     </aside>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
 </div>
-
 <script>
-// target _blank
-(function() {
-    var aTags = document.querySelectorAll('article a:not([id])')
-    for (var i = 0; i < aTags.length; i++) {
-        aTags[i].setAttribute('target', '_blank')
-    }
-}());
+    (function() {
+        var aTags = document.querySelectorAll('article a:not([id])')
+        for (var i = 0; i < aTags.length; i++) {
+            aTags[i].setAttribute('target', '_blank')
+        }
+    }());
 </script>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-<script src="https://giscus.app/client.js"
-        data-repo="B31l/B31l.github.io"
-        data-repo-id="R_kgDOGKiWYA"
-        data-category="General"
-        data-category-id="DIC_kwDOGKiWYM4CAi6o"
-        data-mapping="pathname"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-theme="light"
-        data-lang="ko"
-        crossorigin="anonymous"
-        async>
-</script>

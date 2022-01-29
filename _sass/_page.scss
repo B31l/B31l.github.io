@@ -13,6 +13,14 @@
     width: 1200px;
     margin: 0px auto;   // margin-top: 100px;   // 헤더에 맞춤
     background-color: White;
+    nav {
+        float: left;
+        width: 50px;
+        height: 100vh;
+        padding: 20px 10px;
+        background-color: blueviolet;
+        position: sticky;
+    }
     section {
         float: left;
         // width: calc(100% - 300px);
@@ -91,7 +99,7 @@
         float: left;
         width: 300px;
         .wrap {
-            width: 300px;
+            width: 100%;
             padding: 20px 0;
             // padding-right: 10px;
             .side {

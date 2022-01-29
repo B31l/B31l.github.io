@@ -1,43 +1,6 @@
 @import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
 
-#markdown-toc {
-    /* display: none; */
-    margin: 10px 0;
-    padding: 0;
-    border: solid #4C566A;
-    line-height: 2;
-    font-size: 15px;
-    font-weight: bold;
-    overflow-y: auto;
-    ul {
-        padding: 0;
-    }
-    li {
-        list-style: none;
-    }
-    a {
-        display: block;
-        height: 25px;
-        line-height: 25px;
-        border-bottom: 1px dotted;
-        box-sizing: border-box;
-        color: #4C566A;
-        transition: 0.5s ease;
-        &:hover {
-            color: #ECEFF4;             // $nord6: 글자색
-            background-color: #5E81AC;  // $nord10: hover색
-        }
-    }
-    >li >a {
-        padding-left: 15px;
-    }
-    >li >ul >li >a {
-        padding-left: 45px;
-    }
-    >li >ul >li >ul >li >a {
-        padding-left: 75px;
-    }
-}
+
 .page[post] {
     .label {
         margin-top: 16px;
@@ -69,29 +32,30 @@
         }
     }
 }
-@media screen and (max-width: 770px) {
-    .page[post] {
-        section {
-            font-size: 15px;
 
-            h2 {
-                font-size: 24px;
-            }
-            h3 {
-                font-size: 20px;
-            }
-            h4 {
-                font-size: 18px;
-            }
-            h5 {
-                font-size: 16px;
-            }
-            h6 {
-                font-size: 15px;
-            }
-            table {
-                width: 100%;
-            }
+@media screen and (max-width: 770px) {
+.page[post] {
+    section {
+        font-size: 15px;
+
+        h2 {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+        h6 {
+            font-size: 15px;
+        }
+        table {
+            width: 100%;
         }
     }
+}
 }

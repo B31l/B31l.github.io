@@ -1,9 +1,9 @@
 nav {
-    position: sticky;
-    top: 0;
-    float: left;
-    width: 70px;
+    position: sticky; top: 0;
+    float: right;
+    width: 100px;
     padding: 20px 10px;
+    box-sizing: border-box;
     .wrapper {
         width: 100%;
         background-color: #ECEFF4;

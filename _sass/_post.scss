@@ -75,7 +75,7 @@
             }
         }
     }
-    .left {
+    section {
         ul {
             >h2 {
                 color: #333;
@@ -119,7 +119,7 @@
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {
     .page[post] {
-        .left {
+        section {
             .post-recent {
                 display: block;
                 .prenex {
@@ -131,7 +131,7 @@
 }
 @media screen and (max-width: 770px) {
     .page[post] {
-        .left {
+        section {
             font-size: 15px;
             .post-recent {
                 display: block;

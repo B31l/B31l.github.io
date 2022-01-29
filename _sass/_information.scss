@@ -1,0 +1,41 @@
+.information {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: #4C566A;
+    color: white;
+    text-align: center;
+    .information-meta {
+        font-size: 6em;
+        font-weight: bold;
+    }
+    .information-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .information-label >.label-card {
+        margin-bottom: 10px;
+        a {
+            color: White;
+        }
+    }
+}
+@media screen and (max-width:1200px) and (min-width: 770px) {
+    .information {
+        width: 100%;
+        border: none;
+        .information-meta {
+            font-size: 4em;
+        }
+    }
+}
+@media screen and (max-width: 770px) {
+    .information {
+        width: 100%;
+        border: none;
+        .information-meta {
+            font-size: 2em;
+        }
+    }
+}

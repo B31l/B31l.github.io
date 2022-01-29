@@ -4,15 +4,7 @@ layout: default
 
 <div class="page clearfix" post>
     <section>
-        <nav>
-            <div class="nav-meta">{{page.meta}}</div>
-            <div class="nav-title">{{page.title}}</div>
-            <div class="nav-label">
-                <!-- <div class="label-card"><i class="fa fa-calendar"></i>{{ page.date | date: "%F" }}</div> -->
-                <div class="label-card">{% include category.html %}</div>
-                <div class="label-card">{% include tag.html %}</div>
-            </div>
-        </nav>
+        {% include information.html %}
         {% include previousAndNext.html %}
         <article itemscope itemtype="http://schema.org/BlogPosting">
         {{content}}

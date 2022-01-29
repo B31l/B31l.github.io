@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="page clearfix" post>
-    <div class="left">
+    <section>
         <nav>
             <div class="nav-meta">{{page.meta}}</div>
             <div class="nav-title">{{page.title}}</div>
@@ -19,8 +19,7 @@ layout: default
         </article>
         <hr>
         <div class="giscus"></div>
-    </div>
-    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    </section>
     <aside>
         <div class="wrap">
             <div class="side content">
@@ -32,6 +31,7 @@ layout: default
             </div>
         </div>
     </aside>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
     <div class="cat">
         <ul>
             {% assign Cat = {{post.category}} %}

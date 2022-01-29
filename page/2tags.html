@@ -8,7 +8,7 @@ type: page
 
 
 <div class="page clearfix">
-    <div class="left">
+    <section>
         {% capture tags %}
           {% for tag in site.tags %}
             {{ tag[0] }}
@@ -31,8 +31,8 @@ type: page
           {% endfor %}
         {% endfor %}
         </ul>
-    </div>
-    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    </section>
+    
     <aside>
         <div class="wrap">
             <div class="side content">
@@ -51,5 +51,6 @@ type: page
             </div>
         </div>
     </aside>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
 </div>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>

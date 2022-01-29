@@ -127,37 +127,5 @@
         }
 
     }
-    aside {
-        visibility: hidden;
-        // display: none;
-        position: fixed;
-        // z-index: 190;
-        float: none;
-        width: auto;
-        max-width: 95%;
-        padding: 0;
-        top: 125px;
-        right: 2.5%;
-        opacity: 0;
-        transform-origin: 100% 0;
-        transform: scale(0.1);
-        transition: 0.2s cubic-bezier(0.5, 0.1, 0.51, 1.38);
-        .side {
-            border: none;
-        }
-    }
-    .right-show {
-        z-index: 999;
-        visibility: visible;
-        opacity: 1;
-        transform: scale(1);
-        .side {
-            .content-ul{
-                margin-bottom: 0;
-                // >li:last-of-type{
-                //   margin-bottom: 16px;
-                // }
-            }
-        }
-    }
+
 }

@@ -10,13 +10,11 @@
     *zoom: 1;
 }
 .page {
-    display: flex;
     width: 1200px;
-    margin: 20px auto;
-    // margin-top: 100px;   // 헤더에 맞춤
+    margin: 0px auto;   // margin-top: 100px;   // 헤더에 맞춤
     background-color: White;
     section {
-        // float: left;
+        float: left;
         // width: calc(100% - 300px);
         width: 770px;
         margin: 0 auto;
@@ -90,13 +88,12 @@
     aside {
         position: sticky;
         top: 0;
-        float: right;
+        float: left;
         width: 300px;
         .wrap {
-            // position: fixed;
             width: 300px;
             padding: 20px 0;
-            padding-right: 10px;
+            // padding-right: 10px;
             .side {
                 width: 100%;
                 box-sizing: border-box;

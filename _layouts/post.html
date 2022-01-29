@@ -24,17 +24,6 @@ layout: default
         </div>
     </aside>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
-    <div class="cat">
-        <ul>
-            {% assign Cat = {{post.category}} %}
-            {% assign Cats = site.categories[Cat] | reverse %}
-            {% for post in Cats %}
-                <li onclick="location.href='{{ post.url | prepend: site.baseurl }}'">  
-                    {{ post.title }}
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
 </div>
 
 <script>

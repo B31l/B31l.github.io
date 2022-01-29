@@ -37,24 +37,6 @@
     >li >ul >li >ul >li >a {
         padding-left: 75px;
     }
-
-    // h2
-    // ul {
-    //     padding: 0;
-    //     list-style: none;
-    //     line-height: 1.5;
-    //     font-size: 15px;
-    //     font-weight: normal;
-    //     a {
-    //         padding-left: 30px;
-    //     }
-    //     // h3
-    //     ul {
-    //         a {
-    //             padding-left: 60px;
-    //         }
-    //     }
-    // }
 }
 .page[post] {
     .label {
@@ -91,12 +73,7 @@
     .page[post] {
         section {
             font-size: 15px;
-            .previousAndNext {
-                display: block;
-                .neighbor {
-                    width: 100%;
-                }
-            }
+
             h2 {
                 font-size: 24px;
             }

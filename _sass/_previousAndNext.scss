@@ -1,5 +1,6 @@
 .previousAndNext {
-    display: flex;
+    // display: flex;
+    display: none;
     height: auto;
     .neighbor {
         width: 49%;
@@ -27,7 +28,8 @@
 
 @media screen and (max-width:770px) {
 .previousAndNext {
-    display: block;
+    // display: block;
+    display: none;
     .neighbor {
         width: 100%;
     }

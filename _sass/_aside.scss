@@ -14,7 +14,6 @@ aside {
                 width: 150px;
                 height: 150px;
                 margin: 0 auto;
-                margin-bottom: 15px;
                 border: solid;
                 border-radius: 50%;
                 background-color: #D8DEE9;
@@ -23,12 +22,16 @@ aside {
                 font-weight: 900;
             }
             .profile-body {
+                margin-top: 20px;
                 font-size: 1.25em;
                 font-weight: 900;
             }
             .profile-tail {
+                display: none;
+                margin-top: 10px;
                 font-size: 1.25em;
                 a {
+                    margin-right: 15px;
                     color: #4C566A;
                 }
             }

@@ -1,0 +1,109 @@
+aside {
+    position: sticky;
+    top: 0;
+    float: right;
+    width: 300px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    .wrap {
+        width: 100%;
+        // padding-right: 10px;
+        .side {
+            width: 100%;
+            box-sizing: border-box;
+            background-color: White;
+            -ms-word-break: break-all;
+            word-break: break-all;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            .tocTitle {
+                height: 50px;
+                line-height: 50px;
+                background-color: #4C566A;
+                color: white;
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .content-ul {
+                margin: 0;
+                padding: 0;
+                border: solid #4C566A;
+                line-height: 2;
+                font-size: 15px;
+                font-weight: bold;
+                list-style: none;
+                overflow-y: auto;
+                a {
+                    display: block;
+                    height: 25px;
+                    line-height: 25px;
+                    padding-left: 15px;
+                    border-bottom: 1px dotted;
+                    box-sizing: border-box;
+                    color: #4C566A;
+                    transition: 0.5s ease;
+                    &:hover {
+                        color: #ECEFF4;             // $nord6: 글자색
+                        background-color: #5E81AC;  // $nord10: hover색
+                    }
+                }
+                // h2
+                ul {
+                    padding: 0;
+                    list-style: none;
+                    line-height: 1.5;
+                    font-size: 15px;
+                    font-weight: normal;
+                    a {
+                        padding-left: 30px;
+                    }
+                    // h3
+                    ul {
+                        a {
+                            padding-left: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+aside {
+    visibility: hidden;
+    // display: none;
+    position: fixed;
+    // z-index: 190;
+    float: none;
+    width: auto;
+    max-width: 95%;
+    padding: 0;
+    top: 125px;
+    right: 2.5%;
+    opacity: 0;
+    transform-origin: 100% 0;
+    transform: scale(0.1);
+    transition: 0.2s cubic-bezier(0.5, 0.1, 0.51, 1.38);
+    .side {
+        border: none;
+    }
+}
+.right-show {
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    .side {
+        .content-ul{
+            margin-bottom: 0;
+            // >li:last-of-type{
+            //   margin-bottom: 16px;
+            // }
+        }
+    }
+}
+}

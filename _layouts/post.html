@@ -3,11 +3,8 @@ layout: default
 ---
 
 <div class="page clearfix" post>
-    <nav>
-        <div class="wrapper">
-            네비
-        </div>
-    </nav>
+    {% include nav.html %}
+    {% include aside.html %}
     <section>
         {% include information.html %}
         {% include previousAndNext.html %}
@@ -16,18 +13,6 @@ layout: default
         </article>
         {% include giscus.html %}
     </section>
-    <aside>
-        <div class="wrap">
-            <div class="side content">
-                <div class=tocTitle>
-                    <i class="fa fa-bars"></i>
-                </div>
-                <ul id="content-side" class="content-ul">
-                </ul>
-            </div>
-        </div>
-    </aside>
-    <button class="anchor"><i class="fa fa-anchor"></i></button>
 </div>
 <script>
     (function() {

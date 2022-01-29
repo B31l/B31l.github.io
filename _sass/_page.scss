@@ -13,17 +13,6 @@
     width: 1200px;
     margin: 0px auto;   // margin-top: 100px;   // 헤더에 맞춤
     background-color: White;
-    nav {
-        position: sticky;
-        top: 0;
-        float: left;
-        width: 70px;
-        .wrapper {
-            width: 100%;
-            padding: 20px 10px;
-            background-color: #4C566A;
-        }
-    }
     section {
         float: left;
         width: 770px;
@@ -92,81 +81,6 @@
             }
         }
     }
-    .anchor {
-        display: none;
-    }
-    aside {
-        position: sticky;
-        top: 0;
-        float: left;
-        width: 300px;
-        .wrap {
-            width: 100%;
-            padding: 20px 0;
-            // padding-right: 10px;
-            .side {
-                width: 100%;
-                box-sizing: border-box;
-                background-color: White;
-                -ms-word-break: break-all;
-                word-break: break-all;
-                -webkit-hyphens: auto;
-                -moz-hyphens: auto;
-                -ms-hyphens: auto;
-                hyphens: auto;
-                .tocTitle {
-                    height: 50px;
-                    line-height: 50px;
-                    background-color: #4C566A;
-                    color: white;
-                    text-align: center;
-                    font-size: 25px;
-                    font-weight: bold;
-                }
-                .content-ul {
-                    margin: 0;
-                    padding: 0;
-                    border: solid #4C566A;
-                    line-height: 2;
-                    font-size: 15px;
-                    font-weight: bold;
-                    list-style: none;
-                    overflow-y: auto;
-                    a {
-                        display: block;
-                        height: 25px;
-                        line-height: 25px;
-                        padding-left: 15px;
-                        border-bottom: 1px dotted;
-                        box-sizing: border-box;
-                        color: #4C566A;
-                        transition: 0.5s ease;
-                        &:hover {
-                            color: #ECEFF4;             // $nord6: 글자색
-                            background-color: #5E81AC;  // $nord10: hover색
-                        }
-                    }
-                    // h2
-                    ul {
-                        padding: 0;
-                        list-style: none;
-                        line-height: 1.5;
-                        font-size: 15px;
-                        font-weight: normal;
-                        a {
-                            padding-left: 30px;
-                        }
-                        // h3
-                        ul {
-                            a {
-                                padding-left: 60px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {
     .page {
@@ -211,25 +125,7 @@
                 }
             }
         }
-        .anchor {
-            // display: block;
-            display: none;
-            visibility: visible;
-            position: fixed;
-            top: 125px;
-            right: 2.5%;
-            padding: 5px 10px;
-            color: #333;
-            font-size: 15px;
-            background-color: #f8f8fd;
-            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
-            opacity: 0.7;
-            transition: 0.2s cubic-bezier(0.5, 0.1, 0.51, 1.38);
-        }
-        .anchor-hide {
-            opacity: 0;
-            visibility: hidden;
-        }
+
     }
     aside {
         visibility: hidden;

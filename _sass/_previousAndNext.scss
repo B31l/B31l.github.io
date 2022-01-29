@@ -1,5 +1,6 @@
 .previousAndNext {
-    display: flex;
+    // display: flex;
+    display: block;
     height: auto;
     .neighbor {
         width: 49%;
@@ -25,11 +26,11 @@
     }
 }
 
-@media screen and (max-width:1200px) {
-.previousAndNext {
-    display: block;
-    .neighbor {
-        width: 100%;
-    }
-}
-}
+// @media screen and (max-width:1200px) {
+// .previousAndNext {
+//     display: block;
+//     .neighbor {
+//         width: 100%;
+//     }
+// }
+// }

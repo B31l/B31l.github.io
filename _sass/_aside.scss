@@ -1,13 +1,15 @@
 aside { // nord-0 사용
     position: sticky; top: 0; right: 0;
-    float: right;
+    float: left;
     width: 370px;
     height: 100vh;
-    padding: 70px 0 20px 40px;
+    padding: 70px 40px 20px 0px;
     box-sizing: border-box;
     .wrap {
         width: 100%; height: 100%;
         .profile {
+            position: fixed; top: 0;
+            width: 330px;
             height: 250px;
             margin-bottom: 50px;
             padding: 15px;
@@ -40,7 +42,9 @@ aside { // nord-0 사용
             }
         }
         .side {
-            width: 100%;
+            // width: 100%;
+            position: fixed; bottom: 0;
+            width: 330px;
             max-height: 500px;
             border-radius: 15px 15px 0 0;
             box-shadow: 0 0 15px Black;

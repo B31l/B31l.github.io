@@ -5,6 +5,7 @@ aside { // nord-0 사용
     height: 100vh;
     padding: 70px 0 20px 40px;
     box-sizing: border-box;
+    font-family: monospace;
     .wrap {
         width: 100%; height: 100%;
         .profile {
@@ -12,12 +13,12 @@ aside { // nord-0 사용
             margin-bottom: 50px;
             padding: 15px;
             border-radius: 0 0 15px 15px;
+            box-shadow: 0 0 15px Black;
             background-color: #2E3440;
             .profile-head {
                 width: 150px;
                 height: 150px;
                 margin: 0 auto;
-                border: solid;
                 border-radius: 50%;
                 background-color: #D8DEE9;
                 text-align: center;
@@ -26,24 +27,25 @@ aside { // nord-0 사용
                 cursor: pointer;
             }
             .profile-body {
-                display: none;
                 margin-top: 20px;
-                font-size: 1.25em;
+                font-size: 15px;
                 font-weight: 900;
+                color: White;
             }
             .profile-tail {
-                display: none;
                 margin-top: 10px;
-                font-size: 1.25em;
+                font-size: 15px;
                 a {
                     margin-right: 15px;
-                    color: #4C566A;
+                    color: White;
                 }
             }
         }
         .side {
             width: 100%;
             max-height: 500px;
+            border-radius: 15px 15px 0 0;
+            box-shadow: 0 0 15px Black;
             box-sizing: border-box;
             // background-color: White;
             -ms-word-break: break-all;
@@ -77,9 +79,10 @@ aside { // nord-0 사용
                     height: 25px;
                     line-height: 25px;
                     padding-left: 15px;
-                    border-top: 1px dotted;
+                    border-top: 1px dotted #88C0D0;
                     box-sizing: border-box;
-                    color: #88C0D0;
+                    color: White;
+                    font-weight: 500;
                     transition: 0.5s ease;
                     &:hover {
                         color: #ECEFF4;             // $nord6: 글자색

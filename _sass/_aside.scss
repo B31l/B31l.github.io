@@ -5,7 +5,6 @@ aside { // nord-0 사용
     height: 100vh;
     padding: 70px 0 20px 40px;
     box-sizing: border-box;
-    font-family: monospace;
     .wrap {
         width: 100%; height: 100%;
         .profile {
@@ -29,7 +28,6 @@ aside { // nord-0 사용
             .profile-body {
                 margin-top: 20px;
                 font-size: 15px;
-                font-weight: 900;
                 color: White;
             }
             .profile-tail {
@@ -48,6 +46,7 @@ aside { // nord-0 사용
             box-shadow: 0 0 15px Black;
             box-sizing: border-box;
             // background-color: White;
+            font-family: monospace;
             -ms-word-break: break-all;
             word-break: break-all;
             -webkit-hyphens: auto;
@@ -59,7 +58,7 @@ aside { // nord-0 사용
                 line-height: 50px;
                 border-radius: 15px 15px 0 0;
                 background-color: #2E3440;
-                color: #88C0D0;
+                color: White;
                 text-align: center;
                 font-size: 25px;
                 font-weight: bold;

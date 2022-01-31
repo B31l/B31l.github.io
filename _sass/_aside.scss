@@ -1,4 +1,4 @@
-aside {
+aside { // nord-0 사용
     position: sticky; top: 0; right: 0;
     float: right;
     width: 370px;
@@ -8,8 +8,11 @@ aside {
     .wrap {
         width: 100%; height: 100%;
         .profile {
+            height: 250px;
+            margin-bottom: 50px;
             padding: 15px;
-            height: 300px;
+            border-radius: 0 0 15px 15px;
+            background-color: #2E3440;
             .profile-head {
                 width: 150px;
                 height: 150px;
@@ -40,9 +43,9 @@ aside {
         }
         .side {
             width: 100%;
-            height: 500px;
+            max-height: 500px;
             box-sizing: border-box;
-            background-color: White;
+            // background-color: White;
             -ms-word-break: break-all;
             word-break: break-all;
             -webkit-hyphens: auto;
@@ -52,8 +55,8 @@ aside {
             .tocTitle {
                 height: 50px;
                 line-height: 50px;
-                background-color: #4C566A;
-                color: white;
+                background-color: #2E3440;
+                color: #88C0D0;
                 text-align: center;
                 font-size: 25px;
                 font-weight: bold;
@@ -62,6 +65,7 @@ aside {
                 max-height: 450px;
                 margin: 0;
                 padding: 0;
+                background-color: #2E3440;
                 line-height: 2;
                 font-size: 15px;
                 font-weight: bold;
@@ -72,9 +76,9 @@ aside {
                     height: 25px;
                     line-height: 25px;
                     padding-left: 15px;
-                    border-bottom: 1px dotted;
+                    border-top: 1px dotted;
                     box-sizing: border-box;
-                    color: #4C566A;
+                    color: #88C0D0;
                     transition: 0.5s ease;
                     &:hover {
                         color: #ECEFF4;             // $nord6: 글자색

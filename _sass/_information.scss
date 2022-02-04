@@ -2,8 +2,8 @@
     width: 100%;
     margin: 30px auto;
     padding: 30px 0;
-    background: #4C566A;
-    color: white;
+    // background: #4C566A;
+    color: Black;
     text-align: center;
     .information-meta {
         font-size: 6em;
@@ -26,7 +26,10 @@
         width: 100%;
         border: none;
         .information-meta {
-            font-size: 4em;
+            font-size: 5em;
+        }
+        .information-title {
+            font-size: 1em;
         }
     }
 }
@@ -35,7 +38,10 @@
         width: 100%;
         border: none;
         .information-meta {
-            font-size: 2em;
+            font-size: 4em;
+        }
+        .information-title {
+            font-size: 1em;
         }
     }
 }

@@ -99,40 +99,20 @@ h4, h5, h6 {
     font-size: 1.1em;
 }
 blockquote {
-    // font-size: 0.9em;
-    // margin: 20px 0;
-    // padding: 10px 20px;
-    // border-left: 10px inset #8FBCBB;    // $nord7
-    // background: #8FBCBB;                // $nord7
-    // p:last-of-type{
-    //     margin: 0;
-    // }
     border: 25px solid transparent;
     margin: 10px 0;
     padding: 0;
     border-image: url("https://t1.daumcdn.net/cfile/tistory/99B1F5335AB1C77313") round;
     border-image-slice: 25%;
-    // background-color: White;
 }
 ol {
-    // font-size: 0.9em;
-    // margin: 20px 0;
-    // padding: 10px 20px;
-    // border-left: 10px inset #88C0D0;    // $nord8
-    // background: #88C0D0;                // $nord8
-    // list-style: none;
-    // p:last-of-type{
-    //     margin: 0;
-    // }
     list-style: none;
-    border: 25px solid transparent;
     margin: 10px 0;
-    padding: 0;
-    border-image: url("https://t1.daumcdn.net/cfile/tistory/99B1F5335AB1C77313") round;
-    border-image-slice: 25%;
-    // background-color: beige;
+    padding: 5px;
+    padding-left: 15px;
+    border: 1px solid;
+    border-left: 15px solid;
 }
-
 table {
     width: 100%;
     height: auto;
@@ -186,10 +166,10 @@ u, s {
     height: 25px;
     line-height: 30px;
     
-    margin: 25px 0 -25px;
+    margin: 25px 0 -15px;
     padding-left: 15px;
-    box-shadow: 0 0 10px black;
-    background-color: #D8DEE9;
+    // box-shadow: 0 0 10px black;
+    background-color: #88C0D0;
 
     color: Black;
     text-decoration: none;

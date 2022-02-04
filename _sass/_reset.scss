@@ -74,7 +74,7 @@ hr {
 h1 {
     display: inline-block;
     margin: 10px 0;
-    padding: 10px 10px 0 10px;
+    padding: 0 10px;
     border-radius: 15px;
     background-color: #88C0D0;
     color: black;
@@ -188,7 +188,7 @@ u, s {
     
     margin: 30px 0 -40px;
     padding-left: 15px;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px black;
     background-color: #D8DEE9;
 
     color: Black;
@@ -207,7 +207,7 @@ u, s {
     //     height: 10px;
     //     background-size: 20px 20px;
     //     background-image:
-    //      radial-gradient(circle at 10px -5px, transparent 12px, #2D2D2D 13px);
+    //      radial-gradient(circle at 10px -5px, transparent 12px, #171717 13px);
     // }
     // &::after {
     //     content: "";
@@ -219,7 +219,7 @@ u, s {
     //     height: 15px;
     //     background-size: 40px 20px;
     //     background-image:
-    //       radial-gradient(circle at 10px 15px, #2D2D2D 12px, transparent 13px);
+    //       radial-gradient(circle at 10px 15px, #171717 12px, transparent 13px);
     // }
 }
 // u {

@@ -16,7 +16,7 @@ pre {
     > code {   // 코드
         margin: 0;
         padding: 0;
-        background-color: #2D2D2D;
+        background-color: #171717;
         color: #ECEFF4;
         font-size: 13.5px;
         font-weight: normal;
@@ -27,7 +27,7 @@ pre {
 }
 
 
-$highlight-background   :#2D2D2D;
+$highlight-background   :#171717;
 $highlight-foreground   :#f8f8f2;
 $highlight-comment      :#999999;
 
@@ -55,9 +55,9 @@ $highlight-purple       :#8E59D7;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: -1px;
-    background: #2D2D2D;
-    .hll    { background-color: #2D2D2D }
-    .err    { background-color: #2D2D2D; color: #960050 } /* Error */
+    background: #171717;
+    .hll    { background-color: #171717 }
+    .err    { background-color: #171717; color: #960050 } /* Error */
     .w      { color: #ECEFF4 }    /* Text.Whitespace */
     .p      { color: #ECEFF4 } /* Punctuation 문장 부호 */ 
 

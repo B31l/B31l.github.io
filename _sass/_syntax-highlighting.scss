@@ -16,18 +16,19 @@ pre {
     > code {   // 코드
         margin: 0;
         padding: 0;
-        background-color: #171717;
+        background-color: #263238;
         color: #ECEFF4;
         font-size: 13.5px;
         font-weight: normal;
         line-height: 1.5;
+        letter-spacing: 0;
         tab-size: 4;
         font-family: Monaco, Consolas, "Lucida Console", monospace;
     }
 }
 
 
-$highlight-background   :#171717;
+$highlight-background   :#263238;
 $highlight-foreground   :#f8f8f2;
 $highlight-comment      :#999999;
 
@@ -55,9 +56,9 @@ $highlight-purple       :#8E59D7;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: -1px;
-    background: #171717;
-    .hll    { background-color: #171717 }
-    .err    { background-color: #171717; color: #960050 } /* Error */
+    background: #263238;
+    .hll    { background-color: #263238 }
+    .err    { background-color: #263238; color: #960050 } /* Error */
     .w      { color: #ECEFF4 }    /* Text.Whitespace */
     .p      { color: #ECEFF4 } /* Punctuation 문장 부호 */ 
 

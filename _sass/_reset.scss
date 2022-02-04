@@ -1,5 +1,5 @@
 @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff');
-
+@font-face { font-family: ‘yangjin’; src: url(‘https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff’) format(‘woff’); font-weight: normal; font-style: normal; }
 body,
 html,
 div,
@@ -55,8 +55,9 @@ hr {
 h1 {
     margin: 9px 0 10px;
     border-bottom: 2px solid;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 900;
+    font-family: 'yangjin';
 }
 h2 {
     margin: 50px 0 10px;

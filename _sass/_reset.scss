@@ -1,6 +1,6 @@
 @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff');
 @font-face { 
-    font-family: 'yangjin'; 
+    font-family: ‘yangjin’; 
     src: url(‘https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff’) format(‘woff’); 
     font-weight: normal; 
     font-style: normal; }
@@ -62,7 +62,8 @@ h1 {
     border-bottom: 2px solid;
     font-size: 2em;
     font-weight: 900;
-    font-family: 'yangjin';
+    font-family: ‘yangjin’;
+    color: black;
 }
 h2 {
     margin: 50px 0 10px;

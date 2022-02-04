@@ -11,6 +11,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Vitro_core';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 body,
@@ -74,7 +80,7 @@ h1 {
     color: black;
     font-size: 2.5em;
     font-weight: 900;
-    font-family: 'yangjin';
+    font-family: 'Vitro_core';
 }
 h2 {
     margin: 100px 0 10px;
@@ -82,7 +88,7 @@ h2 {
     color: black;
     font-size: 2em;
     font-weight: 500;
-    font-family: 'yangjin';
+    font-family: 'Vitro_core';
 }
 h3 {
     margin: 25px 0 10px;
@@ -177,46 +183,48 @@ em {
 u, s {
     display: block;
     position: relative;
-    height: 50px;
-    line-height: 40px;
+    height: 25px;
+    line-height: 25px;
     
     margin: 30px 0 -40px;
     padding-left: 15px;
-    box-shadow: 0 -5px 10px;
+    box-shadow: 0 0 10px;
+    background-color: #D8DEE9;
 
     color: Black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 900;
+    font-family: 'Vitro_core';
 
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-repeat: repeat;
-        height: 10px;
-        background-size: 20px 20px;
-        background-image:
-         radial-gradient(circle at 10px -5px, transparent 12px, #2D2D2D 13px);
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-repeat: repeat;
-        height: 15px;
-        background-size: 40px 20px;
-        background-image:
-          radial-gradient(circle at 10px 15px, #2D2D2D 12px, transparent 13px);
-    }
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     background-repeat: repeat;
+    //     height: 10px;
+    //     background-size: 20px 20px;
+    //     background-image:
+    //      radial-gradient(circle at 10px -5px, transparent 12px, #2D2D2D 13px);
+    // }
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     background-repeat: repeat;
+    //     height: 15px;
+    //     background-size: 40px 20px;
+    //     background-image:
+    //       radial-gradient(circle at 10px 15px, #2D2D2D 12px, transparent 13px);
+    // }
 }
-u {
-    background-color: #D8DEE9;
-}
-s {
-    background-color: #88C0D0;
-}
+// u {
+//     background-color: #D8DEE9;
+// }
+// s {
+//     background-color: #88C0D0;
+// }

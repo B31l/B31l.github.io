@@ -63,20 +63,26 @@ button {
 hr {
     border: 0;
     border-top: 1px solid #eee;
-    margin: 20px 0px 200px;
+    margin: 0 0 250px;
 }
 h1 {
-    margin: 9px 0 10px;
-    border-bottom: 2px solid;
-    font-size: 2em;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 10px 0 10px;
+    border-radius: 15px;
+    background-color: #88C0D0;
+    color: black;
+    font-size: 2.5em;
     font-weight: 900;
     font-family: 'yangjin';
-    color: black;
 }
 h2 {
-    margin: 50px 0 10px;
-    font-size: 1.5em;
-    font-weight: 700;
+    margin: 100px 0 10px;
+    border-bottom: solid;
+    color: black;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: 'yangjin';
 }
 h3 {
     margin: 25px 0 10px;

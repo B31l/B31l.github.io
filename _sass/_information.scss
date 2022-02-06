@@ -1,13 +1,14 @@
 .information {
     width: 100%;
-    margin: 30px auto;
+    margin: 30px auto 0;
     padding: 30px 0;
-    background: #4C566A;
-    color: white;
+    // background: #4C566A;
+    color: Black;
     text-align: center;
     .information-meta {
         font-size: 6em;
         font-weight: bold;
+        font-family: 'Vitro_core';
     }
     .information-title {
         font-size: 1.5em;
@@ -17,7 +18,7 @@
     .information-label >.label-card {
         margin-bottom: 10px;
         a {
-            color: White;
+            color: Black;
         }
     }
 }
@@ -26,7 +27,10 @@
         width: 100%;
         border: none;
         .information-meta {
-            font-size: 4em;
+            font-size: 5em;
+        }
+        .information-title {
+            font-size: 1em;
         }
     }
 }
@@ -35,7 +39,10 @@
         width: 100%;
         border: none;
         .information-meta {
-            font-size: 2em;
+            font-size: 4em;
+        }
+        .information-title {
+            font-size: 1em;
         }
     }
 }

@@ -1,4 +1,23 @@
 @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff');
+@font-face { 
+    font-family: 'yangjin'; 
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'D2Coding';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vitro_core';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body,
 html,
@@ -30,7 +49,7 @@ html {
 }
 body {
     font-family: Helvetica, Arial;
-    background-color: #ECEFF4;
+//     background-color: #ECEFF4;
     color: #4C566A;
     position: relative;
     min-height: 100vh;
@@ -50,18 +69,26 @@ button {
 hr {
     border: 0;
     border-top: 1px solid #eee;
-    margin: 20px 0px 200px;
+    margin: 0 0 250px;
 }
 h1 {
-    margin: 9px 0 10px;
-    border-bottom: 2px solid;
-    font-size: 3em;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 15px;
+    background-color: #88C0D0;
+    color: black;
+    font-size: 2.5em;
     font-weight: 900;
+    font-family: 'Vitro_core';
 }
 h2 {
-    margin: 50px 0 10px;
-    font-size: 1.5em;
-    font-weight: 700;
+    margin: 100px 0 10px;
+    border-bottom: solid;
+    color: black;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: 'Vitro_core';
 }
 h3 {
     margin: 25px 0 10px;
@@ -72,40 +99,20 @@ h4, h5, h6 {
     font-size: 1.1em;
 }
 blockquote {
-    // font-size: 0.9em;
-    // margin: 20px 0;
-    // padding: 10px 20px;
-    // border-left: 10px inset #8FBCBB;    // $nord7
-    // background: #8FBCBB;                // $nord7
-    // p:last-of-type{
-    //     margin: 0;
-    // }
     border: 25px solid transparent;
     margin: 10px 0;
     padding: 0;
     border-image: url("https://t1.daumcdn.net/cfile/tistory/99B1F5335AB1C77313") round;
     border-image-slice: 25%;
-    // background-color: White;
 }
 ol {
-    // font-size: 0.9em;
-    // margin: 20px 0;
-    // padding: 10px 20px;
-    // border-left: 10px inset #88C0D0;    // $nord8
-    // background: #88C0D0;                // $nord8
-    // list-style: none;
-    // p:last-of-type{
-    //     margin: 0;
-    // }
     list-style: none;
-    border: 25px solid transparent;
     margin: 10px 0;
-    padding: 0;
-    border-image: url("https://t1.daumcdn.net/cfile/tistory/99B1F5335AB1C77313") round;
-    border-image-slice: 25%;
-    // background-color: beige;
+    padding: 5px;
+    padding-left: 15px;
+    border: 1px solid;
+    border-left: 15px solid;
 }
-
 table {
     width: 100%;
     height: auto;
@@ -156,46 +163,48 @@ em {
 u, s {
     display: block;
     position: relative;
-    height: 50px;
-    line-height: 40px;
+    height: 25px;
+    line-height: 30px;
     
-    margin: 30px 0 -40px;
+    margin: 25px 0 -20px;
     padding-left: 15px;
-    box-shadow: 0 -5px 10px;
+    // box-shadow: 0 0 10px black;
+    background-color: #88C0D0;
 
     color: Black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 900;
+    font-family: 'yangjin';
 
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-repeat: repeat;
-        height: 10px;
-        background-size: 20px 20px;
-        background-image:
-         radial-gradient(circle at 10px -5px, transparent 12px, #2D2D2D 13px);
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-repeat: repeat;
-        height: 15px;
-        background-size: 40px 20px;
-        background-image:
-          radial-gradient(circle at 10px 15px, #2D2D2D 12px, transparent 13px);
-    }
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     background-repeat: repeat;
+    //     height: 10px;
+    //     background-size: 20px 20px;
+    //     background-image:
+    //      radial-gradient(circle at 10px -5px, transparent 12px, #263238 13px);
+    // }
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     background-repeat: repeat;
+    //     height: 15px;
+    //     background-size: 40px 20px;
+    //     background-image:
+    //       radial-gradient(circle at 10px 15px, #263238 12px, transparent 13px);
+    // }
 }
-u {
-    background-color: #D8DEE9;
-}
-s {
-    background-color: #88C0D0;
-}
+// u {
+//     background-color: #D8DEE9;
+// }
+// s {
+//     background-color: #88C0D0;
+// }

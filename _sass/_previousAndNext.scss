@@ -14,7 +14,7 @@
         height: 30px;
         line-height: 30px;
         padding: 0;
-        border-bottom: 1px solid;
+        border: 1px solid;
         box-sizing: border-box;
         
         background: white;
@@ -26,7 +26,6 @@
     button:hover {
         background-color: #8FBCBB;
         color: #ECEFF4;
-        // transform:scale(1.1)
     }
 }
 

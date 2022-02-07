@@ -12,14 +12,11 @@ aside { // nord-0 사용
         padding: 15px;
         box-shadow: 0 0 15px;
         .profile {  // 프로필
-            position: fixed; top: 0;
             width: auto;
             height: 250px;
             margin-bottom: 50px;
             padding: 15px;
-            border-radius: 0 0 15px 15px;
-            // box-shadow: 0 0 15px Black;
-            background-color: #2E3440;
+            font-weight: 900;
             .profile-head {
                 width: 150px;
                 height: 150px;
@@ -29,25 +26,21 @@ aside { // nord-0 사용
                 // background-color: #4C566A;
                 text-align: center;
                 font-size: 6em;
-                font-weight: 900;
                 cursor: pointer;
             }
             .profile-body {
                 margin-top: 20px;
                 font-size: 15px;
-                color: White;
             }
             .profile-tail {
                 margin-top: 10px;
                 font-size: 15px;
                 a {
                     margin-right: 15px;
-                    color: White;
                 }
             }
         }
         .side {
-            top: 0;
             max-height: 500px;
             box-sizing: border-box;
             font-family: monospace;

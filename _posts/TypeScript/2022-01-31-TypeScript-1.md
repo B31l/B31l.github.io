@@ -48,7 +48,7 @@ npm i -g ts-node
 ts-node hello.ts
 ```
 
-
+---
 
 # 프로젝트 만들기!
 

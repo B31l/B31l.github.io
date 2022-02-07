@@ -50,10 +50,10 @@ aside { // nord-0 사용
             -ms-hyphens: auto;
             hyphens: auto;
             .tocTitle {
-                height: 50px;
-                line-height: 50px;
+                height: 75px;
+                line-height: 75px;
                 border-bottom: 1px solid #2E3440;
-                color: White;
+                color: #ECEFF4;
                 text-align: center;
                 font-size: 25px;
                 font-weight: bold;
@@ -61,25 +61,26 @@ aside { // nord-0 사용
             .content-ul {
                 max-height: 450px;
                 margin: 0;
+                margin-top: 10px;
                 padding: 0;
                 line-height: 2;
-                font-size: 15px;
                 font-weight: bold;
                 list-style: none;
                 overflow-y: auto;
                 a {
                     display: block;
-                    height: 25px;
-                    line-height: 25px;
+                    height: 30px;
+                    line-height: 30px;
                     padding-left: 15px;
-                    border-top: 1px inset white;
+                    border-top: 1px inset;
                     box-sizing: border-box;
-                    color: White;
-                    font-weight: 500;
+                    color: #ECEFF4;
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-family: "D2coding";
                     transition: 0.5s ease;
                     &:hover {
-                        color: #ECEFF4;             // $nord6: 글자색
-                        background-color: #5E81AC;  // $nord10: hover색
+                        background-color: #8FBCBB;
                     }
                 }
                 // h2
@@ -87,8 +88,6 @@ aside { // nord-0 사용
                     padding: 0;
                     list-style: none;
                     line-height: 1.5;
-                    font-size: 15px;
-                    font-weight: normal;
                     a {
                         padding-left: 30px;
                     }

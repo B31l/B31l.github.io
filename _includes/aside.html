@@ -1,9 +1,7 @@
-<aside>
-    <div class="wrap">
+<aside style="left: 0;">
+    <div class="wrap" style="background-color: #2E3440;">
         <div class="profile">
-            <div class="profile-head" onclick="location.href='{{ site.baseurl }}/'">
-                🔔
-            </div>
+            <div class="profile-head" onclick="location.href='{{ site.baseurl }}/'">🔔</div>
             <div class="profile-body">
                 {{ site.description_footer }}
             </div>
@@ -18,6 +16,18 @@
                 <a href="https://www.linkedin.com/in/{{site.linkedIn_username}}" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a> {% endif %} {% if site.dribbble_username %}
                 <a href=" https://dribbble.com/{{site.dribbble_username}}" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a> {% endif %}
             </div>
+        </div>
+    </div>
+</aside>
+<aside style="right: 0;">
+    <div class="wrap" style="background-color: White;">
+        <div class="side content">
+            <div class=tocTitle>
+                <!-- <i class="fa fa-bars"></i> -->
+                Table of Contents
+            </div>
+            <ul id="content-side" class="content-ul">
+            </ul>
         </div>
     </div>
 </aside>

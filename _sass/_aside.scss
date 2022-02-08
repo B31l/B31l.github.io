@@ -56,14 +56,14 @@ aside { // nord-0 사용
             text-align: center;
             input {
                 display: inline-block;
-                width: 90%;
-                height: 40px;
-                margin: 0 auto;
-                padding: 15px;
+                width: calc(100% - 24px);
+                height: 20px;
+                margin: 0 12px;
+                padding: 12px;
                 border: 3px solid #4C566A;
                 border-radius: 4px;
                 box-sizing: border-box;
-                font-size: 16px;
+                font-size: 12px;
                 font-weight: bold;
             }
         }
@@ -72,7 +72,6 @@ aside { // nord-0 사용
             position: relative;
             width: 100%;
             height: auto;
-            max-height: 256px;
             padding: 0px;
             box-sizing: border-box;
             color: white;
@@ -81,24 +80,19 @@ aside { // nord-0 사용
                 background-color: White;
                 ul {
                     height: auto;
-                    max-height: 250px;
+                    max-height: 300px;
                     margin: 0px 0px;
                     margin-top: 15px;
-                    padding-left: 30px;
+                    padding-left: 15px;
                     overflow-y: scroll;
                     overflow-x: hidden;
-                    font-weight: normal;
-                    font-family: 'yangjin';
                     color: black;
-                    font-size: 15px;
+                    font-size: 12px;
                     line-height: 150%;
                     list-style: none;
-                    // h2 {
-                    //     margin: 10px 5px 10px;  // override
-                    // }
                     li {
-                        height: 25px;
-                        line-height: 25px;
+                        height: 15px;
+                        line-height: 15px;
                         cursor: pointer;
                         a {
                             width: 100%;
@@ -111,11 +105,6 @@ aside { // nord-0 사용
                                 background-color: #8FBCBB;
                             }   
                         }
-                        // time {
-                        //     margin: 0px 15px;
-                        //     float: right;
-                        //     color: #777;
-                        // }
                     }
                 }
                 ul::-webkit-scrollbar {

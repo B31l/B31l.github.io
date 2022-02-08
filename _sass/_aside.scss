@@ -12,8 +12,8 @@ aside { // nord-0 사용
         .profile {  // 프로필
             width: auto;
             height: 250px;
+            margin-bottom: 25px;
             padding: 30px;
-            font-weight: 900;
             .profile-head {
                 width: 125px;
                 height: 125px;
@@ -27,14 +27,17 @@ aside { // nord-0 사용
                 cursor: pointer;
             }
             .profile-body {
-                margin-top: 20px;
+                margin-top: 25px;
+                text-align: center;
                 font-size: 15px;
+                font-weight: 700;
             }
             .profile-tail {
-                margin-top: 10px;
+                margin-top: 5px;
+                text-align: center;
                 font-size: 15px;
                 a {
-                    margin-right: 15px;
+                    margin: 0 10px;
                 }
             }
         }

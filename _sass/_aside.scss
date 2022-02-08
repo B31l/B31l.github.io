@@ -9,7 +9,7 @@ aside { // nord-0 사용
     .wrap {
         width: 100%;
         height: 100%;
-        padding: 15px;
+        // padding: 15px;
         .profile {  // 프로필
             width: auto;
             height: 250px;
@@ -69,14 +69,12 @@ aside { // nord-0 사용
                 overflow-y: auto;
                 a {
                     display: block;
-                    height: 30px;
-                    line-height: 30px;
+                    height: 25px;
+                    line-height: 25px;
                     padding-left: 15px;
-                    border-top: 1px inset;
                     box-sizing: border-box;
-                    color: #ECEFF4;
+                    color: Gold;
                     font-size: 18px;
-                    font-weight: normal;
                     font-family: "D2coding";
                     transition: 0.5s ease;
                     &:hover {
@@ -89,12 +87,14 @@ aside { // nord-0 사용
                     list-style: none;
                     line-height: 1.5;
                     a {
-                        padding-left: 30px;
+                        padding-left: 45px;
+                        font-size: 15px;
+                        color: White;
                     }
                     // h3
                     ul {
                         a {
-                            padding-left: 60px;
+                            padding-left: 75px;
                         }
                     }
                 }

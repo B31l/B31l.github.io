@@ -76,38 +76,35 @@ aside { // nord-0 사용
             box-sizing: border-box;
             color: white;
             font-weight: bold;
-            .legend {
-                background-color: White;
-                ul {
-                    height: auto;
-                    max-height: 300px;
-                    margin: 0px 0px;
-                    margin-top: 15px;
-                    padding-left: 15px;
-                    overflow-y: scroll;
-                    overflow-x: hidden;
-                    color: black;
-                    font-size: 12px;
-                    line-height: 150%;
-                    list-style: none;
-                    li {
-                        height: 15px;
-                        line-height: 15px;
-                        cursor: pointer;
-                        a {
-                            width: 100%;
-                            margin-left: -15px;
-                            padding-left: 15px;
-                            float: left;
-                            color: Black;
-                            // border-bottom: 1px dotted #8FBCBB;
-                            &:hover {
-                                background-color: #8FBCBB;
-                            }   
-                        }
+            .results-container {
+                height: auto;
+                max-height: 300px;
+                margin: 0px 0px;
+                margin-top: 15px;
+                padding-left: 15px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                color: black;
+                font-size: 12px;
+                line-height: 150%;
+                list-style: none;
+                li {
+                    height: 15px;
+                    line-height: 15px;
+                    cursor: pointer;
+                    a {
+                        width: 100%;
+                        margin-left: -15px;
+                        padding-left: 15px;
+                        float: left;
+                        color: Black;
+                        // border-bottom: 1px dotted #8FBCBB;
+                        &:hover {
+                            background-color: #8FBCBB;
+                        }   
                     }
                 }
-                ul::-webkit-scrollbar {
+                &::-webkit-scrollbar {
                     display: none;
                 }
             }

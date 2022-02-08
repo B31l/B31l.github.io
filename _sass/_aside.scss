@@ -40,6 +40,90 @@ aside { // nord-0 사용
                 }
             }
         }
+        .menu-bar {
+            padding: 15px;
+            .menu-bar-item {
+                padding: 15px;
+                text-align: left;
+                font-family: 'Vitro_core';
+                cursor: pointer;
+                &:hover {
+                    background-color: #8FBCBB;
+                }
+            }
+        }
+        .search {
+            text-align: center;
+            input {
+                display: inline-block;
+                width: 90%;
+                height: 40px;
+                margin: 0 auto;
+                padding: 15px;
+                border: 3px solid #4C566A;
+                border-radius: 4px;
+                box-sizing: border-box;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+        .container {
+            display: none;
+            position: relative;
+            width: 100%;
+            height: auto;
+            max-height: 256px;
+            padding: 0px;
+            box-sizing: border-box;
+            color: white;
+            font-weight: bold;
+            .legend {
+                background-color: White;
+                ul {
+                    height: auto;
+                    max-height: 250px;
+                    margin: 0px 0px;
+                    margin-top: 15px;
+                    padding-left: 30px;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    font-weight: normal;
+                    font-family: 'yangjin';
+                    color: black;
+                    font-size: 15px;
+                    line-height: 150%;
+                    list-style: none;
+                    // h2 {
+                    //     margin: 10px 5px 10px;  // override
+                    // }
+                    li {
+                        height: 25px;
+                        line-height: 25px;
+                        cursor: pointer;
+                        a {
+                            width: 100%;
+                            margin-left: -15px;
+                            padding-left: 15px;
+                            float: left;
+                            color: Black;
+                            // border-bottom: 1px dotted #8FBCBB;
+                            &:hover {
+                                background-color: #8FBCBB;
+                            }   
+                        }
+                        // time {
+                        //     margin: 0px 15px;
+                        //     float: right;
+                        //     color: #777;
+                        // }
+                    }
+                }
+                ul::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+            }
+        }
         .side {
             // max-height: 500px;
             box-sizing: border-box;

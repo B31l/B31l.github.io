@@ -57,8 +57,9 @@ $highlight-purple       :#8E59D7;
     font-weight: 500;
     letter-spacing: -1px;
     background: #263238;
+    border-radius: 8px;
     .hll    { background-color: #263238 }
-    .err    { background-color: #263238; color: #960050 } /* Error */
+    .err    { background-color: #263238; color: tomato; } /* Error */
     .w      { color: #ECEFF4 }    /* Text.Whitespace */
     .p      { color: #ECEFF4 } /* Punctuation 문장 부호 */ 
 

@@ -3,6 +3,7 @@
     padding: 30px 0;
     // background: #4C566A;
     color: Black;
+    font-weight: bold;
     .information-meta {
         font-size: 5em;
         font-weight: bold;
@@ -10,11 +11,10 @@
     }
     .information-title {
         font-size: 1em;
-        font-weight: bold;
-        // margin-bottom: 20px;
+        margin-bottom: 5px;
     }
     .information-label >.label-card {
-        // margin-bottom: 10px;
+        margin-bottom: 5px;
         a {
             color: Black;
         }

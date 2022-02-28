@@ -42,8 +42,7 @@ html {
 body {
     // font-family: Helvetica, Arial;
     font-family: system-ui;
-//     background-color: #ECEFF4;
-    color: black;
+    color: rgb(204, 204, 204);
     position: relative;
     min-height: 100vh;
     // min-height: calc(100% - 100px);
@@ -67,7 +66,6 @@ hr {
 h1 {
     display: inline-block;
     margin: 10px 0;
-    color: black;
     font-size: 3em;
     font-family: 'Vitro_core';
 }

@@ -59,107 +59,107 @@ aside { // nord-0 사용
             font-size: 12px;
             font-weight: bold;
         }
-        .container {
-            display: none;
-            position: relative;
-            width: 100%;
+    }
+    .container {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        box-sizing: border-box;
+        color: white;
+        ul {
             height: auto;
-            padding: 0px;
-            box-sizing: border-box;
-            color: white;
-            ul {
-                height: auto;
-                max-height: 300px;
-                margin: 0px 0px;
-                margin-top: 15px;
-                padding-left: 15px;
-                overflow-y: scroll;
-                overflow-x: hidden;
-                color: black;
-                font-size: 12px;
-                line-height: 150%;
-                list-style: none;
-                li {
-                    height: 15px;
-                    line-height: 15px;
-                    cursor: pointer;
-                    a {
-                        width: 100%;
-                        margin-left: -15px;
-                        padding-left: 15px;
-                        float: left;
-                        color: Black;
-                        // border-bottom: 1px dotted #8FBCBB;
-                        &:hover {
-                            background-color: #8FBCBB;
-                        }   
-                    }
-                }
-                &::-webkit-scrollbar {
-                    display: none;
-                }
-            }
-        }
-        .side {
-            // max-height: 500px;
-            box-sizing: border-box;
-            font-family: monospace;
-            -ms-word-break: break-all;
-            word-break: break-all;
-            -webkit-hyphens: auto;
-            -moz-hyphens: auto;
-            -ms-hyphens: auto;
-            hyphens: auto;
-            .tocTitle {
-                height: 75px;
-                line-height: 75px;
-                border-bottom: 1px solid #2E3440;
-                color: #ECEFF4;
-                text-align: center;
-                font-size: 25px;
-                font-weight: bold;
-            }
-            .content-ul {
-                // max-height: 450px;
-                margin: 0;
-                margin-top: 10px;
-                padding: 0;
-                line-height: 2;
-                font-weight: bold;
-                list-style: none;
-                overflow-y: auto;
+            max-height: 300px;
+            margin: 0px 0px;
+            margin-top: 15px;
+            padding-left: 15px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            color: black;
+            font-size: 12px;
+            line-height: 150%;
+            list-style: none;
+            li {
+                height: 15px;
+                line-height: 15px;
+                cursor: pointer;
                 a {
-                    display: block;
-                    height: 25px;
-                    line-height: 25px;
-                    margin-top: 25px;
+                    width: 100%;
+                    margin-left: -15px;
                     padding-left: 15px;
-                    box-sizing: border-box;
-                    color: Gold;
-                    font-size: 18px;
-                    font-weight: normal;
-                    font-family: "D2coding";
-                    transition: 0.5s ease;
+                    float: left;
+                    color: Black;
+                    // border-bottom: 1px dotted #8FBCBB;
                     &:hover {
                         background-color: #8FBCBB;
-                    }
+                    }   
                 }
-                // h2
+            }
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+    .side {
+        // max-height: 500px;
+        box-sizing: border-box;
+        font-family: monospace;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        .tocTitle {
+            height: 75px;
+            line-height: 75px;
+            border-bottom: 1px solid #2E3440;
+            color: #ECEFF4;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .content-ul {
+            // max-height: 450px;
+            margin: 0;
+            margin-top: 10px;
+            padding: 0;
+            line-height: 2;
+            font-weight: bold;
+            list-style: none;
+            overflow-y: auto;
+            a {
+                display: block;
+                height: 25px;
+                line-height: 25px;
+                margin-top: 25px;
+                padding-left: 15px;
+                box-sizing: border-box;
+                color: Gold;
+                font-size: 18px;
+                font-weight: normal;
+                font-family: "D2coding";
+                transition: 0.5s ease;
+                &:hover {
+                    background-color: #8FBCBB;
+                }
+            }
+            // h2
+            ul {
+                padding: 0;
+                list-style: none;
+                line-height: 1.5;
+                a {
+                    margin: 0;
+                    padding-left: 45px;
+                    font-size: 15px;
+                    color: White;
+                }
+                // h3
                 ul {
-                    padding: 0;
-                    list-style: none;
-                    line-height: 1.5;
                     a {
-                        margin: 0;
-                        padding-left: 45px;
-                        font-size: 15px;
-                        color: White;
-                    }
-                    // h3
-                    ul {
-                        a {
-                            padding-left: 75px;
-                        }
+                        padding-left: 75px;
                     }
                 }
             }

@@ -42,7 +42,7 @@ html {
 body {
     // font-family: Helvetica, Arial;
     font-family: system-ui;
-    color: rgb(204, 204, 204);
+    color: black;
     position: relative;
     min-height: 100vh;
     // min-height: calc(100% - 100px);
@@ -50,7 +50,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: rgb(204, 204, 204);
+    color: gold;
     // color: blue;
     // text-decoration: underline;
 }
@@ -90,9 +90,6 @@ blockquote {
     padding: 0;
     border-image: url("https://t1.daumcdn.net/cfile/tistory/99B1F5335AB1C77313") round;
     border-image-slice: 25%;
-}
-ul {
-    color: rgb(204, 204, 204);
 }
 ol {
     list-style: none;

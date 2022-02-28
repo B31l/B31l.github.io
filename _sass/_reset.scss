@@ -50,7 +50,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(204, 204, 204);
     // color: blue;
     // text-decoration: underline;
 }
@@ -91,6 +91,9 @@ blockquote {
     border-image: url("https://t1.daumcdn.net/cfile/tistory/99B1F5335AB1C77313") round;
     border-image-slice: 25%;
 }
+ul {
+    color: rgb(204, 204, 204);
+}
 ol {
     list-style: none;
     margin: 10px 0;
@@ -103,9 +106,9 @@ table {
     width: 100%;
     height: auto;
     margin: 8px 0;
-    border-top: 1px solid;
     border-bottom: 1px solid;
     border-collapse: collapse;
+    color: black;
     table-layout: fixed;
     word-break: break-all;
     thead {

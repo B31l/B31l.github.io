@@ -1,36 +1,22 @@
 .information {
     width: 100%;
-    margin: 30px auto 0;
     padding: 30px 0;
     // background: #4C566A;
     color: Black;
-    text-align: center;
     .information-meta {
-        font-size: 6em;
+        font-size: 5em;
         font-weight: bold;
         font-family: 'Vitro_core';
     }
     .information-title {
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: bold;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
     }
     .information-label >.label-card {
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
         a {
             color: Black;
-        }
-    }
-}
-@media screen and (max-width:1200px) and (min-width: 770px) {
-    .information {
-        width: 100%;
-        border: none;
-        .information-meta {
-            font-size: 5em;
-        }
-        .information-title {
-            font-size: 1em;
         }
     }
 }

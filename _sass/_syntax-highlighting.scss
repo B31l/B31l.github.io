@@ -52,12 +52,18 @@ $highlight-purple       :#8E59D7;
     overflow-x: auto;
     margin: 0;
     margin-top: 15px;
+    
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0 5px black;
+    background-color: #263238;
+
     line-height: 100%;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: -1px;
-    background: #263238;
-    border-radius: 8px;
+    
+
+    
     .hll    { background-color: #263238 }
     .err    { background-color: #263238; color: tomato; } /* Error */
     .w      { color: #ECEFF4 }    /* Text.Whitespace */

@@ -154,10 +154,12 @@ u, s {
     
     margin: 25px 0 -20px;
     padding-left: 15px;
-    // box-shadow: 0 0 10px black;
+
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0 5px black;
     background-color: #D8DEE9;
 
-    color: Black;
+    color: black;
     text-decoration: none;
     font-size: 15px;
     font-weight: 900;

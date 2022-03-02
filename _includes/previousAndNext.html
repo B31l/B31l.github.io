@@ -1,12 +1,12 @@
 <div class="previousAndNext">
     {% if page.previous %}
         <button onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
-            &nbsp;&nbsp;&lt;&lt;&nbsp;&nbsp;{{ page.previous.title }}
+            ;&lt;&lt;&nbsp;&nbsp;{{ page.previous.title }}
         </button>
     {% endif %}
     {% if page.next %}
         <button onClick="location.href='{{ page.next.url | prepend: site.baseurl }}'">
-            &nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp{{ page.next.title }};
+            &gt;&gt;&nbsp;&nbsp{{ page.next.title }};
         </button>
     {% endif %}
 </div>

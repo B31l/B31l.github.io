@@ -33,6 +33,7 @@ aside { // nord-0 사용
         }
     }
     .menu-bar {
+        padding: 5px 0;
         border-bottom: 1px outset;
         .menu-bar-item {
             padding-left: 10px;
@@ -54,13 +55,17 @@ aside { // nord-0 사용
             background: none;
             box-sizing: border-box;
             color: white;
+            &:focus {
+                outline: none;
+            }
         }
     }
     .container {
         display: none;
         position: relative;
         width: 100%;
-        padding: 0px;
+        padding: 5px 0;
+        border-top: 1px inset;
         box-sizing: border-box;
         color: white;
         ul {
@@ -100,10 +105,8 @@ aside { // nord-0 사용
         -ms-hyphens: auto;
         hyphens: auto;
         .content-ul {
-            // max-height: 450px;
             margin: 0;
-            margin-top: 10px;
-            padding: 0;
+            padding: 5px 0;
             border-top: 1px inset;
             list-style: none;
             overflow-y: auto;

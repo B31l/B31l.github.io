@@ -1,15 +1,14 @@
 <aside>
     {% include information.html %}
     {% include previousAndNext.html %}
-    <div class="profile">
+    <!-- <div class="profile">
         <div class="profile-head" onclick="location.href='{{ site.baseurl }}/'">🔔</div>
         <div class="profile-body">
-            {{ site.description_footer }}
-        </div>
-        <div class="profile-tail">
+
+            <p>{{ site.description_footer }}</p>
 
             {% if site.github_username %}
-                <a href="https://github.com/{{site.github_username}}" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a> 
+            <a href="https://github.com/{{site.github_username}}" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a> 
             {% endif %} 
 
             {% if site.email %}
@@ -19,9 +18,9 @@
             {% if site.linkedIn_username %}
             <a href="https://www.linkedin.com/in/{{site.linkedIn_username}}" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
             {% endif %}
-            
+
         </div>
-    </div>
+    </div> -->
     <div class="menu-bar">
         <div class="menu-bar-item">Archive</div>
         <div class="menu-bar-item">Category</div>
@@ -53,7 +52,6 @@
         </div>
     </div>
     <div class="side content">
-        <div class=tocTitle><i class="fa fa-bars"></i></div>
         <ul id="content-side" class="content-ul"></ul>
     </div>
 </aside>

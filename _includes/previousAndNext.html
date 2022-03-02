@@ -1,7 +1,7 @@
 <div class="previousAndNext">
     {% if page.previous %}
         <button onClick="location.href='{{ page.previous.url | prepend: site.baseurl }}'">
-            ;&lt;&lt;&nbsp;&nbsp;{{ page.previous.title }}
+            &lt;&lt;&nbsp;&nbsp;{{ page.previous.title }}
         </button>
     {% endif %}
     {% if page.next %}

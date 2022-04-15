@@ -28,8 +28,8 @@
 //     left: calc(50% - 215px);
 // }
 // }
-// @media screen and (max-width: 770px) {
-// .information {
-//     left: 0;
-// }
-// }
+@media screen and (max-width: 770px) {
+.information {
+    width: 100%;
+}
+}

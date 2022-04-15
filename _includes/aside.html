@@ -1,11 +1,10 @@
 <aside>
-    <div class="menu-bar">
-        <div class="menu-bar-item">▶ Archive</div>
-        <div class="menu-bar-item">▶ Category</div>
-        <div class="menu-bar-item">▶ Tag</div>
-        <div class="menu-bar-item">▶ Demo</div>
-        <div class="menu-bar-item">▶ About</div>
+    {% include information.html %}
+    {% include previousAndNext.html %}
+    <div class="side content">
+        <ul id="content-side" class="content-ul"></ul>
     </div>
+    
     <div class="search">
         <input id="search-input" type="text" placeholder="Search">
     </div>
@@ -28,8 +27,5 @@
                 })
             </script>
         </div>
-    </div>
-    <div class="side content">
-        <ul id="content-side" class="content-ul"></ul>
     </div>
 </aside>

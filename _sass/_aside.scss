@@ -1,12 +1,16 @@
 aside { // nord-0 사용
     position: fixed;
-    width: 350px;
-    height: 100vh;
+    left: 0;
+    width: 300px;
+    margin-top: 5vh;
+    height: 90vh;
     padding: 0;
     box-sizing: border-box;
-    background-color: #151515;
-    color: #ccc;
     font-size: 13.5px;
+    color: #ccc;
+    border-radius: 0 8px 8px 0;
+    background: #151515;
+    box-shadow: 0 0 10px #ccc;
     .profile {  // 프로필
         margin: 10px 0;
         height: 125px;
@@ -30,17 +34,8 @@ aside { // nord-0 사용
             }
         }
     }
-    .menu-bar {
-        padding: 5px 0;
-        border-bottom: 1px outset;
-        .menu-bar-item {
-            padding-left: 10px;
-            text-align: left;
-            cursor: pointer;
-            &:hover {
-                background-color: #8FBCBB;
-            }}}
     .search {
+        display: none;
         text-align: center;
         input {
             display: inline-block;
@@ -101,22 +96,22 @@ aside { // nord-0 사용
         -ms-hyphens: auto;
         hyphens: auto;
         .content-ul {
-            margin: 0;
-            padding: 5px 0;
-            border-top: 1px inset;
+            padding: 20px 0;
             list-style: none;
+            border-top: 5px dotted;
             overflow-y: auto;
             a {
                 display: block;
-                height: 18px;
-                line-height: 18px;
+                height: 24px;
+                line-height: 24px;
                 padding-left: 10px;
                 box-sizing: border-box;
                 color: #ccc;
-                font-family: "D2coding";
                 transition: 0.5s ease;
                 &:hover {
-                    background-color: #8FBCBB;
+                    color: black;
+                    background-color: #ebcb8b;
+                    font-weight: bold;
                 }
             }
             // h2

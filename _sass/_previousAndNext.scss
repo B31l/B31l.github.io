@@ -1,19 +1,21 @@
 .previousAndNext {
     display: block;
-    border-bottom: 1px outset;
+    width: 430px;
+    margin: 0px auto;
+    margin-top: 5px;
     padding: 5px 0;
     button {
-        width: 100%;
+        width: 200px;
         height: 18px;
         line-height: 18px;
         padding: 0 10px;
         box-sizing: border-box;
         background: none;
-        color: #ccc;
         text-align: left;
+        font-weight: bold;
         cursor: pointer;
     }
     button:hover {
-        background-color: #8FBCBB;
+        font-size: 125%;
     }
 }

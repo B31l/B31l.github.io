@@ -1,10 +1,9 @@
 .information {
-    position: absolute;
-    top: 0;
-    left: calc(50% - 30px);
     width: 430px;
     padding: 10px;
     color: white;
+    margin: 0 auto;
+    margin-top: -20px;
     background-color: #151515;
     border-radius: 0 0 8px 8px;
     box-shadow: 0 0 10px red;
@@ -24,13 +23,13 @@
         }
     }
 }
-@media screen and (max-width:1200px) and (min-width: 770px) {
-.information {
-    left: calc(50% - 215px);
-}
-}
-@media screen and (max-width: 770px) {
-.information {
-    left: 0;
-}
-}
+// @media screen and (max-width:1200px) and (min-width: 770px) {
+// .information {
+//     left: calc(50% - 215px);
+// }
+// }
+// @media screen and (max-width: 770px) {
+// .information {
+//     left: 0;
+// }
+// }

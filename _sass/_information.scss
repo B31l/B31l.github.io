@@ -24,15 +24,13 @@
         }
     }
 }
+@media screen and (max-width:1200px) and (min-width: 770px) {
+.information {
+    left: calc(50% - 215px);
+}
+}
 @media screen and (max-width: 770px) {
-    .information {
-        width: 100%;
-        border: none;
-        .information-meta {
-            font-size: 4em;
-        }
-        .information-title {
-            font-size: 1em;
-        }
-    }
+.information {
+    left: 0;
+}
 }

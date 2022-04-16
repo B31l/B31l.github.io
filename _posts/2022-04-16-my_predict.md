@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Titanic"
-meta: " 타이타닉 관련 모델 훈련 과정"
+meta: "Titanic"
+title: "타이타닉 관련 모델 훈련 과정"
 categories: ML
 tags: Python
 comments: true

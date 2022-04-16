@@ -1,7 +1,7 @@
 const page = document.querySelector(".page");
 const section = document.querySelector("section");
 
-let state = true;
+let state = false;
 function extend() {
     if (state) {
         page.style.width = "1200px";

@@ -1,5 +1,5 @@
 const state = false;
-const page = document.querySelector(".page")
+const page = document.querySelector(".page");
 const section = document.querySelector("section");
 function extend() {
     if (!state) {
@@ -10,5 +10,5 @@ function extend() {
         page.style.width = "1200px";
         section.style.width = "770px";
     }
-    !state;
+    state = !state;
 }

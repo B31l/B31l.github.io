@@ -2,8 +2,8 @@ const page = document.querySelector(".page");
 const section = document.querySelector("section");
 
 let state = "off";
+state = window.localStorage.getItem("state");
 function extend() {
-    state = window.localStorage.getItem("state");
     if (state === "on") {
         page.style.width = "1200px";
         section.style.width = "770px";

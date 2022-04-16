@@ -12,10 +12,9 @@
 .page {
     width: 1200px;
     section {
-        float: right;
         width: 770px;
         margin: 0 auto;
-        margin-right: 115px;
+        margin-left: 320px;
         padding: 20px 30px 0;
         box-sizing: border-box;
         box-shadow: 0 0 50px #ebcb8b;
@@ -89,7 +88,7 @@
     width: 100%;
     margin: 0 auto;
     section {
-        float: none;
+        min-width: 770px;
         margin: 0 auto;
     }
 }
@@ -100,7 +99,6 @@
     width: 100%;
     margin: 0 auto;
     section {
-        float: none;
         width: 100%;
         margin: 0 auto;
         padding: 10px 14px;

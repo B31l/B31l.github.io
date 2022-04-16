@@ -86,8 +86,8 @@
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {
 .page {
-    width: 100%;
-    margin: 0 auto;
+    width: 100% !important;
+    margin: 0;
     section {
         min-width: 770px;
         margin: 0 auto;
@@ -97,7 +97,7 @@
 
 @media screen and (max-width: 770px) {
 .page {
-    width: 100%;
+    width: 100% !important;
     margin: 0 auto;
     section {
         width: 100%;

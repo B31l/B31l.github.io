@@ -1,3 +1,19 @@
+---
+layout: post
+title: "Titanic"
+meta: " 타이타닉 관련 모델 훈련 과정"
+categories: ML
+tags: Python
+comments: true
+mathjax: true
+---
+
+
+
+* content
+{:toc}
+
+
 ```python
 import numpy as np
 import pandas as pd

@@ -2,9 +2,8 @@ const page = document.querySelector(".page");
 const section = document.querySelector("section");
 
 let state = false;
-state = window.localStorage.getItem("state");
-window.localStorage.setItem('age', '20');
 function extend() {
+    state = window.localStorage.getItem("state");
     if (!state) {
         page.style.width = "100%";
         section.style.width = "calc(100% - 340px)";

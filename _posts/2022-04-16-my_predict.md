@@ -27,7 +27,9 @@ from sklearn.ensemble import RandomForestClassifier # 랜덤 포레스트 분류
 from sklearn.naive_bayes import GaussianNB          # 나이브 베이즈 분류기
 ```
 
-# **데이터 전처리**
+---
+
+# 데이터 전처리
 
 
 ```python
@@ -53,6 +55,7 @@ train.head()
         text-align: right;
     }
 </style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -454,7 +457,9 @@ print(test.info())
 
 필요 없는 column과 모든 결측치가 제거되었고, 데이터 타입을 숫자형으로 변환하였으며, 원핫 인코딩으로 정확도를 향상시킨다. 이제 학습의 때다.
 
-# **학습**
+---
+
+# 학습
 
 target을 분리시킨 뒤, 5가지 모델에 대한 학습을 실시한다.
 

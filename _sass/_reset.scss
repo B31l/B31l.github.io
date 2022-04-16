@@ -111,15 +111,10 @@ table {
     word-break: break-all;
     thead {
         background-color: #4C566A;
-        color: #fff;
-    }
-    th {
-        padding: 2px 10px;
-        color: #ECEFF4;
-        text-align: left;
-        font-weight: normal;
+        color: White;
     }
     tbody {
+        color: Black;
         tr {
             &:nth-of-type(2n+1) {
                 // background-color: #f8f8fd;
@@ -129,9 +124,6 @@ table {
                 background-color: #ECEFF4;
             }
         }
-    }
-    td {
-        padding: 2px 10px;
     }
 }
 p {

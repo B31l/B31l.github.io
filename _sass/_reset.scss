@@ -50,10 +50,9 @@ body {
     // margin-top: 100px;
 }
 a {
+    color: blue;
+    font-weight: bold;
     text-decoration: none;
-    color: gold;
-    // color: blue;
-    // text-decoration: underline;
 }
 button {
     border: none;
@@ -86,11 +85,10 @@ h4, h5, h6 {
     font-size: 1.1em;
 }
 blockquote {
-    border: 25px solid transparent;
     margin: 10px 0;
-    padding: 0;
-    border-image: url("https://t1.daumcdn.net/cfile/tistory/99B1F5335AB1C77313") round;
-    border-image-slice: 25%;
+    padding: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px blue;
 }
 ol {
     list-style: none;

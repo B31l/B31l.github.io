@@ -16,7 +16,7 @@ mathjax: true
 
 머신러닝 4차 과제의 주제인 타이타닉의 생존자 예측을 위한 모델 훈련 과정을 요악한 글입니다.
 
-> [Colab](https://colab.research.google.com/drive/1XmKVyfhlUZXan0_t9QkNWzmX5wng8s5E?usp=sharing) /  [Kaggle](https://www.kaggle.com/code/hamsujong/my-predict)
+> 📘 [Colab](https://colab.research.google.com/drive/1XmKVyfhlUZXan0_t9QkNWzmX5wng8s5E?usp=sharing) /  [Kaggle](https://www.kaggle.com/code/hamsujong/my-predict)
 
 우선 데이터 전처리 및 모델 훈련에 필요한 라이브러리를 import합니다.
 

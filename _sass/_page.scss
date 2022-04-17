@@ -10,9 +10,11 @@
     *zoom: 1;
 }
 .page {
-    width: 1200px;
+    // width: 1200px;
+    width: 100%;
     section {
-        width: 770px;
+        // width: 770px;
+        width: calc(100% - 340px);
         max-width: 1200px;
         margin: 0 auto;
         margin-left: 320px;

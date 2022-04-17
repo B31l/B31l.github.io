@@ -33,6 +33,8 @@ from sklearn.ensemble import RandomForestClassifier # 랜덤 포레스트 분류
 from sklearn.naive_bayes import GaussianNB          # 나이브 베이즈 분류기
 ```
 
+---
+
 # 준비 운동
 
 Kaggle 노트북을 생성했다면, 가장 먼저 할 일은 데이터셋을 적재하는 것입니다. CSV 파일은 [여기](https://www.kaggle.com/competitions/titanic/data)에서 가져올 수 있습니다.

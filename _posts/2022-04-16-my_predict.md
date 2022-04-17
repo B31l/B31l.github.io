@@ -12,7 +12,13 @@ mathjax: true
 
 * content
 {:toc}
+# 개요
 
+머신러닝 4차 과제의 주제인 타이타닉의 생존자 예측을 위한 모델 훈련 과정을 요악한 글입니다.
+
+> [Colab](https://colab.research.google.com/drive/1XmKVyfhlUZXan0_t9QkNWzmX5wng8s5E?usp=sharing) /  [Kaggle](https://www.kaggle.com/code/hamsujong/my-predict)
+
+우선 데이터 전처리 및 모델 훈련에 필요한 라이브러리를 import합니다.
 
 ```python
 import numpy as np
@@ -27,9 +33,11 @@ from sklearn.ensemble import RandomForestClassifier # 랜덤 포레스트 분류
 from sklearn.naive_bayes import GaussianNB          # 나이브 베이즈 분류기
 ```
 
----
+# 준비 운동
 
-# 데이터 전처리
+Kaggle 노트북을 생성했다면, 가장 먼저 할 일은 데이터셋을 적재하는 것입니다. CSV 파일은 [여기](https://www.kaggle.com/competitions/titanic/data)에서 가져올 수 있습니다.
+
+`head()` 메서드를 사용해 우리가 사용할 데이터셋을 대략적으로 살펴보겠습니다.
 
 
 ```python
@@ -154,7 +162,7 @@ train.head()
 </table>
 </div>
 
-
+`info()` 메서드를 사용해 데이터셋의 통계를 볼 수 있습니다.
 
 
 ```python
@@ -182,7 +190,7 @@ train.info()
     memory usage: 83.7+ KB
 
 
-각 column은 다음 정보를 가지고 있다.
+각 열은 다음 정보를 가지고 있습니다.
 - PassengerId : 각 승객의 고유 번호
 - Survived : 생존 여부(종속 변수)   
 0 = 사망   
@@ -204,12 +212,12 @@ C = Cherbourg
 Q = Queenstown   
 S = Southampton   
 
+다음 명령을 통해 각 열에서 결측치를 가진 행의 수를 표시할 수 있습니다.
+
 
 ```python
 train.isnull().sum()
 ```
-
-
 
 
     PassengerId      0
@@ -226,37 +234,24 @@ train.isnull().sum()
     Embarked         2
     dtype: int64
 
+---
 
+# 데이터 전처리
 
-정확도 향상을 위해 필요없는 데이터를 drop한다. 고유한 값을 가지는 Object인 `Name`, `Ticket`, `Cabin`이 제거 대상이다.   
-그 다음 순서는 결측값 처리다. `Age`, `Embarked`에 결측값이 존재한다. (Cabin is dropped)   
-Age의 경우 평균값을, Embarked의 경우 최빈값을 결측값 대신 사용한다.   
-
-`Sex`의 male / female을 정수형 데이터로 변경하는 과정 또한 필요하다. 각각 1 / 0으로 매치시킨다.   
-범주형 데이터`Embarked`는 원핫 인코딩을 거친다.
-
-
-```python
-train["Embarked"].value_counts()
-```
-
-
-
-
-    S    644
-    C    168
-    Q     77
-    Name: Embarked, dtype: int64
-
-
-
+정확도 향상을 위해 필요없는 데이터를 drop해야 합니다. `Name`, `Ticket`, `Cabin` Object 열이며, 고유한 값을 가집니다. 이는 생존률과의 연관성을 찾기 쉽지 않습니다. 따라서 이 열들을 제거하는 것이 좋습니다.
 
 ```python
 # drop
 train = train.drop(["Name", "Ticket", "Cabin"], axis=1)
 test = test.drop(["Name", "Ticket", "Cabin"], axis=1)
+```
+
+그 다음 순서는 결측값 처리입니다. 현재 `Age`, `Embarked`에 결측값이 존재합니다(`Cabin` is dropped).
+숫자로 표시되는` Age`의 경우 평균값을, 그렇지 않은 `Embarked`의 경우 최빈값을 결측값 대신 사용하겠습니다.
 
 
+
+```python
 # NAN
 train_mean = train["Age"].mean()
 train["Age"].fillna(train_mean, inplace=True)
@@ -266,8 +261,11 @@ test["Age"].fillna(test_mean, inplace=True)
 test["Embarked"].fillna("S", inplace=True)
 test_median = test["Fare"].median()
 test["Fare"].fillna(test_median, inplace=True)
+```
 
+`Sex`의 male / female을 정수형 데이터로 변경하는 과정 또한 필요합니다. 각각 1 / 0으로 매치시키겠습니다.
 
+```python
 # astype
 for i in train.index:
     if train.loc[i, "Sex"] == "male":
@@ -281,8 +279,23 @@ for i in test.index:
     else:
         test.loc[i, "Sex"] = 0
 test["Sex"] = test["Sex"].astype(int)
+```
+
+잘못된 관계 형성을 방지하기 위해 범주형 데이터`Embarked`는 원핫 인코딩을 거쳐야 합니다.
 
 
+```python
+train["Embarked"].value_counts()
+```
+
+
+    S    644
+    C    168
+    Q     77
+    Name: Embarked, dtype: int64
+
+
+```python
 # OneHot
 ohe = OneHotEncoder(sparse=False)
 train_cat = ohe.fit_transform(train[["Embarked"]])
@@ -298,7 +311,7 @@ test = pd.concat([test.drop(columns=["Embarked"]),
 train.head()
 ```
 
-
+이제 훈련셋 및 테스트셋에 대한 모든 전처리 과정이 끝났습니다.
 
 
 <div>
@@ -455,19 +468,21 @@ print(test.info())
     None
 
 
-필요 없는 column과 모든 결측치가 제거되었고, 데이터 타입을 숫자형으로 변환하였으며, 원핫 인코딩으로 정확도를 향상시킨다. 이제 학습의 때다.
+필요 없는 열과 모든 결측치가 제거되었고, 데이터 타입을 숫자형으로 변환하였으며, 원핫 인코딩으로 정확도를 향상시켰습니다. 이제 학습을 시작할 준비가 끝났습니다.
 
 ---
 
 # 학습
 
-target을 분리시킨 뒤, 5가지 모델에 대한 학습을 실시한다.
+현재 훈련 데이터셋에는 레이블 열(`Survived`)이 포함되어 있습니다. 학습에 사용될 target을 따로 분리시켜야 합니다.
 
 
 ```python
 target = np.ravel(train.Survived)
 train.drop(["Survived"], inplace=True, axis=1)
 ```
+
+아래 함수는 특정 모델에 대한 학습 및 결과 출력을 일괄적으로 처리합니다.
 
 
 ```python
@@ -478,6 +493,8 @@ def play(model):
     print("Accuracy : ", accuracy, "%")
     return prediction
 ```
+
+이제 앞서 언급한 5가지 모델(LogisticRegression, SVC, KNeighborsClassifier, RandomForestClassifier, GaussianNB)에 대한 학습을 실시합니다.
 
 
 ```python
@@ -504,8 +521,11 @@ nb_pred = play(GaussianNB())
     Accuracy :  100.0 %
     Accuracy :  78.34 %
 
+---
 
-과대적합이 발생한 랜덤 포레스트 분류기를 제외하면, 로지스틱 회귀를 사용했을 때 가장 높은 정확도를 보인다. 이를 export한다.
+# 결과
+
+과대적합이 발생한 랜덤 포레스트 분류기를 제외하면, 로지스틱 회귀를 사용했을 때 가장 높은 정확도를 보입니다. 콘테스트에 제출하기 위해, 결과를 csv 파일로 export합니다. 이후 콘테스트 페이지의 **Submit Prediction**을 클릭해 제출할 수 있습니다.
 
 
 ```python
@@ -516,3 +536,6 @@ submission = pd.DataFrame({
 
 submission.to_csv('submission_log.csv', index=False)
 ```
+
+![](https://i.imgur.com/NbhncHb.png)
+

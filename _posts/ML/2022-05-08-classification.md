@@ -28,7 +28,7 @@ from imblearn.over_sampling import SMOTE
 
 >  `imblearn`는 전처리 과정을 도와주는 Scikit-learn 패키지다.
 
-### csv 파일 읽기
+## csv 파일 읽기
 
 csv 파일을 읽고, 이를 저장한다.
 
@@ -69,9 +69,47 @@ dtypes: int64(384), object(1)
 memory usage: 7.2+ MB
 ```
 
-### 데이터셋 전처리
+## 데이터 전처리
 
-`SMOTE`(Synthetic Minority Over-sampling Technique)를 사용해 
+모든 프로젝트는 최적의 결과를 얻기 위해서 불필요한 데이터를 정리하고, 레이블 수의 균형을 맞추는 **전처리** 과정을 거친다.
+
+- 우선 `drop()` 메서드를 사용해 필요없는 특성을 삭제한다. rice, garlic, ginger는 아시아 요리에 대부분 들어가는 일반적인 재료이므로 삭제한다.
+
+```python
+feature_df= df.drop(['cuisine','Unnamed: 0','rice','garlic','ginger'], axis=1)
+labels_df = df.cuisine #.unique()
+feature_df.head()
+```
+
+- 다음으로, `SMOTE`(Synthetic Minority Over-sampling Technique) 객체의 `fit_resample()` 메서드를 사용해 데이터의 균형을 맞춘다.
+
+```python
+oversample = SMOTE()
+transformed_feature_df, transformed_label_df = oversample.fit_resample(feature_df, labels_df)
+print(f'old label count: {df.cuisine.value_counts()}')
+print(f'new label count: {transformed_label_df.value_counts()}')
+```
+
+```
+old label count: korean      799
+indian      598
+chinese     442
+japanese    320
+thai        289
+Name: cuisine, dtype: int64
+new label count: indian      799
+thai        799
+chinese     799
+japanese    799
+korean      799
+Name: cuisine, dtype: int64
+```
+
+- 마지막으로, 전처리 과정이 끝난 데이터를 새 프레임에 저장한다.
+
+```python
+transformed_df  =  pd . concat ([ transformed_label_df , transformed_feature_df ], axis = 1 , join = 'outer' )
+```
 
 ---
 

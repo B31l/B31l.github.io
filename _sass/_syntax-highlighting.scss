@@ -2,8 +2,7 @@
 
 code {  // ``
     padding: 0 5px;
-    background-color: #EBCB8B;
-    color: Black;
+    color: rgb(232, 62, 140);
     font-weight: bold;
 }
 
@@ -28,7 +27,7 @@ pre {
 }
 
 
-$highlight-background   :#263238;
+$highlight-background   :#151515;
 $highlight-foreground   :#f8f8f2;
 $highlight-comment      :#999999;
 
@@ -54,7 +53,7 @@ $highlight-purple       :#8E59D7;
     margin-top: 15px;
     
     box-shadow: 0 0 5px black;
-    background-color: #263238;
+    background-color: #151515;
 
     line-height: 100%;
     font-size: 15px;
@@ -63,8 +62,8 @@ $highlight-purple       :#8E59D7;
     
 
     
-    .hll    { background-color: #263238 }
-    .err    { background-color: #263238; color: tomato; } /* Error */
+    .hll    { background-color: #151515 }
+    .err    { background-color: #151515; color: tomato; } /* Error */
     .w      { color: #ECEFF4 }    /* Text.Whitespace */
     .p      { color: #ECEFF4 } /* Punctuation 문장 부호 */ 
 

@@ -28,6 +28,8 @@ from imblearn.over_sampling import SMOTE
 
 >  `imblearn`는 전처리 과정을 도와주는 Scikit-learn 패키지다.
 
+### csv 파일 읽기
+
 csv 파일을 읽고, 이를 저장한다.
 
 ```python
@@ -67,7 +69,9 @@ dtypes: int64(384), object(1)
 memory usage: 7.2+ MB
 ```
 
+### 데이터셋 전처리
 
+`SMOTE`(Synthetic Minority Over-sampling Technique)를 사용해 
 
 ---
 

@@ -10,17 +10,17 @@
     *zoom: 1;
 }
 .page {
-    // width: 1200px;
-    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
     section {
-        // width: 770px;
-        width: calc(100% - 340px);
-        max-width: 1200px;
+        width: calc(100% - 300px);
+        max-width: 900px;
         margin: 0 auto;
-        margin-left: 320px;
-        padding: 20px 30px 0;
+        margin-left: 300px;
+        padding: 20px 30px;
         box-sizing: border-box;
-        box-shadow: 0 0 50px #ebcb8b;
+        border-left: 2px solid #ccc;
+        border-right: 2px solid #ccc;
         background-color: white;
         font-size: 15px;
         a:not([title]){

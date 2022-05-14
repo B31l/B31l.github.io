@@ -1,19 +1,19 @@
 .information {
-    padding: 10px;
-    color: #ccc;
-    text-align: center;
     .information-meta {
         font-size: 3em;
-        font-weight: bold;
-        font-family: 'Vitro_core';
+        margin: 10px 0;
     }
     .information-title {
         font-size: 1em;
         margin-bottom: 5px;
+        padding-left: 50px;
     }
-    .information-label >.label-card {
-        a {
-            color: #ccc;
+    .information-label {
+        padding-left: 50px;
+        .label-card {
+            a {
+                color: #ccc;
+            }
         }
     }
 }

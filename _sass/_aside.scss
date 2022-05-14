@@ -1,16 +1,14 @@
 aside { // nord-0 사용
     position: fixed;
-    left: 0;
+    left: calc(50% - 600px);
     width: 300px;
-    margin-top: 5vh;
     height: 90vh;
-    padding: 0;
+    margin-top: 5vh;
+    padding: 15px;
     box-sizing: border-box;
+    color: black;
     font-size: 13.5px;
-    color: #ccc;
-    border-radius: 0 8px 8px 0;
-    background: #151515;
-    box-shadow: 0 0 10px #ccc;
+    
     .profile {  // 프로필
         margin: 10px 0;
         height: 125px;
@@ -98,7 +96,7 @@ aside { // nord-0 사용
         .content-ul {
             padding: 20px 0;
             list-style: none;
-            border-top: 5px dotted;
+            border-top: 2px solid #ccc;
             overflow-y: auto;
             a {
                 display: block;
@@ -106,12 +104,11 @@ aside { // nord-0 사용
                 line-height: 24px;
                 padding-left: 10px;
                 box-sizing: border-box;
-                color: #ccc;
+                color: inherit;
                 transition: 0.5s ease;
                 &:hover {
                     color: black;
                     background-color: #ebcb8b;
-                    font-weight: bold;
                 }
             }
             // h2
@@ -122,7 +119,7 @@ aside { // nord-0 사용
                 a {
                     margin: 0;
                     padding-left: 30px;
-                    color: #ccc;
+                    color: #888;
                 }
                 // h3
                 ul {

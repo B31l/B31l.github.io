@@ -41,7 +41,7 @@ html {
 }
 body {
     // font-family: Helvetica, Arial;
-    font-family: system-ui;
+    font-family: sans-serif;
     color: black;
     position: relative;
     min-height: 100vh;
@@ -50,7 +50,7 @@ body {
     // margin-top: 100px;
 }
 a {
-    color: blue;
+    color: royalblue;
     font-weight: bold;
     text-decoration: none;
 }
@@ -60,23 +60,21 @@ button {
 }
 hr {
     border: 0;
-    border-top: 1px solid #eee;
-    margin-bottom: 250px;
+    // border-top: 1px solid #eee;
+    // margin-bottom: 250px;
 }
 h1 {
     display: inline-block;
-    margin: 10px 0;
+    margin: 50px 0 10px;
     font-size: 3em;
-    font-family: 'Vitro_core';
+    font-weight: 900;
 }
 h2 {
     margin: 50px 0 10px;
-    border-bottom: solid;
     font-size: 2em;
-    font-family: 'yangjin';
 }
 h3 {
-    margin: 25px 0 10px;
+    margin: 50px 0 10px;
     font-size: 1.25em;
     font-family: 'yangjin';
 }
@@ -85,10 +83,10 @@ h4, h5, h6 {
     font-size: 1.1em;
 }
 blockquote {
-    margin: 10px 0;
+    margin: 30px 0;
     padding: 10px;
-    border-left: 5px solid;
-    box-shadow: 0 0 5px black;
+    border-left: 5px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
 }
 ol {
     list-style: none;
@@ -126,8 +124,8 @@ table {
     }
 }
 p {
-    margin: 20px 0;
-    line-height: 20px;
+    margin: 0;
+    line-height: 25px;
 }
 img {
     display: block;

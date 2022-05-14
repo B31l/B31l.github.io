@@ -12,9 +12,9 @@ mathjax: true
 
 * content
 {:toc}
-**ML-For-Beginners**의 **[Getting started with classification](https://github.com/codingalzi/ML-For-Beginners/tree/main/4-Classification)**문서를 읽고, 요약 정리한 글입니다.
-
 # 개요
+
+이 글은 **ML-For-Beginners**의 **[Getting started with classification](https://github.com/codingalzi/ML-For-Beginners/tree/main/4-Classification)** 문서를 읽고 요약 정리한 것이다.
 
 분류는 **지도 학습**의 한 형태로, 타깃이 가질 수 있는 값이 2개인 **이진 분류**와, 타깃이 가질 수 있는 값이 3개 이상인  **다중 클래스 분류**로 나눌 수 있다. `scikit-learn` 패키는 다양한 분류 모델을 제공하며, 저자의 문서에서는 이를 활용해 아시아의 요리 데이터셋을 분류하는 작업을 수행한다. 
 
@@ -38,14 +38,14 @@ csv 파일을 읽고, 이를 저장한다.
 df  = pd.read_csv('/content/drive/My Drive/data/cuisines.csv')
 ```
 
-> 구글 코랩 환경에서 파일에 접근하기 위해서는 다음 코드를 실행해 드라이브 마운트를 설정해야 한다.
->
-> ```python
-> from google.colab import drive
-> drive.mount('/content/drive')
-> ```
+구글 코랩 환경에서 파일에 접근하기 위해서는 다음 코드를 실행해 드라이브 마운트를 설정해야 한다.
 
-`head()`및 `info()`를 사용해 데이터셋을 살펴볼 수 있다.
+ ```python
+from google.colab import drive
+drive.mount('/content/drive')
+ ```
+
+`head()`및 `info()` 메서드를 사용해 데이터셋을 살펴볼 수 있다.
 
 ```python
 df.head()
@@ -143,9 +143,9 @@ import numpy as np
 
 적절한 모델을 선택하는 것은 중요하다. 시행착오를 거쳐 찾을 수도 있지만, 더 좋은 방법은 [ML Cheat sheet](https://docs.microsoft.com/azure/machine-learning/algorithm-cheat-sheet?WT.mc_id=academic-15963-cxa)를 참고해서 사용할 모델을 결정하는 것이다.
 
-> [ML Cheat sheet](https://docs.microsoft.com/azure/machine-learning/algorithm-cheat-sheet?WT.mc_id=academic-15963-cxa)
->
-> ![](https://docs.microsoft.com/ko-kr/azure/machine-learning/media/algorithm-cheat-sheet/machine-learning-algorithm-cheat-sheet.png)
+![](https://docs.microsoft.com/ko-kr/azure/machine-learning/media/algorithm-cheat-sheet/machine-learning-algorithm-cheat-sheet.png)
+
+[이미지 출처](https://docs.microsoft.com/azure/machine-learning/algorithm-cheat-sheet?WT.mc_id=academic-15963-cxa)
 
 ## 데이터 분할
 
@@ -426,23 +426,17 @@ RFST의 경우 약 84%의 정확도를 보여주며, 이는 지금까지 살펴�
 
 - 작업 공간에 웹 앱 프로젝트 폴더를 만든다.
 
-- 터미널에 다음 명령을 입력한다.
+- 다음 명령을 터미널에 입력해 Node.js 패키지를 사용하기 위한 기초 설정을 한다.
 
-  - <u>Terminal</u>
+  ```sh
+  npm init --y
+  ```
 
-    ```sh
-    npm init --y
-    ```
+- 다음 명령을 터미널에 입력해 웹 앱 구동을 위한 `http-server`을 전역 설치한다.
 
-    Node.js 패키지를 사용하기 위한 기초 설정을 한다.
-
-  - <u>Terminal</u>
-
-    ```sh
-    npm install --global http-server
-    ```
-    
-    웹 앱 구동을 위한 `http-server`을 전역 설치한다.
+  ```sh
+  npm install --global http-server
+  ```
 
 - 다음과 같은 디렉토리 구조로 구성한다.
 
@@ -535,7 +529,7 @@ RFST의 경우 약 84%의 정확도를 보여주며, 이는 지금까지 살펴�
   weighted avg       0.79      0.79      0.79      1199
   ```
 
-## Onnx로 변환하기
+## onnx로 변환하기
 
 작성한 모델은 다음 셀을 실행시켜 `model.onnx` 파일로 포매팅할 수 있다.
 
@@ -553,8 +547,6 @@ with open("./model.onnx", "wb") as f:
 ## 실행하기
 
 터미널에 다음 명령을 입력한다.
-
-<u>Terminal</u>
 
 ```shell
 http-server

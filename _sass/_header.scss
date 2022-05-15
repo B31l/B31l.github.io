@@ -1,5 +1,5 @@
 header {
-    // display: none;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -113,6 +113,7 @@ header {
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {
     header {
+        width: 900px;
         // background: #4C566A; // $nord3
         .wrapper {
             width: 100%;
@@ -125,6 +126,7 @@ header {
 }
 @media screen and (max-width: 770px) {
     header {
+        width: 100%;
         // background: #4C566A; // $nord3
         .wrapper {
             width: 100%;

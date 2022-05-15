@@ -1,17 +1,15 @@
 header {
-    display: none;
-    position: absolute;
+    // display: none;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    height: 100px;
-    box-sizing: border-box;
+    width: 1200px;
+    height: 50px;
     margin: 0px auto;
+    box-sizing: border-box;
     z-index: 9;
-    // background: #ECEFF4;
     background: #4C566A; // $nord3
-    border-bottom: solid;
     .wrapper {
         display: flex;
         width: 1200px;
@@ -23,7 +21,7 @@ header {
             padding: 0 10px;
             button {
                 width: auto;
-                height: 100px;
+                height: 50px;
                 margin: 0 10px;
                 color: #ECEFF4; // $nord6: 글자색
                 background: none;

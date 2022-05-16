@@ -84,8 +84,7 @@ h4, h5, h6 {
 blockquote {
     margin: 15px 0;
     padding: 10px;
-    border-left: 5px solid #ccc;
-    box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #777;
 }
 ol {
     list-style: none;
@@ -133,7 +132,13 @@ img {
 }
 
 em {
+    display: block;
+    margin: -10px 0 10px -10px;
+    padding: 5px 10px;
+    width: 100%;
+    background: rgba(255, 193, 7, 0.5);
     font-weight: 900;
+    font-style: normal;
 }
 u, s {
     display: block;

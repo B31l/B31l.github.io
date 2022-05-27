@@ -365,4 +365,6 @@ Seconds=50, Latitude=44, Longitude=-12를 입력했을 때, notebook.ipynb에서
 
 ![](https://i.imgur.com/WFghU5d.gif)
 
-동일한 결과를 확인할 수 있다!
+predict 버튼을 누르면 기존 주소에 "/predict"가 더해진 것을 확인할 수 있다.
+
+예측 결과는 동일하다!

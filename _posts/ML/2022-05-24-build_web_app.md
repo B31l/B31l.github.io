@@ -44,6 +44,21 @@ ufos.head()
 |    3 | 10/10/1956 21:00 |                 edna |    tx |      us |   circle |               20.0 |             1/2 hour | My older brother and twin sister were leaving ... |   1/17/2004 | 28.978333 | -96.645833  |
 |    4 | 10/10/1960 20:00 |              kaneohe |    hi |      us |    light |              900.0 |           15 minutes | AS a Marine 1st Lt. flying an FJ4B fighter/att... |   1/22/2004 | 21.418056 | -157.803611 |
 
+데이터셋의 각 특성에 대한 정보는 다음과 같다.
+
+- city: UFO 목격 장소(시)
+- state: UFO 목격 장소(주)
+- `country`: UFO 목격 장소(국가)
+- shape: UFO 모양
+- `duration (seconds)`: UFO 목격 시간(초 단위)
+- duration (hours/min): UFO 목격 시간(분~시 단위)
+- comments: UFO 목격에 대한 흥미로운 설명
+- date posted: 게시일
+- `latitude`: 위도
+- `longitude`: 경도
+
+모델의 목적은 좌표와 목격 시간을 바탕으로 UFO를 목격한 장소를 예측하는 것이므로, 모델 훈련에 사용할 특성인 `duration (seconds)`, `country`, `latitude`, `longitude`으로 새 데이터프레임(ufos)을 생성한다.
+
 ```python
 ufos = pd.DataFrame({
     "Seconds": ufos["duration (seconds)"],
@@ -51,18 +66,29 @@ ufos = pd.DataFrame({
     "Latitude": ufos["latitude"],
     "Longitude": ufos["longitude"]
 })
-ufos.Country.unique()
 ```
 
-```
-array(['us', nan, 'gb', 'ca', 'au', 'de'], dtype=object)
-```
+>  *Note*
+>
+> `unique()` 메서드를 사용하면 목격 장소(국가)가 어떤 값들을 가지는지 확인할 수 있다.
+>
+> ```python
+> ufos.Country.unique()
+> ```
+>
+> ```
+> array(['us', nan, 'gb', 'ca', 'au', 'de'], dtype=object)
+> ```
+>
 
+모델의 성능 향상을 위해 데이터 전처리는 필수적이다.
 
+- **결측값 처리**: 결측값이 있는 행을 삭제한다.
+- **데이터 축소**: 목격 시간을 1~60초 사이로 제한한다.
 
 ```python
 ufos.dropna(inplace=True)                                       # 결측값 처리
-ufos = ufos[(ufos["Seconds"] >= 1) & (ufos["Seconds"] <= 60)]   # 1 ~ 60초 목격 데이테어 집중
+ufos = ufos[(ufos["Seconds"] >= 1) & (ufos["Seconds"] <= 60)]   # 데이터 축소
 ufos.info()
 ```
 
@@ -88,9 +114,11 @@ memory usage: 1010.3+ KB
 | 23   | 60.0    | 4       | 45.582778 | -122.352222 |
 | 24   | 3.0     | 3       | 51.783333 | -0.783333   |
 
+이제 훈련 준비가 끝났다.
 
+## 학습
 
-## 로지스틱 회귀 모델
+ㅇ
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -103,7 +131,9 @@ y = ufos["Country"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 ```
 
+예측 모델로 로지스틱 회귀 모델(**ogistic regression model**)을 사용한다.
 
+데이터 전처리를 위해 
 
 ```python
 from sklearn.metrics import accuracy_score, classification_report

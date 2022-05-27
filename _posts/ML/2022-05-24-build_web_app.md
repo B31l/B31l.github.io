@@ -44,7 +44,7 @@ ufos.head()
 |    3 | 10/10/1956 21:00 |                 edna |    tx |      us |   circle |               20.0 |             1/2 hour | My older brother and twin sister were leaving ... |   1/17/2004 | 28.978333 | -96.645833  |
 |    4 | 10/10/1960 20:00 |              kaneohe |    hi |      us |    light |              900.0 |           15 minutes | AS a Marine 1st Lt. flying an FJ4B fighter/att... |   1/22/2004 | 21.418056 | -157.803611 |
 
-데이터셋의 각 특성에 대한 정보는 다음과 같다.
+데이터셋의 각 특성에 대한 정보를 요약하면 다음과 같다.
 
 - city: UFO 목격 장소(시)
 - state: UFO 목격 장소(주)
@@ -118,7 +118,7 @@ memory usage: 1010.3+ KB
 
 ## 학습
 
-ㅇ
+데이터셋의 특성(X)과 레이블(y)을 훈련셋과 테스트셋으로 분리한다.
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -131,9 +131,7 @@ y = ufos["Country"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 ```
 
-예측 모델로 로지스틱 회귀 모델(**ogistic regression model**)을 사용한다.
-
-데이터 전처리를 위해 
+로지스틱 회귀 모델(**ogistic regression model**)을 사용해 모델을 훈련하고, 예측을 수행해 정확도를 확인한다.
 
 ```python
 from sklearn.metrics import accuracy_score, classification_report
@@ -165,26 +163,24 @@ Predicted labels:  [4 4 4 ... 3 4 4]
 Accuracy:  0.9611444036342548
 ```
 
-
+약 96%의 쓸만한 정확도를 보인다.
 
 ## pickle로 저장
+
+객체를 바이너리 파일로 변환해 읽고 쓸 수 있도록 도와주는 라이브러리인 pickle을 사용한다.
 
 ```python
 import pickle
 ```
 
-
-
-> *Note*
->
-> Pickle 어쩌구
-
-
+다음과 같이 모델 객체를 pickle 파일로 저장할 수 있다.
 
 ```python
 model_filename = "ufo-model.pkl"
 pickle.dump(model, open(model_filename, "wb"))
 ```
+
+pickle 파일로부터 모델 객체를 불러오는 것도 가능하다.
 
 ```python
 model = pickle.load(open("ufo-model.pkl", "rb"))
@@ -195,28 +191,40 @@ print(model.predict([[50, 44, -12]]))
 [1]
 ```
 
-
-
-
+Seconds=50, Latitude=44, Longitude=-12를 입력했을 때, 1번 인덱스(Canada)를 예측한다.
 
 # 웹앱 빌드
 
-## 디렉토리 구조
+본격적인 머신러닝 웹앱 빌드를 위해, 작업 폴더에 다음과 같은 디렉토리 구조를 생성한다.
 
 ![](https://i.imgur.com/S8suea4.png)
 
+각 폴더 및 파일에 대한 정보를 요약하면 다음과 같다.
+
+- web-app
+
+  - static/css
+
+    - `style.css` : 웹앱의 디자인을 담당하는 css 파일로, 웹앱 프론트엔드로 사용된다. 
+
+  - templates: 
+
+    - `index.html`: 웹앱의 구조를 담당하는 html 파일로, 웹엡 프론트엔드로 사용된다.
+
+  - `app.py`: 파이썬으로 작성된 Flask 서버로, 웹엡 백엔드로 사용된다.
+
+  - `requirements.txt`: 웹앱에 필요한 종속성 정보를 다음과 같이 작성한다.
+
+    ```
+    scikit-learn
+    pandas
+    numpy
+    flask
+    ```
+
 ## Frontend
 
-
-
-```
-scikit-learn
-pandas
-numpy
-flask
-```
-
-
+css 파일은 기능과 무관하기에 작성하지 않아도 무방하지만, 웹앱을 보다 깔끔하고 직관적이게 만들어주므로 대부분의 사이트가 사용한다. 아래 작성된 css 파일은 문서 주소에 있는 파일을 조금 수정한 것이다.
 
 ```css
 body {
@@ -261,7 +269,7 @@ input {
 }
 ```
 
-
+다음으로  웹앱의 뼈대이자 진입점인 html 파일을 작성한다. 
 
 ```html
 <!DOCTYPE html>
@@ -296,13 +304,11 @@ input {
 </html>
 ```
 
-
-
-
+html 파일은 정적이지만, {{}} 구문을 사용하는 템플릿 방식으로 변수를 감싸 사용할 수 있다.
 
 ## Backend with Flask
 
-
+파이썬의 Flask 프레임워크를 사용해 백엔드를 작성하면 적은 양의 코드로 요청, 응답 등의 기능을 구현할 수 있다.
 
 ```python
 import numpy as np
@@ -339,14 +345,24 @@ if __name__ == "__main__":
     app.run(debug=True)
 ```
 
+`Flask(__name__)`으로 서버 객체를 생성하고, 전에 바이너리 파일로 저장한 모델 객체를 불러온다.
 
+다음과 같이 Flask에서 지원하는 라우터 데커레이터를 사용해 요청, 응답을 처리할 수 있다.
+
+- @app.route("/")
+
+  "/"의 주소로 요청 시 `home()` 메서드가 "index.html" 템플릿을 표시한다.
+
+- @app.route("/predict", methods=["POST"])
+
+  "/predict"의 주소로 POST 요청 시 `predict()` 메서드가 학습된 모델을 사용해  `{{ url_for('predict')}}` form의 input 태그에 입력된 값들을 바탕으로 예측을 수행하고, 예측 결과를 템플릿의 `{{ prediction_text }}`에 표시한다.
+
+app.py 파일을 실행하면 웹 서버가 구동되며, 터미널에 표시된 링크를 통해 접속할 수 있다.
 
 # 실행
 
-![](https://i.imgur.com/TrsXkOt.png)
+Seconds=50, Latitude=44, Longitude=-12를 입력했을 때, notebook.ipynb에서는 1번 인덱스(Canada)를 예측했다. 완성된 웹앱 역시 같은 모델을 사용하므로, 동일한 결과를 반환해야 한다.
 
+![](https://i.imgur.com/WFghU5d.gif)
 
-
-
-
-![](https://i.imgur.com/48HsQ5f.png)
+동일한 결과를 확인할 수 있다!

@@ -1,6 +1,6 @@
 ---
 layout: post
-meta: "ML*pickle*Flask*"
+meta: "ML*pickle*Flask"
 title: "Flask와 pickle을 사용한 머신러닝 웹앱"
 categories: ML Flask
 tags: Python
@@ -16,7 +16,11 @@ mathjax: true
 
 이 글은 **ML-For-Beginners**의 **[Build a web app to use your ML model](https://github.com/codingalzi/ML-For-Beginners/tree/main/3-Web-App)** 문서를 읽고 요약 정리한 것이다.
 
+학습된 모델을 바이너리 파일 **pickle**로 저장할 수 있으며, 백엔드 프레임워크  **Flask**를 활용해 머신러닝 웹앱을 구축할 수 있다.
+
 # 모델 훈련
+
+모델 훈련을 위해 작업 폴더에 **notebook.ipynb** 파일을 생성하고, 필요한 라이브러리를 임포트한다.
 
 ```python
 import pandas as pd
@@ -25,20 +29,14 @@ import numpy as np
 
 ## 데이터 전처리
 
+[NUFORC](https://nuforc.org/) (National UFO Reporting Cente)에서 수집한 80,000번의 UFO 목격 데이터셋을 사용한다.
+
 ```python
 ufos = pd.read_csv("./data/ufos.csv")
 ufos.head()
 ```
 
-|      | datetime         | city                 | state | country | shape    | duration (seconds) | duration (hours/min) | comments                                          | date posted | latitude  |
-| ---- | ---------------- | -------------------- | ----- | ------- | -------- | ------------------ | -------------------- | ------------------------------------------------- | ----------- | --------- |
-| 0    | 10/10/1949 20:30 | san marcos           | tx    | us      | cylinder | 2700.0             | 45 minutes           | This event took place in early fall around 194... | 4/27/2004   | 29.883056 |
-| 1    | 10/10/1949 21:00 | lackland afb         | tx    | NaN     | light    | 7200.0             | 1-2 hrs              | 1949 Lackland AFB&#44 TX. Lights racing acros...  | 12/16/2005  | 29.384210 |
-| 2    | 10/10/1955 17:00 | chester (uk/england) | NaN   | gb      | circle   | 20.0               | 20 seconds           | Green/Orange circular disc over Chester&#44 En... | 1/21/2008   | 53.200000 |
-| 3    | 10/10/1956 21:00 | edna                 | tx    | us      | circle   | 20.0               | 1/2 hour             | My older brother and twin sister were leaving ... | 1/17/2004   | 28.978333 |
-| 4    | 10/10/1960 20:00 | kaneohe              | hi    | us      | light    | 900.0              | 15 minutes           | AS a Marine 1st Lt. flying an FJ4B fighter/att... | 1/22/2004   | 21.418056 |
-
-
+![](https://i.imgur.com/M6oFRNx.png)
 
 ```python
 ufos = pd.DataFrame({
@@ -166,6 +164,10 @@ print(model.predict([[50, 44, -12]]))
 
 
 # 웹앱 빌드
+
+## 디렉토리 구조
+
+![](https://i.imgur.com/S8suea4.png)
 
 ## Frontend
 
@@ -301,3 +303,14 @@ if __name__ == "__main__":
     app.run(debug=True)
 ```
 
+
+
+# 실행
+
+![](https://i.imgur.com/TrsXkOt.png)
+
+
+
+
+
+![](https://i.imgur.com/48HsQ5f.png)

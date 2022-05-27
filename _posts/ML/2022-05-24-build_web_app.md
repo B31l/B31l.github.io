@@ -36,7 +36,13 @@ ufos = pd.read_csv("./data/ufos.csv")
 ufos.head()
 ```
 
-![](https://i.imgur.com/M6oFRNx.png)
+|      |         datetime |                 city | state | country |    shape | duration (seconds) | duration (hours/min) |                                          comments | date posted |  latitude | longitude   |
+| ---: | ---------------: | -------------------: | ----: | ------: | -------: | -----------------: | -------------------: | ------------------------------------------------: | ----------: | --------: | ----------- |
+|    0 | 10/10/1949 20:30 |           san marcos |    tx |      us | cylinder |             2700.0 |           45 minutes | This event took place in early fall around 194... |   4/27/2004 | 29.883056 | -97.941111  |
+|    1 | 10/10/1949 21:00 |         lackland afb |    tx |     NaN |    light |             7200.0 |              1-2 hrs |  1949 Lackland AFB&#44 TX. Lights racing acros... |  12/16/2005 | 29.384210 | -98.581082  |
+|    2 | 10/10/1955 17:00 | chester (uk/england) |   NaN |      gb |   circle |               20.0 |           20 seconds | Green/Orange circular disc over Chester&#44 En... |   1/21/2008 | 53.200000 | -2.916667   |
+|    3 | 10/10/1956 21:00 |                 edna |    tx |      us |   circle |               20.0 |             1/2 hour | My older brother and twin sister were leaving ... |   1/17/2004 | 28.978333 | -96.645833  |
+|    4 | 10/10/1960 20:00 |              kaneohe |    hi |      us |    light |              900.0 |           15 minutes | AS a Marine 1st Lt. flying an FJ4B fighter/att... |   1/22/2004 | 21.418056 | -157.803611 |
 
 ```python
 ufos = pd.DataFrame({

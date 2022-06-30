@@ -2,19 +2,19 @@
 # do not remove 
 --- 
 
-@import "normalize",
-        "flexible",
-        "general",
-        "archive",
-        "header",
-        "post",
-        "footer";
+@import 'normalize';
+@import 'flexible';
+@import 'general';
+@import 'archive';
+@import 'header';
+@import 'post';
+@import 'footer';
 
 
 /* 0. Variables
    ========================================================================== */
 
-   @mixin lightMode {
+@mixin lightMode {
     --bg_color: #eee;
     --header_bg: #fafafa;
     --content_bg: #fff;

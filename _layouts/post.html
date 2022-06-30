@@ -1,37 +1,41 @@
 ---
-layout: page
+# Copyright (c) 2018 Florian Klampfer <https://qwtel.com/>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+layout: base
 ---
 
-<div class="post">
-  <div>
-    {% if page.title %}
-    <p class="post_title">{{ page.title }}</p>
-    {% endif %}
-  </div>
-  <div class="post_data">
-    {% if page.date %}
-    <span class="post_date">{{ page.date | date: "%b %-d, %Y" }}</span>
-    {% endif %}
-    {% if page.categories %}
-    <span class="post_categories">
-      &raquo; {% for cat_name in page.categories %}
-      <a href="{{ site.baseurl }}/categories/{{ cat_name }}">{{ cat_name }}</a>{% if forloop.last == false %},
-      {% endif %}{% endfor %}
-    </span>
-    {% endif %}
-  </div>
-  <div class="post_content">
-    {{ content }}
-  </div>
+{% assign version = jekyll.version | split:'.' %}
+{% assign major = version[0] | plus:0 %}
+{% assign minor = version[1] | plus:0 %}
+{% assign patch = version[2] | plus:0 %}
 
+{% include_cached components/post.html post=page no_link_title=true no_excerpt=true hide_image=page.hide_image hide_description=page.hide_description %}
 
-  {% if page.comment %}
-  <div class="post_comment">
+{% include components/dingbat.html %}
 
-    {% include disqus.html username = site.disqus.shortname %}
-    {% include cusdis.html %}
-
-  </div>
-  {% endif %}
-
-</div>
+{% assign addons = page.addons | default:site.hydejack.post_addons %}
+{% unless addons %}{% assign addons = "about,newsletter,related,random" | split:"," %}{% endunless %}
+{% for addon in addons %}
+  {% case addon %}
+  {% when 'about' %}
+     {% include_cached components/about.html author=page.author %}
+  {% when 'related' %}
+    {% include if-non-null try="components/related-posts.html" %}
+  {% when 'comments' %}
+    {% include body/comments.html %}
+  {% else %}
+  {% endcase %}
+{% endfor %}

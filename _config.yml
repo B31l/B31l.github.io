@@ -21,7 +21,7 @@ cusdis:
 
 user:
   name: B31l
-  pic: /assets/img/cat.jpg
+  pic: /assets/img/main.png
   picAlt: "B31l"
   job: 응애
   aboutme: true # comment this out if you don't need the 'about' page.

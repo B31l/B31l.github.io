@@ -1,0 +1,152 @@
+/* 1. General
+   ========================================================================== */
+
+   * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+html,
+html.light {
+    @include lightMode
+}
+
+html.dark {
+    @include darkMode
+}
+
+@media (prefers_color: light),
+(prefers_color: no-preference) {
+    html {
+        @include lightMode
+    }
+
+    html.dark {
+        @include darkMode
+    }
+}
+
+@media (prefers_color: dark) {
+    html {
+        @include darkMode
+    }
+
+    html.light {
+        @include lightMode
+    }
+}
+
+body {
+    height: calc(100% - 2.5rem);
+    font-weight: normal;
+    font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Titillium Web', "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg_color);
+    transition: background-color 0.5s ease;
+    background-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    @include breakpoint(medium) {
+        zoom: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    // display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    margin: 1.4em auto;
+    z-index: 0;
+    background: var(--content_bg);
+    position: relative;
+    min-height: 85%;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 2px var(--shadow_color);
+    padding-bottom: 2rem;
+
+    @include breakpoint(medium) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 960px;
+        padding-top: 2.5rem;
+    }
+
+    @include mobile-only {
+        padding-top: 16rem;
+        min-height: 75%;
+        max-width: 92%;
+    }
+}
+
+.main {
+    padding: 0.5rem;
+
+    @include breakpoint(medium) {
+        margin-left: 22rem;
+    }
+}
+
+.aboutme {
+    @include breakpoint(medium) {
+        max-width: 30rem;
+        margin-top: 5.5rem;
+
+        img {
+            float: none;
+        }
+    }
+    }
+
+    @include mobile-only {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.fourzerofour {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 7rem;
+}

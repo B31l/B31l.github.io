@@ -1,9 +1,6 @@
 ---
-layout: post
-meta: "Titanic"
 title: "타이타닉 관련 모델 훈련 과정"
-categories: MachineLearning
-tags: Python
+categories: [MachineLearning]
 mathjax: true
 ---
 

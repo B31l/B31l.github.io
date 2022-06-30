@@ -1,9 +1,6 @@
 ---
-layout: post
-meta: "Classification"
 title: "분류"
-categories: MachineLearning
-tags: Python NodeJs
+categories: [MachineLearning]
 mathjax: true
 ---
 

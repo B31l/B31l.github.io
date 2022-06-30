@@ -1,9 +1,6 @@
 ---
-layout: post
-meta: "openpyxl"
 title: "파이썬으로 엑셀 다루기"
-categories: Library
-tags: Python
+categories: [Library]
 mathjax: true
 ---
 

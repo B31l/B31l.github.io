@@ -1,9 +1,6 @@
 ---
-layout: post
-meta: "itertools"
 title: "파이썬으로 순열과 조합 계산하기"
-categories: Library
-tags: Python
+categories: [Library]
 mathjax: true
 ---
 

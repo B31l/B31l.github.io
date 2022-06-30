@@ -1,9 +1,6 @@
 ---
-layout: post
-meta: "ML*pickle*Flask"
 title: "Flask와 pickle을 사용한 머신러닝 웹앱"
-categories: MachineLearning
-tags: Python Flask
+categories: [MachineLearning]
 mathjax: true
 ---
 

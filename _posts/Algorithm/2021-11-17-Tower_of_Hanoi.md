@@ -1,9 +1,6 @@
 ---
-layout: post
-meta: "Tower of Hanoi"
 title: "하노이의 탑"
-categories: Algorithm
-tags: Python
+categories: [DS&A]
 mathjax: true
 ---
 

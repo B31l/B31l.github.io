@@ -1,6 +1,6 @@
 ---
 title: "하노이의 탑"
-categories: [DS&A]
+categories: [DSA]
 mathjax: true
 ---
 

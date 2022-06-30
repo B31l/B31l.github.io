@@ -1,6 +1,6 @@
 ---
 title: " 정렬 알고리즘 (1) 버블 정렬"
-categories: [DS&A]
+categories: [DSA]
 mathjax: true
 ---
 

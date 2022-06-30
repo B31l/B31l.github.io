@@ -7,11 +7,8 @@
         "id": "bae04f716cfb724e",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Note/2021-10-04-Halting_Problem.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         },
         "group": "14317cf3913ff212"
       },
@@ -19,11 +16,8 @@
         "id": "92e6685218fb9a7a",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Note/2021-10-04-Halting_Problem.md",
-            "mode": "preview"
-          }
+          "type": "empty",
+          "state": {}
         },
         "group": "14317cf3913ff212"
       }
@@ -81,7 +75,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Note/2021-10-04-Halting_Problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +94,15 @@
   },
   "active": "bae04f716cfb724e",
   "lastOpenFiles": [
+    "2017-10-24-welcome.md",
+    "2017-11-01-s2.md",
+    "2018-07-04-t1.md",
     "Note/2021-10-04-Halting_Problem.md",
     "DSA/2021-10-01-Stack.md",
     "DSA/2022-02-16-Week-9.md",
     "DSA/2022-02-10-Week-8.md",
     "DSA/2022-02-03-Week-5.md",
     "DSA/2022-01-27-Week-4.md",
-    "DSA/2022-01-19-Week-3.md",
-    "DSA/2022-01-12-Week-2.md",
-    "DSA/2022-01-06-Week-1P.md",
-    "DSA/2022-01-05-Week-1-2.md"
+    "DSA/2022-01-19-Week-3.md"
   ]
 }

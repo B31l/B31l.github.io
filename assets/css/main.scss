@@ -4,11 +4,6 @@
 
 @import 'normalize';
 @import 'flexible';
-@import 'general';
-@import 'archive';
-@import 'header';
-@import 'post';
-@import 'footer';
 
 
 /* 0. Variables
@@ -63,3 +58,9 @@
     --footer_font_a: #d1d1d1;
     --border_radius: 1px;
 }
+
+@import 'general';
+@import 'archive';
+@import 'header';
+@import 'post';
+@import 'footer';

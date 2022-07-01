@@ -98,38 +98,46 @@
         margin-bottom: 0.3rem;
     }
 
-    em {
-        display: block;
-        margin: -10px 0 10px -10px;
-        padding: 5px 10px;
-        width: calc(100% + 20px);
-        background: rgba(255, 193, 7, 0.5);
-        font-weight: 900;
-        font-style: normal;
-    }
-
     pre {
-        font-size: 0.85rem;
-        text-decoration: none;
-        display: block;
-        padding: 1rem;
-        overflow-x: scroll;
-        border-radius: 10px;
-        white-space: pre;
+        // font-size: 0.85rem;
+        // text-decoration: none;
+        // display: block;
+        // padding: 1rem;
+        // overflow-x: scroll;
+        // border-radius: 10px;
+        // white-space: pre;
+        margin: 0 !important;
+        padding: 1em;
+        word-wrap: break-word;      /* IE 5.5-7 */
+        white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+        white-space: pre-wrap;      /* current browsers */
     }
 
     code {
-        color: var(--inlinecode_text);
-        padding: .1em .4em;
-        border-radius: 5px;
-        font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-        font-size: .85rem;
+        // color: var(--inlinecode_text);
+        // padding: .1em .4em;
+        // border-radius: 5px;
+        // font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+        // font-size: .85rem;
+        color: #e83e8c;
+        font-weight: bold;
+        font-family: sans-serif;
     }
 
     pre code {
-        color: #fafafa;
+        // color: #fafafa;
+        // padding: 0;
+        // border: none;
+        margin: 0;
         padding: 0;
-        border: none;
+        background: none;
+        color: #ECEFF4;
+        font-size: 13.5px;
+        font-weight: normal;
+        line-height: 1.5;
+        letter-spacing: 0;
+        tab-size: 4;
+        font-family: Monaco, Consolas, "Lucida Console", monospace;
     }
 
     img {
@@ -158,52 +166,91 @@
         padding: 0 0.2rem;
         font-style: normal;
         position: relative;
+        &::after {
+            content: attr(info);
+            display: inline;
+            position: absolute;
+            top: 22px;
+            left: 0;
+            opacity: 0;
+            width: 11rem;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1.5em;
+            padding: 0.5rem 0.8rem;
+            background: #064b4d;
+            pointer-events: none;
+            transition: opacity 200ms, top 200ms;
+        }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 12px;
+            left: 20px;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            border: solid transparent 5px;
+            border-bottom-color: #064b4d;
+            transition: opacity 200ms, top 200ms;
+        }
+        :hover::after,
+        :hover::before {
+            opacity: 1;
+        }
+        &:hover::after {
+            top: 30px;
+        }
+        &:hover::before {
+            top: 20px;
+        }
     }
 
-    dfn::after {
-        content: attr(info);
-        display: inline;
-        position: absolute;
-        top: 22px;
-        left: 0;
-        opacity: 0;
-        width: 11rem;
-        color: #fff;
-        font-size: 13px;
-        font-weight: 700;
-        line-height: 1.5em;
-        padding: 0.5rem 0.8rem;
-        background: #064b4d;
-        pointer-events: none;
-        transition: opacity 200ms, top 200ms;
-    }
-
-    dfn::before {
-        content: '';
+    // Custom
+    em {
         display: block;
-        position: absolute;
-        top: 12px;
-        left: 20px;
-        opacity: 0;
-        width: 0;
-        height: 0;
-        border: solid transparent 5px;
-        border-bottom-color: #064b4d;
-        transition: opacity 200ms, top 200ms;
+        margin: -10px 0 10px -10px;
+        padding: 5px 10px;
+        width: calc(100% + 20px);
+        background: rgba(255, 193, 7, 0.5);
+        font-weight: 900;
+        font-style: normal;
+    }
+    
+    table {
+        width: 100%;
+        height: auto;
+        margin: 15px 0;
+        border-bottom: 1px solid;
+        border-collapse: collapse;
+        color: black;
+        font-size: 80%;
+        // table-layout: fixed;
+        // word-break: break-all;
+        thead {
+            background-color: #4C566A;
+            color: White;
+        }
+        tbody {
+            color: Black;
+            tr {
+                &:nth-of-type(2n+1) {
+                    // background-color: #f8f8fd;
+                    background-color: White;
+                }
+                &:nth-of-type(2n) {
+                    background-color: #ECEFF4;
+                }
+            }
+        }
     }
 
-    dfn:hover::after,
-    dfn:hover::before {
-        opacity: 1;
-    }
 
-    dfn:hover::after {
-        top: 30px;
-    }
 
-    dfn:hover::before {
-        top: 20px;
-    }
+
+
 }
 
 .post_comment {

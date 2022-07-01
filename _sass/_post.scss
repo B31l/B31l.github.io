@@ -81,6 +81,8 @@
 
     p {
         max-width: 49rem;
+        margin: 0;
+        line-height: 25px;
     }
 
     a {
@@ -94,6 +96,16 @@
 
     li {
         margin-bottom: 0.3rem;
+    }
+
+    em {
+        display: block;
+        margin: -10px 0 10px -10px;
+        padding: 5px 10px;
+        width: calc(100% + 20px);
+        background: rgba(255, 193, 7, 0.5);
+        font-weight: 900;
+        font-style: normal;
     }
 
     pre {
@@ -132,10 +144,13 @@
     }
 
     blockquote {
-        border-left: 5px solid var(--blockquote);
-        margin: 10px 0 10px 0;
-        padding: 2px 8px 2px 8px;
-        font-style: italic;
+        // border-left: 5px solid var(--blockquote);
+        // margin: 10px 0 10px 0;
+        // padding: 2px 8px 2px 8px;
+        // font-style: italic;
+        margin: 15px 0;
+        padding: 10px;
+        box-shadow: 0 0 5px #777;
     }
 
     dfn {

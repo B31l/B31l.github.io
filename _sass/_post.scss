@@ -30,7 +30,7 @@
 
 .post_data {
     margin-top: -0.5rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
 
     @include mobile-only {
         text-align: center;
@@ -232,6 +232,7 @@
         thead {
             background-color: #4C566A;
             color: White;
+            text-align: left;
         }
         tbody {
             color: Black;
@@ -246,14 +247,16 @@
             }
         }
     }
-
-
-
-
-
 }
 
 .post_comment {
     margin-top: 8rem;
     padding: 10px;
+}
+
+#markdown-toc {
+    padding: 10px;
+    list-style: none;
+    border-radius: 15px;
+    background: var(--header_bg)
 }

@@ -70,17 +70,17 @@
 // .highlight .il { color: #3677a9 } /* Literal.Number.Integer.Long */
 
 .highlight {
-    // white-space: pre;
-    // overflow-x: auto;
-    // margin: 15px 0;
+    white-space: pre;
+    overflow-x: auto;
+    margin: 15px 0;
     
-    // box-shadow: 0 0 5px black;
-    // background-color: #151515;
+    box-shadow: 0 0 5px black;
+    background-color: #151515;
 
-    // line-height: 100%;
-    // font-size: 15px;
-    // font-weight: 500;
-    // letter-spacing: -1px;
+    line-height: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -1px;
 
     .hll    { background-color: #151515 }
     .err    { background-color: #151515; color: tomato; } /* Error */

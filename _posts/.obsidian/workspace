@@ -7,19 +7,25 @@
         "id": "bae04f716cfb724e",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Note/2021-10-04-Halting_Problem.md",
+            "mode": "source"
+          }
         },
-        "group": "14317cf3913ff212"
+        "group": "16b1e73d9d06429b"
       },
       {
-        "id": "92e6685218fb9a7a",
+        "id": "2f067d41518608ee",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Note/2021-10-04-Halting_Problem.md",
+            "mode": "preview"
+          }
         },
-        "group": "14317cf3913ff212"
+        "group": "16b1e73d9d06429b"
       }
     ],
     "direction": "vertical"
@@ -75,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Note/2021-10-04-Halting_Problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,10 +101,10 @@
   },
   "active": "bae04f716cfb724e",
   "lastOpenFiles": [
+    "Note/2021-10-04-Halting_Problem.md",
     "2017-10-24-welcome.md",
     "2017-11-01-s2.md",
     "2018-07-04-t1.md",
-    "Note/2021-10-04-Halting_Problem.md",
     "DSA/2021-10-01-Stack.md",
     "DSA/2022-02-16-Week-9.md",
     "DSA/2022-02-10-Week-8.md",

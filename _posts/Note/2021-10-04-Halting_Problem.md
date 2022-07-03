@@ -331,5 +331,5 @@ Turing Machine[[1]](https://www.tutorialspoint.com/automata_theory/turing_machin
 # REF
 - "컴퓨터가 모든 것을 해결할 수 없다는 증명 (정지 문제)", udiprod 유튜브, [Link](https://www.youtube.com/watch?v=92WHN-pAFCs&t=54s&ab_channel=udiprod) (2021.10.04)
 - "정지 문제", 기계인간 깃허브 블로그, [Link](https://johngrib.github.io/wiki/halting-problem/) (2021.10.04)
----
+
 [^1]: 최근 들어서 난수 생성의 난관은 양자 난수 등의 기술을 적용한 하드웨어와의 결합으로 극복되고 있다. 

@@ -255,8 +255,41 @@
 }
 
 #markdown-toc {
-    padding: 10px;
-    list-style: none;
-    border-radius: 15px;
-    background: var(--header_bg)
+    // padding: 10px;
+    // list-style: none;
+    // background: var(--header_bg)
+    margin: 10px 0;
+    padding: 0;
+    box-shadow: 0 0 1px black;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    overflow-y: auto;
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        display: block;
+        height: 25px;
+        line-height: 25px;
+        border-bottom: 1px dotted;
+        box-sizing: border-box;
+        transition: 0.5s ease;
+        &:hover {
+            color: #ECEFF4;             // $nord6: 글자색
+            background-color: #5E81AC;  // $nord10: hover색
+        }
+    }
+    >li >a {
+        padding-left: 15px;
+    }
+    >li >ul >li >a {
+        padding-left: 45px;
+    }
+    >li >ul >li >ul >li >a {
+        padding-left: 75px;
+    }
 }

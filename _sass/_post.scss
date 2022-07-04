@@ -227,8 +227,6 @@
         border-collapse: collapse;
         color: black;
         font-size: 80%;
-        // table-layout: fixed;
-        // word-break: break-all;
         thead {
             background-color: #4C566A;
             color: White;
@@ -238,7 +236,6 @@
             color: Black;
             tr {
                 &:nth-of-type(2n+1) {
-                    // background-color: #f8f8fd;
                     background-color: White;
                 }
                 &:nth-of-type(2n) {

@@ -287,9 +287,7 @@
     >li >ul >li >ul >li >a {
         padding-left: 75px;
     }
-    li:last-child { 
-        a:last-child {
-            border-bottom: none;
-        }
+    li:last-child > a:last-child { 
+        border-bottom: none;
     }
 }

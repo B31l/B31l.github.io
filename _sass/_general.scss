@@ -103,13 +103,13 @@ img {
     padding: 0.5rem;
 
     @include breakpoint(medium) {
-        margin-left: 13rem;
+        margin-left: 17rem;
     }
 }
 
 .aboutme {
     @include breakpoint(medium) {
-        max-width: 30rem;
+        max-width: 40rem;
         margin-top: 5.5rem;
 
         img {

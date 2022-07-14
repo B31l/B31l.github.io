@@ -26,9 +26,8 @@ layout: page
 
 
   {% if page.comment %}
-  {% include mathjax.html %}
   <div class="post_comment">
-
+    {% include mathjax.html %}
     {% include disqus.html username = site.disqus.shortname %}
     {% include cusdis.html %}
 

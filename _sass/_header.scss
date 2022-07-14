@@ -6,7 +6,8 @@
     z-index: 1;
     position: absolute;
     top: 0;
-    border-radius: var(--border_radius);
+    // border-radius: var(--border_radius);
+    border-radius: 15px 0 0 15px;
     box-shadow: 0 0 2px 2px var(--shadow_color);
 
     @include mobile-only {
@@ -15,7 +16,7 @@
     }
 
     @include breakpoint(medium) {
-        width: 18rem;
+        width: 12rem;
         height: 100%;
         min-height: 100%;
     }

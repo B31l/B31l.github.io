@@ -81,7 +81,8 @@ img {
     position: relative;
     min-height: 85%;
     border-radius: 15px;
-    box-shadow: 0 0 2px 2px var(--shadow_color);
+    // box-shadow: 0 0 2px 2px var(--shadow_color);
+    box-shadow: 0 0 2px black;
     padding-bottom: 2rem;
 
     @include breakpoint(medium) {
@@ -102,7 +103,7 @@ img {
     padding: 0.5rem;
 
     @include breakpoint(medium) {
-        margin-left: 22rem;
+        margin-left: 13rem;
     }
 }
 

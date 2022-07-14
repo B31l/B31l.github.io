@@ -5,7 +5,7 @@
     color: var(--post_text);
 
     @include breakpoint(medium) {
-        max-width: 33rem;
+        max-width: 45rem;
         margin-top: 5rem;
     }
 
@@ -109,8 +109,6 @@
         margin: 0 !important;
         padding: 1em;
         word-wrap: break-word;      /* IE 5.5-7 */
-        white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
-        white-space: pre-wrap;      /* current browsers */
     }
 
     code {
@@ -288,5 +286,8 @@
     }
     >li >ul >li >ul >li >a {
         padding-left: 75px;
+    }
+    a:last-child { 
+        border-bottom: none;
     }
 }

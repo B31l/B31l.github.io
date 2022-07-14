@@ -7,12 +7,8 @@
         "id": "bae04f716cfb724e",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "DeepLearning/2022-07-13-텐서플로우 작업환경 구성.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         },
         "group": "16b1e73d9d06429b"
       },
@@ -20,12 +16,8 @@
         "id": "2f067d41518608ee",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "DeepLearning/2022-07-13-텐서플로우 작업환경 구성.md",
-            "mode": "preview",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         },
         "group": "16b1e73d9d06429b"
       }
@@ -83,7 +75,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DeepLearning/2022-07-13-텐서플로우 작업환경 구성.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,10 +92,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bae04f716cfb724e",
+  "active": "2c32663b85b9ab33",
   "lastOpenFiles": [
-    "DeepLearning/2022-05-15-PyTorch12.md",
     "DeepLearning/2022-07-13-텐서플로우 작업환경 구성.md",
+    "DeepLearning/2022-05-15-PyTorch12.md",
     "aka.ms/wsl2kernel.md",
     "DSA/2021-10-02-Queue.md",
     "Note/2021-10-04-Halting_Problem.md",

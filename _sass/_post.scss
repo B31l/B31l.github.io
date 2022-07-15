@@ -117,9 +117,20 @@
         // border-radius: 5px;
         // font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
         // font-size: .85rem;
-        color: #e83e8c;
+
+        // color: #e83e8c;
+        // font-weight: bold;
+        // font-family: sans-serif;
+
+        color: black;
         font-weight: bold;
-        font-family: sans-serif;
+        font-family: -apple-system;
+        border: 1px solid #33ccff;
+        box-shadow: 0 0 2px #33ccff;
+        padding: 0px 10px;
+        margin: 0 5px;
+        border-radius: 5px;
+        background: rgba(51, 204, 255, .5);
     }
 
     pre code {
@@ -128,6 +139,8 @@
         // border: none;
         margin: 0;
         padding: 0;
+        border: none;
+        box-shadow: none;
         background: none;
         // color: #ECEFF4;
         color: #333;

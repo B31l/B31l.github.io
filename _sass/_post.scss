@@ -234,25 +234,26 @@
         width: 100%;
         height: auto;
         margin: 15px 0;
-        border-bottom: 1px solid;
+        box-shadow: 0 0 2px black;
         border-collapse: collapse;
         color: black;
-        font-size: 80%;
+        font-size: 75%;
         thead {
-            background-color: #4C566A;
-            color: White;
             text-align: left;
         }
         tbody {
             color: Black;
             tr {
                 &:nth-of-type(2n+1) {
-                    background-color: White;
-                }
-                &:nth-of-type(2n) {
                     background-color: #ECEFF4;
                 }
+                &:nth-of-type(2n) {
+                    background-color: White;
+                }
             }
+        }
+        td {
+            padding: 0 5px;
         }
     }
 }

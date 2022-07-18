@@ -188,13 +188,13 @@ train.info()
 
 각 열은 다음 정보를 가지고 있습니다.
 - PassengerId : 각 승객의 고유 번호
-- Survived : 생존 여부(종속 변수)   
-0 = 사망   
+- Survived : 생존 여부(종속 변수)
+0 = 사망
 1 = 생존
-- Pclass : 객실 등급 - 승객의 사회적, 경제적 지위   
-1st = Upper   
-2nd = Middle   
-3rd = Lower   
+- Pclass : 객실 등급 - 승객의 사회적, 경제적 지위
+1st = Upper
+2nd = Middle
+3rd = Lower
 - Name : 이름
 - Sex : 성별
 - Age : 나이
@@ -203,10 +203,10 @@ train.info()
 - Ticket : 티켓의 고유넘버
 - Fare : 티켓의 요금
 - Cabin : 객실 번호
-- Embarked : 승선한 항   
-C = Cherbourg   
-Q = Queenstown   
-S = Southampton   
+- Embarked : 승선한 항
+C = Cherbourg
+Q = Queenstown
+S = Southampton
 
 다음 명령을 통해 각 열에서 결측치를 가진 행의 수를 표시할 수 있습니다.
 

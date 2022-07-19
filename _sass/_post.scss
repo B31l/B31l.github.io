@@ -127,11 +127,6 @@
         line-height: 1.5;
         letter-spacing: 0;
         tab-size: 4;
-        .language-plaintext {
-            .rouge-gutter {
-                display: none !important;
-            }
-        }
         .rouge-table {
             width: 100%;
             height: auto;
@@ -159,6 +154,12 @@
                     background: #272727
                 }
             }
+        }
+    }
+
+    .language-plaintext {
+        .rouge-gutter {
+            display: none !important;
         }
     }
 

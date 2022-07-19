@@ -114,7 +114,7 @@
     pre {
         margin: 0 !important;
         font-size: 13.5px;
-        font-family: D2Coding Monaco;
+        font-family: D2Coding, Monaco;
         color: white;
         word-wrap: break-word;
     }
@@ -139,11 +139,12 @@
             tr {
                 background: black;
                 .rouge-gutter {
-                    text-align: right;
-                    padding: 15px 0;
                     width: 40px;
+                    padding: 15px 0;
                     background: #272727;
+                    text-align: right;
                     .lineno {
+                        width: 40px;
                         font-family: monospace;
                         color: #999;
                         border-right: 1px solid;

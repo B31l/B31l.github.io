@@ -6,7 +6,7 @@
       <div class="button"></div>
     </label>
     <a class="header_circle" href="{{ '/' | relative_url }}">
-      <img src="{{ site.user.pic | relative_url }}" alt="{{ site.user.picAlt }}">
+      <img class="fun-btn" src="{{ site.user.pic | relative_url }}" alt="{{ site.user.picAlt }}">
     </a>
     <span class="header_name">{{ site.user.name }}</span>
     <span class="header_job">{{ site.user.job }}</span>
@@ -33,4 +33,19 @@
   </div>
 
 </header>
+<script>
 
+  $('.fun-btn').on('click', function(event) {
+  $(this).toggleClass('start-fun');
+  var $page = $('.page');
+  $page.toggleClass('color-bg-start')
+    .toggleClass('bg-animate-color');
+
+  //change text when when button is clicked
+
+  $(this).hasClass('start-fun') ?
+    $(this).text('stop the fun') :
+    $(this).text('start the fun');
+});
+
+</script>

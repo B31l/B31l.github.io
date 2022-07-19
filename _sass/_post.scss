@@ -59,7 +59,7 @@
 }
 
 .post_content {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.5rem;
     color: var(--post_text);
 
@@ -82,12 +82,11 @@
     p {
         max-width: 49rem;
         margin: 0;
-        line-height: 25px;
+        line-height: 1.25rem;
     }
 
     a {
         color: var(--post_link);
-
         &:hover,
         &:focus {
             color: var(--post_link_hover);
@@ -100,7 +99,6 @@
 
     code {  // 백틱 코드
         color: black;
-        font-weight: bold;
         font-family: -apple-system;
         padding-left: 5px;
         padding-right: 10px;
@@ -138,7 +136,7 @@
                 background: black;
                 .rouge-gutter {
                     width: 40px;
-                    padding: 15px 0;
+                    padding: 0.5rem 0;
                     background: #272727;
                     text-align: right;
                     .lineno {
@@ -150,7 +148,7 @@
                     }
                 }
                 .rouge-code {
-                    padding: 15px 10px;
+                    padding: 0.5rem 10px;
                     background: #272727
                 }
             }
@@ -274,9 +272,9 @@
 }
 
 #markdown-toc {
-    margin: 10px 0;
-    padding: 20px 0;
-    line-height: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
     outline: 1px solid var(--post_link);
     font-size: 15px;
     overflow-y: auto;
@@ -288,8 +286,8 @@
     }
     a {
         display: block;
-        height: 25px;
-        line-height: 25px;
+        height: 1.5rem;
+        line-height: 1.5rem;
         box-sizing: border-box;
         transition: 0.5s ease;
         &:hover {

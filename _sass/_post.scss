@@ -129,7 +129,7 @@
         line-height: 1.5;
         letter-spacing: 0;
         tab-size: 4;
-        .rogue-table {
+        .rouge-table {
             width: 100%;
             height: auto;
             margin: 0;
@@ -138,11 +138,11 @@
             border-collapse: collapse;
             tr {
                 background: black;
-                .rogue-gutter {
+                .rouge-gutter {
                     text-align: right;
                     padding: 15px 0;
                     width: 40px;
-                    background: rgb(39, 40, 34);
+                    background: #272727;
                     .lineno {
                         font-family: monospace;
                         color: #999;
@@ -150,15 +150,15 @@
                         padding-right: 10px;
                     }
                 }
-                .rogue-code {
+                .rouge-code {
                     padding: 15px 10px;
-                    background: rgb(39, 40, 34);
+                    background: #272727
                 }
             }
         }
     }
 
-    img {
+    img {   
         box-shadow: 0 0 2px;
     }
 

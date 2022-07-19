@@ -1,5 +1,5 @@
 .highlight {
-    max-height: 800px;
+    max-height: 829px;
     line-height: 100%;
     margin: 5px 0 30px;
     letter-spacing: -1px;
@@ -16,8 +16,6 @@
     .cs     { color: #999 } /* Comment.Special */
     .w      { color: #ECEFF4 } /* Text.Whitespace */ // #ECEFF4
     .p      { color: #ECEFF4 } /* Punctuation 문장 부호 */ 
-    .o      { color: #ECEFF4 } /* Operator */
-    .ow     { color: #ECEFF4 } /* Operator.Word */
     .kn     { color: #66d9ef } /* Keyword.Namespace */
     .k      { color: #f92672 } /* Keyword */
     .kc     { color: #f92672 } /* Keyword.Constant 상수*/
@@ -25,6 +23,8 @@
     .kp     { color: #f92672 } /* Keyword.Pseudo */
     .kr     { color: #f92672 } /* Keyword.Reserved 예악어*/
     .kt     { color: #f92672 } /* Keyword.Type 타입*/
+    .o      { color: #f92672 } /* Operator */
+    .ow     { color: #f92672 } /* Operator.Word */
     .nc     { color: #fd971f } /* Name.Class */
     .nf     { color: #fd971f } /* Name.Function */
     .nb     { color: #fd971f } /* Name.Builtin */ // int, bool, sum()함수명 등

@@ -155,6 +155,11 @@
                 }
             }
         }
+        .language-plaintext {
+            .rouge-gutter {
+                display: none !important;
+            }
+        }
     }
 
     img {   

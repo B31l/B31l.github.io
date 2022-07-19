@@ -274,13 +274,10 @@
 }
 
 #markdown-toc {
-    // padding: 10px;
-    // list-style: none;
-    // background: var(--header_bg)
     margin: 10px 0;
     padding: 20px 0;
-    box-shadow: 0 0 2px var(--post_link);
     line-height: 25px;
+    outline: 1px solid var(--post_link);
     font-size: 15px;
     overflow-y: auto;
     ul {
@@ -296,8 +293,8 @@
         box-sizing: border-box;
         transition: 0.5s ease;
         &:hover {
-            color: #ECEFF4;             // $nord6: 글자색
-            background-color: #5E81AC;  // $nord10: hover색
+            color: var(--sublime_font);
+            background-color: var(--post_link);
         }
     }
     >li >a {

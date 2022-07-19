@@ -100,30 +100,7 @@
     //     margin-bottom: 0.3rem;
     // }
 
-    pre {
-        // font-size: 0.85rem;
-        // text-decoration: none;
-        // display: block;
-        // padding: 1rem;
-        // overflow-x: scroll;
-        // border-radius: 10px;
-        // white-space: pre;
-        margin: 0 !important;
-        padding: 1em;
-        word-wrap: break-word;      /* IE 5.5-7 */
-    }
-
-    code {
-        // color: var(--inlinecode_text);
-        // padding: .1em .4em;
-        // border-radius: 5px;
-        // font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-        // font-size: .85rem;
-
-        // color: #e83e8c;
-        // font-weight: bold;
-        // font-family: sans-serif;
-
+    code {  // 백틱 코드
         color: black;
         font-weight: bold;
         font-family: -apple-system;
@@ -134,23 +111,51 @@
         background: rgba(51, 204, 255, .25);
     }
 
-    pre code {
-        // color: #fafafa;
-        // padding: 0;
-        // border: none;
+    pre {
+        margin: 0 !important;
+        font-size: 13.5px;
+        font-family: D2Coding Monaco;
+        color: white;
+        word-wrap: break-word;
+    }
+
+    pre code {  // 블록 코드
         margin: 0;
         padding: 0;
         border: none;
         box-shadow: none;
         background: none;
-        // color: #ECEFF4;
-        color: #333;
-        font-size: 13.5px;
         font-weight: normal;
         line-height: 1.5;
         letter-spacing: 0;
         tab-size: 4;
-        font-family: Monaco, Consolas, "Lucida Console", monospace;
+        .rogue-table {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            box-shadow: none;
+            font-size: 100%;
+            border-collapse: collapse;
+            tr {
+                background: black;
+                .rogue-gutter {
+                    text-align: right;
+                    padding: 15px 0;
+                    width: 40px;
+                    background: rgb(39, 40, 34);
+                    .lineno {
+                        font-family: monospace;
+                        color: #999;
+                        border-right: 1px solid;
+                        padding-right: 10px;
+                    }
+                }
+                .rogue-code {
+                    padding: 15px 10px;
+                    background: rgb(39, 40, 34);
+                }
+            }
+        }
     }
 
     img {

@@ -1,14 +1,12 @@
 .highlight {
-    white-space: pre;
-    overflow-x: auto;
+    max-height: 800px;
+    line-height: 100%;
     margin: 5px 0 30px;
     border-radius: 5px;
-    box-shadow: 0 0 2px black;
-    background-color: #f0f0f0;;
-    line-height: 100%;
-    font-size: 15px;
-    font-weight: 500;
     letter-spacing: -1px;
+    white-space: pre;
+    overflow-x: auto;
+    
 
     .hll    { background-color: #f0f0f0 }
     .err    { background-color: #f0f0f0; color: tomato; } /* Error */

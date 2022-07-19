@@ -1,7 +1,18 @@
 /* 0. Variables
    ========================================================================== */
 
-   @mixin lightMode {
+@mixin scheme {
+    --sublime_font: #ECEFF4;
+    --sublime_bg: #272727;
+    --sublime_comment: #999;
+    --sublime_color_RED: #f92672;
+    --sublime_color_YELLOW: #fd971f;
+    --sublime_color_GREEN: #a6e22e;
+    --sublime_color_BLUE: #66d9ef;
+    --sublime_color_PURPLE: #ae81ff;
+}
+
+@mixin lightMode {
     --bg_color: #eee;
     --header_bg: #fafafa;
     --content_bg: #fff;
@@ -24,7 +35,6 @@
     --footer_font: #858585;
     --footer_font_a: #000;
     --border_radius: 15px;
-
 }
 
 @mixin darkMode {
@@ -48,5 +58,5 @@
     --inlinecode_text: #FFAA00;
     --blockquote: #CACCCE;
     --footer_font_a: #d1d1d1;
-    --border_radius: 1px;
+    --border_radius: 15px;
 }

@@ -29,7 +29,7 @@
     .ow     { color: var(--sublime_color_RED) } /* Operator.Word */
     .nc     { color: var(--sublime_color_YELLOW) } /* Name.Class */
     .nf     { color: var(--sublime_color_YELLOW) } /* Name.Function */
-    .nb     { color: var(--sublime_color_YELLOW) } /* Name.Builtin */ // int, bool, sum()함수명 등
+    .nb     { color: var(--sublime_font) } /* Name.Builtin */ // int, bool, sum()함수명 등
     .n      { color: var(--sublime_font)} /* Name */
     .na     { color: var(--sublime_font)} /* Name.Attribute */
     .no     { color: var(--sublime_font)} /* Name.Constant */

@@ -35,26 +35,4 @@ layout: page
   {% endif %}
 
 </div>
-
-{% include archive.html %}
-{% if page.categories %}
-  <div class="archive">
-    <p class="archive_type">{{ page.categories }}</p>
-    <ul>
-      {% for post in site.categories[DeepLearning] %}
-        {% if post.url %}
-          <li>
-            <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
-              {{ post.date | date: "%b %-d, %Y" }}
-            </time>
-            <div class='archive_title'>
-              <a href='{{ post.url | relative_url }}'>
-                {{ post.title | escape }}
-              </a>
-            </div>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-{% endif %}
+{% include post_archive.html %}

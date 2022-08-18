@@ -244,10 +244,12 @@
         border-collapse: collapse;
         color: black;
         font-size: 90%;
+        table-layout:fixed;
         thead {
-            text-align: left;
+            text-align: center;
         }
         tbody {
+            text-align: left;
             color: Black;
             tr {
                 &:nth-of-type(2n+1) {
@@ -260,6 +262,10 @@
         }
         th, td {
             padding: 0 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: keep-all;
         }
     }
 }

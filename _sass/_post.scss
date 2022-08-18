@@ -124,6 +124,7 @@
         letter-spacing: 0;
         tab-size: 4;
         .rouge-table {
+            display: table;
             width: 100%;
             height: auto;
             margin: 0;
@@ -237,7 +238,10 @@
     }
     
     table {
-        width: 100%;
+        display: inline-block;
+        overflow-x: auto;
+        width: auto;
+        max-width: 100%;
         height: auto;
         margin: 15px 0;
         box-shadow: 0 0 2px black;

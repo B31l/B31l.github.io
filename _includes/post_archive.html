@@ -1,13 +1,12 @@
 {% if page.categories %}
+  {% assign cat = page.categories[0] %}
+  {% assign cat_list = site.categories[cat] %}
   <div class="archive">
     <p class="archive_type">{{ page.categories }}</p>
     <ul>
-      {% for post in site.categories[page.categories] %}
+      {% for post in cat_list %}
         {% if post.url %}
           <li>
-            <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
-              {{ post.date | date: "%b %-d, %Y" }}
-            </time>
             <div class='archive_title'>
               <a href='{{ post.url | relative_url }}'>
                 {{ post.title | escape }}

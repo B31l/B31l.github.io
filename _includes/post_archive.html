@@ -1,10 +1,10 @@
 {% if page.categories %}
   {% assign cat = page.categories[0] %}
-  {% assign cat_list = site.categories[cat].reverse() %}
+  {% assign cat_list = site.categories[cat] %}
   <div class="post_archive">
     <p class="post_archive_type">{{ page.categories }}</p>
     <ul>
-      {% for post in cat_list %}
+      {% for post in cat_list.reverse() %}
         {% if post.url %}
           <li>
             <div class='post_archive_title'>

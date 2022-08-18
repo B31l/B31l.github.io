@@ -81,12 +81,11 @@ img {
     margin: 0 auto;
     z-index: 0;
     // background: var(--content_bg);
-    background-color: none;
+    background: none;
     position: relative;
-    min-height: 85%;
+    min-height: 100vh;
     // border-radius: 15px;
     // box-shadow: 0 0 2px 2px var(--shadow_color);
-    box-shadow: 0 0 2px black;
     padding-bottom: 2rem;
 
     @include breakpoint(medium) {

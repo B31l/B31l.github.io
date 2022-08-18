@@ -4,7 +4,7 @@
   <div class="post_archive">
     <p class="post_archive_type">{{ page.categories }}</p>
     <ul>
-      {% for post in cat_list.reverse() %}
+      {% for post in cat_list %}
         {% if post.url %}
           <li>
             <div class='post_archive_title'>

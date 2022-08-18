@@ -5,7 +5,6 @@
     color: var(--post_text);
 
     @include breakpoint(medium) {
-        max-width: 40rem;
         margin-top: 5rem;
     }
 
@@ -59,7 +58,7 @@
 }
 
 .post_content {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     color: var(--post_text);
 
@@ -272,12 +271,16 @@
 }
 
 #markdown-toc {
+    position: fixed;
+    left: calc(100% - 20rem);
     margin: 0;
     padding: 0;
+    width: 19rem;
     line-height: 1.5rem;
     outline: 1px solid var(--post_link);
-    font-size: 15px;
+    font-size: 0.9rem;
     overflow-y: auto;
+
     ul {
         padding: 0;
     }

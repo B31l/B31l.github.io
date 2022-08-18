@@ -34,7 +34,7 @@
     --blockquote: #333;
     --footer_font: #858585;
     --footer_font_a: #000;
-    --border_radius: 15px;
+    --border_radius: 0px;
 }
 
 @mixin darkMode {
@@ -58,5 +58,5 @@
     --inlinecode_text: #FFAA00;
     --blockquote: #CACCCE;
     --footer_font_a: #d1d1d1;
-    --border_radius: 15px;
+    --border_radius: 0px;
 }

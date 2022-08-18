@@ -79,7 +79,6 @@
     }
 
     p {
-        max-width: 49rem;
         margin: 0;
         line-height: 1.25rem;
     }
@@ -310,6 +309,7 @@
 
     @media (max-width: 1200px) {
         position: relative;
+        left: 0;
         width: 100%;
     }
 }

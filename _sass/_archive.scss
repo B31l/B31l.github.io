@@ -1,7 +1,7 @@
 /* 2. Archive
    ========================================================================== */
 
-   .archive {
+.archive {
     color: var(--archive_font);
 
     ul {
@@ -61,4 +61,48 @@
     font-size: 1.2rem;
     margin-top: 1.4rem;
     margin-bottom: 0.6rem;
+}
+
+.post_archive {
+    color: var(--archive_font);
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin-bottom: 2px;
+        }
+    }
+
+    & a {
+        text-decoration: none;
+        color: var(--archive_title);
+        &:hover,
+        &:focus {
+            color: var(--archive_title_hover);
+        }
+    }
+
+    @include breakpoint(medium) {
+        max-width: 40rem;
+        text-align: left;
+    }
+
+    @include mobile-only {
+        display: none;
+    }
+}
+
+.post_archive_title {
+    word-wrap: normal;
+    @include breakpoint(medium) {
+        font-size: 0.9rem;
+    }
+}
+
+.post_archive_type {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }

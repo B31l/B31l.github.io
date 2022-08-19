@@ -163,6 +163,7 @@
     }
 
     img {   
+        margin: 0.5rem 0 1rem;
         box-shadow: 0 0 2px black;
     }
 
@@ -175,9 +176,10 @@
     }
 
     blockquote {
-        margin: 15px 0;
-        padding: 10px;
-        outline: 1px solid var(--sublime_color_YELLOW)
+        margin: 0.5rem 0 1rem;
+        padding: 0.5rem;
+        outline: 2px solid var(--sublime_color_YELLOW);
+        border-radius: 5px;
     }
 
     dfn {
@@ -229,7 +231,8 @@
 
     // Custom
     em {
-        display: block;
+        // display: block;
+        display: none;
         width: calc(100% + 20px);
         margin: -10px 0 10px -10px;
         padding: 5px 10px;

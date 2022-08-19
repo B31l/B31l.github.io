@@ -17,9 +17,11 @@
 
 .post_title {
     color: var(--post_title);
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    font-weight: 700;
+    margin: 1rem 0;
+    line-height: 3.5rem;
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-family: "Noto Sans KR";
 
     @include mobile-only {
         text-align: center;
@@ -29,7 +31,7 @@
 
 .post_data {
     margin-top: -0.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 5rem;
 
     @include mobile-only {
         text-align: center;
@@ -64,10 +66,12 @@
 
     h1,
     h2 {
+        font-family: 'Noto Sans KR';
         margin: 2rem 0 1rem;
     }
 
     h3 {
+        font-family: 'Noto Sans KR';
         margin: 2rem 0 1rem;
         color: var(--post_h3);
     }
@@ -165,7 +169,8 @@
     }
 
     hr {
-        margin-top: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
         border: none;
         border-top: 1px solid rgba(0, 0, 0, 0.2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -274,10 +279,10 @@
     }
 }
 
-.post_comment {
-    margin-top: 8rem;
-    padding: 10px;
-}
+// .post_comment {
+//     margin-top: 8rem;
+//     padding: 10px;
+// }
 
 #markdown-toc {
     position: fixed;

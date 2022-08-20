@@ -233,16 +233,15 @@
 
     // Custom
     em {
-        // display: block;
-        display: none;
-        width: calc(100% + 20px);
-        margin: -10px 0 10px -10px;
+        display: block;
+        margin-bottom: -0.5rem;
         padding: 5px 10px;
-        box-shadow: 0 0 2px black;
-        background: #272727;
-        color: White;
         font-weight: 900;
         font-style: normal;
+        background: #ECEFF4;
+        border-radius: 0 16px 0 0;
+        box-shadow: 0 0 5px;
+        text-decoration: none;
     }
     
     table {
@@ -289,6 +288,7 @@
 
 #markdown-toc {
     position: fixed;
+    top: 5.5rem;
     left: min(calc(100% - 20rem), 1400px);
     margin: 0;
     padding: 0;

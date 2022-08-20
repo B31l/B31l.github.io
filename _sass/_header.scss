@@ -8,8 +8,8 @@
     position: absolute;
     top: 0;
     // border-radius: var(--border_radius);
-    border-radius: 15px 0 0 15px;
-    box-shadow: 0 0 2px 2px var(--shadow_color);
+    // border-radius: 15px 0 0 15px;
+    // box-shadow: 0 0 2px 2px var(--shadow_color);
 
     @include mobile-only {
         width: 100%;

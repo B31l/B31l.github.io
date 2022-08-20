@@ -84,9 +84,6 @@ img {
     background: none;
     position: relative;
     min-height: 100vh;
-    // border-radius: 15px;
-    // box-shadow: 0 0 2px 2px var(--shadow_color);
-    padding-bottom: 2rem;
 
     @include breakpoint(medium) {
         margin-left: auto;

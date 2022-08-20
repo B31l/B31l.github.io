@@ -299,6 +299,7 @@
 
 #markdown-toc {
     position: fixed;
+    top: 5.5rem;
     left: min(calc(100% - 20rem), 1400px);
     margin: 0;
     padding: 0;
@@ -341,7 +342,7 @@
 
     @media (max-width: 1200px) {
         position: relative;
-        top: 5.5rem;
+        top: 0;
         left: 0;
         width: 100%;
     }

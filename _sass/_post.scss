@@ -289,7 +289,7 @@
 
 #markdown-toc {
     position: fixed;
-    left: calc(100% - 20rem);
+    left: min(calc(100% - 20rem), 1400px);
     margin: 0;
     padding: 0;
     outline: 2px solid var(--post_link);

@@ -84,7 +84,7 @@
         white-space: nowrap;
 
         text-decoration: none;
-        color: black;
+        color: var(--post_title);
         
         &:hover,
         &:focus {

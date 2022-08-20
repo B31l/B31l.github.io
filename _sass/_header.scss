@@ -21,17 +21,18 @@
         height: 100%;
         min-height: 100%;
         border-right: 2px inset;
-        padding: 0.5rem;
+        padding: 0.5rem 0;
     }
 }
 
 .header_content {
+    font-family: 'Noto Sans KR';
     text-align: center;
 
     @include breakpoint(medium) {
         position: fixed;
         margin-top: 5rem;
-        width: 19rem;
+        width: 20rem;
     }
 
     @include mobile-only {
@@ -134,6 +135,8 @@
 
 .nav {
     text-align: right;
+    border-right: 0.5rem solid var(--nav_font);
+    padding: 0 0.5rem;
 
     @include mobile-only {
         display: none;

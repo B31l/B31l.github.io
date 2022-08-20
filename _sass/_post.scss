@@ -292,12 +292,14 @@
     left: calc(100% - 20rem);
     margin: 0;
     padding: 0;
+    outline: 2px solid var(--post_link);
+    border-radius: 5px;
+    box-shadow: 0 0 10px grey;
     width: 19rem;
     line-height: 1.5rem;
-    outline: 1px solid var(--post_link);
     font-size: 0.9rem;
     overflow-y: auto;
-
+    
     ul {
         padding: 0;
     }
@@ -306,23 +308,25 @@
     }
     a {
         display: block;
-        height: 1.5rem;
-        line-height: 1.5rem;
+        height: 2rem;
+        line-height: 2rem;
         box-sizing: border-box;
         transition: 0.5s ease;
+        outline: 1px solid;
+        font-family: 'Noto Sans KR';
         &:hover {
             color: var(--sublime_font);
             background-color: var(--post_link);
         }
     }
     >li >a {
-        padding-left: 15px;
+        padding-left: 1rem;
     }
     >li >ul >li >a {
-        padding-left: 45px;
+        padding-left: 2.5rem;
     }
     >li >ul >li >ul >li >a {
-        padding-left: 75px;
+        padding-left: 4rem;
     }
 
     @media (max-width: 1200px) {

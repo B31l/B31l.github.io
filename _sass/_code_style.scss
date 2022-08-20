@@ -77,11 +77,11 @@
 }
 
 .highlight::-webkit-scrollbar {
-    width: 3px;
-    height: 3px;
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: #272727;
 }
 
 .highlight::-webkit-scrollbar-thumb {
-    background-color: var(--sublime_color_YELLOW);
+    background-color: var(--sublime_font);
 }

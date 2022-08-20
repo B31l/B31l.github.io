@@ -237,7 +237,7 @@
         width: calc(100% + 20px);
         margin: -10px 0 10px -10px;
         padding: 5px 10px;
-        background: var(--sublime_color_YELLOW);
+        background-color: var(--sublime_color_YELLOW);
         color: White;
         font-weight: 900;
         font-style: normal;
@@ -249,7 +249,7 @@
         padding: 5px 10px;
         font-weight: 900;
         font-style: normal;
-        background: #ECEFF4;
+        background-color: var(--sublime_font);
         border-radius: 0 16px 0 0;
         box-shadow: 0 0 5px;
         text-decoration: none;
@@ -275,7 +275,7 @@
             color: Black;
             tr {
                 &:nth-of-type(2n+1) {
-                    background-color: #ECEFF4;
+                    background-color: var(--sublime_font);
                 }
                 &:nth-of-type(2n) {
                     background-color: White;

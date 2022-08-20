@@ -103,7 +103,7 @@ img {
     @include breakpoint(medium) {
         max-width: 1080px;
         padding: 0.5rem 1rem;
-        margin-left: 20rem;
+        margin-left: max(calc(50% - 700px + 20rem), 20rem);
     }
 
     @include mobile-only {

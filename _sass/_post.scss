@@ -302,6 +302,7 @@
     top: 5.5rem;
     left: min(calc(100% - 20rem), 1400px);
     margin: 0;
+    margin-left: max(calc(50% - 860px), 0px);
     padding: 0;
     outline: 2px solid var(--post_link);
     border-radius: 5px;
@@ -310,6 +311,7 @@
     line-height: 1.5rem;
     font-size: 0.9rem;
     overflow-y: auto;
+    
     
     ul {
         padding: 0;

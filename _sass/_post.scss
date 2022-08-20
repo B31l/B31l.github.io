@@ -140,7 +140,7 @@
                 .rouge-gutter {
                     width: 40px;
                     padding: 0.5rem 0;
-                    background: #272727;
+                    background-color: var(--sublime_bg);
                     text-align: right;
                     .lineno {
                         width: 40px;
@@ -152,7 +152,7 @@
                 }
                 .rouge-code {
                     padding: 0.5rem 10px;
-                    background: #272727
+                    background-color: var(--sublime_bg);
                 }
             }
         }
@@ -245,7 +245,7 @@
 
     u {
         display: block;
-        margin-bottom: -0.5rem;
+        margin: 0.5rem 0 -0.5rem;
         padding: 5px 10px;
         font-weight: 900;
         font-style: normal;

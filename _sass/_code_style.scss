@@ -1,5 +1,5 @@
 .highlight {
-    max-height: 829px;
+    max-height: 416px;
     line-height: 100%;
     margin: 0.5rem 0 1rem;
     letter-spacing: -1px;
@@ -79,7 +79,7 @@
 .highlight::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.5rem;
-    background-color: #272727;
+    background-color: var(--sublime_bg);
 }
 
 .highlight::-webkit-scrollbar-thumb {

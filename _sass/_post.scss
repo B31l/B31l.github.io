@@ -327,6 +327,9 @@
         transition: 0.5s ease;
         outline: 1px solid;
         font-family: 'Noto Sans KR';
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         &:hover {
             color: var(--sublime_font);
             background-color: var(--post_link);

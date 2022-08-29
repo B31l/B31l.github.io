@@ -84,10 +84,11 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-
         text-decoration: none;
         color: var(--post_title);
-        
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+
         &:hover,
         &:focus {
             color: var(--archive_title_hover);
@@ -99,8 +100,7 @@
         text-align: left;
         padding: 0.5rem 0.5rem;
         margin-top: 1rem;
-        border-top: 0.5rem solid #ccc;
-        transition: 0.5s ease;
+        border-top: 0.5rem solid white;
     }
 
     @include mobile-only {
@@ -110,6 +110,7 @@
     &:hover {
         box-shadow: 0 0 10px var(--deep_shadow);
         outline: 2px solid var(--deep_shadow);
+        border-top: 0.5rem solid var(--deep);
         cursor: pointer;
     }
 }

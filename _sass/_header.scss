@@ -135,10 +135,11 @@
 }
 
 .nav {
-    text-align: right;
-    border-right: 0.5rem solid var(--deep);
+    margin-top: 1rem;
     padding: 0.5rem 0;
-
+    border-right: 0.5rem solid white;
+    text-align: right;
+    
     @include mobile-only {
         display: none;
     }
@@ -146,6 +147,7 @@
     &:hover {
         box-shadow: 0 0 10px var(--deep_shadow);
         outline: 2px solid var(--deep_shadow);
+        border-right: 0.5rem solid var(--deep);
         cursor: pointer;
     }
 }
@@ -158,33 +160,23 @@
     @include mobile-only {
         text-align: center;
     }
-
-    .nav_item {
-        transition: 0.5s ease;
-        &:hover,
-        &:focus {
-            color: var(--sublime_font);
-            background-color: var(--deep);
-        }
-    }
 }
 
 .nav_item {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
+    width: 100%;
 
     & a {
+        display: block;
+        width: 100%;
         padding: 0 0.5rem;
         // color: var(--nav_font);
         color: var(--deep);
-
-        // &:hover,
-        // &:focus {
-        //     // color: var(--nav_font_hover);
-        //     color: var(--sublime_font);
-        //     background-color: var(--deep);
-        // }
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+        &:hover,
+        &:focus {
+            color: var(--nav_font_hover);
+        }
     }
 
     @include mobile-only {

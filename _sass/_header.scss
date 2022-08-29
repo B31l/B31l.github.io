@@ -1,7 +1,7 @@
 /* 3. Header
    ========================================================================== */
 
-   .header {
+.header {
     // background-color: var(--header_bg);
     background: none;
     z-index: 1;
@@ -23,6 +23,16 @@
         border-right: 2px inset;
         margin-left: max(calc(50% - 700px), 0px);
         padding: 0.5rem 0;
+    }
+}
+
+.profile {
+    border-bottom: 0.5rem solid white;
+    &:hover {
+        box-shadow: 0 0 10px var(--deep_shadow);
+        outline: 2px solid var(--deep_shadow);
+        border-bottom: 0.5rem solid var(--deep);
+        cursor: pointer;
     }
 }
 

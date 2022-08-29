@@ -33,7 +33,7 @@
     @include breakpoint(medium) {
         position: fixed;
         margin-top: 5rem;
-        width: 20rem;
+        width: 19.5rem;
     }
 
     @include mobile-only {
@@ -135,7 +135,7 @@
 }
 
 .nav {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 0.5rem 0;
     border-right: 0.5rem solid white;
     text-align: right;
@@ -180,6 +180,12 @@
     }
 
     @include mobile-only {
+        display: inline-block;
+        width: auto;
+        a {
+            display: inline-block;
+            width: auto;
+        }
 
         &:after {
             content: '/';

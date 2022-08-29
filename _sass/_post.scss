@@ -103,7 +103,7 @@
     code {  // 백틱 코드
         padding: 0px 5px;
         border-radius: 5px;
-        background: #ccc;
+        background: #d8d8d8;
         color: black;
         font-family: "D2Coding";
         font-weight: 900;
@@ -307,7 +307,7 @@
     padding: 0;
     outline: 2px solid var(--post_link);
     border-radius: 5px;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px #271d2e;
     width: 19rem;
     line-height: 1.5rem;
     font-size: 0.9rem;
@@ -331,9 +331,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        color: #271d2e;
         &:hover {
             color: var(--sublime_font);
-            background-color: var(--post_link);
+            background-color: #271d2e;
         }
     }
     >li >a {

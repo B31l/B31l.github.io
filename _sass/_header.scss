@@ -27,6 +27,7 @@
 }
 
 .profile {
+    padding: 0.5rem 0;
     border-bottom: 0.5rem solid white;
     &:hover {
         box-shadow: 0 0 10px var(--deep_shadow);
@@ -168,6 +169,8 @@
     list-style: none;
 
     @include mobile-only {
+        margin-top: 1rem;
+        margin-bottom: -2rem;
         text-align: center;
     }
 }

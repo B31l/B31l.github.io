@@ -146,6 +146,7 @@
     &:hover {
         box-shadow: 0 0 10px var(--deep_shadow);
         outline: 2px solid var(--deep_shadow);
+        cursor: pointer;
     }
 }
 
@@ -156,6 +157,15 @@
 
     @include mobile-only {
         text-align: center;
+    }
+
+    .nav_item {
+        transition: 0.5s ease;
+        &:hover,
+        &:focus {
+            color: var(--sublime_font);
+            background-color: var(--deep);
+        }
     }
 }
 
@@ -169,12 +179,12 @@
         // color: var(--nav_font);
         color: var(--deep);
 
-        &:hover,
-        &:focus {
-            // color: var(--nav_font_hover);
-            color: var(--sublime_font);
-            background-color: var(--deep);
-        }
+        // &:hover,
+        // &:focus {
+        //     // color: var(--nav_font_hover);
+        //     color: var(--sublime_font);
+        //     background-color: var(--deep);
+        // }
     }
 
     @include mobile-only {

@@ -136,11 +136,16 @@
 
 .nav {
     text-align: right;
-    border-right: 0.5rem solid var(--nav_font);
-    padding: 0 0.5rem;
+    border-right: 0.5rem solid var(--deep);
+    padding: 0.5rem 0;
 
     @include mobile-only {
         display: none;
+    }
+
+    &:hover {
+        box-shadow: 0 0 10px var(--deep_shadow);
+        outline: 2px solid var(--deep_shadow);
     }
 }
 
@@ -160,11 +165,15 @@
     zoom: 1;
 
     & a {
-        color: var(--nav_font);
+        padding: 0 0.5rem;
+        // color: var(--nav_font);
+        color: var(--deep);
 
         &:hover,
         &:focus {
-            color: var(--nav_font_hover);
+            // color: var(--nav_font_hover);
+            color: var(--sublime_font);
+            background-color: var(--deep);
         }
     }
 

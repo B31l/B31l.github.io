@@ -305,9 +305,9 @@
     margin: 0;
     margin-left: max(calc(50% - 860px), 0px);
     padding: 0;
-    outline: 2px solid var(--post_link);
+    outline: 2px solid var(--deep);
     border-radius: 5px;
-    box-shadow: 0 0 10px #271d2e;
+    box-shadow: 0 0 10px var(--deep_shadow);
     width: 19rem;
     line-height: 1.5rem;
     font-size: 0.9rem;
@@ -331,10 +331,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        color: #271d2e;
+        color: var(--deep);
         &:hover {
             color: var(--sublime_font);
-            background-color: #271d2e;
+            background-color: var(--deep);
         }
     }
     >li >a {

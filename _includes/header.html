@@ -2,6 +2,19 @@
 
   <div class="header_content">
     
+    <!-- 프로필 -->
+    <label class="theme_changer">
+      <input theme_toggle type="checkbox">
+      <div class="button"></div>
+    </label>
+    <a class="header_circle" href="{{ '/' | relative_url }}">
+      <img src="{{ site.user.pic | relative_url }}" alt="{{ site.user.picAlt }}">
+    </a>
+    <span class="header_name">{{ site.user.name }}</span>
+    <span class="header_job">{{ site.user.job }}</span>
+    <span class="header_mes">{{ site.user.message }}</span>
+
+    <!-- 카테고리 -->
     <nav class="nav">
       {% if site.user.aboutme %}
       <ul class="nav_list">
@@ -21,17 +34,7 @@
       {% endfor %}
     </nav>
 
-    <label class="theme_changer">
-      <input theme_toggle type="checkbox">
-      <div class="button"></div>
-    </label>
-    <a class="header_circle" href="{{ '/' | relative_url }}">
-      <img src="{{ site.user.pic | relative_url }}" alt="{{ site.user.picAlt }}">
-    </a>
-    <span class="header_name">{{ site.user.name }}</span>
-    <span class="header_job">{{ site.user.job }}</span>
-    <span class="header_mes">{{ site.user.message }}</span>
-
+    <!-- 아카이브 -->
     {% include post_archive.html %}
     
   </div>

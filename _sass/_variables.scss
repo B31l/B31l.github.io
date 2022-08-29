@@ -10,13 +10,15 @@
     --sublime_color_GREEN: #a6e22e;
     --sublime_color_BLUE: #66d9ef;
     --sublime_color_PURPLE: #ae81ff;
+    --deep: #271d2e;
+    --deep_shadow: #ccc;
 }
 
 @mixin lightMode {
     --bg_color: #eee;
     --header_bg: #fafafa;
     --content_bg: #fff;
-    --archive_font: #000;
+    --archive_font: #272727;
     --archive_title: #46a891;
     --archive_title_hover: #87CDBD;
     --name_font: #FFAA00;
@@ -24,10 +26,14 @@
     --nav_font: #8d7edc;
     --nav_font_hover: #D4CEF2;
     --shadow_color: rgba(160, 160, 160, 0.05);
-    --post_title: #003845;
-    --post_date: #003845;
-    --post_text: #4c4c4c;
-    --post_h3: #4c4c4c;
+    // --post_title: #003845;
+    // --post_date: #003845;
+    // --post_text: #4c4c4c;
+    // --post_h3: #4c4c4c;
+    --post_title: #272727;
+    --post_date: #272727;
+    --post_text: #272727;
+    --post_h3: #272727;
     --post_link: #46a891;
     --post_link_hover: #87CDBD;
     --inlinecode_text: #FFAA00;

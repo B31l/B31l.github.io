@@ -97,12 +97,18 @@
     @include breakpoint(medium) {
         max-width: 40rem;
         text-align: left;
-        padding: 0 0.5rem;
+        padding: 0.5rem 0.5rem;
         margin-top: 1rem;
+        border-top: 0.5rem solid #ccc;
     }
 
     @include mobile-only {
         display: none;
+    }
+
+    &:hover {
+        box-shadow: 0 0 10px var(--deep_shadow);
+        outline: 2px solid var(--deep_shadow);
     }
 }
 

@@ -13,7 +13,7 @@ permalink: /movie.html
     <div class="header_title">
       <div class="header_title_1st"></div>
       <div class="header_title_2nd"></div>
-      <img class="header_title_3rd"></div>
+      <div class="header_title_3rd"></div>
     </div>
   </div>
   <div class="movie_body">
@@ -93,7 +93,7 @@ permalink: /movie.html
     const randomTitleNumber = Math.floor(Math.random() * movies.length)
     headerTitle.style.backgroundImage = `url(${movies[randomTitleNumber][2]})`
     headerTitle2nd.innerText = movies[randomTitleNumber][0]
-    headerTitle3rd.src = movies[randomTitleNumber][1]
+    headerTitle3rd.style.backgroundImage = `url(${movies[randomTitleNumber][1]})`
   }
   init()
 </script>

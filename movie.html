@@ -4,12 +4,62 @@ permalink: /movie.html
 
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
+    {% include head.html %}
 <body>
-    
-  <section class="fourzerofour">
-    너 왜 울고 있는 거야
-  </section>
+  <div class="movie_header">
+    <div class="header_title"></div>
+    <div class="header_search"></div>
+    <div class="header_nav"></div>
+  </div>
+  <div class="movie_body">
+    <div class="body_box"></div>
+  </div>
+  <div class="movie_footer">
+    <p>© 2022 B31l</p>
+  </div>
 
 </body>
 </html>
+
+<style>
+  .header_title {
+    background-size: 100%;
+    background-position: 50% 50%;
+    height: 30vh;
+    opacity: .75;
+  }
+</style>
+<script>
+  const movies = [
+    ["헌트", "https://movie-phinf.pstatic.net/20220805_227/1659685387586PIORG_JPEG/movie_image.jpg"],
+    ["육사오", "https://movie-phinf.pstatic.net/20220824_252/1661324514413czYBf_JPEG/movie_image.jpg"],
+    ["한신", "https://movie-phinf.pstatic.net/20220727_209/1658912961873lVd2W_JPEG/movie_image.jpg"],
+    ["탑건2", "https://movie-phinf.pstatic.net/20220509_176/1652081912471yhg3N_JPEG/movie_image.jpg"],
+    ["불릿 트레인", "https://movie-phinf.pstatic.net/20220824_255/1661317464724GgJpf_JPEG/movie_image.jpg"],
+    ["놉", "https://movie-phinf.pstatic.net/20220729_1/1659070685587fXfeh_JPEG/movie_image.jpg"],
+    ["미니언즈2", "https://movie-phinf.pstatic.net/20220720_283/1658284839003UzxoT_JPEG/movie_image.jpg"]
+  ]
+  const 장르영화 = [
+    "공포", "스릴러", "액션", "로맨스", "드라마", "코미디"
+  ]
+  const 주연영화 = [
+    "강동원", "마동석", "이정재", "김혜수", "류승범", "최민식"
+  ]
+  const 감독영화 = [
+    "봉준호", "황동혁", "김한민"
+  ]
+  let 관련영화 = []
+  for (let moive in moives) {
+    관련영화.push(movie[0])
+  }
+  const headerTitle = document.querySelector(".header_title")
+  const bodyBox = document.querySelector(".body_box")
+  const createSection = (sectionName) => {
+    bodyBox.innerHTML += `<ul class="${sectionName}"></ul>`
+  }
+  const init = () => {
+    const randomTitleNumber = Math.floor(Math.random() * movies.length)
+    headerTitle.style.background = `url(${movies[randomTitleNumber][1]})`
+  }
+  init()
+</script>

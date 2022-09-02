@@ -69,14 +69,13 @@
             height: 0;
             max-height: 400px;
             margin: -4.5rem auto 0;
-            padding-bottom: 65%;
+            padding-bottom: min(65%, 400px);
             outline: 0.25rem solid white;
             border-radius: 0.5rem;
             background-size: 100%;
             background-position: center;
             background-repeat: no-repeat;
             overflow: hidden;
-            z-index: -1;
             transition: 0.5s ease;
             img {
                 position: absolute;
@@ -92,6 +91,7 @@
     padding: 0.5rem;
     background: #fafafa;
     overflow-y: auto;
+    z-index: -1;
     &::before {
         content: "";
         position: absolute;

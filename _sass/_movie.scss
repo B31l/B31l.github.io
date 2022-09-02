@@ -48,7 +48,7 @@
                 background-repeat: repeat;
                 height: 10px;
                 background-size: 20px 20px;
-                background-image: radial-gradient(circle at 10px -5px, transparent 12px, #fafafa 13px);
+                background-image: radial-gradient(circle at 10px -5px, transparent 12px, #ccc 13px);
             }
             &::after {
                 content: "";
@@ -59,38 +59,61 @@
                 background-repeat: repeat;
                 height: 15px;
                 background-size: 40px 20px;
-                background-image: radial-gradient(circle at 10px 15px, #fafafa 12px, transparent 13px);
+                background-image: radial-gradient(circle at 10px 15px, #ccc 12px, transparent 13px);
             }
         }
         .header_title_3rd {
             position: relative;
             width: 50%;
+            max-width: 300px;
             height: 0;
-            max-height: 10rem;
-            margin: -5rem auto 0;
+            max-height: 400px;
+            margin: -4.5rem auto 0;
             padding-bottom: 65%;
             outline: 0.25rem solid white;
             border-radius: 0.5rem;
             background-size: 100%;
             background-position: center;
             background-repeat: no-repeat;
-            transition: 0.5s ease;
             overflow: hidden;
+            z-index: -1;
+            transition: 0.5s ease;
             img {
                 position: absolute;
                 width: 100%;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
             }
         }
     }
 }
 .movie_body {
+    position: relative;
     width: 100%;
     height: calc(60vh - 4rem);
     padding: 0.5rem;
     background: #fafafa;
+    overflow-y: auto;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat;
+        height: 10px;
+        background-size: 20px 20px;
+        background-image: radial-gradient(circle at 10px -5px, transparent 12px, black 13px);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat;
+        height: 15px;
+        background-size: 40px 20px;
+        background-image: radial-gradient(circle at 10px 15px, black 12px, transparent 13px);
+    }
 }
 .movie_footer {
     width: 100%;

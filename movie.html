@@ -12,12 +12,8 @@ permalink: /movie.html
     </div>
     <div class="header_title">
       <div class="header_title_1st"></div>
-      <div class="header_title_2nd">미니언즈</div>
-      <div class="header_title_3rd">
-        "탑승을 환영합니다"
-        승차는 자유, 하차는 불가?!
-        초고속 열차에서 벌어지는 '레이디버그’(브래드 피트)와 고스펙 킬러들의 피 튀기는 전쟁!
-      </div>
+      <div class="header_title_2nd"></div>
+      <img class="header_title_3rd"></div>
     </div>
   </div>
   <div class="movie_body">
@@ -87,6 +83,8 @@ permalink: /movie.html
     관련영화.push(movie[0])
   }
   const headerTitle = document.querySelector(".header_title")
+  const headerTitle2nd = document.querySelector(".header_title_2nd")
+  const headerTitle3rd = document.querySelector(".header_title_3rd")
   const bodyBox = document.querySelector(".body_box")
   const createSection = (sectionName) => {
     bodyBox.innerHTML += `<ul class="${sectionName}"></ul>`
@@ -94,6 +92,8 @@ permalink: /movie.html
   const init = () => {
     const randomTitleNumber = Math.floor(Math.random() * movies.length)
     headerTitle.style.backgroundImage = `url(${movies[randomTitleNumber][2]})`
+    headerTitle2nd.innerText = movies[randomTitleNumber][0]
+    headerTitle3rd.src = movies[randomTitleNumber][1]
   }
   init()
 </script>

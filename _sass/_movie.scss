@@ -63,13 +63,11 @@
             }
         }
         .header_title_3rd {
-            position: absolute;
-            top: calc(0.5rem + 40vh);
-            left: 25%;
+            position: relative;
             width: 50%;
             height: 0;
             max-height: 10rem;
-            margin-top: -2.5rem;
+            margin: -5rem auto 0;
             padding-bottom: 65%;
             outline: 0.25rem solid white;
             border-radius: 0.5rem;
@@ -77,6 +75,14 @@
             background-position: center;
             background-repeat: no-repeat;
             transition: 0.5s ease;
+            overflow: hidden;
+            img {
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 }

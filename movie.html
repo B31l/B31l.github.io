@@ -86,7 +86,6 @@ permalink: /movie.html
   }
   const headerTitle = document.querySelector(".header_title")
   const headerTitle2nd = document.querySelector(".header_title_2nd")
-  const headerTitle3rd = document.querySelector(".header_title_3rd")
   const headerTitleImg = document.querySelector(".header_title_img")
   const bodyBox = document.querySelector(".body_box")
   const createSection = (sectionName) => {
@@ -96,8 +95,7 @@ permalink: /movie.html
     const randomTitleNumber = Math.floor(Math.random() * movies.length)
     headerTitle.style.backgroundImage = `url(${movies[randomTitleNumber][2]})`
     headerTitle2nd.innerText = movies[randomTitleNumber][0]
-    // headerTitle3rd.style.backgroundImage = `url(${movies[randomTitleNumber][1]})`
-    headerTitleImg.src = `url(${movies[randomTitleNumber][1]})`
+    headerTitleImg.src = movies[randomTitleNumber][1]
   }
   init()
 </script>

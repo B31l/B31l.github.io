@@ -35,9 +35,10 @@
             width: calc(100% - 2rem);
             margin-top: 2rem;
             padding: 0.5rem 1rem;
-            background: none;
             border: none;
             border-bottom: 2px solid white;
+            background: none;
+            color: white;
         }
     }
     .header_title {
@@ -57,10 +58,10 @@
             margin-top: calc(-10rem - 10vh);
             width: 100%;
             height: 10rem;
-            line-height: 15rem;
+            line-height: 16rem;
             padding-left: 8rem;
             background: linear-gradient(to top, #000, transparent);
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: 900;
             color: transparent;
             -webkit-text-stroke: 2px white;
@@ -97,7 +98,6 @@
                 height: 2rem;
                 line-height: 2rem;
                 color: black;
-                font-weight: 300;
             }
             .header_tag_list {
                 display: flex;
@@ -132,7 +132,18 @@
     z-index: -1;
     .body_box {
         width: 100%;
-        height: 600px;
+        height: 20rem;
+        .title {
+            font-size: 1.5rem;
+        }
+        .list {
+            display: flex;
+            overflow-x: auto;
+            img {
+                width: 6rem;
+                height: 8rem;
+            }
+        }
     }
 }
 

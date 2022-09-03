@@ -1,7 +1,18 @@
-.movie_main {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../img/phone.png");
+.phone {
+    width: 90%;
+    height: 90%;
+    margin: 2.5rem auto 0;
+    outline: 2px solid black;
+    border-radius: 1rem;
+    overflow-y: scroll;
+    .phone_top {
+        width: 100%;
+        height: 2.5rem;
+    }
+    .phone_bottom {
+        width: 100%;
+        height: 2.5rem;
+    }
 }
 
 .movie_header {
@@ -9,8 +20,6 @@
     color: white;
     background: #fafafa;
     .header_search {
-        position: absolute;
-        top: 0px;
         width: 100%;
         height: 2.5rem;
         padding: 1.5rem 0;
@@ -26,7 +35,6 @@
     .header_title {
         width: 100%;
         height: 40vh;
-        margin-top: 2.5rem;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

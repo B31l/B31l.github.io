@@ -102,8 +102,7 @@
                 font-weight: 100;
                 .header_tag {
                     padding: 0 0.5rem;
-                    height: 1.5rem;
-                    line-height: 1.5rem;
+                    height: 2rem;
                     margin-right: 0.5rem;
                     box-shadow: 0 0 2px black;
                     border-radius: 0.5rem;
@@ -148,9 +147,19 @@
             }
         }
         .border {
+            position: relative;
+            width: 2rem;
+            height: 2rem;
             background-color: white;
-            background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, #e5e5f7 1px);
-            background-size: 20px 20px;
+            background-repeat: repeat-y;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 2rem;
+                width: 2rem;
+                height: 2rem;
+                background-color: black;
+            }
         }
     }
 }

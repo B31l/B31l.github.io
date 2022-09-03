@@ -91,26 +91,31 @@
             }
         }
         .header_title_4th {
-            .header_title_info_list {
-                display: flex;
+            margin-top: -4rem;
+            padding-left: 8rem;
+            .header_info {
                 height: 2rem;
-                .header_title_info {
-                    font-size: 1.5rem;
-                }
+                line-height: 2rem;
+                color: black;
+                font-weight: 500;
             }
-            .header_title_tag_list {
+            .header_tag_list {
                 display: flex;
+                padding: 0.25rem 0;
                 height: 2rem;
-                .header_title_tag_official {
-                    padding: 2px;
+                color: black;
+                font-size: .9rem;
+                font-weight: 100;
+                .header_tag {
+                    padding: 0 0.5rem;
+                    height: 1.5rem;
+                    line-height: 1.5rem;
+                    margin-right: 0.5rem;
+                    box-shadow: 0 0 2px black;
                     border-radius: 0.5rem;
-                    background: #ccc;
                 }
-                .header_title_tag_custom {
-                    padding: 2px;
-                    border-radius: 0.5rem;
-                    background: #ff33cc;
-                }
+                .official { background: #ccc; }
+                .custom { background-color: #ffcc33; }
             }
         }
     }

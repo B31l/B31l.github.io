@@ -1,7 +1,7 @@
 .phone {
-    width: 90%;
+    width: calc(100% - 1rem);
     height: 90vh;
-    margin: 2.5rem auto 0;
+    margin: 0.5rem auto 0;
     outline: 2px solid black;
     border-radius: 1rem;
     overflow-y: scroll;
@@ -97,7 +97,7 @@
                 height: 2rem;
                 line-height: 2rem;
                 color: black;
-                font-weight: 500;
+                font-weight: 300;
             }
             .header_tag_list {
                 display: flex;

@@ -4,6 +4,7 @@
     margin: 0.5rem auto 0;
     outline: 2px solid black;
     border-radius: 1rem;
+    background: black;
     overflow-y: scroll;
     .phone_top {
         position: absolute;
@@ -65,22 +66,13 @@
             font-weight: 900;
             color: transparent;
             -webkit-text-stroke: 2px white;
-            &::before {
-                content: attr(data-split);
-                position: absolute;
-                top: 0; left: 0;
-                height: 50%;
-                color: black;
-                overflow: hidden;
-            }
         }
         .header_title_3rd {
             position: relative;
             width: 6rem;
             height: 8rem;
             margin: -4rem auto 0 1rem;
-            outline: 2px solid white;
-            border-radius: 0.5rem;
+            outline: 2px solid grey;
             background-size: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -93,11 +85,13 @@
         }
         .header_title_4th {
             margin-top: -4rem;
-            padding-left: 8rem;
+            padding-left: 7rem;
+            margin-left: 1rem;
+            border-top: 2px solid grey;
             .header_info {
                 height: 2rem;
                 line-height: 2rem;
-                color: black;
+                color: white;
             }
             .header_tag_list {
                 display: flex;
@@ -124,25 +118,39 @@
 .movie_body {
     position: relative;
     width: 100%;
-    height: 0;
     min-height: calc(50vh - 4rem);
-    padding: 0.5rem;
-    background: #fafafa;
+    margin-top: 6rem;
+    border-radius: 0 2rem 0 0;
+    background: #151515;
     overflow-y: auto;
-    z-index: -1;
     .body_box {
         width: 100%;
-        height: 20rem;
+        height: 18rem;
+        padding: 1rem 0.5rem;
+        color: white;
         .title {
-            font-size: 1.5rem;
+            height: 2rem;
+            padding: 0 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
         }
         .list {
             display: flex;
             overflow-x: auto;
-            img {
-                width: 6rem;
-                height: 8rem;
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
             }
+            img {
+                width: 9rem;
+                height: 12rem;
+                margin: 0 0.5rem;
+            }
+        }
+        .border {
+            background-color: white;
+            background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, #e5e5f7 1px);
+            background-size: 20px 20px;
         }
     }
 }

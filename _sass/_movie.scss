@@ -1,17 +1,23 @@
 .phone {
     width: 90%;
-    height: 90%;
+    height: 90vh;
     margin: 2.5rem auto 0;
     outline: 2px solid black;
     border-radius: 1rem;
     overflow-y: scroll;
     .phone_top {
-        width: 100%;
-        height: 2.5rem;
+        position: absolute;
+        top: 2.5rem;
+        left: 0;
     }
     .phone_bottom {
-        width: 100%;
-        height: 2.5rem;
+        position: absolute;
+        bottom: 2.5rem;
+        left: 0;
+    }
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
     }
 }
 
@@ -22,14 +28,16 @@
     .header_search {
         width: 100%;
         height: 2.5rem;
-        padding: 1.5rem 0;
         line-height: 5rem;
         background: black;
         text-align: center;
         input {
-            width: 90%;
+            width: calc(100% - 2rem);
+            margin-top: 2rem;
             padding: 0.5rem 1rem;
-            border-radius: 8px;
+            background: none;
+            border: none;
+            border-bottom: 2px solid white;
         }
     }
     .header_title {
@@ -49,11 +57,13 @@
             margin-top: calc(-10rem - 10vh);
             width: 100%;
             height: 10rem;
+            line-height: 10rem;
+            padding-left: 14rem;
             background: linear-gradient(to top, #000, transparent);
-            text-align: center;
-            text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             font-weight: 900;
+            color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 1px white;
             &::before {
                 content: "";
                 position: absolute;
@@ -79,13 +89,10 @@
         }
         .header_title_3rd {
             position: relative;
-            width: 50%;
-            max-width: 300px;
-            height: 0;
-            max-height: 400px;
-            margin: -4.5rem auto 0;
-            padding-bottom: min(65%, 400px);
-            outline: 0.25rem solid white;
+            width: 12rem;
+            height: 16rem;
+            margin: -8rem auto 0 1rem;
+            outline: 2px solid white;
             border-radius: 0.5rem;
             background-size: 100%;
             background-position: center;
@@ -102,6 +109,8 @@
 .movie_body {
     position: relative;
     width: 100%;
+    height: 0;
+    min-height: calc(50vh - 4rem);
     padding: 0.5rem;
     background: #fafafa;
     overflow-y: auto;
@@ -141,7 +150,6 @@
     color: white;
     text-align: center;
     font-size: 0.75rem;
-    cursor: pointer;
     p {
         margin: 0;
     }

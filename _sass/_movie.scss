@@ -65,7 +65,7 @@
             font-size: 2rem;
             font-weight: 900;
             color: transparent;
-            -webkit-text-stroke: 2px white;
+            -webkit-text-stroke: 1px white;
         }
         .header_title_3rd {
             position: relative;
@@ -126,19 +126,20 @@
         width: 100%;
         height: 18rem;
         padding: 1rem 0.5rem;
-        border-bottom: 2px outset grey;
         color: white;
         .title {
             height: 2rem;
             line-height: 2rem;
             margin: 0.5rem;
-            padding: 0;
+            padding: 0 0.5rem;
+            border-left: 4px solid #ffcc33;
             font-size: 1.25rem;
-            font-weight: 700; 
+            font-weight: 700;
         }
         .list {
             display: flex;
             overflow-x: auto;
+            height: 14rem;
             &::-webkit-scrollbar {
                 width: 0;
                 height: 0;
@@ -146,7 +147,7 @@
             img {
                 width: 9rem;
                 height: 12rem;
-                margin: 0 0.5rem;
+                margin: 0 -0.25rem 0 0.5rem;
             }
         }
     }

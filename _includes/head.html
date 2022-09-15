@@ -14,7 +14,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" media="all">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <!-- <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}"> -->
+  <link rel="canonical" href="{{ page.url | replace:'index.md','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}"
     href="{{ '/feed.xml' | relative_url }}" />
 

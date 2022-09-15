@@ -1,5 +1,5 @@
 ---
-title: "TEST"
+layout: page
 ---
 
 # 응애

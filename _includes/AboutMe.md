@@ -1,1 +1,185 @@
-# 응애
+---
+title: "자료구조 01 - 선형 자료구조"
+categories: [DSA]
+mathjax: true
+---
+
+* content
+{:toc}
+# 스택(Stack)
+
+가장 마지막에 추가된 항목이 가장 먼저 삭제되는 방식으로 작동하며, 이러한 구조를 **후입선출(LIFO, Last In First Out)** 구조라고 한다. 
+
+스택에서 기본적으로 구현하는 기능은 다음과 같다.
+
+```python
+from typing import Any
+
+
+class Stack:
+    def __init__(self)              -> None:    # 생성
+        self._items = []
+    def __repr__(self)              -> None:    # 출력
+        return f"<{self._items}>"
+    def push(self, item: Any)       -> None:    # top에 항목 추가
+        self._items.append(item)
+    def pop(self)                   -> Any:     # top의 항목 삭제 & 삭제된 값 반환
+        return self._items.pop()
+    def peek(self)                  -> Any:     # top의 값 반환
+        return self._items[-1]
+    def is_empty(self)              -> bool:    # 비었는지 확인
+        return not bool(self._items)
+    def size(self)                  -> int:     # 항목 개수 확인
+        return len(self._items)
+```
+
+```py
+if __name__ == "__main__":
+    # 생성
+    a_stack = Stack()
+    print(a_stack)
+
+    # push
+    a_stack.push("apple")
+    a_stack.push(1)
+    print(a_stack)
+
+    # peek
+    peek = a_stack.peek()
+    print(peek)
+
+    # pop
+    a_stack.pop()
+    print(a_stack)
+```
+
+```
+<[]>
+<['apple', 1]>        
+1
+<['apple']>
+```
+
+항목 삭제 시 가장 마지막에 추가된 1이 삭제된 것을 확인할 수 있다.
+
+---
+
+# 큐(Queue)
+
+가장 먼저 추가된 항목이 가장 먼저 삭제되는 방식으로 작동하며, 이러한 구조를 **선입선출(FIFO, First In First Out)** 구조라고 한다. 
+
+큐에서 기본적으로 구현하는 기능은 다음과 같다.
+
+```python
+from typing import Any
+from collections import deque
+
+
+class Queue:
+    def __init__(self)              -> None:    # 생성
+        self._items = deque()
+    def __repr__(self)              -> None:    # 출력
+        return f"<{list(self._items)}>"
+    def enqueue(self, item: Any)    -> None:    # front에 항목 추가
+        self._items.append(item)
+    def dequeue(self)               -> Any:     # front의 항목 삭제 & 삭제된 값 반환
+        return self._items.popleft()
+    def peek(self)                  -> Any:     # front의 값 반환
+        return self._items[-1]
+    def is_empty(self)              -> bool:    # 비었는지 확인
+        return not bool(self._items)
+    def size(self)                  -> int:     # 항목 개수 확인
+        return len(self._items)
+```
+
+스택의 경우 컨테이너로 리스트를 사용했지만, 큐의 컨테이너는 대신 `collections` 라이브러리의 `deque()`를 사용한다. 
+
+그 이유는 가장 왼쪽에 있는 항목을 삭제하는 연산에서 두 컨테이너의 시간 복잡도 차이 때문이다. 
+
+리스트의 `pop()` 연산이 **O(n)**의 시간복잡도(n은 리스트의 길이)를 가지는 반면, `deque()` 컨테이너의 `popleft()` 연산은 **O(1)**의 시간복잡도를 가지므로 훨씬 효율적이다.
+
+```python
+if __name__ == "__main__":
+    # 생성
+    a_queue = Queue()
+    print(a_queue)
+
+    # enqueue
+    a_queue.enqueue("apple")
+    a_queue.enqueue(1)
+    print(a_queue)
+
+    # peek
+    peek = a_queue.peek()
+    print(peek)
+
+    # dequeue
+    a_queue.dequeue()
+    print(a_queue)
+```
+
+```
+<[]>
+<['apple', 1]>        
+1
+<[1]>
+```
+
+항목 삭제 시 가장 먼저 추가된 apple이 삭제된 것을 확인할 수 있다.
+
+---
+
+# 덱(Deque)
+
+덱은 스택과 큐의 기능을 모두 수행한다.
+
+```python
+from typing import Any
+from collections import deque
+
+
+class Deque:
+    def __init__(self)              -> None:    # 생성
+        self._items = deque()
+    def __repr__(self)              -> None:    # 출력
+        return f"<{list(self._items)}>"
+    def add_front(self, item: Any)  -> None:    # front에 항목 추가
+        self._items.append(item)
+    def add_rear(self, item: Any)   -> None:    #  rear에 항목 추가
+        self._items.appendleft(item)
+    def remove_front(self)          -> Any:     # front의 항목 삭제 & 삭제된 값 반환
+        return self._items.pop()
+    def remove_rear(self)           -> Any:     #  rear의 항목 삭제 & 삭제된 값 반환
+        return self._items.popleft()
+    def is_empty(self)              -> bool:    # 비었는지 확인
+        return not bool(self._items)
+    def size(self)                  -> int:     # 항목 개수 확인
+        return len(self._items)
+```
+
+```python
+if __name__ == "__main__":
+    # 생성
+    a_deque = Deque()
+    print(a_deque)
+
+    # add
+    a_deque.add_front("apple")
+    a_deque.add_front(1)
+    a_deque.add_rear(True)
+    print(a_deque)
+
+    # remove
+    a_deque.remove_front()
+    a_deque.remove_rear()
+    print(a_deque)
+```
+
+```
+<[]>
+<[True, 'apple', 1]>
+<['apple']>
+```
+
+---
+

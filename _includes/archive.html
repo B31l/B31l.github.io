@@ -1,8 +1,10 @@
 <!-- each category page -->
 {% if page.type %}
 <div class="archive">
-  <img src="../assets/img/category/{{ page.type }}.png"> 
-  <p class="archive_type">{{ page.type }}</p>
+  <div class="archive-banner">
+    <img src="../assets/img/category/{{ page.type }}.png"> 
+    <p class="archive_type">{{ page.type }}</p>
+  </div>
   <ul>
     {% for post in site.categories[page.type] %}
     {% if post.url %}

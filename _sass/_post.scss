@@ -5,6 +5,7 @@
     color: var(--post_text);
 
     @include breakpoint(medium) {
+        min-height: calc(100vh - 8.4rem);
         margin-top: 5rem;
     }
 

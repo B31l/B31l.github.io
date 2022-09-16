@@ -4,6 +4,11 @@
 .archive {
     color: var(--archive_font);
 
+    .archive-banner {
+        display: flex;
+        font-family: 'Noto Sans KR';
+    }
+
     ul {
         list-style: none;
         margin: 0;
@@ -27,6 +32,7 @@
     }
 
     @include breakpoint(medium) {
+        min-height: calc(100vh - 8.4rem);
         max-width: 40rem;
         margin-top: 5rem;
     }

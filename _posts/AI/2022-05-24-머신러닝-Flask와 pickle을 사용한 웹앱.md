@@ -1,5 +1,5 @@
 ---
-title: "Flask와 pickle을 사용한 머신러닝 웹앱"
+title: "머신러닝: Flask와 pickle을 사용한 웹앱"
 categories: [MachineLearning]
 mathjax: true
 ---

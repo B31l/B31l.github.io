@@ -1,6 +1,6 @@
 ---
-title: "파이썬으로 순열과 조합 계산하기"
-categories: [Library]
+title: "itertools"
+categories: [Python]
 mathjax: true
 ---
 

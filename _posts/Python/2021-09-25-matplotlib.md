@@ -1,6 +1,6 @@
 ---
-title: "파이썬으로 그래프 그리기"
-categories: [Library]
+title: "matplotlib"
+categories: [Python]
 mathjax: true
 ---
 

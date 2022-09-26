@@ -19,7 +19,7 @@
 .post_title {
     color: var(--post_title);
     margin: 1rem 0;
-    padding: 0 2.5rem;
+    padding: 0;
     line-height: 3.5rem;
     font-size: 2.5rem;
     font-weight: 900;
@@ -33,7 +33,6 @@
 
 .post_data {
     margin-top: -0.5rem;
-    margin-bottom: 5rem;
 
     @include mobile-only {
         text-align: center;
@@ -326,6 +325,7 @@
     
     
     ul {
+        margin: 0;
         padding: 0;
     }
     li {

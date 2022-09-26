@@ -10,14 +10,12 @@ layout: page
     {% for cat_name in page.categories %}
     <a class="post_category_link" href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">
       <img style="padding: 1rem;" src="../assets/img/category/{{ cat_name }}.png"> 
-      {{ cat_name }}
-      ({{ category | last | size }})
     </a>
     {% break %}
     {% endfor %}
     {% endif %}
 
-    <div>
+    <div class="post_information">
       {% if page.title %}
       <p class="post_title">{{ page.title }}</p>
       {% endif %}
@@ -60,12 +58,17 @@ layout: page
   .post_banner {
     display: flex;
     padding: 0 2.5rem;
+    margin-bottom: 5rem;
   }
   .post_category_link {
     min-width: 10rem;
+    max-width: 10rem;
     height: 10rem;
     box-shadow: 0 0 5px black;
     border-radius: 50%;
+  }
+  .post_information {
+    padding: 0 2.5rem;
   }
   
 </style>

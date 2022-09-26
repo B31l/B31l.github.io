@@ -176,7 +176,7 @@
     }
 
     img {   
-        width: calc(100% - 2.5rem);
+        max-width: calc(100% - 2.5rem);
         margin: 0.5rem 0 1rem;
         box-shadow: 0 0 2px black;
     }
@@ -370,4 +370,5 @@
 
 .MathJax_Display {
     text-align: left !important;
+    margin: 1em 2.5em;
 }

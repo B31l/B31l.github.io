@@ -3,12 +3,9 @@
 
 .archive {
     color: var(--archive_font);
-
     .archive-banner {
         display: flex;
-        img {
-            margin: 0;
-        }
+        padding: 0 2.5rem;
     }
 
     ul {
@@ -18,7 +15,7 @@
         width: calc(100% - 9rem);
         margin: 0;
         margin-top: -2rem;
-        padding: 0;
+        padding: 0 4rem;
         list-style: none;
         li {
             margin-bottom: 0.6rem;
@@ -37,7 +34,7 @@
 
     @include breakpoint(medium) {
         min-height: calc(100vh - 8.4rem);
-        max-width: 40rem;
+        max-width: 50rem;
         margin-top: 5rem;
     }
 
@@ -65,7 +62,8 @@
 
 .archive_type {
     color: var(--post_title);
-    margin: 1rem;
+    margin: 1rem 0;
+    padding: 0 2.5rem;
     height: 3.5rem;
     line-height: 3.5rem;
     font-size: 3.5rem;

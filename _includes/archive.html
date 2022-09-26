@@ -2,7 +2,10 @@
 {% if page.type %}
 <div class="archive">
   <div class="archive-banner">
-    <img src="../assets/img/category/{{ page.type }}.png"> 
+    <div class="post_category_link">
+      <img style="padding: 1rem;" src="../assets/img/category/{{ page.type }}.png"> 
+    </div>
+    
     <div class="archive_type">{{ page.type }}</div>
   </div>
   <ul>

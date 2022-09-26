@@ -192,8 +192,19 @@
         margin: 2.5rem;
         max-width: 50rem;
         padding: 0.5rem;
-        outline: 2px solid var(--sublime_color_RED);
+        outline: 2px solid black;
+        box-shadow: 0 0 5px black;
         border-radius: 5px;
+
+        em {
+            display: block;
+            margin: 0px 0 20px -40px;
+            padding: 5px 10px;
+            font-size: 1.5rem;
+            color: black;
+            font-weight: 900;
+            font-style: normal;
+        }
     }
 
     dfn {
@@ -244,15 +255,7 @@
     }
 
     // Custom
-    em {
-        display: block;
-        margin: 0px 0 20px -50px;
-        padding: 5px 10px;
-        font-size: 1.5rem;
-        color: var(--sublime_color_RED);
-        font-weight: 900;
-        font-style: normal;
-    }
+
 
     u {
         display: block;

@@ -1,5 +1,5 @@
 ---
-title: "Tensorflow 작업환경 구성 (1)"
+title: "Tensorflow 작업환경 구성"
 categories: [Tensorflow]
 mathjax: true
 ---
@@ -237,29 +237,29 @@ $ sudo docker run --rm --gpus all nvidia/cuda:11.0.3-base-ubuntu20.04 nvidia-smi
 
 공식 Tensorflow Docker 이미지는 [tensorflow/tensorflow](https://hub.docker.com/r/tensorflow/tensorflow/) Docker hub 저장소에 있습니다. 
 
-다음 형식을 조합해 리눅스에서 Tensorflow 이미지를 태그할 수 있습니다.
+다음 형식을 조합하면 리눅스에서 Tensorflow 이미지를 태그할 수 있다.
 
 -   📌 [Tensorflow Docker 이미지 다운로드](https://www.tensorflow.org/install/docker?hl=ko#download_a_tensorflow_docker_image)
 
-    -   먼저 베이스 태그를 사용해 Tensorflow 이미지의 버전을 지정합니다.
+    -   먼저 베이스 태그를 사용해 Tensorflow 이미지의 버전을 지정한다.
 
         | 베이스 태그 | 설명                                               |
         | ----------- | -------------------------------------------------- |
         | `latest`    | TensorFlow CPU 바이너리 이미지의 최신 출시(기본값) |
         | `version`   | TensorFlow 바이너리 이미지의 버전 지정(예: 2.1.0)  |
 
-    -   태그 변이를 적용하면 각 베이스 태그에는 기능 추가를 할 수 있습니다. 
+    -   태그 변이를 적용하면 각 베이스 태그에는 기능 추가를 할 수 있다.
 
-        태그 변이는 다른 태그 변이와 함께 사용할 수 있습니다.
+        (태그 변이는 다른 태그 변이와 함께 사용 가능)
 
         | 태그 변이     | 설명                  |
         | ------------- | --------------------- |
         | `tag-gpu`     | GPU 지원              |
         | `tag-jupyter` | Jupyter Notebook 포함 |
 
-구성하고자 하는 텐서플로우 작업환경은 GPU를 지원하며 Jupyter Notebook 역시 포함해야 합니다. 
+구성하고자 하는 텐서플로우 작업환경은 GPU를 지원하며 Jupyter Notebook 역시 포함해야 한다.
 
-다음과 같은 형식으로 태그를 만들면 최신 버전의 Tensorflow를 다운로드할 수 있습니다.
+다음과 같은 형식으로 태그를 만들면 최신 버전의 Tensorflow를 다운로드할 수 있다.
 
 ``` shell
 $ docker pull tensorflow/tensorflow:latest-gpu-jupyter
@@ -278,7 +278,7 @@ $ sudo service docker start
 다음 명령으로 지금까지 구성한 작업환경 컨테이너를 실행할 수 있으며, 생성된 링크로 이동하면 주피터 노트북으로 연결된다.
 
 ```shell
-docker run --gpus all -lt -v $(realpath ~/notebooks):/tf/notebooks -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter
+$ docker run --gpus all -lt -v $(realpath ~/notebooks):/tf/notebooks -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter
 ```
 
 notebooks 폴더로 이동한 뒤, 작동 테스트를 위해 새 ipynb 파일을 생성한다.

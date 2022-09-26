@@ -259,12 +259,11 @@
 
     u {
         display: block;
-        margin: 0.5rem 0 -0.5rem;
+        margin: 0.5rem -2.5rem -0.5rem;
         padding: 5px 10px;
         font-weight: 900;
         font-style: normal;
         background-color: var(--sublime_font);
-        border-radius: 0 16px 0 0;
         box-shadow: 0 0 5px;
         text-decoration: none;
     }
@@ -306,10 +305,9 @@
     }
 }
 
-// .post_comment {
-//     margin-top: 8rem;
-//     padding: 10px;
-// }
+.post_comment {
+    padding-left: 2.5rem;
+}
 
 #markdown-toc {
     position: fixed;

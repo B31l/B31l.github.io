@@ -2,7 +2,7 @@
   {% assign cat = page.categories[0] %}
   {% assign cat_list = site.categories[cat] %}
   <div class="post_archive">
-    <p class="post_archive_type">📂{{ page.categories }}</p>
+    <p class="post_archive_type">{{ page.categories }}</p>
     <ul>
       {% for post in cat_list %}
         {% if post.url %}

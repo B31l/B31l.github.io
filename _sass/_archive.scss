@@ -112,8 +112,9 @@
     @include breakpoint(medium) {
         max-width: 40rem;
         text-align: left;
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem;
         margin-top: 0.5rem;
+        border-top: 2px outset;
     }
 
     @include mobile-only {

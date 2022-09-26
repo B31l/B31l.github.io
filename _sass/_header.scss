@@ -37,7 +37,7 @@
     @include breakpoint(medium) {
         position: fixed;
         margin-top: 5rem;
-        width: 19.5rem;
+        width: 20rem;
     }
 
     @include mobile-only {
@@ -141,10 +141,8 @@
 .nav {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0.5rem;
-    padding: 0.5rem 0;
-    border-right: 0.5rem solid white;
     text-align: right;
+    padding: 0.5rem;
 
     @include mobile-only {
         display: none;
@@ -159,10 +157,11 @@
 }
 
 .nav_list {
-    width: 25%;
+    width: 50%;
     margin: 0;
     padding: 2px 0;
     list-style: none;
+    text-align: left;
     
     @include mobile-only {
         width: 100%;
@@ -188,8 +187,8 @@
     }
 
     img {
-        width: 4rem;
-        height: 4rem;
+        width: 2rem;
+        height: 2rem;
         cursor: pointer;
         &:hover,
         &:focus {

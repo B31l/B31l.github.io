@@ -1,6 +1,6 @@
 ---
 title: "Tensorflow 작업환경 구성 (1)"
-categories: [Tensorflow, Note]
+categories: [Tensorflow]
 mathjax: true
 ---
 

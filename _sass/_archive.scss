@@ -6,6 +6,13 @@
     .archive-banner {
         display: flex;
         padding: 0 2.5rem;
+        .archive_category_link {
+            min-width: 10rem;
+            max-width: 10rem;
+            height: 10rem;
+            box-shadow: 0 0 5px black;
+            border-radius: 50%;
+        }
     }
 
     ul {
@@ -14,8 +21,8 @@
         float: right;
         width: calc(100% - 9rem);
         margin: 0;
-        margin-top: -2rem;
-        padding: 0 4rem;
+        margin-top: -4rem;
+        padding: 0px 6.5rem;
         list-style: none;
         li {
             margin-bottom: 0.6rem;

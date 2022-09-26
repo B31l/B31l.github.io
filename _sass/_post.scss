@@ -69,12 +69,12 @@
     h1,
     h2 {
         font-family: 'Noto Sans KR';
-        margin: 2rem 0 1rem;
+        margin: 2rem 2.5rem 1rem;
     }
 
     h3 {
         font-family: 'Noto Sans KR';
-        margin: 2rem 0 1rem;
+        margin: 2rem 2.5rem 1rem;
         color: var(--post_h3);
     }
 
@@ -86,7 +86,7 @@
 
     p {
         font-family: 'Noto Sans KR';
-        margin: 0;
+        margin: 0 2.5rem;
         line-height: 1.5rem;
     }
 
@@ -133,6 +133,7 @@
         .rouge-table {
             display: table;
             width: 100%;
+            max-width: 100%;
             height: auto;
             margin: 0;
             box-shadow: none;
@@ -181,9 +182,10 @@
     }
 
     blockquote {
-        margin: 0.5rem 0 1rem;
+        margin: 2.5rem;
+        max-width: 50rem;
         padding: 0.5rem;
-        outline: 2px solid var(--sublime_color_YELLOW);
+        outline: 2px solid var(--sublime_color_RED);
         border-radius: 5px;
     }
 
@@ -237,11 +239,10 @@
     // Custom
     em {
         display: block;
-        width: calc(100% + 20px);
-        margin: -10px 0 10px -10px;
+        margin: 0px 0 20px -50px;
         padding: 5px 10px;
-        background-color: var(--sublime_color_YELLOW);
-        color: White;
+        font-size: 1.5rem;
+        color: var(--sublime_color_RED);
         font-weight: 900;
         font-style: normal;
     }
@@ -262,14 +263,14 @@
         display: inline-block;
         overflow-x: auto;
         width: auto;
-        max-width: 100%;
+        max-width: calc(100% - 5rem);
         height: auto;
-        margin: 15px 0;
+        margin: 1rem 2.5rem;
         box-shadow: 0 0 2px black;
         border-collapse: collapse;
         color: black;
         font-size: 90%;
-        table-layout:fixed;
+        table-layout: fixed;
         thead {
             text-align: center;
         }
@@ -307,9 +308,9 @@
     margin: 0;
     margin-left: max(calc(50% - 860px), 0px);
     padding: 0;
-    outline: 2px solid var(--deep);
-    border-radius: 5px;
-    box-shadow: 0 0 10px var(--deep_shadow);
+    // outline: 2px solid var(--deep);
+    // border-radius: 5px;
+    // box-shadow: 0 0 10px var(--deep_shadow);
     width: 19.5rem;
     line-height: 1.5rem;
     font-size: 0.9rem;
@@ -317,7 +318,11 @@
     
     
     ul {
+        margin: 1rem 2.5rem 4rem;
         padding: 0;
+        p {
+            margin: 0;
+        }
     }
     li {
         list-style: none;
@@ -328,7 +333,7 @@
         line-height: 2rem;
         box-sizing: border-box;
         transition: 0.5s ease;
-        outline: 1px solid;
+        // outline: 1px solid;
         font-family: 'Noto Sans KR';
         overflow: hidden;
         text-overflow: ellipsis;

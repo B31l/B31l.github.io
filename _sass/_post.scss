@@ -168,6 +168,13 @@
         }
     }
 
+    ul {
+        margin: 1rem 2.5rem 4rem;
+        p {
+            margin: 0;
+        }
+    }
+    
     img {   
         margin: 0.5rem 0 1rem;
         box-shadow: 0 0 2px black;
@@ -318,11 +325,7 @@
     
     
     ul {
-        margin: 1rem 2.5rem 4rem;
         padding: 0;
-        p {
-            margin: 0;
-        }
     }
     li {
         list-style: none;

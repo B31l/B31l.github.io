@@ -10,6 +10,8 @@ mathjax: true
 
 구글 Colab은 제한 사항이 많으므로, 대신 **Ubuntu** 및 **Docker**를 사용해 작업환경을 구성한다.
 
+---
+
 # WSL 2 및 Ubuntu 셋팅
 
 윈도우(10 이상)에서 Native한 방식으로 리눅스 실행 파일을 실행하기 위해 **WSL 2** 및 **Ubuntu 20.04.4 LTS**([💾](https://apps.microsoft.com/store/detail/ubuntu-20044-lts/9MTTCL66CPXJ?hl=ko-kr&gl=KR))를 설치한다.

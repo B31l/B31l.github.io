@@ -1,11 +1,15 @@
 ---
-title: "WSL에서 텐서플로우 작업환경 구성"
-categories: [Note]
+title: "Tensorflow 작업환경 구성 (1)"
+categories: [Tensorflow Note]
 mathjax: true
 ---
 
 * content
 {:toc}
+## 구글 코랩
+
+
+
 # WSL 2 및 Ubuntu 셋팅
 
 윈도우(10 이상)에서 네이티브로 리눅스 실행 파일을 실행하기 위한 환경을 설정합니다. 
@@ -49,7 +53,7 @@ Ubuntu 설치가 끝나면 실행하여 사용자 정보(**username** 및 **pass
     -   `--set-default-version` 명령어로 기본 버전을 선택합니다. 
 
         `2`로 설정 시 WSL2를 기본 버전으로 사용합니다.
-    
+
         ```sh
         > wsl --set-default-version 2
         ```
@@ -57,15 +61,17 @@ Ubuntu 설치가 끝나면 실행하여 사용자 정보(**username** 및 **pass
     -   만약 위 방법이 작동하지 않는다면, Linux 커널 업데이트를 먼저 진행해야 합니다. 
 
         [이곳](aka.ms/wsl2kernel)에서 최신 WSL2 Linux 커널 업데이트 패키지를 설치한 후, 다음 명령을 대신 입력합니다.
-    
+
         ```sh
         > wsl --set-default-version Ubuntu-20.04 2
         ```
 
 WSL 버전은 `wsl -l -v` 명령으로 확인할 수 있습니다.
+
 ```shell
 > wsl -l -v
 ```
+
 ```
   NAME                   STATE           VERSION
 * Ubuntu-20.04           Running         2
@@ -254,7 +260,7 @@ $ sudo docker run --rm --gpus all nvidia/cuda:11.0.3-base-ubuntu20.04 nvidia-smi
     -   태그 변이를 적용하면 각 베이스 태그에는 기능 추가를 할 수 있습니다. 
 
         태그 변이는 다른 태그 변이와 함께 사용할 수 있습니다.
-        
+
         | 태그 변이     | 설명                  |
         | ------------- | --------------------- |
         | `tag-gpu`     | GPU 지원              |
@@ -277,6 +283,7 @@ $ docker pull tensorflow/tensorflow:latest-gpu-jupyter
 ```shell
 $ sudo service docker start
 ```
+
 다음 명령으로 지금까지 구성한 작업환경 컨테이너를 실행할 수 있습니다. 
 
 생성된 링크로 이동하면 주피터 노트북으로 연결됩니다.
@@ -284,6 +291,7 @@ $ sudo service docker start
 ```shell
 docker run --gpus all -lt -v $(realpath ~/notebooks):/tf/notebooks -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter
 ```
+
 notebooks 폴더로 이동한 뒤, 작동 테스트를 위해 새 ipynb 파일을 생성합니다. 
 
 -   작동 테스트

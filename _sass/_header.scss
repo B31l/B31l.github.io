@@ -28,13 +28,6 @@
 
 .profile {
     padding: 0.5rem 0;
-    border-bottom: 0.5rem solid white;
-    &:hover {
-        box-shadow: 0 0 10px var(--deep_shadow);
-        outline: 2px solid var(--deep_shadow);
-        border-bottom: 0.5rem solid var(--deep);
-        cursor: pointer;
-    }
 }
 
 .header_content {

@@ -139,27 +139,29 @@
 }
 
 .nav {
+    position: absolute;
+    top: 5.5rem;
+    left: max(calc(50% - 636px), 64px);
+
     display: flex;
     flex-wrap: wrap;
-    text-align: right;
+
+    width: 15rem;
     padding: 0.5rem;
+    outline: 2px solid #eee;
+
+    text-align: right;
+    z-index: 1;
 
     @include mobile-only {
         display: none;
     }
-    
-    // &:hover {
-    //     box-shadow: 0 0 10px var(--deep_shadow);
-    //     outline: 2px solid var(--deep_shadow);
-    //     border-right: 0.5rem solid var(--deep);
-    //     cursor: pointer;
-    // }
 }
 
 .nav_list {
-    width: 50%;
+    width: 100%;
     margin: 0;
-    padding: 2px 0;
+    padding: 4px 0;
     list-style: none;
     text-align: left;
     
@@ -177,8 +179,9 @@
     & a {
         display: block;
         width: 100%;
+        height: 2.5rem;
         color: var(--deep);
-        font-size: 0.75rem;
+        font-family: "Noto Sans KR";
         cursor: pointer;
         &:hover,
         &:focus {

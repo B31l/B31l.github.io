@@ -6,7 +6,7 @@
 
     @include breakpoint(medium) {
         min-height: calc(100vh - 8.4rem);
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
 
     @include mobile-only {
@@ -18,62 +18,64 @@
 
 .post_banner {
     display: flex;
-    padding: 0 2.5rem;
-    margin-bottom: 5rem;
-}
-.post_category_link {
-    min-width: 10rem;
-    max-width: 10rem;
-    height: 10rem;
-    box-shadow: 0 0 5px black;
-    border-radius: 50%;
-}
-.post_information {
-    padding: 0 2.5rem;
-}
+    height: 7.5rem;
+    margin-left: -5rem;
 
-
-.post_title {
-    color: var(--post_title);
-    margin: 1rem 0;
-    padding: 0;
-    line-height: 3.5rem;
-    font-size: 2.5rem;
-    font-weight: 900;
-    font-family: "Noto Sans KR";
-
-    @include mobile-only {
-        text-align: center;
-        font-size: 1.5rem;
+    .post_category_img_wrapper {
+        min-width: 10rem;
+        max-width: 10rem;
+        height: 10rem;
+        box-shadow: 0 0 5px black;
+        background: white;
+        border-radius: 50%;
+        z-index: 1;
+        img {
+            padding: 1rem;
+        }
     }
-}
 
-.post_data {
-    margin-top: -0.5rem;
-
-    @include mobile-only {
-        text-align: center;
-        margin-top: -1rem;
-        margin-bottom: 1rem;
-    }
-}
-
-.post_date {
-    color: var(--post_date);
-    letter-spacing: -0.5px;
-    line-height: 1;
-}
-
-.post_categories {
-    line-height: 1;
-    margin-left: 0.3rem;
-
-    a {
-        color: var(--nav_font);
-
-        &:hover,
-        &:focus {
-            color: var(--nav_font_hover);
+    .post_information {
+        width: 100%;
+        height: 5rem;
+        margin: 1.5rem;
+        .post_title {
+            color: var(--post_title);
+            margin: 0 0 1rem;
+            padding: 0;
+            height: 3rem;
+            line-height: 3rem;
+            font-size: 2.5rem;
+            font-weight: 900;
+            font-family: "Noto Sans KR";
+            @include mobile-only {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
+        .post_data {
+            margin-top: -0.5rem;
+            line-height: 1rem;
+            @include mobile-only {
+                text-align: center;
+                margin-top: -1rem;
+                margin-bottom: 1rem;
+            }
+            .post_date {
+                color: var(--post_date);
+                letter-spacing: -0.5px;
+                line-height: 1;
+            }
+            .post_categories {
+                line-height: 1;
+                margin-left: 0.3rem;
+                a {
+                    color: var(--nav_font);
+                    &:hover,
+                    &:focus {
+                        color: var(--nav_font_hover);
+                    }
+                }
+            }
         }
     }
 }
@@ -82,6 +84,8 @@
     font-size: 1rem;
     line-height: 1.5rem;
     color: var(--post_text);
+    border-top: 2px outset;
+    padding-top: 2.5rem;
 
     h1,
     h2 {
@@ -207,7 +211,7 @@
 
     hr {
         margin-top: 1rem;
-        margin-bottom: 5rem;
+        margin-bottom: 2.5rem;
         border: none;
         border-top: 1px solid rgba(0, 0, 0, 0.2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -341,20 +345,15 @@
 
 #markdown-toc {
     position: fixed;
-    top: 5.5rem;
+    top: 11.5rem;
     left: min(calc(100% - 20rem), 1400px);
     margin: 0;
     margin-left: max(calc(50% - 860px), 0px);
     padding: 0;
-    // outline: 2px solid var(--deep);
-    // border-radius: 5px;
-    // box-shadow: 0 0 10px var(--deep_shadow);
     width: 19.5rem;
     line-height: 1.5rem;
     font-size: 0.9rem;
     overflow-y: auto;
-    
-    
     ul {
         margin: 0;
         padding: 0;

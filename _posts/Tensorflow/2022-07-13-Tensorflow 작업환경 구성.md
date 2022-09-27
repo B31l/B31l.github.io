@@ -6,13 +6,11 @@ mathjax: true
 
 * content
 {:toc}
-딥러닝 실습을 위해 **GPU 가속**을 지원하는 **Tensorflow** 작업환경 구성 방법을 서술한다.
-
-구글 Colab은 제한 사항이 많으므로, 대신 **Ubuntu** 및 **Docker**를 사용해 작업환경을 구성한다.
-
----
-
 # WSL 2 및 Ubuntu 셋팅
+
+구글 Colab은 딥러닝 실습에 제한 사항이 많으므로, 
+
+대신 **Ubuntu** 및 **Docker**를 사용해 **GPU 가속**을 지원하는 **Tensorflow** 작업환경을 구성한다.
 
 윈도우(10 이상)에서 Native한 방식으로 리눅스 실행 파일을 실행하기 위해 **WSL 2** 및 **Ubuntu 20.04.4 LTS**([💾](https://apps.microsoft.com/store/detail/ubuntu-20044-lts/9MTTCL66CPXJ?hl=ko-kr&gl=KR))를 설치한다.
 

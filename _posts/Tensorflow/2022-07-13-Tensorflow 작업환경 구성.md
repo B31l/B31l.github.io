@@ -1,5 +1,5 @@
 ---
-title: "Tensorflow 작업환경 구성"
+title: "Tensorflow 개발환경 구축"
 categories: [Tensorflow]
 mathjax: true
 ---
@@ -8,17 +8,17 @@ mathjax: true
 {:toc}
 # WSL 2 및 Ubuntu 셋팅
 
-구글 Colab은 딥러닝 실습에 제한 사항이 많으므로, 
+**GPU 가속**을 지원하는 **Tensorflow** 개발환경을 구축한다.
 
-대신 **Ubuntu** 및 **Docker**를 사용해 **GPU 가속**을 지원하는 **Tensorflow** 작업환경을 구성한다.
+구글 Colab은 딥러닝 실습에 제한 사항이 많으므로, 대신 **Ubuntu** 및 **Docker**를 사용한다.
 
-윈도우(10 이상)에서 Native한 방식으로 리눅스 실행 파일을 실행하기 위해 **WSL 2** 및 **Ubuntu 20.04.4 LTS**([💾](https://apps.microsoft.com/store/detail/ubuntu-20044-lts/9MTTCL66CPXJ?hl=ko-kr&gl=KR))를 설치한다.
+윈도우(10 이상)에서 Native한 방식으로 리눅스 실행 파일을 실행하기 위해 **WSL 2** 및 **Ubuntu 20.04.4 LTS**([💾설치](https://apps.microsoft.com/store/detail/ubuntu-20044-lts/9MTTCL66CPXJ?hl=ko-kr&gl=KR))를 설치한다.
 
 Ubuntu 설치가 끝나면 실행하여 사용자 정보(**username** 및 **password**)를 입력한다.
 
 >   *Note*
 >
->    **Windows Terminal**([💾](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=ko-kr&gl=KR))은 많은 기능과 우수한 편의성을 자랑하므로 설치를 권장한다.
+>    **Windows Terminal**([💾설치](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=ko-kr&gl=KR))은 많은 기능과 우수한 편의성을 자랑하므로 설치를 권장한다.
 
 -   📌 [WSL 설치](https://docs.microsoft.com/ko-kr/windows/wsl/install-manual)
 

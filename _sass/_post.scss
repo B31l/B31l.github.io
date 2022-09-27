@@ -328,6 +328,10 @@
             text-overflow: ellipsis;
             word-break: keep-all;
         }
+        img {
+            max-width: 100%;
+            margin: 0;
+        }
     }
 }
 

@@ -1,5 +1,5 @@
 ---
-title: "RN 테스트"
+title: "ReactNative: 시작하기"
 categories: [ReactNative]
 mathjax: true
 ---

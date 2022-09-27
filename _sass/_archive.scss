@@ -108,17 +108,18 @@
         font-size: 0.9rem;
         height: 2rem;
         line-height: 2rem;
+        padding: 0 0.5rem;
 
         &:hover,
         &:focus {
-            color: var(--archive_title_hover);
+            color: var(--sublime_font);
+            background-color: var(--archive_title_hover);
         }
     }
 
     @include breakpoint(medium) {
         max-width: 40rem;
         text-align: left;
-        padding: 0 1rem;
         border-top: 2px outset;
     }
 

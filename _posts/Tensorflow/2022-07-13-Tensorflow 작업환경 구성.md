@@ -133,7 +133,7 @@ $ sudo apt-get update
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
->   **Note**
+>   *Note*
 >
 >   특정 버전을 설치하고 싶다면 [이곳](https://docs.docker.com/engine/install/ubuntu/#install-docker-engine)의 두 번째 단락을 참고한다.
 
@@ -305,7 +305,7 @@ notebooks 폴더로 이동한 뒤, 작동 테스트를 위해 새 ipynb 파일�
         device_type: "GPU"
         ```
 
-> **Note**
+> *Note*
 >
 > 주피터 노트북을 종료하려면 우측 상단의 `Quit` 버튼을 클릭한다.
 

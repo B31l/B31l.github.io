@@ -1,0 +1,64 @@
+.post_banner {
+    display: flex;
+    height: 5rem;
+    padding: 0 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.post_category_img_wrapper {
+    min-width: 5rem;
+    max-width: 5rem;
+    height: 5rem;
+    box-shadow: 0 0 5px black;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+    img {
+        padding: 0.5rem;
+    }
+}
+
+.post_information {
+    width: 100%;
+    height: 5rem;
+    padding: 0 1.5rem;
+    .post_title {
+        color: var(--post_title);
+        margin: 0 0 1rem;
+        padding: 0;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 2.5rem;
+        font-weight: 900;
+        font-family: "Noto Sans KR";
+        @include mobile-only {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    .post_data {
+        margin-top: -0.5rem;
+        line-height: 1rem;
+        @include mobile-only {
+            text-align: center;
+            margin-top: -1rem;
+            margin-bottom: 1rem;
+        }
+        .post_date {
+            color: var(--post_date);
+            letter-spacing: -0.5px;
+            line-height: 1;
+        }
+        .post_categories {
+            line-height: 1;
+            margin-left: 0.3rem;
+            a {
+                color: var(--nav_font);
+                &:hover,
+                &:focus {
+                    color: var(--nav_font_hover);
+                }
+            }
+        }
+    }
+}

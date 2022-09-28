@@ -83,21 +83,6 @@
 //     }
 // }
 
-// .mobile_menu {
-//     display: none;
-
-//     @include mobile-only {
-//         display: block;
-//         margin: -.5rem;
-//     }
-
-//     @include breakpoint(medium) {
-//         position: absolute;
-//         top: 1.25rem;
-//         right: 1.25rem;
-//     }
-// }
-
 .categories {
     color: var(--archive_font);
 
@@ -158,4 +143,19 @@
     line-height: 4.5rem;
     margin: 0;
     font-family: 'Noto Sans KR';
+}
+
+.mobile_menu {
+    display: none;
+
+    @include mobile-only {
+        display: block;
+        margin: -.5rem;
+    }
+
+    @include breakpoint(medium) {
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+    }
 }

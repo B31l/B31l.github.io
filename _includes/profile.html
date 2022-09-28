@@ -4,8 +4,8 @@
       <img src="{{ site.user.pic | relative_url }}" alt="{{ site.user.picAlt }}">
     </a> -->
 
-    <span class="profile_name">{{ site.user.name }}</span>
-    <span class="proflie_job">{{ site.user.job }}</span>
+    <a href='{{ site.url }}' class="profile_name">{{ site.user.name }}</a>
+    <div class="proflie_job">{{ site.user.job }}</div>
     <label class="theme_changer">
       <input theme_toggle type="checkbox">
       <div class="button"></div>

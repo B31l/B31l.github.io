@@ -1,16 +1,16 @@
 .profile {
-    display: flex;
     height: 2.5rem;
     line-height: 2.5rem;
     padding: 0 1rem;
     .profile_name {
-        display: block;
+        float: left;
         margin-right: 0.5rem;
         color: var(--name_font);
         font-size: 1.5em;
+        cursor: pointer;
     }
     .proflie_job {
-        display: block;
+        float: left;
         margin-right: 0.5rem;
         color: var(--job_font);
         font-size: 0.75em;
@@ -19,6 +19,7 @@
 }
 
 .theme_changer {   
+    float: right;
     cursor: pointer;
     input {
         display: none;

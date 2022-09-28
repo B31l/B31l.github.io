@@ -1,12 +1,8 @@
 ---
 layout: post
-title: "Aboutme"
-mathjax: true
 ---
 
-* content
-{:toc}
-# 정말고마워요
+# Aboutme
 
 ![](assets/img/profile.png)
 

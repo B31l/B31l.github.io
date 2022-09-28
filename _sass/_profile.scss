@@ -1,0 +1,104 @@
+.profile {
+    display: flex;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 1rem;
+    .profile_name {
+        display: block;
+        margin-right: 0.5rem;
+        color: var(--name_font);
+        font-size: 1.5em;
+    }
+    .proflie_job {
+        display: block;
+        margin-right: 0.5rem;
+        color: var(--job_font);
+        font-size: 0.75em;
+        font-weight: 700;
+    }
+}
+
+.theme_changer {   
+    cursor: pointer;
+    input {
+        display: none;
+        &+div {
+            background: url('../img/m.png') no-repeat center center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: relative;
+            transition: box-shadow .5s ease 0s, transform .5s ease .1s;
+
+            &:before {           
+                content: '';
+                width: inherit;
+                height: inherit;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition: background .5s ease;
+            }
+
+            &:after {    
+                background: url('../img/s.png') no-repeat center;
+                border-radius: 50%;
+                content: '';
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                transform: scale(0);
+                transition: all .5s ease;
+            }
+        }
+
+        &:checked+div {
+            transform: scale(.5);
+            &:after {
+                transform: scale(2);
+                transition: transform .5s ease .15s;
+            }
+        }
+    }
+
+    .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.header_circle {
+    border: none;
+    box-sizing: border-box;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    img {
+        @extend .header_circle;
+    }
+    &:hover {
+        cursor: pointer;
+        animation: jiggle 1s ease-in-out infinite;
+    }
+    @include mobile-only {
+        bottom: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@keyframes jiggle {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+}

@@ -12,4 +12,6 @@ mathjax: true
 
 정말고마워요
 
+{% include nav.html %}
+
 ---

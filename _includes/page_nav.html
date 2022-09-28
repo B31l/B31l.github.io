@@ -1,24 +1,33 @@
 {% unless page.categories %}
-<nav class="nav">
-    {% if site.user.aboutme %}
-    <ul class="nav_list">
-      <li class="nav_item">
-        <a href="{{ site.baseurl }}/aboutme.html">about</a>
-      </li>
-    </ul>
-    {% endif %}
-  
-    {% for category in site.categories %}
-    {% capture cat_name %}{{ category | first }}{% endcapture %}
-    <ul class="nav_list">
-      <li class="nav_item">
-        <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">
-          <img src="../assets/img/category/{{ cat_name }}.png"> 
-          {{ cat_name }}
-          ({{ category | last | size }})
-        </a>
-      </li>
-    </ul>
-    {% endfor %}
-</nav>
+    <nav class="nav">
+        {% if site.user.aboutme %}
+        <ul class="nav_list">
+        <li class="nav_item">
+            <a href="{{ site.baseurl }}/aboutme.html">about</a>
+        </li>
+        </ul>
+        {% endif %}
+    
+        {% for category in site.categories %}
+        {% capture cat_name %}{{ category | first }}{% endcapture %}
+        <ul class="nav_list">
+        <li class="nav_item">
+            <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">
+            <img src="../assets/img/category/{{ cat_name }}.png"> 
+            {{ cat_name }}
+            ({{ category | last | size }})
+            </a>
+        </li>
+        </ul>
+        {% endfor %}
+    </nav>
 {% endunless %}
+
+
+{% if site.user.aboutme %}
+<ul class="nav_list">
+  <li class="nav_item">
+    <a href="{{ site.baseurl }}/aboutme.html">about</a>
+  </li>
+</ul>
+{% endif %}

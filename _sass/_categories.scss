@@ -93,27 +93,35 @@
         display: flex;
         flex-direction: column-reverse;
         li {
-            margin-bottom: 2px;
-        }
-    }
-
-    & a {
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        text-decoration: none;
-        color: var(--post_title);
-        font-size: 0.9rem;
-        height: 2rem;
-        line-height: 2rem;
-        padding: 0 1rem;
-        transition: 0.5s ease;
-
-        &:hover,
-        &:focus {
-            color: var(--sublime_font);
-            background-color: var(--archive_title_hover);
+            a {
+                display: block;
+                height: 2rem;
+                line-height: 2rem;
+                padding: 0 1rem;
+                color: var(--post_title);
+                font-size: 0.9rem;
+                transition: 0.5s ease;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                text-decoration: none;
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                    padding: 0.5rem;
+                }
+                .cat_name {
+                    font-weight: bold;
+                }
+                .cat_size {
+                    font-size: 0.5rem;
+                }
+                &:hover,
+                &:focus {
+                    color: var(--sublime_font);
+                    background-color: var(--archive_title_hover);
+                }
+            }
         }
     }
 
@@ -122,27 +130,9 @@
         text-align: left;
         border-top: 2px outset;
     }
-
     @include mobile-only {
         display: none;
     }
-}
-
-.post_archive_title {
-    word-wrap: normal;
-    @include breakpoint(medium) {
-        font-size: 0.9rem;
-    }
-}
-
-.post_archive_type {
-    color: var(--post_title);
-    font-size: 2rem;
-    font-weight: bold;
-    height: 4.5rem;
-    line-height: 4.5rem;
-    margin: 0;
-    font-family: 'Noto Sans KR';
 }
 
 .mobile_menu {

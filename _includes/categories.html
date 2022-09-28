@@ -1,4 +1,6 @@
 <div class="categories">
+
+  <!-- Post Nav -->
   {% if page.categories %}
     {% assign cat = page.categories[0] %}
     {% assign cat_list = site.categories[cat] %}
@@ -6,27 +8,27 @@
       {% for post in cat_list %}
         {% if post.url %}
           <li>
-            <div class='post_archive_title'>
-              <a href='{{ post.url | relative_url }}'>
-                {{ post.title | escape }}
-              </a>
-            </div>
+              <a href='{{ post.url | relative_url }}'>{{ post.title | escape }}</a>
           </li>
         {% endif %}
       {% endfor %}
     </ul>
+
+  <!-- Page Nav -->
   {% else %}
-    <ul class="nav_list">
+    <ul>
     {% for category in site.categories %}
       {% capture cat_name %}{{ category | first }}{% endcapture %}
-      <li class="nav_item">
-        <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa"></a>
-        <img src="../assets/img/category/{{ cat_name }}.png"> 
-        <div>{{ cat_name }}</div>
-        <div>({{ category | last | size }})</div>
+      <li>
+        <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">
+          <img src="../assets/img/category/{{ cat_name }}.png">
+          <div class="cat_name">{{ cat_name }}</div>
+          <div class="cat_size">({{ category | last | size }})</div>
+        </a>
       </li>
     {% endfor %}
     </ul>
+
   {% endif %}
 </div>
 

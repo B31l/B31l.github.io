@@ -8,10 +8,8 @@ mathjax: true
 {:toc}
 # 정말고마워요
 
-<img src="assets/img/main.png" style="zoom:200%;" />
+<img src="assets/img/profile.png" style="zoom:200%;" />
 
 정말고마워요
-
-{% include nav.html %}
 
 ---

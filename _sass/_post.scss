@@ -21,7 +21,6 @@
     line-height: 1.5rem;
     color: var(--post_text);
     border-top: 2px outset;
-    padding-top: 2.5rem;
 
     h1,
     h2 {
@@ -330,6 +329,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        border-top: none;
     }
 }
 

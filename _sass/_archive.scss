@@ -121,6 +121,7 @@
     @include breakpoint(medium) {
         max-width: 40rem;
         text-align: left;
+        margin-top: 2.5rem;
         border-top: 2px outset;
     }
 

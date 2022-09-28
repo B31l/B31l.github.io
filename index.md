@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Aboutme"
-mathjax: true
+# title: "Aboutme"
+# mathjax: true
 ---
 
 * content

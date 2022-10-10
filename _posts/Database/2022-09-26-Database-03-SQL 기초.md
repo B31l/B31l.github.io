@@ -1,5 +1,5 @@
 ---
-title: "Database: 관계 데이터 모델"
+title: "Database: SQL 기초"
 categories: [Database]
 mathjax: true
 ---

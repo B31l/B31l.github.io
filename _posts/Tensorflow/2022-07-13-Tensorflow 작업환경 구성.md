@@ -88,11 +88,11 @@ WSL 2에서 도커를 사용하기 위해서는 우선 **Windows용 Docker 데�
 
     -   General 메뉴의 Use the WSL 2 based engine 옵션에 체크한다.
 
-        ![](https://github.com/B31l/B31l/blob/main/posts/DeepLearning/20220713_01.png?raw=true)
+        ![](https://github.com/B31l/B31l/blob/main/_posts/Tensorflow/20220713_01.png?raw=true)
 
     -   Resources -> WSL Integration 메뉴의 옵션을 다음과 같이 설정한다.
 
-        ![](https://github.com/B31l/B31l/blob/main/posts/DeepLearning/20220713_02.png?raw=true)
+        ![](https://github.com/B31l/B31l/blob/main/_posts/Tensorflow/20220713_02.png?raw=true)
 
 ## Ubuntu용 Docker 엔진 설치
 

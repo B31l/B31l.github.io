@@ -1,12 +1,10 @@
 ---
-title: "Database: 관계 데이터 모델"
+title: "Database|SQL: 뷰"
 categories: [Database]
 mathjax: true
 ---
 
 * content
 {:toc}
-# 릴레이션
-
-
+# 뷰
 

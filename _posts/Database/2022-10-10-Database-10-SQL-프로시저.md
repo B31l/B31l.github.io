@@ -1,12 +1,10 @@
 ---
-title: "Database: SQL 고급"
+title: "Database|SQL: 프로시저"
 categories: [Database]
 mathjax: true
 ---
 
 * content
 {:toc}
-
-
-# 내장 함수
+# 프로시저
 

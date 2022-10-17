@@ -1,12 +1,10 @@
 ---
-title: "Database: SQL 기초"
+title: "Database|SQL: 내장 함수"
 categories: [Database]
 mathjax: true
 ---
 
 * content
 {:toc}
-
-
-# 데이터베이스의 특징
+# 내장 함수
 

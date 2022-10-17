@@ -1,12 +1,10 @@
 ---
-title: "Database: SQL 고급"
+title: "Database|SQL: 인덱스"
 categories: [Database]
 mathjax: true
 ---
 
 * content
 {:toc}
-
-
-# 내장 함수
+# 인덱스
 

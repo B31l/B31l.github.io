@@ -247,7 +247,7 @@
         font-size: 90%;
         table-layout: fixed;
         thead {
-            text-align: center;
+            text-align: left;
         }
         tbody {
             text-align: left;
@@ -262,7 +262,8 @@
             }
         }
         th, td {
-            padding: 0 5px;
+            padding: 0 0.5rem;
+            outline: 1px solid #ccc;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;

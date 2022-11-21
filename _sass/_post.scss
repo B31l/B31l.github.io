@@ -154,13 +154,15 @@
     }
 
     blockquote {
-        margin: 2.5rem;
-        max-width: 50rem;
-        padding: 0.5rem;
-        outline: 2px solid black;
-        box-shadow: 0 0 5px black;
-        border-radius: 5px;
-        border-left: 2.5rem solid black;
+        margin: 1em 0;
+        margin-left: 2.5rem;
+        padding: 1em;
+        padding-left: 0;
+        background: #eee;
+        border: 2px dashed #ccc;
+        border-left: 5px solid #ffcc33;
+        display: table;
+
 
         em {
             display: block;

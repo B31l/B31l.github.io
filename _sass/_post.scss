@@ -286,12 +286,11 @@
     position: fixed;
     top: 3rem;
     left: min(calc(100% - 20rem), 1400px);
+    width: 20rem;
     margin: 0;
     margin-left: max(calc(50% - 860px), 0px);
     padding: 0;
-    width: 20rem;
-    line-height: 1.5rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     overflow-y: auto;
     border-top: 2px outset;
     ul {
@@ -303,8 +302,8 @@
     }
     a {
         display: block;
-        height: 2rem;
-        line-height: 2rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
         box-sizing: border-box;
         transition: 0.5s ease;
         // outline: 1px solid;

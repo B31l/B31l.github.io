@@ -178,8 +178,6 @@
         border: 2px dashed #ccc;
         border-left: 5px solid #ffcc33;
         display: table;
-
-
         em {
             display: block;
             margin: 0px 0 20px -40px;
@@ -188,6 +186,9 @@
             color: black;
             font-weight: 900;
             font-style: normal;
+        }
+        ul, ol {
+            margin: 1rem 0 0;
         }
     }
 

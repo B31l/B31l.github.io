@@ -142,14 +142,14 @@
     }
 
     ul {
-        margin: 1rem 0 2.5rem;
+        margin: 1rem 0;
         p {
             margin: 0;
         }
     }
 
     ol {
-        margin: 1rem 0 2.5rem;
+        margin: 1rem 0;
         p {
             margin: 0;
         }
@@ -159,12 +159,11 @@
     }
 
     img {   
-        margin: 1rem 0 2.5rem;
+        margin: 1rem 0;
     }
 
     hr {
-        margin-top: 1rem;
-        margin-bottom: 2.5rem;
+        margin: 1rem 0;
         border: none;
         border-top: 1px solid rgba(0,0,0,0.2);
         border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -172,8 +171,8 @@
     }
 
     blockquote {
-        margin: 1em 0 2.5rem;
-        padding: 1em;
+        margin: 1rem 0;
+        padding: 0 1em;
         background: #eee;
         border: 2px dashed #ccc;
         border-left: 5px solid #ffcc33;
@@ -259,7 +258,7 @@
         width: auto;
         max-width: 100%;
         height: auto;
-        margin: 1rem 0 2.5rem;
+        margin: 1rem 0;
         box-shadow: 0 0 2px black;
         border-collapse: collapse;
         color: black;

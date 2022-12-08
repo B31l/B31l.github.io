@@ -25,21 +25,21 @@
     h1 {
         font-family: 'Noto Sans KR';
         width: 20rem;
-        margin: 1rem 0 -3rem -20rem;
+        margin: 2.5rem 0 -3rem -20rem;
         padding-left: 2.5rem;
     }
 
     h2 {
         font-family: 'Noto Sans KR';
         width: 20rem;
-        margin: 1rem 0 -2.5rem -20rem;
+        margin: 2.5rem 0 -2.5rem -20rem;
         padding-left: 2.5rem;
     }
 
     h3 {
         font-family: 'Noto Sans KR';
         width: 20rem;
-        margin: 1rem 0 -2.5rem -20rem;
+        margin: 2.5rem 0 -2.5rem -20rem;
         padding-left: 2.5rem;
         color: var(--post_h3);
     }
@@ -63,10 +63,6 @@
             color: var(--post_link_hover);
         }
     }
-
-    // li {
-    //     margin-bottom: 0.3rem;
-    // }
 
     code {  // 백틱 코드
         padding: 0px 5px;
@@ -187,7 +183,7 @@
             font-style: normal;
         }
         ul, ol {
-            margin: 1rem 0 0;
+            margin: 1rem 0;
         }
     }
 

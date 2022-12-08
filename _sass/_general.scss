@@ -102,9 +102,10 @@ img {
 .main {
     @include breakpoint(medium) {
         max-width: 1080px;
-        padding: 0.5rem 0;
+        padding: 0.5rem 2.5rem;
         margin-left: max(calc(50% - 700px + 20rem), 20rem);
         border-right: 2px inset;
+        padding-left: 20rem;
     }
 
     @include mobile-only {

@@ -22,15 +22,25 @@
     color: var(--post_text);
     border-top: 2px outset;
 
-    h1,
+    h1 {
+        font-family: 'Noto Sans KR';
+        width: 20rem;
+        margin: 1rem 0 -3rem -20rem;
+        padding-left: 2.5rem;
+    }
+
     h2 {
         font-family: 'Noto Sans KR';
-        margin: 2rem 2.5rem 1rem;
+        width: 20rem;
+        margin: 1rem 0 -2.5rem -20rem;
+        padding-left: 2.5rem;
     }
 
     h3 {
         font-family: 'Noto Sans KR';
-        margin: 2rem 2.5rem 1rem;
+        width: 20rem;
+        margin: 1rem 0 -2.5rem -20rem;
+        padding-left: 2.5rem;
         color: var(--post_h3);
     }
 
@@ -43,7 +53,6 @@
     p {
         font-family: 'Noto Sans KR';
         font-weight: 300;
-        margin: 0 2.5rem;
         line-height: 1.5rem;
     }
 
@@ -133,31 +142,38 @@
     }
 
     ul {
-        margin: 1rem 2.5rem;
+        margin: 1rem 0 2.5rem;
         p {
             margin: 0;
         }
     }
 
+    ol {
+        margin: 1rem 0 2.5rem;
+        p {
+            margin: 0;
+        }
+        li {
+            list-style-type: disclosure-closed;
+        }
+    }
+
     img {   
-        max-width: calc(100% - 2.5rem);
-        margin: 0.5rem 0 1rem;
-        // box-shadow: 0 0 2px black;
+        margin: 1rem 0 2.5rem;
     }
 
     hr {
         margin-top: 1rem;
         margin-bottom: 2.5rem;
         border: none;
-        border-top: 1px solid rgba(0, 0, 0, 0.2);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-top: 1px solid rgba(0,0,0,0.2);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        margin-left: -300px;
     }
 
     blockquote {
-        margin: 1em 0;
-        margin-left: 2.5rem;
+        margin: 1em 0 2.5rem;
         padding: 1em;
-        padding-left: 0;
         background: #eee;
         border: 2px dashed #ccc;
         border-left: 5px solid #ffcc33;
@@ -240,9 +256,9 @@
         display: inline-block;
         overflow-x: auto;
         width: auto;
-        max-width: calc(100% - 5rem);
+        max-width: 100%;
         height: auto;
-        margin: 1rem 2.5rem;
+        margin: 1rem 0 2.5rem;
         box-shadow: 0 0 2px black;
         border-collapse: collapse;
         color: black;

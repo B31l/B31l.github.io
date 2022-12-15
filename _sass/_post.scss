@@ -23,23 +23,24 @@
 
     h1 {
         font-family: 'Noto Sans KR';
-        width: 20rem;
-        margin: 2.5rem 0 -3rem -20rem;
         padding-left: 2.5rem;
+        // width: 20rem;
+        // margin: 2.5rem 0 -3rem -20rem;
+        margin: 2.5rem 0 0 -5rem;
     }
 
     h2 {
         font-family: 'Noto Sans KR';
-        width: 20rem;
-        margin: 2.5rem 0 -2.5rem -20rem;
-        padding-left: 2.5rem;
+        // width: 20rem;
+        // margin: 2.5rem 0 -2.5rem -20rem;
+        // padding-left: 2.5rem;
     }
 
     h3 {
         font-family: 'Noto Sans KR';
-        width: 20rem;
-        margin: 2.5rem 0 -2.5rem -20rem;
-        padding-left: 2.5rem;
+        // width: 20rem;
+        // margin: 2.5rem 0 -2.5rem -20rem;
+        // padding-left: 2.5rem;
         color: var(--post_h3);
     }
 

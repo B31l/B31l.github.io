@@ -100,13 +100,12 @@ img {
 .main {
     @include breakpoint(medium) {
         max-width: 99rem;
-        width: calc(100% - 55rem);
+        width: calc(100% - 50rem);
         height: calc(100vh - 3rem);
         margin-left: 30rem;
         margin-right: 20rem;
         padding: 1.5rem 1.5rem;
         outline: 1px solid #ccc;
-
         overflow-x: scroll;
         column-width: 30rem;
         column-gap: 3rem;
@@ -119,7 +118,7 @@ img {
         padding: 0.5rem;
     }
 
-    @media (max-width: 1935px) {
+    @media (max-width: 1855px) {
         column-width: auto;
     }
 

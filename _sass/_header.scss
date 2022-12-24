@@ -44,3 +44,16 @@
 
     cursor: pointer;
 }
+
+// 이거 header.html에 있던건데 프로필작업할때 쓰삼
+
+// {% include profile.html %}
+// {% include categories.html %}
+
+// {% if site.user.aboutme %}
+//   <ul class="nav_list">
+//     <li class="nav_item">
+//       <a href="{{ site.baseurl }}/aboutme.html">about</a>
+//     </li>
+//   </ul>
+// {% endif %}

@@ -302,17 +302,15 @@
 #markdown-toc {
     position: absolute;
     top: 1.5rem;
-    right: max(5rem, calc(100% - 149rem));
+    right: max(5rem, calc(100% - 144rem));
     z-index: 1;
-    
-    width: 20rem;
+    width: 15rem;
     height: calc(100vh - 3rem);
     margin: 0;
     padding: 1.5rem 0;
     outline: 1px solid #ccc;
     border-radius: 0 1rem 1rem 0;
     background: white;
-    
     text-align: left;
     overflow-y: auto;
     

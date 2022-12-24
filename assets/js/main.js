@@ -3,12 +3,14 @@ const toc = document.querySelector("#markdown-toc");
 
 const a = () => console.log("ㅎㅇ");
 
+let state = true;
 const turn = () => {
-  if (banner.style.display === "none") {
-    banner.style.display = "block";
-    toc.style.display = "block";
+  if (state) {
+    document.querySelector(".post_banner").style.display = "none";
+    document.querySelector("#markdown-toc").style.display = "none";
   } else {
-    banner.style.display = "none";
-    toc.style.display = "none";
+    document.querySelector(".post_banner").style.display = "block";
+    document.querySelector("#markdown-toc").style.display = "block";
   }
+  state = !state;
 };

@@ -147,32 +147,26 @@
     }
 
     ul {
-        margin: 1rem 0;
-        p {
-            margin: 0;
-        }
-    }
-
-    ol {
-        margin: 1rem 0;
-        p {
-            margin: 0;
-        }
+        margin: 0.5rem 0 0 -1.5rem
         li {
             list-style-type: disclosure-closed;
         }
     }
 
-    img {   
-        margin: 1rem 0;
+    ol {
+        margin: 0.5rem 0 0 -1.5rem
+
     }
+
+    // img {   
+    //     margin: 1rem 0;
+    // }
 
     hr {
         margin: 1rem 0;
         border: none;
         border-top: 1px solid rgba(0,0,0,0.2);
         border-bottom: 1px solid rgba(255,255,255,0.2);
-        margin-left: -300px;
     }
 
     blockquote {
@@ -306,16 +300,23 @@
 }
 
 #markdown-toc {
-    position: fixed;
-    top: 3rem;
-    left: min(calc(100% - 20rem), 1400px);
-    width: 20rem;
+    position: absolute;
+    top: 1.5rem;
+    right: max(5rem, calc(100% - 124rem));
+    z-index: 1;
+    width: 25rem;
+    height: calc(100vh - 3rem);
+
     margin: 0;
-    margin-left: max(calc(50% - 860px), 0px);
     padding: 0;
+    outline: 1px solid #ccc;
+    border-radius: 0 1rem 1rem 0;
+    background: wheat;
+
     font-size: 0.8rem;
     overflow-y: auto;
-    border-top: 2px outset;
+    text-align: left;
+
     ul {
         margin: 0;
         padding: 0;

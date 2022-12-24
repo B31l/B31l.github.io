@@ -302,21 +302,22 @@
 #markdown-toc {
     position: absolute;
     top: 1.5rem;
-    right: max(5rem, calc(100% - 124rem));
+    right: max(5rem, calc(100% - 144rem));
     z-index: 1;
-    width: 25rem;
-    height: calc(100vh - 3rem);
 
+    width: calc(100% - 50rem);
+    max-width: 99rem;
+    height: calc(100vh - 3rem);
     margin: 0;
-    padding: 0;
+    padding: 1.5rem 0;
     outline: 1px solid #ccc;
     border-radius: 0 1rem 1rem 0;
-    background: wheat;
+    background: white;
 
+    text-align: left;
     font-size: 0.8rem;
     overflow-y: auto;
-    text-align: left;
-
+    
     ul {
         margin: 0;
         padding: 0;
@@ -326,16 +327,19 @@
     }
     a {
         display: block;
-        height: 1.5rem;
-        line-height: 1.5rem;
         box-sizing: border-box;
+        height: 2rem;
+        line-height: 2rem;
+        
         transition: 0.5s ease;
-        // outline: 1px solid;
         font-family: 'Noto Sans KR';
         overflow: hidden;
         text-overflow: ellipsis;
+        font-size: 1rem;
+        font-weight: bold;
         white-space: nowrap;
         color: var(--deep);
+
         &:hover {
             color: var(--sublime_font);
             background-color: var(--deep);

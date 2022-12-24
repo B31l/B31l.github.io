@@ -3,13 +3,13 @@
     top: 1.5rem;
     left: 5rem;
     z-index: 2;
-
     width: 25rem;
-    height: calc(100vh - 4rem);
+
+    height: calc(100vh - 3rem);
     padding: calc(50vh - 9rem) 0;
     outline: 1px solid #ccc;
-    border-radius: 1rem 0 0 0;
-
+    border-radius: 1rem 0 0 1rem;
+    
     background: url(../img/title.png);
     background-repeat: no-repeat;
     background-size: cover;

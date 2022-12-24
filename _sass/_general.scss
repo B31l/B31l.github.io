@@ -99,14 +99,14 @@ img {
 
 .main {
     @include breakpoint(medium) {
-        max-width: 124rem;
+        max-width: 99rem;
+        width: calc(100% - 55rem);
         height: calc(100vh - 3rem);
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin-left: 30rem;
+        margin-right: 20rem;
         padding: 1.5rem 1.5rem;
-        padding-left: 26.5rem;
         outline: 1px solid #ccc;
-        border-radius: 1rem;
+
         overflow-x: scroll;
         column-width: 30rem;
         column-gap: 3rem;
@@ -117,6 +117,10 @@ img {
 
     @include mobile-only {
         padding: 0.5rem;
+    }
+
+    @media (max-width: 1935px) {
+        column-width: none;
     }
 
     @media (max-width: 1200px) {
@@ -144,7 +148,7 @@ img {
     
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 16px;
     height: 16px;
 }
 
@@ -156,7 +160,7 @@ img {
 ::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.5);
     -webkit-border-radius: 0px;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {

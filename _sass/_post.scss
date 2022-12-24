@@ -5,8 +5,7 @@
     color: var(--post_text);
 
     @include breakpoint(medium) {
-        min-height: calc(100vh - 8.4rem);
-        margin-top: 5rem;
+        // min-height: calc(100vh - 8.4rem);
     }
 
     @include mobile-only {
@@ -21,26 +20,35 @@
     line-height: 1.5rem;
     color: var(--post_text);
 
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 6px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-border-radius: 0px;
+        border-radius: 0;
+    }
+
     h1 {
         font-family: 'Noto Sans KR';
-        padding-left: 2.5rem;
-        // width: 20rem;
-        // margin: 2.5rem 0 -3rem -20rem;
-        margin: 2.5rem 0 0 -5rem;
+        margin: 0 0 1rem;
     }
 
     h2 {
         font-family: 'Noto Sans KR';
-        // width: 20rem;
-        // margin: 2.5rem 0 -2.5rem -20rem;
-        // padding-left: 2.5rem;
+        margin: 0 0 1rem;
     }
 
     h3 {
         font-family: 'Noto Sans KR';
-        // width: 20rem;
-        // margin: 2.5rem 0 -2.5rem -20rem;
-        // padding-left: 2.5rem;
+        margin: 0 0 1rem;
         color: var(--post_h3);
     }
 
@@ -53,7 +61,8 @@
     p {
         font-family: 'Noto Sans KR';
         font-weight: 300;
-        line-height: 1.5rem;
+        line-height: 1rem;
+        margin: 0.5rem 0;
     }
 
     a {

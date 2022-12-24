@@ -7,7 +7,7 @@
     position: absolute;
     top: 0;
     @include breakpoint(medium) {
-        width: 25rem;
+        width: 5rem;
         height: 100%;
         min-height: 100%;
         padding: 0.5rem 0;
@@ -23,7 +23,7 @@
     text-align: center;
     @include breakpoint(medium) {
         position: fixed;
-        width: 25rem;
+        width: 5rem;
     }
     @include mobile-only {
         position: absolute;

@@ -16,7 +16,7 @@
 }
 
 .post_content {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5rem;
     color: var(--post_text);
 
@@ -147,20 +147,20 @@
     }
 
     ul {
-        margin: 0.5rem 0 0 -1.5rem
+        margin: 0.5rem 0 0 -1.5rem;
         li {
             list-style-type: disclosure-closed;
         }
     }
 
     ol {
-        margin: 0.5rem 0 0 -1.5rem
+        margin: 0.5rem 0 0 -1.5rem;
 
     }
 
-    // img {   
-    //     margin: 1rem 0;
-    // }
+    img {   
+        margin: 0.5rem 0;
+    }
 
     hr {
         margin: 1rem 0;

@@ -87,9 +87,7 @@ img {
 
     @include breakpoint(medium) {
         margin-left: auto;
-        margin-right: 20rem;
-        // max-width: 960px;
-        // padding-top: 2.5rem;
+        padding: 1.5rem 0;
     }
 
     @include mobile-only {
@@ -101,12 +99,19 @@ img {
 
 .main {
     @include breakpoint(medium) {
-        max-width: 1080px;
-        padding: 0.5rem 2.5rem;
-        margin-left: max(calc(50% - 700px + 20rem), 20rem);
-        border-right: 2px inset;
-        // padding-left: 20rem;
-        padding-left: 5rem;
+        width: calc(99rem + 2px);
+        height: calc(100vh - 3rem);
+        margin-left: 25rem;
+        padding: 1.5rem 1.5rem;
+        border: 1px solid #ccc;
+        border-radius: 1rem;
+        overflow-x: scroll;
+
+        column-width: 30rem;
+        column-gap: 3rem;
+        column-rule-color: #ccc;
+        column-rule-style: dashed;
+        column-rule-width: 1px;
     }
 
     @include mobile-only {

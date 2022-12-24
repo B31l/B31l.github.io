@@ -99,15 +99,15 @@ img {
 
 .main {
     @include breakpoint(medium) {
-        max-width: 132rem;
+        max-width: 124rem;
         height: calc(100vh - 3rem);
         margin-left: 5rem;
         margin-right: 5rem;
         padding: 1.5rem 1.5rem;
+        padding-left: 26.5rem;
         outline: 1px solid #ccc;
         border-radius: 1rem;
         overflow-x: scroll;
-
         column-width: 30rem;
         column-gap: 3rem;
         column-rule-color: #ccc;

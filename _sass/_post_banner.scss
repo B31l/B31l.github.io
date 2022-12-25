@@ -1,87 +1,47 @@
 .post_banner {
     position: absolute;
     top: 1.5rem;
-    left: 5rem;
+    left: max(5rem, calc((100% - 99rem) / 2));
     z-index: 2;
-    width: 25rem;
+    display: flex;
 
-    height: calc(100vh - 3rem);
-    padding: calc(50vh - 9rem) 0;
+    
+    width: calc(100% - 10rem);
+    max-width: 99rem;
+    height: 2rem;
+
+    margin: -1px auto 0;
+    padding: 0 1.5rem;
     outline: 1px solid #ccc;
-    border-radius: 1rem 0 0 1rem;
-    
-    background: url(../img/title.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left top;
-    text-align: center;
-    transition: 0.5s ease;
+    border-radius: 8px 8px 0 0;
 }
 
-.post_category_img_wrapper {
-    display: inline-block;
-    width: 8rem;
-    height: 8rem;
-    box-shadow: 0 0 5px black;
-    border-radius: 50%;
-    background: white;
+.post_categories {
+    height: 2rem;
+    line-height: 2rem;
+    a {
+        color: black;
+        font-family: 'Noto Sans KR';
 
-    img {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0.5rem;
+        // color: var(--nav_font);
+        &:hover,
+        &:focus {
+            color: var(--nav_font_hover);
+        }
     }
 }
 
-.post_information {
-    width: 100%;
-    height: 5.5rem;
-    margin-top: 1.5rem;
-    padding: 0;
-    
-    .post_title {
-        height: 2rem;
-        line-height: 2rem;
-        margin: 0;
-        padding: 0;
-        
-        color: white;
-        font-size: 2rem;
-        font-weight: 900;
-        font-family: "Noto Sans KR";
-        -webkit-text-stroke: 1px black;
-        
-        @include mobile-only {
-            text-align: center;
-            font-size: 1.5rem;
-        }
-    }
-    .post_data {
-        height: 1.5rem;
-        line-height: 1.5rem;
-        margin-top: 0.5rem;
-        @include mobile-only {
-            text-align: center;
-            margin-top: -1rem;
-            margin-bottom: 1rem;
-        }
-        .post_date {
-            // color: var(--post_date);
-            color: white;
-            letter-spacing: -0.5px;
-            line-height: 1;
-        }
-        .post_categories {
-            line-height: 1;
-            margin-left: 0.3rem;
-            a {
-                color: var(--nav_font);
-                &:hover,
-                &:focus {
-                    color: var(--nav_font_hover);
-                }
-            }
-        }
-    }
+.post_title {
+    height: 2rem;
+    line-height: 2rem;
+    color: black;
+    font-family: 'Noto Sans KR';
 }
+
+.post_date {
+    height: 2rem;
+    line-height: 2rem;
+    color: black;
+    font-family: 'Noto Sans KR';
+}
+

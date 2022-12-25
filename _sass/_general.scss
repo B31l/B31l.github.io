@@ -86,8 +86,7 @@ img {
     min-height: 100vh;
 
     @include breakpoint(medium) {
-        margin-left: auto;
-        padding: 1.5rem 0;
+        padding: 3.5rem 0 1.5rem;
     }
 
     @include mobile-only {
@@ -122,9 +121,9 @@ img {
         column-width: auto;
     }
 
-    @media (max-width: 1200px) {
-        width: 100%;
-    }
+    // @media (max-width: 1200px) {
+    //     width: 100%;
+    // }
 }
 
 .aboutme {

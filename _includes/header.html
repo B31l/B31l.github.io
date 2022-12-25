@@ -2,8 +2,18 @@
 
   <div class="header_content">
     
-    <div 
-    class="header-icon-wrapper">
+    {% include profile.html %}
+    {% include categories.html %}
+
+    {% if site.user.aboutme %}
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="{{ site.baseurl }}/aboutme.html">about</a>
+        </li>
+      </ul>
+    {% endif %}
+    
+    <div class="header-icon-wrapper">
       <i class="fa fa-info" style="font-size: 1.5rem"></i>
     </div>
 

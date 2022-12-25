@@ -99,10 +99,9 @@ img {
 .main {
     @include breakpoint(medium) {
         max-width: 99rem;
-        width: calc(100% - 50rem);
-        height: calc(100vh - 3rem);
-        margin-left: 30rem;
-        margin-right: 20rem;
+        width: calc(100% - 10rem);
+        height: calc(100vh - 5rem);
+        margin: 0 auto;
         padding: 1.5rem 1.5rem;
         outline: 1px solid #ccc;
         overflow-x: scroll;

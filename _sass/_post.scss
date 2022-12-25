@@ -295,9 +295,9 @@
     }
 }
 
-.post_comment {
-    padding-left: 2.5rem;
-}
+// .post_comment {
+//     padding-left: 2.5rem;
+// }
 
 #markdown-toc {
     position: absolute;
@@ -355,6 +355,7 @@
         left: 0;
         width: 100%;
         border-top: none;
+        display: none;
     }
 }
 

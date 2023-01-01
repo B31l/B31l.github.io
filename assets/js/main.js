@@ -14,3 +14,10 @@ const turn = () => {
   }
   state = !state;
 };
+
+const h1 = document.querySelectorAll("h1");
+const init = () => {
+  console.log(h1);
+};
+
+init();

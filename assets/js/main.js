@@ -18,6 +18,7 @@ const turn = () => {
 const toggleTOC = () => {
   const toc = document.querySelector("#markdown-toc");
   toc.style.display = toc.style.display === "display" ? "none" : "display";
+  console.log("완");
 };
 
 function init() {

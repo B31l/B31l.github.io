@@ -27,7 +27,7 @@ function getIndex(selector) {
 function init() {
   const list_h1 = document.querySelectorAll("h1");
   list_h1.forEach((item, index) => {
-    item.innerHTML = `<div class="h1-box">${index}</div>${item.innerHTML}`;
+    item.innerHTML = `<div class="h1-box">${index + 1}</div>${item.innerHTML}`;
   });
 }
 

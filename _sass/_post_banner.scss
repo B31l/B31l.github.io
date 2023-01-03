@@ -13,6 +13,7 @@
 
     .post-left {
         float: left;
+        display: flex;
         .post_categories {
             height: 2rem;
             line-height: 2rem;
@@ -36,6 +37,7 @@
     }
     .post-right {
         float: right;
+        display: flex;
         .post_date {
             height: 2rem;
             line-height: 2rem;

@@ -15,14 +15,10 @@ const turn = () => {
   state = !state;
 };
 
-function getIndex(selector) {
-  const elem = document.querySelector(selector);
-  for (let i = 0; i < elem.parentNode.childNodes.length; i++) {
-    if (elem.parentNode.childNodes[i] === elem) {
-      return i;
-    }
-  }
-}
+const toggleTOC = () => {
+  const toc = document.querySelector("#markdown-toc");
+  toc.style.display = toc.style.display === "display" ? "none" : "display";
+};
 
 function init() {
   const list_h1 = document.querySelectorAll("h1");

@@ -15,7 +15,19 @@ const turn = () => {
   state = !state;
 };
 
+function getIndex(selector) {
+  const elem = document.querySelector(selector);
+  for (let i = 0; i < elem.parentNode.childNodes.length; i++) {
+    if (elem.parentNode.childNodes[i] === elem) {
+      return i;
+    }
+  }
+}
+
 function init() {
+  document
+    .querySelectorAll("h1")
+    .forEach((item) => console.log(getIndex("h1")));
   const list_h1 = document.querySelectorAll("h1");
   console.log(list_h1);
 }

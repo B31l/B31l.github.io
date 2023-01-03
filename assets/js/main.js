@@ -3,7 +3,7 @@ const toc = document.querySelector("#markdown-toc");
 
 const toggleTOC = () => {
   const toc = document.querySelector("#markdown-toc");
-  toc.style.display = toc.style.display === "none" ? "block" : "none";
+  toc.style.display = toc.style.display === "block" ? "none" : "block";
   console.log("완");
 };
 

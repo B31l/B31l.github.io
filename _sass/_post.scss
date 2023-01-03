@@ -76,7 +76,7 @@
         font-family: 'Noto Sans KR';
         font-weight: 300;
         line-height: 1rem;
-        margin: 0.5rem 0;
+        margin: 0;
     }
 
     a {
@@ -163,13 +163,17 @@
     ul {
         margin: 0.5rem 0 0 -1.5rem;
         li {
+            margin: 0.5rem 0;
             list-style-type: disclosure-closed;
         }
     }
 
     ol {
         margin: 0.5rem 0 0 -1.5rem;
-
+        li {
+            margin: 0.5rem 0;
+            // list-style-type: disclosure-closed;
+        }
     }
 
     img {   
@@ -184,13 +188,12 @@
     }
 
     blockquote {
-        margin: 1rem 0;
         width: 100%;
-        padding: 0 1em;
+        margin: 0.5rem 0;
+        padding: 0.5rem 1rem;
         background: white;
         border: 2px dashed #ccc;
         display: table;
-        font-size: 0.9rem;
         em {
             display: block;
             margin: 0px 0 20px -40px;

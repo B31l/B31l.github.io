@@ -15,9 +15,9 @@ const turn = () => {
   state = !state;
 };
 
-const h1 = document.querySelectorAll("h1");
+const list_h1 = document.querySelectorAll("h1");
 const init = () => {
-  console.log(h1);
+  console.log(list_h1);
 };
 
 init();

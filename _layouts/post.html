@@ -15,25 +15,33 @@ layout: page
     {% endfor %}
     {% endif %} -->
 
-    {% if page.categories %}
-    <div class="post_categories">
-      📁 
-      {% for cat_name in page.categories %}
-        <a href="{{ site.baseurl }}/categories/{{ cat_name }}">{{ cat_name }}</a>
-        {% if forloop.last == false %},
-        {% endif %}
-      {% endfor %}
-      <i class="fa fa-chevron-right"></i>
+    <div class="post-left">
+      {% if page.categories %}
+      <div class="post_categories">
+        📁 
+        {% for cat_name in page.categories %}
+          <a href="{{ site.baseurl }}/categories/{{ cat_name }}">{{ cat_name }}</a>
+          {% if forloop.last == false %},
+          {% endif %}
+        {% endfor %}
+        <i class="fa fa-chevron-right" style="padding: 0.5rem; font-size: 0.75rem;"></i>
+      </div>
+      {% endif %}
+  
+      {% if page.title %}
+      <div class="post_title"> {{ page.title }}</div>
+      {% endif %}
     </div>
-    {% endif %}
+    <div class="post-right">
+      {% if page.date %}
+      <div class="post_date">{{ page.date | date: "%b %-d, %Y" }}</div>
+      {% endif %}
 
-    {% if page.title %}
-    <div class="post_title"> {{ page.title }}</div>
-    {% endif %}
+      <div>
+        <i class="fa fa-bars" style="padding: 0.5rem; font-size: 0.75rem;"></i>
+      </div>
+    </div>
 
-    {% if page.date %}
-    <div class="post_date">{{ page.date | date: "%b %-d, %Y" }}</div>
-    {% endif %}
 
 
   </div>

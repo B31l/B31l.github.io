@@ -58,6 +58,8 @@
         font-size: 1.25rem;
         font-family: 'Noto Sans KR';
         margin: 1rem 0;
+        border-left: 0.5rem solid black;
+        padding-left: 0.5rem;
     }
 
     h3 {
@@ -163,7 +165,7 @@
     ul {
         margin: 0.5rem 0 0 -1.5rem;
         li {
-            margin: 0.5rem 0;
+            margin: 0;
             list-style-type: disclosure-closed;
         }
     }
@@ -171,7 +173,7 @@
     ol {
         margin: 0.5rem 0 0 -1.5rem;
         li {
-            margin: 0.5rem 0;
+            margin: 0;
             // list-style-type: disclosure-closed;
         }
     }

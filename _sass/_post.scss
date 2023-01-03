@@ -343,12 +343,13 @@
     }
     li {
         list-style: none;
+        margin: 0;
     }
     a {
         display: block;
         box-sizing: border-box;
-        height: 1.5rem;
-        line-height: 1.5rem;
+        height: 2rem;
+        line-height: 2rem;
         
         transition: 0.5s ease;
         font-family: 'Noto Sans KR';

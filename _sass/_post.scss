@@ -57,12 +57,12 @@
     h2 {
         font-size: 1.25rem;
         font-family: 'Noto Sans KR';
-        margin: 0 0 1rem;
+        margin: 1rem 0;
     }
 
     h3 {
         font-family: 'Noto Sans KR';
-        margin: 0 0 1rem;
+        margin: 1rem 0;
         color: var(--post_h3);
     }
 
@@ -177,7 +177,12 @@
     }
 
     img {   
-        margin: 0.5rem 0;
+        width: 80%;
+        min-width: 24rem;
+        margin: 1rem 0 0;
+    }
+    em {
+        font-style: normal;
     }
 
     hr {

@@ -1,23 +1,9 @@
 const banner = document.querySelector(".post_banner");
 const toc = document.querySelector("#markdown-toc");
 
-const a = () => console.log("ㅎㅇ");
-
-let state = true;
-const turn = () => {
-  if (state) {
-    document.querySelector(".post_banner").style.display = "none";
-    document.querySelector("#markdown-toc").style.display = "none";
-  } else {
-    document.querySelector(".post_banner").style.display = "block";
-    document.querySelector("#markdown-toc").style.display = "block";
-  }
-  state = !state;
-};
-
 const toggleTOC = () => {
   const toc = document.querySelector("#markdown-toc");
-  toc.style.display = toc.style.display === "display" ? "none" : "display";
+  toc.style.display = toc.style.display === "none" ? "block" : "none";
   console.log("완");
 };
 

@@ -24,6 +24,9 @@ layout: page
           {% if forloop.last == false %},
           {% endif %}
         {% endfor %}
+      </div>
+
+      <div class="icon-wrapper">
         <i class="fa fa-chevron-right" style="padding: 0.5rem; font-size: 0.75rem;"></i>
       </div>
       {% endif %}
@@ -37,7 +40,7 @@ layout: page
       <div class="post_date">{{ page.date | date: "%b %-d, %Y" }}</div>
       {% endif %}
 
-      <div>
+      <div class="icon-wrapper">
         <i class="fa fa-bars" style="padding: 0.5rem; font-size: 0.75rem;"></i>
       </div>
     </div>

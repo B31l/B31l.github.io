@@ -3,44 +3,51 @@
     top: 1.5rem;
     left: max(5rem, calc((100% - 99rem) / 2));
     z-index: 2;
-    display: flex;
-
     width: calc(100% - 10rem);
     max-width: 99rem;
     height: 2rem;
-
     margin: -1px auto 0;
     padding: 0 1.5rem;
     outline: 1px solid #ccc;
     border-radius: 8px 8px 0 0;
-}
 
-.post_categories {
-    height: 2rem;
-    line-height: 2rem;
-    a {
-        color: black;
-        font-family: 'Noto Sans KR';
-
-        // color: var(--nav_font);
-        &:hover,
-        &:focus {
-            color: var(--nav_font_hover);
+    .post-left {
+        float: left;
+        .post_categories {
+            height: 2rem;
+            line-height: 2rem;
+            a {
+                color: black;
+                font-family: 'Noto Sans KR';
+        
+                // color: var(--nav_font);
+                &:hover,
+                &:focus {
+                    color: var(--nav_font_hover);
+                }
+            }
+        }
+        .post_title {
+            height: 2rem;
+            line-height: 2rem;
+            color: black;
+            font-family: 'Noto Sans KR';
+        }
+    }
+    .post-right {
+        float: right;
+        .post_date {
+            height: 2rem;
+            line-height: 2rem;
+            color: black;
+            font-family: 'Noto Sans KR';
         }
     }
 }
 
-.post_title {
-    height: 2rem;
+.icon-wrapper {
+    width: 2rem;
+    heighT: 2rem;
     line-height: 2rem;
-    color: black;
-    font-family: 'Noto Sans KR';
+    text-align: center;
 }
-
-.post_date {
-    height: 2rem;
-    line-height: 2rem;
-    color: black;
-    font-family: 'Noto Sans KR';
-}
-

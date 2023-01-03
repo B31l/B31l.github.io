@@ -25,11 +25,10 @@ function getIndex(selector) {
 }
 
 function init() {
-  document
-    .querySelectorAll("h1")
-    .forEach((item) => console.log(getIndex("h1")));
   const list_h1 = document.querySelectorAll("h1");
-  console.log(list_h1);
+  list_h1.forEach((item, index) => {
+    item.innerHTML = `<div class="h1-box">${index}</div>${item.innerHTML}`;
+  });
 }
 
 init();

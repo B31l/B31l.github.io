@@ -29,63 +29,54 @@ function init() {
   });
 }
 
-// document.addEventListener("scroll", horizontalScroll);
-// const main = document.querySelector(".main");
-// const content = document.querySelector(".content");
-// let scrollWidth = main.scrollWidth;
-// let verticalScrollHeight =
-//   content.getBoundingClientRect().height - main.getBoundingClientRect().height;
-// function horizontalScroll() {
-//   let position = main.getBoundingClientRect().top;
-//   if (position > 1) {
-//     return;
-//   } else {
-//     let scrolled = content.getBoundingClientRect().top;
-//     main.scrollLeft = (scrollWidth / verticalScrollHeight) * scrolled * -0.85;
-//   }
-// }
+document.addEventListener("scroll", horizontalScroll);
 
-// main.addEventListener("scroll", (e) => {
-//   if (window.innerWidth >= 1200) {
-//     // main.scrollTo({ top: 300, left: 0, behavior: "smooth" });
-//     horizontal = e.currentTarget.scrollLeft;
-//     vertical = e.currentTarget.scrollTop;
-//   }
-// });
+const main = document.querySelector(".main");
+const content = document.querySelector(".content");
+
+let scrollWidth = main.scrollWidth;
+let verticalScrollHeight =
+  content.getBoundingClientRect().height - main.getBoundingClientRect().height;
+
+function horizontalScroll() {
+  let position = main.getBoundingClientRect().top;
+  if (position > 1) {
+    return;
+  } else {
+    let scrolled = content.getBoundingClientRect().top;
+    main.scrollLeft = (scrollWidth / verticalScrollHeight) * scrolled * -0.85;
+  }
+}
 
 init();
 
-const main = document.querySelector(".main");
-let isMouseDown = false;
-let startX, scrollLeft;
+// const main = document.querySelector(".main");
+// let isMouseDown = false;
+// let startX, scrollLeft;
 
-main.addEventListener("mousedown", (e) => {
-  isMouseDown = true;
-  main.classList.add("active");
+// main.addEventListener("mousedown", (e) => {
+//   isMouseDown = true;
+//   main.classList.add("active");
 
-  startX = e.pageX - main.offsetLeft;
-  scrollLeft = main.scrollLeft;
-});
+//   startX = e.pageX - main.offsetLeft;
+//   scrollLeft = main.scrollLeft;
+// });
 
-main.addEventListener("mouseleave", () => {
-  isMouseDown = false;
-  main.classList.remove("active");
-});
+// main.addEventListener("mouseleave", () => {
+//   isMouseDown = false;
+//   main.classList.remove("active");
+// });
 
-main.addEventListener("mouseup", () => {
-  isMouseDown = false;
-  main.classList.remove("active");
-});
+// main.addEventListener("mouseup", () => {
+//   isMouseDown = false;
+//   main.classList.remove("active");
+// });
 
-main.addEventListener("mousemove", (e) => {
-  if (!isMouseDown) return;
+// main.addEventListener("mousemove", (e) => {
+//   if (!isMouseDown) return;
 
-  e.preventDefault();
-  const x = e.pageX - main.offsetLeft;
-  const walk = (x - startX) * 1;
-  main.scrollLeft = scrollLeft - walk;
-});
-
-main.addEventListener("scroll", () => {
-  main.scrollLeft += 300;
-});
+//   e.preventDefault();
+//   const x = e.pageX - main.offsetLeft;
+//   const walk = (x - startX) * 1;
+//   main.scrollLeft = scrollLeft - walk;
+// });

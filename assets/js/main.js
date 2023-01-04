@@ -81,7 +81,7 @@ init();
 //   main.scrollLeft = scrollLeft - walk;
 // });
 
-var scroller = {};
+const scroller = {};
 scroller.e = document.querySelector(".main");
 
 if (scroller.e.addEventListener) {
@@ -90,18 +90,16 @@ if (scroller.e.addEventListener) {
 } else scroller.e.attachEvent("onmousewheel", MouseWheelHandler);
 
 function MouseWheelHandler(e) {
-  var e = window.event || e;
-  var delta = -20 * Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
+  const e = window.event || e;
+  const delta = -80 * Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
 
-  var pst = document.querySelector(".main").scrollLeft() + delta;
+  const pst = document.querySelector(".main").scrollLeft + delta;
 
   if (pst < 0) {
     pst = 0;
-  } else if (pst > 480) {
-    pst = 480;
   }
 
-  document.querySelector(".main").scrollLeft(pst);
+  document.querySelector(".main").scrollLeft = pst;
 
   return false;
 }

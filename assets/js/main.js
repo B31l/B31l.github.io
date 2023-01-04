@@ -24,7 +24,7 @@ function init() {
 
   const list_img = document.querySelectorAll("img");
   list_img.forEach((item) => {
-    item.innerHTML = `<div class="img-box">${item.alt}</div>${item.innerHTML}`;
+    item.parentNode.innerHTML = `<div class="img-box">${item.alt}</div>${item}`;
   });
 }
 

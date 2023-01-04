@@ -328,14 +328,23 @@
 //     padding-left: 2.5rem;
 // }
 
-.toc_h1 {
-    float: left;
-}
-.toc_h2 {
-    float: left;
-}
+.toc_h1,
+.toc_h2,
 .toc_h3 {
     float: left;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.toc_h1 {
+    margin-left: 0;
+}
+.toc_h2 {
+    margin-left: 1.5rem;
+}
+.toc_h3 {
+    margin-left: 3rem;
 }
 
 #markdown-toc {
@@ -363,7 +372,6 @@
         margin: 0;
     }
     a {
-        float: left;
         display: block;
         box-sizing: border-box;
         height: 2rem;
@@ -383,15 +391,15 @@
             background-color: var(--deep);
         }
     }
-    >li >a {
-        padding-left: 1rem;
-    }
-    >li >ul >li >a {
-        padding-left: 2.5rem;
-    }
-    >li >ul >li >ul >li >a {
-        padding-left: 4rem;
-    }
+    // >li >a {
+    //     padding-left: 1rem;
+    // }
+    // >li >ul >li >a {
+    //     padding-left: 2.5rem;
+    // }
+    // >li >ul >li >ul >li >a {
+    //     padding-left: 4rem;
+    // }
 
     @media (max-width: 1200px) {
         position: relative;

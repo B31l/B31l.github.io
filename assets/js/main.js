@@ -1,5 +1,3 @@
-const main = document.querySelector(".main");
-
 const toggleTOC = () => {
   const toc = document.querySelector("#markdown-toc");
   toc.style.display = toc.style.display === "block" ? "none" : "block";
@@ -32,10 +30,27 @@ function init() {
 }
 
 init();
-main.addEventListener("scroll", (e) => {
-  if (window.innerWidth >= 1200) {
-    // main.scrollTo({ top: 300, left: 0, behavior: "smooth" });
-    horizontal = e.currentTarget.scrollLeft;
-    vertical = e.currentTarget.scrollTop;
+document.addEventListener("scroll", horizontalScroll);
+const main = document.querySelector(".main");
+const content = document.querySelector(".content");
+let scrollWidth = main.scrollWidth;
+let verticalScrollHeight =
+  content.getBoundingClientRect().height - main.getBoundingClientRect().height;
+
+// const s
+function horizontalScroll() {
+  let position = main.getBoundingClientRect().top;
+  if (position > 1) {
+    return;
+  } else {
+    let scrolled = content.getBoundingClientRect().top;
+    main.scrollLeft = (scrollWidth / verticalScrollHeight) * scrolled * -0.85;
   }
-});
+}
+// main.addEventListener("scroll", (e) => {
+//   if (window.innerWidth >= 1200) {
+//     // main.scrollTo({ top: 300, left: 0, behavior: "smooth" });
+//     horizontal = e.currentTarget.scrollLeft;
+//     vertical = e.currentTarget.scrollTop;
+//   }
+// });

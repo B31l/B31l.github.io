@@ -65,3 +65,4 @@ function setTOC() {
 }
 
 init();
+setTOC();

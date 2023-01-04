@@ -1,3 +1,5 @@
+HTMLCollection.prototype.forEach = Array.prototype.forEach;
+
 var scroller = {};
 scroller.e = document.querySelector(".main");
 if (scroller.e.addEventListener) {
@@ -45,23 +47,16 @@ function init() {
 function setTOC() {
   const toc = document.querySelector("#markdown-toc");
   toc.children.forEach((item_h1, index_h1) => {
-    console.log(`<div class="toc_h1">${index_h1 + 1}</div>${item.innerHTML}`);
     if (item_h1.childElementCount === 1) {
-      console.log(`<div class="toc_h1">${index_h1 + 1}</div>${item.innerHTML}`);
-      // item_h1.innerHTML = `<div class="toc_h1">${index_h1 + 1}</div>${
-      //   item.innerHTML
-      // }`;
+      item_h1.innerHTML = `<div class="toc_h1">${index_h1 + 1}</div>${
+        item.innerHTML
+      }`;
     } else {
       item_h1.children.forEach((item_h2, index_h2) => {
         if (item_h2.childElementCount === 1) {
-          console.log(
-            `<div class="toc_h2">${index_h1 + 1} - ${index_h2 + 1}</div>${
-              item.innerHTML
-            }`
-          );
-          // item_h2.innerHTML = `<div class="toc_h2">${index_h1 + 1} - ${
-          //   index_h2 + 1
-          // }</div>${item.innerHTML}`;
+          item_h2.innerHTML = `<div class="toc_h2">${index_h1 + 1} - ${
+            index_h2 + 1
+          }</div>${item.innerHTML}`;
         } else {
           console.log("히히");
         }

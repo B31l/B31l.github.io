@@ -45,6 +45,7 @@ function init() {
 function setTOC() {
   const toc = document.querySelector("#markdown-toc");
   toc.children.forEach((item_h1, index_h1) => {
+    console.log(`<div class="toc_h1">${index_h1 + 1}</div>${item.innerHTML}`);
     if (item_h1.childElementCount === 1) {
       console.log(`<div class="toc_h1">${index_h1 + 1}</div>${item.innerHTML}`);
       // item_h1.innerHTML = `<div class="toc_h1">${index_h1 + 1}</div>${

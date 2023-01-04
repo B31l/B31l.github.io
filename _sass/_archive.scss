@@ -2,7 +2,6 @@
    ========================================================================== */
 
 .archive {
-    min-height: calc(300vh - 22.5rem);
     color: var(--archive_font);
     .archive-banner {
         height: calc(100vh - 7.5rem);
@@ -39,9 +38,7 @@
     }
 
     @include breakpoint(medium) {
-        min-height: calc(100vh - 8.4rem);
-        max-width: 50rem;
-        margin-top: 5rem;
+        min-height: calc(300vh - 22.5rem);
     }
 
     @include mobile-only {

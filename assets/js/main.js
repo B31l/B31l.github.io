@@ -36,6 +36,6 @@ init();
 document.addEventListener("scroll", () => {
   const main = document.querySelector(".main");
   if (window.innerWidth >= 1200) {
-    main.scrollTo({ top: 0, left: 30, behavior: "smooth" });
+    main.scrollTo({ top: 0, left: 300, behavior: "smooth" });
   }
 });

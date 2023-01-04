@@ -35,7 +35,7 @@ function init() {
 init();
 document.addEventListener("scroll", () => {
   const main = document.querySelector(".main");
-  if (window.innerWidth >= 1200) {
-    main.scrollTo({ top: 300, left: 300, behavior: "smooth" });
-  }
+  // if (window.innerWidth >= 1200) {
+  main.scrollTo({ top: 300, left: 0, behavior: "smooth" });
+  // }
 });

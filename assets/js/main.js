@@ -60,16 +60,6 @@ function setTOC() {
         ${index_h1 + 1}.${index_h2 + 1}
         </div>
         ${item_h2.innerHTML}`;
-
-        // if (item_h2.childElementCount > 2) {
-        //   item_h2.children[2].children.forEach((item_h3, index_h3) => {
-        //     item_h3.innerHTML = `
-        //     <div class="toc_h3">
-        //     ${index_h3 + 1}
-        //     </div>
-        //     ${item_h3.innerHTML}`;
-        //   });
-        // }
       });
     }
   });
@@ -77,19 +67,3 @@ function setTOC() {
 
 init();
 setTOC();
-
-// if (item_h1.childElementCount === 1) {
-//   item_h1.innerHTML = `<div class="toc_h1">${index_h1 + 1}</div>${
-//     item.innerHTML
-//   }`;
-// } else {
-//   item_h1.children.forEach((item_h2, index_h2) => {
-//     if (item_h2.childElementCount === 1) {
-//       item_h2.innerHTML = `<div class="toc_h2">${index_h1 + 1} - ${
-//         index_h2 + 1
-//       }</div>${item.innerHTML}`;
-//     } else {
-//       console.log("히히");
-//     }
-//   });
-// }

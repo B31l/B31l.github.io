@@ -373,6 +373,7 @@
         right: max(5rem, calc((100% - 99rem) / 2));
         padding: 1.5rem 0.5rem;
         outline: 1px solid #ccc;
+        display: none;
     }
     @media (max-width: 1200px) {
         width: calc(100% - 10rem);

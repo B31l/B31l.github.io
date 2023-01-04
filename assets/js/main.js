@@ -1,5 +1,4 @@
-const banner = document.querySelector(".post_banner");
-const toc = document.querySelector("#markdown-toc");
+const main = document.querySelector(".main");
 
 const toggleTOC = () => {
   const toc = document.querySelector("#markdown-toc");
@@ -33,9 +32,8 @@ function init() {
 }
 
 init();
-document.addEventListener("scroll", () => {
-  const main = document.querySelector(".main");
-  // if (window.innerWidth >= 1200) {
-  main.scrollTo({ top: 300, left: 0, behavior: "smooth" });
-  // }
+main.addEventListener("scroll", () => {
+  if (window.innerWidth >= 1200) {
+    main.scrollTo({ top: 300, left: 0, behavior: "smooth" });
+  }
 });

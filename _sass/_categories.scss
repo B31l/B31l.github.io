@@ -130,7 +130,6 @@
     @include breakpoint(medium) {
         max-width: 40rem;
         text-align: left;
-        border-top: 2px outset;
     }
     @include mobile-only {
         display: none;

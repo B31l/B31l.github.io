@@ -29,24 +29,24 @@ function init() {
   });
 }
 
-document.addEventListener("scroll", horizontalScroll);
+// document.addEventListener("scroll", horizontalScroll);
 
-const main = document.querySelector(".main");
-const content = document.querySelector(".content");
+// const main = document.querySelector(".main");
+// const content = document.querySelector(".content");
 
-let scrollWidth = main.scrollWidth;
-let verticalScrollHeight =
-  content.getBoundingClientRect().height - main.getBoundingClientRect().height;
+// let scrollWidth = main.scrollWidth;
+// let verticalScrollHeight =
+//   content.getBoundingClientRect().height - main.getBoundingClientRect().height;
 
-function horizontalScroll() {
-  let position = main.getBoundingClientRect().top;
-  if (position > 1) {
-    return;
-  } else {
-    let scrolled = content.getBoundingClientRect().top;
-    main.scrollLeft = (scrollWidth / verticalScrollHeight) * scrolled * -0.85;
-  }
-}
+// function horizontalScroll() {
+//   let position = main.getBoundingClientRect().top;
+//   if (position > 1) {
+//     return;
+//   } else {
+//     let scrolled = content.getBoundingClientRect().top;
+//     main.scrollLeft = (scrollWidth / verticalScrollHeight) * scrolled * -0.85;
+//   }
+// }
 
 init();
 
@@ -80,3 +80,28 @@ init();
 //   const walk = (x - startX) * 1;
 //   main.scrollLeft = scrollLeft - walk;
 // });
+
+var scroller = {};
+scroller.e = document.querySelector(".main");
+
+if (scroller.e.addEventListener) {
+  scroller.e.addEventListener("mousewheel", MouseWheelHandler, false);
+  scroller.e.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+} else scroller.e.attachEvent("onmousewheel", MouseWheelHandler);
+
+function MouseWheelHandler(e) {
+  var e = window.event || e;
+  var delta = -20 * Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
+
+  var pst = document.querySelector(".main").scrollLeft() + delta;
+
+  if (pst < 0) {
+    pst = 0;
+  } else if (pst > 480) {
+    pst = 480;
+  }
+
+  document.querySelector(".main").scrollLeft(pst);
+
+  return false;
+}

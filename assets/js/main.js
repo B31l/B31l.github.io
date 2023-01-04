@@ -32,8 +32,10 @@ function init() {
 }
 
 init();
-main.addEventListener("scroll", () => {
+main.addEventListener("scroll", (e) => {
   if (window.innerWidth >= 1200) {
-    main.scrollTo({ top: 300, left: 0, behavior: "smooth" });
+    // main.scrollTo({ top: 300, left: 0, behavior: "smooth" });
+    horizontal = e.currentTarget.scrollLeft;
+    vertical = e.currentTarget.scrollTop;
   }
 });

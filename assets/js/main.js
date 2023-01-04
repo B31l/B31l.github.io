@@ -24,7 +24,11 @@ function init() {
 
   const list_img = document.querySelectorAll("img");
   list_img.forEach((item) => {
-    item.parentNode.innerHTML = `${item.parentNode.innerHTML}<em><${item.alt}></em>`;
+    if (item.alt) {
+      item.parentNode.innerHTML = `${
+        item.parentNode.innerHTML
+      }<em><${item.alt.toString()}></em>`;
+    }
   });
 }
 

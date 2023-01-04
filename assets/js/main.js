@@ -54,6 +54,7 @@ function init() {
 // });
 
 init();
+
 const main = document.querySelector(".main");
 let isMouseDown = false;
 let startX, scrollLeft;
@@ -83,4 +84,8 @@ main.addEventListener("mousemove", (e) => {
   const x = e.pageX - main.offsetLeft;
   const walk = (x - startX) * 1;
   main.scrollLeft = scrollLeft - walk;
+});
+
+main.addEventListener("scroll", () => {
+  main.scrollLeft = 300;
 });

@@ -27,7 +27,7 @@ function init() {
     if (item.alt) {
       item.parentNode.innerHTML = `${item.parentNode.innerHTML}<em>temp</em>`;
     }
-    item.childNodes[1].innerText = item.alt;
+    // item.childNodes[1].innerText = item.alt;
   });
 }
 

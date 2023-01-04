@@ -13,7 +13,6 @@
         
         margin-left: max(0rem, calc((100% - 99rem) / 2 - 5rem));
         padding: 0.5rem 0;
-        display: none;
         
     }
     @include mobile-only {
@@ -27,7 +26,7 @@
     text-align: center;
     @include breakpoint(medium) {
         position: fixed;
-        width: 5rem;
+        // width: 5rem;
     }
     @include mobile-only {
         position: absolute;

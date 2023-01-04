@@ -3,7 +3,7 @@
 
 .post {
     color: var(--post_text);
-
+    min-height: calc(300vh - 22.5rem);
     @include breakpoint(medium) {
         // min-height: calc(100vh - 8.4rem);
     }

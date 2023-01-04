@@ -87,5 +87,5 @@ main.addEventListener("mousemove", (e) => {
 });
 
 main.addEventListener("scroll", () => {
-  main.scrollLeft = 300;
+  main.scrollLeft += 300;
 });

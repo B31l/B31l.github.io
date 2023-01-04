@@ -47,7 +47,8 @@
             line-height: 2rem;
             margin-right: 0.5rem;
             border-radius: 4px;
-            background: #ffcc33;
+            background: black;
+            color: white;
 
             text-align: center;
             font-size: 1.5rem;
@@ -341,10 +342,10 @@
     margin-left: 0;
 }
 .toc_h2 {
-    margin-left: 1.5rem;
+    margin-left: 2rem;
 }
 .toc_h3 {
-    margin-left: 3rem;
+    margin-left: 4rem;
 }
 
 #markdown-toc {

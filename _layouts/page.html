@@ -6,9 +6,11 @@
   <div class="content">
     {% include header.html %}
     {% include mobile_menu.html %}
-    <main class="main">
-      {{ content }}
-    </main>
+    <div class="main-wrapper">
+      <main class="main">
+        {{ content }}
+      </main>
+    </div>
     {% include footer.html %}
   </div>
   {% include js.html %}

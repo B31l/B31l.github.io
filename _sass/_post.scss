@@ -360,21 +360,24 @@
     display: block;
     position: absolute;
     top: 3.5rem;
-    right: calc(max(5rem, calc((100% - 99rem) / 2)) - 16rem);
+    right: calc(max(5rem, calc((100% - 99rem) / 2)) - 15.5rem);
     z-index: 1;
     width: 15rem;
     height: calc(100% - 5rem);
     margin: 0;
-    padding: 0;
+    padding: 1.5rem 0;
     background: white;
     text-align: left;
     overflow-y: auto;
     @media (max-width: 2080px) {
-        display: none;
         right: max(5rem, calc((100% - 99rem) / 2));
-        box-shadow: 0 0 5px black;
+        padding: 1.5rem 0.5rem;
+        outline: 1px solid #ccc;
     }
-    
+    @media (max-width: 1200px) {
+        width: calc(100% - 10rem);
+    }
+
     ul {
         margin: 0;
         padding: 0;
@@ -413,15 +416,6 @@
         font-size: 0.8rem;
         font-weight: normal;
         padding-left: 3.5rem;
-    }
-
-    @media (max-width: 1200px) {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        border-top: none;
-        display: none;
     }
 }
 

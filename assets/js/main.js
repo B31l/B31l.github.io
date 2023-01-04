@@ -81,7 +81,7 @@ init();
 //   main.scrollLeft = scrollLeft - walk;
 // });
 
-const scroller = {};
+var scroller = {};
 scroller.e = document.querySelector(".main");
 
 if (scroller.e.addEventListener) {
@@ -90,10 +90,10 @@ if (scroller.e.addEventListener) {
 } else scroller.e.attachEvent("onmousewheel", MouseWheelHandler);
 
 function MouseWheelHandler(e) {
-  const e = window.event || e;
-  const delta = -80 * Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
+  var e = window.event || e;
+  var delta = -80 * Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
 
-  const pst = document.querySelector(".main").scrollLeft + delta;
+  var pst = document.querySelector(".main").scrollLeft + delta;
 
   if (pst < 0) {
     pst = 0;

@@ -25,7 +25,7 @@ function init() {
   const list_img = document.querySelectorAll("img");
   list_img.forEach((item) => {
     if (item.alt) {
-      item.parentNode.innerHTML = `${item.parentNode.innerHTML}<em></em>`;
+      item.parentNode.innerHTML = `${item.parentNode.innerHTML}<em>temp</em>`;
     }
     item.childNodes[1].innerText = item.alt;
   });

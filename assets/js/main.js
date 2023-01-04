@@ -33,3 +33,9 @@ function init() {
 }
 
 init();
+document.addEventListener("scroll", () => {
+  const main = document.querySelector(".main");
+  if (window.innerWidth >= 1200) {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }
+});

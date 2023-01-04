@@ -333,19 +333,27 @@
 .toc_h2,
 .toc_h3 {
     float: left;
-    width: 2rem;
-    height: 2rem;
-    line-height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
     text-align: center;
+    font-family: 'Noto Sans KR';
 }
 .toc_h1 {
     margin-left: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 .toc_h2 {
-    margin-left: 2rem;
+    width: 2rem;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    text-align: left;
 }
 .toc_h3 {
-    margin-left: 4rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    visibility: hidden;
 }
 
 #markdown-toc {
@@ -375,8 +383,8 @@
     a {
         display: block;
         box-sizing: border-box;
-        height: 2rem;
-        line-height: 2rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
         
         transition: 0.5s ease;
         font-family: 'Noto Sans KR';
@@ -392,15 +400,16 @@
             background-color: var(--deep);
         }
     }
-    // >li >a {
-    //     padding-left: 1rem;
-    // }
-    // >li >ul >li >a {
-    //     padding-left: 2.5rem;
-    // }
-    // >li >ul >li >ul >li >a {
-    //     padding-left: 4rem;
-    // }
+    >li >a {
+        font-size: 1rem;
+    }
+    >li >ul >li >a {
+        font-size: 0.9rem;
+    }
+    >li >ul >li >ul >li >a {
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
 
     @media (max-width: 1200px) {
         position: relative;

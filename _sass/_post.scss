@@ -357,20 +357,23 @@
 }
 
 #markdown-toc {
+    display: block;
     position: absolute;
     top: 3.5rem;
-    right: max(5rem, calc((100% - 99rem) / 2));
+    right: calc(max(5rem, calc((100% - 99rem) / 2)) - 16rem);
     z-index: 1;
-    display: none;
-    width: 20rem;
+    width: 15rem;
+    height: calc(100% - 5rem);
     margin: 0;
     padding: 0;
-    // outline: 1px solid #ccc;
-    box-shadow: 0 0 5px black;
     background: white;
     text-align: left;
     overflow-y: auto;
-    
+    @media (max-width: 2080px) {
+        display: none;
+        right: max(5rem, calc((100% - 99rem) / 2));
+        box-shadow: 0 0 5px black;
+    }
     
     ul {
         margin: 0;
@@ -409,6 +412,7 @@
     >li >ul >li >ul >li >a {
         font-size: 0.8rem;
         font-weight: normal;
+        padding-left: 3.5rem;
     }
 
     @media (max-width: 1200px) {

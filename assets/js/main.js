@@ -17,7 +17,7 @@ function MouseWheelHandler(e) {
 
 const toggleTOC = () => {
   const toc = document.querySelector("#markdown-toc");
-  toc.style.display = toc.style.display === "none" ? "block" : "none";
+  toc.style.display = toc.style.display !== "none" ? "block" : "none";
 };
 
 function init() {

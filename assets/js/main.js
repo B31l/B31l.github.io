@@ -50,13 +50,11 @@ function setTOC() {
     item_h1.innerHTML = `<div class="toc_h1">${index_h1 + 1}</div>${
       item_h1.innerHTML
     }`;
-    if (item_h1.childElementCount > 1) {
-      item_h1.children[1].children.forEach((item_h2, index_h2) => {
-        if (item_h2.childElementCount === 1) {
-          item_h2.innerHTML = `<div class="toc_h2">${index_h1 + 1} - ${
-            index_h2 + 1
-          }</div>${item_h2.innerHTML}`;
-        }
+    if (item_h1.childElementCount > 2) {
+      item_h1.children[2].children.forEach((item_h2, index_h2) => {
+        item_h2.innerHTML = `<div class="toc_h2">${index_h1 + 1} - ${
+          index_h2 + 1
+        }</div>${item_h2.innerHTML}`;
       });
     }
   });

@@ -48,7 +48,7 @@ function init() {
   const header = document.querySelector(".header");
 
   cat.addEventListener("click", () => {
-    header.style.display = "block" ? "none" : "block";
+    header.style.display = header.style.display === "none" ? "block" : "none";
   });
 }
 

@@ -4,8 +4,14 @@
 <body>
   {% include top.html %}
   <div class="content">
+    
     {% include header.html %}
     {% include mobile_menu.html %}
+    <label class="theme_changer">
+      <input theme_toggle type="checkbox">
+      <div class="button"></div>
+    </label>
+    
     <div class="main-wrapper">
       <main class="main">
         {{ content }}

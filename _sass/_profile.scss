@@ -18,16 +18,20 @@
     }
 }
 
-.theme_changer {   
-    float: right;
+.theme_changer {
+    position: absolute;
+    top: 4rem;
+    right: 2.5rem;
+    width: 2rem;
+    height: 2rem;
+    left: calc(max(5rem, calc((100% - 99rem) / 2)) - 3rem);
     cursor: pointer;
     input {
         display: none;
         &+div {
             background: url('../img/m.png') no-repeat center center;
-            width: 30px;
-            height: 30px;
             border-radius: 50%;
+            outline: 1px solid #ccc;
             position: relative;
             transition: box-shadow .5s ease 0s, transform .5s ease .1s;
 
@@ -37,7 +41,7 @@
                 height: inherit;
                 position: absolute;
                 left: 0;
-                top: 0;
+                top: 0; 
                 transition: background .5s ease;
             }
 
@@ -45,8 +49,8 @@
                 background: url('../img/s.png') no-repeat center;
                 border-radius: 50%;
                 content: '';
-                width: 30px;
-                height: 30px;
+                width: 2rem;
+                height: 2rem;
                 position: absolute;
                 transform: scale(0);
                 transition: all .5s ease;

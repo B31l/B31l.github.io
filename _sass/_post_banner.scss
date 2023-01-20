@@ -14,10 +14,11 @@
     .post-left {
         float: left;
         display: flex;
+        #hover-post-cats {
+            cursor: pointer
+        }
         .post-cats {
-            height: 2rem;
-            line-height: 2rem;
-            cursor: pointer;
+            display: flex;
             a {
                 color: black;
                 font-family: 'Noto Sans KR';
@@ -26,12 +27,6 @@
                     color: var(--nav_font_hover);
                 }
             }
-        }
-        .post-cat {
-            height: 2rem;
-            line-height: 2rem;
-            display: flex;
-            cursor: pointer;
             .icon-wrapper {
                 width: 2rem;
                 heighT: 2rem;

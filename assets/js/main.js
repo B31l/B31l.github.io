@@ -51,6 +51,18 @@ function init() {
     // header.style.display = header.style.display === "none" ? "block" : "none";
     header.style.display = "block";
   });
+
+  cat.addEventListener("mouseout", () => {
+    header.style.display = "none";
+  });
+
+  header.addEventListener("mouseover", () => {
+    header.style.display = "block";
+  });
+
+  header.addEventListener("mouseout", () => {
+    header.style.display = "none";
+  });
 }
 
 function setTOC() {

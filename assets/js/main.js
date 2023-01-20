@@ -44,17 +44,11 @@ function init() {
   });
 
   // 카테고리, 다른 카테고리 들 보이기 / 말기
-  const cats = document.querySelector("#hover-cats");
   const cat = document.querySelector("#hover-cat");
-
   const header = document.querySelector(".header");
 
-  cats.addEventListener("mouseover", () => {
-    header.style.display = "block";
-  });
-
-  cats.addEventListener("mouseout", () => {
-    header.style.display = "none";
+  cat.addEventListener("click", () => {
+    header.style.display = "block" ? "none" : "block";
   });
 }
 

@@ -17,22 +17,34 @@
         .post-cats {
             height: 2rem;
             line-height: 2rem;
+            cursor: pointer;
             a {
                 color: black;
                 font-family: 'Noto Sans KR';
-        
-                // color: var(--nav_font);
                 &:hover,
                 &:focus {
                     color: var(--nav_font_hover);
                 }
             }
         }
-        .post_title {
+        .post-cat {
             height: 2rem;
             line-height: 2rem;
-            color: black;
-            font-family: 'Noto Sans KR';
+            display: flex;
+            cursor: pointer;
+            .icon-wrapper {
+                width: 2rem;
+                heighT: 2rem;
+                line-height: 2rem;
+                text-align: center;
+                
+            }
+            .post_title {
+                height: 2rem;
+                line-height: 2rem;
+                color: black;
+                font-family: 'Noto Sans KR';
+            }
         }
     }
     .post-right {
@@ -47,10 +59,3 @@
     }
 }
 
-.icon-wrapper {
-    width: 2rem;
-    heighT: 2rem;
-    line-height: 2rem;
-    text-align: center;
-    cursor: pointer;
-}

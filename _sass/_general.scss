@@ -103,12 +103,22 @@ img {
     padding: 1.5rem 1.5rem 0;
     outline: 1px solid #ccc;
     border-radius: 0 0 8px 8px;
+
+    @media (max-width: 1200px) {
+        padding: 0;
+    }
+
+    @include mobile-only {
+        width: 100%;
+        outline: none;
+    }
 }
 
 .main {
     @include breakpoint(medium) {
         height: calc(100vh - 6.5rem);
         margin: 0 auto;
+        padding: 0;
         overflow-x: scroll;
         column-width: 30rem;
         column-gap: 3rem;
@@ -117,17 +127,14 @@ img {
         column-rule-width: 1px;
     }
 
-    @include mobile-only {
-        padding: 0.5rem;
-    }
-
     @media (max-width: 1200px) {
         column-width: auto;
+        padding: 1.5rem 1.5rem 0;
     }
 
-    // @media (max-width: 1200px) {
-    //     width: 100%;
-    // }
+    @include mobile-only {
+        padding: 1.5rem 0.5rem 0;
+    }
 }
 
 .aboutme {

@@ -47,7 +47,7 @@ function init() {
   const cat = document.querySelector("#hover-cat");
   const header = document.querySelector(".header");
 
-  cat.addEventListener("hover", () => {
+  cat.addEventListener("mouseover", () => {
     // header.style.display = header.style.display === "none" ? "block" : "none";
     header.style.display = "block";
   });

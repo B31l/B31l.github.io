@@ -6,22 +6,28 @@
     width: calc(100% - 10rem);
     max-width: 99rem;
     height: 2rem;
+    line-height: 2rem;
     margin: -1px auto 0;
     padding: 0 1.5rem;
     outline: 1px solid #ccc;
     border-radius: 8px 8px 0 0;
 
+    font-family: 'Noto Sans KR';
+
     .post-left {
         float: left;
         display: flex;
+        margin-left: -1.5rem;
         #hover-post-cats {
-            cursor: pointer
+            width: 3rem;
+            text-align: right;
+            padding: 0 0.5rem;
+            cursor: pointer;
         }
         .post-cats {
             display: flex;
             a {
                 color: black;
-                font-family: 'Noto Sans KR';
                 &:hover,
                 &:focus {
                     color: var(--nav_font_hover);
@@ -38,7 +44,6 @@
                 height: 2rem;
                 line-height: 2rem;
                 color: black;
-                font-family: 'Noto Sans KR';
             }
         }
     }

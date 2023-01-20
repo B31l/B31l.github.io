@@ -16,24 +16,27 @@ layout: page
     {% endif %} -->
 
     <div class="post-left">
+
       {% if page.categories %}
-      <div class="post_categories">
-        📁 
+      <div id="hover-cats" class="post-cats">
         {% for cat_name in page.categories %}
-          <a href="{{ site.baseurl }}/categories/{{ cat_name }}">{{ cat_name }}</a>
+          <a href="{{ site.baseurl }}/categories/{{ cat_name }}">📁 {{ cat_name }}</a>
           {% if forloop.last == false %},
           {% endif %}
         {% endfor %}
       </div>
+      {% endif %}
 
-      <div class="icon-wrapper">
-        <i class="fa fa-chevron-right" style="padding: 0.5rem; font-size: 0.75rem;"></i>
+      <div id="hover-cat" class="post-cat">
+        <div class="icon-wrapper">
+          <i class="fa fa-chevron-right" style="padding: 0.5rem; font-size: 0.75rem;"></i>
+        </div>
+        {% if page.title %}
+        <div class="post_title"> {{ page.title }}</div>
+        {% endif %}
+
       </div>
-      {% endif %}
-  
-      {% if page.title %}
-      <div class="post_title"> {{ page.title }}</div>
-      {% endif %}
+
     </div>
     <div class="post-right">
       {% if page.date %}

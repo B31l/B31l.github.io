@@ -29,9 +29,11 @@
     input {
         display: none;
         &+div {
-            background: url('../img/m.png') no-repeat center center;
-            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
             outline: 1px solid #ccc;
+            border-radius: 50%;
+            background: url('../img/m.png') no-repeat center center;
             position: relative;
             transition: box-shadow .5s ease 0s, transform .5s ease .1s;
 
@@ -64,10 +66,6 @@
                 transition: transform .5s ease .15s;
             }
         }
-    }
-
-    .button {
-        margin: 5px auto;
     }
 }
 

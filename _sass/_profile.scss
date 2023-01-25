@@ -1,12 +1,13 @@
 .profile {
-    height: 2.5rem;
-    line-height: 2.5rem;
-    padding: 0 1rem;
+    height: 5rem;
+    line-height: 5rem;
     .profile_name {
         float: left;
         margin-right: 0.5rem;
-        color: var(--name_font);
-        font-size: 1.5em;
+        color: white;
+        // color: var(--name_font);
+        font-size: 3rem;
+        font-weight: bold;
         cursor: pointer;
     }
     .proflie_job {
@@ -15,6 +16,7 @@
         color: var(--job_font);
         font-size: 0.75em;
         font-weight: 700;
+        display: none;
     }
 }
 

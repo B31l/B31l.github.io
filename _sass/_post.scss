@@ -3,7 +3,7 @@
 
 .post {
     color: var(--post_text);
-    min-height: calc(300vh - 22.5rem);
+    padding: 0 1rem;
     @include breakpoint(medium) {
         // min-height: calc(100vh - 8.4rem);
     }
@@ -356,26 +356,16 @@
 #markdown-toc {
     display: block;
     position: absolute;
-    top: 3.5rem;
-    right: calc(max(5rem, calc((100% - 99rem) / 2)) - 15.5rem);
     z-index: 1;
+    top: 15rem;
+    right: calc((100% - 45rem) / 2 - 15rem);
+
     width: 15rem;
-    height: calc(100% - 5rem);
+    height: calc(100vh - 15rem - 1.5rem);
     margin: 0;
-    padding: 1.5rem 0;
-    background: white;
+    padding: 1.5rem 0.5rem;
     text-align: left;
     overflow-y: auto;
-    @media (max-width: 2080px) {
-        right: max(5rem, calc((100% - 99rem) / 2));
-        padding: 1.5rem 0.5rem;
-        outline: 1px solid #ccc;
-        display: none;
-    }
-    @media (max-width: 1200px) {
-        width: calc(100% - 10rem);
-    }
-
     ul {
         margin: 0;
         padding: 0;

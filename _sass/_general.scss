@@ -54,7 +54,8 @@ body {
     margin: 0;
     padding: 0;
     // background-color: var(--bg_color);
-    background-color: var(--content_bg);
+    // background-color: var(--content_bg);
+    background-color: #fafafa;
     transition: background-color 0.5s ease;
     background-size: 100%;
     -webkit-font-smoothing: antialiased;
@@ -97,17 +98,16 @@ img {
 }
 
 .main-wrapper {
-    max-width: 99rem;
-    width: calc(100% - 10rem);
+    width: 45rem;
     margin: 0 auto;
-    padding: 1.5rem 1.5rem 0;
+    padding: 1rem 0;
     outline: 1px solid #ccc;
-    border-radius: 0 0 8px 8px;
+    border-radius: 8px;
+    background: white;
 
     @media (max-width: 1200px) {
         padding: 0;
     }
-
     @include mobile-only {
         width: 100%;
         outline: none;
@@ -116,24 +116,10 @@ img {
 
 .main {
     @include breakpoint(medium) {
-        height: calc(100vh - 6.5rem);
+        height: calc(100vh - 8.5rem);
         margin: 0 auto;
         padding: 0;
-        overflow-x: scroll;
-        column-width: 30rem;
-        column-gap: 3rem;
-        column-rule-color: #ccc;
-        column-rule-style: dashed;
-        column-rule-width: 1px;
-    }
-
-    @media (max-width: 1200px) {
-        column-width: auto;
-        padding: 1.5rem 1.5rem 0;
-    }
-
-    @include mobile-only {
-        padding: 1.5rem 0.5rem 0;
+        overflow-y: scroll;
     }
 }
 

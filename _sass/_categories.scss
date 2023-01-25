@@ -84,8 +84,18 @@
 // }
 
 .categories {
-    font-size: 0.8rem;
-    color: var(--archive_font);
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 15rem;
+    left: calc((100% - 45rem) / 2 - 15rem);
+
+    width: 15rem;
+    height: calc(100vh - 15rem - 1.5rem);
+    margin: 0;
+    padding: 1.5rem 0.5rem;
+    text-align: right;
+    overflow-y: auto;
     ul {
         list-style: none;
         margin: 0;
@@ -127,10 +137,11 @@
         }
     }
 
-    @include breakpoint(medium) {
-        max-width: 40rem;
-        text-align: left;
-    }
+    // @include breakpoint(medium) {
+    //     max-width: 40rem;
+    //     text-align: left;
+    // }
+    
     @include mobile-only {
         display: none;
     }

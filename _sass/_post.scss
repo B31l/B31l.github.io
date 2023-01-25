@@ -330,25 +330,20 @@
 .toc_h2,
 .toc_h3 {
     float: left;
-    width: 1.5rem;
+    width: 2rem;
     height: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
+    font-weight: bold;
     font-family: 'Noto Sans KR';
 }
 .toc_h1 {
-    margin-left: 0;
     font-size: 1.5rem;
-    font-weight: bold;
 }
 .toc_h2 {
-    width: 2rem;
-    margin-left: 1.5rem;
-    font-size: 1rem;
-    text-align: left;
+    font-size: 0.9rem;
 }
 .toc_h3 {
-    margin-left: 2rem;
     font-size: 1rem;
     visibility: hidden;
 }
@@ -369,6 +364,9 @@
     ul {
         margin: 0;
         padding: 0;
+        margin-left: 1rem;
+        border-left: 1px solid #ccc;
+        padding-left: 1rem;
     }
     li {
         list-style: none;
@@ -376,35 +374,32 @@
     }
     a {
         display: block;
-        box-sizing: border-box;
         height: 1.5rem;
         line-height: 1.5rem;
-        
         transition: 0.5s ease;
+        color: var(--deep);
+        font-size: 0.9rem;
+        font-weight: bold;
         font-family: 'Noto Sans KR';
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: 1rem;
-        font-weight: bold;
         white-space: nowrap;
-        color: var(--deep);
-
         &:hover {
             color: var(--sublime_font);
             background-color: var(--deep);
         }
     }
-    >li >a {
-        font-size: 1rem;
-    }
-    >li >ul >li >a {
-        font-size: 0.9rem;
-    }
-    >li >ul >li >ul >li >a {
-        font-size: 0.8rem;
-        font-weight: normal;
-        margin-left: 3.5rem;
-    }
+    // >li >a {
+    //     font-size: 1rem;
+    // }
+    // >li >ul >li >a {
+    //     font-size: 0.9rem;
+    // }
+    // >li >ul >li >ul >li >a {
+    //     font-size: 0.8rem;
+    //     font-weight: normal;
+    //     margin-left: 3.5rem;
+    // }
 }
 
 .MathJax_Display {

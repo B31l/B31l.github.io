@@ -21,8 +21,9 @@
     color: var(--post_text);
 
     ::-webkit-scrollbar {
-        width: 8px;
-        height: 6px;
+        width: 4px;
+        height: 4px;
+        display: block;
     }
     
     ::-webkit-scrollbar-track {
@@ -31,7 +32,7 @@
     }
     
     ::-webkit-scrollbar-thumb {
-        background: rgba(0, 0, 0, 0.5);
+        background: #ff33cc;
         -webkit-border-radius: 0px;
         border-radius: 0;
     }
@@ -338,10 +339,10 @@
     font-family: 'Noto Sans KR';
 }
 .toc_h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .toc_h2 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 .toc_h3 {
     font-size: 1rem;
@@ -378,8 +379,7 @@
         line-height: 1.5rem;
         transition: 0.5s ease;
         color: var(--deep);
-        font-size: 0.9rem;
-        font-weight: bold;
+        font-size: 0.8rem;
         font-family: 'Noto Sans KR';
         overflow: hidden;
         text-overflow: ellipsis;

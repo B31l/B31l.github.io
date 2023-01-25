@@ -45,20 +45,19 @@ function init() {
 
   // 카테고리, 다른 카테고리 들 보이기 / 말기
   const cat = document.querySelector("#hover-post-cats");
-  const header = document.querySelector(".header");
+  const left = document.querySelector(".left");
 
   cat.addEventListener("mouseover", () => {
-    // header.style.display = header.style.display === "none" ? "block" : "none";
-    header.style.display = "block";
+    left.style.display = "block";
   });
   cat.addEventListener("mouseout", () => {
-    header.style.display = "none";
+    left.style.display = "none";
   });
-  header.addEventListener("mouseover", () => {
-    header.style.display = "block";
+  left.addEventListener("mouseover", () => {
+    left.style.display = "block";
   });
-  header.addEventListener("mouseout", () => {
-    header.style.display = "none";
+  left.addEventListener("mouseout", () => {
+    left.style.display = "none";
   });
 }
 

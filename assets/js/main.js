@@ -21,9 +21,9 @@ const toggleTOC = () => {
 };
 
 function init() {
-  // const main = document.querySelector(".main");
-  // const list_hr = document.querySelectorAll("hr");
-  // const mainCurrent = main.getBoundingClientRect().bottom;
+  const main = document.querySelector(".main");
+  const list_hr = document.querySelectorAll("hr");
+  const mainCurrent = main.getBoundingClientRect().bottom;
   // list_hr.forEach((item) => {
   //   const hrCurrent = item.getBoundingClientRect().bottom;
   //   item.style.marginBottom = (mainCurrent - hrCurrent).toString() + "px";

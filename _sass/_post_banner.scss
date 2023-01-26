@@ -11,6 +11,11 @@
         margin-bottom: 1rem;
         font-size: 2rem;
         font-weight: bold;
+        display: inline-block;
+        cursor: pointer;
+        &:hover {
+            border-bottom: 3px solid black;
+        }
     }
     .post-detail {
         .post-cats, .post-date {

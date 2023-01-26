@@ -1,32 +1,25 @@
 .post_banner {
-    position: absolute;
-    top: 1.5rem;
-    left: max(5rem, calc((100% - 99rem) / 2));
-    z-index: 2;
-    width: calc(100% - 10rem);
-    max-width: 99rem;
-    height: 2rem;
-    line-height: 2rem;
-    margin: -1px auto 0;
-    padding: 0 1.5rem;
-    outline: 1px solid #ccc;
-    border-radius: 8px 8px 0 0;
-
+    height: 8rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #D8DEE9;
     font-family: 'Noto Sans KR';
-    display: none;
-
-    .post-left {
-        float: left;
+    .post_title {
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .post-detail {
+        float: right;
         display: flex;
-        margin-left: -1.5rem;
-        #hover-post-cats {
-            width: 3rem;
-            text-align: right;
-            padding: 0 0.5rem;
-            cursor: pointer;
-        }
         .post-cats {
-            display: flex;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            color: black;
+            font-family: 'Noto Sans KR';
+            font-size: 0.8rem;
             a {
                 color: black;
                 &:hover,
@@ -34,24 +27,8 @@
                     color: var(--nav_font_hover);
                 }
             }
-            .icon-wrapper {
-                width: 2rem;
-                heighT: 2rem;
-                line-height: 2rem;
-                text-align: center;
-                
-            }
-            .post_title {
-                height: 2rem;
-                line-height: 2rem;
-                color: black;
-            }
         }
-    }
-    .post-right {
-        float: right;
-        display: flex;
-        .post_date {
+        .post-date {
             height: 2rem;
             line-height: 2rem;
             color: black;

@@ -3,55 +3,26 @@ layout: page
 ---
 
 <div class="post">
-
   <div class="post_banner">
 
-    <!-- {% if page.categories %}
-    {% for cat_name in page.categories %}
-    <a class="post_category_img_wrapper" href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">
-      <img src="../assets/img/category/{{ cat_name }}.png"> 
-    </a>
-    {% break %}
-    {% endfor %}
-    {% endif %} -->
+    <div class="post-title">
+      {% if page.title %}{{ page.title }}{% endif %}
+    </div>
 
-    <div class="post-left">
-      <div id="hover-post-cats">
-        📁
-      </div>
-
-      <div class="post-cats">
-        {% if page.categories %}
+    <div class="post-detail">
+      {% if page.categories %}
+        <div class="post-cats">
           {% for cat_name in page.categories %}
-            <a href="{{ site.baseurl }}/categories/{{ cat_name }}"> {{ cat_name }}</a>
-            {% if forloop.last == false %},
-            {% endif %}
+            <a href="{{ site.baseurl }}/categories/{{ cat_name }}">{{ cat_name }}</a>
+            {% if forloop.last == false %},{% endif %}
           {% endfor %}
-        {% endif %}
-        <div class="icon-wrapper">
-          <i class="fa fa-chevron-right" style="padding: 0.5rem; font-size: 0.75rem;"></i>
         </div>
-        {% if page.title %}
-          <div class="post-title"> {{ page.title }}</div>
-        {% endif %}
-      </div>
-    </div>
-
-    <div class="post-right">
-      {% if page.date %}
-      <div class="post_date">{{ page.date | date: "%b %-d, %Y" }}</div>
       {% endif %}
-
-      <div class="icon-wrapper" onclick="toggleTOC()" style="display: none;">
-        <i class="fa fa-bars" style="padding: 0.5rem; font-size: 0.75rem;"></i>
-      </div>
+      {% if page.date %}<div class="post-date">{{ page.date | date: "%b %-d, %Y" }}</div>{% endif %}
     </div>
-
-
-
+    
   </div>
-
-
+  
   <div class="post_content">
     {{ content }}
   </div>

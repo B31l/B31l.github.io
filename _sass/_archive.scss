@@ -40,7 +40,7 @@
     }
 
     @include breakpoint(medium) {
-        min-height: calc(300vh - 22.5rem);
+        min-height: calc(100vh - 8.5rem);
     }
 
     @include mobile-only {

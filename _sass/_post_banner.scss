@@ -8,23 +8,33 @@
     .post-title {
         height: 3rem;
         line-height: 3rem;
+        margin-bottom: 1rem;
         font-size: 2rem;
         font-weight: bold;
     }
     .post-detail {
         .post-cats, .post-date {
-            height: 1.5rem;
-            line-height: 1.5rem;
+            height: 1rem;
+            line-height: 1rem;
             color: black;
             font-family: 'Noto Sans KR';
             font-size: 0.8rem;
         }
+
         .post-cat {
-            outline: 1px solid black;
+            padding: 0 1rem;
+            border-radius: 8px;
+            background: #2E3440;
+            color: white;
+            display: inline-block;
+            cursor: pointer;
             &:hover {
-                background: black;
+                background: #5E81AC;
                 color: white;
             }
+        }
+        .post_date {
+            float: right;
         }
     }
 }

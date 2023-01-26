@@ -2,11 +2,9 @@
 <html>
 {% include head.html %}
 <body>
-  {% include top.html %}
   <div class="content">
     
     {% include header.html %}
-    {% include mobile_menu.html %}
     {% include categories.html %}
 
     <label class="theme_changer">
@@ -19,7 +17,9 @@
         {{ content }}
       </main>
     </div>
+
     {% include footer.html %}
+  
   </div>
   {% include js.html %}
 </body>

@@ -12,25 +12,19 @@
         font-weight: bold;
     }
     .post-detail {
-        .post-cats {
+        .post-cats, .post-date {
             height: 1.5rem;
             line-height: 1.5rem;
             color: black;
             font-family: 'Noto Sans KR';
             font-size: 0.8rem;
-            a {
-                color: black;
-                &:hover,
-                &:focus {
-                    color: var(--nav_font_hover);
-                }
-            }
         }
-        .post-date {
-            height: 2rem;
-            line-height: 2rem;
-            color: black;
-            font-family: 'Noto Sans KR';
+        .post-cat {
+            outline: 1px solid black;
+            &:hover {
+                background: black;
+                color: white;
+            }
         }
     }
 }

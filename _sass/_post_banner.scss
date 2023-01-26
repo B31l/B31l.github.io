@@ -5,15 +5,13 @@
     border-radius: 8px;
     background: #D8DEE9;
     font-family: 'Noto Sans KR';
-    .post_title {
+    .post-title {
         height: 3rem;
         line-height: 3rem;
         font-size: 2rem;
         font-weight: bold;
     }
     .post-detail {
-        float: right;
-        display: flex;
         .post-cats {
             height: 1.5rem;
             line-height: 1.5rem;

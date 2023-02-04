@@ -1,5 +1,5 @@
 ---
-title: "ReactNative: 시작하기"
+title: "개발 환경 설정: ReactNative"
 categories: [ReactNative]
 mathjax: true
 ---

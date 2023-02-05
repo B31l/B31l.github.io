@@ -177,11 +177,18 @@
         min-width: 24rem;
         margin: 1rem 0 0;
     }
-    em {
-        color: #999;
-        font-style: normal;
+    img + em {
         display: block;
-    }
+        text-align: center;
+        font-size: .8rem;
+        color: light-grey;
+      }
+
+    // em {
+    //     color: #999;
+    //     font-style: normal;
+    //     display: block;
+    // }
 
     hr {
         margin: 1rem 0;

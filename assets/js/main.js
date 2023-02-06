@@ -34,14 +34,14 @@ function init() {
     item.innerHTML = `<div class="h1-box">${index + 1}</div>${item.innerHTML}`;
   });
 
-  const list_img = document.querySelectorAll("img");
-  list_img.forEach((item) => {
-    if (item.alt) {
-      item.parentNode.innerHTML = `${
-        item.parentNode.innerHTML
-      }<em>&lt;${item.alt.toString()}&gt;</em>`;
-    }
-  });
+  // const list_img = document.querySelectorAll("img");
+  // list_img.forEach((item) => {
+  //   if (item.alt) {
+  //     item.parentNode.innerHTML = `${
+  //       item.parentNode.innerHTML
+  //     }<em>&lt;${item.alt.toString()}&gt;</em>`;
+  //   }
+  // });
 
   // 카테고리, 다른 카테고리 들 보이기 / 말기
   const cat = document.querySelector("#hover-post-cats");

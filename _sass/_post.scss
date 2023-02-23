@@ -133,6 +133,7 @@
                 .rouge-gutter {
                     width: 2rem;
                     padding: 0.5rem 0;
+                    outline: none;
                     background-color: var(--sublime_bg);
                     text-align: right;
                     .lineno {
@@ -144,6 +145,7 @@
                 }
                 .rouge-code {
                     padding: 1rem 0.5rem;
+                    outline: none;
                     background-color: var(--sublime_bg);
                 }
             }

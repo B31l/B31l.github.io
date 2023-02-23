@@ -131,20 +131,19 @@
             tr {
                 background: black;
                 .rouge-gutter {
-                    width: 40px;
+                    width: 2rem;
                     padding: 0.5rem 0;
                     background-color: var(--sublime_bg);
                     text-align: right;
                     .lineno {
-                        width: 40px;
-                        font-family: monospace;
-                        color: #999;
+                        width: 2rem;
+                        color: #fafafa;
                         border-right: 1px solid;
-                        padding-right: 10px;
+                        padding-right: 0.5rem;
                     }
                 }
                 .rouge-code {
-                    padding: 0.5rem 10px;
+                    padding: 1rem 0.5rem;
                     background-color: var(--sublime_bg);
                 }
             }

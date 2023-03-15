@@ -8,8 +8,8 @@
         padding: 1rem 0;
         border-bottom: 1px solid #ccc;
         .archive_category_link {
-            min-width: 8rem;
-            max-width: 8rem;
+            min-width: 6rem;
+            max-width: 6rem;
             border-radius: 50%;
             display: inline-block;
         }
@@ -49,6 +49,7 @@
 }
 
 .archive_date {
+    display: none;
     text-transform: uppercase;
 
     @include breakpoint(medium) {

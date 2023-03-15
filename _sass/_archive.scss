@@ -4,14 +4,12 @@
 .archive {
     color: var(--archive_font);
     .archive-banner {
-        text-align: center;
         margin: 0 1rem;
-        padding-bottom: 1rem;
+        padding: 1rem 0;
         border-bottom: 1px solid #ccc;
         .archive_category_link {
-            min-width: 10rem;
-            max-width: 10rem;
-            height: 10rem;
+            min-width: 8rem;
+            max-width: 8rem;
             border-radius: 50%;
             display: inline-block;
         }
@@ -68,9 +66,9 @@
 .archive_type {
     color: var(--post_title);
     margin: 1rem 0 0;
-    height: 3rem;
-    line-height: 3rem;
-    font-size: 3rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 2rem;
     font-weight: 900;
     font-family: "Noto Sans KR";
 }

@@ -12,9 +12,9 @@
 
     
     {% for post in categories %}
-    {% assign post = post | split: "-" | first %}
+    {% assign post_first = post | split: "-" | first %}
     <li>
-      {{ post }}
+      {{ post_first }}
     </li>
     {% if post.url %}
     <li>

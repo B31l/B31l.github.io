@@ -8,9 +8,7 @@
     
     <div class="archive_type">{{ page.type }}</div>
   </div>
-
-
-
+  
   <ul>
     {% for post in categories[page.type] %}
     {% if post.url %}
@@ -26,7 +24,6 @@
       </li>
     {% endif %}
     {% endfor %}
-
   </ul>
 </div>
 

@@ -12,8 +12,8 @@
 
     
     {% for post in categories %}
-    {{ post | split: "-" }}
-    {% if post[0].url %}
+    {% assign post = post | split: "-" | first}}
+    {% if post.url %}
     <li>
         <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
           {{ post.date | date: "%b %-d, %Y" }}

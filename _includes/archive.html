@@ -9,8 +9,10 @@
     <div class="archive_type">{{ page.type }}</div>
   </div>
   <ul>
-    {% assign categories = site.categories[page.type] %}
+
+    
     {% for post in categories %}
+    {{ post | split: "-" | slice: 0, 1 }}
     {% if post.url %}
     <li>
         <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>

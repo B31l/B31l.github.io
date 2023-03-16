@@ -12,8 +12,8 @@
 
     
     {% for post in categories %}
-    {{ post | split: "-" | slice: 0, 1 }}
-    {% if post.url %}
+    {{ post | split: "-" }}
+    {% if post[0].url %}
     <li>
         <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
           {{ post.date | date: "%b %-d, %Y" }}

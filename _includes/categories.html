@@ -17,7 +17,8 @@
   <!-- Page Nav -->
   {% else %}
     <ul>
-    {% for category in site.categories | sort %}
+    {% assign site_categories = site.categories | sort %}
+    {% for category in site_categories %}
       {% capture cat_name %}{{ category | first }}{% endcapture %}
       {% assign cat_name_first = cat_name | split: "-" | first %}
       {% assign cat_name_last = cat_name | split: "-" | last %}

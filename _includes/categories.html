@@ -19,8 +19,8 @@
     <ul>
     {% for category in site.categories | sort %}
       {% capture cat_name %}{{ category | first }}{% endcapture %}
-      {% assign cat_name_first = cat_name | split: "-" | first}
-      {% assign cat_name_last = cat_name | split: "-" | last}
+      {% assign cat_name_first = cat_name | split: "-" | first %}
+      {% assign cat_name_last = cat_name | split: "-" | last %}
       <li>
         {% if cat_name_last != cat_name_first %}
           레후

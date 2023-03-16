@@ -21,7 +21,7 @@
       {% capture cat_name %}{{ category | first }}{% endcapture %}
       <li>
         <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">
-          <img src='../assets/img/category/{{ page.type | split: "-" | first }}.png'> 
+          <img src="../assets/img/category/{{ cat_name | split: '-' | first }}.png">
           <div class="cat_name">{{ cat_name }}</div>
           <div class="cat_size">({{ category | last | size }})</div>
         </a>

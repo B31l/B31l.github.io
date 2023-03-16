@@ -11,9 +11,18 @@
   <ul>
     
     {% for post in site.categories[page.type] %}
+    {% if post.url %}
     <li>
-      {{ post.categories | split: "-" | first }}
-    </li>
+        <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
+          {{ post.date | date: "%b %-d, %Y" }}
+        </time>
+        <div class='archive_title'>
+          <a href='{{ post.url | relative_url }}'>
+            {{ post.title | escape }}
+          </a>
+        </div>
+      </li>
+    {% endif %}
     {% endfor %}
 
   </ul>

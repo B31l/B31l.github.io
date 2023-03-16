@@ -17,14 +17,14 @@
   <!-- Page Nav -->
   {% else %}
     <ul>
-    {% assign site_categories = site.categories | sort | reverse%}
+    {% assign site_categories = site.categories | sort | reverse %}
     {% for category in site_categories %}
       {% capture cat_name %}{{ category | first }}{% endcapture %}
       {% assign cat_name_first = cat_name | split: "-" | first %}
       {% assign cat_name_last = cat_name | split: "-" | last %}
       <li>
+        <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">
 
-        <a href="{{ site.baseurl }}/categories/{{ cat_name_first }}" id="aa">
           {% if cat_name_last == cat_name_first %}
             <img src="../assets/img/category/{{ cat_name | split: '-' | first }}.png">
             <div class="cat_name">{{ cat_name_first }}</div>
@@ -32,8 +32,8 @@
             <div class="cat_name">{{ cat_name_last }}</div>
           {% endif %}
           <div class="cat_size">({{ category | last | size }})</div>
+
         </a>
-        
       </li>
     {% endfor %}
     </ul>

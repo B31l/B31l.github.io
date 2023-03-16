@@ -8,12 +8,10 @@
     
     <div class="archive_type">{{ page.type }}</div>
   </div>
-  {% for post in categories[page.type] %}
-    {{ post.title }}
-  {% endfor %}
-  <ul>
 
-    
+
+
+  <ul>
     {% for post in categories[page.type] %}
     {% if post.url %}
     <li>

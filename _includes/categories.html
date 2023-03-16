@@ -17,20 +17,20 @@
   <!-- Page Nav -->
   {% else %}
     <ul>
-    {% assign site_categories = site.categories | sort %}
+    {% assign site_categories = site.categories | sort | reverse %}
     {% for category in site_categories %}
       {% capture cat_name %}{{ category | first }}{% endcapture %}
       {% assign cat_name_first = cat_name | split: "-" | first %}
       {% assign cat_name_last = cat_name | split: "-" | last %}
       <li>
+        <a href="{{ site.baseurl }}/categories/{{ cat_name_first }}" id="aa"></a>
         {% if cat_name_last != cat_name_first %}
-          레후
-          {{ cat_name_last }}
-          레후
-        {% endif %}
-        <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">
           <img src="../assets/img/category/{{ cat_name | split: '-' | first }}.png">
-          <div class="cat_name">{{ cat_name }}</div>
+          <div class="cat_name">{{ cat_name_first }}</div>
+        {% else %}
+          <div class="cat_name">{{ cat_name_last }}</div>
+        {% endif %}
+
           <div class="cat_size">({{ category | last | size }})</div>
         </a>
         

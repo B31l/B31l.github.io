@@ -10,9 +10,9 @@
   </div>
   <ul>
     {% for post in site.categories[page.type] %}
-    {% assign post = post | split: "-" | first %}
+    {% assign foo = post | split: "-" | first %}
     <li>
-      {{ post }}
+      {{ foo.title }}
     </li>
 
 

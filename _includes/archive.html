@@ -8,7 +8,9 @@
     
     <div class="archive_type">{{ page.type }}</div>
   </div>
-  <p>{{ categories }}</p>
+  {% for post in categories %}
+    {{ post.title }}
+  {% endfor %}
   <ul>
 
     

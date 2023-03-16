@@ -8,13 +8,13 @@
     
     <div class="archive_type">{{ page.type }}</div>
   </div>
-  {% for post in categories %}
+  {% for post in categories[page.type] %}
     {{ post.title }}
   {% endfor %}
   <ul>
 
     
-    {% for post in categories %}
+    {% for post in categories[page.type] %}
     {% if post.url %}
     <li>
         <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>

@@ -9,7 +9,7 @@
     <div class="archive_type">{{ page.type }}</div>
   </div>
   <ul>
-    {% assign categories = site.categories[page.type]}
+    {% assign categories = site.categories[page.type] %}
     {% for post in categories %}
     {% if post.url %}
     <li>

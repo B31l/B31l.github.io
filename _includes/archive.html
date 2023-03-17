@@ -19,7 +19,6 @@
         {% continue %}
       {% endif %}
 
-      <li>{{ cat_name_last }}</li>
       <ul>
         {% for post in site.categories[cat_name] %}
         {% if post.url %}
@@ -36,6 +35,8 @@
         {% endif %}
       {% endfor %}
       </ul>
+      <li>{{ cat_name_last }}</li>
+
     {% endfor %}
 
   </ul>

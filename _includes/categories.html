@@ -16,9 +16,9 @@
 
   <!-- Page Nav -->
   {% else %}
+  {% assign site_categories = site.categories | sort %}
+  {{ site_categories }}
     <ul>
-      {% assign site_categories = site.categories | sort %}
-      {% assign site_categories = site_categories | reverse %}
       {% for category in site_categories %}
         {% assign cat_name = category | first %}
         {% assign cat_name_first = cat_name | split: "-" | first %}

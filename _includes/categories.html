@@ -4,7 +4,7 @@
   {% if page.categories %}
     {% assign cat = page.categories[0] %}
     {% assign cat_list = site.categories[cat] %}
-    <ul>
+    <ul style="flex-direction: column-reverse;">
       {% for post in cat_list %}
         {% if post.url %}
           <li>
@@ -17,7 +17,7 @@
   <!-- Page Nav -->
   {% else %}
   {% assign site_categories = site.categories | sort %}
-    <ul>
+    <ul style="flex-direction: column;">
       {% for category in site_categories %}
         {% assign cat_name = category | first %}
         {% assign cat_name_first = cat_name | split: "-" | first %}

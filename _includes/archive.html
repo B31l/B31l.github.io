@@ -13,17 +13,15 @@
     {% for category in site.categories %}
       {% assign cat_name = category | first %}
       {% assign cat_name_first = cat_name | split: "-" | first %}
+      {% assign cat_name_last = cat_name | split: "-" | last %}
 
       {% if cat_name_first != page.type %}
         {% continue %}
       {% endif %}
 
-      <h1>{{ page.type }}</h1>
-      <h2>{{ cat_name }}</h2>
-      <h3>{{ cat_name_first}}</h3>
-      <p>마따끄</p>
-
-      {% for post in site.categories[cat_name] %}
+      <li>{{ cat_name_last }}</li>
+      <ul>
+        {% for post in site.categories[cat_name] %}
         {% if post.url %}
           <li>
             <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
@@ -37,7 +35,7 @@
           </li>
         {% endif %}
       {% endfor %}
-    
+      </ul>
     {% endfor %}
 
   </ul>

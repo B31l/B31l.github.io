@@ -17,11 +17,13 @@
   <!-- Page Nav -->
   {% else %}
     <ul>
-    {% assign site_categories = site.categories | sort | reverse %}
-    {% for category in site_categories %}
-      {% capture cat_name %}{{ category | first }}{% endcapture %}
-      <l1>히히</l1>
-    {% endfor %}
+      {% assign site_categories = site.categories | sort %}
+      {% for category in site_categories %}
+        {% assign cat_name = category | first %}
+        {% assign cat_name_first = cat_name | split: "-" | first %}
+        {% assign cat_name_last = cat_name | split: "-" | last %}
+        <l1>{{cat_name_first}}히히{{cat_name_last}}</l1>
+      {% endfor %}
     </ul>
 
   {% endif %}

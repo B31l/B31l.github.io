@@ -33,7 +33,7 @@
           </li>
         {% else %}
           <li>
-            <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">
+            <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa" style="pointer-events: none;">
               <div class="cat_name cat_name_last">{{ cat_name_last }}</div>
               <div class="cat_size">({{ category | last | size }})</div>
             </a>

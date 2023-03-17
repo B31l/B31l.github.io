@@ -13,23 +13,27 @@
     {% for category in site.categories %}
       {% assign cat_name = category | first %}
       {% assign cat_name_first = cat_name | split: "-" | first %}
+
       {% if cat_name_first != page.type %}
         {% continue %}
       {% endif %}
 
-      {{ cat_name }}
-      {% if post.url %}
-        <li>
-          <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
-            {{ post.date | date: "%b %-d, %Y" }}
-          </time>
-          <div class='archive_title'>
-            <a href='{{ post.url | relative_url }}'>
-              {{ post.title | escape }}
-            </a>
-          </div>
-        </li>
-      {% endif %}
+      {% for post in site.categories[cat_name_first]}
+
+        {% if post.url %}
+          <li>
+            <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
+              {{ post.date | date: "%b %-d, %Y" }}
+            </time>
+            <div class='archive_title'>
+              <a href='{{ post.url | relative_url }}'>
+                {{ post.title | escape }}
+              </a>
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+      
     {% endfor %}
 
   </ul>

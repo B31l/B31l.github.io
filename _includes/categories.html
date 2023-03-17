@@ -18,6 +18,8 @@
   {% else %}
   {% assign site_categories = site.categories | sort %}
   {{ site_categories[0] }}
+  <p>마따끄</p>
+  {{ site_categories[0].categories }}
     <ul>
       {% for category in site_categories %}
         {% assign cat_name = category | first %}

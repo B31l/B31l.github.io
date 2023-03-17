@@ -18,10 +18,9 @@
         {% continue %}
       {% endif %}
 
-      {% for post in site.categories[cat_name]}
-        {{ post.title }}
-
-      {% endfor %}
+      <h1>{{ page.type }}</h1>
+      {{ cat_name }}
+      {{ cat_name.first}}
 
     {% endfor %}
 

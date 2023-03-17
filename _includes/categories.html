@@ -22,7 +22,18 @@
         {% assign cat_name = category | first %}
         {% assign cat_name_first = cat_name | split: "-" | first %}
         {% assign cat_name_last = cat_name | split: "-" | last %}
-        <l1>{{cat_name_first}}히히{{cat_name_last}}</l1>
+        <li>
+          <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">
+            {% if cat_name_last == cat_name_first %}
+              <img src="../assets/img/category/{{ cat_name | split: '-' | first }}.png">
+              <div class="cat_name">{{ cat_name_first }}</div>
+            {% else %}
+              <div class="cat_name">{{ cat_name_last }}</div>
+            {% endif %}
+            <div class="cat_size">({{ category | last | size }})</div>
+  
+          </a>
+        </li>
       {% endfor %}
     </ul>
 

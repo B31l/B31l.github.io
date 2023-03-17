@@ -17,9 +17,6 @@
   <!-- Page Nav -->
   {% else %}
   {% assign site_categories = site.categories | sort %}
-  {{ site_categories[0] }}
-  <p>마따끄 {{ site_categories[0] | first }}</p>
-
     <ul>
       {% for category in site_categories %}
         {% assign cat_name = category | first %}

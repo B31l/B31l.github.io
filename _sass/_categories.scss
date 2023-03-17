@@ -24,6 +24,7 @@
                 display: block;
                 height: 1.5rem;
                 line-height: 1.5rem;
+                margin-top: 0.5rem;
                 padding-right: 1rem;
                 color: var(--post_title);
                 transition: 0.5s ease;
@@ -35,11 +36,17 @@
                     float: left;
                     width: 1.5rem;
                     height: 1.5rem;
-                    padding: 0.25rem;
                 }
                 .cat_name {
+                    padding-left: 0.5rem;
                     float: left;
                     font-weight: bold;
+                }
+                .cat_name_first {
+                    font-size: 1.2rem;
+                }
+                .cat_name_last {
+                    margin-left: 1.5rem;
                 }
                 .cat_size {
                     float: right;

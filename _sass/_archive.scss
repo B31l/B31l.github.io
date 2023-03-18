@@ -23,20 +23,31 @@
         margin: 0;
         padding: 1rem;
         list-style: none;
-
         li {
             height: 1.5rem;
             line-height: 1.5rem;
+            .archive-sub-title {
+                display: inline-block;
+                padding: 0 1rem;
+                border-radius: 8px;
+                background: var(--archive_title);
+                color: white;
+                font-size: 1rem;
+            }
         }
-    }
-
-    & a {
-        text-decoration: none;
-        color: var(--archive_title);
-
-        &:hover,
-        &:focus {
-            color: var(--archive_title_hover);
+        .archive-sub-ui {
+            padding: 0.5rem 1rem;
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 0.8rem;
+                font-weight: bold;
+        
+                &:hover,
+                &:focus {
+                    color: var(--archive_title_hover);
+                }
+            }
         }
     }
 
@@ -84,11 +95,3 @@
     margin-bottom: 0.6rem;
 }
 
-.archive-subtitle {
-    display: inline-block;
-    padding: 0 1rem;
-    border-radius: 8px;
-    background: var(--archive_title);
-    color: white;
-    font-size: 1.2rem;
-}

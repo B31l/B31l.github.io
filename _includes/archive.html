@@ -19,7 +19,7 @@
         {% continue %}
       {% endif %}
 
-      <ul>
+      <ul class="archive-sub-ui">
         {% for post in site.categories[cat_name] %}
         {% if post.url %}
           <li>
@@ -36,7 +36,7 @@
       {% endfor %}
       </ul>
       <li>
-        <div class="archive-subtitle">{{ cat_name_last }}</div>
+        <div class="archive-sub-title">{{ cat_name_last }}</div>
       </li>
 
     {% endfor %}

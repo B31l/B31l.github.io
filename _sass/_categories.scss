@@ -56,11 +56,11 @@
                     float: right;
                     font-size: 0.5rem;
                 }
-                &:hover,
-                &:focus {
-                    color: var(--sublime_font);
-                    background-color: var(--archive_title_hover);
-                }
+                // &:hover,
+                // &:focus {
+                //     color: var(--sublime_font);
+                //     background-color: var(--archive_title_hover);
+                // }
             }
         }
     }

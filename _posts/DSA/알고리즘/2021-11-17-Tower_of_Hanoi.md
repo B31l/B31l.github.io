@@ -1,6 +1,6 @@
 ---
 title: "하노이의 탑"
-categories: [DSA]
+categories: [DSA-알고리즘]
 mathjax: true
 ---
 

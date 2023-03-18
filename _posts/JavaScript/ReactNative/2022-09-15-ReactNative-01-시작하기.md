@@ -1,6 +1,6 @@
 ---
 title: "개발 환경 설정: ReactNative"
-categories: [ReactNative]
+categories: [JavaScript-ReactNative]
 mathjax: true
 ---
 

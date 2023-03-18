@@ -1,6 +1,6 @@
 ---
 title: "ReactNative: 스타일시트"
-categories: [ReactNative]
+categories: [JavaScript-ReactNative]
 mathjax: true
 ---
 

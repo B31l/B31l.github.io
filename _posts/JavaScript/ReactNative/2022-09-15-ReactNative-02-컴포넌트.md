@@ -1,6 +1,6 @@
 ---
 title: "ReactNative: 컴포넌트"
-categories: [ReactNative]
+categories: [JavaScript-ReactNative]
 mathjax: true
 ---
 

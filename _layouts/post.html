@@ -13,7 +13,8 @@ layout: page
       {% if page.categories %}
         <div class="post-cats">
           {% for cat_name in page.categories %}
-            <div class="post-cat" onclick="location.href='{{ site.baseurl }}/categories/{{ cat_name }}'">{{ cat_name }}</div>
+            {% assign cat_name_first = cat_name | split: "-" | first %}
+            <div class="post-cat" onclick="location.href='{{ site.baseurl }}/categories/{{ cat_name_first }}'">{{ cat_name }}</div>
             {% if forloop.last == false %},{% endif %}
           {% endfor %}
         </div>

@@ -1,6 +1,6 @@
 ---
 title: "Tensorflow 개발환경 구축"
-categories: [Tensorflow]
+categories: [AI-Tensorflow]
 mathjax: true
 ---
 
